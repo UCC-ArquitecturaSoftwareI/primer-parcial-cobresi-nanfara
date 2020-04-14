@@ -1,9 +1,9 @@
 ![Build and Deploy][badge]
-# [Nombre en proceso]
+# Tankey
 
-Este juego trata de un gorila y su intento por recoger la mayor cantidad de monedas posibles.
-¿El problema? Nuestro protagonista tiene que escalar un infinito arbol lleno de ramas sin chocar 
-con ninguna, moviéndose de un lado al otro.
+Tankey es un juego sobre un gorila que debe juntar la mayor cantidad de bananas posibles. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él.
+Moviéndose de un lado al otro...
+¿Podrá lograrlo?
 
 Se puede ver desde: [Github Pages][gh-pages]
 
