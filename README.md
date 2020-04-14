@@ -3,7 +3,7 @@
 
 Este juego trata de un gorila y su intento por recoger la mayor cantidad de monedas posibles.
 ¿El problema? Nuestro protagonista tiene que escalar un infinito arbol lleno de ramas sin chocar 
-con ninguna, moviéndose de un lado al otro del arbol.
+con ninguna, moviéndose de un lado al otro.
 
 Se puede ver desde: [Github Pages][gh-pages]
 
