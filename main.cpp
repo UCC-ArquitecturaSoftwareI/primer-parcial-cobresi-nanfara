@@ -1,6 +1,6 @@
 #include <raylib.h>
 
-//#include "clases/Nave.h"
+#include "clases/Nave.h"
 
 #if defined(PLATFORM_WEB) // Para crear HTML5
 #include <emscripten/emscripten.h>
