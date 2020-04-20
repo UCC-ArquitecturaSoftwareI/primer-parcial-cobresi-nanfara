@@ -194,7 +194,7 @@ Module['FS_createPath']('/', 'resources', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2690462, "filename": "/resources/Sprite.png"}, {"start": 2690462, "audio": 0, "end": 2701155, "filename": "/resources/shell.html"}, {"start": 2701155, "audio": 0, "end": 2703112, "filename": "/resources/ship.png"}], "remote_package_size": 2703112, "package_uuid": "e8c72e3b-54cb-4b14-b24a-675b9ce57bf8"});
+ loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2690462, "filename": "/resources/Sprite.png"}, {"start": 2690462, "audio": 0, "end": 2701155, "filename": "/resources/shell.html"}, {"start": 2701155, "audio": 0, "end": 2703112, "filename": "/resources/ship.png"}], "remote_package_size": 2703112, "package_uuid": "33f953dc-4946-4969-89d1-df7c34d2aaac"});
 
 })();
 
@@ -47192,7 +47192,7 @@ function _main() {
  if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(48);
  $music$byval_copy1 = sp + 16 | 0;
  $agg$tmp1 = sp;
- _InitWindow(700, 900, 20548);
+ _InitWindow(1200, 900, 20548);
  _InitAudioDevice();
  _LoadMusicStream($music$byval_copy1, 20579);
  HEAP32[38562] = HEAP32[$music$byval_copy1 >> 2];
@@ -47217,7 +47217,7 @@ function _main() {
  HEAP32[$agg$tmp1 + 4 >> 2] = 0;
  HEAP32[$agg$tmp1 + 8 >> 2] = 0;
  __ZNSt3__212basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6__initEPKcm($agg$tmp1, 20620, __ZNSt3__211char_traitsIcE6lengthEPKc(20620) | 0);
- HEAPF32[$music$byval_copy1 >> 2] = Math_fround(350.0);
+ HEAPF32[$music$byval_copy1 >> 2] = Math_fround(600.0);
  HEAPF32[$music$byval_copy1 + 4 >> 2] = Math_fround(450.0);
  __ZN6MonkeyC2ENSt3__212basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERK7Vector2($call, $agg$tmp1, $music$byval_copy1);
  HEAP32[38570] = $call;
