@@ -8,7 +8,11 @@
 
 
 class Cartoonist {
-
+public:
+    void Draw_monkey();
+    void Draw_banana();
+    void Draw_rama();
+    void Draw_tree();
 };
 
 

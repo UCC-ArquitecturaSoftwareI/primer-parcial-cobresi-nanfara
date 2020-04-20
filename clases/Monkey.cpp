@@ -12,7 +12,7 @@ Monkey::Monkey(std::string text, const Vector2 &monkeyPos) : monkey_pos(monkeyPo
 
 void Monkey::draw() {
 
-    DrawTexture(monkey, monkey_pos.x - monkey.width/2, monkey_pos.y- monkey.height/2, GREEN);
+    DrawTexture(monkey, monkey_pos.x - monkey.width/2, monkey_pos.y- monkey.height/2, WHITE);
 }
 
 void Monkey::move_right(float d) {

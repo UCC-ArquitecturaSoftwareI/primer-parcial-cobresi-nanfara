@@ -63,7 +63,7 @@ static void UpdateDrawFrame(void) {
     // Comienzo a dibujar
     BeginDrawing();
 
-    ClearBackground(SKYBLUE); // Limpio la pantalla con blanco
+    ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
 
     // Dibujo todos los elementos del juego.
     player->draw();
