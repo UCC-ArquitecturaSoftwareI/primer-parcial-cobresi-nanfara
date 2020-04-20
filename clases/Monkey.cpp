@@ -4,7 +4,7 @@
 #include <string>
 #include "Monkey.h"
 
-Monkey::Monkey(std::string text, const Vector &monkeyPos) : monkey_pos(monkeyPos) {
+Monkey::Monkey(std::string text, const Vector2 &monkeyPos) : monkey_pos(monkeyPos) {
 
     monkey = LoadTexture(text.c_str());
 }
@@ -16,8 +16,8 @@ void Monkey::draw() {
 }
 
 void Monkey::move_right(float d) {
-    monkey_pos += d;
+    monkey_pos.x += d;
 }
 void Monkey::move_left(float d) {
-    monkey_pos -= d;
+    monkey_pos.x -= d;
 }
