@@ -194,7 +194,7 @@ Module['FS_createPath']('/', 'resources', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2349613, "filename": "/resources/shell.html"}, {"start": 2349613, "audio": 0, "end": 2351570, "filename": "/resources/ship.png"}], "remote_package_size": 2351570, "package_uuid": "bcfd75de-c279-4f20-a591-1ed0b1808cc2"});
+ loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2690462, "filename": "/resources/Sprite.png"}, {"start": 2690462, "audio": 0, "end": 2701155, "filename": "/resources/shell.html"}, {"start": 2701155, "audio": 0, "end": 2703112, "filename": "/resources/ship.png"}], "remote_package_size": 2703112, "package_uuid": "e8c72e3b-54cb-4b14-b24a-675b9ce57bf8"});
 
 })();
 
@@ -47212,7 +47212,7 @@ function _main() {
  HEAP32[$music$byval_copy1 + 24 >> 2] = HEAP32[38568];
  HEAP32[$music$byval_copy1 + 28 >> 2] = HEAP32[38569];
  _PlayMusicStream($music$byval_copy1);
- $call = __Znwm(28) | 0;
+ $call = __Znwm(48) | 0;
  HEAP32[$agg$tmp1 >> 2] = 0;
  HEAP32[$agg$tmp1 + 4 >> 2] = 0;
  HEAP32[$agg$tmp1 + 8 >> 2] = 0;
@@ -52161,43 +52161,6 @@ function _stb_vorbis_open_file_section($file, $close_on_free, $error, $alloc, $l
  return $12 | 0;
 }
 
-function __ZN6Monkey4drawEv($this) {
- $this = $this | 0;
- var $0 = f0, $2 = f0, $agg$tmp = 0, $agg$tmp$byval_copy = 0, $agg$tmp10 = 0, $agg$tmp10$byval_copy = 0, $conv3 = 0, $conv9 = 0, sp = 0;
- sp = STACKTOP;
- STACKTOP = STACKTOP + 48 | 0;
- if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(48);
- $agg$tmp10$byval_copy = sp + 44 | 0;
- $agg$tmp$byval_copy = sp + 20 | 0;
- $agg$tmp = sp;
- $agg$tmp10 = sp + 40 | 0;
- HEAP32[$agg$tmp >> 2] = HEAP32[$this >> 2];
- HEAP32[$agg$tmp + 4 >> 2] = HEAP32[$this + 4 >> 2];
- HEAP32[$agg$tmp + 8 >> 2] = HEAP32[$this + 8 >> 2];
- HEAP32[$agg$tmp + 12 >> 2] = HEAP32[$this + 12 >> 2];
- HEAP32[$agg$tmp + 16 >> 2] = HEAP32[$this + 16 >> 2];
- $0 = Math_fround(HEAPF32[$this + 20 >> 2]);
- $conv3 = ~~Math_fround($0 - Math_fround((HEAP32[$this + 4 >> 2] | 0) / 2 | 0 | 0));
- $2 = Math_fround(HEAPF32[$this + 24 >> 2]);
- $conv9 = ~~Math_fround($2 - Math_fround((HEAP32[$this + 8 >> 2] | 0) / 2 | 0 | 0));
- HEAP8[$agg$tmp10 >> 0] = 0;
- HEAP8[$agg$tmp10 + 1 >> 0] = -28;
- HEAP8[$agg$tmp10 + 2 >> 0] = 48;
- HEAP8[$agg$tmp10 + 3 >> 0] = -1;
- HEAP32[$agg$tmp$byval_copy >> 2] = HEAP32[$agg$tmp >> 2];
- HEAP32[$agg$tmp$byval_copy + 4 >> 2] = HEAP32[$agg$tmp + 4 >> 2];
- HEAP32[$agg$tmp$byval_copy + 8 >> 2] = HEAP32[$agg$tmp + 8 >> 2];
- HEAP32[$agg$tmp$byval_copy + 12 >> 2] = HEAP32[$agg$tmp + 12 >> 2];
- HEAP32[$agg$tmp$byval_copy + 16 >> 2] = HEAP32[$agg$tmp + 16 >> 2];
- HEAP8[$agg$tmp10$byval_copy >> 0] = HEAP8[$agg$tmp10 >> 0] | 0;
- HEAP8[$agg$tmp10$byval_copy + 1 >> 0] = HEAP8[$agg$tmp10 + 1 >> 0] | 0;
- HEAP8[$agg$tmp10$byval_copy + 2 >> 0] = HEAP8[$agg$tmp10 + 2 >> 0] | 0;
- HEAP8[$agg$tmp10$byval_copy + 3 >> 0] = HEAP8[$agg$tmp10 + 3 >> 0] | 0;
- _DrawTexture($agg$tmp$byval_copy, $conv3, $conv9, $agg$tmp10$byval_copy);
- STACKTOP = sp;
- return;
-}
-
 function _stbir__get_ring_buffer_scanline($get_scanline, $ring_buffer, $begin_index, $first_scanline, $ring_buffer_num_entries, $ring_buffer_length) {
  $get_scanline = $get_scanline | 0;
  $ring_buffer = $ring_buffer | 0;
@@ -52851,6 +52814,41 @@ function _stbi__mad4sizes_valid($a, $b, $c, $d, $add) {
  $land$ext = $14 & 1;
  STACKTOP = sp;
  return $land$ext | 0;
+}
+
+function __ZN6Monkey4drawEv($this) {
+ $this = $this | 0;
+ var $0 = f0, $2 = f0, $agg$tmp = 0, $agg$tmp$byval_copy = 0, $agg$tmp10 = 0, $conv3 = 0, $conv9 = 0, $monkey = 0, $tmpcast$byval_copy = 0, sp = 0;
+ sp = STACKTOP;
+ STACKTOP = STACKTOP + 48 | 0;
+ if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(48);
+ $tmpcast$byval_copy = sp + 44 | 0;
+ $agg$tmp$byval_copy = sp + 24 | 0;
+ $agg$tmp = sp + 4 | 0;
+ $agg$tmp10 = sp;
+ $monkey = $this + 20 | 0;
+ HEAP32[$agg$tmp >> 2] = HEAP32[$monkey >> 2];
+ HEAP32[$agg$tmp + 4 >> 2] = HEAP32[$monkey + 4 >> 2];
+ HEAP32[$agg$tmp + 8 >> 2] = HEAP32[$monkey + 8 >> 2];
+ HEAP32[$agg$tmp + 12 >> 2] = HEAP32[$monkey + 12 >> 2];
+ HEAP32[$agg$tmp + 16 >> 2] = HEAP32[$monkey + 16 >> 2];
+ $0 = Math_fround(HEAPF32[$this + 40 >> 2]);
+ $conv3 = ~~Math_fround($0 - Math_fround((HEAP32[$this + 24 >> 2] | 0) / 2 | 0 | 0));
+ $2 = Math_fround(HEAPF32[$this + 44 >> 2]);
+ $conv9 = ~~Math_fround($2 - Math_fround((HEAP32[$this + 28 >> 2] | 0) / 2 | 0 | 0));
+ HEAP32[$agg$tmp10 >> 2] = -1;
+ HEAP32[$agg$tmp$byval_copy >> 2] = HEAP32[$agg$tmp >> 2];
+ HEAP32[$agg$tmp$byval_copy + 4 >> 2] = HEAP32[$agg$tmp + 4 >> 2];
+ HEAP32[$agg$tmp$byval_copy + 8 >> 2] = HEAP32[$agg$tmp + 8 >> 2];
+ HEAP32[$agg$tmp$byval_copy + 12 >> 2] = HEAP32[$agg$tmp + 12 >> 2];
+ HEAP32[$agg$tmp$byval_copy + 16 >> 2] = HEAP32[$agg$tmp + 16 >> 2];
+ HEAP8[$tmpcast$byval_copy >> 0] = HEAP8[$agg$tmp10 >> 0] | 0;
+ HEAP8[$tmpcast$byval_copy + 1 >> 0] = HEAP8[$agg$tmp10 + 1 >> 0] | 0;
+ HEAP8[$tmpcast$byval_copy + 2 >> 0] = HEAP8[$agg$tmp10 + 2 >> 0] | 0;
+ HEAP8[$tmpcast$byval_copy + 3 >> 0] = HEAP8[$agg$tmp10 + 3 >> 0] | 0;
+ _DrawTexture($agg$tmp$byval_copy, $conv3, $conv9, $tmpcast$byval_copy);
+ STACKTOP = sp;
+ return;
 }
 
 function _ma_zero_memory_64($dst, $0, $1) {
@@ -59784,6 +59782,32 @@ function _stbi__at_eof($s) {
  return $12 | 0;
 }
 
+function __ZN6MonkeyC2ENSt3__212basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERK7Vector2($this, $text, $monkeyPos) {
+ $this = $this | 0;
+ $text = $text | 0;
+ $monkeyPos = $monkeyPos | 0;
+ var $0 = 0, $5 = 0, $6 = 0, $cond$i$i$i = 0, $monkey2 = 0, $ref$tmp = 0, sp = 0;
+ sp = STACKTOP;
+ STACKTOP = STACKTOP + 32 | 0;
+ if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(32);
+ $ref$tmp = sp;
+ $0 = $monkeyPos;
+ $5 = HEAP32[$0 + 4 >> 2] | 0;
+ $6 = $this + 40 | 0;
+ HEAP32[$6 >> 2] = HEAP32[$0 >> 2];
+ HEAP32[$6 + 4 >> 2] = $5;
+ if ((HEAP8[$text + 11 >> 0] | 0) < 0) $cond$i$i$i = HEAP32[$text >> 2] | 0; else $cond$i$i$i = $text;
+ _LoadTexture($ref$tmp, $cond$i$i$i);
+ $monkey2 = $this + 20 | 0;
+ HEAP32[$monkey2 >> 2] = HEAP32[$ref$tmp >> 2];
+ HEAP32[$monkey2 + 4 >> 2] = HEAP32[$ref$tmp + 4 >> 2];
+ HEAP32[$monkey2 + 8 >> 2] = HEAP32[$ref$tmp + 8 >> 2];
+ HEAP32[$monkey2 + 12 >> 2] = HEAP32[$ref$tmp + 12 >> 2];
+ HEAP32[$monkey2 + 16 >> 2] = HEAP32[$ref$tmp + 16 >> 2];
+ STACKTOP = sp;
+ return;
+}
+
 function _UntrackAudioBuffer($buffer) {
  $buffer = $buffer | 0;
  var $3 = 0, $9 = 0, $buffer$addr = 0, sp = 0, sp_a = 0;
@@ -60282,31 +60306,6 @@ function _fopen($filename, $mode) {
  }
  STACKTOP = sp;
  return $retval$0 | 0;
-}
-
-function __ZN6MonkeyC2ENSt3__212basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERK7Vector2($this, $text, $monkeyPos) {
- $this = $this | 0;
- $text = $text | 0;
- $monkeyPos = $monkeyPos | 0;
- var $0 = 0, $5 = 0, $6 = 0, $cond$i$i$i = 0, $ref$tmp = 0, sp = 0;
- sp = STACKTOP;
- STACKTOP = STACKTOP + 32 | 0;
- if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(32);
- $ref$tmp = sp;
- $0 = $monkeyPos;
- $5 = HEAP32[$0 + 4 >> 2] | 0;
- $6 = $this + 20 | 0;
- HEAP32[$6 >> 2] = HEAP32[$0 >> 2];
- HEAP32[$6 + 4 >> 2] = $5;
- if ((HEAP8[$text + 11 >> 0] | 0) < 0) $cond$i$i$i = HEAP32[$text >> 2] | 0; else $cond$i$i$i = $text;
- _LoadTexture($ref$tmp, $cond$i$i$i);
- HEAP32[$this >> 2] = HEAP32[$ref$tmp >> 2];
- HEAP32[$this + 4 >> 2] = HEAP32[$ref$tmp + 4 >> 2];
- HEAP32[$this + 8 >> 2] = HEAP32[$ref$tmp + 8 >> 2];
- HEAP32[$this + 12 >> 2] = HEAP32[$ref$tmp + 12 >> 2];
- HEAP32[$this + 16 >> 2] = HEAP32[$ref$tmp + 16 >> 2];
- STACKTOP = sp;
- return;
 }
 
 function _ma_mutex_init($pContext, $pMutex) {
@@ -67299,7 +67298,7 @@ function __ZN6Monkey10move_rightEf($this, $d) {
  $this = $this | 0;
  $d = Math_fround($d);
  var $x = 0;
- $x = $this + 20 | 0;
+ $x = $this + 40 | 0;
  HEAPF32[$x >> 2] = Math_fround(Math_fround(HEAPF32[$x >> 2]) + $d);
  return;
 }
@@ -67330,7 +67329,7 @@ function __ZN6Monkey9move_leftEf($this, $d) {
  $this = $this | 0;
  $d = Math_fround($d);
  var $x = 0;
- $x = $this + 20 | 0;
+ $x = $this + 40 | 0;
  HEAPF32[$x >> 2] = Math_fround(Math_fround(HEAPF32[$x >> 2]) - $d);
  return;
 }
