@@ -1,3 +1,4 @@
+/*
 #include <raylib.h>
 
 #include "clases/Nave.h"
@@ -45,11 +46,12 @@ int main() {
     return 0;
 }
 
-
+*/
 /**
  *  Función dedicada a dibujar cada frame. Acá adentro se debe poner la logica necesaria para representar un nuevo frame
  *  del juego.
  */
+ /*
 static void UpdateDrawFrame(void) {
 
     // siempre hay que reproducir la musica que esta actualmente
@@ -74,3 +76,4 @@ static void UpdateDrawFrame(void) {
     // Finalizo el dibujado
     EndDrawing();
 }
+*/
