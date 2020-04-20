@@ -7,8 +7,8 @@
 #if defined(PLATFORM_WEB) // Para crear HTML5
 #include <emscripten/emscripten.h>
 #endif
-const int screenWidth = 800;
-const int screenHeight = 450;
+const int screenWidth = 700;
+const int screenHeight = 900;
 
 // Variables Globales
 Music music;
@@ -37,8 +37,6 @@ int main() {
         UpdateDrawFrame();
     }
 #endif
-
-
     // Descargar todos los resources cargados
 
     UnloadMusicStream(music);   // Descargo la musica de RAM
@@ -59,13 +57,13 @@ static void UpdateDrawFrame(void) {
 
     // Verifico Entradas de eventos.
     if (IsKeyDown(KEY_RIGHT)) player->move_right(2.0f);
-    if (IsKeyDown(KEY_LEFT)) player->move_left(-2.0f);
+    if (IsKeyDown(KEY_LEFT)) player->move_left(2.0f);
 
 
     // Comienzo a dibujar
     BeginDrawing();
 
-    ClearBackground(RAYWHITE); // Limpio la pantalla con blanco
+    ClearBackground(SKYBLUE); // Limpio la pantalla con blanco
 
     // Dibujo todos los elementos del juego.
     player->draw();

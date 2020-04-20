@@ -7,11 +7,16 @@
 #define RAYLIBTEMPLATE_FRAMEMANAGER_H
 
 #include "Monkey.h"
+/*
+// Variables Globales
+Music music;
+Monkey *player;
 
-class FrameManager {
+class Frame {
 public:
-    //static void UpdateDrawFrame(Music music, Monkey *player);
+
+    static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
 };
 
-
+*/
 #endif //RAYLIBTEMPLATE_FRAMEMANAGER_H

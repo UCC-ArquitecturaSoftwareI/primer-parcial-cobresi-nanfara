@@ -10,13 +10,14 @@
  *  del juego.
  */
 /*
-void FrameManager::UpdateDrawFrame(Music music, Monkey *player) {
+void Frame::UpdateDrawFrame(void) {
     // siempre hay que reproducir la musica que esta actualmente
     UpdateMusicStream(music);
 
     // Verifico Entradas de eventos.
     if (IsKeyDown(KEY_RIGHT)) player->move_right(2.0f);
-    if (IsKeyDown(KEY_LEFT)) player->move_left(-2.0f);
+    if (IsKeyDown(KEY_LEFT)) player->move_left(2.0f);
+
 
     // Comienzo a dibujar
     BeginDrawing();
@@ -29,5 +30,5 @@ void FrameManager::UpdateDrawFrame(Music music, Monkey *player) {
 
     // Finalizo el dibujado
     EndDrawing();
-
-}*/
+}
+*/
