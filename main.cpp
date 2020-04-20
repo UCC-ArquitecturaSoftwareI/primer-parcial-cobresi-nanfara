@@ -7,7 +7,7 @@
 #if defined(PLATFORM_WEB) // Para crear HTML5
 #include <emscripten/emscripten.h>
 #endif
-const int screenWidth = 700;
+const int screenWidth = 1200;
 const int screenHeight = 900;
 
 // Variables Globales
