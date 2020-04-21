@@ -7,20 +7,14 @@
 
 Tree::Tree() {
     Vector2 position;
-    position.x = 150;
+    position.x = 300;
     position.y = -150;
     while (position.y < 1050) {
-        for (int i = -1; i <= 1; i++) {
-            DrawTree(i, position);
-            position.x += 300;
-        }
-        position.x = 150;
+        DrawTree(-1, position);
+        position.x += 300;
+        DrawTree(1, position);
+        position.x = 300;
         position.y += 300;
-        /*if (position.y == 450)
-            position.y += 300;*/
+        }
     }
-    /*position.x = 450;
-    position.y = 450;
-    DrawTree(0, position);*/
 
-}

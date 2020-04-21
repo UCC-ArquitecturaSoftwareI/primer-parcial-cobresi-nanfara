@@ -113,7 +113,7 @@ Vector2 Cartoonist::DrawMonkey(int movimiento, int lado) {
     position.y = 450;
     if (lado == 1)
     {
-        position.x = 750;
+        position.x = 600;
         rect.y = 300;
         if (movimiento)
         {
@@ -125,7 +125,7 @@ Vector2 Cartoonist::DrawMonkey(int movimiento, int lado) {
     }
     if (lado == -1)
     {
-        position.x = 150;
+        position.x = 300;
         rect.y = 600;
         if (movimiento)
         {
