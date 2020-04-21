@@ -1,6 +1,8 @@
 ![Build and Deploy][badge]
 # Tankey
 
+####Integrantes: **Nara Abril Nanfara, Cobresi Ticiana**
+
 Tankey es un juego sobre un gorila que debe juntar la mayor cantidad de bananas posibles. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él.
 Moviéndose de un lado al otro...
 ¿Podrá lograrlo?
