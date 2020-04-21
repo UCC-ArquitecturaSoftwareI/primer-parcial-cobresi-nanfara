@@ -67,8 +67,8 @@ static void UpdateDrawFrame(void) {
         ClearBackground(WHITE); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();
-        if (IsKeyDown(KEY_RIGHT)) player->move_right();
-        if (IsKeyDown(KEY_LEFT)) player->move_left();
+        if (IsKeyReleased(KEY_RIGHT)) player->move_right();
+        if (IsKeyReleased(KEY_LEFT)) player->move_left();
 
     // Dibujo todos los elementos del juego.
     DrawText("Tankey", 20, 20, 40, BLACK);

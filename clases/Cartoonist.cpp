@@ -48,3 +48,22 @@ void Cartoonist::DrawTree(int lado, Vector2 pos) {
         }
     DrawTextureRec(sprite, rect, pos, WHITE);
 }
+
+Vector2 Cartoonist::DrawRama(int color, Vector2 pos) {
+    rect.y = 900;
+    if (pos.x == 189)
+    {
+        if (color == 1)
+            rect.x = 900;
+        else
+            rect.x = 300;
+    }
+    else
+    {
+        if (color == 1)
+            rect.x = 600;
+        else
+            rect.x = 0;
+    }
+    DrawTextureRec(sprite, rect, pos, WHITE);
+}

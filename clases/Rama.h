@@ -3,14 +3,21 @@
 //
 
 #ifndef RAYLIBTEMPLATE_RAMA_H
+
+#include "raylib.h"
+#include "Cartoonist.h"
 #define RAYLIBTEMPLATE_RAMA_H
 
-/*
-class Rama {
+class Rama: public Cartoonist {
+private:
+    Vector2 rama_position;
+    int color;
 public:
-    Generate
-    Draw();
+    int lado;
+    Rama(int lado1, int color1);
+    void Draw();
+    void Move();
 };
-*/
+
 
 #endif //RAYLIBTEMPLATE_RAMA_H
