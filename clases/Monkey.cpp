@@ -13,11 +13,39 @@ Monkey::Monkey() {
 */
 
 
-/*
-void Monkey::move_right(float d) {
-    monkey_pos.x += d;
+void Monkey::move_right() {
+    if (monkey_position.x == 600)
+    {
+        DrawMonkey(1, 1);
+    }
+    else
+        newlado();
+    //Bajar arbol
 }
-void Monkey::move_left(float d) {
-    monkey_pos.x -= d;
+
+void Monkey::move_left() {
+    if (monkey_position.x == 300)
+    {
+        DrawMonkey(1, -1);
+    }
+    else
+        newlado();
+    //Bajar arbol
 }
-*/
+
+void Monkey::newlado()
+{
+
+    if (monkey_position.x == 600)
+    {
+        DrawTree(1, monkey_position);
+        monkey_position.x = 300;
+        DrawMonkey(0,1);
+    }
+    else
+    {
+        DrawTree(-1, monkey_position);
+        monkey_position.x = 600;
+        DrawMonkey(0,-1);
+    }
+}

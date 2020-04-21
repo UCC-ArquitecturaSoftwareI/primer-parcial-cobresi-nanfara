@@ -24,7 +24,7 @@ public:
 
     Vector2 DrawMonkey(int movimiento, int lado);
     void DrawBanana(char lado);
-    void DrawRama(int nro_rama, char lado);
+    void DrawRama(int nro_rama, int lado);
     void DrawTree(int lado, Vector2 pos);
 
 

@@ -28,10 +28,9 @@ public:
         {
             monkey_position = DrawMonkey(0, 1);
         }
-
-        void draw();
-        void move_right(float d);
-        void move_left(float d);
+        void move_right();
+        void move_left();
+        void newlado();
     };
 
 

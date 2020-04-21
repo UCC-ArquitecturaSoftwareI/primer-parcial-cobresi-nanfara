@@ -20,7 +20,7 @@ static void UpdateDrawFrame(void);          // Función dedicada a operar cada f
 
 int main() {
     // Inicialización de la ventana
-    InitWindow(screenWidth, screenHeight, "raylib template - advance game");
+    InitWindow(screenWidth, screenHeight, "Tankey game");
     InitAudioDevice();              // Initialize audio device
 
     /// Ejemplo de utilización de audio.
@@ -29,7 +29,6 @@ int main() {
     PlayMusicStream(music);
     tree = new Tree;
     player = new Monkey;
-
 
 
 #if defined(PLATFORM_WEB)  // Para versión Web.
@@ -60,8 +59,8 @@ static void UpdateDrawFrame(void) {
     UpdateMusicStream(music);
 
     // Verifico Entradas de eventos.
-//    if (IsKeyDown(KEY_RIGHT)) player->move_right(2.0f);
-//  if (IsKeyDown(KEY_LEFT)) player->move_left(2.0f);
+    if (IsKeyDown(KEY_RIGHT)) player->move_right();
+    if (IsKeyDown(KEY_LEFT)) player->move_left();
 
 
     // Comienzo a dibujar
@@ -71,7 +70,7 @@ static void UpdateDrawFrame(void) {
 
     // Dibujo todos los elementos del juego.
 //    player->draw();
-    DrawText("Inicio", 20, 20, 40, LIGHTGRAY);
+    DrawText("Tankey", 20, 20, 40, BLACK);
 
     // Finalizo el dibujado
     EndDrawing();
