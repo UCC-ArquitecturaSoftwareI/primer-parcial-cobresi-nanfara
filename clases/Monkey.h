@@ -1,10 +1,11 @@
 //
 // Created by Abril on 13/4/2020.
 //
+
+#ifndef RAYLIBTEMPLATE_MONKEY_H
 #include <raylib.h>
 #include <string>
 #include "Cartoonist.h"
-#ifndef RAYLIBTEMPLATE_MONKEY_H
 #define RAYLIBTEMPLATE_MONKEY_H
 
 /* if (la flecha se presiona)
@@ -20,10 +21,13 @@
  *      y bajar un cuadro el arbol}
  */
 
-class Monkey: public Cartoonist {
+class Monkey: public Cartoonist{
 public:
         Vector2 monkey_position;
-        Monkey();
+        Monkey():Cartoonist()
+        {
+            monkey_position = DrawMonkey(0, 'l');
+        }
 
         void draw();
         void move_right(float d);

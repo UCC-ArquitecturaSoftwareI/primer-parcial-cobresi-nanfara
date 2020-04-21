@@ -25,7 +25,7 @@ int main() {
     music = LoadMusicStream("resources/Cyberpunk Moonlight Sonata.mp3");
 
     PlayMusicStream(music);
-    player = new Monkey("resources/ship.png", Vector2{screenWidth / 2, screenHeight / 2});
+    player = new Monkey;
 
 
 #if defined(PLATFORM_WEB)  // Para versión Web.
@@ -56,17 +56,17 @@ static void UpdateDrawFrame(void) {
     UpdateMusicStream(music);
 
     // Verifico Entradas de eventos.
-    if (IsKeyDown(KEY_RIGHT)) player->move_right(2.0f);
-    if (IsKeyDown(KEY_LEFT)) player->move_left(2.0f);
+//    if (IsKeyDown(KEY_RIGHT)) player->move_right(2.0f);
+//  if (IsKeyDown(KEY_LEFT)) player->move_left(2.0f);
 
 
     // Comienzo a dibujar
     BeginDrawing();
 
-    ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
+    //ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
 
     // Dibujo todos los elementos del juego.
-    player->draw();
+//    player->draw();
     DrawText("Inicio", 20, 20, 40, LIGHTGRAY);
 
     // Finalizo el dibujado

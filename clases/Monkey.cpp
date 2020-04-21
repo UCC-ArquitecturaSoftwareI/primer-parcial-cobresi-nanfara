@@ -5,13 +5,12 @@
 #include "Monkey.h"
 #include "Cartoonist.h"
 #include  "raylib.h"
-
+/*
 Monkey::Monkey() {
-    monkey_position.y = 450;
-    monkey_position.x = 750;
-    DrawMonkey(0, 'l', this);
+    char left;
+    monkey_position = DrawMonkey(0,'l');
 }
-
+*/
 
 
 /*

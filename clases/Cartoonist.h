@@ -6,7 +6,6 @@
 #ifndef RAYLIBTEMPLATE_CARTOONIST_H
 #define RAYLIBTEMPLATE_CARTOONIST_H
 
-#include "Monkey.h"
 
 
 class Cartoonist
@@ -21,7 +20,7 @@ public:
         rect_monkey = {0,0, 300, 300};
     }
 
-    void DrawMonkey(int movimiento, char lado, Monkey Tankey);
+    Vector2 DrawMonkey(int movimiento, char lado);
     void DrawBanana(char lado);
     void DrawRama(int nro_rama, char lado);
     void DrawTree(int lado);

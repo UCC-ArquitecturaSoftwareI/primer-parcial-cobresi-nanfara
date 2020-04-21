@@ -109,10 +109,11 @@ Cartoonist::Cartoonist()
 
 }
 */
-void Cartoonist::DrawMonkey(int movimiento, char lado, Monkey Tankey) {
+Vector2 Cartoonist::DrawMonkey(int movimiento, char lado) {
+    position.y = 450;
     if (lado == 'r')
     {
-        Tankey.monkey_position.x = 750;
+        position.x = 750;
         rect_monkey.y = 300;
         if (movimiento)
         {
@@ -124,7 +125,7 @@ void Cartoonist::DrawMonkey(int movimiento, char lado, Monkey Tankey) {
     }
     if (lado == 'l')
     {
-        Tankey.monkey_position.x = 150;
+        position.x = 150;
         rect_monkey.y = 600;
         if (movimiento)
         {
@@ -134,5 +135,6 @@ void Cartoonist::DrawMonkey(int movimiento, char lado, Monkey Tankey) {
                 rect_monkey.x = rect_monkey.x+300;
         }
     }
-    DrawTextureRec(sprite, rect_monkey, Tankey.monkey_position, WHITE);
+    DrawTextureRec(sprite, rect_monkey, position, WHITE);
+    return position;
 }
