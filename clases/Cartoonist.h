@@ -17,6 +17,7 @@ private:
     Rectangle rect;
     Vector2 position;
 public:
+    //virtual void Draw() = 0;
     Cartoonist() {
         sprite = LoadTexture("resources/Sprite.png");
         rect = {0,0, 300, 300};
