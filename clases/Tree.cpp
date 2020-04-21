@@ -5,7 +5,7 @@
 #include "Tree.h"
 #include <raylib.h>
 
-Tree::Tree() {
+void Tree::Draw() {
     Vector2 position;
     position.x = 300;
     position.y = -150;
@@ -15,6 +15,6 @@ Tree::Tree() {
         DrawTree(1, position);
         position.x = 300;
         position.y += 300;
-        }
     }
+}
 

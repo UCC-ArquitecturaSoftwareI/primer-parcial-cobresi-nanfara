@@ -14,7 +14,7 @@ Monkey::Monkey() {
 
 
 void Monkey::move_right() {
-    if (monkey_position.x == 600)
+    if (lado == 1)
     {
         DrawMonkey(1, 1);
     }
@@ -24,7 +24,7 @@ void Monkey::move_right() {
 }
 
 void Monkey::move_left() {
-    if (monkey_position.x == 300)
+    if (lado == -1)
     {
         DrawMonkey(1, -1);
     }
@@ -40,12 +40,18 @@ void Monkey::newlado()
     {
         DrawTree(1, monkey_position);
         monkey_position.x = 300;
+        lado = -1;
         DrawMonkey(0,1);
     }
     else
     {
         DrawTree(-1, monkey_position);
         monkey_position.x = 600;
+        lado = 1;
         DrawMonkey(0,-1);
     }
+}
+
+void Monkey::Draw() {
+    DrawMonkey(0, lado);
 }

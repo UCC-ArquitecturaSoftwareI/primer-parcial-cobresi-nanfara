@@ -29,7 +29,9 @@ int main() {
     PlayMusicStream(music);
     tree = new Tree;
     player = new Monkey;
-
+    int currentFrame = 0;
+    int framesCounter = 0;
+    int framesSpeed = 8;
 
 #if defined(PLATFORM_WEB)  // Para versión Web.
     emscripten_set_main_loop(UpdateDrawFrame, 0, 1);
@@ -55,18 +57,21 @@ int main() {
  */
 static void UpdateDrawFrame(void) {
 
+
     // siempre hay que reproducir la musica que esta actualmente
     UpdateMusicStream(music);
-
     // Verifico Entradas de eventos.
-    if (IsKeyDown(KEY_RIGHT)) player->move_right();
-    if (IsKeyDown(KEY_LEFT)) player->move_left();
+    //if (IsKeyDown(KEY_RIGHT)) player->move_right();
+    //if (IsKeyDown(KEY_LEFT)) player->move_left();
 
 
     // Comienzo a dibujar
     BeginDrawing();
-
-    //ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
+        ClearBackground(WHITE); // Limpio la pantalla con "celeste cielo"
+        tree->Draw();
+        player->Draw();
+        if (IsKeyDown(KEY_RIGHT)) player->move_right();
+        if (IsKeyDown(KEY_LEFT)) player->move_left();
 
     // Dibujo todos los elementos del juego.
 //    player->draw();

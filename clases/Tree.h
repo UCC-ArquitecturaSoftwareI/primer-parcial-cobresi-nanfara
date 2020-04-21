@@ -10,8 +10,7 @@
 
 class Tree: public Cartoonist {
 public:
-    Tree();
-
+    void Draw();
 };
 
 
