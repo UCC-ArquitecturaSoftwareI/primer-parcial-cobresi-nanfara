@@ -38,14 +38,14 @@ void Monkey::newlado()
 
     if (monkey_position.x == 600)
     {
-        DrawTree(1, monkey_position);
+        //DrawTree(1, monkey_position);
         monkey_position.x = 300;
         lado = -1;
         DrawMonkey(0,1);
     }
     else
     {
-        DrawTree(-1, monkey_position);
+        //DrawTree(-1, monkey_position);
         monkey_position.x = 600;
         lado = 1;
         DrawMonkey(0,-1);

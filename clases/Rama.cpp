@@ -21,5 +21,4 @@ void Rama::Draw() {
 }
 
 void Rama::Move() {
-
 }

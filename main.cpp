@@ -4,6 +4,7 @@
 #include "clases/Monkey.h"
 #include "clases/Tree.h"
 #include "clases/FrameManager.h"
+#include "clases/Rama.h"
 
 #if defined(PLATFORM_WEB) // Para crear HTML5
 #include <emscripten/emscripten.h>
@@ -29,7 +30,6 @@ int main() {
     PlayMusicStream(music);
     tree = new Tree;
     player = new Monkey;
-
 #if defined(PLATFORM_WEB)  // Para versión Web.
     emscripten_set_main_loop(UpdateDrawFrame, 0, 1);
 #else
@@ -67,7 +67,9 @@ static void UpdateDrawFrame(void) {
         ClearBackground(WHITE); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();
-        if (IsKeyReleased(KEY_RIGHT)) player->move_right();
+        if (IsKeyReleased(KEY_RIGHT)) {
+            player->move_right();
+        }
         if (IsKeyReleased(KEY_LEFT)) player->move_left();
 
     // Dibujo todos los elementos del juego.
