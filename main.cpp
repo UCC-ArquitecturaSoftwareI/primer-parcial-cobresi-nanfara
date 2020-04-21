@@ -29,9 +29,6 @@ int main() {
     PlayMusicStream(music);
     tree = new Tree;
     player = new Monkey;
-    int currentFrame = 0;
-    int framesCounter = 0;
-    int framesSpeed = 8;
 
 #if defined(PLATFORM_WEB)  // Para versión Web.
     emscripten_set_main_loop(UpdateDrawFrame, 0, 1);
@@ -74,7 +71,6 @@ static void UpdateDrawFrame(void) {
         if (IsKeyDown(KEY_LEFT)) player->move_left();
 
     // Dibujo todos los elementos del juego.
-//    player->draw();
     DrawText("Tankey", 20, 20, 40, BLACK);
 
     // Finalizo el dibujado
