@@ -3,6 +3,7 @@
 //
 #include <raylib.h>
 #include <string>
+#include "Cartoonist.h"
 #ifndef RAYLIBTEMPLATE_MONKEY_H
 #define RAYLIBTEMPLATE_MONKEY_H
 
@@ -19,14 +20,10 @@
  *      y bajar un cuadro el arbol}
  */
 
-class Monkey {
-        Vector2 monkey_posicion[2];
-        bool monkey_left;
-        bool monkey_right;
-        Texture2D monkey;
-        Vector2 monkey_pos;
-    public:
-        Monkey(std::string text, const Vector2 &monkeyPos);
+class Monkey: public Cartoonist {
+public:
+        Vector2 monkey_position;
+        Monkey();
 
         void draw();
         void move_right(float d);
