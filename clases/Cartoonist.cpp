@@ -109,32 +109,54 @@ Cartoonist::Cartoonist()
 
 }
 */
-Vector2 Cartoonist::DrawMonkey(int movimiento, char lado) {
+Vector2 Cartoonist::DrawMonkey(int movimiento, int lado) {
     position.y = 450;
-    if (lado == 'r')
+    if (lado == 1)
     {
         position.x = 750;
-        rect_monkey.y = 300;
+        rect.y = 300;
         if (movimiento)
         {
-            if (rect_monkey.x == 900)
-                rect_monkey.x = 0;
+            if (rect.x == 900)
+                rect.x = 0;
             else
-                rect_monkey.x = rect_monkey.x+300;
+                rect.x = rect.x+300;
         }
     }
-    if (lado == 'l')
+    if (lado == -1)
     {
         position.x = 150;
-        rect_monkey.y = 600;
+        rect.y = 600;
         if (movimiento)
         {
-            if (rect_monkey.x == 900)
-                rect_monkey.x = 0;
+            if (rect.x == 900)
+                rect.x = 0;
             else
-                rect_monkey.x = rect_monkey.x+300;
+                rect.x = rect.x+300;
         }
     }
-    DrawTextureRec(sprite, rect_monkey, position, WHITE);
+    DrawTextureRec(sprite, rect, position, WHITE);
     return position;
+}
+
+void Cartoonist::DrawTree(int lado, Vector2 pos) {
+    if(lado == 0)
+    {
+        rect.y = 900;
+        rect.x = 1200;
+    }
+    else
+    {
+        if(lado == -1)
+        {
+            rect.y = 1200;
+            rect.x = 900;
+        }
+        if(lado == 1)
+        {
+            rect.y = 1200;
+            rect.x = 600;
+        }
+    }
+    DrawTextureRec(sprite, rect, pos, WHITE);
 }

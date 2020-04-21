@@ -4,6 +4,8 @@
 //
 
 #ifndef RAYLIBTEMPLATE_CARTOONIST_H
+
+#include <raylib.h>
 #define RAYLIBTEMPLATE_CARTOONIST_H
 
 
@@ -12,18 +14,18 @@ class Cartoonist
 {
 private:
     Texture2D sprite;
-    Rectangle rect_monkey;
+    Rectangle rect;
     Vector2 position;
 public:
     Cartoonist() {
         sprite = LoadTexture("resources/Sprite.png");
-        rect_monkey = {0,0, 300, 300};
+        rect = {0,0, 300, 300};
     }
 
-    Vector2 DrawMonkey(int movimiento, char lado);
+    Vector2 DrawMonkey(int movimiento, int lado);
     void DrawBanana(char lado);
     void DrawRama(int nro_rama, char lado);
-    void DrawTree(int lado);
+    void DrawTree(int lado, Vector2 pos);
 
 
     /*

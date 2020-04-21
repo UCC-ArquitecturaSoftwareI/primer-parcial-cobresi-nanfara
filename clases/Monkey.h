@@ -26,7 +26,7 @@ public:
         Vector2 monkey_position;
         Monkey():Cartoonist()
         {
-            monkey_position = DrawMonkey(0, 'l');
+            monkey_position = DrawMonkey(0, 1);
         }
 
         void draw();

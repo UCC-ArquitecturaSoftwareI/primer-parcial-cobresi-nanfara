@@ -2,6 +2,7 @@
 
 #include "clases/Nave.h"
 #include "clases/Monkey.h"
+#include "clases/Tree.h"
 #include "clases/FrameManager.h"
 
 #if defined(PLATFORM_WEB) // Para crear HTML5
@@ -13,6 +14,7 @@ const int screenHeight = 900;
 // Variables Globales
 Music music;
 Monkey *player;
+Tree *tree;
 
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
 
@@ -25,7 +27,9 @@ int main() {
     music = LoadMusicStream("resources/Cyberpunk Moonlight Sonata.mp3");
 
     PlayMusicStream(music);
+    tree = new Tree;
     player = new Monkey;
+
 
 
 #if defined(PLATFORM_WEB)  // Para versión Web.
