@@ -4,6 +4,7 @@
 #include <raylib.h>
 #include "Cartoonist.h"
 #include "Monkey.h"
+#include "Rama.h"
 
 Vector2 Cartoonist::DrawMonkey(int movimiento, int lado) {
     position.y = 450;
@@ -50,6 +51,7 @@ void Cartoonist::DrawTree(int lado, Vector2 pos) {
 }
 
 Vector2 Cartoonist::DrawRama(int color, Vector2 pos) {
+
     rect.y = 900;
     if (pos.x == 189)
     {
@@ -65,5 +67,11 @@ Vector2 Cartoonist::DrawRama(int color, Vector2 pos) {
         else
             rect.x = 0;
     }
-    DrawTextureRec(sprite, rect, pos, WHITE);
+
+     DrawTextureRec(sprite, rect, pos, WHITE);
+    return position;
 }
+
+
+
+

@@ -34,6 +34,7 @@ public:
         void move_right();
         void move_left();
         void newlado();
+        //bool Lado();
     };
 
 

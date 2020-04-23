@@ -16,6 +16,7 @@ const int screenHeight = 900;
 Music music;
 Monkey *player;
 Tree *tree;
+Rama *rama;
 
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
 
@@ -27,9 +28,11 @@ int main() {
     /// Ejemplo de utilización de audio.
     music = LoadMusicStream("resources/Cyberpunk Moonlight Sonata.mp3");
 
-    PlayMusicStream(music);
+    //PlayMusicStream(music);
     tree = new Tree;
     player = new Monkey;
+    rama= new Rama;
+
 #if defined(PLATFORM_WEB)  // Para versión Web.
     emscripten_set_main_loop(UpdateDrawFrame, 0, 1);
 #else
@@ -67,6 +70,7 @@ static void UpdateDrawFrame(void) {
         ClearBackground(WHITE); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();
+        rama->Draw();
         if (IsKeyReleased(KEY_RIGHT)) {
             player->move_right();
         }
