@@ -37,20 +37,21 @@ void Monkey::newlado()
 
     if (monkey_position.x == 600)
     {
-        //DrawTree(1, monkey_position);
-        monkey_position.x = 300;
         lado = -1;
-        DrawMonkey(0,1);
+        monkey_position = DrawMonkey(0,lado);
     }
     else
     {
-        //DrawTree(-1, monkey_position);
-        monkey_position.x = 600;
         lado = 1;
-        DrawMonkey(0,-1);
+        monkey_position = DrawMonkey(0,lado);
     }
 }
 
 void Monkey::Draw() {
     DrawMonkey(0, lado);
+}
+
+Rectangle Monkey::getRectangle() {
+    Rectangle rect_monkey = {monkey_position.x, monkey_position.y, 300, 300};
+    return rect_monkey;
 }

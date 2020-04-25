@@ -17,6 +17,7 @@ Music music;
 Monkey *player;
 Tree *tree;
 Rama *rama;
+bool collision;
 
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
 
@@ -32,6 +33,7 @@ int main() {
     tree = new Tree;
     player = new Monkey;
     rama = new Rama;
+    collision = false;
 
 
 
@@ -40,7 +42,7 @@ int main() {
 #else
     SetTargetFPS(60);   // Set our game to run at 60 frames-per-second
     // Main loop
-    while (!WindowShouldClose()) {
+    while (!WindowShouldClose() && !collision) {
         UpdateDrawFrame();
     }
 #endif
@@ -69,19 +71,26 @@ static void UpdateDrawFrame(void) {
 
     // Comienzo a dibujar
     BeginDrawing();
-        ClearBackground(WHITE); // Limpio la pantalla con "celeste cielo"
+        ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();
         rama->Draw();
 
-        if (IsKeyReleased(KEY_RIGHT)) {
+        if (IsKeyReleased(KEY_RIGHT))
+        {
             player->move_right();
+            //Hay que poner con cual rama comparar
+            collision = CheckCollisionRecs(rama->getRectangle(), player->getRectangle());
         }
-        if (IsKeyReleased(KEY_LEFT)) player->move_left();
+        if (IsKeyReleased(KEY_LEFT))
+        {
+            player->move_left();
+            //Hay que poner con cual rama comparar
+            collision = CheckCollisionRecs(rama->getRectangle(), player->getRectangle());
+        }
 
         //if( IsKeyPressed(KEY_RIGHT )) {rama->Move();}
 //        if( IsKeyPressed(KEY_LEFT )) rama->Move();
-
 
     // Dibujo todos los elementos del juego.
     DrawText("Tankey", 20, 20, 40, BLACK);

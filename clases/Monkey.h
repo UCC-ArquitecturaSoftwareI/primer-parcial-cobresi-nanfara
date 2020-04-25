@@ -28,13 +28,14 @@ public:
 
         Monkey():Cartoonist()
         {
-            monkey_position = DrawMonkey(0, 1);
             lado = 1;
+            monkey_position = DrawMonkey(0, lado);
         }
         void Draw();
         void move_right();
         void move_left();
         void newlado();
+        Rectangle getRectangle();
     };
 
 

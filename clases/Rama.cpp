@@ -37,5 +37,10 @@ void Rama::Move() {
         }
 }
 
+Rectangle Rama::getRectangle() {
+    Rectangle rec_rama = {rama_position.x, rama_position.y, 300, 300};
+    return rec_rama;
+}
+
 
 

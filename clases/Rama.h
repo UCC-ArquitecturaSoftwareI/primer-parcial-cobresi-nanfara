@@ -26,6 +26,7 @@ public:
     //Rama();    //int lado1, int color1
     void Draw();
     void Move();
+    Rectangle getRectangle();
 
 
 
