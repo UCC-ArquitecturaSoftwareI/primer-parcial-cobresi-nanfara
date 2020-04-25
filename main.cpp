@@ -28,10 +28,12 @@ int main() {
     /// Ejemplo de utilización de audio.
     music = LoadMusicStream("resources/Cyberpunk Moonlight Sonata.mp3");
 
-    //PlayMusicStream(music);
+    PlayMusicStream(music);
     tree = new Tree;
     player = new Monkey;
-    rama= new Rama;
+    rama = new Rama;
+
+
 
 #if defined(PLATFORM_WEB)  // Para versión Web.
     emscripten_set_main_loop(UpdateDrawFrame, 0, 1);
@@ -71,10 +73,15 @@ static void UpdateDrawFrame(void) {
         tree->Draw();
         player->Draw();
         rama->Draw();
+
         if (IsKeyReleased(KEY_RIGHT)) {
             player->move_right();
         }
         if (IsKeyReleased(KEY_LEFT)) player->move_left();
+
+        //if( IsKeyPressed(KEY_RIGHT )) {rama->Move();}
+//        if( IsKeyPressed(KEY_LEFT )) rama->Move();
+
 
     // Dibujo todos los elementos del juego.
     DrawText("Tankey", 20, 20, 40, BLACK);

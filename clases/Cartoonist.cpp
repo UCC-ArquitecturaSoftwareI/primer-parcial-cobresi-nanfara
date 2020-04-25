@@ -36,6 +36,39 @@ Vector2 Cartoonist::DrawMonkey(int movimiento, int lado) {
     return position;
 }
 
+Vector2 Cartoonist::DrawRama(int key) {
+
+    rect.y = 900;  //siempre en y=900 las ramas
+
+    if (key == 1) {
+
+        position.x = 190;
+        position.y = -150;
+        rect.x = 900;
+
+        DrawTextureRec(sprite, rect, position, WHITE);
+
+        position.x = 710;
+        position.y += 300;   //150 en y
+        rect.x = 0;
+
+        DrawTextureRec(sprite, rect, position, WHITE);
+
+        position.x = 190;
+        position.y += 300;    //450 en y
+        rect.x = 300;
+
+        DrawTextureRec(sprite, rect, position, WHITE);
+
+        position.x = 710;
+        position.y += 300;  //750 en y
+        rect.x = 600;
+
+        DrawTextureRec(sprite, rect, position, WHITE);
+    }
+    return position;
+}
+
 void Cartoonist::DrawTree(int lado, Vector2 pos) {
         if(lado == -1)
         {
@@ -50,28 +83,24 @@ void Cartoonist::DrawTree(int lado, Vector2 pos) {
     DrawTextureRec(sprite, rect, pos, WHITE);
 }
 
-Vector2 Cartoonist::DrawRama(int color, Vector2 pos) {
-
-    rect.y = 900;
-    if (pos.x == 189)
-    {
-        if (color == 1)
-            rect.x = 900;
-        else
-            rect.x = 300;
-    }
-    else
-    {
-        if (color == 1)
-            rect.x = 600;
-        else
-            rect.x = 0;
-    }
-
-     DrawTextureRec(sprite, rect, pos, WHITE);
-    return position;
-}
-
-
-
-
+//Vector2 Cartoonist::DrawRama(int color, Vector2 pos) {
+//
+//    rect.y = 900;
+//    if (pos.x == 189)
+//    {
+//        if (color == 1)
+//            rect.x = 900;
+//        else
+//            rect.x = 300;
+//    }
+//    else
+//    {
+//        if (color == 1)
+//            rect.x = 600;
+//        else
+//            rect.x = 0;
+//    }
+//
+//     DrawTextureRec(sprite, rect, pos, WHITE);
+//    return position;
+//}

@@ -54,10 +54,3 @@ void Monkey::newlado()
 void Monkey::Draw() {
     DrawMonkey(0, lado);
 }
-//
-//bool Monkey::Lado(){
-//    if(lado==1)
-//        return true;
-//    else
-//        return false;
-//}

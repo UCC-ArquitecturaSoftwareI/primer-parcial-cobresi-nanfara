@@ -14,26 +14,20 @@ private:
 public:
 
     Vector2 rama_position;
+    int key;
     int color;
-    int lado;
-    Rama(int lado1, int color1);
-    //Rama( const Rama &R);
-    void Draw();
-   //void Move();
 
     Rama():Cartoonist()
     {
-        rama_position = DrawRama(1,rama_position);
+        rama_position = DrawRama(1);
+        key = 1;
 
     }
+    //Rama();    //int lado1, int color1
+    void Draw();
+    void Move();
 
-    struct Ramita
-    {
-        Vector2 speedr ={5,5};
-        bool active;
-        Vector2 rama_position;
-        int color;
-    };
+
 
 };
 

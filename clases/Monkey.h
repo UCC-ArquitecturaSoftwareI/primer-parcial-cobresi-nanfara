@@ -25,6 +25,7 @@ class Monkey: public Cartoonist{
 public:
         Vector2 monkey_position;
         int lado;
+
         Monkey():Cartoonist()
         {
             monkey_position = DrawMonkey(0, 1);
@@ -34,7 +35,6 @@ public:
         void move_right();
         void move_left();
         void newlado();
-        //bool Lado();
     };
 
 
