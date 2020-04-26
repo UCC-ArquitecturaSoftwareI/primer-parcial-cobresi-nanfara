@@ -191,7 +191,7 @@ Module['FS_createPath']('/', 'resources', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2690605, "filename": "/resources/Sprite.png"}, {"start": 2690605, "audio": 0, "end": 2701298, "filename": "/resources/shell.html"}, {"start": 2701298, "audio": 0, "end": 2703255, "filename": "/resources/ship.png"}], "remote_package_size": 2703255, "package_uuid": "3f8691ba-2f7d-4d59-b9ff-34c5a3d01f7a"});
+ loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2690605, "filename": "/resources/Sprite.png"}, {"start": 2690605, "audio": 0, "end": 2701298, "filename": "/resources/shell.html"}, {"start": 2701298, "audio": 0, "end": 2703255, "filename": "/resources/ship.png"}], "remote_package_size": 2703255, "package_uuid": "db4c86bb-0fd3-4907-9933-d84ea97c9f64"});
 
 })();
 
@@ -58995,6 +58995,48 @@ function _memcompare($buf1, $buf2, $size) {
  return 0;
 }
 
+function __ZN4Rama4MoveEv($this) {
+ $this = $this | 0;
+ var $0 = 0, $10 = 0, $3 = 0, $4 = 0, $9 = 0, $cmp4 = 0, $color = 0, $lado = 0, $lado18$pre$phiZ2D = 0, $rama_sector = 0, $ref$tmp = 0, sp = 0;
+ sp = STACKTOP;
+ STACKTOP = STACKTOP + 16 | 0;
+ if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(16);
+ $ref$tmp = sp;
+ _srand(_time(0) | 0);
+ $rama_sector = $this + 44 | 0;
+ $0 = HEAP32[$rama_sector >> 2] | 0;
+ do if (($0 | 0) == 4) {
+  HEAP32[$rama_sector >> 2] = 1;
+  $cmp4 = ((_rand() | 0) % 10 | 0 | 0) < 5;
+  $lado = $this + 48 | 0;
+  HEAP32[$lado >> 2] = $cmp4 ? -1 : 1;
+  $color = $this + 60 | 0;
+  if (((_rand() | 0) % 10 | 0 | 0) < 5) {
+   HEAP32[$color >> 2] = 0;
+   $3 = 0;
+   $lado18$pre$phiZ2D = $lado;
+   break;
+  } else {
+   HEAP32[$color >> 2] = 1;
+   $3 = 1;
+   $lado18$pre$phiZ2D = $lado;
+   break;
+  }
+ } else {
+  HEAP32[$rama_sector >> 2] = $0 + 1;
+  $3 = HEAP32[$this + 60 >> 2] | 0;
+  $lado18$pre$phiZ2D = $this + 48 | 0;
+ } while (0);
+ __ZN10Cartoonist8DrawRamaEiii($ref$tmp, $this, HEAP32[$lado18$pre$phiZ2D >> 2] | 0, HEAP32[$rama_sector >> 2] | 0, $3);
+ $4 = $ref$tmp;
+ $9 = HEAP32[$4 + 4 >> 2] | 0;
+ $10 = $this + 52 | 0;
+ HEAP32[$10 >> 2] = HEAP32[$4 >> 2];
+ HEAP32[$10 + 4 >> 2] = $9;
+ STACKTOP = sp;
+ return;
+}
+
 function _GifWritePalette($f, $pPal) {
  $f = $f | 0;
  $pPal = $pPal | 0;
@@ -61450,42 +61492,6 @@ function _stbir__srgb_to_linear($f) {
   return Math_fround($3);
  }
  return Math_fround(0.0);
-}
-
-function __ZN4Rama4MoveEv($this) {
- $this = $this | 0;
- var $0 = 0, $10 = 0, $3 = 0, $4 = 0, $9 = 0, $lado = 0, $rama_sector = 0, $ref$tmp = 0, sp = 0;
- sp = STACKTOP;
- STACKTOP = STACKTOP + 16 | 0;
- if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(16);
- $ref$tmp = sp;
- _srand(_time(0) | 0);
- $rama_sector = $this + 44 | 0;
- $0 = HEAP32[$rama_sector >> 2] | 0;
- do if (($0 | 0) == 4) {
-  HEAP32[$rama_sector >> 2] = 1;
-  $lado = $this + 48 | 0;
-  if (((_rand() | 0) % 10 | 0 | 0) < 5) {
-   HEAP32[$lado >> 2] = -1;
-   $3 = -1;
-   break;
-  } else {
-   HEAP32[$lado >> 2] = 1;
-   $3 = 1;
-   break;
-  }
- } else {
-  HEAP32[$rama_sector >> 2] = $0 + 1;
-  $3 = HEAP32[$this + 48 >> 2] | 0;
- } while (0);
- __ZN10Cartoonist8DrawRamaEiii($ref$tmp, $this, $3, HEAP32[$rama_sector >> 2] | 0, HEAP32[$this + 60 >> 2] | 0);
- $4 = $ref$tmp;
- $9 = HEAP32[$4 + 4 >> 2] | 0;
- $10 = $this + 52 | 0;
- HEAP32[$10 >> 2] = HEAP32[$4 >> 2];
- HEAP32[$10 + 4 >> 2] = $9;
- STACKTOP = sp;
- return;
 }
 
 function _ma_mutex_init($pContext, $pMutex) {
