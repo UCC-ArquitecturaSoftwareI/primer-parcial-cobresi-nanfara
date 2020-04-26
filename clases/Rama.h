@@ -11,19 +11,17 @@
 
 class Rama: public Cartoonist {
 private:
+    int rama_sector;
+    int lado;
+    Vector2 rama_position;
+    int color; //0 = clara // 1 = oscura
 public:
-
-   // Vector2 rama_position1;
-     Vector2 rama_position2;
-//    Vector2 rama_position3;
-//    Vector2 rama_position4;
-
-    Rama():Cartoonist()
+    Rama(int lado1, int sector1):Cartoonist()
     {
-//        rama_position1 = DrawRama1();    //es igual a la posicion de la rama en y=-150
-          rama_position2 = DrawRama2();
-//        rama_position3 = DrawRama3();
-//        rama_position4 = DrawRama4();
+        lado = lado1;
+        rama_sector = sector1;
+        color = 1; //Ver como cambiar color
+        rama_position = DrawRama(lado, rama_sector, color); //ver de pasar rama
     }
     //Rama();    //int lado1, int color1
     void Draw();

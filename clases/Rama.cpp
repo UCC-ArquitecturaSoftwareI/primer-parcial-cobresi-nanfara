@@ -26,10 +26,8 @@ void Rama::Draw() {
 //    DrawRama3();
 //    DrawRama4();
 }
-
+/*
 void Rama::Move() {
-
-<<<<<<< HEAD
     while(rama_position.y < 900){     //colision
 
             //if (rama_position.y==-150 ||rama_position.y==150 || rama_position.y==450 || rama_position.y==750){
@@ -55,3 +53,4 @@ Rectangle Rama::getRectangle() {
          DrawRama2();   //pos.y=250}
     }
  }
+*/

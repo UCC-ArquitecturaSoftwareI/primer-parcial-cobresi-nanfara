@@ -47,8 +47,8 @@ Vector2 Cartoonist::DrawMonkey(int movimiento, int lado) {
 //    DrawTextureRec(sprite, rect, position, WHITE);
 //    return position;
 //}
-
-Vector2 Cartoonist::DrawRama2() {
+/*
+Vector2 Cartoonist::DrawRama(int lado, int sector, int color) {
 
     rect.y = 900;
     rect.x = 0;
@@ -62,6 +62,7 @@ Vector2 Cartoonist::DrawRama2() {
 
     return position;
 }
+ */
 //
 //Vector2 Cartoonist::DrawRama3() {
 //
@@ -99,24 +100,56 @@ void Cartoonist::DrawTree(int lado, Vector2 pos) {
     DrawTextureRec(sprite, rect, pos, WHITE);
 }
 
-//Vector2 Cartoonist::DrawRama(int color, Vector2 pos) {
-//
-//    rect.y = 900;
-//    if (pos.x == 189)
-//    {
-//        if (color == 1)
-//            rect.x = 900;
-//        else
-//            rect.x = 300;
-//    }
-//    else
-//    {
-//        if (color == 1)
-//            rect.x = 600;
-//        else
-//            rect.x = 0;
-//    }
-//
-//     DrawTextureRec(sprite, rect, pos, WHITE);
-//    return position;
-//}
+Vector2 Cartoonist::DrawRama(int lado, int sector, int color)
+{
+    rect.y = 900;
+    if (lado == -1)
+    {
+        if (color == 1)
+            rect.x = 900;
+        else
+            rect.x = 300;
+        switch (sector) {
+            case 1:
+                position.x = 190;
+                position.y = -150;
+                break;
+            case 2:
+                position.x = 190;
+                position.y = 150;
+            case 3:
+                position.x = 190;
+                position.y = 450;
+            case 4:
+                position.x = 190;
+                position.y = 750;
+        }
+    }
+    else
+    {
+        if (color == 1)
+            rect.x = 600;
+        else
+            rect.x = 0;
+        switch (sector) {
+            case 1:
+                position.x = 710;
+                position.y = -150;
+                break;
+            case 2:
+                position.x = 710;
+                position.y = 150;
+                break;
+            case 3:
+                position.x = 710;
+                position.y = 450;
+                break;
+            case 4:
+                position.x = 710;
+                position.y = 750;
+                break;
+        }
+    }
+     DrawTextureRec(sprite, rect, position, WHITE);
+    return position;
+}

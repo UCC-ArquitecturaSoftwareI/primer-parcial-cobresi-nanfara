@@ -32,7 +32,7 @@ int main() {
     PlayMusicStream(music);
     tree = new Tree;
     player = new Monkey;
-    rama = new Rama;
+    rama = new Rama[4];
     collision = false;
 
 
@@ -74,27 +74,25 @@ static void UpdateDrawFrame(void) {
         ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();
-        rama->Draw();
-        rama->Move();
+        //rama->Draw();
+        //rama->Move();
 
         if (IsKeyReleased(KEY_RIGHT))
         {
             player->move_right();
             //Hay que poner con cual rama comparar
-            collision = CheckCollisionRecs(rama->getRectangle(), player->getRectangle());
+            //collision = CheckCollisionRecs(rama->getRectangle(), player->getRectangle());
         }
         if (IsKeyReleased(KEY_LEFT))
         {
             player->move_left();
             //Hay que poner con cual rama comparar
-            collision = CheckCollisionRecs(rama->getRectangle(), player->getRectangle());
+            //collision = CheckCollisionRecs(rama->getRectangle(), player->getRectangle());
         }
 
-<<<<<<< HEAD
+
         //if( IsKeyPressed(KEY_RIGHT )) {rama->Move();}
 //        if( IsKeyPressed(KEY_LEFT )) rama->Move();
-=======
->>>>>>> rama
 
     // Dibujo todos los elementos del juego.
     DrawText("Tankey", 20, 20, 40, BLACK);
