@@ -14,6 +14,7 @@ void Rama::Draw() {
 void Rama::Move() {
     srand(time(NULL));
     int newlado;
+    int newcolor;
     if (rama_sector == 4) {
         rama_sector = 1; //podemos poner que cambie el color
         newlado = rand()%10;
@@ -21,6 +22,11 @@ void Rama::Move() {
             lado = -1;
         else
             lado =1;
+        newcolor = rand()%10;
+        if (newcolor < 5)
+            color = 0;
+        else
+            color =1;
     }
     else
         rama_sector = rama_sector +1;
