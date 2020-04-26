@@ -61,7 +61,7 @@ static void UpdateDrawFrame(void) {
 
 
     // siempre hay que reproducir la musica que esta actualmente
-    UpdateMusicStream(music);
+    //UpdateMusicStream(music);
     // Verifico Entradas de eventos.
     //if (IsKeyDown(KEY_RIGHT)) player->move_right();
     //if (IsKeyDown(KEY_LEFT)) player->move_left();
@@ -73,14 +73,12 @@ static void UpdateDrawFrame(void) {
         tree->Draw();
         player->Draw();
         rama->Draw();
+        rama->Move();
 
         if (IsKeyReleased(KEY_RIGHT)) {
             player->move_right();
         }
         if (IsKeyReleased(KEY_LEFT)) player->move_left();
-
-        //if( IsKeyPressed(KEY_RIGHT )) {rama->Move();}
-//        if( IsKeyPressed(KEY_LEFT )) rama->Move();
 
 
     // Dibujo todos los elementos del juego.

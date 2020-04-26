@@ -21,21 +21,17 @@
 //}
 
 void Rama::Draw() {
-    DrawRama(key);
+//    DrawRama1();
+    DrawRama2();
+//    DrawRama3();
+//    DrawRama4();
 }
 
 void Rama::Move() {
 
-    while(rama_position.y < 900){     //colision
+    while(rama_position2.y < 900){
 
-            //if (rama_position.y==-150 ||rama_position.y==150 || rama_position.y==450 || rama_position.y==750){
-
-                rama_position.y+=10;
-                DrawRama(1);
-            //}
-
-        }
-}
-
-
-
+        rama_position2.y += 100;  //150 + 100
+         DrawRama2();   //pos.y=250}
+    }
+ }
