@@ -16,23 +16,34 @@ const int screenHeight = 900;
 Music music;
 Monkey *player;
 Tree *tree;
-Rama *rama;
+//Rama *rama;
 bool collision;
 
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
+
+struct Conjunto_ramas{
+    Rama *ramaA;
+    Rama *ramaB;
+    Rama *ramaC;
+    Rama *ramaD;
+};
+Conjunto_ramas ramas;
+
 
 int main() {
     // Inicialización de la ventana
     InitWindow(screenWidth, screenHeight, "Tankey game");
     InitAudioDevice();              // Initialize audio device
-
     /// Ejemplo de utilización de audio.
     music = LoadMusicStream("resources/Cyberpunk Moonlight Sonata.mp3");
 
     PlayMusicStream(music);
     tree = new Tree;
     player = new Monkey;
-    rama = new Rama(-1, 1);
+    ramas.ramaA = new Rama(-1, 1);
+    ramas.ramaB = new Rama(1, 2);
+    ramas.ramaC = new Rama(-1, 3);
+    ramas.ramaD = new Rama(1, 4);
     collision = false;
 
 
@@ -42,10 +53,11 @@ int main() {
 #else
     SetTargetFPS(60);   // Set our game to run at 60 frames-per-second
     // Main loop
-    do{
+    while (!WindowShouldClose() && !collision)
+    {
         UpdateDrawFrame();
     }
-    while (!WindowShouldClose() && !collision);
+
 #endif
     // Descargar todos los resources cargados
 
@@ -75,21 +87,50 @@ static void UpdateDrawFrame(void) {
         ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();
-        rama->Draw();
+        ramas.ramaA->Draw();
+        ramas.ramaB->Draw();
+        ramas.ramaC->Draw();
+        ramas.ramaD->Draw();
 
         if (IsKeyReleased(KEY_RIGHT))
         {
             player->move_right();
-            rama->Move();
+            ramas.ramaA->Move();
+            ramas.ramaB->Move();
+            ramas.ramaC->Move();
+            ramas.ramaD->Move();
             //Hay que poner con cual rama comparar
-            collision = CheckCollisionRecs(rama->getRectangle(), player->getRectangle());
+            collision = CheckCollisionRecs(ramas.ramaA->getRectangle(), player->getRectangle());
+            if (!collision)
+            {
+                collision = CheckCollisionRecs(ramas.ramaB->getRectangle(), player->getRectangle());
+                if (!collision)
+                {
+                    collision = CheckCollisionRecs(ramas.ramaC->getRectangle(), player->getRectangle());
+                    if (!collision)
+                        collision = CheckCollisionRecs(ramas.ramaD->getRectangle(), player->getRectangle());
+                }
+            }
         }
         if (IsKeyReleased(KEY_LEFT))
         {
             player->move_left();
-            rama->Move();
+            ramas.ramaA->Move();
+            ramas.ramaB->Move();
+            ramas.ramaC->Move();
+            ramas.ramaD->Move();
             //Hay que poner con cual rama comparar
-            collision = CheckCollisionRecs(rama->getRectangle(), player->getRectangle());
+            collision = CheckCollisionRecs(ramas.ramaA->getRectangle(), player->getRectangle());
+            if (!collision)
+            {
+                collision = CheckCollisionRecs(ramas.ramaB->getRectangle(), player->getRectangle());
+                if (!collision)
+                {
+                    collision = CheckCollisionRecs(ramas.ramaC->getRectangle(), player->getRectangle());
+                    if (!collision)
+                        collision = CheckCollisionRecs(ramas.ramaD->getRectangle(), player->getRectangle());
+                }
+            }
         }
 
 

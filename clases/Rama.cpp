@@ -3,49 +3,30 @@
 //
 
 #include "Rama.h"
-#include <string>
+#include <time.h>
+#include <stdlib.h>
 
-
-//Rama::Rama(){
-//
-//(int lado1, int color1) {
-//    rama_position.y = 150;
-//    lado = lado1;
-//    color = color1;
-//    if (lado == -1)
-//        rama_position.x = 189;
-//    else
-//        rama_position.x = 711;
-//    DrawRama(color, rama_position);
-//
-//}
 
 void Rama::Draw() {
     DrawRama(lado, rama_sector, color);
 }
 
 void Rama::Move() {
-    if (rama_sector == 4)
-    {
-        rama_sector = 1;
+    srand(time(NULL));
+    int newlado;
+    if (rama_sector == 4) {
+        rama_sector = 1; //podemos poner que cambie el color
+        newlado = rand()%10;
+        if (newlado < 5)
+            lado = -1;
+        else
+            lado =1;
     }
     else
         rama_sector = rama_sector +1;
     rama_position = DrawRama(lado, rama_sector, color);
 }
-/*
-void Rama::Move() {
-    while(rama_position.y < 900){     //colision
 
-            //if (rama_position.y==-150 ||rama_position.y==150 || rama_position.y==450 || rama_position.y==750){
-
-                rama_position.y+=10;
-                DrawRama(1);
-            //}
-
-        }
-}
-*/
 Rectangle Rama::getRectangle() {
     Rectangle rec_rama = {rama_position.x, rama_position.y, 300, 300};
     return rec_rama;
@@ -58,13 +39,3 @@ void Rama::SetDatos(int lado1, int sector1) {
         rama_position = DrawRama(lado, rama_sector, color); //ver de pasar rama
 }
 
-/*
-=======
-    while(rama_position2.y < 900){
->>>>>>> rama
-
-        rama_position2.y += 100;  //150 + 100
-         DrawRama2();   //pos.y=250}
-    }
- }
- */
