@@ -21,11 +21,15 @@
 //}
 
 void Rama::Draw() {
-    DrawRama(key);
+//    DrawRama1();
+    DrawRama2();
+//    DrawRama3();
+//    DrawRama4();
 }
 
 void Rama::Move() {
 
+<<<<<<< HEAD
     while(rama_position.y < 900){     //colision
 
             //if (rama_position.y==-150 ||rama_position.y==150 || rama_position.y==450 || rama_position.y==750){
@@ -43,4 +47,11 @@ Rectangle Rama::getRectangle() {
 }
 
 
+=======
+    while(rama_position2.y < 900){
+>>>>>>> rama
 
+        rama_position2.y += 100;  //150 + 100
+         DrawRama2();   //pos.y=250}
+    }
+ }
