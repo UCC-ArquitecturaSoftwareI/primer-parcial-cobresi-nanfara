@@ -11,8 +11,8 @@
 
 class Rama: public Cartoonist {
 private:
-    int rama_sector;
-    int lado;
+    int rama_sector; //1, 2, 3 o 4
+    int lado; //-1 = izq //1 = derecha
     Vector2 rama_position;
     int color; //0 = clara // 1 = oscura
 public:
@@ -23,7 +23,7 @@ public:
         color = 1; //Ver como cambiar color
         rama_position = DrawRama(lado, rama_sector, color); //ver de pasar rama
     }
-    //Rama();    //int lado1, int color1
+    void SetDatos(int lado1, int sector1); //la hice por si es mejor usar el constructor Rama() y desp setear cada dato
     void Draw();
     void Move();
     Rectangle getRectangle();

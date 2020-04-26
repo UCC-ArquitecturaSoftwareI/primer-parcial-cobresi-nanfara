@@ -117,12 +117,15 @@ Vector2 Cartoonist::DrawRama(int lado, int sector, int color)
             case 2:
                 position.x = 190;
                 position.y = 150;
+                break;
             case 3:
                 position.x = 190;
                 position.y = 450;
+                break;
             case 4:
                 position.x = 190;
                 position.y = 750;
+                break;
         }
     }
     else

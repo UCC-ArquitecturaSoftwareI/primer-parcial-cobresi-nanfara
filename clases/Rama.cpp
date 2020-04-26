@@ -21,10 +21,17 @@
 //}
 
 void Rama::Draw() {
-//    DrawRama1();
-    DrawRama2();
-//    DrawRama3();
-//    DrawRama4();
+    DrawRama(lado, rama_sector, color);
+}
+
+void Rama::Move() {
+    if (rama_sector == 4)
+    {
+        rama_sector = 1;
+    }
+    else
+        rama_sector = rama_sector +1;
+    rama_position = DrawRama(lado, rama_sector, color);
 }
 /*
 void Rama::Move() {
@@ -38,13 +45,20 @@ void Rama::Move() {
 
         }
 }
-
+*/
 Rectangle Rama::getRectangle() {
     Rectangle rec_rama = {rama_position.x, rama_position.y, 300, 300};
     return rec_rama;
 }
 
+void Rama::SetDatos(int lado1, int sector1) {
+        lado = lado1;
+        rama_sector = sector1;
+        color = 1; //Ver como cambiar color
+        rama_position = DrawRama(lado, rama_sector, color); //ver de pasar rama
+}
 
+/*
 =======
     while(rama_position2.y < 900){
 >>>>>>> rama
@@ -53,4 +67,4 @@ Rectangle Rama::getRectangle() {
          DrawRama2();   //pos.y=250}
     }
  }
-*/
+ */
