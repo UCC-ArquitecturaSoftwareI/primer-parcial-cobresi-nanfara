@@ -22,8 +22,8 @@ void Rama::Move() {
             lado = -1;
         else
             lado =1;
-        newcolor = rand()%10;
-        if (newcolor < 5)
+        newcolor = rand()%6;
+        if (newcolor < 3)
             color = 0;
         else
             color =1;

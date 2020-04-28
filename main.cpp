@@ -28,7 +28,7 @@ struct Conjunto_ramas{
     Rama *ramaD;
 };
 Conjunto_ramas ramas;
-
+//Usar vector de Ramas o de punteros a ramas
 
 int main() {
     // Inicialización de la ventana
