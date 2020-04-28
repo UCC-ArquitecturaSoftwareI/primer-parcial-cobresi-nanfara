@@ -191,7 +191,7 @@ Module['FS_createPath']('/', 'resources', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2690605, "filename": "/resources/Sprite.png"}, {"start": 2690605, "audio": 0, "end": 2701298, "filename": "/resources/shell.html"}, {"start": 2701298, "audio": 0, "end": 2703255, "filename": "/resources/ship.png"}], "remote_package_size": 2703255, "package_uuid": "db4c86bb-0fd3-4907-9933-d84ea97c9f64"});
+ loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2803312, "filename": "/resources/Sprite.png"}, {"start": 2803312, "audio": 0, "end": 2814005, "filename": "/resources/shell.html"}, {"start": 2814005, "audio": 0, "end": 2815962, "filename": "/resources/ship.png"}], "remote_package_size": 2815962, "package_uuid": "18b433f3-c19e-4a49-a636-4bce216ccab7"});
 
 })();
 
@@ -59011,7 +59011,7 @@ function __ZN4Rama4MoveEv($this) {
   $lado = $this + 48 | 0;
   HEAP32[$lado >> 2] = $cmp4 ? -1 : 1;
   $color = $this + 60 | 0;
-  if (((_rand() | 0) % 10 | 0 | 0) < 5) {
+  if (((_rand() | 0) % 6 | 0 | 0) < 3) {
    HEAP32[$color >> 2] = 0;
    $3 = 0;
    $lado18$pre$phiZ2D = $lado;
