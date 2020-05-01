@@ -28,6 +28,8 @@ barLife barLife;
 
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
 
+void UpdateDrawEnd();
+
 struct Conjunto_ramas{
     Rama *ramaA;
     Rama *ramaB;
@@ -60,9 +62,12 @@ int main() {
 #else
     SetTargetFPS(60);   // Set our game to run at 60 frames-per-second
     // Main loop
-    while (!WindowShouldClose() && !end)
+    while (!WindowShouldClose())
     {
-        UpdateDrawFrame();
+        if (!end)
+         UpdateDrawFrame();
+        else
+            UpdateDrawEnd();
     }
 
 #endif
@@ -73,6 +78,8 @@ int main() {
     CloseWindow();              // Cierro la ventana
     return 0;
 }
+
+
 
 
 /**
@@ -158,5 +165,13 @@ static void UpdateDrawFrame(void) {
     DrawText(FormatText("Score: %05i", score), 950, 30, 30, BLACK);
 
     // Finalizo el dibujado
+    EndDrawing();
+}
+
+void UpdateDrawEnd() {
+    BeginDrawing();
+    ClearBackground(SKYBLUE);
+    DrawText(FormatText("GAME OVER"), 375, 300, 70, BLACK);
+    DrawText(FormatText("Score: %05i", score), 455, 400, 40, BLACK);
     EndDrawing();
 }
