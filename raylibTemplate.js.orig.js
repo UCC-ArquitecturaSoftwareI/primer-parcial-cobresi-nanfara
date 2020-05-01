@@ -191,7 +191,7 @@ Module['FS_createPath']('/', 'resources', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2803312, "filename": "/resources/Sprite.png"}, {"start": 2803312, "audio": 0, "end": 2814005, "filename": "/resources/shell.html"}, {"start": 2814005, "audio": 0, "end": 2815962, "filename": "/resources/ship.png"}], "remote_package_size": 2815962, "package_uuid": "eab1b009-c7d4-4ad4-b46d-4936bc27c12d"});
+ loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2803312, "filename": "/resources/Sprite.png"}, {"start": 2803312, "audio": 0, "end": 2814005, "filename": "/resources/shell.html"}, {"start": 2814005, "audio": 0, "end": 2815962, "filename": "/resources/ship.png"}], "remote_package_size": 2815962, "package_uuid": "0ba32523-67e7-45ae-b245-f1bc3819f806"});
 
 })();
 
@@ -27730,43 +27730,43 @@ function _ma_channel_router_read_deinterleaved($pRouter, $0, $1, $ppSamplesOut, 
 }
 
 function __ZL15UpdateDrawFramev() {
- var $agg$tmp = 0, $agg$tmp1 = 0, $agg$tmp11 = 0, $agg$tmp12 = 0, $agg$tmp17 = 0, $agg$tmp18 = 0, $agg$tmp2 = 0, $agg$tmp27 = 0, $agg$tmp28 = 0, $agg$tmp33 = 0, $agg$tmp34 = 0, $agg$tmp39 = 0, $agg$tmp40 = 0, $agg$tmp45 = 0, $agg$tmp45$byval_copy = 0, $agg$tmp46 = 0, $agg$tmp5 = 0, $agg$tmp56 = 0, $agg$tmp6 = 0, $agg$tmp62 = 0, $agg$tmp62$byval_copy = 0, $call61 = 0, $vararg_buffer = 0, sp = 0;
+ var $agg$tmp = 0, $agg$tmp13 = 0, $agg$tmp14 = 0, $agg$tmp19 = 0, $agg$tmp20 = 0, $agg$tmp3 = 0, $agg$tmp30 = 0, $agg$tmp31 = 0, $agg$tmp36 = 0, $agg$tmp37 = 0, $agg$tmp4 = 0, $agg$tmp42 = 0, $agg$tmp43 = 0, $agg$tmp48 = 0, $agg$tmp48$byval_copy = 0, $agg$tmp49 = 0, $agg$tmp60 = 0, $agg$tmp66 = 0, $agg$tmp66$byval_copy = 0, $agg$tmp7 = 0, $agg$tmp8 = 0, $call65 = 0, $vararg_buffer = 0, sp = 0;
  sp = STACKTOP;
  STACKTOP = STACKTOP + 320 | 0;
  if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(320);
- $agg$tmp62$byval_copy = sp + 280 | 0;
- $agg$tmp45$byval_copy = sp + 264 | 0;
+ $agg$tmp66$byval_copy = sp + 280 | 0;
+ $agg$tmp48$byval_copy = sp + 264 | 0;
  $vararg_buffer = sp;
  $agg$tmp = sp + 304 | 0;
- $agg$tmp1 = sp + 248 | 0;
- $agg$tmp2 = sp + 232 | 0;
- $agg$tmp5 = sp + 216 | 0;
- $agg$tmp6 = sp + 200 | 0;
- $agg$tmp11 = sp + 184 | 0;
- $agg$tmp12 = sp + 168 | 0;
- $agg$tmp17 = sp + 152 | 0;
- $agg$tmp18 = sp + 136 | 0;
- $agg$tmp27 = sp + 120 | 0;
- $agg$tmp28 = sp + 104 | 0;
- $agg$tmp33 = sp + 88 | 0;
- $agg$tmp34 = sp + 72 | 0;
- $agg$tmp39 = sp + 56 | 0;
- $agg$tmp40 = sp + 40 | 0;
- $agg$tmp45 = sp + 24 | 0;
- $agg$tmp46 = sp + 8 | 0;
- $agg$tmp56 = sp + 300 | 0;
- $agg$tmp62 = sp + 296 | 0;
+ $agg$tmp3 = sp + 248 | 0;
+ $agg$tmp4 = sp + 232 | 0;
+ $agg$tmp7 = sp + 216 | 0;
+ $agg$tmp8 = sp + 200 | 0;
+ $agg$tmp13 = sp + 184 | 0;
+ $agg$tmp14 = sp + 168 | 0;
+ $agg$tmp19 = sp + 152 | 0;
+ $agg$tmp20 = sp + 136 | 0;
+ $agg$tmp30 = sp + 120 | 0;
+ $agg$tmp31 = sp + 104 | 0;
+ $agg$tmp36 = sp + 88 | 0;
+ $agg$tmp37 = sp + 72 | 0;
+ $agg$tmp42 = sp + 56 | 0;
+ $agg$tmp43 = sp + 40 | 0;
+ $agg$tmp48 = sp + 24 | 0;
+ $agg$tmp49 = sp + 8 | 0;
+ $agg$tmp60 = sp + 300 | 0;
+ $agg$tmp66 = sp + 296 | 0;
  _BeginDrawing();
- __ZN7barLifemmEv(20104);
+ if ((__ZN7barLife9getStatusEv(20104) | 0) == 1) __ZN7barLifemmEv(20104);
  HEAP8[$agg$tmp >> 0] = 102;
  HEAP8[$agg$tmp + 1 >> 0] = -65;
  HEAP8[$agg$tmp + 2 >> 0] = -1;
  HEAP8[$agg$tmp + 3 >> 0] = -1;
- HEAP8[$agg$tmp62$byval_copy >> 0] = HEAP8[$agg$tmp >> 0] | 0;
- HEAP8[$agg$tmp62$byval_copy + 1 >> 0] = HEAP8[$agg$tmp + 1 >> 0] | 0;
- HEAP8[$agg$tmp62$byval_copy + 2 >> 0] = HEAP8[$agg$tmp + 2 >> 0] | 0;
- HEAP8[$agg$tmp62$byval_copy + 3 >> 0] = HEAP8[$agg$tmp + 3 >> 0] | 0;
- _ClearBackground($agg$tmp62$byval_copy);
+ HEAP8[$agg$tmp66$byval_copy >> 0] = HEAP8[$agg$tmp >> 0] | 0;
+ HEAP8[$agg$tmp66$byval_copy + 1 >> 0] = HEAP8[$agg$tmp + 1 >> 0] | 0;
+ HEAP8[$agg$tmp66$byval_copy + 2 >> 0] = HEAP8[$agg$tmp + 2 >> 0] | 0;
+ HEAP8[$agg$tmp66$byval_copy + 3 >> 0] = HEAP8[$agg$tmp + 3 >> 0] | 0;
+ _ClearBackground($agg$tmp66$byval_copy);
  __ZN4Tree4DrawEv(HEAP32[38637] | 0);
  __ZN6Monkey4DrawEv(HEAP32[38636] | 0);
  __ZN4Rama4DrawEv(HEAP32[38639] | 0);
@@ -27782,50 +27782,50 @@ function __ZL15UpdateDrawFramev() {
   __ZN4Rama4MoveEv(HEAP32[38640] | 0);
   __ZN4Rama4MoveEv(HEAP32[38641] | 0);
   __ZN4Rama4MoveEv(HEAP32[38642] | 0);
-  __ZN4Rama12getRectangleEv($agg$tmp1, HEAP32[38639] | 0);
-  __ZN6Monkey12getRectangleEv($agg$tmp2, HEAP32[38636] | 0);
-  HEAP32[$agg$tmp45$byval_copy >> 2] = HEAP32[$agg$tmp1 >> 2];
-  HEAP32[$agg$tmp45$byval_copy + 4 >> 2] = HEAP32[$agg$tmp1 + 4 >> 2];
-  HEAP32[$agg$tmp45$byval_copy + 8 >> 2] = HEAP32[$agg$tmp1 + 8 >> 2];
-  HEAP32[$agg$tmp45$byval_copy + 12 >> 2] = HEAP32[$agg$tmp1 + 12 >> 2];
-  HEAP32[$agg$tmp62$byval_copy >> 2] = HEAP32[$agg$tmp2 >> 2];
-  HEAP32[$agg$tmp62$byval_copy + 4 >> 2] = HEAP32[$agg$tmp2 + 4 >> 2];
-  HEAP32[$agg$tmp62$byval_copy + 8 >> 2] = HEAP32[$agg$tmp2 + 8 >> 2];
-  HEAP32[$agg$tmp62$byval_copy + 12 >> 2] = HEAP32[$agg$tmp2 + 12 >> 2];
-  if (!(_CheckCollisionRecs($agg$tmp45$byval_copy, $agg$tmp62$byval_copy) | 0)) {
-   __ZN4Rama12getRectangleEv($agg$tmp5, HEAP32[38640] | 0);
-   __ZN6Monkey12getRectangleEv($agg$tmp6, HEAP32[38636] | 0);
-   HEAP32[$agg$tmp45$byval_copy >> 2] = HEAP32[$agg$tmp5 >> 2];
-   HEAP32[$agg$tmp45$byval_copy + 4 >> 2] = HEAP32[$agg$tmp5 + 4 >> 2];
-   HEAP32[$agg$tmp45$byval_copy + 8 >> 2] = HEAP32[$agg$tmp5 + 8 >> 2];
-   HEAP32[$agg$tmp45$byval_copy + 12 >> 2] = HEAP32[$agg$tmp5 + 12 >> 2];
-   HEAP32[$agg$tmp62$byval_copy >> 2] = HEAP32[$agg$tmp6 >> 2];
-   HEAP32[$agg$tmp62$byval_copy + 4 >> 2] = HEAP32[$agg$tmp6 + 4 >> 2];
-   HEAP32[$agg$tmp62$byval_copy + 8 >> 2] = HEAP32[$agg$tmp6 + 8 >> 2];
-   HEAP32[$agg$tmp62$byval_copy + 12 >> 2] = HEAP32[$agg$tmp6 + 12 >> 2];
-   if (!(_CheckCollisionRecs($agg$tmp45$byval_copy, $agg$tmp62$byval_copy) | 0)) {
-    __ZN4Rama12getRectangleEv($agg$tmp11, HEAP32[38641] | 0);
-    __ZN6Monkey12getRectangleEv($agg$tmp12, HEAP32[38636] | 0);
-    HEAP32[$agg$tmp45$byval_copy >> 2] = HEAP32[$agg$tmp11 >> 2];
-    HEAP32[$agg$tmp45$byval_copy + 4 >> 2] = HEAP32[$agg$tmp11 + 4 >> 2];
-    HEAP32[$agg$tmp45$byval_copy + 8 >> 2] = HEAP32[$agg$tmp11 + 8 >> 2];
-    HEAP32[$agg$tmp45$byval_copy + 12 >> 2] = HEAP32[$agg$tmp11 + 12 >> 2];
-    HEAP32[$agg$tmp62$byval_copy >> 2] = HEAP32[$agg$tmp12 >> 2];
-    HEAP32[$agg$tmp62$byval_copy + 4 >> 2] = HEAP32[$agg$tmp12 + 4 >> 2];
-    HEAP32[$agg$tmp62$byval_copy + 8 >> 2] = HEAP32[$agg$tmp12 + 8 >> 2];
-    HEAP32[$agg$tmp62$byval_copy + 12 >> 2] = HEAP32[$agg$tmp12 + 12 >> 2];
-    if (!(_CheckCollisionRecs($agg$tmp45$byval_copy, $agg$tmp62$byval_copy) | 0)) {
-     __ZN4Rama12getRectangleEv($agg$tmp17, HEAP32[38642] | 0);
-     __ZN6Monkey12getRectangleEv($agg$tmp18, HEAP32[38636] | 0);
-     HEAP32[$agg$tmp45$byval_copy >> 2] = HEAP32[$agg$tmp17 >> 2];
-     HEAP32[$agg$tmp45$byval_copy + 4 >> 2] = HEAP32[$agg$tmp17 + 4 >> 2];
-     HEAP32[$agg$tmp45$byval_copy + 8 >> 2] = HEAP32[$agg$tmp17 + 8 >> 2];
-     HEAP32[$agg$tmp45$byval_copy + 12 >> 2] = HEAP32[$agg$tmp17 + 12 >> 2];
-     HEAP32[$agg$tmp62$byval_copy >> 2] = HEAP32[$agg$tmp18 >> 2];
-     HEAP32[$agg$tmp62$byval_copy + 4 >> 2] = HEAP32[$agg$tmp18 + 4 >> 2];
-     HEAP32[$agg$tmp62$byval_copy + 8 >> 2] = HEAP32[$agg$tmp18 + 8 >> 2];
-     HEAP32[$agg$tmp62$byval_copy + 12 >> 2] = HEAP32[$agg$tmp18 + 12 >> 2];
-     _CheckCollisionRecs($agg$tmp45$byval_copy, $agg$tmp62$byval_copy) | 0;
+  __ZN4Rama12getRectangleEv($agg$tmp3, HEAP32[38639] | 0);
+  __ZN6Monkey12getRectangleEv($agg$tmp4, HEAP32[38636] | 0);
+  HEAP32[$agg$tmp48$byval_copy >> 2] = HEAP32[$agg$tmp3 >> 2];
+  HEAP32[$agg$tmp48$byval_copy + 4 >> 2] = HEAP32[$agg$tmp3 + 4 >> 2];
+  HEAP32[$agg$tmp48$byval_copy + 8 >> 2] = HEAP32[$agg$tmp3 + 8 >> 2];
+  HEAP32[$agg$tmp48$byval_copy + 12 >> 2] = HEAP32[$agg$tmp3 + 12 >> 2];
+  HEAP32[$agg$tmp66$byval_copy >> 2] = HEAP32[$agg$tmp4 >> 2];
+  HEAP32[$agg$tmp66$byval_copy + 4 >> 2] = HEAP32[$agg$tmp4 + 4 >> 2];
+  HEAP32[$agg$tmp66$byval_copy + 8 >> 2] = HEAP32[$agg$tmp4 + 8 >> 2];
+  HEAP32[$agg$tmp66$byval_copy + 12 >> 2] = HEAP32[$agg$tmp4 + 12 >> 2];
+  if (!(_CheckCollisionRecs($agg$tmp48$byval_copy, $agg$tmp66$byval_copy) | 0)) {
+   __ZN4Rama12getRectangleEv($agg$tmp7, HEAP32[38640] | 0);
+   __ZN6Monkey12getRectangleEv($agg$tmp8, HEAP32[38636] | 0);
+   HEAP32[$agg$tmp48$byval_copy >> 2] = HEAP32[$agg$tmp7 >> 2];
+   HEAP32[$agg$tmp48$byval_copy + 4 >> 2] = HEAP32[$agg$tmp7 + 4 >> 2];
+   HEAP32[$agg$tmp48$byval_copy + 8 >> 2] = HEAP32[$agg$tmp7 + 8 >> 2];
+   HEAP32[$agg$tmp48$byval_copy + 12 >> 2] = HEAP32[$agg$tmp7 + 12 >> 2];
+   HEAP32[$agg$tmp66$byval_copy >> 2] = HEAP32[$agg$tmp8 >> 2];
+   HEAP32[$agg$tmp66$byval_copy + 4 >> 2] = HEAP32[$agg$tmp8 + 4 >> 2];
+   HEAP32[$agg$tmp66$byval_copy + 8 >> 2] = HEAP32[$agg$tmp8 + 8 >> 2];
+   HEAP32[$agg$tmp66$byval_copy + 12 >> 2] = HEAP32[$agg$tmp8 + 12 >> 2];
+   if (!(_CheckCollisionRecs($agg$tmp48$byval_copy, $agg$tmp66$byval_copy) | 0)) {
+    __ZN4Rama12getRectangleEv($agg$tmp13, HEAP32[38641] | 0);
+    __ZN6Monkey12getRectangleEv($agg$tmp14, HEAP32[38636] | 0);
+    HEAP32[$agg$tmp48$byval_copy >> 2] = HEAP32[$agg$tmp13 >> 2];
+    HEAP32[$agg$tmp48$byval_copy + 4 >> 2] = HEAP32[$agg$tmp13 + 4 >> 2];
+    HEAP32[$agg$tmp48$byval_copy + 8 >> 2] = HEAP32[$agg$tmp13 + 8 >> 2];
+    HEAP32[$agg$tmp48$byval_copy + 12 >> 2] = HEAP32[$agg$tmp13 + 12 >> 2];
+    HEAP32[$agg$tmp66$byval_copy >> 2] = HEAP32[$agg$tmp14 >> 2];
+    HEAP32[$agg$tmp66$byval_copy + 4 >> 2] = HEAP32[$agg$tmp14 + 4 >> 2];
+    HEAP32[$agg$tmp66$byval_copy + 8 >> 2] = HEAP32[$agg$tmp14 + 8 >> 2];
+    HEAP32[$agg$tmp66$byval_copy + 12 >> 2] = HEAP32[$agg$tmp14 + 12 >> 2];
+    if (!(_CheckCollisionRecs($agg$tmp48$byval_copy, $agg$tmp66$byval_copy) | 0)) {
+     __ZN4Rama12getRectangleEv($agg$tmp19, HEAP32[38642] | 0);
+     __ZN6Monkey12getRectangleEv($agg$tmp20, HEAP32[38636] | 0);
+     HEAP32[$agg$tmp48$byval_copy >> 2] = HEAP32[$agg$tmp19 >> 2];
+     HEAP32[$agg$tmp48$byval_copy + 4 >> 2] = HEAP32[$agg$tmp19 + 4 >> 2];
+     HEAP32[$agg$tmp48$byval_copy + 8 >> 2] = HEAP32[$agg$tmp19 + 8 >> 2];
+     HEAP32[$agg$tmp48$byval_copy + 12 >> 2] = HEAP32[$agg$tmp19 + 12 >> 2];
+     HEAP32[$agg$tmp66$byval_copy >> 2] = HEAP32[$agg$tmp20 >> 2];
+     HEAP32[$agg$tmp66$byval_copy + 4 >> 2] = HEAP32[$agg$tmp20 + 4 >> 2];
+     HEAP32[$agg$tmp66$byval_copy + 8 >> 2] = HEAP32[$agg$tmp20 + 8 >> 2];
+     HEAP32[$agg$tmp66$byval_copy + 12 >> 2] = HEAP32[$agg$tmp20 + 12 >> 2];
+     _CheckCollisionRecs($agg$tmp48$byval_copy, $agg$tmp66$byval_copy) | 0;
     }
    }
   }
@@ -27839,75 +27839,75 @@ function __ZL15UpdateDrawFramev() {
   __ZN4Rama4MoveEv(HEAP32[38640] | 0);
   __ZN4Rama4MoveEv(HEAP32[38641] | 0);
   __ZN4Rama4MoveEv(HEAP32[38642] | 0);
-  __ZN4Rama12getRectangleEv($agg$tmp27, HEAP32[38639] | 0);
-  __ZN6Monkey12getRectangleEv($agg$tmp28, HEAP32[38636] | 0);
-  HEAP32[$agg$tmp45$byval_copy >> 2] = HEAP32[$agg$tmp27 >> 2];
-  HEAP32[$agg$tmp45$byval_copy + 4 >> 2] = HEAP32[$agg$tmp27 + 4 >> 2];
-  HEAP32[$agg$tmp45$byval_copy + 8 >> 2] = HEAP32[$agg$tmp27 + 8 >> 2];
-  HEAP32[$agg$tmp45$byval_copy + 12 >> 2] = HEAP32[$agg$tmp27 + 12 >> 2];
-  HEAP32[$agg$tmp62$byval_copy >> 2] = HEAP32[$agg$tmp28 >> 2];
-  HEAP32[$agg$tmp62$byval_copy + 4 >> 2] = HEAP32[$agg$tmp28 + 4 >> 2];
-  HEAP32[$agg$tmp62$byval_copy + 8 >> 2] = HEAP32[$agg$tmp28 + 8 >> 2];
-  HEAP32[$agg$tmp62$byval_copy + 12 >> 2] = HEAP32[$agg$tmp28 + 12 >> 2];
-  if (!(_CheckCollisionRecs($agg$tmp45$byval_copy, $agg$tmp62$byval_copy) | 0)) {
-   __ZN4Rama12getRectangleEv($agg$tmp33, HEAP32[38640] | 0);
-   __ZN6Monkey12getRectangleEv($agg$tmp34, HEAP32[38636] | 0);
-   HEAP32[$agg$tmp45$byval_copy >> 2] = HEAP32[$agg$tmp33 >> 2];
-   HEAP32[$agg$tmp45$byval_copy + 4 >> 2] = HEAP32[$agg$tmp33 + 4 >> 2];
-   HEAP32[$agg$tmp45$byval_copy + 8 >> 2] = HEAP32[$agg$tmp33 + 8 >> 2];
-   HEAP32[$agg$tmp45$byval_copy + 12 >> 2] = HEAP32[$agg$tmp33 + 12 >> 2];
-   HEAP32[$agg$tmp62$byval_copy >> 2] = HEAP32[$agg$tmp34 >> 2];
-   HEAP32[$agg$tmp62$byval_copy + 4 >> 2] = HEAP32[$agg$tmp34 + 4 >> 2];
-   HEAP32[$agg$tmp62$byval_copy + 8 >> 2] = HEAP32[$agg$tmp34 + 8 >> 2];
-   HEAP32[$agg$tmp62$byval_copy + 12 >> 2] = HEAP32[$agg$tmp34 + 12 >> 2];
-   if (!(_CheckCollisionRecs($agg$tmp45$byval_copy, $agg$tmp62$byval_copy) | 0)) {
-    __ZN4Rama12getRectangleEv($agg$tmp39, HEAP32[38641] | 0);
-    __ZN6Monkey12getRectangleEv($agg$tmp40, HEAP32[38636] | 0);
-    HEAP32[$agg$tmp45$byval_copy >> 2] = HEAP32[$agg$tmp39 >> 2];
-    HEAP32[$agg$tmp45$byval_copy + 4 >> 2] = HEAP32[$agg$tmp39 + 4 >> 2];
-    HEAP32[$agg$tmp45$byval_copy + 8 >> 2] = HEAP32[$agg$tmp39 + 8 >> 2];
-    HEAP32[$agg$tmp45$byval_copy + 12 >> 2] = HEAP32[$agg$tmp39 + 12 >> 2];
-    HEAP32[$agg$tmp62$byval_copy >> 2] = HEAP32[$agg$tmp40 >> 2];
-    HEAP32[$agg$tmp62$byval_copy + 4 >> 2] = HEAP32[$agg$tmp40 + 4 >> 2];
-    HEAP32[$agg$tmp62$byval_copy + 8 >> 2] = HEAP32[$agg$tmp40 + 8 >> 2];
-    HEAP32[$agg$tmp62$byval_copy + 12 >> 2] = HEAP32[$agg$tmp40 + 12 >> 2];
-    if (!(_CheckCollisionRecs($agg$tmp45$byval_copy, $agg$tmp62$byval_copy) | 0)) {
-     __ZN4Rama12getRectangleEv($agg$tmp45, HEAP32[38642] | 0);
-     __ZN6Monkey12getRectangleEv($agg$tmp46, HEAP32[38636] | 0);
-     HEAP32[$agg$tmp45$byval_copy >> 2] = HEAP32[$agg$tmp45 >> 2];
-     HEAP32[$agg$tmp45$byval_copy + 4 >> 2] = HEAP32[$agg$tmp45 + 4 >> 2];
-     HEAP32[$agg$tmp45$byval_copy + 8 >> 2] = HEAP32[$agg$tmp45 + 8 >> 2];
-     HEAP32[$agg$tmp45$byval_copy + 12 >> 2] = HEAP32[$agg$tmp45 + 12 >> 2];
-     HEAP32[$agg$tmp62$byval_copy >> 2] = HEAP32[$agg$tmp46 >> 2];
-     HEAP32[$agg$tmp62$byval_copy + 4 >> 2] = HEAP32[$agg$tmp46 + 4 >> 2];
-     HEAP32[$agg$tmp62$byval_copy + 8 >> 2] = HEAP32[$agg$tmp46 + 8 >> 2];
-     HEAP32[$agg$tmp62$byval_copy + 12 >> 2] = HEAP32[$agg$tmp46 + 12 >> 2];
-     _CheckCollisionRecs($agg$tmp45$byval_copy, $agg$tmp62$byval_copy) | 0;
+  __ZN4Rama12getRectangleEv($agg$tmp30, HEAP32[38639] | 0);
+  __ZN6Monkey12getRectangleEv($agg$tmp31, HEAP32[38636] | 0);
+  HEAP32[$agg$tmp48$byval_copy >> 2] = HEAP32[$agg$tmp30 >> 2];
+  HEAP32[$agg$tmp48$byval_copy + 4 >> 2] = HEAP32[$agg$tmp30 + 4 >> 2];
+  HEAP32[$agg$tmp48$byval_copy + 8 >> 2] = HEAP32[$agg$tmp30 + 8 >> 2];
+  HEAP32[$agg$tmp48$byval_copy + 12 >> 2] = HEAP32[$agg$tmp30 + 12 >> 2];
+  HEAP32[$agg$tmp66$byval_copy >> 2] = HEAP32[$agg$tmp31 >> 2];
+  HEAP32[$agg$tmp66$byval_copy + 4 >> 2] = HEAP32[$agg$tmp31 + 4 >> 2];
+  HEAP32[$agg$tmp66$byval_copy + 8 >> 2] = HEAP32[$agg$tmp31 + 8 >> 2];
+  HEAP32[$agg$tmp66$byval_copy + 12 >> 2] = HEAP32[$agg$tmp31 + 12 >> 2];
+  if (!(_CheckCollisionRecs($agg$tmp48$byval_copy, $agg$tmp66$byval_copy) | 0)) {
+   __ZN4Rama12getRectangleEv($agg$tmp36, HEAP32[38640] | 0);
+   __ZN6Monkey12getRectangleEv($agg$tmp37, HEAP32[38636] | 0);
+   HEAP32[$agg$tmp48$byval_copy >> 2] = HEAP32[$agg$tmp36 >> 2];
+   HEAP32[$agg$tmp48$byval_copy + 4 >> 2] = HEAP32[$agg$tmp36 + 4 >> 2];
+   HEAP32[$agg$tmp48$byval_copy + 8 >> 2] = HEAP32[$agg$tmp36 + 8 >> 2];
+   HEAP32[$agg$tmp48$byval_copy + 12 >> 2] = HEAP32[$agg$tmp36 + 12 >> 2];
+   HEAP32[$agg$tmp66$byval_copy >> 2] = HEAP32[$agg$tmp37 >> 2];
+   HEAP32[$agg$tmp66$byval_copy + 4 >> 2] = HEAP32[$agg$tmp37 + 4 >> 2];
+   HEAP32[$agg$tmp66$byval_copy + 8 >> 2] = HEAP32[$agg$tmp37 + 8 >> 2];
+   HEAP32[$agg$tmp66$byval_copy + 12 >> 2] = HEAP32[$agg$tmp37 + 12 >> 2];
+   if (!(_CheckCollisionRecs($agg$tmp48$byval_copy, $agg$tmp66$byval_copy) | 0)) {
+    __ZN4Rama12getRectangleEv($agg$tmp42, HEAP32[38641] | 0);
+    __ZN6Monkey12getRectangleEv($agg$tmp43, HEAP32[38636] | 0);
+    HEAP32[$agg$tmp48$byval_copy >> 2] = HEAP32[$agg$tmp42 >> 2];
+    HEAP32[$agg$tmp48$byval_copy + 4 >> 2] = HEAP32[$agg$tmp42 + 4 >> 2];
+    HEAP32[$agg$tmp48$byval_copy + 8 >> 2] = HEAP32[$agg$tmp42 + 8 >> 2];
+    HEAP32[$agg$tmp48$byval_copy + 12 >> 2] = HEAP32[$agg$tmp42 + 12 >> 2];
+    HEAP32[$agg$tmp66$byval_copy >> 2] = HEAP32[$agg$tmp43 >> 2];
+    HEAP32[$agg$tmp66$byval_copy + 4 >> 2] = HEAP32[$agg$tmp43 + 4 >> 2];
+    HEAP32[$agg$tmp66$byval_copy + 8 >> 2] = HEAP32[$agg$tmp43 + 8 >> 2];
+    HEAP32[$agg$tmp66$byval_copy + 12 >> 2] = HEAP32[$agg$tmp43 + 12 >> 2];
+    if (!(_CheckCollisionRecs($agg$tmp48$byval_copy, $agg$tmp66$byval_copy) | 0)) {
+     __ZN4Rama12getRectangleEv($agg$tmp48, HEAP32[38642] | 0);
+     __ZN6Monkey12getRectangleEv($agg$tmp49, HEAP32[38636] | 0);
+     HEAP32[$agg$tmp48$byval_copy >> 2] = HEAP32[$agg$tmp48 >> 2];
+     HEAP32[$agg$tmp48$byval_copy + 4 >> 2] = HEAP32[$agg$tmp48 + 4 >> 2];
+     HEAP32[$agg$tmp48$byval_copy + 8 >> 2] = HEAP32[$agg$tmp48 + 8 >> 2];
+     HEAP32[$agg$tmp48$byval_copy + 12 >> 2] = HEAP32[$agg$tmp48 + 12 >> 2];
+     HEAP32[$agg$tmp66$byval_copy >> 2] = HEAP32[$agg$tmp49 >> 2];
+     HEAP32[$agg$tmp66$byval_copy + 4 >> 2] = HEAP32[$agg$tmp49 + 4 >> 2];
+     HEAP32[$agg$tmp66$byval_copy + 8 >> 2] = HEAP32[$agg$tmp49 + 8 >> 2];
+     HEAP32[$agg$tmp66$byval_copy + 12 >> 2] = HEAP32[$agg$tmp49 + 12 >> 2];
+     _CheckCollisionRecs($agg$tmp48$byval_copy, $agg$tmp66$byval_copy) | 0;
     }
    }
   }
  }
  __ZN7barLife11drawBarLifeEv(20104);
- HEAP8[$agg$tmp56 >> 0] = 0;
- HEAP8[$agg$tmp56 + 1 >> 0] = 0;
- HEAP8[$agg$tmp56 + 2 >> 0] = 0;
- HEAP8[$agg$tmp56 + 3 >> 0] = -1;
- HEAP8[$agg$tmp62$byval_copy >> 0] = HEAP8[$agg$tmp56 >> 0] | 0;
- HEAP8[$agg$tmp62$byval_copy + 1 >> 0] = HEAP8[$agg$tmp56 + 1 >> 0] | 0;
- HEAP8[$agg$tmp62$byval_copy + 2 >> 0] = HEAP8[$agg$tmp56 + 2 >> 0] | 0;
- HEAP8[$agg$tmp62$byval_copy + 3 >> 0] = HEAP8[$agg$tmp56 + 3 >> 0] | 0;
- _DrawText(20598, 20, 20, 40, $agg$tmp62$byval_copy);
+ HEAP8[$agg$tmp60 >> 0] = 0;
+ HEAP8[$agg$tmp60 + 1 >> 0] = 0;
+ HEAP8[$agg$tmp60 + 2 >> 0] = 0;
+ HEAP8[$agg$tmp60 + 3 >> 0] = -1;
+ HEAP8[$agg$tmp66$byval_copy >> 0] = HEAP8[$agg$tmp60 >> 0] | 0;
+ HEAP8[$agg$tmp66$byval_copy + 1 >> 0] = HEAP8[$agg$tmp60 + 1 >> 0] | 0;
+ HEAP8[$agg$tmp66$byval_copy + 2 >> 0] = HEAP8[$agg$tmp60 + 2 >> 0] | 0;
+ HEAP8[$agg$tmp66$byval_copy + 3 >> 0] = HEAP8[$agg$tmp60 + 3 >> 0] | 0;
+ _DrawText(20610, 20, 20, 40, $agg$tmp66$byval_copy);
  HEAP32[$vararg_buffer >> 2] = HEAP32[38638];
- $call61 = _TextFormat(20605, $vararg_buffer) | 0;
- HEAP8[$agg$tmp62 >> 0] = 0;
- HEAP8[$agg$tmp62 + 1 >> 0] = 0;
- HEAP8[$agg$tmp62 + 2 >> 0] = 0;
- HEAP8[$agg$tmp62 + 3 >> 0] = -1;
- HEAP8[$agg$tmp62$byval_copy >> 0] = HEAP8[$agg$tmp62 >> 0] | 0;
- HEAP8[$agg$tmp62$byval_copy + 1 >> 0] = HEAP8[$agg$tmp62 + 1 >> 0] | 0;
- HEAP8[$agg$tmp62$byval_copy + 2 >> 0] = HEAP8[$agg$tmp62 + 2 >> 0] | 0;
- HEAP8[$agg$tmp62$byval_copy + 3 >> 0] = HEAP8[$agg$tmp62 + 3 >> 0] | 0;
- _DrawText($call61, 950, 30, 30, $agg$tmp62$byval_copy);
+ $call65 = _TextFormat(20577, $vararg_buffer) | 0;
+ HEAP8[$agg$tmp66 >> 0] = 0;
+ HEAP8[$agg$tmp66 + 1 >> 0] = 0;
+ HEAP8[$agg$tmp66 + 2 >> 0] = 0;
+ HEAP8[$agg$tmp66 + 3 >> 0] = -1;
+ HEAP8[$agg$tmp66$byval_copy >> 0] = HEAP8[$agg$tmp66 >> 0] | 0;
+ HEAP8[$agg$tmp66$byval_copy + 1 >> 0] = HEAP8[$agg$tmp66 + 1 >> 0] | 0;
+ HEAP8[$agg$tmp66$byval_copy + 2 >> 0] = HEAP8[$agg$tmp66 + 2 >> 0] | 0;
+ HEAP8[$agg$tmp66$byval_copy + 3 >> 0] = HEAP8[$agg$tmp66 + 3 >> 0] | 0;
+ _DrawText($call65, 950, 30, 30, $agg$tmp66$byval_copy);
  _EndDrawing();
  STACKTOP = sp;
  return;
@@ -65983,7 +65983,7 @@ function __ZN10CartoonistC2Ev($this) {
  STACKTOP = STACKTOP + 32 | 0;
  if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(32);
  $ref$tmp = sp;
- _LoadTexture($ref$tmp, 20577);
+ _LoadTexture($ref$tmp, 20589);
  HEAP32[$this >> 2] = HEAP32[$ref$tmp >> 2];
  HEAP32[$this + 4 >> 2] = HEAP32[$ref$tmp + 4 >> 2];
  HEAP32[$this + 8 >> 2] = HEAP32[$ref$tmp + 8 >> 2];
@@ -69633,6 +69633,11 @@ function __ZN7barLife11getprogressEv($this) {
 function _llvm_round_f64(d) {
  d = +d;
  return d >= 0.0 ? +Math_floor(d + .5) : +Math_ceil(d - .5);
+}
+
+function __ZN7barLife9getStatusEv($this) {
+ $this = $this | 0;
+ return HEAP32[$this + 12 >> 2] | 0;
 }
 
 function _pthread_mutex_init($mutex, $attr) {
