@@ -5,6 +5,7 @@
 #include "clases/Tree.h"
 #include "clases/FrameManager.h"
 #include "clases/Rama.h"
+#include "clases/Bar_Life.h"
 
 #if defined(PLATFORM_WEB) // Para crear HTML5
 #include <emscripten/emscripten.h>
@@ -23,8 +24,7 @@ Tree *tree;
 //Rama *rama;
 bool end;
 int score = 0;
-int state = 0; // = 0(inicio); =1(jugando); =-1(perdido)
-int barLife = 500;
+barLife barLife;
 
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
 
@@ -103,9 +103,9 @@ static void UpdateDrawFrame(void) {
 
         if (IsKeyReleased(KEY_RIGHT))
         {
-            state = 1;
+            barLife.setStatus(1);
             score += 5;
-            barLife += 8;
+            ++barLife;
             player->move_right();
             ramas.ramaA->Move();
             ramas.ramaB->Move();
@@ -126,9 +126,9 @@ static void UpdateDrawFrame(void) {
         }
         if (IsKeyReleased(KEY_LEFT))
         {
-            state = 1;
+            barLife.setStatus(1);
             score += 5;
-            barLife += 8;
+            ++barLife;
             player->move_left();
             ramas.ramaA->Move();
             ramas.ramaB->Move();
@@ -148,24 +148,8 @@ static void UpdateDrawFrame(void) {
             }
         }
         //Barra vida
-    switch (state)
-    {
-        case 0: DrawText("Pulsa <- para comenzar", 475, 90, 20, DARKGRAY); break;
-        case 1:
-        {
-            DrawRectangle(350, 75, barLife, 40, GREEN);
-        } break;
-        case -1:
-        {
-            DrawRectangle(350, 75, 500, 40, LIME);
-            DrawText("GAME OVER", 500, 10, 40, GREEN);
-
-        } break;
-        default: break;
-    }
-
-    DrawRectangleLines(350, 75, 500, 40, DARKGRAY);
-        if (barLife < 1)
+    barLife.drawBarLife();
+        if (barLife.getprogress() < 1)
             end = 1;
 
 
