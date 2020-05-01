@@ -22,6 +22,7 @@ public:
     int getprogress();
     void drawBarLife();
     void setStatus(int);
+    int getStatus();
 
 
 };

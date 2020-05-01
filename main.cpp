@@ -99,7 +99,8 @@ static void UpdateDrawFrame(void) {
 
     // Comienzo a dibujar
     BeginDrawing();
-        --barLife;
+        if (barLife.getStatus() == 1)
+            --barLife;
         ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();

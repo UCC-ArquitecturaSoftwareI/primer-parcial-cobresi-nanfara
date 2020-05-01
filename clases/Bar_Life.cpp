@@ -47,3 +47,8 @@ void barLife::drawBarLife() {
 void barLife::setStatus(int newStatus) {
     status = newStatus;
 }
+
+int barLife::getStatus() {
+    return status;
+}
+
