@@ -22,6 +22,7 @@ public:
         rama_sector = sector1;
         color = 1; //Ver como cambiar color
         rama_position = DrawRama(lado, rama_sector, color); //ver de pasar rama
+        //random = 79;
     }
     void SetDatos(int lado1, int sector1); //la hice por si es mejor usar el constructor Rama() y desp setear cada dato
     void Draw();

@@ -12,12 +12,19 @@
 const int screenWidth = 1200;
 const int screenHeight = 900;
 
+//Notas:
+//Hacer una clase para la barra de visa, que sepa incrementarse, disminuirse, dibujarse etc.
+
+
 // Variables Globales
 Music music;
 Monkey *player;
 Tree *tree;
 //Rama *rama;
-bool collision;
+bool end;
+int score = 0;
+int state = 0; // = 0(inicio); =1(jugando); =-1(perdido)
+int barLife = 500;
 
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
 
@@ -44,7 +51,7 @@ int main() {
     ramas.ramaB = new Rama(1, 2);
     ramas.ramaC = new Rama(-1, 3);
     ramas.ramaD = new Rama(1, 4);
-    collision = false;
+    end = false;
 
 
 
@@ -53,7 +60,7 @@ int main() {
 #else
     SetTargetFPS(60);   // Set our game to run at 60 frames-per-second
     // Main loop
-    while (!WindowShouldClose() && !collision)
+    while (!WindowShouldClose() && !end)
     {
         UpdateDrawFrame();
     }
@@ -82,8 +89,10 @@ static void UpdateDrawFrame(void) {
     //if (IsKeyDown(KEY_LEFT)) player->move_left();
 
 
+
     // Comienzo a dibujar
     BeginDrawing();
+        --barLife;
         ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();
@@ -94,48 +103,75 @@ static void UpdateDrawFrame(void) {
 
         if (IsKeyReleased(KEY_RIGHT))
         {
+            state = 1;
+            score += 5;
+            barLife += 8;
             player->move_right();
             ramas.ramaA->Move();
             ramas.ramaB->Move();
             ramas.ramaC->Move();
             ramas.ramaD->Move();
             //Hay que poner con cual rama comparar
-            collision = CheckCollisionRecs(ramas.ramaA->getRectangle(), player->getRectangle());
-            if (!collision)
+            end = CheckCollisionRecs(ramas.ramaA->getRectangle(), player->getRectangle());
+            if (!end)
             {
-                collision = CheckCollisionRecs(ramas.ramaB->getRectangle(), player->getRectangle());
-                if (!collision)
+                end = CheckCollisionRecs(ramas.ramaB->getRectangle(), player->getRectangle());
+                if (!end)
                 {
-                    collision = CheckCollisionRecs(ramas.ramaC->getRectangle(), player->getRectangle());
-                    if (!collision)
-                        collision = CheckCollisionRecs(ramas.ramaD->getRectangle(), player->getRectangle());
+                    end = CheckCollisionRecs(ramas.ramaC->getRectangle(), player->getRectangle());
+                    if (!end)
+                        end = CheckCollisionRecs(ramas.ramaD->getRectangle(), player->getRectangle());
                 }
             }
         }
         if (IsKeyReleased(KEY_LEFT))
         {
+            state = 1;
+            score += 5;
+            barLife += 8;
             player->move_left();
             ramas.ramaA->Move();
             ramas.ramaB->Move();
             ramas.ramaC->Move();
             ramas.ramaD->Move();
             //Hay que poner con cual rama comparar
-            collision = CheckCollisionRecs(ramas.ramaA->getRectangle(), player->getRectangle());
-            if (!collision)
+            end = CheckCollisionRecs(ramas.ramaA->getRectangle(), player->getRectangle());
+            if (!end)
             {
-                collision = CheckCollisionRecs(ramas.ramaB->getRectangle(), player->getRectangle());
-                if (!collision)
+                end = CheckCollisionRecs(ramas.ramaB->getRectangle(), player->getRectangle());
+                if (!end)
                 {
-                    collision = CheckCollisionRecs(ramas.ramaC->getRectangle(), player->getRectangle());
-                    if (!collision)
-                        collision = CheckCollisionRecs(ramas.ramaD->getRectangle(), player->getRectangle());
+                    end = CheckCollisionRecs(ramas.ramaC->getRectangle(), player->getRectangle());
+                    if (!end)
+                        end = CheckCollisionRecs(ramas.ramaD->getRectangle(), player->getRectangle());
                 }
             }
         }
+        //Barra vida
+    switch (state)
+    {
+        case 0: DrawText("Pulsa <- para comenzar", 475, 90, 20, DARKGRAY); break;
+        case 1:
+        {
+            DrawRectangle(350, 75, barLife, 40, GREEN);
+        } break;
+        case -1:
+        {
+            DrawRectangle(350, 75, 500, 40, LIME);
+            DrawText("GAME OVER", 500, 10, 40, GREEN);
+
+        } break;
+        default: break;
+    }
+
+    DrawRectangleLines(350, 75, 500, 40, DARKGRAY);
+        if (barLife < 1)
+            end = 1;
 
 
     // Dibujo todos los elementos del juego.
     DrawText("Tankey", 20, 20, 40, BLACK);
+    DrawText(FormatText("Score: %05i", score), 950, 30, 30, BLACK);
 
     // Finalizo el dibujado
     EndDrawing();
