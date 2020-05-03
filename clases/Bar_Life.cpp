@@ -11,6 +11,7 @@ barLife::barLife() {
     progress = width;
     position.x = 350;
     position.y = 75;
+    step = 15;
 }
 
 void barLife::operator--() {
@@ -18,7 +19,10 @@ void barLife::operator--() {
 }
 
 void barLife::operator++() {
-    progress += 10;
+    if (progress < width - step)
+        progress += step;
+    else
+        progress == width;
 }
 
 int barLife::getprogress() {

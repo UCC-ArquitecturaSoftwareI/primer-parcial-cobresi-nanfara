@@ -6,6 +6,7 @@
 #include "clases/FrameManager.h"
 #include "clases/Rama.h"
 #include "clases/Bar_Life.h"
+#include <vector>
 
 #if defined(PLATFORM_WEB) // Para crear HTML5
 #include <emscripten/emscripten.h>
@@ -13,8 +14,6 @@
 const int screenWidth = 1200;
 const int screenHeight = 900;
 
-//Notas:
-//Hacer una clase para la barra de visa, que sepa incrementarse, disminuirse, dibujarse etc.
 
 
 // Variables Globales
@@ -22,7 +21,7 @@ Music music;
 Monkey *player;
 Tree *tree;
 //Rama *rama;
-bool end;
+bool GameOver;
 int score = 0;
 barLife barLife;
 
@@ -30,14 +29,7 @@ static void UpdateDrawFrame(void);          // Función dedicada a operar cada f
 
 void UpdateDrawEnd();
 
-struct Conjunto_ramas{
-    Rama *ramaA;
-    Rama *ramaB;
-    Rama *ramaC;
-    Rama *ramaD;
-};
-Conjunto_ramas ramas;
-//Usar vector de Ramas o de punteros a ramas
+std::vector<Rama*> Ramas;
 
 int main() {
     // Inicialización de la ventana
@@ -49,11 +41,13 @@ int main() {
     PlayMusicStream(music);
     tree = new Tree;
     player = new Monkey;
-    ramas.ramaA = new Rama(-1, 1);
-    ramas.ramaB = new Rama(1, 2);
-    ramas.ramaC = new Rama(-1, 3);
-    ramas.ramaD = new Rama(1, 4);
-    end = false;
+
+    Ramas.push_back(new Rama(-1, 1));
+    Ramas.push_back(new Rama(1, 2));
+    Ramas.push_back(new Rama(-1, 3));
+    Ramas.push_back(new Rama(1, 4));
+
+    GameOver = false;
 
 
 
@@ -64,7 +58,7 @@ int main() {
     // Main loop
     while (!WindowShouldClose())
     {
-        if (!end)
+        if (!GameOver)
          UpdateDrawFrame();
         else
             UpdateDrawEnd();
@@ -92,10 +86,6 @@ static void UpdateDrawFrame(void) {
     // siempre hay que reproducir la musica que esta actualmente
     //UpdateMusicStream(music);
     // Verifico Entradas de eventos.
-    //if (IsKeyDown(KEY_RIGHT)) player->move_right();
-    //if (IsKeyDown(KEY_LEFT)) player->move_left();
-
-
 
     // Comienzo a dibujar
     BeginDrawing();
@@ -104,10 +94,8 @@ static void UpdateDrawFrame(void) {
         ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();
-        ramas.ramaA->Draw();
-        ramas.ramaB->Draw();
-        ramas.ramaC->Draw();
-        ramas.ramaD->Draw();
+        for (int i = 0; i < 4; i++)
+            Ramas[i]->Draw();
 
         if (IsKeyReleased(KEY_RIGHT))
         {
@@ -115,50 +103,37 @@ static void UpdateDrawFrame(void) {
             score += 5;
             ++barLife;
             player->move_right();
-            ramas.ramaA->Move();
-            ramas.ramaB->Move();
-            ramas.ramaC->Move();
-            ramas.ramaD->Move();
-            //Hay que poner con cual rama comparar
-            end = CheckCollisionRecs(ramas.ramaA->getRectangle(), player->getRectangle());
-            if (!end)
+            for (int i = 0; i < 4; i++)
+                Ramas[i]->Move();
+
+
+            for (int i = 0; i < 4; i++)
             {
-                end = CheckCollisionRecs(ramas.ramaB->getRectangle(), player->getRectangle());
-                if (!end)
-                {
-                    end = CheckCollisionRecs(ramas.ramaC->getRectangle(), player->getRectangle());
-                    if (!end)
-                        end = CheckCollisionRecs(ramas.ramaD->getRectangle(), player->getRectangle());
-                }
+                GameOver = CheckCollisionRecs(Ramas[i]->getRectangle(), player->getRectangle());
+                if (GameOver)
+                    break;
             }
         }
+
         if (IsKeyReleased(KEY_LEFT))
         {
             barLife.setStatus(1);
             score += 5;
             ++barLife;
             player->move_left();
-            ramas.ramaA->Move();
-            ramas.ramaB->Move();
-            ramas.ramaC->Move();
-            ramas.ramaD->Move();
-            //Hay que poner con cual rama comparar
-            end = CheckCollisionRecs(ramas.ramaA->getRectangle(), player->getRectangle());
-            if (!end)
+            for (int i = 0; i < 4; i++)
+                Ramas[i]->Move();
+            for (int i = 0; i < 4; i++)
             {
-                end = CheckCollisionRecs(ramas.ramaB->getRectangle(), player->getRectangle());
-                if (!end)
-                {
-                    end = CheckCollisionRecs(ramas.ramaC->getRectangle(), player->getRectangle());
-                    if (!end)
-                        end = CheckCollisionRecs(ramas.ramaD->getRectangle(), player->getRectangle());
-                }
+                GameOver = CheckCollisionRecs(Ramas[i]->getRectangle(), player->getRectangle());
+                if (GameOver)
+                    break;
             }
         }
         //Barra vida
     barLife.drawBarLife();
         if (barLife.getprogress() < 1)
-            end = 1;
+            GameOver = 1;
 
 
     // Dibujo todos los elementos del juego.

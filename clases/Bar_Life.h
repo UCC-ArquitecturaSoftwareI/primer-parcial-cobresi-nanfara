@@ -14,6 +14,7 @@ private:
     int width;
     int progress;
     int status; // = 0(inicio); =1(jugando); =-1(perdido)
+    int step;
     Vector2 position;
 public:
     barLife();
