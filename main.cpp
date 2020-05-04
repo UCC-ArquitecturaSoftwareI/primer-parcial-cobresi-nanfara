@@ -190,7 +190,7 @@ int UpdateMenu()
     BeginDrawing();
     ClearBackground(colorBackground);
     TankeySkin->Draw();
-    int tema;
+    int tema = 0;
     mousePoint = GetMousePosition();
     for (int i = 0; i<3; i++)
     {
