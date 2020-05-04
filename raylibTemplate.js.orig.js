@@ -191,7 +191,7 @@ Module['FS_createPath']('/', 'resources', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2882475, "filename": "/resources/Sprite.png"}, {"start": 2882475, "audio": 0, "end": 2893168, "filename": "/resources/shell.html"}, {"start": 2893168, "audio": 0, "end": 2895125, "filename": "/resources/ship.png"}], "remote_package_size": 2895125, "package_uuid": "6f5a7b10-34b3-4501-899f-2e884343303d"});
+ loadPackage({"files": [{"start": 0, "audio": 1, "end": 2338920, "filename": "/resources/Cyberpunk Moonlight Sonata.mp3"}, {"start": 2338920, "audio": 0, "end": 2882475, "filename": "/resources/Sprite.png"}, {"start": 2882475, "audio": 0, "end": 2884432, "filename": "/resources/ship.png"}, {"start": 2884432, "audio": 0, "end": 2895125, "filename": "/resources/shell.html"}], "remote_package_size": 2895125, "package_uuid": "36a53020-f1fd-4ab7-8c23-8faf275b5e71"});
 
 })();
 
@@ -43545,12 +43545,12 @@ function _DrawTextEx($font, $text, $position, $fontSize, $spacing, $tint) {
 }
 
 function __emscripten_dceable_type_decls() {
+ _pthread_attr_init(0) | 0;
+ _pthread_attr_destroy(0) | 0;
  _pthread_create(0, 0, 0, 0) | 0;
  _pthread_join(0, 0) | 0;
  _pthread_cond_init(0, 0) | 0;
  _pthread_cond_destroy(0) | 0;
- _pthread_attr_init(0) | 0;
- _pthread_attr_destroy(0) | 0;
  _emscripten_glVertexAttribDivisorANGLE(0, 0);
  _emscripten_glGenQueriesEXT(0, 0);
  _emscripten_glDeleteQueriesEXT(0, 0);
@@ -49978,9 +49978,9 @@ function __ZL15UpdateDrawFramev() {
  $agg$tmp70 = sp + 104 | 0;
  _BeginDrawing();
  if ((__ZN7barLife9getStatusEv(170044) | 0) == 1) __ZN7barLifemmEv(170044);
- HEAP8[$agg$tmp >> 0] = 102;
- HEAP8[$agg$tmp + 1 >> 0] = -65;
- HEAP8[$agg$tmp + 2 >> 0] = -1;
+ HEAP8[$agg$tmp >> 0] = 0;
+ HEAP8[$agg$tmp + 1 >> 0] = 0;
+ HEAP8[$agg$tmp + 2 >> 0] = 0;
  HEAP8[$agg$tmp + 3 >> 0] = -1;
  HEAP8[$agg$tmp70$byval_copy >> 0] = HEAP8[$agg$tmp >> 0] | 0;
  HEAP8[$agg$tmp70$byval_copy + 1 >> 0] = HEAP8[$agg$tmp + 1 >> 0] | 0;
@@ -54341,7 +54341,7 @@ function _main() {
  $1 = HEAP32[$tf >> 2] | 0;
  $call8 = FUNCTION_TABLE_ii[HEAP32[HEAP32[$1 >> 2] >> 2] & 127]($1) | 0;
  HEAP32[42508] = $call8;
- $call10 = __Znwm(64) | 0;
+ $call10 = __Znwm(80) | 0;
  __ZN4RamaC2Eii($call10, -1, 1);
  HEAP32[$music$byval_copy1 >> 2] = $call10;
  $3 = HEAP32[42519] | 0;
@@ -54349,7 +54349,7 @@ function _main() {
   HEAP32[$3 >> 2] = $call10;
   HEAP32[42519] = (HEAP32[42519] | 0) + 4;
  } else __ZNSt3__26vectorIP4RamaNS_9allocatorIS2_EEE21__push_back_slow_pathIS2_EEvOT_(170072, $music$byval_copy1);
- $call14 = __Znwm(64) | 0;
+ $call14 = __Znwm(80) | 0;
  __ZN4RamaC2Eii($call14, 1, 2);
  HEAP32[$music$byval_copy1 >> 2] = $call14;
  $7 = HEAP32[42519] | 0;
@@ -54357,7 +54357,7 @@ function _main() {
   HEAP32[$7 >> 2] = $call14;
   HEAP32[42519] = (HEAP32[42519] | 0) + 4;
  } else __ZNSt3__26vectorIP4RamaNS_9allocatorIS2_EEE21__push_back_slow_pathIS2_EEvOT_(170072, $music$byval_copy1);
- $call18 = __Znwm(64) | 0;
+ $call18 = __Znwm(80) | 0;
  __ZN4RamaC2Eii($call18, -1, 3);
  HEAP32[$music$byval_copy1 >> 2] = $call18;
  $11 = HEAP32[42519] | 0;
@@ -54365,7 +54365,7 @@ function _main() {
   HEAP32[$11 >> 2] = $call18;
   HEAP32[42519] = (HEAP32[42519] | 0) + 4;
  } else __ZNSt3__26vectorIP4RamaNS_9allocatorIS2_EEE21__push_back_slow_pathIS2_EEvOT_(170072, $music$byval_copy1);
- $call22 = __Znwm(64) | 0;
+ $call22 = __Znwm(80) | 0;
  __ZN4RamaC2Eii($call22, 1, 4);
  HEAP32[$music$byval_copy1 >> 2] = $call22;
  $15 = HEAP32[42519] | 0;
@@ -56293,128 +56293,6 @@ function _ma_worker_thread($pData) {
   return 0;
  }
  return 0;
-}
-
-function __ZN10Cartoonist8DrawRamaEiii($agg$result, $this, $lado, $sector, $color) {
- $agg$result = $agg$result | 0;
- $this = $this | 0;
- $lado = $lado | 0;
- $sector = $sector | 0;
- $color = $color | 0;
- var $$ = f0, $$3 = f0, $0 = 0, $10 = 0, $15 = 0, $16 = 0, $5 = 0, $6 = 0, $agg$tmp58 = 0, $agg$tmp60 = 0, $cmp2 = 0, $position59 = 0, $rect = 0, $rect$byval_copy = 0, $tmpcast$byval_copy = 0, $tmpcast4$byval_copy = 0, $tmpcast5$byval_copy = 0, sp = 0;
- sp = STACKTOP;
- STACKTOP = STACKTOP + 64 | 0;
- if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(64);
- $tmpcast5$byval_copy = sp + 56 | 0;
- $tmpcast$byval_copy = sp + 48 | 0;
- $rect$byval_copy = sp + 32 | 0;
- $tmpcast4$byval_copy = sp + 12 | 0;
- $agg$tmp58 = sp;
- $agg$tmp60 = sp + 8 | 0;
- $rect = $this + 20 | 0;
- HEAPF32[$this + 24 >> 2] = Math_fround(900.0);
- $cmp2 = ($color | 0) == 1;
- L1 : do if (($lado | 0) == -1) {
-  $$ = $cmp2 ? Math_fround(900.0) : Math_fround(300.0);
-  HEAPF32[$rect >> 2] = $$;
-  switch ($sector | 0) {
-  case 1:
-   {
-    HEAPF32[$this + 36 >> 2] = Math_fround(190.0);
-    HEAPF32[$this + 40 >> 2] = Math_fround(-150.0);
-    break L1;
-    break;
-   }
-  case 2:
-   {
-    HEAPF32[$this + 36 >> 2] = Math_fround(190.0);
-    HEAPF32[$this + 40 >> 2] = Math_fround(150.0);
-    break L1;
-    break;
-   }
-  case 3:
-   {
-    HEAPF32[$this + 36 >> 2] = Math_fround(190.0);
-    HEAPF32[$this + 40 >> 2] = Math_fround(450.0);
-    break L1;
-    break;
-   }
-  case 4:
-   {
-    HEAPF32[$this + 36 >> 2] = Math_fround(190.0);
-    HEAPF32[$this + 40 >> 2] = Math_fround(750.0);
-    break L1;
-    break;
-   }
-  default:
-   break L1;
-  }
- } else {
-  $$3 = $cmp2 ? Math_fround(600.0) : Math_fround(0.0);
-  HEAPF32[$rect >> 2] = $$3;
-  switch ($sector | 0) {
-  case 1:
-   {
-    HEAPF32[$this + 36 >> 2] = Math_fround(710.0);
-    HEAPF32[$this + 40 >> 2] = Math_fround(-150.0);
-    break L1;
-    break;
-   }
-  case 2:
-   {
-    HEAPF32[$this + 36 >> 2] = Math_fround(710.0);
-    HEAPF32[$this + 40 >> 2] = Math_fround(150.0);
-    break L1;
-    break;
-   }
-  case 3:
-   {
-    HEAPF32[$this + 36 >> 2] = Math_fround(710.0);
-    HEAPF32[$this + 40 >> 2] = Math_fround(450.0);
-    break L1;
-    break;
-   }
-  case 4:
-   {
-    HEAPF32[$this + 36 >> 2] = Math_fround(710.0);
-    HEAPF32[$this + 40 >> 2] = Math_fround(750.0);
-    break L1;
-    break;
-   }
-  default:
-   break L1;
-  }
- } while (0);
- $position59 = $this + 36 | 0;
- $0 = $position59;
- $5 = HEAP32[$0 + 4 >> 2] | 0;
- $6 = $agg$tmp58;
- HEAP32[$6 >> 2] = HEAP32[$0 >> 2];
- HEAP32[$6 + 4 >> 2] = $5;
- HEAP32[$agg$tmp60 >> 2] = -1;
- HEAP32[$tmpcast4$byval_copy >> 2] = HEAP32[$this >> 2];
- HEAP32[$tmpcast4$byval_copy + 4 >> 2] = HEAP32[$this + 4 >> 2];
- HEAP32[$tmpcast4$byval_copy + 8 >> 2] = HEAP32[$this + 8 >> 2];
- HEAP32[$tmpcast4$byval_copy + 12 >> 2] = HEAP32[$this + 12 >> 2];
- HEAP32[$tmpcast4$byval_copy + 16 >> 2] = HEAP32[$this + 16 >> 2];
- HEAP32[$rect$byval_copy >> 2] = HEAP32[$rect >> 2];
- HEAP32[$rect$byval_copy + 4 >> 2] = HEAP32[$rect + 4 >> 2];
- HEAP32[$rect$byval_copy + 8 >> 2] = HEAP32[$rect + 8 >> 2];
- HEAP32[$rect$byval_copy + 12 >> 2] = HEAP32[$rect + 12 >> 2];
- HEAP32[$tmpcast$byval_copy >> 2] = HEAP32[$agg$tmp58 >> 2];
- HEAP32[$tmpcast$byval_copy + 4 >> 2] = HEAP32[$agg$tmp58 + 4 >> 2];
- HEAP8[$tmpcast5$byval_copy >> 0] = HEAP8[$agg$tmp60 >> 0] | 0;
- HEAP8[$tmpcast5$byval_copy + 1 >> 0] = HEAP8[$agg$tmp60 + 1 >> 0] | 0;
- HEAP8[$tmpcast5$byval_copy + 2 >> 0] = HEAP8[$agg$tmp60 + 2 >> 0] | 0;
- HEAP8[$tmpcast5$byval_copy + 3 >> 0] = HEAP8[$agg$tmp60 + 3 >> 0] | 0;
- _DrawTextureRec($tmpcast4$byval_copy, $rect$byval_copy, $tmpcast$byval_copy, $tmpcast5$byval_copy);
- $10 = $position59;
- $15 = HEAP32[$10 + 4 >> 2] | 0;
- $16 = $agg$result;
- HEAP32[$16 >> 2] = HEAP32[$10 >> 2];
- HEAP32[$16 + 4 >> 2] = $15;
- STACKTOP = sp;
- return;
 }
 
 function _stbv_vorbis_finish_frame($f, $len, $left, $right) {
@@ -58581,6 +58459,117 @@ function _InitAudioBuffer($format, $channels, $sampleRate, $bufferSizeInFrames, 
   return $26 | 0;
  }
  return 0;
+}
+
+function __ZN10Cartoonist8DrawRamaEii9Rectangle($agg$result, $this, $lado, $sector, $rectangle) {
+ $agg$result = $agg$result | 0;
+ $this = $this | 0;
+ $lado = $lado | 0;
+ $sector = $sector | 0;
+ $rectangle = $rectangle | 0;
+ var $0 = 0, $10 = 0, $15 = 0, $16 = 0, $5 = 0, $6 = 0, $agg$tmp40 = 0, $agg$tmp42 = 0, $position41 = 0, $rectangle$byval_copy = 0, $tmpcast$byval_copy = 0, $tmpcast1$byval_copy = 0, $tmpcast2$byval_copy = 0, sp = 0;
+ sp = STACKTOP;
+ STACKTOP = STACKTOP + 64 | 0;
+ if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(64);
+ $tmpcast2$byval_copy = sp + 56 | 0;
+ $tmpcast$byval_copy = sp + 48 | 0;
+ $rectangle$byval_copy = sp + 32 | 0;
+ $tmpcast1$byval_copy = sp + 12 | 0;
+ $agg$tmp40 = sp;
+ $agg$tmp42 = sp + 8 | 0;
+ L1 : do if (($lado | 0) == -1) switch ($sector | 0) {
+ case 1:
+  {
+   HEAPF32[$this + 36 >> 2] = Math_fround(190.0);
+   HEAPF32[$this + 40 >> 2] = Math_fround(-150.0);
+   break L1;
+   break;
+  }
+ case 2:
+  {
+   HEAPF32[$this + 36 >> 2] = Math_fround(190.0);
+   HEAPF32[$this + 40 >> 2] = Math_fround(150.0);
+   break L1;
+   break;
+  }
+ case 3:
+  {
+   HEAPF32[$this + 36 >> 2] = Math_fround(190.0);
+   HEAPF32[$this + 40 >> 2] = Math_fround(450.0);
+   break L1;
+   break;
+  }
+ case 4:
+  {
+   HEAPF32[$this + 36 >> 2] = Math_fround(190.0);
+   HEAPF32[$this + 40 >> 2] = Math_fround(750.0);
+   break L1;
+   break;
+  }
+ default:
+  break L1;
+ } else switch ($sector | 0) {
+ case 1:
+  {
+   HEAPF32[$this + 36 >> 2] = Math_fround(710.0);
+   HEAPF32[$this + 40 >> 2] = Math_fround(-150.0);
+   break L1;
+   break;
+  }
+ case 2:
+  {
+   HEAPF32[$this + 36 >> 2] = Math_fround(710.0);
+   HEAPF32[$this + 40 >> 2] = Math_fround(150.0);
+   break L1;
+   break;
+  }
+ case 3:
+  {
+   HEAPF32[$this + 36 >> 2] = Math_fround(710.0);
+   HEAPF32[$this + 40 >> 2] = Math_fround(450.0);
+   break L1;
+   break;
+  }
+ case 4:
+  {
+   HEAPF32[$this + 36 >> 2] = Math_fround(710.0);
+   HEAPF32[$this + 40 >> 2] = Math_fround(750.0);
+   break L1;
+   break;
+  }
+ default:
+  break L1;
+ } while (0);
+ $position41 = $this + 36 | 0;
+ $0 = $position41;
+ $5 = HEAP32[$0 + 4 >> 2] | 0;
+ $6 = $agg$tmp40;
+ HEAP32[$6 >> 2] = HEAP32[$0 >> 2];
+ HEAP32[$6 + 4 >> 2] = $5;
+ HEAP32[$agg$tmp42 >> 2] = -1;
+ HEAP32[$tmpcast1$byval_copy >> 2] = HEAP32[$this >> 2];
+ HEAP32[$tmpcast1$byval_copy + 4 >> 2] = HEAP32[$this + 4 >> 2];
+ HEAP32[$tmpcast1$byval_copy + 8 >> 2] = HEAP32[$this + 8 >> 2];
+ HEAP32[$tmpcast1$byval_copy + 12 >> 2] = HEAP32[$this + 12 >> 2];
+ HEAP32[$tmpcast1$byval_copy + 16 >> 2] = HEAP32[$this + 16 >> 2];
+ HEAP32[$rectangle$byval_copy >> 2] = HEAP32[$rectangle >> 2];
+ HEAP32[$rectangle$byval_copy + 4 >> 2] = HEAP32[$rectangle + 4 >> 2];
+ HEAP32[$rectangle$byval_copy + 8 >> 2] = HEAP32[$rectangle + 8 >> 2];
+ HEAP32[$rectangle$byval_copy + 12 >> 2] = HEAP32[$rectangle + 12 >> 2];
+ HEAP32[$tmpcast$byval_copy >> 2] = HEAP32[$agg$tmp40 >> 2];
+ HEAP32[$tmpcast$byval_copy + 4 >> 2] = HEAP32[$agg$tmp40 + 4 >> 2];
+ HEAP8[$tmpcast2$byval_copy >> 0] = HEAP8[$agg$tmp42 >> 0] | 0;
+ HEAP8[$tmpcast2$byval_copy + 1 >> 0] = HEAP8[$agg$tmp42 + 1 >> 0] | 0;
+ HEAP8[$tmpcast2$byval_copy + 2 >> 0] = HEAP8[$agg$tmp42 + 2 >> 0] | 0;
+ HEAP8[$tmpcast2$byval_copy + 3 >> 0] = HEAP8[$agg$tmp42 + 3 >> 0] | 0;
+ _DrawTextureRec($tmpcast1$byval_copy, $rectangle$byval_copy, $tmpcast$byval_copy, $tmpcast2$byval_copy);
+ $10 = $position41;
+ $15 = HEAP32[$10 + 4 >> 2] | 0;
+ $16 = $agg$result;
+ HEAP32[$16 >> 2] = HEAP32[$10 >> 2];
+ HEAP32[$16 + 4 >> 2] = $15;
+ STACKTOP = sp;
+ return;
 }
 
 function _ma_device_init_ex($backends, $backendCount, $pContextConfig, $pConfig, $pDevice) {
@@ -71700,6 +71689,56 @@ function _drmp3_blend_f32($pOut, $pInA, $pInB, $factor, $channels) {
  return;
 }
 
+function __ZN4Rama4MoveEv($this) {
+ $this = $this | 0;
+ var $$byval_copy = 0, $$pre$phiZ2D = 0, $0 = 0, $10 = 0, $11 = 0, $2 = 0, $3 = 0, $4 = 0, $5 = 0, $add = 0, $cmp3 = 0, $cmp7 = 0, $lado = 0, $lado19$pre$phiZ2D = 0, $rama_sector = 0, $rect = 0, $ref$tmp18 = 0, sp = 0;
+ sp = STACKTOP;
+ STACKTOP = STACKTOP + 32 | 0;
+ if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(32);
+ $$byval_copy = sp + 8 | 0;
+ $ref$tmp18 = sp;
+ $rama_sector = $this + 44 | 0;
+ $0 = HEAP32[$rama_sector >> 2] | 0;
+ if (($0 | 0) == 4) {
+  HEAP32[$rama_sector >> 2] = 1;
+  $cmp3 = (_GetRandomValue(0, 1) | 0) == 0;
+  $lado = $this + 48 | 0;
+  HEAP32[$lado >> 2] = $cmp3 ? -1 : 1;
+  $cmp7 = (_GetRandomValue(0, 9) | 0) > 6;
+  HEAP8[$this + 60 >> 0] = $cmp7 & 1;
+  __ZN10Cartoonist16GetRamaRectangleEib($$byval_copy, $this, HEAP32[$lado >> 2] | 0, $cmp7);
+  $rect = $this + 64 | 0;
+  HEAP32[$rect >> 2] = HEAP32[$$byval_copy >> 2];
+  HEAP32[$rect + 4 >> 2] = HEAP32[$$byval_copy + 4 >> 2];
+  HEAP32[$rect + 8 >> 2] = HEAP32[$$byval_copy + 8 >> 2];
+  HEAP32[$rect + 12 >> 2] = HEAP32[$$byval_copy + 12 >> 2];
+  $$pre$phiZ2D = $this;
+  $3 = $rect;
+  $4 = HEAP32[$rama_sector >> 2] | 0;
+  $lado19$pre$phiZ2D = $lado;
+ } else {
+  $add = $0 + 1 | 0;
+  HEAP32[$rama_sector >> 2] = $add;
+  $$pre$phiZ2D = $this;
+  $3 = $this + 64 | 0;
+  $4 = $add;
+  $lado19$pre$phiZ2D = $this + 48 | 0;
+ }
+ $2 = HEAP32[$lado19$pre$phiZ2D >> 2] | 0;
+ HEAP32[$$byval_copy >> 2] = HEAP32[$3 >> 2];
+ HEAP32[$$byval_copy + 4 >> 2] = HEAP32[$3 + 4 >> 2];
+ HEAP32[$$byval_copy + 8 >> 2] = HEAP32[$3 + 8 >> 2];
+ HEAP32[$$byval_copy + 12 >> 2] = HEAP32[$3 + 12 >> 2];
+ __ZN10Cartoonist8DrawRamaEii9Rectangle($ref$tmp18, $$pre$phiZ2D, $2, $4, $$byval_copy);
+ $5 = $ref$tmp18;
+ $10 = HEAP32[$5 + 4 >> 2] | 0;
+ $11 = $this + 52 | 0;
+ HEAP32[$11 >> 2] = HEAP32[$5 >> 2];
+ HEAP32[$11 + 4 >> 2] = $10;
+ STACKTOP = sp;
+ return;
+}
+
 function _ma_pcm_s16_to_f32__reference($dst, $src, $0, $1, $ditherMode) {
  $dst = $dst | 0;
  $src = $src | 0;
@@ -72985,6 +73024,83 @@ function _drmp3_reset($pMP3) {
   STACKTOP = sp;
   return;
  } else ___assert_fail(46794, 46558, 3085, 46987);
+}
+
+function __ZN10Cartoonist22GetRamaAnimalRectangleEi($agg$result, $this, $lado) {
+ $agg$result = $agg$result | 0;
+ $this = $this | 0;
+ $lado = $lado | 0;
+ var $call = 0, $rect39 = 0;
+ $call = _GetRandomValue(0, 3) | 0;
+ L1 : do if (($lado | 0) == -1) switch ($call | 0) {
+ case 0:
+  {
+   HEAPF32[$this + 24 >> 2] = Math_fround(2100.0);
+   HEAPF32[$this + 20 >> 2] = Math_fround(300.0);
+   break L1;
+   break;
+  }
+ case 1:
+  {
+   HEAPF32[$this + 24 >> 2] = Math_fround(2100.0);
+   HEAPF32[$this + 20 >> 2] = Math_fround(900.0);
+   break L1;
+   break;
+  }
+ case 2:
+  {
+   HEAPF32[$this + 24 >> 2] = Math_fround(2400.0);
+   HEAPF32[$this + 20 >> 2] = Math_fround(300.0);
+   break L1;
+   break;
+  }
+ case 3:
+  {
+   HEAPF32[$this + 24 >> 2] = Math_fround(2400.0);
+   HEAPF32[$this + 20 >> 2] = Math_fround(900.0);
+   break L1;
+   break;
+  }
+ default:
+  break L1;
+ } else switch ($call | 0) {
+ case 0:
+  {
+   HEAPF32[$this + 24 >> 2] = Math_fround(2100.0);
+   HEAPF32[$this + 20 >> 2] = Math_fround(0.0);
+   break L1;
+   break;
+  }
+ case 1:
+  {
+   HEAPF32[$this + 24 >> 2] = Math_fround(2100.0);
+   HEAPF32[$this + 20 >> 2] = Math_fround(600.0);
+   break L1;
+   break;
+  }
+ case 2:
+  {
+   HEAPF32[$this + 24 >> 2] = Math_fround(2400.0);
+   HEAPF32[$this + 20 >> 2] = Math_fround(0.0);
+   break L1;
+   break;
+  }
+ case 3:
+  {
+   HEAPF32[$this + 24 >> 2] = Math_fround(2400.0);
+   HEAPF32[$this + 20 >> 2] = Math_fround(600.0);
+   break L1;
+   break;
+  }
+ default:
+  break L1;
+ } while (0);
+ $rect39 = $this + 20 | 0;
+ HEAP32[$agg$result >> 2] = HEAP32[$rect39 >> 2];
+ HEAP32[$agg$result + 4 >> 2] = HEAP32[$rect39 + 4 >> 2];
+ HEAP32[$agg$result + 8 >> 2] = HEAP32[$rect39 + 8 >> 2];
+ HEAP32[$agg$result + 12 >> 2] = HEAP32[$rect39 + 12 >> 2];
+ return;
 }
 
 function _ma_pcm_u8_to_s32__reference($dst, $src, $0, $1, $ditherMode) {
@@ -77303,6 +77419,41 @@ function _stbi__malloc_mad4($a, $b, $c, $d, $add) {
  return 0;
 }
 
+function __ZN4RamaC2Eii($this, $lado1, $sector1) {
+ $this = $this | 0;
+ $lado1 = $lado1 | 0;
+ $sector1 = $sector1 | 0;
+ var $0 = 0, $5 = 0, $6 = 0, $rect7 = 0, $ref$tmp = 0, $ref$tmp4 = 0, $ref$tmp4$byval_copy = 0, sp = 0;
+ sp = STACKTOP;
+ STACKTOP = STACKTOP + 48 | 0;
+ if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(48);
+ $ref$tmp4$byval_copy = sp + 24 | 0;
+ $ref$tmp = sp;
+ $ref$tmp4 = sp + 8 | 0;
+ __ZN10CartoonistC2Ev($this);
+ HEAP8[$this + 60 >> 0] = 0;
+ HEAP32[$this + 48 >> 2] = $lado1;
+ HEAP32[$this + 44 >> 2] = $sector1;
+ __ZN10Cartoonist16GetRamaRectangleEib($ref$tmp4, $this, $lado1, 0);
+ $rect7 = $this + 64 | 0;
+ HEAP32[$rect7 >> 2] = HEAP32[$ref$tmp4 >> 2];
+ HEAP32[$rect7 + 4 >> 2] = HEAP32[$ref$tmp4 + 4 >> 2];
+ HEAP32[$rect7 + 8 >> 2] = HEAP32[$ref$tmp4 + 8 >> 2];
+ HEAP32[$rect7 + 12 >> 2] = HEAP32[$ref$tmp4 + 12 >> 2];
+ HEAP32[$ref$tmp4$byval_copy >> 2] = HEAP32[$ref$tmp4 >> 2];
+ HEAP32[$ref$tmp4$byval_copy + 4 >> 2] = HEAP32[$ref$tmp4 + 4 >> 2];
+ HEAP32[$ref$tmp4$byval_copy + 8 >> 2] = HEAP32[$ref$tmp4 + 8 >> 2];
+ HEAP32[$ref$tmp4$byval_copy + 12 >> 2] = HEAP32[$ref$tmp4 + 12 >> 2];
+ __ZN10Cartoonist8DrawRamaEii9Rectangle($ref$tmp, $this, $lado1, $sector1, $ref$tmp4$byval_copy);
+ $0 = $ref$tmp;
+ $5 = HEAP32[$0 + 4 >> 2] | 0;
+ $6 = $this + 52 | 0;
+ HEAP32[$6 >> 2] = HEAP32[$0 >> 2];
+ HEAP32[$6 + 4 >> 2] = $5;
+ STACKTOP = sp;
+ return;
+}
+
 function _ma_strcmp($str1, $str2) {
  $str1 = $str1 | 0;
  $str2 = $str2 | 0;
@@ -77415,7 +77566,6 @@ function _stbv_predict_point($x, $x0, $x1, $y0, $y1) {
  STACKTOP = sp;
  return ((HEAP32[$dy >> 2] | 0) < 0 ? $10 - $11 | 0 : $10 + $11 | 0) | 0;
 }
-
 function __ZNK10__cxxabiv117__class_type_info16search_below_dstEPNS_19__dynamic_cast_infoEPKvib($this, $info, $current_ptr, $path_below, $use_strcmp) {
  $this = $this | 0;
  $info = $info | 0;
@@ -77558,6 +77708,7 @@ function _ma_get_backend_name($backend) {
  STACKTOP = sp;
  return HEAP32[$retval >> 2] | 0;
 }
+
 function _ma_pcm_rb_get_subbuffer_size($pRB) {
  $pRB = $pRB | 0;
  var $10 = 0, $7 = 0, $call = 0, $call$i$i = 0, $channels$addr$i$i = 0, $div = 0, $format$addr$i$i = 0, $pRB$addr = 0, $pRB$addr$i = 0, $retval = 0, sp = 0, sp_a = 0;
@@ -77808,6 +77959,41 @@ function _drmp3_L3_save_reservoir($h, $s) {
  $14 = HEAP32[$h$addr >> 2] | 0;
  $reserv = $14 + 6144 | 0;
  HEAP32[$reserv >> 2] = $13;
+ STACKTOP = sp;
+ return;
+}
+
+function __ZN10Cartoonist16GetRamaRectangleEib($agg$result, $this, $lado, $animal) {
+ $agg$result = $agg$result | 0;
+ $this = $this | 0;
+ $lado = $lado | 0;
+ $animal = $animal | 0;
+ var $$pre$phiZ2D = 0, $rect = 0, $rect3 = 0, $ref$tmp = 0, sp = 0;
+ sp = STACKTOP;
+ STACKTOP = STACKTOP + 16 | 0;
+ if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(16);
+ $ref$tmp = sp;
+ if ($animal) {
+  __ZN10Cartoonist22GetRamaAnimalRectangleEi($ref$tmp, $this, $lado);
+  $rect = $this + 20 | 0;
+  HEAP32[$rect >> 2] = HEAP32[$ref$tmp >> 2];
+  HEAP32[$rect + 4 >> 2] = HEAP32[$ref$tmp + 4 >> 2];
+  HEAP32[$rect + 8 >> 2] = HEAP32[$ref$tmp + 8 >> 2];
+  HEAP32[$rect + 12 >> 2] = HEAP32[$ref$tmp + 12 >> 2];
+  $$pre$phiZ2D = $rect;
+ } else {
+  __ZN10Cartoonist21GetRamaVaciaRectangleEi($ref$tmp, $this, $lado);
+  $rect3 = $this + 20 | 0;
+  HEAP32[$rect3 >> 2] = HEAP32[$ref$tmp >> 2];
+  HEAP32[$rect3 + 4 >> 2] = HEAP32[$ref$tmp + 4 >> 2];
+  HEAP32[$rect3 + 8 >> 2] = HEAP32[$ref$tmp + 8 >> 2];
+  HEAP32[$rect3 + 12 >> 2] = HEAP32[$ref$tmp + 12 >> 2];
+  $$pre$phiZ2D = $rect3;
+ };
+ HEAP32[$agg$result >> 2] = HEAP32[$$pre$phiZ2D >> 2];
+ HEAP32[$agg$result + 4 >> 2] = HEAP32[$$pre$phiZ2D + 4 >> 2];
+ HEAP32[$agg$result + 8 >> 2] = HEAP32[$$pre$phiZ2D + 8 >> 2];
+ HEAP32[$agg$result + 12 >> 2] = HEAP32[$$pre$phiZ2D + 12 >> 2];
  STACKTOP = sp;
  return;
 }
@@ -79498,47 +79684,6 @@ function _ma_src__build_sinc_table__hann($pSRC) {
   HEAPF32[(HEAP32[$pSRC$addr >> 2] | 0) + 40972 + (HEAP32[$i >> 2] << 2) >> 2] = $conv5;
   HEAP32[$i >> 2] = (HEAP32[$i >> 2] | 0) + 1;
  }
- STACKTOP = sp;
- return;
-}
-
-function __ZN4Rama4MoveEv($this) {
- $this = $this | 0;
- var $0 = 0, $10 = 0, $3 = 0, $4 = 0, $9 = 0, $cmp3 = 0, $color = 0, $lado = 0, $lado16$pre$phiZ2D = 0, $rama_sector = 0, $ref$tmp = 0, sp = 0;
- sp = STACKTOP;
- STACKTOP = STACKTOP + 16 | 0;
- if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(16);
- $ref$tmp = sp;
- $rama_sector = $this + 44 | 0;
- $0 = HEAP32[$rama_sector >> 2] | 0;
- do if (($0 | 0) == 4) {
-  HEAP32[$rama_sector >> 2] = 1;
-  $cmp3 = (_GetRandomValue(0, 1) | 0) == 0;
-  $lado = $this + 48 | 0;
-  HEAP32[$lado >> 2] = $cmp3 ? -1 : 1;
-  $color = $this + 60 | 0;
-  if ((_GetRandomValue(0, 6) | 0) < 3) {
-   HEAP32[$color >> 2] = 0;
-   $3 = 0;
-   $lado16$pre$phiZ2D = $lado;
-   break;
-  } else {
-   HEAP32[$color >> 2] = 1;
-   $3 = 1;
-   $lado16$pre$phiZ2D = $lado;
-   break;
-  }
- } else {
-  HEAP32[$rama_sector >> 2] = $0 + 1;
-  $3 = HEAP32[$this + 60 >> 2] | 0;
-  $lado16$pre$phiZ2D = $this + 48 | 0;
- } while (0);
- __ZN10Cartoonist8DrawRamaEiii($ref$tmp, $this, HEAP32[$lado16$pre$phiZ2D >> 2] | 0, HEAP32[$rama_sector >> 2] | 0, $3);
- $4 = $ref$tmp;
- $9 = HEAP32[$4 + 4 >> 2] | 0;
- $10 = $this + 52 | 0;
- HEAP32[$10 >> 2] = HEAP32[$4 >> 2];
- HEAP32[$10 + 4 >> 2] = $9;
  STACKTOP = sp;
  return;
 }
@@ -87420,32 +87565,6 @@ function _pad_667($f, $c, $w, $l, $fl) {
  return;
 }
 
-function __ZN4RamaC2Eii($this, $lado1, $sector1) {
- $this = $this | 0;
- $lado1 = $lado1 | 0;
- $sector1 = $sector1 | 0;
- var $2 = 0, $7 = 0, $8 = 0, $call = 0, $lado = 0, $rama_sector = 0, $ref$tmp = 0, sp = 0;
- sp = STACKTOP;
- STACKTOP = STACKTOP + 16 | 0;
- if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(16);
- $ref$tmp = sp;
- __ZN10CartoonistC2Ev($this);
- $lado = $this + 48 | 0;
- HEAP32[$lado >> 2] = $lado1;
- $rama_sector = $this + 44 | 0;
- HEAP32[$rama_sector >> 2] = $sector1;
- $call = _GetRandomValue(0, 1) | 0;
- HEAP32[$this + 60 >> 2] = $call;
- __ZN10Cartoonist8DrawRamaEiii($ref$tmp, $this, HEAP32[$lado >> 2] | 0, HEAP32[$rama_sector >> 2] | 0, $call);
- $2 = $ref$tmp;
- $7 = HEAP32[$2 + 4 >> 2] | 0;
- $8 = $this + 52 | 0;
- HEAP32[$8 >> 2] = HEAP32[$2 >> 2];
- HEAP32[$8 + 4 >> 2] = $7;
- STACKTOP = sp;
- return;
-}
-
 function _stbv_get32($f) {
  $f = $f | 0;
  var $conv = 0, $f$addr = 0, $shl = 0, $shl5 = 0, $shl9 = 0, $x = 0, sp = 0, sp_a = 0;
@@ -88490,6 +88609,25 @@ function _Vector3Length($v) {
  return Math_fround($7);
 }
 
+function __ZN10Cartoonist21GetRamaVaciaRectangleEi($agg$result, $this, $lado) {
+ $agg$result = $agg$result | 0;
+ $this = $this | 0;
+ $lado = $lado | 0;
+ var $$ = f0, $$2 = f0, $call = 0, $cmp2 = 0, $rect = 0;
+ $call = _GetRandomValue(0, 1) | 0;
+ $rect = $this + 20 | 0;
+ HEAPF32[$this + 24 >> 2] = Math_fround(900.0);
+ $cmp2 = ($call | 0) == 1;
+ $$ = $cmp2 ? Math_fround(900.0) : Math_fround(300.0);
+ $$2 = $cmp2 ? Math_fround(600.0) : Math_fround(0.0);
+ HEAPF32[$rect >> 2] = ($lado | 0) == -1 ? $$ : $$2;
+ HEAP32[$agg$result >> 2] = HEAP32[$rect >> 2];
+ HEAP32[$agg$result + 4 >> 2] = HEAP32[$rect + 4 >> 2];
+ HEAP32[$agg$result + 8 >> 2] = HEAP32[$rect + 8 >> 2];
+ HEAP32[$agg$result + 12 >> 2] = HEAP32[$rect + 12 >> 2];
+ return;
+}
+
 function __ZNK10__cxxabiv122__base_class_type_info16search_below_dstEPNS_19__dynamic_cast_infoEPKvib($this, $info, $current_ptr, $path_below, $use_strcmp) {
  $this = $this | 0;
  $info = $info | 0;
@@ -88672,6 +88810,25 @@ function __ZNSt3__26vectorIPNS_6locale5facetENS_15__sso_allocatorIS3_Lm28EEEE11_
  HEAP32[$this + 4 >> 2] = $retval$0$i$i$in;
  HEAP32[$this >> 2] = $retval$0$i$i$in;
  HEAP32[$this + 8 >> 2] = $retval$0$i$i$in + ($__n << 2);
+ return;
+}
+
+function __ZN4Rama4DrawEv($this) {
+ $this = $this | 0;
+ var $0 = 0, $1 = 0, $rect = 0, $rect$byval_copy = 0, sp = 0;
+ sp = STACKTOP;
+ STACKTOP = STACKTOP + 32 | 0;
+ if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(32);
+ $rect$byval_copy = sp + 8 | 0;
+ $0 = HEAP32[$this + 48 >> 2] | 0;
+ $1 = HEAP32[$this + 44 >> 2] | 0;
+ $rect = $this + 64 | 0;
+ HEAP32[$rect$byval_copy >> 2] = HEAP32[$rect >> 2];
+ HEAP32[$rect$byval_copy + 4 >> 2] = HEAP32[$rect + 4 >> 2];
+ HEAP32[$rect$byval_copy + 8 >> 2] = HEAP32[$rect + 8 >> 2];
+ HEAP32[$rect$byval_copy + 12 >> 2] = HEAP32[$rect + 12 >> 2];
+ __ZN10Cartoonist8DrawRamaEii9Rectangle(sp, $this, $0, $1, $rect$byval_copy);
+ STACKTOP = sp;
  return;
 }
 
@@ -92732,17 +92889,6 @@ function __ZNSt3__26localeC2Ev($this) {
  return;
 }
 
-function __ZN4Rama4DrawEv($this) {
- $this = $this | 0;
- var sp = 0;
- sp = STACKTOP;
- STACKTOP = STACKTOP + 16 | 0;
- if ((STACKTOP | 0) >= (STACK_MAX | 0)) abortStackOverflow(16);
- __ZN10Cartoonist8DrawRamaEiii(sp, $this, HEAP32[$this + 48 >> 2] | 0, HEAP32[$this + 44 >> 2] | 0, HEAP32[$this + 60 >> 2] | 0);
- STACKTOP = sp;
- return;
-}
-
 function _rlNormal3f($x, $y, $z) {
  $x = Math_fround($x);
  $y = Math_fround($y);
@@ -95779,15 +95925,6 @@ function __ZNKSt3__28numpunctIwE16do_decimal_pointEv($this) {
  return HEAP32[$this + 8 >> 2] | 0;
 }
 
-function b7(p0, p1, p2, p3) {
- p0 = p0 | 0;
- p1 = p1 | 0;
- p2 = p2 | 0;
- p3 = p3 | 0;
- nullFunc_iiiii(7);
- return 0;
-}
-
 function _vprintf($fmt, $ap) {
  $fmt = $fmt | 0;
  $ap = $ap | 0;
@@ -95807,6 +95944,14 @@ function __ZNKSt3__28numpunctIcE16do_decimal_pointEv($this) {
 function __ZN10__cxxabiv119__getExceptionClassEPK17_Unwind_Exception($0) {
  $0 = $0 | 0;
  setTempRet0(0);
+ return 0;
+}
+function b7(p0, p1, p2, p3) {
+ p0 = p0 | 0;
+ p1 = p1 | 0;
+ p2 = p2 | 0;
+ p3 = p3 | 0;
+ nullFunc_iiiii(7);
  return 0;
 }
 
@@ -95967,6 +96112,12 @@ function ___cxx_global_var_init_1() {
  return;
 }
 
+function ___clang_call_terminate($0) {
+ $0 = $0 | 0;
+ ___cxa_begin_catch($0 | 0) | 0;
+ __ZSt9terminatev();
+}
+
 function __ZNSt3__215basic_streambufIwNS_11char_traitsIwEEE4syncEv($this) {
  $this = $this | 0;
  return 0;
@@ -95992,11 +96143,6 @@ function _strtold_l($s, $p, $l) {
  $p = $p | 0;
  $l = $l | 0;
  return +(+_strtold($s, $p));
-}
-function ___clang_call_terminate($0) {
- $0 = $0 | 0;
- ___cxa_begin_catch($0 | 0) | 0;
- __ZSt9terminatev();
 }
 
 function __ZNKSt3__28messagesIwE8do_closeEl($this, $__c) {
