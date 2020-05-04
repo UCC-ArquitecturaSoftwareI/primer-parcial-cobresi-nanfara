@@ -58,10 +58,14 @@ int main() {
     //player = new Monkey;
     player = tf->createMonkey();
 
-    Ramas.push_back(new Rama(-1, 1));
-    Ramas.push_back(new Rama(1, 2));
-    Ramas.push_back(new Rama(-1, 3));
-    Ramas.push_back(new Rama(1, 4));
+//    Ramas.push_back(new Rama(-1, 1));
+//    Ramas.push_back(new Rama(1, 2));
+//    Ramas.push_back(new Rama(-1, 3));
+//    Ramas.push_back(new Rama(1, 4));
+    Ramas.push_back(tf->createRama(-1, 1));
+    Ramas.push_back(tf->createRama(1, 2));
+    Ramas.push_back(tf->createRama(-1, 3));
+    Ramas.push_back(tf->createRama(1, 4));
 
     GameOver = false;
 
@@ -107,7 +111,7 @@ static void UpdateDrawFrame(void) {
     BeginDrawing();
         if (barLife.getStatus() == 1)
             --barLife;
-        ClearBackground(BLACK); // Limpio la pantalla con "celeste cielo"
+        ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();
         for (int i = 0; i < 4; i++)

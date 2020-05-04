@@ -6,6 +6,7 @@
 #include "ThemeFactory.h"
 #include "Monkey.h"
 #include "NightMonkey.h"
+#include "NightRama.h"
 
 #define RAYLIBTEMPLATE_NIGHTTHEMEFACTORY_H
 
@@ -17,6 +18,9 @@ public:
     }
     //Color de fondo
 
+    Rama *createRama(int lado, int sector) {
+        return new NightRama(lado, sector);
+    }
 };
 
 

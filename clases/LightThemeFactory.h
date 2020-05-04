@@ -7,6 +7,7 @@
 #include "ThemeFactory.h"
 #include "Monkey.h"
 #include "LightMonkey.h"
+#include "LightRama.h"
 
 #define RAYLIBTEMPLATE_LIGHTTHEMEFACTORY_H
 
@@ -18,9 +19,9 @@ public:
     }
     //Color de fondo
 
-//    Rama *createRama() override {
-//        return new LightRama;
-//    }
+    Rama *createRama(int lado, int sector) {
+        return new LightRama(lado, sector);
+    }
 
 };
 
