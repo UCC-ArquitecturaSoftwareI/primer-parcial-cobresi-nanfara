@@ -290,15 +290,49 @@ void Cartoonist::DrawLightButton(Vector2 position, int estado) {
     DrawTextureRec(sprite, rect, position, WHITE);
 }
 
-void Cartoonist::DrawStartButton(Vector2 position, int estado) {
+void Cartoonist::DrawStartButton(Vector2 position, int estado, int theme) {
     if (!estado)
     {
-        rect.x = 0;
-        rect.y = 3300;
+        if(theme)
+        {
+            rect.x = 0;
+            rect.y = 3300;
+        }
+        else
+        {
+            rect.x = 600;
+            rect.y = 3300;
+        }
+
     } else
     {
-        rect.x = 300;
-        rect.y = 3300;
+        if(theme)
+        {
+            rect.x = 300;
+            rect.y = 3300;
+        }
+        else
+        {
+            rect.x = 900;
+            rect.y = 3300;
+        }
+
     }
     DrawTextureRec(sprite, rect, position, WHITE);
+}
+
+
+void Cartoonist::DrawMonkeyMenu(int tema, Vector2 posicion){
+    if(tema)
+    {
+        rect.x = 300;
+        rect.y = 0;
+    }
+    else
+    {
+        rect.x = 0;
+        rect.y = 0;
+    }
+
+    DrawTextureRec(sprite, rect, posicion, WHITE);
 }

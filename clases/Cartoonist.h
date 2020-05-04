@@ -24,6 +24,7 @@ public:
     }
 
     Vector2 DrawMonkey(int movimiento, int lado);
+    void DrawMonkeyMenu(int tema, Vector2 posicion);
     Vector2 DrawNightMonkey(int movimiento, int lado);
 //    void DrawBanana(char lado);
 //    Vector2 DrawRama(int lado, int sector, int color);
@@ -37,7 +38,8 @@ public:
     Texture2D GetSprite();
     void DrawNightButton(Vector2 position, int estado);
     void DrawLightButton(Vector2 position, int estado);
-    void DrawStartButton(Vector2 position, int estado);
+    void DrawStartButton(Vector2 position, int estado, int theme);
+
 };
 
 

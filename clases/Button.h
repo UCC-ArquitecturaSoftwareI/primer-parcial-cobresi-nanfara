@@ -10,18 +10,12 @@
 
 class Button: public Cartoonist {
 public:
+    int theme;
     int estado;
     Vector2 position;
     Rectangle rectangulo;
     virtual void Draw() = 0;
     virtual void Draw(Vector2 pos, int est) = 0;
-    void ChangeEstado()
-    {
-        if (estado)
-            estado = 0;
-        else
-            estado = 1;
-    }
     virtual Rectangle GetRectangle() = 0;
 };
 
@@ -82,16 +76,17 @@ class StartButton: public Button
 public:
     void Draw()
     {
-        DrawStartButton(position, estado);
+        DrawStartButton(position, estado, theme);
     }
     void Draw(Vector2 pos, int est)
     {
-        DrawStartButton(pos, est);
+        DrawStartButton(pos, est, theme);
     }
 
     StartButton()
     {
-        position.x = 400;
+        theme = 0;
+        position.x = 450;
         position.y = 650;
         rectangulo = {position.x + 10, position.y + 100, 280, 120};
         estado = 0;
@@ -100,6 +95,27 @@ public:
     Rectangle GetRectangle()
     {
         return rectangulo;
+    }
+    void SetTheme(int i)
+    {
+        theme = i;
+    }
+};
+
+class Skin: public Cartoonist
+{
+public:
+    int tema;
+    Vector2 position;
+    Skin ()
+    {
+        tema = 0;
+        position.x = 450;
+        position.y = 400;
+    }
+    void Draw()
+    {
+        DrawMonkeyMenu(tema, position);
     }
 };
 #endif //RAYLIBTEMPLATE_BUTTON_H

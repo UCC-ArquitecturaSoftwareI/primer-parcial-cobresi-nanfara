@@ -33,6 +33,7 @@ Color colorText = BLACK;
 std::vector<Rama*> Ramas;
 std::vector<Button*> Botones;
 Vector2 mousePoint = { 0.0f, 0.0f};
+Skin *TankeySkin;
 
 int UpdateMenu();       // 1 = noche// 0 = dia
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
@@ -61,6 +62,7 @@ int main() {
     Botones.push_back(new LightButton);
     Botones.push_back(new NightButton);
     Botones.push_back(new StartButton);
+    TankeySkin = new Skin;
 
     while (!WindowShouldClose()&& !start)
     {
@@ -187,6 +189,7 @@ int UpdateMenu()
 {
     BeginDrawing();
     ClearBackground(colorBackground);
+    TankeySkin->Draw();
     int tema;
     mousePoint = GetMousePosition();
     for (int i = 0; i<3; i++)
@@ -201,10 +204,14 @@ int UpdateMenu()
                     case 0:
                         tema = 0;
                         colorBackground = SKYBLUE;
+                        Botones[2]->theme = tema;
+                        TankeySkin->tema = tema;
                         break;
                     case 1:
                         tema = 1;
                         colorBackground = BLACK;
+                        Botones[2]->theme = tema;
+                        TankeySkin->tema = tema;
                         break;
                     case 2:
                         start = true;
@@ -217,7 +224,6 @@ int UpdateMenu()
         Botones[i]->Draw();
     }
 
-    //DrawText(FormatText("Tankey"), 375, 300, 70, colorText);
     EndDrawing();
     return tema;
 }
