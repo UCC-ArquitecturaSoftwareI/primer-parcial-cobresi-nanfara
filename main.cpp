@@ -34,6 +34,7 @@ std::vector<Rama*> Ramas;
 std::vector<Button*> Botones;
 Vector2 mousePoint = { 0.0f, 0.0f};
 Skin *TankeySkin;
+int tema = 0;
 
 int UpdateMenu();       // 1 = noche// 0 = dia
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
@@ -190,7 +191,6 @@ int UpdateMenu()
     BeginDrawing();
     ClearBackground(colorBackground);
     TankeySkin->Draw();
-    int tema = 0;
     mousePoint = GetMousePosition();
     for (int i = 0; i<3; i++)
     {
