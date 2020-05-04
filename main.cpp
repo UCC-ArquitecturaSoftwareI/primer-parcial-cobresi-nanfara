@@ -1,11 +1,13 @@
 #include <raylib.h>
 
-#include "clases/Nave.h"
 #include "clases/Monkey.h"
 #include "clases/Tree.h"
-#include "clases/FrameManager.h"
 #include "clases/Rama.h"
 #include "clases/Bar_Life.h"
+#include "clases/ThemeFactory.h"
+#include "clases/LightThemeFactory.h"
+#include "clases/NightThemeFactory.h"
+#include <iostream>
 #include <vector>
 
 #if defined(PLATFORM_WEB) // Para crear HTML5
@@ -24,6 +26,8 @@ Tree *tree;
 bool GameOver;
 int score = 0;
 barLife barLife;
+ThemeFactory *tf;
+
 
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
 
@@ -32,6 +36,13 @@ void UpdateDrawEnd();
 std::vector<Rama*> Ramas;
 
 int main() {
+    int tema;
+    std::cout<<"Teclee: "<<"\n0 para día"<<"\n1 para noche"<<"\n";
+    std::cin>>tema;
+    if (tema == 0)
+        tf = new LightThemeFactory;
+    else
+        tf = new NightThemeFactory;
     // Inicialización de la ventana
     InitWindow(screenWidth, screenHeight, "Tankey game");
     InitAudioDevice();              // Initialize audio device
@@ -40,7 +51,8 @@ int main() {
 
     PlayMusicStream(music);
     tree = new Tree;
-    player = new Monkey;
+    //player = new Monkey;
+    player = tf->createMonkey();
 
     Ramas.push_back(new Rama(-1, 1));
     Ramas.push_back(new Rama(1, 2));

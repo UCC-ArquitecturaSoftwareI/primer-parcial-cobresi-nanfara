@@ -28,10 +28,11 @@ public:
 
         Monkey():Cartoonist()
         {
-            lado = 1;
-            monkey_position = DrawMonkey(0, lado);
+//            lado = 1;
+//            monkey_position = Draw(0, lado);
         }
         void Draw();
+        virtual Vector2 Draw(int mov, int lad) = 0;
         void move_right();
         void move_left();
         void newlado();

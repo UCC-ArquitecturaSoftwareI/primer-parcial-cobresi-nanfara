@@ -156,3 +156,33 @@ Vector2 Cartoonist::DrawRama(int lado, int sector, int color)
      DrawTextureRec(sprite, rect, position, WHITE);
     return position;
 }
+
+Vector2 Cartoonist::DrawNightMonkey(int movimiento, int lado) {
+    position.y = 450;
+    if (lado == 1)
+    {
+        position.x = 600;
+        rect.y = 1500;
+        if (movimiento)
+        {
+            if (rect.x == 900)
+                rect.x = 0;
+            else
+                rect.x = rect.x+300;
+        }
+    }
+    if (lado == -1)
+    {
+        position.x = 300;
+        rect.y = 1800;
+        if (movimiento)
+        {
+            if (rect.x == 900)
+                rect.x = 0;
+            else
+                rect.x = rect.x+300;
+        }
+    }
+    DrawTextureRec(sprite, rect, position, WHITE);
+    return position;
+}
