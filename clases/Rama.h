@@ -14,23 +14,22 @@ private:
     int rama_sector; //1, 2, 3 o 4
     int lado; //-1 = izq //1 = derecha
     Vector2 rama_position;
-    int color; //0 = clara // 1 = oscura
+    //int color; //0 = clara // 1 = oscura
+    bool animal;
+    Rectangle rect;
 public:
-//    Rama ()
-//    {
-//        color = GetRandomValue(0,1);
-//    }
     Rama(int lado1, int sector1):Cartoonist()
     {
+        animal = false;
         lado = lado1;
         rama_sector = sector1;
-        color = GetRandomValue(0,1);
-        rama_position = DrawRama(lado, rama_sector, color); //ver de pasar rama
-        //random = 79;
+        //color = GetRandomValue(0,1);
+        rama_position = DrawRama(lado, rama_sector, rect = GetRamaRectangle(lado, animal)); //ver de pasar rama
     }
-    void SetDatos(int lado1, int sector1); //la hice por si es mejor usar el constructor Rama() y desp setear cada dato
+    //void SetDatos(int lado1, int sector1); //la hice por si es mejor usar el constructor Rama() y desp setear cada dato
     void Draw();
     void Move();
+    //Rectangle selectNightAnimal(int animal);
     Rectangle getRectangle();
 
 

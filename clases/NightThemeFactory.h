@@ -15,6 +15,7 @@ public:
     Monkey *createMonkey() override {
     return new NightMonkey;
     }
+    //Color de fondo
 
 };
 

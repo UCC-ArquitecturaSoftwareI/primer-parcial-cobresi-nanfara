@@ -26,8 +26,13 @@ public:
     Vector2 DrawMonkey(int movimiento, int lado);
     Vector2 DrawNightMonkey(int movimiento, int lado);
     void DrawBanana(char lado);
-    Vector2 DrawRama(int lado, int sector, int color);
+//    Vector2 DrawRama(int lado, int sector, int color);
+    Vector2 DrawRama(int lado, int sector, Rectangle rectangle);
     void DrawTree(int lado, Vector2 pos);
+    Rectangle GetRamaRectangle(int lado, bool animal);
+    Rectangle GetRamaAnimalRectangle(int lado);
+    Rectangle GetRamaVaciaRectangle(int lado);
+
 
 
     /*

@@ -8,12 +8,12 @@
 
 
 void Rama::Draw() {
-    DrawRama(lado, rama_sector, color);
+    DrawRama(lado, rama_sector, rect);
 }
 
 void Rama::Move() {
     int newlado;
-    int newcolor;
+    int newdiseno;
     if (rama_sector == 4) {
         rama_sector = 1; //podemos poner que cambie el color
         newlado = GetRandomValue(0, 1);
@@ -21,15 +21,17 @@ void Rama::Move() {
             lado = -1;
         else
             lado =1;
-        newcolor = GetRandomValue(0,6);
-        if (newcolor < 3)
-            color = 0;
+        newdiseno = GetRandomValue(0,9);
+        if (newdiseno < 7)
+            animal = false;
         else
-            color =1;
+            animal = true;
+        rect = GetRamaRectangle(lado, animal);
+
     }
     else
         rama_sector = rama_sector +1;
-    rama_position = DrawRama(lado, rama_sector, color);
+        rama_position = DrawRama(lado, rama_sector, rect);
 }
 
 Rectangle Rama::getRectangle() {
@@ -37,10 +39,21 @@ Rectangle Rama::getRectangle() {
     return rec_rama;
 }
 
-void Rama::SetDatos(int lado1, int sector1) {
-        lado = lado1;
-        rama_sector = sector1;
-        color = 1; //Ver como cambiar color
-        rama_position = DrawRama(lado, rama_sector, color); //ver de pasar rama
-}
+//void Rama::SetDatos(int lado1, int sector1) {
+//        lado = lado1;
+//        rama_sector = sector1;
+//        color = 1; //Ver como cambiar color
+//        rama_position = DrawRama(lado, rama_sector, color); //ver de pasar rama
+//}
+
+//Rectangle Rama::selectNightAnimal(int animal) {
+//    if (lado == -1)
+//        switch (animal)
+//        {
+//            case 0:
+//                rect
+//        }
+//
+//    return Rectangle();
+//}
 

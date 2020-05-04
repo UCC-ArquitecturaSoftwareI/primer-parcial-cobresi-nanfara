@@ -16,6 +16,7 @@ public:
     Monkey *createMonkey() override {
         return new LightMonkey;
     }
+    //Color de fondo
 
 //    Rama *createRama() override {
 //        return new LightRama;

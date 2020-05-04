@@ -16,6 +16,10 @@
 const int screenWidth = 1200;
 const int screenHeight = 900;
 
+//Notas:
+//Tengo que hacer que las ramas generen distintos animales dependiendo si es de día o de noche
+//Ver como cambiar el color del fondo (a negro o azul cielo) y el color de la fuente (blanco o negro) dependiendo si es dia o noche
+//Hace menú para seleccionar tema del juego
 
 
 // Variables Globales
@@ -103,7 +107,7 @@ static void UpdateDrawFrame(void) {
     BeginDrawing();
         if (barLife.getStatus() == 1)
             --barLife;
-        ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
+        ClearBackground(BLACK); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();
         for (int i = 0; i < 4; i++)
