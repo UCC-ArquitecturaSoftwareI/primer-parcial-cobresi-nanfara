@@ -204,12 +204,14 @@ int UpdateMenu()
                     case 0:
                         tema = 0;
                         colorBackground = SKYBLUE;
+                        colorText = BLACK;
                         Botones[2]->theme = tema;
                         TankeySkin->tema = tema;
                         break;
                     case 1:
                         tema = 1;
                         colorBackground = BLACK;
+                        colorText = WHITE;
                         Botones[2]->theme = tema;
                         TankeySkin->tema = tema;
                         break;

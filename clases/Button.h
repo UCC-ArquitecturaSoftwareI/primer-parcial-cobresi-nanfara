@@ -102,6 +102,7 @@ public:
     }
 };
 
+//Sacar esto de aca
 class Skin: public Cartoonist
 {
 public:
