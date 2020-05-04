@@ -34,7 +34,10 @@ public:
     Rectangle GetRamaNightAnimalRectangle(int lado);
     Rectangle GetRamaDayAnimalRectangle(int lado);
     Rectangle GetRamaVaciaRectangle(int lado);
-
+    Texture2D GetSprite();
+    void DrawNightButton(Vector2 position, int estado);
+    void DrawLightButton(Vector2 position, int estado);
+    void DrawStartButton(Vector2 position, int estado);
 };
 
 

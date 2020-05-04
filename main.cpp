@@ -7,8 +7,10 @@
 #include "clases/ThemeFactory.h"
 #include "clases/LightThemeFactory.h"
 #include "clases/NightThemeFactory.h"
+#include "clases/Button.h"
 #include <iostream>
 #include <vector>
+
 
 #if defined(PLATFORM_WEB) // Para crear HTML5
 #include <emscripten/emscripten.h>
@@ -16,68 +18,36 @@
 const int screenWidth = 1200;
 const int screenHeight = 900;
 
-//Notas:
-//Tengo que hacer que las ramas generen distintos animales dependiendo si es de día o de noche
-//Ver como cambiar el color del fondo (a negro o azul cielo) y el color de la fuente (blanco o negro) dependiendo si es dia o noche
-//Hace menú para seleccionar tema del juego
-
 
 // Variables Globales
 Music music;
 Monkey *player;
 Tree *tree;
-//Rama *rama;
 bool GameOver;
 int score = 0;
 barLife barLife;
 ThemeFactory *tf;
-Color colorBackground;
-Color colorText;
+bool start = false;
+Color colorBackground = SKYBLUE;
+Color colorText = BLACK;
+std::vector<Rama*> Ramas;
+std::vector<Button*> Botones;
+Vector2 mousePoint = { 0.0f, 0.0f};
 
-
+int UpdateMenu();       // 1 = noche// 0 = dia
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
-
 void UpdateDrawEnd();
 
-std::vector<Rama*> Ramas;
+
 
 int main() {
     int tema;
-    std::cout<<"Teclee: "<<"\n0 para día"<<"\n1 para noche"<<"\n";
-    std::cin>>tema;
-    if (tema == 0)
-    {
-        tf = new LightThemeFactory;
-        colorBackground = SKYBLUE;
-        colorText = BLACK;
-    }
-    else
-    {
-        tf = new NightThemeFactory;
-        colorBackground = BLACK;
-        colorText = WHITE;
-    }
-
     // Inicialización de la ventana
     InitWindow(screenWidth, screenHeight, "Tankey game");
     InitAudioDevice();              // Initialize audio device
     /// Ejemplo de utilización de audio.
     music = LoadMusicStream("resources/Cyberpunk Moonlight Sonata.mp3");
-
     PlayMusicStream(music);
-    tree = new Tree;
-    //player = new Monkey;
-    player = tf->createMonkey();
-
-//    Ramas.push_back(new Rama(-1, 1));
-//    Ramas.push_back(new Rama(1, 2));
-//    Ramas.push_back(new Rama(-1, 3));
-//    Ramas.push_back(new Rama(1, 4));
-    Ramas.push_back(tf->createRama(-1, 1));
-    Ramas.push_back(tf->createRama(1, 2));
-    Ramas.push_back(tf->createRama(-1, 3));
-    Ramas.push_back(tf->createRama(1, 4));
-
     GameOver = false;
 
 
@@ -87,12 +57,42 @@ int main() {
 #else
     SetTargetFPS(60);   // Set our game to run at 60 frames-per-second
     // Main loop
-    while (!WindowShouldClose())
+
+    Botones.push_back(new LightButton);
+    Botones.push_back(new NightButton);
+    Botones.push_back(new StartButton);
+
+    while (!WindowShouldClose()&& !start)
     {
-        if (!GameOver)
-         UpdateDrawFrame();
-        else
-            UpdateDrawEnd();
+        tema = UpdateMenu();
+    }
+
+    if (tema == 0)
+    {
+        tf = new LightThemeFactory;
+    }
+    else
+    {
+        tf = new NightThemeFactory;
+        colorBackground = BLACK;
+        colorText = WHITE;
+    }
+    tree = new Tree;
+    player = tf->createMonkey();
+    Ramas.push_back(tf->createRama(-1, 1));
+    Ramas.push_back(tf->createRama(1, 2));
+    Ramas.push_back(tf->createRama(-1, 3));
+    Ramas.push_back(tf->createRama(1, 4));
+
+
+
+    while (!WindowShouldClose()&& !GameOver)
+    {
+        UpdateDrawFrame();
+    }
+    while (!WindowShouldClose()&& GameOver)
+    {
+        UpdateDrawEnd();
     }
 
 #endif
@@ -181,4 +181,43 @@ void UpdateDrawEnd() {
     DrawText(FormatText("GAME OVER"), 375, 300, 70, colorText);
     DrawText(FormatText("Score: %05i", score), 455, 400, 40, colorText);
     EndDrawing();
+}
+
+int UpdateMenu()
+{
+    BeginDrawing();
+    ClearBackground(colorBackground);
+    int tema;
+    mousePoint = GetMousePosition();
+    for (int i = 0; i<3; i++)
+    {
+        if (CheckCollisionPointRec(mousePoint, Botones[i]->GetRectangle()))
+        {
+            if (IsMouseButtonDown(MOUSE_LEFT_BUTTON))
+            {
+                Botones[i]->estado = 1;
+                switch (i)
+                {
+                    case 0:
+                        tema = 0;
+                        colorBackground = SKYBLUE;
+                        break;
+                    case 1:
+                        tema = 1;
+                        colorBackground = BLACK;
+                        break;
+                    case 2:
+                        start = true;
+                        break;
+                }
+            }
+            else
+                Botones[i]->estado = 0;
+        }
+        Botones[i]->Draw();
+    }
+
+    //DrawText(FormatText("Tankey"), 375, 300, 70, colorText);
+    EndDrawing();
+    return tema;
 }

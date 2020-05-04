@@ -257,3 +257,48 @@ Rectangle Cartoonist::GetRamaNightRectangle(int lado, bool animal) {
         rect = GetRamaVaciaRectangle(lado);
     return rect;
 }
+
+Texture2D Cartoonist::GetSprite()
+{
+    return sprite;
+}
+
+void Cartoonist::DrawNightButton(Vector2 position, int estado) {
+    if (!estado)
+    {
+        rect.x = 1200;
+        rect.y = 600;
+    } else
+    {
+        rect.x = 1200;
+        rect.y = 900;
+    }
+    DrawTextureRec(sprite, rect, position, WHITE);
+
+}
+
+void Cartoonist::DrawLightButton(Vector2 position, int estado) {
+    if (!estado)
+    {
+        rect.x = 1200;
+        rect.y = 0;
+    } else
+    {
+        rect.x = 1200;
+        rect.y = 300;
+    }
+    DrawTextureRec(sprite, rect, position, WHITE);
+}
+
+void Cartoonist::DrawStartButton(Vector2 position, int estado) {
+    if (!estado)
+    {
+        rect.x = 0;
+        rect.y = 3300;
+    } else
+    {
+        rect.x = 300;
+        rect.y = 3300;
+    }
+    DrawTextureRec(sprite, rect, position, WHITE);
+}
