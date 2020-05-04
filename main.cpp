@@ -31,6 +31,8 @@ bool GameOver;
 int score = 0;
 barLife barLife;
 ThemeFactory *tf;
+Color colorBackground;
+Color colorText;
 
 
 static void UpdateDrawFrame(void);          // Función dedicada a operar cada frame
@@ -44,9 +46,18 @@ int main() {
     std::cout<<"Teclee: "<<"\n0 para día"<<"\n1 para noche"<<"\n";
     std::cin>>tema;
     if (tema == 0)
+    {
         tf = new LightThemeFactory;
+        colorBackground = SKYBLUE;
+        colorText = BLACK;
+    }
     else
+    {
         tf = new NightThemeFactory;
+        colorBackground = BLACK;
+        colorText = WHITE;
+    }
+
     // Inicialización de la ventana
     InitWindow(screenWidth, screenHeight, "Tankey game");
     InitAudioDevice();              // Initialize audio device
@@ -111,7 +122,7 @@ static void UpdateDrawFrame(void) {
     BeginDrawing();
         if (barLife.getStatus() == 1)
             --barLife;
-        ClearBackground(SKYBLUE); // Limpio la pantalla con "celeste cielo"
+        ClearBackground(colorBackground); // Limpio la pantalla con "celeste cielo"
         tree->Draw();
         player->Draw();
         for (int i = 0; i < 4; i++)
@@ -157,8 +168,8 @@ static void UpdateDrawFrame(void) {
 
 
     // Dibujo todos los elementos del juego.
-    DrawText("Tankey", 20, 20, 40, BLACK);
-    DrawText(FormatText("Score: %05i", score), 950, 30, 30, BLACK);
+    DrawText("Tankey", 20, 20, 40, colorText);
+    DrawText(FormatText("Score: %05i", score), 950, 30, 30, colorText);
 
     // Finalizo el dibujado
     EndDrawing();
@@ -166,8 +177,8 @@ static void UpdateDrawFrame(void) {
 
 void UpdateDrawEnd() {
     BeginDrawing();
-    ClearBackground(SKYBLUE);
-    DrawText(FormatText("GAME OVER"), 375, 300, 70, BLACK);
-    DrawText(FormatText("Score: %05i", score), 455, 400, 40, BLACK);
+    ClearBackground(colorBackground);
+    DrawText(FormatText("GAME OVER"), 375, 300, 70, colorText);
+    DrawText(FormatText("Score: %05i", score), 455, 400, 40, colorText);
     EndDrawing();
 }
