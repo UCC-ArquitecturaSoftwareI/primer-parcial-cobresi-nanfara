@@ -3,7 +3,7 @@
 //
 #include <string>
 #include "Monkey.h"
-#include "Cartoonist.h"
+#include "Visitor.h"
 #include  "raylib.h"
 /*
 Monkey::Monkey() {
@@ -58,5 +58,4 @@ Rectangle Monkey::getRectangle() {
 
 void Monkey::Draw() {
     Draw(0, lado);
-
 }

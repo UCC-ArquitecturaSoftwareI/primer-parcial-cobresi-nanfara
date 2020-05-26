@@ -10,6 +10,7 @@
 
 class LightMonkey: public Monkey {
 public:
+    a
     LightMonkey():Monkey()
     {
         lado = 1;

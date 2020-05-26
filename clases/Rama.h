@@ -5,7 +5,7 @@
 #ifndef RAYLIBTEMPLATE_RAMA_H
 
 #include "raylib.h"
-#include "Cartoonist.h"
+#include "Visitor.h"
 
 #define RAYLIBTEMPLATE_RAMA_H
 

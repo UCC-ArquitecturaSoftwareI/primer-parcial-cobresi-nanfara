@@ -2,7 +2,7 @@
 // Created by Abril on 20/4/2020.
 //
 #include <raylib.h>
-#include "Cartoonist.h"
+#include "Visitor.h"
 #include "Monkey.h"
 #include "Rama.h"
 

@@ -5,7 +5,7 @@
 #ifndef RAYLIBTEMPLATE_MONKEY_H
 #include <raylib.h>
 #include <string>
-#include "Cartoonist.h"
+#include "Visitor.h"
 #define RAYLIBTEMPLATE_MONKEY_H
 
 /* if (la flecha se presiona)

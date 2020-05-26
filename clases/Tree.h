@@ -4,7 +4,7 @@
 
 #ifndef RAYLIBTEMPLATE_TREE_H
 
-#include "Cartoonist.h"
+#include "Visitor.h"
 #define RAYLIBTEMPLATE_TREE_H
 
 
