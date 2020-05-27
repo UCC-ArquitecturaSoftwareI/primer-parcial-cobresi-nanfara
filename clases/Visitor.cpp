@@ -5,7 +5,7 @@
 #include "Visitor.h"
 #include "Monkey.h"
 #include "Rama.h"
-
+/*
 Vector2 Cartoonist::DrawMonkey(int movimiento, int lado) {
     position.y = 450;
     if (lado == 1)
@@ -35,8 +35,9 @@ Vector2 Cartoonist::DrawMonkey(int movimiento, int lado) {
     DrawTextureRec(sprite, rect, position, WHITE);
     return position;
 }
+*/
 
-
+/*
 void Cartoonist::DrawTree(int lado, Vector2 pos) {
         if(lado == -1)
         {
@@ -50,7 +51,8 @@ void Cartoonist::DrawTree(int lado, Vector2 pos) {
         }
     DrawTextureRec(sprite, rect, pos, WHITE);
 }
-
+*/
+/*
 Vector2 Cartoonist::DrawNightMonkey(int movimiento, int lado) {
     position.y = 450;
     if (lado == 1)
@@ -88,6 +90,7 @@ Rectangle Cartoonist::GetRamaLightRectangle(int lado, bool animal) {
         rect = GetRamaVaciaRectangle(lado);
     return rect;
 }
+*/
 
 Vector2 Cartoonist::DrawRama(int lado, int sector, Rectangle rectangle){
     if (lado == -1)

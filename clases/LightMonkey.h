@@ -10,15 +10,18 @@
 
 class LightMonkey: public Monkey {
 public:
-    a
     LightMonkey():Monkey()
     {
         lado = 1;
         monkey_position = Draw(0, lado);
     }
-    Vector2 Draw(int mov, int lad) {
-        return DrawMonkey(mov, lado);
-    }
+	virtual void Accept(Visitor& v) { 
+	v.Visit(this); 
+	}
+ /*Vector2*/ void Draw(){
+	VisitorDraw *v;
+	Accept(v);
+        }
 };
 
 

@@ -8,7 +8,8 @@
 /*
 Monkey::Monkey() {
     char left;
-    monkey_position = DrawMonkey(0,'l');
+    mov = 0
+    Draw();
 }
 */
 
@@ -25,7 +26,8 @@ void Monkey::move_right() {
 void Monkey::move_left() {
     if (lado == -1)
     {
-        Draw(1, -1);
+	mov = 1;
+        Draw();
     }
     else
         newlado();
@@ -34,28 +36,24 @@ void Monkey::move_left() {
 
 void Monkey::newlado()
 {
+	mov = 0;
 
     if (monkey_position.x == 600)
     {
         lado = -1;
-        monkey_position = Draw(0, lado);
+        Draw();
     }
     else
     {
         lado = 1;
-        monkey_position = Draw(0, lado);
+        Draw();
     }
 }
 
-//void Monkey::Draw() {
-//    DrawMonkey(0, lado);
-//}
 
 Rectangle Monkey::getRectangle() {
     Rectangle rect_monkey = {monkey_position.x, monkey_position.y, 300, 300};
     return rect_monkey;
 }
 
-void Monkey::Draw() {
-    Draw(0, lado);
-}
+

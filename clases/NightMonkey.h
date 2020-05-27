@@ -15,10 +15,14 @@ public:
         lado = 1;
         monkey_position = Draw(0, lado);
     }
-     Vector2 Draw(int mov, int lad){
-        return DrawNightMonkey(mov, lado);
-    }
-};
+     virtual void Accept(Visitor& v) { 
+	v.Visit(this); 
+	}
+ /*Vector2*/ void Draw(){
+	VisitorDraw *v;
+	Accept(v);
+}
+        };
 
 
 #endif //RAYLIBTEMPLATE_NIGHTMONKEY_H

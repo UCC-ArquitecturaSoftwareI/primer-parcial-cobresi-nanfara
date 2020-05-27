@@ -6,6 +6,8 @@
 #ifndef RAYLIBTEMPLATE_CARTOONIST_H
 
 #include "LightMonkey.h"
+#include "NightMonkey.h"
+#include "Tree.h"
 #include <raylib.h>
 #define RAYLIBTEMPLATE_CARTOONIST_H
 
@@ -23,7 +25,8 @@ public:
         sprite = LoadTexture("resources/Sprite.png");
         rect = {0,0, 300, 300};
     }
-    virtual void VisitMonkey(LightMonkey *);
+    virtual void Visit(NightMonkey *);
+    virtual void Visit(LightMonkey *);
 //    virtual void VisitNightMonkey() = 0;
 //    virtual void VisitRama() = 0;
 //    virtual void VisitTree() = 0;
@@ -48,15 +51,86 @@ public:
 class VisitorDraw: public Visitor
 {
     public:
-    void VisitMonkey(LightMonkey *)
+    void Visit(NightMonkey *monkey)
     {
-
+	position.y = 450;
+    if (monkey.lado == 1)
+    {
+        position.x = 600;
+        rect.y = 1500;
+        if (monkey.mov)
+        {
+            if (rect.x == 900)
+                rect.x = 0;
+            else
+                rect.x = rect.x+300;
+        }
     }
-//    Vector2 DrawMonkey(int movimiento, int lado);
+    if (lado == -1)
+    {
+        position.x = 300;
+        rect.y = 1800;
+        if (monkey.mov)
+        {
+            if (rect.x == 900)
+                rect.x = 0;
+            else
+                rect.x = rect.x+300;
+        }
+    }
+    DrawTextureRec(sprite, rect, position, WHITE);
+    monkey.monkey_position = position;
+    }
+
+	void Visit(LightMonkey *monkey)
+	{
+	position.y = 450;
+    if (monkey.lado == 1)
+    {
+        position.x = 600;
+        rect.y = 300;
+        if (monkey.mov)
+        {
+            if (rect.x == 900)
+                rect.x = 0;
+            else
+                rect.x = rect.x+300;
+        }
+    }
+    if (lado == -1)
+    {
+        position.x = 300;
+        rect.y = 600;
+        if (monkey.mov)
+        {
+            if (rect.x == 900)
+                rect.x = 0;
+            else
+                rect.x = rect.x+300;
+        }
+    }
+    DrawTextureRec(sprite, rect, position, WHITE);
+    monkey.monkey_position = position;
+	}
+
+
+	void Visit(Tree *tree)
+	{
+	if(tree.lado == -1)
+        {
+            rect.y = 1200;
+            rect.x = 900;
+        }
+        if(tree.lado == 1)
+        {
+            rect.y = 1200;
+            rect.x = 600;
+        }
+    DrawTextureRec(sprite, rect, tree.position, WHITE);
+	}
+
 //    void DrawMonkeyMenu(int tema, Vector2 posicion);
-//    Vector2 DrawNightMonkey(int movimiento, int lado);
 //    Vector2 DrawRama(int lado, int sector, Rectangle rectangle);
-//    void DrawTree(int lado, Vector2 pos);
 //    void DrawNightButton(Vector2 position, int estado);
 //    void DrawLightButton(Vector2 position, int estado);
 //    void DrawStartButton(Vector2 position, int estado, int theme);
