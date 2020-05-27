@@ -33,8 +33,15 @@ public:
         }
         else
             rama_sector = rama_sector +1;
-        rama_position = DrawRama(lado, rama_sector, rect);
+        rama_position = DrawRama();
     }
+virtual void Accept(Visitor& v) { 
+	v.Visit(this); 
+	}
+ 	void DrawRama(){
+	VisitorDraw *v;
+	Accept(v);
+}
 };
 
 

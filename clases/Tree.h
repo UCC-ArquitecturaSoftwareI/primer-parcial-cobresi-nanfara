@@ -28,7 +28,7 @@ public:
     }
 	}
 	
-	virtual void Accept(Visitor& v) { 
+	void Accept(Visitor& v) { 
 	v.Visit(this); 
 	}
  	void DrawTree(){

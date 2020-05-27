@@ -11,7 +11,7 @@
 
 #define RAYLIBTEMPLATE_RAMA_H
 
-class Rama: public Cartoonist {
+class Rama{
 protected:
     int rama_sector; //1, 2, 3 o 4
     int lado; //-1 = izq //1 = derecha
@@ -28,8 +28,10 @@ public:
         rama_position = DrawRama(lado, rama_sector, rect = GetRamaVaciaRectangle(lado)); //ver de pasar rama
     }
     void Draw(){
-    DrawRama(lado, rama_sector, rect);
+    VisitorDraw *v;
+	Accept(v);
 }
+    virtual void Accept(Visitor& v) = 0;
     virtual void Move() = 0;
     Rectangle getRectangle(){
     Rectangle rec_rama = {rama_position.x, rama_position.y, 300, 300};

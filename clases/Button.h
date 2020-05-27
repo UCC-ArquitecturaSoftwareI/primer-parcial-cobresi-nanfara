@@ -17,18 +17,25 @@ public:
     virtual void Draw() = 0;
     virtual void Draw(Vector2 pos, int est) = 0;
     virtual Rectangle GetRectangle() = 0;
+	virtual void Accept(Visitor&) = 0;
 };
 
 class LightButton: public Button
 {
 public:
-    void Draw()
+    void DrawButton()
     {
-        DrawLightButton(position, estado);
+        VisitorDraw *v;
+	Accept(v);
     }
+    void Draw()
+ 	{ DrawButton();
+	}
      void Draw(Vector2 pos, int est)
      {
-        DrawLightButton(pos, est);
+	position = pos;
+	estado = est;
+        DrawButton();
      }
 
     LightButton()
@@ -43,18 +50,27 @@ public:
     {
         return rectangulo;
     }
+	virtual void Accept(Visitor& v) { 
+	v.Visit(this); 
+	}
 };
 
 class NightButton: public Button
 {
 public:
-    void Draw()
+    void DrawButton()
     {
-        DrawNightButton(position, estado);
+        VisitorDraw *v;
+	Accept(v);
     }
+    void Draw()
+ 	{ DrawButton();
+	}
     void Draw(Vector2 pos, int est)
     {
-        DrawNightButton(pos, est);
+        position = pos;
+	estado = est;
+        DrawButton();
     }
 
     NightButton()
@@ -69,18 +85,28 @@ public:
     {
         return rectangulo;
     }
+	virtual void Accept(Visitor& v) { 
+	v.Visit(this); 
+	}
 };
 
 class StartButton: public Button
 {
 public:
+	DrawStartButton()
+{
+VisitorDraw *v;
+	Accept(v);
+}
     void Draw()
     {
         DrawStartButton(position, estado, theme);
     }
     void Draw(Vector2 pos, int est)
     {
-        DrawStartButton(pos, est, theme);
+	position = pos;
+	estado = est;
+        DrawStartButton();
     }
 
     StartButton()
@@ -100,10 +126,12 @@ public:
     {
         theme = i;
     }
+	virtual void Accept(Visitor& v) { 
+	v.Visit(this); 
+	}
 };
 
-//Sacar esto de aca
-class Skin: public Cartoonist
+class Skin
 {
 public:
     int tema;
@@ -118,5 +146,13 @@ public:
     {
         DrawMonkeyMenu(tema, position);
     }
+	DrawMonkeyMenu(){
+VisitorDraw *v;
+	Accept(v);
+}
+
+ void Accept(Visitor& v) { 
+	v.Visit(this); 
+	}
 };
 #endif //RAYLIBTEMPLATE_BUTTON_H

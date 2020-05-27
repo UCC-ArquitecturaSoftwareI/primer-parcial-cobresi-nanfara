@@ -27,6 +27,9 @@ public:
     }
     virtual void Visit(NightMonkey *);
     virtual void Visit(LightMonkey *);
+    virtual void Visit(Tree *);
+    virtual void Visit(Rama *);
+    virtual Rectangle Visit();
 //    virtual void VisitNightMonkey() = 0;
 //    virtual void VisitRama() = 0;
 //    virtual void VisitTree() = 0;
@@ -129,12 +132,127 @@ class VisitorDraw: public Visitor
     DrawTextureRec(sprite, rect, tree.position, WHITE);
 	}
 
-//    void DrawMonkeyMenu(int tema, Vector2 posicion);
-//    Vector2 DrawRama(int lado, int sector, Rectangle rectangle);
-//    void DrawNightButton(Vector2 position, int estado);
-//    void DrawLightButton(Vector2 position, int estado);
-//    void DrawStartButton(Vector2 position, int estado, int theme);
+    void Visit(Rama *rama)
+{
+    if (rama.lado == -1)
+    {
+        switch (rama.rama_sector) {
+            case 1:
+                rama.rama_position.x = 190;
+                rama.rama_position.y = -150;
+                break;
+            case 2:
+                rama.rama_position.x = 190;
+                rama.rama_position.y = 150;
+                break;
+            case 3:
+                rama.rama_position.x = 190;
+                rama.rama_position.y = 450;
+                break;
+            case 4:
+                rama.rama_position.x = 190;
+                rama.rama_position.y = 750;
+                break;
+        }
+    }
+    else
+    {
+        switch (rama.rama_sector) {
+            case 1:
+                rama.rama_position.x = 710;
+                rama.rama_position.y = -150;
+                break;
+            case 2:
+                rama.rama_position.x = 710;
+                rama.rama_position.y = 150;
+                break;
+            case 3:
+                rama.rama_position.x = 710;
+                rama.rama_position.y = 450;
+                break;
+            case 4:
+                rama.rama_position.x = 710;
+                rama.rama_position.y = 750;
+                break;
+        }
+    }
+    DrawTextureRec(sprite, rama.rect, rama.rama_position, WHITE);
+}
+  
+    void Visit(NightButton *button){
+    if (!button.estado)
+    {
+        rect.x = 1200;
+        rect.y = 600;
+    } else
+    {
+        rect.x = 1200;
+        rect.y = 900;
+    }
+    DrawTextureRec(sprite, rect, button.position, WHITE);
+}
 
+      void Visit(LightButton *button){
+    if (!button.estado)
+    {
+        rect.x = 1200;
+        rect.y = 0;
+    } else
+    {
+        rect.x = 1200;
+        rect.y = 300;
+    }
+    DrawTextureRec(sprite, rect, button.position, WHITE);
+}
+
+    void Visit(StartButton *button)
+{
+ if (!button.estado)
+    {
+        if(button.theme)
+        {
+            rect.x = 0;
+            rect.y = 3300;
+        }
+        else
+        {
+            rect.x = 600;
+            rect.y = 3300;
+        }
+
+    } else
+    {
+        if(button.theme)
+        {
+            rect.x = 300;
+            rect.y = 3300;
+        }
+        else
+        {
+            rect.x = 900;
+            rect.y = 3300;
+        }
+
+    }
+    DrawTextureRec(sprite, rect, button.position, WHITE);
+}
+
+
+void Visit(Skin *skin)
+{
+if(skin.tema)
+    {
+        rect.x = 300;
+        rect.y = 0;
+    }
+    else
+    {
+        rect.x = 0;
+        rect.y = 0;
+    }
+
+    DrawTextureRec(sprite, rect, skin.posicion, WHITE);
+}
 };
 
 

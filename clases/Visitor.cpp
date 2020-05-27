@@ -91,7 +91,7 @@ Rectangle Cartoonist::GetRamaLightRectangle(int lado, bool animal) {
     return rect;
 }
 */
-
+/*
 Vector2 Cartoonist::DrawRama(int lado, int sector, Rectangle rectangle){
     if (lado == -1)
     {
@@ -138,7 +138,7 @@ Vector2 Cartoonist::DrawRama(int lado, int sector, Rectangle rectangle){
     DrawTextureRec(sprite, rectangle, position, WHITE);
     return position;
 }
-
+*/
 Rectangle Cartoonist::GetRamaNightAnimalRectangle(int lado) {
     int animal = GetRandomValue(0, 3);
     if (lado == -1)
@@ -265,7 +265,7 @@ Texture2D Cartoonist::GetSprite()
 {
     return sprite;
 }
-
+/*
 void Cartoonist::DrawNightButton(Vector2 position, int estado) {
     if (!estado)
     {
@@ -278,8 +278,8 @@ void Cartoonist::DrawNightButton(Vector2 position, int estado) {
     }
     DrawTextureRec(sprite, rect, position, WHITE);
 
-}
-
+}*/
+/*
 void Cartoonist::DrawLightButton(Vector2 position, int estado) {
     if (!estado)
     {
@@ -292,7 +292,8 @@ void Cartoonist::DrawLightButton(Vector2 position, int estado) {
     }
     DrawTextureRec(sprite, rect, position, WHITE);
 }
-
+*/
+/*
 void Cartoonist::DrawStartButton(Vector2 position, int estado, int theme) {
     if (!estado)
     {
@@ -324,7 +325,8 @@ void Cartoonist::DrawStartButton(Vector2 position, int estado, int theme) {
     DrawTextureRec(sprite, rect, position, WHITE);
 }
 
-
+*/
+/*
 void Cartoonist::DrawMonkeyMenu(int tema, Vector2 posicion){
     if(tema)
     {
@@ -339,3 +341,4 @@ void Cartoonist::DrawMonkeyMenu(int tema, Vector2 posicion){
 
     DrawTextureRec(sprite, rect, posicion, WHITE);
 }
+*/

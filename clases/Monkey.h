@@ -22,6 +22,7 @@ public:
 //            monkey_position = Draw(0, lado);
         }
         virtual void Draw() = 0;
+	virtual void Accept(Visitor& v) = 0;
         void move_right();
         void move_left();
         void newlado();
