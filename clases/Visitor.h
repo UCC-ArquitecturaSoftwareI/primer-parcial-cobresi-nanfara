@@ -6,7 +6,7 @@
 #ifndef RAYLIBTEMPLATE_CARTOONIST_H
 
 #include "LightMonkey.h"
-#include "NightMonkey.h"
+#include "NightMonkey.h
 #include "Tree.h"
 #include <raylib.h>
 #define RAYLIBTEMPLATE_CARTOONIST_H
@@ -25,11 +25,13 @@ public:
         sprite = LoadTexture("resources/Sprite.png");
         rect = {0,0, 300, 300};
     }
-    virtual void Visit(NightMonkey *);
+    virtual void Visit(NightMonkey *) ;
     virtual void Visit(LightMonkey *);
     virtual void Visit(Tree *);
     virtual void Visit(Rama *);
-    virtual Rectangle Visit();
+
+    virtual void Visit(Button *);
+    virtual void Visit(Skin *skin);
 //    virtual void VisitNightMonkey() = 0;
 //    virtual void VisitRama() = 0;
 //    virtual void VisitTree() = 0;
@@ -37,10 +39,10 @@ public:
 //    virtual void VisitLightButton() = 0;
 //    virtual void VisitStartButton() = 0;
 
-
-
 //    void DrawBanana(char lado);
 //    Vector2 DrawRama(int lado, int sector, int color);
+    virtual Rectangle Visit(NightRama *);
+    virtual Rectangle Visit(LighttRama *);
 
 //    Rectangle GetRamaLightRectangle(int lado, bool animal);
 //    Rectangle GetRamaNightRectangle(int lado, bool animal);
@@ -48,6 +50,11 @@ public:
 //    Rectangle GetRamaDayAnimalRectangle(int lado);
 //    Rectangle GetRamaVaciaRectangle(int lado);
 //    Texture2D GetSprite();
+
+};
+class VisitorRectangle: public Visitor
+{
+public:
 
 };
 
