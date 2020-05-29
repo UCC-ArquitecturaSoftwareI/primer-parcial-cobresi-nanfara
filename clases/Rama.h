@@ -25,12 +25,13 @@ public:
         lado = lado1;
         rama_sector = sector1;
         //color = GetRandomValue(0,1);
-        rama_position = DrawRama(lado, rama_sector, rect = GetRamaVaciaRectangle(lado)); //ver de pasar rama
+        //rama_position = DrawRama(lado, rama_sector, rect = GetRamaVaciaRectangle(lado)); ver de pasar rama
     }
+
     void Draw(){
     VisitorDraw *v;
 	Accept(v);
-}
+	}
     virtual void Accept(Visitor& v) = 0;
     virtual void Move() = 0;
     Rectangle getRectangle(){

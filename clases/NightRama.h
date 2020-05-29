@@ -11,6 +11,8 @@ class NightRama: public Rama {
 public:
     NightRama(int lado1, int sector1):Rama(lado1, sector1)
     {
+	GetRectangle();
+	rama_position = DrawRama(lado, rama_sector, rect);
     }
     void Move()
     {
@@ -28,7 +30,7 @@ public:
                 animal = false;
             else
                 animal = true;
-            rect = GetRamaNightRectangle(lado, animal);
+            rect = GetRectangle();
 
         }
         else
@@ -38,8 +40,14 @@ public:
 virtual void Accept(Visitor& v) { 
 	v.Visit(this); 
 	}
- 	void DrawRama(){
+ 	
+void DrawRama(){
 	VisitorDraw *v;
+	Accept(v);
+}
+
+void GetRectangle(){
+	VisitorGetRectangle *v;
 	Accept(v);
 }
 };

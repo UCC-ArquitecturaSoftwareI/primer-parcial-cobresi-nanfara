@@ -6,8 +6,12 @@
 #ifndef RAYLIBTEMPLATE_CARTOONIST_H
 
 #include "LightMonkey.h"
-#include "NightMonkey.h
+#include "LightRama.h"
+#include "NightRama.h"
+#include "NightMonkey.h"
 #include "Tree.h"
+#include "Button.h"
+
 #include <raylib.h>
 #define RAYLIBTEMPLATE_CARTOONIST_H
 
@@ -29,33 +33,41 @@ public:
     virtual void Visit(LightMonkey *);
     virtual void Visit(Tree *);
     virtual void Visit(Rama *);
+    virtual void Visit(Skin *);
+    virtual void Visit(StartButton *);
+    virtual void Visit(LightButton *);
+    virtual void Visit(NightButton *);
 
-    virtual void Visit(Button *);
-    virtual void Visit(Skin *skin);
-//    virtual void VisitNightMonkey() = 0;
-//    virtual void VisitRama() = 0;
-//    virtual void VisitTree() = 0;
-//    virtual void VisitNightButton() = 0;
-//    virtual void VisitLightButton() = 0;
-//    virtual void VisitStartButton() = 0;
+    virtual void Visit(NightRama *);
+    virtual void Visit(LighttRama *);
 
-//    void DrawBanana(char lado);
-//    Vector2 DrawRama(int lado, int sector, int color);
-    virtual Rectangle Visit(NightRama *);
-    virtual Rectangle Visit(LighttRama *);
-
-//    Rectangle GetRamaLightRectangle(int lado, bool animal);
-//    Rectangle GetRamaNightRectangle(int lado, bool animal);
-//    Rectangle GetRamaNightAnimalRectangle(int lado);
-//    Rectangle GetRamaDayAnimalRectangle(int lado);
-//    Rectangle GetRamaVaciaRectangle(int lado);
 //    Texture2D GetSprite();
 
 };
-class VisitorRectangle: public Visitor
+class VisitorGetRectangle: public Visitor
 {
 public:
+void Visit(LightRama *rama)
+{
+	if (rama.animal)
+        rect = GetRamaDayAnimalRectangle(rama.lado);
+    else
+        rect = GetRamaVaciaRectangle(rama.lado);
+    rama.rect = rect;
+}
 
+void Visit(NightRama *rama) {
+    if (rama.animal)
+        rect = GetRamaNightAnimalRectangle(rama.lado);
+    else
+        rect = GetRamaVaciaRectangle(rama.lado);
+    rama.rect = rect;
+}
+
+
+    Rectangle GetRamaNightAnimalRectangle(int lado);
+    Rectangle GetRamaDayAnimalRectangle(int lado);
+    Rectangle GetRamaVaciaRectangle(int lado);
 };
 
 class VisitorDraw: public Visitor

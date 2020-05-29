@@ -11,6 +11,8 @@ class LightRama: public Rama {
 public:
     LightRama(int lado1, int sector1):Rama(lado1, sector1)
     {
+	GetRectangle();
+	rama_position = DrawRama(lado, rama_sector, rect);
     }
     void Move()
     {
@@ -28,7 +30,7 @@ public:
             animal = false;
         else
             animal = true;
-        rect = GetRamaLightRectangle(lado, animal);
+        GetRectangle();
 
     }
     else
@@ -41,7 +43,12 @@ public:
  	void DrawRama(){
 	VisitorDraw *v;
 	Accept(v);
-}
+	}
+
+	void GetRectangle(){
+	VisitorGetRectangle *v;
+	Accept(v);
+	}
 	
 };
 

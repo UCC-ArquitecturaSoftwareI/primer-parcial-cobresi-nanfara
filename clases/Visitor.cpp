@@ -82,7 +82,8 @@ Vector2 Cartoonist::DrawNightMonkey(int movimiento, int lado) {
     DrawTextureRec(sprite, rect, position, WHITE);
     return position;
 }
-
+*/
+/*
 Rectangle Cartoonist::GetRamaLightRectangle(int lado, bool animal) {
     if (animal)
         rect = GetRamaDayAnimalRectangle(lado);
@@ -252,7 +253,7 @@ Rectangle Cartoonist::GetRamaDayAnimalRectangle(int lado) {
     }
     return rect;
 }
-
+/*
 Rectangle Cartoonist::GetRamaNightRectangle(int lado, bool animal) {
     if (animal)
         rect = GetRamaNightAnimalRectangle(lado);
@@ -260,6 +261,7 @@ Rectangle Cartoonist::GetRamaNightRectangle(int lado, bool animal) {
         rect = GetRamaVaciaRectangle(lado);
     return rect;
 }
+*/
 
 Texture2D Cartoonist::GetSprite()
 {
