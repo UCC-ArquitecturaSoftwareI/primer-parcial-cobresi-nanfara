@@ -1,13 +1,11 @@
 //
 // Created by Abril on 20/4/2020.
 //
-/*
-#include <raylib.h>
+#include "raylib.h"
 #include "Visitor.h"
-#include "Monkey.h"
-#include "Rama.h"
-*/
-/*
+//#include "Monkey.h"
+//#include "Rama.h"
+
 Vector2 Cartoonist::DrawMonkey(int movimiento, int lado) {
     position.y = 450;
     if (lado == 1)
