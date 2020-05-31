@@ -1,10 +1,12 @@
 //
 // Created by Abril on 20/4/2020.
 //
+/*
 #include <raylib.h>
 #include "Visitor.h"
 #include "Monkey.h"
 #include "Rama.h"
+*/
 /*
 Vector2 Cartoonist::DrawMonkey(int movimiento, int lado) {
     position.y = 450;
@@ -140,7 +142,7 @@ Vector2 Cartoonist::DrawRama(int lado, int sector, Rectangle rectangle){
     return position;
 }
 */
-Rectangle Cartoonist::GetRamaNightAnimalRectangle(int lado) {
+Rectangle Visitor::GetRamaNightAnimalRectangle(int lado) {
     int animal = GetRandomValue(0, 3);
     if (lado == -1)
     {
@@ -187,7 +189,7 @@ Rectangle Cartoonist::GetRamaNightAnimalRectangle(int lado) {
     return rect;
 }
 
-Rectangle Cartoonist::GetRamaVaciaRectangle(int lado) {
+Rectangle Visitor::GetRamaVaciaRectangle(int lado) {
     int color = GetRandomValue(0, 1);
     rect.y = 900;
     if (lado == -1)
@@ -207,7 +209,7 @@ Rectangle Cartoonist::GetRamaVaciaRectangle(int lado) {
     return rect;
 }
 
-Rectangle Cartoonist::GetRamaDayAnimalRectangle(int lado) {
+Rectangle Visitor::GetRamaDayAnimalRectangle(int lado) {
     int animal = GetRandomValue(0, 3);
     if (lado == -1)
     {
@@ -263,7 +265,7 @@ Rectangle Cartoonist::GetRamaNightRectangle(int lado, bool animal) {
 }
 */
 
-Texture2D Cartoonist::GetSprite()
+Texture2D Visitor::GetSprite()
 {
     return sprite;
 }

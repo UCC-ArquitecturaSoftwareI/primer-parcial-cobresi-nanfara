@@ -3,9 +3,10 @@
 //
 
 #ifndef RAYLIBTEMPLATE_NIGHTMONKEY_H
+#define RAYLIBTEMPLATE_NIGHTMONKEY_H
 #include "raylib.h"
 #include "Monkey.h"
-#define RAYLIBTEMPLATE_NIGHTMONKEY_H
+#include "Visitor.h"
 
 
 class NightMonkey: public Monkey { //Override??

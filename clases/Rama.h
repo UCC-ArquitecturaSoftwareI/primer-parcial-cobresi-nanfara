@@ -3,13 +3,11 @@
 //
 
 #ifndef RAYLIBTEMPLATE_RAMA_H
-
+#define RAYLIBTEMPLATE_RAMA_H
 #include "raylib.h"
 #include "Visitor.h"
 #include <time.h>
 #include <stdlib.h>
-
-#define RAYLIBTEMPLATE_RAMA_H
 
 class Rama{
 protected:

@@ -3,9 +3,10 @@
 //
 
 #ifndef RAYLIBTEMPLATE_LIGHTMONKEY_H
+#define RAYLIBTEMPLATE_LIGHTMONKEY_H
 #include "raylib.h"
 #include "Monkey.h"
-#define RAYLIBTEMPLATE_LIGHTMONKEY_H
+#include "Visitor.h"
 
 
 class LightMonkey: public Monkey {
@@ -18,7 +19,7 @@ public:
 	virtual void Accept(Visitor& v) { 
 	v.Visit(this); 
 	}
- /*Vector2*/ void Draw(){
+  void Draw(){
 	VisitorDraw *v;
 	Accept(v);
         }

@@ -3,13 +3,11 @@
 //
 
 #ifndef RAYLIBTEMPLATE_LIGHTTHEMEFACTORY_H
-
+#define RAYLIBTEMPLATE_LIGHTTHEMEFACTORY_H
 #include "ThemeFactory.h"
 #include "Monkey.h"
 #include "LightMonkey.h"
 #include "LightRama.h"
-
-#define RAYLIBTEMPLATE_LIGHTTHEMEFACTORY_H
 
 
 class LightThemeFactory: public ThemeFactory{

@@ -3,12 +3,12 @@
 //
 
 #ifndef RAYLIBTEMPLATE_BUTTON_H
-
-#include "Visitor.h"
 #define RAYLIBTEMPLATE_BUTTON_H
 
+#include "Visitor.h"
+#include "raylib.h"
 
-class Button: public Cartoonist {
+class Button {
 public:
     int theme;
     int estado;
@@ -155,4 +155,5 @@ VisitorDraw *v;
 	v.Visit(this); 
 	}
 };
+
 #endif //RAYLIBTEMPLATE_BUTTON_H

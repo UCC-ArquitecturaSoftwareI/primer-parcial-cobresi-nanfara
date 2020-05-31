@@ -3,18 +3,15 @@
 // Esta clase se encarga de dibujar todito
 //
 
-#ifndef RAYLIBTEMPLATE_CARTOONIST_H
-
+#ifndef RAYLIBTEMPLATE_VISITOR_H
+#define RAYLIBTEMPLATE_VISITOR_H
 #include "LightMonkey.h"
 #include "LightRama.h"
 #include "NightRama.h"
 #include "NightMonkey.h"
 #include "Tree.h"
 #include "Button.h"
-
-#include <raylib.h>
-#define RAYLIBTEMPLATE_CARTOONIST_H
-
+#include "raylib.h"
 
 
 class Visitor
@@ -275,4 +272,4 @@ if(skin.tema)
 };
 
 
-#endif //RAYLIBTEMPLATE_CARTOONIST_H
+#endif //RAYLIBTEMPLATE_VISITOR_H

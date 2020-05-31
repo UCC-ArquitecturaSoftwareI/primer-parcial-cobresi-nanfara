@@ -3,8 +3,9 @@
 //
 
 #ifndef RAYLIBTEMPLATE_NIGHTRAMA_H
-#include "Rama.h"
 #define RAYLIBTEMPLATE_NIGHTRAMA_H
+#include "Rama.h"
+#include "Visitor.h"
 
 
 class NightRama: public Rama {

@@ -3,10 +3,11 @@
 //
 
 #ifndef RAYLIBTEMPLATE_MONKEY_H
-#include <raylib.h>
-#include <string>
-#include "Visitor.h"
 #define RAYLIBTEMPLATE_MONKEY_H
+
+#include "raylib.h"
+#include <string> //se usa?
+#include "Visitor.h"
 
 
 class Monkey{
@@ -16,7 +17,7 @@ public:
 //Hacer bool
 	int mov=0;
 
-        Monkey():Cartoonist()
+        Monkey()
         {
 //            lado = 1;
 //            monkey_position = Draw(0, lado);

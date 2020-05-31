@@ -3,8 +3,7 @@
 //
 #include <string>
 #include "Monkey.h"
-#include "Visitor.h"
-#include  "raylib.h"
+#include "raylib.h"
 /*
 Monkey::Monkey() {
     char left;

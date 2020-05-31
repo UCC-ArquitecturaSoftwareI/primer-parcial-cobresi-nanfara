@@ -3,9 +3,8 @@
 //
 
 #ifndef RAYLIBTEMPLATE_WINDOW_H
-
-#include "raylib.h"
 #define RAYLIBTEMPLATE_WINDOW_H
+#include "raylib.h"
 
 
 class Window {

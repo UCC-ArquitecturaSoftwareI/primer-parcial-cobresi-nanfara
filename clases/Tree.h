@@ -3,10 +3,9 @@
 //
 
 #ifndef RAYLIBTEMPLATE_TREE_H
-
+#define RAYLIBTEMPLATE_TREE_H
 #include "Visitor.h"
 #include "raylib.h"
-#define RAYLIBTEMPLATE_TREE_H
 
 
 class Tree{
