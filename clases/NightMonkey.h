@@ -14,12 +14,12 @@ public:
     NightMonkey():Monkey()
     {
         lado = 1;
-        monkey_position = Draw(0, lado);
+        Draw();
     }
-     virtual void Accept(Visitor& v) { 
+    virtual void Accept(Visitor& v) {
 	v.Visit(this); 
 	}
- /*Vector2*/ void Draw(){
+    void Draw(){
 	VisitorDraw *v;
 	Accept(v);
 }

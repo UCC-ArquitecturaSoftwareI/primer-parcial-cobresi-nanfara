@@ -22,7 +22,7 @@ void barLife::operator++() {
     if (progress < width - step)
         progress += step;
     else
-        progress == width;
+        progress = width;
 }
 
 int barLife::getprogress() {

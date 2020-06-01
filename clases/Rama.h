@@ -4,8 +4,6 @@
 
 #ifndef RAYLIBTEMPLATE_RAMA_H
 #define RAYLIBTEMPLATE_RAMA_H
-#include <time.h>
-#include <stdlib.h>
 #include "raylib.h"
 #include "Visitor.h"
 
@@ -27,10 +25,10 @@ public:
     }
 
     virtual void Draw(){
-    VisitorDraw *v
+    VisitorDraw *v;
 	Accept(v);
 	}
-    virtual void Accept(Visitor& v) = 0;
+    virtual void Accept(Visitor& v);
     virtual void Move() = 0;
     Rectangle getRectangle(){
     Rectangle rec_rama = {rama_position.x, rama_position.y, 300, 300};

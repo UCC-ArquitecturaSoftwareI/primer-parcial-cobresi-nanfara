@@ -4,6 +4,7 @@
 
 #ifndef RAYLIBTEMPLATE_LIGHTMONKEY_H
 #define RAYLIBTEMPLATE_LIGHTMONKEY_H
+
 #include "raylib.h"
 #include "Monkey.h"
 #include "Visitor.h"
@@ -16,7 +17,7 @@ public:
         lado = 1;
         Draw();
     }
-	virtual void Accept(Visitor& v) { 
+	virtual void Accept(Visitor& v) {
 	v.Visit(this); 
 	}
   void Draw(){

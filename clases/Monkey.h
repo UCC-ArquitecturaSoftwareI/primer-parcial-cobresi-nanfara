@@ -6,7 +6,7 @@
 #define RAYLIBTEMPLATE_MONKEY_H
 
 #include "raylib.h"
-#include <string> //se usa?
+#include <string>
 #include "Visitor.h"
 
 
@@ -22,8 +22,8 @@ public:
 //            lado = 1;
 //            monkey_position = Draw(0, lado);
         }
-        virtual void Draw() = 0;
-	virtual void Accept(Visitor& v) = 0;
+        virtual void Draw();
+	    virtual void Accept(Visitor&);
         void move_right();
         void move_left();
         void newlado();
