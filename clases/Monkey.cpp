@@ -15,7 +15,7 @@ Monkey::Monkey() {
 void Monkey::move_right() {
     if (lado == 1)
     {
-        Draw(1, 1);
+        Draw();
     }
     else
         newlado();

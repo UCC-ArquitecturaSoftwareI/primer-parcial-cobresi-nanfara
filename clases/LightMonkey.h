@@ -14,7 +14,7 @@ public:
     LightMonkey():Monkey()
     {
         lado = 1;
-        monkey_position = Draw(0, lado);
+        Draw();
     }
 	virtual void Accept(Visitor& v) { 
 	v.Visit(this); 

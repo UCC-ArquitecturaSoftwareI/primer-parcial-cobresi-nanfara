@@ -4,10 +4,10 @@
 
 #ifndef RAYLIBTEMPLATE_RAMA_H
 #define RAYLIBTEMPLATE_RAMA_H
-#include "raylib.h"
-#include "Visitor.h"
 #include <time.h>
 #include <stdlib.h>
+#include "raylib.h"
+#include "Visitor.h"
 
 class Rama{
 protected:
@@ -17,7 +17,7 @@ protected:
     bool animal;
     Rectangle rect;
 public:
-    Rama(int lado1, int sector1):Cartoonist()
+    Rama(int lado1, int sector1)
     {
         animal = false;
         lado = lado1;
@@ -26,8 +26,8 @@ public:
         //rama_position = DrawRama(lado, rama_sector, rect = GetRamaVaciaRectangle(lado)); ver de pasar rama
     }
 
-    void Draw(){
-    VisitorDraw *v;
+    virtual void Draw(){
+    VisitorDraw *v
 	Accept(v);
 	}
     virtual void Accept(Visitor& v) = 0;

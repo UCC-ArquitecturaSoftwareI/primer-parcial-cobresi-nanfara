@@ -26,24 +26,29 @@ public:
         sprite = LoadTexture("resources/Sprite.png");
         rect = {0,0, 300, 300};
     }
-    virtual void Visit(NightMonkey *) ;
-    virtual void Visit(LightMonkey *);
-    virtual void Visit(Tree *);
-    virtual void Visit(Rama *);
-    virtual void Visit(Skin *);
-    virtual void Visit(StartButton *);
-    virtual void Visit(LightButton *);
-    virtual void Visit(NightButton *);
+    virtual void Visit(NightMonkey *) =0;
+    virtual void Visit(LightMonkey *)=0;
+    virtual void Visit(Tree *)=0;
+    virtual void Visit(Rama *)=0;
+    virtual void Visit(Skin *)=0;
+    virtual void Visit(StartButton *)=0;
+    virtual void Visit(LightButton *)=0;
+    virtual void Visit(NightButton *)=0;
 
-    virtual void Visit(NightRama *);
-    virtual void Visit(LighttRama *);
+    virtual void Visit(NightRama *)=0;
+    virtual void Visit(LighttRama *)=0;
+    Rectangle GetRamaNightAnimalRectangle(int lado);
+    Rectangle GetRamaDayAnimalRectangle(int lado);
+    Rectangle GetRamaVaciaRectangle(int lado);
 
 //    Texture2D GetSprite();
 
 };
+
 class VisitorGetRectangle: public Visitor
 {
 public:
+    VisitorGetRectangle():Visitor(){}
 void Visit(LightRama *rama)
 {
 	if (rama.animal)
@@ -61,15 +66,12 @@ void Visit(NightRama *rama) {
     rama.rect = rect;
 }
 
-
-    Rectangle GetRamaNightAnimalRectangle(int lado);
-    Rectangle GetRamaDayAnimalRectangle(int lado);
-    Rectangle GetRamaVaciaRectangle(int lado);
 };
 
 class VisitorDraw: public Visitor
 {
     public:
+    VisitorDraw:Visitor(){}
     void Visit(NightMonkey *monkey)
     {
 	position.y = 450;
@@ -85,7 +87,7 @@ class VisitorDraw: public Visitor
                 rect.x = rect.x+300;
         }
     }
-    if (lado == -1)
+    if (monkey.lado == -1)
     {
         position.x = 300;
         rect.y = 1800;
@@ -116,7 +118,7 @@ class VisitorDraw: public Visitor
                 rect.x = rect.x+300;
         }
     }
-    if (lado == -1)
+    if (monkey.lado == -1)
     {
         position.x = 300;
         rect.y = 600;

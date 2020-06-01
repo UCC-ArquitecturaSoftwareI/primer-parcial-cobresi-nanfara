@@ -5,8 +5,8 @@
 #ifndef RAYLIBTEMPLATE_BUTTON_H
 #define RAYLIBTEMPLATE_BUTTON_H
 
-#include "Visitor.h"
 #include "raylib.h"
+#include "Visitor.h"
 
 class Button {
 public:
@@ -17,7 +17,7 @@ public:
     virtual void Draw() = 0;
     virtual void Draw(Vector2 pos, int est) = 0;
     virtual Rectangle GetRectangle() = 0;
-	virtual void Accept(Visitor&) = 0;
+	virtual void Accept(Visitor& ) = 0;
 };
 
 class LightButton: public Button
@@ -29,7 +29,8 @@ public:
 	Accept(v);
     }
     void Draw()
- 	{ DrawButton();
+ 	{
+        DrawButton();
 	}
      void Draw(Vector2 pos, int est)
      {
@@ -95,7 +96,7 @@ class StartButton: public Button
 public:
 	DrawStartButton()
 {
-VisitorDraw *v;
+    VisitorDraw *v;
 	Accept(v);
 }
     void Draw()
@@ -147,7 +148,7 @@ public:
         DrawMonkeyMenu(tema, position);
     }
 	DrawMonkeyMenu(){
-VisitorDraw *v;
+    VisitorDraw *v;
 	Accept(v);
 }
 

@@ -5,6 +5,7 @@
 #include "Visitor.h"
 //#include "Monkey.h"
 //#include "Rama.h"
+/*
 
 Vector2 Cartoonist::DrawMonkey(int movimiento, int lado) {
     position.y = 450;
@@ -262,12 +263,12 @@ Rectangle Cartoonist::GetRamaNightRectangle(int lado, bool animal) {
     return rect;
 }
 */
-
+/*
 Texture2D Visitor::GetSprite()
 {
     return sprite;
 }
-/*
+
 void Cartoonist::DrawNightButton(Vector2 position, int estado) {
     if (!estado)
     {
