@@ -6,34 +6,36 @@
 #define RAYLIBTEMPLATE_RAMA_H
 #include "raylib.h"
 #include "Visitor.h"
+#include "Visitable.h"
 
-class Rama{
-protected:
+
+class Rama: public Visitable {
+public:
     int rama_sector; //1, 2, 3 o 4
     int lado; //-1 = izq //1 = derecha
     Vector2 rama_position;
     bool animal;
     Rectangle rect;
-public:
+
     Rama(int lado1, int sector1)
     {
         animal = false;
         lado = lado1;
         rama_sector = sector1;
         //color = GetRandomValue(0,1);
-        //rama_position = DrawRama(lado, rama_sector, rect = GetRamaVaciaRectangle(lado)); ver de pasar rama
+        //rama_position = Draw(lado, rama_sector, rect = GetRamaVaciaRectangle(lado)); ver de pasar rama
     }
 
-    virtual void Draw(){
-    VisitorDraw *v;
-	Accept(v);
-	}
-    virtual void Accept(Visitor& v);
-    virtual void Move() = 0;
+    virtual void Draw();
     Rectangle getRectangle(){
     Rectangle rec_rama = {rama_position.x, rama_position.y, 300, 300};
     return rec_rama;
-}
+    }
+
+    void Accept(Visitor & v) {
+        v.Visit(*this);
+    }
+    virtual void Move() = 0;
 
 
 

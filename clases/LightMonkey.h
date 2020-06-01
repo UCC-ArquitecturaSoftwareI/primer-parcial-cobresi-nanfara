@@ -8,6 +8,7 @@
 #include "raylib.h"
 #include "Monkey.h"
 #include "Visitor.h"
+#include "Visitable.h"
 
 
 class LightMonkey: public Monkey {
@@ -17,13 +18,10 @@ public:
         lado = 1;
         Draw();
     }
-	virtual void Accept(Visitor& v) {
-	v.Visit(this); 
-	}
-  void Draw(){
-	VisitorDraw *v;
-	Accept(v);
-        }
+    void Accept(Visitor & v) override {
+        v.Visit(*this);
+    }
+  void Draw() override;
 };
 
 

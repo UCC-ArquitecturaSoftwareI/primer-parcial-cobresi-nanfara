@@ -8,9 +8,13 @@
 #include "raylib.h"
 #include <string>
 #include "Visitor.h"
+#include "Visitable.h"
 
+//class Visitor;
+//class VisitorDraw;
+//class VisitorGetRectangle;
 
-class Monkey{
+class Monkey: public Visitable {
 public:
         Vector2 monkey_position;
         int lado;
@@ -22,8 +26,8 @@ public:
 //            lado = 1;
 //            monkey_position = Draw(0, lado);
         }
-        virtual void Draw();
-	    virtual void Accept(Visitor&);
+        virtual void Draw() =0;
+	    virtual void Accept(Visitor&) =0;
         void move_right();
         void move_left();
         void newlado();

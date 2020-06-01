@@ -4,11 +4,14 @@
 
 #ifndef RAYLIBTEMPLATE_TREE_H
 #define RAYLIBTEMPLATE_TREE_H
+
 #include "Visitor.h"
+#include "Visitable.h"
+
 #include "raylib.h"
 
 
-class Tree{
+class Tree: public Visitable{
 public:
 	int lado;
 	Vector2 position;
@@ -28,11 +31,10 @@ public:
 	}
 	
 	void Accept(Visitor& v) { 
-	v.Visit(this); 
+	v.Visit(*this);
 	}
- 	void DrawTree(){
-	VisitorDraw *v;
-	Accept(v);}
+
+ 	void DrawTree();
 };
 
 

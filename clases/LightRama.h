@@ -6,6 +6,7 @@
 #define RAYLIBTEMPLATE_LIGHTRAMA_H
 #include "Rama.h"
 #include "Visitor.h"
+#include "Visitable.h"
 
 
 class LightRama: public Rama {
@@ -13,7 +14,7 @@ public:
     LightRama(int lado1, int sector1):Rama(lado1, sector1)
     {
 	GetRectangle();
-	DrawRama();
+        Draw();
     }
     void Move()
     {
@@ -36,21 +37,14 @@ public:
     }
     else
         rama_sector = rama_sector +1;
-        DrawRama();
+        Draw();
     }
-	virtual void Accept(Visitor& v) { 
-	v.Visit(this); 
-	}
- 	void DrawRama(){
-	VisitorDraw *v;
-	Accept(v);
-	}
+    void Accept(Visitor & v) {
+        v.Visit(*this);
+    }
+ 	void Draw();
 
-	void GetRectangle(){
-	VisitorGetRectangle *v;
-	Accept(v);
-	}
-	
+	void GetRectangle();
 };
 
 

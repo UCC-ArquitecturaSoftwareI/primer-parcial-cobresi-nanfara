@@ -7,7 +7,11 @@
 #include "raylib.h"
 #include "Monkey.h"
 #include "Visitor.h"
+#include "Visitable.h"
 
+//class Visitor;
+//class VisitorDraw;
+//class VisitorGetRectangle;
 
 class NightMonkey: public Monkey { //Override??
 public:
@@ -16,13 +20,10 @@ public:
         lado = 1;
         Draw();
     }
-    virtual void Accept(Visitor& v) {
-	v.Visit(this); 
-	}
-    void Draw(){
-	VisitorDraw *v;
-	Accept(v);
-}
+    void Accept(Visitor & v) {
+        v.Visit(*this);
+    }
+    void Draw();
         };
 
 

@@ -7,8 +7,9 @@
 
 #include "raylib.h"
 #include "Visitor.h"
+#include "Visitable.h"
 
-class Button {
+class Button: public Visitable {
 public:
     int theme;
     int estado;
@@ -17,28 +18,12 @@ public:
     virtual void Draw() = 0;
     virtual void Draw(Vector2 pos, int est) = 0;
     virtual Rectangle GetRectangle() = 0;
-	virtual void Accept(Visitor& ) = 0;
+    virtual void Accept(Visitor&) = 0;
 };
 
 class LightButton: public Button
 {
 public:
-    void DrawButton()
-    {
-        VisitorDraw *v;
-	Accept(v);
-    }
-    void Draw()
- 	{
-        DrawButton();
-	}
-     void Draw(Vector2 pos, int est)
-     {
-	position = pos;
-	estado = est;
-        DrawButton();
-     }
-
     LightButton()
     {
         position.x = 600;
@@ -47,31 +32,32 @@ public:
         rectangulo = {position.x + 60, position.y + 60, 175, 175};
         Draw();
     }
+    void Draw();
+    void Draw(Vector2 pos, int est)
+     {
+	position = pos;
+	estado = est;
+        Draw();
+     }
+
     Rectangle GetRectangle()
     {
         return rectangulo;
     }
-	virtual void Accept(Visitor& v) { 
-	v.Visit(this); 
-	}
+    void Accept(Visitor & v) {
+        v.Visit(*this);
+    }
 };
 
 class NightButton: public Button
 {
 public:
-    void DrawButton()
-    {
-        VisitorDraw *v;
-	Accept(v);
-    }
-    void Draw()
- 	{ DrawButton();
-	}
+    void Draw();
     void Draw(Vector2 pos, int est)
     {
         position = pos;
 	estado = est;
-        DrawButton();
+        Draw();
     }
 
     NightButton()
@@ -86,28 +72,20 @@ public:
     {
         return rectangulo;
     }
-	virtual void Accept(Visitor& v) { 
-	v.Visit(this); 
-	}
+    void Accept(Visitor & v) {
+        v.Visit(*this);
+    }
 };
 
 class StartButton: public Button
 {
 public:
-	DrawStartButton()
-{
-    VisitorDraw *v;
-	Accept(v);
-}
-    void Draw()
-    {
-        DrawStartButton(position, estado, theme);
-    }
+    void Draw();
     void Draw(Vector2 pos, int est)
     {
 	position = pos;
 	estado = est;
-        DrawStartButton();
+        Draw();
     }
 
     StartButton()
@@ -127,12 +105,12 @@ public:
     {
         theme = i;
     }
-	virtual void Accept(Visitor& v) { 
-	v.Visit(this); 
-	}
+    void Accept(Visitor & v) {
+        v.Visit(*this);
+    }
 };
 
-class Skin
+class Skin: public Visitable
 {
 public:
     int tema;
@@ -143,18 +121,11 @@ public:
         position.x = 450;
         position.y = 400;
     }
-    void Draw()
-    {
-        DrawMonkeyMenu(tema, position);
-    }
-	DrawMonkeyMenu(){
-    VisitorDraw *v;
-	Accept(v);
-}
+    void Draw();
 
- void Accept(Visitor& v) { 
-	v.Visit(this); 
-	}
+    void Accept(Visitor & v) {
+        v.Visit(*this);
+    }
 };
 
 #endif //RAYLIBTEMPLATE_BUTTON_H
