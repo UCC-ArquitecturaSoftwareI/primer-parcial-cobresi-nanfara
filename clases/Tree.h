@@ -35,6 +35,42 @@ public:
 	}
 
  	void DrawTree();
+
+    virtual void assemble(){
+
+    };
+};
+
+class TreePlain: public Tree{
+public:
+    int lado;
+    Vector2 position;
+
+    void Draw()
+    {
+        position.x = 300;
+        position.y = -150;
+        while (position.y < 1050) {
+            lado = -1;
+            DrawTree();
+            position.x += 300;
+            lado = 1;
+            DrawTree();
+            position.x = 300;
+            position.y += 300;
+        }
+    }
+
+    virtual void assemble(){
+        Draw();
+    };
+
+    void Accept(Visitor& v) {
+        v.Visit(*this);
+    }
+
+    void DrawTree();
+
 };
 
 
