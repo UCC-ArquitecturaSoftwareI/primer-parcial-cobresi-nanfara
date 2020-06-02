@@ -12,8 +12,10 @@ class SuperTree: public Visitable
 public:
     int lado;
     Vector2 position;
-    SuperTree(){}
-    virtual void DrawTree() =0;
+   // SuperTree(){}
+    virtual void DrawTree() = 0;
+    virtual void Accept(Visitor& v) =0;
+    virtual void Draw() = 0;
 };
 
 #endif //RAYLIBTEMPLATE_SUPERTREE_H

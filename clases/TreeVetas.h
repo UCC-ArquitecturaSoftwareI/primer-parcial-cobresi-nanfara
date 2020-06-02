@@ -12,17 +12,27 @@
 
 class TreeVetas: public Decorator{
 public:
-    TreeVetas(SuperTree *dcrator): Decorator(dcrator){}
+    TreeVetas(SuperTree* const dcrator): Decorator (dcrator){}
 
-    virtual void DrawTree(){
-        Decorator::DrawTree();
-        Draw();
+    void DrawTree() override{
+        position.x = 300;
+        position.y = -150;
+        while (position.y < 1050) {
+            lado = -1;
+            Draw();
+            position.x += 300;
+            lado = 1;
+            Draw();
+            position.x = 300;
+            position.y += 300;
+        }
     }
-    void Accept(Visitor& v) {
+
+    void Accept(Visitor& v) override {
         v.Visit(*this);
     }
 
-    void Draw();
+    void Draw() override;
 };
 
 #endif //RAYLIBTEMPLATE_TREEVETAS_H

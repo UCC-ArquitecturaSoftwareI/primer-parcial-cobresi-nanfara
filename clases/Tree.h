@@ -30,15 +30,11 @@ public:
     }
 	}
 	
-	void Accept(Visitor& v) { 
+	void Accept(Visitor& v) override {
 	v.Visit(*this);
 	}
 
- 	void Draw();
-
-    /*virtual void assemble(){
-
-    };*/
+ 	void Draw() override;
 };
 /*
 class TreePlain: public Tree{

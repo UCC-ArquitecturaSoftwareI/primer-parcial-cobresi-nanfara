@@ -8,14 +8,15 @@
 #include "SuperTree.h"
 
 class Decorator: public SuperTree{
-private:
+protected: //o private?
     SuperTree* r_SuperTree;
 public:
     Decorator(SuperTree *tree): r_SuperTree(tree){};
 
-    virtual void DrawTree(){
+    virtual void DrawTree() {
         r_SuperTree->DrawTree();
     }
+
 };
 
 #endif //RAYLIBTEMPLATE_DECORATOR_H

@@ -109,12 +109,12 @@ public:
         if(tree.lado == -1)
         {
             rect.y = 1200;
-            rect.x = 0;
+            rect.x = 300;
         }
         if(tree.lado == 1)
         {
             rect.y = 1200;
-            rect.x = 300;
+            rect.x = 0;
         }
         DrawTextureRec(sprite, rect, tree.position, WHITE);
     }
