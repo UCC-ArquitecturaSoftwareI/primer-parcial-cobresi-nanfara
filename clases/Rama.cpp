@@ -5,10 +5,8 @@
 #include "Rama.h"
 #include "VisitorDraw.h"
 
-void Rama::Draw() {
+void Rama::Draw()
     {
-        VisitorDraw *v;
-        Accept(*v);
+        VisitorDraw v;
+        Accept(v);
     }
-
-}

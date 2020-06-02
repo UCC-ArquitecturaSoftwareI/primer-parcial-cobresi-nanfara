@@ -37,8 +37,6 @@ public:
     }
     virtual void Move() = 0;
 
-
-
 };
 
 

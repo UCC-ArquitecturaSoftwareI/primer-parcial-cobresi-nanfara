@@ -5,8 +5,8 @@
 #include "Tree.h"
 
 
-void Tree::DrawTree() {
+void Tree::DrawTree()
     {
-        VisitorDraw *v;
-        Accept(*v);}
-}
+        VisitorDraw v;
+        Accept(v);}
+

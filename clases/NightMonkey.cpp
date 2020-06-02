@@ -7,8 +7,8 @@
 
 void NightMonkey::Draw() {
     {
-        VisitorDraw *v;
-        Accept(*v);
+        VisitorDraw v;
+        Accept(v);
     }
 
 }

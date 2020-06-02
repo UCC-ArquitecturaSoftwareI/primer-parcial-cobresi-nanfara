@@ -7,13 +7,13 @@
 
 void LightRama::Draw()
     {
-        VisitorDraw *v;
-        Accept(*v);
+        VisitorDraw v;
+        Accept(v);
     }
 
 void LightRama::GetRectangle()
 {
-        VisitorGetRectangle *v;
-        Accept(*v);
+        VisitorGetRectangle v;
+        Accept(v);
 }
 

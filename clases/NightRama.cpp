@@ -8,12 +8,12 @@
 
 void NightRama::Draw()
 {
-    VisitorDraw *v;
-    Accept(*v);
+    VisitorDraw v;
+    Accept(v);
 }
 
 void NightRama::GetRectangle()
 {
-    VisitorGetRectangle *v;
-    Accept(*v);
+    VisitorGetRectangle v;
+    Accept(v);
 }

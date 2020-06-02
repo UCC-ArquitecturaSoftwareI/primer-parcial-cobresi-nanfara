@@ -22,9 +22,25 @@ class VisitorGetRectangle: public Visitor
 {
 public:
     VisitorGetRectangle():Visitor(){
-
     }
-    void Visit(LightRama &rama)
+    void Visit(NightMonkey &o) override {}
+
+    void Visit(LightMonkey &o) override {}
+
+    void Visit(Tree &o) override {}
+
+    void Visit(Rama &o) override {}
+
+    void Visit(Skin &o) override {}
+
+    void Visit(StartButton &o) override {}
+
+    void Visit(LightButton &o) override {}
+
+    void Visit(NightButton &o) override {}
+
+
+    void Visit(LightRama &rama) override
     {
         if (rama.animal)
             rect = GetRamaDayAnimalRectangle(rama.lado);
@@ -33,7 +49,7 @@ public:
         rama.rect = rect;
     }
 
-    void Visit(NightRama &rama) {
+    void Visit(NightRama &rama) override{
         if (rama.animal)
             rect = GetRamaNightAnimalRectangle(rama.lado);
         else

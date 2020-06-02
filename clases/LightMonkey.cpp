@@ -7,8 +7,8 @@
 
 void LightMonkey::Draw() {
     {
-        VisitorDraw *v;
-        Accept(*v);
+        VisitorDraw v;
+        Accept(v);
     }
 }
 
