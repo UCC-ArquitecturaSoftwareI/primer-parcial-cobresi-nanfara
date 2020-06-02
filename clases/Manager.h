@@ -68,8 +68,8 @@ void Manager::UpdateDrawFrame(void) {
 
     // Comienzo a dibujar
     BeginDrawing();
-    if (game.barLife.getStatus() == 1)
-        --game.barLife;
+    if (game.barL.getStatus() == 1)
+        --game.barL;
     ClearBackground(game.colorBackground); // Limpio la pantalla con "celeste cielo"
     game.tree->Draw();
     game.player->Draw();
@@ -78,9 +78,9 @@ void Manager::UpdateDrawFrame(void) {
 
     if (IsKeyReleased(KEY_RIGHT))
     {
-        game.barLife.setStatus(1);
+        game.barL.setStatus(1);
         game.score += 5;
-        ++game.barLife;
+        ++game.barL;
         game.player->move_right();
         for (int i = 0; i < 4; i++)
             game.Ramas[i]->Move();
@@ -96,9 +96,9 @@ void Manager::UpdateDrawFrame(void) {
 
     if (IsKeyReleased(KEY_LEFT))
     {
-        game.barLife.setStatus(1);
+        game.barL.setStatus(1);
         game.score += 5;
-        ++game.barLife;
+        ++game.barL;
         game.player->move_left();
         for (int i = 0; i < 4; i++)
             game.Ramas[i]->Move();
@@ -110,8 +110,8 @@ void Manager::UpdateDrawFrame(void) {
         }
     }
     //Barra vida
-    game.barLife.drawBarLife();
-    if (game.barLife.getprogress() < 1)
+    game.barL.drawBarLife();
+    if (game.barL.getprogress() < 1)
         game.GameOver = 1;
 
 
