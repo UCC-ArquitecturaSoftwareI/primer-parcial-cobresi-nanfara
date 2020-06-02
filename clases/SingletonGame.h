@@ -39,7 +39,7 @@ public:
     Tree *tree;
     bool GameOver;
     int score;
-    barLife barLife;
+    barLife barL;
     ThemeFactory *tf;
     bool start;
     Color colorBackground;

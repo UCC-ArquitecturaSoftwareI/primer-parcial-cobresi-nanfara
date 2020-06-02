@@ -8,27 +8,27 @@
 
 void LightButton::Draw()
     {
-        VisitorDraw *v;
-        Accept(*v);
+        VisitorDraw v;
+        Accept(v);
     }
 
 void NightButton::Draw() {
     {
-        VisitorDraw *v;
-        Accept(*v);
+        VisitorDraw v;
+        Accept(v);
     }
 }
 
 void StartButton::Draw() {
     {
-        VisitorDraw *v;
-        Accept(*v);
+        VisitorDraw v;
+        Accept(v);
     }
 }
 
 void Skin::Draw() {
     {
-        VisitorDraw *v;
-        Accept(*v);
+        VisitorDraw v;
+        Accept(v);
     }
 }

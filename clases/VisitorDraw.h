@@ -25,7 +25,7 @@ public:
     VisitorDraw():Visitor(){
 
     }
-    void Visit(NightMonkey &monkey)
+    void Visit(NightMonkey &monkey) override
     {
         position.y = 450;
         if (monkey.lado == 1)
@@ -56,7 +56,7 @@ public:
         monkey.monkey_position = position;
     }
 
-    void Visit(LightMonkey &monkey)
+    void Visit(LightMonkey &monkey) override
     {
         position.y = 450;
         if (monkey.lado == 1)
@@ -88,7 +88,7 @@ public:
     }
 
 
-    void Visit(Tree &tree)
+    void Visit(Tree &tree) override
     {
         if(tree.lado == -1)
         {
@@ -103,7 +103,7 @@ public:
         DrawTextureRec(sprite, rect, tree.position, WHITE);
     }
 
-    void Visit(Rama &rama)
+    void Visit(Rama &rama) override
     {
         if (rama.lado == -1)
         {
@@ -150,7 +150,7 @@ public:
         DrawTextureRec(sprite, rama.rect, rama.rama_position, WHITE);
     }
 
-    void Visit(NightButton &button){
+    void Visit(NightButton &button) override{
         if (!button.estado)
         {
             rect.x = 1200;
@@ -163,7 +163,7 @@ public:
         DrawTextureRec(sprite, rect, button.position, WHITE);
     }
 
-    void Visit(LightButton &button){
+    void Visit(LightButton &button) override{
         if (!button.estado)
         {
             rect.x = 1200;
@@ -176,7 +176,7 @@ public:
         DrawTextureRec(sprite, rect, button.position, WHITE);
     }
 
-    void Visit(StartButton &button)
+    void Visit(StartButton &button) override
     {
         if (!button.estado)
         {
@@ -208,8 +208,15 @@ public:
         DrawTextureRec(sprite, rect, button.position, WHITE);
     }
 
+    void Visit(NightRama &rama) override {
 
-    void Visit(Skin &skin)
+    }
+
+    void Visit(LightRama &rama) override {
+
+    }
+
+    void Visit(Skin &skin) override
     {
         if(skin.tema)
         {
