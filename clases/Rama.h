@@ -23,10 +23,9 @@ public:
         lado = lado1;
         rama_sector = sector1;
         //color = GetRandomValue(0,1);
-        //rama_position = Draw(lado, rama_sector, rect = GetRamaVaciaRectangle(lado)); ver de pasar rama
     }
 
-    virtual void Draw();
+
     Rectangle getRectangle(){
     Rectangle rec_rama = {rama_position.x, rama_position.y, 300, 300};
     return rec_rama;
@@ -36,6 +35,8 @@ public:
         v.Visit(*this);
     }
     virtual void Move() = 0;
+    virtual void GetRectangle() =0;
+    virtual void Draw();
 
 };
 

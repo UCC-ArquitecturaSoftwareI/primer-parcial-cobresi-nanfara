@@ -17,7 +17,7 @@ public:
     }
     //Color de fondo
 
-    Rama *createRama(int lado, int sector) {
+    Rama *createRama(int lado, int sector) override {
         return new LightRama(lado, sector);
     }
 

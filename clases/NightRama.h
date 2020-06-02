@@ -13,10 +13,10 @@ class NightRama: public Rama {
 public:
     NightRama(int lado1, int sector1):Rama(lado1, sector1)
     {
-	GetRectangle();
+	    GetRectangle();
         Draw();
     }
-    void Move()
+    void Move() override
     {
         int newlado;
         int newdiseno;

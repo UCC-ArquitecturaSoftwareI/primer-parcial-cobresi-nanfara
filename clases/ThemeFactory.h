@@ -11,8 +11,8 @@
 
 class ThemeFactory {
 public:
-    virtual Monkey* createMonkey()=0;
-    virtual Rama* createRama(int lado, int sector)=0;
+    virtual Monkey* createMonkey() =0;
+    virtual Rama* createRama(int lado, int sector) =0;
 };
 
 

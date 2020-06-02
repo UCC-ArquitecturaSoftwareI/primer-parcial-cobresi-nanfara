@@ -105,49 +105,7 @@ public:
 
     void Visit(Rama &rama) override
     {
-        if (rama.lado == -1)
-        {
-            switch (rama.rama_sector) {
-                case 1:
-                    rama.rama_position.x = 190;
-                    rama.rama_position.y = -150;
-                    break;
-                case 2:
-                    rama.rama_position.x = 190;
-                    rama.rama_position.y = 150;
-                    break;
-                case 3:
-                    rama.rama_position.x = 190;
-                    rama.rama_position.y = 450;
-                    break;
-                case 4:
-                    rama.rama_position.x = 190;
-                    rama.rama_position.y = 750;
-                    break;
-            }
-        }
-        else
-        {
-            switch (rama.rama_sector) {
-                case 1:
-                    rama.rama_position.x = 710;
-                    rama.rama_position.y = -150;
-                    break;
-                case 2:
-                    rama.rama_position.x = 710;
-                    rama.rama_position.y = 150;
-                    break;
-                case 3:
-                    rama.rama_position.x = 710;
-                    rama.rama_position.y = 450;
-                    break;
-                case 4:
-                    rama.rama_position.x = 710;
-                    rama.rama_position.y = 750;
-                    break;
-            }
-        }
-        DrawTextureRec(sprite, rama.rect, rama.rama_position, WHITE);
+        CallRama(rama);
     }
 
     void Visit(NightButton &button) override{
@@ -209,11 +167,11 @@ public:
     }
 
     void Visit(NightRama &rama) override {
-
+        CallRama(rama);
     }
 
     void Visit(LightRama &rama) override {
-
+        CallRama(rama);
     }
 
     void Visit(Skin &skin) override
@@ -230,6 +188,53 @@ public:
         }
 
         DrawTextureRec(sprite, rect, skin.position, WHITE);
+    }
+
+    void CallRama(Rama &rama)
+    {
+        if (rama.lado == -1)
+        {
+            switch (rama.rama_sector) {
+                case 1:
+                    rama.rama_position.x = 190;
+                    rama.rama_position.y = -150;
+                    break;
+                case 2:
+                    rama.rama_position.x = 190;
+                    rama.rama_position.y = 150;
+                    break;
+                case 3:
+                    rama.rama_position.x = 190;
+                    rama.rama_position.y = 450;
+                    break;
+                case 4:
+                    rama.rama_position.x = 190;
+                    rama.rama_position.y = 750;
+                    break;
+            }
+        }
+        else
+        {
+            switch (rama.rama_sector) {
+                case 1:
+                    rama.rama_position.x = 710;
+                    rama.rama_position.y = -150;
+                    break;
+                case 2:
+                    rama.rama_position.x = 710;
+                    rama.rama_position.y = 150;
+                    break;
+                case 3:
+                    rama.rama_position.x = 710;
+                    rama.rama_position.y = 450;
+                    break;
+                case 4:
+                    rama.rama_position.x = 710;
+                    rama.rama_position.y = 750;
+                    break;
+            }
+        }
+        DrawTextureRec(sprite, rama.rect, rama.rama_position, WHITE);
     }
 };
 

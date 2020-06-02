@@ -16,7 +16,7 @@ public:
 	GetRectangle();
         Draw();
     }
-    void Move()
+    void Move() override
     {
     int newlado;
     int newdiseno;

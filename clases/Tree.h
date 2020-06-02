@@ -40,7 +40,7 @@ public:
 
     };
 };
-
+/*
 class TreePlain: public Tree{
 public:
     int lado;
@@ -72,6 +72,6 @@ public:
     void DrawTree();
 
 };
-
+*/
 
 #endif //RAYLIBTEMPLATE_TREE_H
