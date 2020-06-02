@@ -7,24 +7,24 @@
 
 #include "Visitor.h"
 #include "Visitable.h"
+#include "SuperTree.h"
 
 #include "raylib.h"
 
 
-class Tree: public Visitable{
+
+class Tree: public SuperTree{
 public:
-	int lado;
-	Vector2 position;
-    void Draw()
+    void DrawTree() override
 	{
     position.x = 300;
     position.y = -150;
     while (position.y < 1050) {
 	lado = -1;
-        DrawTree();
+        Draw();
         position.x += 300;
 	lado = 1;
-        DrawTree();
+        Draw();
         position.x = 300;
         position.y += 300;
     }
@@ -34,11 +34,11 @@ public:
 	v.Visit(*this);
 	}
 
- 	void DrawTree();
+ 	void Draw();
 
-    virtual void assemble(){
+    /*virtual void assemble(){
 
-    };
+    };*/
 };
 /*
 class TreePlain: public Tree{

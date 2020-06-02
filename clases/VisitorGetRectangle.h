@@ -15,6 +15,7 @@
 #include "Button.h"
 #include "Rama.h"
 #include "Monkey.h"
+#include "TreeVetas.h"
 
 #include "raylib.h"
 
@@ -28,6 +29,8 @@ public:
     void Visit(LightMonkey &o) override {}
 
     void Visit(Tree &o) override {}
+
+    void Visit(TreeVetas &o) override {}
 
     void Visit(Rama &o) override {}
 

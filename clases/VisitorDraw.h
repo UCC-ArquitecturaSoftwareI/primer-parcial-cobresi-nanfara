@@ -15,6 +15,7 @@
 #include "Button.h"
 #include "Rama.h"
 #include "Monkey.h"
+#include "TreeVetas.h"
 
 #include "raylib.h"
 //#include <iostream>
@@ -99,6 +100,21 @@ public:
         {
             rect.y = 1200;
             rect.x = 600;
+        }
+        DrawTextureRec(sprite, rect, tree.position, WHITE);
+    }
+
+    void Visit(TreeVetas &tree) override
+    {
+        if(tree.lado == -1)
+        {
+            rect.y = 1200;
+            rect.x = 0;
+        }
+        if(tree.lado == 1)
+        {
+            rect.y = 1200;
+            rect.x = 300;
         }
         DrawTextureRec(sprite, rect, tree.position, WHITE);
     }

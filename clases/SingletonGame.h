@@ -14,6 +14,7 @@
 #include "Button.h"
 #include "Audio.h"
 #include "Window.h"
+#include "SuperTree.h"
 #include <vector>
 #define RAYLIBTEMPLATE_SINGLETONGAME_H
 
@@ -36,7 +37,7 @@ public:
     Window window;
     Audio music;
     Monkey *player;
-    Tree *tree;
+    SuperTree *tree;
     bool GameOver;
     int score;
     barLife barL;

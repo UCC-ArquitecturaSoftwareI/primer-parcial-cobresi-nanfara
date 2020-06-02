@@ -71,7 +71,7 @@ void Manager::UpdateDrawFrame(void) {
     if (game.barL.getStatus() == 1)
         --game.barL;
     ClearBackground(game.colorBackground); // Limpio la pantalla con "celeste cielo"
-    game.tree->Draw();
+    game.tree->DrawTree();
     game.player->Draw();
     for (int i = 0; i < 4; i++)
         game.Ramas[i]->Draw();

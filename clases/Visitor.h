@@ -32,6 +32,9 @@ class Monkey;
 
 class Skin;
 
+class TreeVetas;
+
+
 class Visitor {
 public:
     Texture2D sprite;
@@ -49,6 +52,8 @@ public:
     virtual void Visit(LightMonkey &) = 0;
 
     virtual void Visit(Tree &) = 0;
+
+    virtual void Visit(TreeVetas &) = 0;
 
     virtual void Visit(Rama &) = 0;
 

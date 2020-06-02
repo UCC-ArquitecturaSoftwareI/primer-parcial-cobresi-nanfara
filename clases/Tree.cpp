@@ -5,7 +5,7 @@
 #include "Tree.h"
 
 
-void Tree::DrawTree()
+void Tree::Draw()
     {
         VisitorDraw v;
         Accept(v);}

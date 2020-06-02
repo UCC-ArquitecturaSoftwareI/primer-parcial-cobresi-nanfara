@@ -9,6 +9,7 @@
 #include "clases/Button.h"
 #include "clases/SingletonGame.h"
 #include "clases/Manager.h"
+#include "clases/TreeVetas.h"
 #include <vector>
 
 
@@ -48,7 +49,7 @@ int main() {
         game.colorBackground = BLACK;
         game.colorText = WHITE;
     }
-    game.tree = new Tree;
+    game.tree = new TreeVetas(new Tree());
     game.player = game.tf->createMonkey();
 
     game.Ramas.push_back(game.tf->createRama(-1, 1));

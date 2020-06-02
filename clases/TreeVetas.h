@@ -6,16 +6,23 @@
 #define RAYLIBTEMPLATE_TREEVETAS_H
 
 #include "Decorator.h"
+#include "SuperTree.h"
+#include "Visitor.h"
+#include "Visitable.h"
 
 class TreeVetas: public Decorator{
 public:
-    TreeVetas(Tree *dcrator): Decorator(dcrator){}
-    virtual void assemble(){
-        Decorator::assemble();
-        //DrawVetas();
+    TreeVetas(SuperTree *dcrator): Decorator(dcrator){}
 
+    virtual void DrawTree(){
+        Decorator::DrawTree();
+        Draw();
     }
-    //DrawVetas(){};
+    void Accept(Visitor& v) {
+        v.Visit(*this);
+    }
+
+    void Draw();
 };
 
 #endif //RAYLIBTEMPLATE_TREEVETAS_H

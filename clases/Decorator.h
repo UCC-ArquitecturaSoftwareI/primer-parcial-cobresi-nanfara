@@ -5,16 +5,16 @@
 #ifndef RAYLIBTEMPLATE_DECORATOR_H
 #define RAYLIBTEMPLATE_DECORATOR_H
 
-#include "Tree.h"
+#include "SuperTree.h"
 
-class Decorator: public  Tree{
+class Decorator: public SuperTree{
 private:
-    Decorator* r_decorator;
+    SuperTree* r_SuperTree;
 public:
-    Decorator(Tree *decorator): r_decorator(decorator){};
+    Decorator(SuperTree *tree): r_SuperTree(tree){};
 
-    virtual void assemble(){
-        r_decorator->assemble();
+    virtual void DrawTree(){
+        r_SuperTree->DrawTree();
     }
 };
 
