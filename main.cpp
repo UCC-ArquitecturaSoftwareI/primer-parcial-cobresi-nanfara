@@ -36,7 +36,7 @@ int main() {
 
     while (!WindowShouldClose()&& !game.start)
     {
-        game.tema = manager.UpdateMenu();
+        game.tema = manager.Update();
     }
 
     if (game.tema == 0)
@@ -57,11 +57,12 @@ int main() {
     game.Ramas.push_back(game.tf->createRama(-1, 3));
     game.Ramas.push_back(game.tf->createRama(1, 4));
 
-
+    game.Game();
     while (!WindowShouldClose()&& !game.GameOver)
     {
-        manager.UpdateDrawFrame();
+        manager.Update();
     }
+    game.End();
     while (!WindowShouldClose())
     {
         manager.UpdateDrawEnd();
