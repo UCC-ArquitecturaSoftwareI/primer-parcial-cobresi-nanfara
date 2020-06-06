@@ -15,6 +15,7 @@ class LightMonkey: public Monkey {
 public:
     LightMonkey():Monkey()
     {
+        rect = {0, 300, 300, 300};
         lado = 1;
         Draw();
     }

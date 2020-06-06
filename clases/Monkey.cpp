@@ -15,7 +15,9 @@ Monkey::Monkey() {
 void Monkey::move_right() {
     if (lado == 1)
     {
+        mov = 1;
         Draw();
+        mov = 0;
     }
     else
         newlado();
@@ -25,8 +27,9 @@ void Monkey::move_right() {
 void Monkey::move_left() {
     if (lado == -1)
     {
-	mov = 1;
+	    mov = 1;
         Draw();
+        mov = 0;
     }
     else
         newlado();

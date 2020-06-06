@@ -18,8 +18,9 @@ class Monkey: public Visitable {
 public:
         Vector2 monkey_position;
         int lado;
+        Rectangle rect;
 //Hacer bool
-	int mov=0;
+	    int mov=0;
 
         Monkey()
         {

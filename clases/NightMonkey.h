@@ -17,6 +17,7 @@ class NightMonkey: public Monkey { //Override??
 public:
     NightMonkey():Monkey()
     {
+        rect = {0, 1500, 300, 300};
         lado = 1;
         Draw();
     }
