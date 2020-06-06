@@ -18,10 +18,11 @@
 #include <vector>
 #define RAYLIBTEMPLATE_SINGLETONGAME_H
 
+class Manager;
 
 class SingletonGame {
 private:
-    SingletonGame() {
+    SingletonGame(): m_pState(new MenuState()) {
         bool GameOver;
         score = 0;
         GameOver = false;
@@ -31,9 +32,11 @@ private:
         mousePoint = { 0.0f, 0.0f};
         tema = 0;
     }
+    Manager *m_pState;
 
 
 public:
+    Texture2D sprite;
     Window window;
     Audio music;
     Monkey *player;
@@ -50,6 +53,13 @@ public:
     Vector2 mousePoint;
     Skin *TankeySkin;
     int tema;
+    enum State
+    {
+        ST_MENU,
+        ST_GAME,
+        ST_END
+    };
+
 
     static SingletonGame &get(){
         static SingletonGame game;
@@ -60,6 +70,14 @@ public:
         music.Descargar();
         window.Descargar();
     }
+
+    void SetState(State state);
+
+    void Menu();
+    void Game();
+    void End();
+    virtual ~SingletonGame();
+
 };
 
 

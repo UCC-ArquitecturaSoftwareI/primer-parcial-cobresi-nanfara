@@ -7,6 +7,7 @@
 
 #include "raylib.h"
 
+
 /* Declaración de clases vacías para resolver bucle de inclusión */
 class LightMonkey;
 
