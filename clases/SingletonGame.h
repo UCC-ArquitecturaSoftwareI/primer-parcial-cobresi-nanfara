@@ -30,6 +30,7 @@ private:
         colorText = BLACK;
         mousePoint = { 0.0f, 0.0f};
         tema = 0;
+        sprite = LoadTexture("resources/Sprite.png");
     }
 
 
@@ -50,6 +51,7 @@ public:
     Vector2 mousePoint;
     Skin *TankeySkin;
     int tema;
+    Texture2D sprite;
 
     static SingletonGame &get(){
         static SingletonGame game;

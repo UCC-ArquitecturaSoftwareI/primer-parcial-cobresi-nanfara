@@ -16,6 +16,7 @@
 #include "Rama.h"
 #include "Monkey.h"
 #include "TreeVetas.h"
+#include "SingletonGame.h"
 
 #include "raylib.h"
 //#include <iostream>
@@ -53,7 +54,7 @@ public:
                     rect.x = rect.x+300;
             }
         }
-        DrawTextureRec(sprite, rect, position, WHITE);
+        DrawTextureRec(SingletonGame::get().sprite   , rect, position, WHITE);
         monkey.monkey_position = position;
     }
 
@@ -84,7 +85,7 @@ public:
                     rect.x = rect.x+300;
             }
         }
-        DrawTextureRec(sprite, rect, position, WHITE);
+        DrawTextureRec(SingletonGame::get().sprite, rect, position, WHITE);
         monkey.monkey_position = position;
     }
 
@@ -101,7 +102,7 @@ public:
             rect.y = 1200;
             rect.x = 600;
         }
-        DrawTextureRec(sprite, rect, tree.position, WHITE);
+        DrawTextureRec(SingletonGame::get().sprite, rect, tree.position, WHITE);
     }
 
     void Visit(TreeVetas &tree) override
@@ -116,7 +117,7 @@ public:
             rect.y = 1200;
             rect.x = 0;
         }
-        DrawTextureRec(sprite, rect, tree.position, WHITE);
+        DrawTextureRec(SingletonGame::get().sprite, rect, tree.position, WHITE);
     }
 
     void Visit(Rama &rama) override
@@ -134,7 +135,7 @@ public:
             rect.x = 1200;
             rect.y = 900;
         }
-        DrawTextureRec(sprite, rect, button.position, WHITE);
+        DrawTextureRec(SingletonGame::get().sprite, rect, button.position, WHITE);
     }
 
     void Visit(LightButton &button) override{
@@ -147,7 +148,7 @@ public:
             rect.x = 1200;
             rect.y = 300;
         }
-        DrawTextureRec(sprite, rect, button.position, WHITE);
+        DrawTextureRec(SingletonGame::get().sprite, rect, button.position, WHITE);
     }
 
     void Visit(StartButton &button) override
@@ -179,7 +180,7 @@ public:
             }
 
         }
-        DrawTextureRec(sprite, rect, button.position, WHITE);
+        DrawTextureRec(SingletonGame::get().sprite, rect, button.position, WHITE);
     }
 
     void Visit(NightRama &rama) override {
@@ -203,7 +204,7 @@ public:
             rect.y = 0;
         }
 
-        DrawTextureRec(sprite, rect, skin.position, WHITE);
+        DrawTextureRec(SingletonGame::get().sprite, rect, skin.position, WHITE);
     }
 
     void CallRama(Rama &rama)
@@ -250,7 +251,7 @@ public:
                     break;
             }
         }
-        DrawTextureRec(sprite, rama.rect, rama.rama_position, WHITE);
+        DrawTextureRec(SingletonGame::get().sprite, rama.rect, rama.rama_position, WHITE);
     }
 };
 
