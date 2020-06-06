@@ -20,7 +20,6 @@
 
 int main() {
     SingletonGame &game = SingletonGame::get();
-    Manager manager;
     /// Ejemplo de utilización de audio.
 
 #if defined(PLATFORM_WEB)  // Para versión Web.
@@ -36,7 +35,7 @@ int main() {
 
     while (!WindowShouldClose()&& !game.start)
     {
-        game.tema = manager.Update();
+        game.Update();
     }
 
     if (game.tema == 0)
@@ -60,15 +59,15 @@ int main() {
     game.Game();
     while (!WindowShouldClose()&& !game.GameOver)
     {
-        manager.Update();
+        game.Update();
     }
     game.End();
     while (!WindowShouldClose())
     {
-        manager.UpdateDrawEnd();
+        game.Update();
     }
 
-#endif
     game.Descargar();
     return 0;
 }
+#endif

@@ -38,13 +38,21 @@ class TreeVetas;
 
 class Visitor {
 public:
-    Texture2D sprite;
+//    Texture2D sprite;
+//    Rectangle rect;
+//    Vector2 position;
+//
+//    //virtual void Draw() = 0;
+//    Visitor() {
+//        sprite = LoadTexture("resources/Sprite.png");
+//        rect = {0, 0, 300, 300};
+//    }
+
+public:
     Rectangle rect;
     Vector2 position;
-
     //virtual void Draw() = 0;
     Visitor() {
-        sprite = LoadTexture("resources/Sprite.png");
         rect = {0, 0, 300, 300};
     }
 
