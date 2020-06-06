@@ -4,35 +4,40 @@
 
 #ifndef RAYLIBTEMPLATE_SINGLETONGAME_H
 #include <raylib.h>
-#include "Monkey.h"
-#include "Tree.h"
-#include "Rama.h"
 #include "Bar_Life.h"
-#include "ThemeFactory.h"
-#include "LightThemeFactory.h"
-#include "NightThemeFactory.h"
-#include "Button.h"
 #include "Audio.h"
 #include "Window.h"
-#include "SuperTree.h"
 #include <vector>
 #define RAYLIBTEMPLATE_SINGLETONGAME_H
 
 class Manager;
 
+class SuperTree;
+
+class Button;
+
+class ThemeFactory;
+
+class LightThemeFactory;
+
+class NightThemeFactory;
+//class NightButton;
+
+//class LightButton;
+
+//class StartButton;
+
+class Rama;
+
+class Monkey;
+
+class Skin;
+
+//class TreeVetas;
+
 class SingletonGame {
 private:
-    SingletonGame(): m_pState(new MenuState()) {
-        bool GameOver;
-        score = 0;
-        GameOver = false;
-        start = false;
-        colorBackground = SKYBLUE;
-        colorText = BLACK;
-        mousePoint = { 0.0f, 0.0f};
-        tema = 0;
-        sprite = LoadTexture("resources/Sprite.png");
-    }
+    SingletonGame();
     Manager *m_pState;
 
 
@@ -53,9 +58,8 @@ public:
     std::vector<Button*> Botones;
     Vector2 mousePoint;
     Skin *TankeySkin;
+    //friend class Manager;
     int tema;
-    Texture2D sprite;
-
     enum State
     {
         ST_MENU,
@@ -79,6 +83,7 @@ public:
     void Menu();
     void Game();
     void End();
+    void Update();
     virtual ~SingletonGame();
 
 };
