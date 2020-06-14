@@ -1,0 +1,261 @@
+\hypertarget{class_singleton_game}{}\doxysection{Referencia de la Clase Singleton\+Game}
+\label{class_singleton_game}\index{SingletonGame@{SingletonGame}}
+
+
+{\ttfamily \#include $<$Singleton\+Game.\+h$>$}
+
+\doxysubsection*{Tipos públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4}{State}} \{ \mbox{\hyperlink{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4a7a05c573dc9d9c8939a8e9df96051500}{S\+T\+\_\+\+M\+E\+NU}}, 
+\mbox{\hyperlink{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4a22cfde24e06572f2003e67422560bbb3}{S\+T\+\_\+\+G\+A\+ME}}, 
+\mbox{\hyperlink{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4a3d1cc7dad79a1454f1371c0c71cbaf6c}{S\+T\+\_\+\+E\+ND}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_singleton_game_aac225b62b182ae9d226728299e552821}{Descargar}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_singleton_game_a977911af6a0cc213968009f3ce3c3ab6}{Set\+State}} (\mbox{\hyperlink{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4}{State}} \mbox{\hyperlink{furmap_8txt_aeb0c888342a76b499c20664b1c4c9aeb}{state}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_singleton_game_a7ad0b969f9364d28b8f5c3fb9e576e96}{Menu}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_singleton_game_aad61a5da16862f6a157dcb1102b658e7}{Game}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_singleton_game_a421491a65798b14bf6f1de26b7529189}{End}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_singleton_game_a27da3478454c9202abac65e67ce221f1}{Update}} ()
+\item 
+virtual \mbox{\hyperlink{class_singleton_game_a15c7a569d0b273645e6f9f3b56a0cdfa}{$\sim$\+Singleton\+Game}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} \& \mbox{\hyperlink{class_singleton_game_a796d516da7a480a0f6612d8d1650e3f6}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{class_singleton_game_a9310918e3cab4c044228f5af1ada4aee}{sprite}}
+\item 
+\mbox{\hyperlink{class_window}{Window}} \mbox{\hyperlink{class_singleton_game_ac643c875faac407e7264956372af5c54}{window}}
+\item 
+\mbox{\hyperlink{class_audio}{Audio}} \mbox{\hyperlink{class_singleton_game_a0165960a3cbc0037e5cac700f0205869}{music}}
+\item 
+\mbox{\hyperlink{class_monkey}{Monkey}} $\ast$ \mbox{\hyperlink{class_singleton_game_a735b99bd6dae90c30732a1d30c0fbade}{player}}
+\item 
+\mbox{\hyperlink{class_super_tree}{Super\+Tree}} $\ast$ \mbox{\hyperlink{class_singleton_game_abe09557bb7899c255511478039e72d08}{tree}}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{class_singleton_game_afda9187e6d6a4cd383b022c9903293db}{Game\+Over}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_singleton_game_a9b4af2960b5b078e43e9ae6f453c6e96}{score}}
+\item 
+\mbox{\hyperlink{classbar_life}{bar\+Life}} \mbox{\hyperlink{class_singleton_game_ad9c7c8068ecdcef41d02bbeee2493a46}{barL}}
+\item 
+\mbox{\hyperlink{class_theme_factory}{Theme\+Factory}} $\ast$ \mbox{\hyperlink{class_singleton_game_a6606b653bf12d08c3f3ef75f9b1faf25}{tf}}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{class_singleton_game_a7be1cf0af9361a65a2c36e30d4e140bb}{start}}
+\item 
+\mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{class_singleton_game_a1456542a36f6ba09f48450a21e1b0327}{color\+Background}}
+\item 
+\mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{class_singleton_game_a6a634c44141167ff4864944f05d29d40}{color\+Text}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_rama}{Rama}} $\ast$ $>$ \mbox{\hyperlink{class_singleton_game_a936d8a34dbd41beb134432d733f315a8}{Ramas}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_button}{Button}} $\ast$ $>$ \mbox{\hyperlink{class_singleton_game_a396aba30bca1f69d2bdf62c8118796fe}{Botones}}
+\item 
+\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{class_singleton_game_a6aae5eead6800824f68a050c39c134db}{mouse\+Point}}
+\item 
+\mbox{\hyperlink{class_skin}{Skin}} $\ast$ \mbox{\hyperlink{class_singleton_game_a1fc2fd5eed115cfe7f8072c94b7cab78}{Tankey\+Skin}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_singleton_game_a2d735435c259591d6df4e22dd3442bd8}{tema}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las enumeraciones miembro de la clase}
+\mbox{\Hypertarget{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4}\label{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4}} 
+\index{SingletonGame@{SingletonGame}!State@{State}}
+\index{State@{State}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4}{Singleton\+Game\+::\+State}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ST\_MENU@{ST\_MENU}!SingletonGame@{SingletonGame}}\index{SingletonGame@{SingletonGame}!ST\_MENU@{ST\_MENU}}}\mbox{\Hypertarget{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4a7a05c573dc9d9c8939a8e9df96051500}\label{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4a7a05c573dc9d9c8939a8e9df96051500}} 
+S\+T\+\_\+\+M\+E\+NU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ST\_GAME@{ST\_GAME}!SingletonGame@{SingletonGame}}\index{SingletonGame@{SingletonGame}!ST\_GAME@{ST\_GAME}}}\mbox{\Hypertarget{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4a22cfde24e06572f2003e67422560bbb3}\label{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4a22cfde24e06572f2003e67422560bbb3}} 
+S\+T\+\_\+\+G\+A\+ME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ST\_END@{ST\_END}!SingletonGame@{SingletonGame}}\index{SingletonGame@{SingletonGame}!ST\_END@{ST\_END}}}\mbox{\Hypertarget{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4a3d1cc7dad79a1454f1371c0c71cbaf6c}\label{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4a3d1cc7dad79a1454f1371c0c71cbaf6c}} 
+S\+T\+\_\+\+E\+ND&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_singleton_game_a15c7a569d0b273645e6f9f3b56a0cdfa}\label{class_singleton_game_a15c7a569d0b273645e6f9f3b56a0cdfa}} 
+\index{SingletonGame@{SingletonGame}!````~SingletonGame@{$\sim$SingletonGame}}
+\index{````~SingletonGame@{$\sim$SingletonGame}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{$\sim$SingletonGame()}{~SingletonGame()}}
+{\footnotesize\ttfamily Singleton\+Game\+::$\sim$\+Singleton\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_singleton_game_aac225b62b182ae9d226728299e552821}\label{class_singleton_game_aac225b62b182ae9d226728299e552821}} 
+\index{SingletonGame@{SingletonGame}!Descargar@{Descargar}}
+\index{Descargar@{Descargar}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{Descargar()}{Descargar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Singleton\+Game\+::\+Descargar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_singleton_game_a421491a65798b14bf6f1de26b7529189}\label{class_singleton_game_a421491a65798b14bf6f1de26b7529189}} 
+\index{SingletonGame@{SingletonGame}!End@{End}}
+\index{End@{End}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Singleton\+Game\+::\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_singleton_game_aad61a5da16862f6a157dcb1102b658e7}\label{class_singleton_game_aad61a5da16862f6a157dcb1102b658e7}} 
+\index{SingletonGame@{SingletonGame}!Game@{Game}}
+\index{Game@{Game}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Singleton\+Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_singleton_game_a796d516da7a480a0f6612d8d1650e3f6}\label{class_singleton_game_a796d516da7a480a0f6612d8d1650e3f6}} 
+\index{SingletonGame@{SingletonGame}!get@{get}}
+\index{get@{get}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_singleton_game}{Singleton\+Game}}\& Singleton\+Game\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_singleton_game_a7ad0b969f9364d28b8f5c3fb9e576e96}\label{class_singleton_game_a7ad0b969f9364d28b8f5c3fb9e576e96}} 
+\index{SingletonGame@{SingletonGame}!Menu@{Menu}}
+\index{Menu@{Menu}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Singleton\+Game\+::\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_singleton_game_a977911af6a0cc213968009f3ce3c3ab6}\label{class_singleton_game_a977911af6a0cc213968009f3ce3c3ab6}} 
+\index{SingletonGame@{SingletonGame}!SetState@{SetState}}
+\index{SetState@{SetState}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{SetState()}{SetState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Singleton\+Game\+::\+Set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_singleton_game_a1afa54848e39e11cfadb05370e5e1ee4}{Singleton\+Game\+::\+State}}}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_singleton_game_a27da3478454c9202abac65e67ce221f1}\label{class_singleton_game_a27da3478454c9202abac65e67ce221f1}} 
+\index{SingletonGame@{SingletonGame}!Update@{Update}}
+\index{Update@{Update}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Singleton\+Game\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_singleton_game_ad9c7c8068ecdcef41d02bbeee2493a46}\label{class_singleton_game_ad9c7c8068ecdcef41d02bbeee2493a46}} 
+\index{SingletonGame@{SingletonGame}!barL@{barL}}
+\index{barL@{barL}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{barL}{barL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbar_life}{bar\+Life}} Singleton\+Game\+::barL}
+
+\mbox{\Hypertarget{class_singleton_game_a396aba30bca1f69d2bdf62c8118796fe}\label{class_singleton_game_a396aba30bca1f69d2bdf62c8118796fe}} 
+\index{SingletonGame@{SingletonGame}!Botones@{Botones}}
+\index{Botones@{Botones}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{Botones}{Botones}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_button}{Button}}$\ast$$>$ Singleton\+Game\+::\+Botones}
+
+\mbox{\Hypertarget{class_singleton_game_a1456542a36f6ba09f48450a21e1b0327}\label{class_singleton_game_a1456542a36f6ba09f48450a21e1b0327}} 
+\index{SingletonGame@{SingletonGame}!colorBackground@{colorBackground}}
+\index{colorBackground@{colorBackground}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{colorBackground}{colorBackground}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_color}{Color}} Singleton\+Game\+::color\+Background}
+
+\mbox{\Hypertarget{class_singleton_game_a6a634c44141167ff4864944f05d29d40}\label{class_singleton_game_a6a634c44141167ff4864944f05d29d40}} 
+\index{SingletonGame@{SingletonGame}!colorText@{colorText}}
+\index{colorText@{colorText}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{colorText}{colorText}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_color}{Color}} Singleton\+Game\+::color\+Text}
+
+\mbox{\Hypertarget{class_singleton_game_afda9187e6d6a4cd383b022c9903293db}\label{class_singleton_game_afda9187e6d6a4cd383b022c9903293db}} 
+\index{SingletonGame@{SingletonGame}!GameOver@{GameOver}}
+\index{GameOver@{GameOver}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{GameOver}{GameOver}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Singleton\+Game\+::\+Game\+Over}
+
+\mbox{\Hypertarget{class_singleton_game_a6aae5eead6800824f68a050c39c134db}\label{class_singleton_game_a6aae5eead6800824f68a050c39c134db}} 
+\index{SingletonGame@{SingletonGame}!mousePoint@{mousePoint}}
+\index{mousePoint@{mousePoint}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{mousePoint}{mousePoint}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} Singleton\+Game\+::mouse\+Point}
+
+\mbox{\Hypertarget{class_singleton_game_a0165960a3cbc0037e5cac700f0205869}\label{class_singleton_game_a0165960a3cbc0037e5cac700f0205869}} 
+\index{SingletonGame@{SingletonGame}!music@{music}}
+\index{music@{music}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{music}{music}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_audio}{Audio}} Singleton\+Game\+::music}
+
+\mbox{\Hypertarget{class_singleton_game_a735b99bd6dae90c30732a1d30c0fbade}\label{class_singleton_game_a735b99bd6dae90c30732a1d30c0fbade}} 
+\index{SingletonGame@{SingletonGame}!player@{player}}
+\index{player@{player}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_monkey}{Monkey}}$\ast$ Singleton\+Game\+::player}
+
+\mbox{\Hypertarget{class_singleton_game_a936d8a34dbd41beb134432d733f315a8}\label{class_singleton_game_a936d8a34dbd41beb134432d733f315a8}} 
+\index{SingletonGame@{SingletonGame}!Ramas@{Ramas}}
+\index{Ramas@{Ramas}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{Ramas}{Ramas}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_rama}{Rama}}$\ast$$>$ Singleton\+Game\+::\+Ramas}
+
+\mbox{\Hypertarget{class_singleton_game_a9b4af2960b5b078e43e9ae6f453c6e96}\label{class_singleton_game_a9b4af2960b5b078e43e9ae6f453c6e96}} 
+\index{SingletonGame@{SingletonGame}!score@{score}}
+\index{score@{score}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Singleton\+Game\+::score}
+
+\mbox{\Hypertarget{class_singleton_game_a9310918e3cab4c044228f5af1ada4aee}\label{class_singleton_game_a9310918e3cab4c044228f5af1ada4aee}} 
+\index{SingletonGame@{SingletonGame}!sprite@{sprite}}
+\index{sprite@{sprite}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_texture2_d}{Texture2D}} Singleton\+Game\+::sprite}
+
+\mbox{\Hypertarget{class_singleton_game_a7be1cf0af9361a65a2c36e30d4e140bb}\label{class_singleton_game_a7be1cf0af9361a65a2c36e30d4e140bb}} 
+\index{SingletonGame@{SingletonGame}!start@{start}}
+\index{start@{start}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Singleton\+Game\+::start}
+
+\mbox{\Hypertarget{class_singleton_game_a1fc2fd5eed115cfe7f8072c94b7cab78}\label{class_singleton_game_a1fc2fd5eed115cfe7f8072c94b7cab78}} 
+\index{SingletonGame@{SingletonGame}!TankeySkin@{TankeySkin}}
+\index{TankeySkin@{TankeySkin}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{TankeySkin}{TankeySkin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_skin}{Skin}}$\ast$ Singleton\+Game\+::\+Tankey\+Skin}
+
+\mbox{\Hypertarget{class_singleton_game_a2d735435c259591d6df4e22dd3442bd8}\label{class_singleton_game_a2d735435c259591d6df4e22dd3442bd8}} 
+\index{SingletonGame@{SingletonGame}!tema@{tema}}
+\index{tema@{tema}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{tema}{tema}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Singleton\+Game\+::tema}
+
+\mbox{\Hypertarget{class_singleton_game_a6606b653bf12d08c3f3ef75f9b1faf25}\label{class_singleton_game_a6606b653bf12d08c3f3ef75f9b1faf25}} 
+\index{SingletonGame@{SingletonGame}!tf@{tf}}
+\index{tf@{tf}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{tf}{tf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_theme_factory}{Theme\+Factory}}$\ast$ Singleton\+Game\+::tf}
+
+\mbox{\Hypertarget{class_singleton_game_abe09557bb7899c255511478039e72d08}\label{class_singleton_game_abe09557bb7899c255511478039e72d08}} 
+\index{SingletonGame@{SingletonGame}!tree@{tree}}
+\index{tree@{tree}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{tree}{tree}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_super_tree}{Super\+Tree}}$\ast$ Singleton\+Game\+::tree}
+
+\mbox{\Hypertarget{class_singleton_game_ac643c875faac407e7264956372af5c54}\label{class_singleton_game_ac643c875faac407e7264956372af5c54}} 
+\index{SingletonGame@{SingletonGame}!window@{window}}
+\index{window@{window}!SingletonGame@{SingletonGame}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_window}{Window}} Singleton\+Game\+::window}
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+clases/\mbox{\hyperlink{_singleton_game_8h}{Singleton\+Game.\+h}}\item 
+clases/\mbox{\hyperlink{_singleton_game_8cpp}{Singleton\+Game.\+cpp}}\end{DoxyCompactItemize}

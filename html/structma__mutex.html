@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia de la Estructura ma_mutex</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos públicos</a> &#124;
+<a href="structma__mutex-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Estructura ma_mutex</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="miniaudio_8h_source.html">miniaudio.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos públicos</h2></td></tr>
+<tr class="memitem:a66066ed5e8ff9f5a00c420e149c54cfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structma__context.html">ma_context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structma__mutex.html#a66066ed5e8ff9f5a00c420e149c54cfc">pContext</a></td></tr>
+<tr class="separator:a66066ed5e8ff9f5a00c420e149c54cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fb43c1dc5ca7bc46055882f359c709"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a21bc87130550f2334d0adf6b7e2a6584"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a50776e652f54ecb97ed3073286bfc3e4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;pthread_mutex_t&#160;&#160;&#160;<a class="el" href="structma__mutex.html#a462cca3ef28b8c26bdc1c67d47c35db5">mutex</a></td></tr>
+<tr class="separator:a50776e652f54ecb97ed3073286bfc3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21bc87130550f2334d0adf6b7e2a6584"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structma__mutex.html#a34edd29e1f3d0236f5dd557e00d899c6">posix</a></td></tr>
+<tr class="separator:a21bc87130550f2334d0adf6b7e2a6584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41de41bc5d9300310cf477a7bc7ff4d"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;&#160;&#160;<a class="el" href="structma__mutex.html#a77f1e5cefbd76de747c1193787dd29aa">_unused</a></td></tr>
+<tr class="separator:af41de41bc5d9300310cf477a7bc7ff4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fb43c1dc5ca7bc46055882f359c709"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a77fb43c1dc5ca7bc46055882f359c709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los datos miembro</h2>
+<a id="a77fb43c1dc5ca7bc46055882f359c709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77fb43c1dc5ca7bc46055882f359c709">&#9670;&nbsp;</a></span>@62</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... } </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77f1e5cefbd76de747c1193787dd29aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f1e5cefbd76de747c1193787dd29aa">&#9670;&nbsp;</a></span>_unused</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> ma_mutex::_unused</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a462cca3ef28b8c26bdc1c67d47c35db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462cca3ef28b8c26bdc1c67d47c35db5">&#9670;&nbsp;</a></span>mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_mutex_t ma_mutex::mutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66066ed5e8ff9f5a00c420e149c54cfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66066ed5e8ff9f5a00c420e149c54cfc">&#9670;&nbsp;</a></span>pContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structma__context.html">ma_context</a>* ma_mutex::pContext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34edd29e1f3d0236f5dd557e00d899c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34edd29e1f3d0236f5dd557e00d899c6">&#9670;&nbsp;</a></span>posix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  ma_mutex::posix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentación para esta estructura fue generada a partir del siguiente fichero:<ul>
+<li>cmake-build-debug/_deps/raylib-src/src/external/<a class="el" href="miniaudio_8h_source.html">miniaudio.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

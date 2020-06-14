@@ -1,0 +1,41 @@
+\hypertarget{struct_mem_pool}{}\doxysection{Referencia de la Estructura Mem\+Pool}
+\label{struct_mem_pool}\index{MemPool@{MemPool}}
+
+
+{\ttfamily \#include $<$rmem.\+h$>$}
+
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_alloc_list}{Alloc\+List}} \mbox{\hyperlink{struct_mem_pool_a9941aea40b89ea9d5cf09a2e1e023094}{free\+List}}
+\item 
+\mbox{\hyperlink{struct_stack}{Stack}} \mbox{\hyperlink{struct_mem_pool_aef28c2854bc4ed3e10c9096be108b9b2}{stack}}
+\item 
+\mbox{\hyperlink{struct_mem_node}{Mem\+Node}} $\ast$ \mbox{\hyperlink{struct_mem_pool_a74cba8e9fcb092bd9c420df1ac44cdec}{buckets}} \mbox{[}\mbox{\hyperlink{rmem_8h_a5f395b8a3068ad9a269f4602498f7591}{M\+E\+M\+P\+O\+O\+L\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+S\+I\+ZE}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{struct_mem_pool_a74cba8e9fcb092bd9c420df1ac44cdec}\label{struct_mem_pool_a74cba8e9fcb092bd9c420df1ac44cdec}} 
+\index{MemPool@{MemPool}!buckets@{buckets}}
+\index{buckets@{buckets}!MemPool@{MemPool}}
+\doxysubsubsection{\texorpdfstring{buckets}{buckets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mem_node}{Mem\+Node}}$\ast$ Mem\+Pool\+::buckets\mbox{[}\mbox{\hyperlink{rmem_8h_a5f395b8a3068ad9a269f4602498f7591}{M\+E\+M\+P\+O\+O\+L\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+S\+I\+ZE}}\mbox{]}}
+
+\mbox{\Hypertarget{struct_mem_pool_a9941aea40b89ea9d5cf09a2e1e023094}\label{struct_mem_pool_a9941aea40b89ea9d5cf09a2e1e023094}} 
+\index{MemPool@{MemPool}!freeList@{freeList}}
+\index{freeList@{freeList}!MemPool@{MemPool}}
+\doxysubsubsection{\texorpdfstring{freeList}{freeList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_alloc_list}{Alloc\+List}} Mem\+Pool\+::free\+List}
+
+\mbox{\Hypertarget{struct_mem_pool_aef28c2854bc4ed3e10c9096be108b9b2}\label{struct_mem_pool_aef28c2854bc4ed3e10c9096be108b9b2}} 
+\index{MemPool@{MemPool}!stack@{stack}}
+\index{stack@{stack}!MemPool@{MemPool}}
+\doxysubsubsection{\texorpdfstring{stack}{stack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_stack}{Stack}} Mem\+Pool\+::stack}
+
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/\mbox{\hyperlink{rmem_8h}{rmem.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,126 @@
+\hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/glfw/src/\+C\+Make\+Lists.txt}
+\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/glfw/src/CMakeLists.txt@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/glfw/src/CMakeLists.txt}}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_afd80580aa09748c20cccbfc6e8fa1b21}{set}} (common\+\_\+\+H\+E\+A\+D\+E\+RS internal.\+h mappings.\+h \char`\"{}\$\{G\+L\+F\+W\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+D\+IR\}/\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}/glfw\+\_\+config.\+h\char`\"{} \char`\"{}\$\{G\+L\+F\+W\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+IR\}/\mbox{\hyperlink{_c_make_options_8txt_aadfc06abff110d4abc4cdc452662ba42}{include}}/G\+L\+FW/glfw3.\+h\char`\"{} \char`\"{}\$\{G\+L\+F\+W\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+IR\}/\mbox{\hyperlink{_c_make_options_8txt_aadfc06abff110d4abc4cdc452662ba42}{include}}/G\+L\+FW/glfw3native.\+h\char`\"{}) set(common\+\_\+\+S\+O\+U\+R\+C\+ES context.\+c init.\+c input.\+c monitor.\+c vulkan.\+c window.\+c) \mbox{\hyperlink{_c_make_options_8txt_acdb84c6949c566445fe9a245916e060b}{if}}(\+\_\+\+G\+L\+F\+W\+\_\+\+C\+O\+C\+OA) \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}}(glfw\+\_\+\+H\+E\+A\+D\+E\+RS \$
+\item 
+cocoa\+\_\+platform h cocoa\+\_\+joystick h posix\+\_\+thread h nsgl\+\_\+context h egl\+\_\+context h osmesa\+\_\+context h \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_aa831136a8a7ce97723b8533a129265b9}{set}} (glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{common\+\_\+\+S\+O\+U\+R\+C\+ES\} cocoa\+\_\+init.\+m cocoa\+\_\+joystick.\+m cocoa\+\_\+monitor.\+m cocoa\+\_\+window.\+m cocoa\+\_\+time.\+c posix\+\_\+thread.\+c nsgl\+\_\+context.\+m egl\+\_\+context.\+c osmesa\+\_\+context.\+c) elseif(\mbox{\hyperlink{glfw__config_8h_acb8519a61091889acf8f79e9b3ffdcfb}{\+\_\+\+G\+L\+F\+W\+\_\+\+W\+I\+N32}}) \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}}(glfw\+\_\+\+H\+E\+A\+D\+E\+RS \$
+\item 
+win32\+\_\+platform h win32\+\_\+joystick h wgl\+\_\+context h egl\+\_\+context h osmesa\+\_\+context h \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a58ec332c7fb9baf4a40cd09617b30345}{set}} (glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{common\+\_\+\+S\+O\+U\+R\+C\+ES\} win32\+\_\+init.\+c win32\+\_\+joystick.\+c win32\+\_\+monitor.\+c win32\+\_\+time.\+c win32\+\_\+thread.\+c win32\+\_\+window.\+c wgl\+\_\+context.\+c egl\+\_\+context.\+c osmesa\+\_\+context.\+c) elseif(\+\_\+\+G\+L\+F\+W\+\_\+\+X11) \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}}(glfw\+\_\+\+H\+E\+A\+D\+E\+RS \$
+\item 
+x11\+\_\+platform h xkb\+\_\+unicode h posix\+\_\+time h posix\+\_\+thread h glx\+\_\+context h egl\+\_\+context h osmesa\+\_\+context h \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a85a0dd3f5bcce12398c61de11efe6741}{set}} (glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{common\+\_\+\+S\+O\+U\+R\+C\+ES\} x11\+\_\+init.\+c x11\+\_\+monitor.\+c x11\+\_\+window.\+c xkb\+\_\+unicode.\+c posix\+\_\+time.\+c posix\+\_\+thread.\+c glx\+\_\+context.\+c egl\+\_\+context.\+c osmesa\+\_\+context.\+c) elseif(\+\_\+\+G\+L\+F\+W\+\_\+\+W\+A\+Y\+L\+A\+ND) \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}}(glfw\+\_\+\+H\+E\+A\+D\+E\+RS \$
+\item 
+wl\+\_\+platform h posix\+\_\+time h posix\+\_\+thread h xkb\+\_\+unicode h egl\+\_\+context h osmesa\+\_\+context h \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a0463f12dba81b366362000d05885fb13}{set}} (glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{common\+\_\+\+S\+O\+U\+R\+C\+ES\} wl\+\_\+init.\+c wl\+\_\+monitor.\+c wl\+\_\+window.\+c posix\+\_\+time.\+c posix\+\_\+thread.\+c xkb\+\_\+unicode.\+c egl\+\_\+context.\+c osmesa\+\_\+context.\+c) \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a48734e9d94da7c71db7f7437a473bd1e}{ecm\+\_\+add\+\_\+wayland\+\_\+client\+\_\+protocol}}(glfw\+\_\+\+S\+O\+U\+R\+C\+ES P\+R\+O\+T\+O\+C\+OL \char`\"{}\$
+\item 
+stable xdg shell xdg shell xml B\+A\+S\+E\+N\+A\+ME xdg shell \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_aae8b3b4bedfc31c9f564b4d2c240101a}{ecm\+\_\+add\+\_\+wayland\+\_\+client\+\_\+protocol}} (glfw\+\_\+\+S\+O\+U\+R\+C\+ES P\+R\+O\+T\+O\+C\+OL \char`\"{}\$\{W\+A\+Y\+L\+A\+N\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+S\+\_\+\+P\+K\+G\+D\+A\+T\+A\+D\+IR\}/unstable/xdg-\/decoration/xdg-\/decoration-\/unstable-\/v1.\+xml\char`\"{} B\+A\+S\+E\+N\+A\+ME xdg-\/decoration) ecm\+\_\+add\+\_\+wayland\+\_\+client\+\_\+protocol(glfw\+\_\+\+S\+O\+U\+R\+C\+ES P\+R\+O\+T\+O\+C\+OL \char`\"{}\$
+\item 
+stable viewporter viewporter xml B\+A\+S\+E\+N\+A\+ME viewporter \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a6862234b687cf52df2266b2b24f95bb5}{ecm\+\_\+add\+\_\+wayland\+\_\+client\+\_\+protocol}} (glfw\+\_\+\+S\+O\+U\+R\+C\+ES P\+R\+O\+T\+O\+C\+OL \char`\"{}\$\{W\+A\+Y\+L\+A\+N\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+S\+\_\+\+P\+K\+G\+D\+A\+T\+A\+D\+IR\}/unstable/relative-\/\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}}/relative-\/\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}}-\/unstable-\/v1.\+xml\char`\"{} B\+A\+S\+E\+N\+A\+ME relative-\/\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}}-\/unstable-\/\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0779c3b73f9aa3a0ac5b0139b5d291d9}{v1}}) ecm\+\_\+add\+\_\+wayland\+\_\+client\+\_\+protocol(glfw\+\_\+\+S\+O\+U\+R\+C\+ES P\+R\+O\+T\+O\+C\+OL \char`\"{}\$
+\item 
+unstable \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}} constraints \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}} constraints unstable \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0779c3b73f9aa3a0ac5b0139b5d291d9}{v1}} xml B\+A\+S\+E\+N\+A\+ME \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}} constraints unstable \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0779c3b73f9aa3a0ac5b0139b5d291d9}{v1}} \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a48734e9d94da7c71db7f7437a473bd1e}{ecm\+\_\+add\+\_\+wayland\+\_\+client\+\_\+protocol}} (glfw\+\_\+\+S\+O\+U\+R\+C\+ES P\+R\+O\+T\+O\+C\+OL \char`\"{}\$\{W\+A\+Y\+L\+A\+N\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+S\+\_\+\+P\+K\+G\+D\+A\+T\+A\+D\+IR\}/unstable/idle-\/inhibit/idle-\/inhibit-\/unstable-\/v1.\+xml\char`\"{} B\+A\+S\+E\+N\+A\+ME idle-\/inhibit-\/unstable-\/\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0779c3b73f9aa3a0ac5b0139b5d291d9}{v1}}) elseif(\+\_\+\+G\+L\+F\+W\+\_\+\+O\+S\+M\+E\+SA) \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}}(glfw\+\_\+\+H\+E\+A\+D\+E\+RS \$
+\item 
+null\+\_\+platform h null\+\_\+joystick h posix\+\_\+time h posix\+\_\+thread h osmesa\+\_\+context h \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a04454ef62f38f61d6f9e5b368c518c6f}{set}} (glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{common\+\_\+\+S\+O\+U\+R\+C\+ES\} null\+\_\+init.\+c null\+\_\+monitor.\+c null\+\_\+window.\+c null\+\_\+joystick.\+c posix\+\_\+time.\+c posix\+\_\+thread.\+c osmesa\+\_\+context.\+c) \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a513c946a90957d8fda59c2e295e12780}{endif}}() \mbox{\hyperlink{_c_make_options_8txt_acdb84c6949c566445fe9a245916e060b}{if}}(\+\_\+\+G\+L\+F\+W\+\_\+\+X11 \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a3fc64224cbc88f137edd42bdac4ed82c}{OR}} \+\_\+\+G\+L\+F\+W\+\_\+\+W\+A\+Y\+L\+A\+ND) \mbox{\hyperlink{_c_make_options_8txt_acdb84c6949c566445fe9a245916e060b}{if}}(\char`\"{}\$
+\item 
+\mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2_c_make_lists_8txt_a8b048968c5d8ab8e230ed4954d8cfb91}{S\+T\+R\+E\+Q\+U\+AL}} Linux \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_af105d10f8009ffd8ae2560311d187db9}{set}} (glfw\+\_\+\+H\+E\+A\+D\+E\+RS \$\{glfw\+\_\+\+H\+E\+A\+D\+E\+RS\} linux\+\_\+joystick.\+h) \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}}(glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$
+\item 
+linux\+\_\+joystick c \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a61a2bcb8c966f6d717c985e69ebb1899}{else}} () \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}}(glfw\+\_\+\+H\+E\+A\+D\+E\+RS \$
+\item 
+null\+\_\+joystick h \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a4b4ca7b441ef6681b74663df23b2ee97}{set}} (glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{glfw\+\_\+\+S\+O\+U\+R\+C\+ES\} null\+\_\+joystick.\+c) \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a513c946a90957d8fda59c2e295e12780}{endif}}() \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a513c946a90957d8fda59c2e295e12780}{endif}}() \mbox{\hyperlink{_c_make_options_8txt_acdb84c6949c566445fe9a245916e060b}{if}}(A\+P\+P\+LE) set\+\_\+source\+\_\+files\+\_\+properties(\$
+\item 
+P\+R\+O\+P\+E\+R\+T\+I\+ES L\+A\+N\+G\+U\+A\+GE C \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a513c946a90957d8fda59c2e295e12780}{endif}} () \mbox{\hyperlink{_c_make_options_8txt_acdb84c6949c566445fe9a245916e060b}{if}}(\char`\"{}\$
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2_c_make_lists_8txt_a8b048968c5d8ab8e230ed4954d8cfb91}{S\+T\+R\+E\+Q\+U\+AL}} G\+NU \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a3fc64224cbc88f137edd42bdac4ed82c}{OR}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a48734e9d94da7c71db7f7437a473bd1e}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a48734e9d94da7c71db7f7437a473bd1e}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!ecm\_add\_wayland\_client\_protocol@{ecm\_add\_wayland\_client\_protocol}}
+\index{ecm\_add\_wayland\_client\_protocol@{ecm\_add\_wayland\_client\_protocol}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{ecm\_add\_wayland\_client\_protocol()}{ecm\_add\_wayland\_client\_protocol()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily unstable \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}} constraints \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}} constraints unstable \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0779c3b73f9aa3a0ac5b0139b5d291d9}{v1}} xml B\+A\+S\+E\+N\+A\+ME \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}} constraints unstable \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0779c3b73f9aa3a0ac5b0139b5d291d9}{v1}} ecm\+\_\+add\+\_\+wayland\+\_\+client\+\_\+protocol (\begin{DoxyParamCaption}\item[{glfw\+\_\+\+S\+O\+U\+R\+C\+ES P\+R\+O\+T\+O\+C\+OL \char`\"{}\$\{W\+A\+Y\+L\+A\+N\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+S\+\_\+\+P\+K\+G\+D\+A\+T\+A\+D\+IR\}/unstable/idle-\/inhibit/idle-\/inhibit-\/unstable-\/v1.\+xml\char`\"{} B\+A\+S\+E\+N\+A\+ME idle-\/inhibit-\/unstable-\/}]{v1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a6862234b687cf52df2266b2b24f95bb5}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a6862234b687cf52df2266b2b24f95bb5}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!ecm\_add\_wayland\_client\_protocol@{ecm\_add\_wayland\_client\_protocol}}
+\index{ecm\_add\_wayland\_client\_protocol@{ecm\_add\_wayland\_client\_protocol}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{ecm\_add\_wayland\_client\_protocol()}{ecm\_add\_wayland\_client\_protocol()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily stable viewporter viewporter xml B\+A\+S\+E\+N\+A\+ME viewporter ecm\+\_\+add\+\_\+wayland\+\_\+client\+\_\+protocol (\begin{DoxyParamCaption}\item[{glfw\+\_\+\+S\+O\+U\+R\+C\+ES P\+R\+O\+T\+O\+C\+OL \char`\"{}\$\{W\+A\+Y\+L\+A\+N\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+S\+\_\+\+P\+K\+G\+D\+A\+T\+A\+D\+IR\}/unstable/relative-\/\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}}/relative-\/\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}}-\/unstable-\/v1.\+xml\char`\"{} B\+A\+S\+E\+N\+A\+ME relative-\/\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}}-\/unstable-\/}]{v1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_aae8b3b4bedfc31c9f564b4d2c240101a}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_aae8b3b4bedfc31c9f564b4d2c240101a}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!ecm\_add\_wayland\_client\_protocol@{ecm\_add\_wayland\_client\_protocol}}
+\index{ecm\_add\_wayland\_client\_protocol@{ecm\_add\_wayland\_client\_protocol}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{ecm\_add\_wayland\_client\_protocol()}{ecm\_add\_wayland\_client\_protocol()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily stable xdg shell xdg shell xml B\+A\+S\+E\+N\+A\+ME xdg shell ecm\+\_\+add\+\_\+wayland\+\_\+client\+\_\+protocol (\begin{DoxyParamCaption}\item[{glfw\+\_\+\+S\+O\+U\+R\+C\+ES P\+R\+O\+T\+O\+C\+OL \char`\"{}\$\{W\+A\+Y\+L\+A\+N\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+S\+\_\+\+P\+K\+G\+D\+A\+T\+A\+D\+IR\}/unstable/xdg-\/decoration/xdg-\/decoration-\/unstable-\/v1.\+xml\char`\"{} B\+A\+S\+E\+N\+A\+ME xdg-\/}]{decoration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a61a2bcb8c966f6d717c985e69ebb1899}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a61a2bcb8c966f6d717c985e69ebb1899}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!else@{else}}
+\index{else@{else}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{else()}{else()}}
+{\footnotesize\ttfamily linux\+\_\+joystick c else (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a513c946a90957d8fda59c2e295e12780}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a513c946a90957d8fda59c2e295e12780}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!endif@{endif}}
+\index{endif@{endif}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{endif()}{endif()}}
+{\footnotesize\ttfamily P\+R\+O\+P\+E\+R\+T\+I\+ES L\+A\+N\+G\+U\+A\+GE C endif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_afd80580aa09748c20cccbfc6e8fa1b21}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_afd80580aa09748c20cccbfc6e8fa1b21}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!set@{set}}
+\index{set@{set}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}} (\begin{DoxyParamCaption}\item[{common\+\_\+\+H\+E\+A\+D\+E\+RS internal.\+h mappings.\+h \char`\"{}\$\{G\+L\+F\+W\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+D\+IR\}/\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}/glfw\+\_\+config.\+h\char`\"{} \char`\"{}\$\{G\+L\+F\+W\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+IR\}/\mbox{\hyperlink{_c_make_options_8txt_aadfc06abff110d4abc4cdc452662ba42}{include}}/G\+L\+FW/glfw3.\+h\char`\"{} \char`\"{}\$\{G\+L\+F\+W\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+IR\}/\mbox{\hyperlink{_c_make_options_8txt_aadfc06abff110d4abc4cdc452662ba42}{include}}/G\+L\+FW/glfw3native.\+h\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_af105d10f8009ffd8ae2560311d187db9}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_af105d10f8009ffd8ae2560311d187db9}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!set@{set}}
+\index{set@{set}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2_c_make_lists_8txt_a8b048968c5d8ab8e230ed4954d8cfb91}{S\+T\+R\+E\+Q\+U\+AL}} Linux \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}} (\begin{DoxyParamCaption}\item[{glfw\+\_\+\+H\+E\+A\+D\+E\+RS \$\{glfw\+\_\+\+H\+E\+A\+D\+E\+RS\} linux\+\_\+joystick.}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_aa831136a8a7ce97723b8533a129265b9}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_aa831136a8a7ce97723b8533a129265b9}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!set@{set}}
+\index{set@{set}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily cocoa\+\_\+platform h cocoa\+\_\+joystick h posix\+\_\+thread h nsgl\+\_\+context h egl\+\_\+context h osmesa\+\_\+context h \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}} (\begin{DoxyParamCaption}\item[{glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{common\+\_\+\+S\+O\+U\+R\+C\+ES\} cocoa\+\_\+init.\+m cocoa\+\_\+joystick.\+m cocoa\+\_\+monitor.\+m cocoa\+\_\+window.\+m cocoa\+\_\+time.\+c posix\+\_\+thread.\+c nsgl\+\_\+context.\+m egl\+\_\+context.\+c osmesa\+\_\+context.}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a04454ef62f38f61d6f9e5b368c518c6f}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a04454ef62f38f61d6f9e5b368c518c6f}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!set@{set}}
+\index{set@{set}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily null\+\_\+platform h null\+\_\+joystick h posix\+\_\+time h posix\+\_\+thread h osmesa\+\_\+context h \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}} (\begin{DoxyParamCaption}\item[{glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{common\+\_\+\+S\+O\+U\+R\+C\+ES\} null\+\_\+init.\+c null\+\_\+monitor.\+c null\+\_\+window.\+c null\+\_\+joystick.\+c posix\+\_\+time.\+c posix\+\_\+thread.\+c osmesa\+\_\+context.}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a58ec332c7fb9baf4a40cd09617b30345}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a58ec332c7fb9baf4a40cd09617b30345}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!set@{set}}
+\index{set@{set}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily win32\+\_\+platform h win32\+\_\+joystick h wgl\+\_\+context h egl\+\_\+context h osmesa\+\_\+context h \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}} (\begin{DoxyParamCaption}\item[{glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{common\+\_\+\+S\+O\+U\+R\+C\+ES\} win32\+\_\+init.\+c win32\+\_\+joystick.\+c win32\+\_\+monitor.\+c win32\+\_\+time.\+c win32\+\_\+thread.\+c win32\+\_\+window.\+c wgl\+\_\+context.\+c egl\+\_\+context.\+c osmesa\+\_\+context.}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a0463f12dba81b366362000d05885fb13}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a0463f12dba81b366362000d05885fb13}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!set@{set}}
+\index{set@{set}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily wl\+\_\+platform h posix\+\_\+time h posix\+\_\+thread h xkb\+\_\+unicode h egl\+\_\+context h osmesa\+\_\+context h \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}} (\begin{DoxyParamCaption}\item[{glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{common\+\_\+\+S\+O\+U\+R\+C\+ES\} wl\+\_\+init.\+c wl\+\_\+monitor.\+c wl\+\_\+window.\+c posix\+\_\+time.\+c posix\+\_\+thread.\+c xkb\+\_\+unicode.\+c egl\+\_\+context.\+c osmesa\+\_\+context.}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a85a0dd3f5bcce12398c61de11efe6741}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a85a0dd3f5bcce12398c61de11efe6741}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!set@{set}}
+\index{set@{set}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily x11\+\_\+platform h xkb\+\_\+unicode h posix\+\_\+time h posix\+\_\+thread h glx\+\_\+context h egl\+\_\+context h osmesa\+\_\+context h \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}} (\begin{DoxyParamCaption}\item[{glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{common\+\_\+\+S\+O\+U\+R\+C\+ES\} x11\+\_\+init.\+c x11\+\_\+monitor.\+c x11\+\_\+window.\+c xkb\+\_\+unicode.\+c posix\+\_\+time.\+c posix\+\_\+thread.\+c glx\+\_\+context.\+c egl\+\_\+context.\+c osmesa\+\_\+context.}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a4b4ca7b441ef6681b74663df23b2ee97}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a4b4ca7b441ef6681b74663df23b2ee97}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!set@{set}}
+\index{set@{set}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily null\+\_\+joystick h \mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}} (\begin{DoxyParamCaption}\item[{glfw\+\_\+\+S\+O\+U\+R\+C\+ES \$\{glfw\+\_\+\+S\+O\+U\+R\+C\+ES\} null\+\_\+joystick.}]{c }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a3fc64224cbc88f137edd42bdac4ed82c}\label{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt_a3fc64224cbc88f137edd42bdac4ed82c}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!OR@{OR}}
+\index{OR@{OR}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{OR}{OR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2_c_make_lists_8txt_a8b048968c5d8ab8e230ed4954d8cfb91}{S\+T\+R\+E\+Q\+U\+AL}} G\+NU OR}
+

@@ -1,0 +1,172 @@
+\hypertarget{gorilas_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/gorilas.c}
+\label{gorilas_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/gorilas.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/gorilas.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_player}{Player}}
+\item 
+struct \mbox{\hyperlink{struct_building}{Building}}
+\item 
+struct \mbox{\hyperlink{struct_explosion}{Explosion}}
+\item 
+struct \mbox{\hyperlink{struct_ball}{Ball}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_ac2327f413e91c174014375bd8349f6b8}{M\+A\+X\+\_\+\+B\+U\+I\+L\+D\+I\+N\+GS}}~15
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_a6c82cf7ac9ed0c4e5551f7722e87bc99}{M\+A\+X\+\_\+\+E\+X\+P\+L\+O\+S\+I\+O\+NS}}~200
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_a1c346c944e8204fd06dc057393c7c96d}{M\+A\+X\+\_\+\+P\+L\+A\+Y\+E\+RS}}~2
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_a2f00126a16c1e92637461ece9f51d579}{B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+E\+R\+R\+OR}}~30
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_ab0d32deae2a8227b92c3f3d10ea711fa}{B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+M\+I\+N\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+H\+E\+I\+G\+HT}}~20
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_ac6b484f164e2704fd4bfa35dc6a53fd1}{B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+M\+A\+X\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+H\+E\+I\+G\+HT}}~60
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_a7293c689a0379a18a76f724e7d4cacde}{B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E\+\_\+\+C\+O\+L\+OR}}~120
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_a38d041e5170e122d9da632457530ce9b}{B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E\+\_\+\+C\+O\+L\+OR}}~200
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_ae2533f0fe0cf8eea33e79839b896c7d6}{M\+I\+N\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+P\+O\+S\+I\+T\+I\+ON}}~5
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_a4f05e67bd23a0500d456071e460a3344}{M\+A\+X\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+P\+O\+S\+I\+T\+I\+ON}}~20
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_a6801baa546c6112d19eb095111d24720}{G\+R\+A\+V\+I\+TY}}~9.\+81\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}
+\item 
+\#define \mbox{\hyperlink{gorilas_8c_a6879e00320ac37d4cf3d24ecc5535f11}{D\+E\+L\+T\+A\+\_\+\+F\+PS}}~60
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{gorilas_8c_a480a040facb94f90060562cd65274385}{Player}}
+\item 
+typedef struct \mbox{\hyperlink{struct_building}{Building}} \mbox{\hyperlink{gorilas_8c_a797091de93a20f8a889f12b18ab1b443}{Building}}
+\item 
+typedef struct \mbox{\hyperlink{struct_explosion}{Explosion}} \mbox{\hyperlink{gorilas_8c_a0ff80083c53a0a02feb5f838fb7cdc28}{Explosion}}
+\item 
+typedef struct \mbox{\hyperlink{struct_ball}{Ball}} \mbox{\hyperlink{gorilas_8c_af0cce33331cd6a83a38bc5cf07702394}{Ball}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{gorilas_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{gorilas_8c_a38d041e5170e122d9da632457530ce9b}\label{gorilas_8c_a38d041e5170e122d9da632457530ce9b}} 
+\index{gorilas.c@{gorilas.c}!BUILDING\_MAX\_GRAYSCALE\_COLOR@{BUILDING\_MAX\_GRAYSCALE\_COLOR}}
+\index{BUILDING\_MAX\_GRAYSCALE\_COLOR@{BUILDING\_MAX\_GRAYSCALE\_COLOR}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{BUILDING\_MAX\_GRAYSCALE\_COLOR}{BUILDING\_MAX\_GRAYSCALE\_COLOR}}
+{\footnotesize\ttfamily \#define B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+M\+A\+X\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E\+\_\+\+C\+O\+L\+OR~200}
+
+\mbox{\Hypertarget{gorilas_8c_ac6b484f164e2704fd4bfa35dc6a53fd1}\label{gorilas_8c_ac6b484f164e2704fd4bfa35dc6a53fd1}} 
+\index{gorilas.c@{gorilas.c}!BUILDING\_MAX\_RELATIVE\_HEIGHT@{BUILDING\_MAX\_RELATIVE\_HEIGHT}}
+\index{BUILDING\_MAX\_RELATIVE\_HEIGHT@{BUILDING\_MAX\_RELATIVE\_HEIGHT}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{BUILDING\_MAX\_RELATIVE\_HEIGHT}{BUILDING\_MAX\_RELATIVE\_HEIGHT}}
+{\footnotesize\ttfamily \#define B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+M\+A\+X\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+H\+E\+I\+G\+HT~60}
+
+\mbox{\Hypertarget{gorilas_8c_a7293c689a0379a18a76f724e7d4cacde}\label{gorilas_8c_a7293c689a0379a18a76f724e7d4cacde}} 
+\index{gorilas.c@{gorilas.c}!BUILDING\_MIN\_GRAYSCALE\_COLOR@{BUILDING\_MIN\_GRAYSCALE\_COLOR}}
+\index{BUILDING\_MIN\_GRAYSCALE\_COLOR@{BUILDING\_MIN\_GRAYSCALE\_COLOR}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{BUILDING\_MIN\_GRAYSCALE\_COLOR}{BUILDING\_MIN\_GRAYSCALE\_COLOR}}
+{\footnotesize\ttfamily \#define B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+M\+I\+N\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+L\+E\+\_\+\+C\+O\+L\+OR~120}
+
+\mbox{\Hypertarget{gorilas_8c_ab0d32deae2a8227b92c3f3d10ea711fa}\label{gorilas_8c_ab0d32deae2a8227b92c3f3d10ea711fa}} 
+\index{gorilas.c@{gorilas.c}!BUILDING\_MIN\_RELATIVE\_HEIGHT@{BUILDING\_MIN\_RELATIVE\_HEIGHT}}
+\index{BUILDING\_MIN\_RELATIVE\_HEIGHT@{BUILDING\_MIN\_RELATIVE\_HEIGHT}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{BUILDING\_MIN\_RELATIVE\_HEIGHT}{BUILDING\_MIN\_RELATIVE\_HEIGHT}}
+{\footnotesize\ttfamily \#define B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+M\+I\+N\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+H\+E\+I\+G\+HT~20}
+
+\mbox{\Hypertarget{gorilas_8c_a2f00126a16c1e92637461ece9f51d579}\label{gorilas_8c_a2f00126a16c1e92637461ece9f51d579}} 
+\index{gorilas.c@{gorilas.c}!BUILDING\_RELATIVE\_ERROR@{BUILDING\_RELATIVE\_ERROR}}
+\index{BUILDING\_RELATIVE\_ERROR@{BUILDING\_RELATIVE\_ERROR}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{BUILDING\_RELATIVE\_ERROR}{BUILDING\_RELATIVE\_ERROR}}
+{\footnotesize\ttfamily \#define B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+E\+R\+R\+OR~30}
+
+\mbox{\Hypertarget{gorilas_8c_a6879e00320ac37d4cf3d24ecc5535f11}\label{gorilas_8c_a6879e00320ac37d4cf3d24ecc5535f11}} 
+\index{gorilas.c@{gorilas.c}!DELTA\_FPS@{DELTA\_FPS}}
+\index{DELTA\_FPS@{DELTA\_FPS}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{DELTA\_FPS}{DELTA\_FPS}}
+{\footnotesize\ttfamily \#define D\+E\+L\+T\+A\+\_\+\+F\+PS~60}
+
+\mbox{\Hypertarget{gorilas_8c_a6801baa546c6112d19eb095111d24720}\label{gorilas_8c_a6801baa546c6112d19eb095111d24720}} 
+\index{gorilas.c@{gorilas.c}!GRAVITY@{GRAVITY}}
+\index{GRAVITY@{GRAVITY}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{GRAVITY}{GRAVITY}}
+{\footnotesize\ttfamily \#define G\+R\+A\+V\+I\+TY~9.\+81\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}}
+
+\mbox{\Hypertarget{gorilas_8c_ac2327f413e91c174014375bd8349f6b8}\label{gorilas_8c_ac2327f413e91c174014375bd8349f6b8}} 
+\index{gorilas.c@{gorilas.c}!MAX\_BUILDINGS@{MAX\_BUILDINGS}}
+\index{MAX\_BUILDINGS@{MAX\_BUILDINGS}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_BUILDINGS}{MAX\_BUILDINGS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+B\+U\+I\+L\+D\+I\+N\+GS~15}
+
+\mbox{\Hypertarget{gorilas_8c_a6c82cf7ac9ed0c4e5551f7722e87bc99}\label{gorilas_8c_a6c82cf7ac9ed0c4e5551f7722e87bc99}} 
+\index{gorilas.c@{gorilas.c}!MAX\_EXPLOSIONS@{MAX\_EXPLOSIONS}}
+\index{MAX\_EXPLOSIONS@{MAX\_EXPLOSIONS}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_EXPLOSIONS}{MAX\_EXPLOSIONS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+E\+X\+P\+L\+O\+S\+I\+O\+NS~200}
+
+\mbox{\Hypertarget{gorilas_8c_a4f05e67bd23a0500d456071e460a3344}\label{gorilas_8c_a4f05e67bd23a0500d456071e460a3344}} 
+\index{gorilas.c@{gorilas.c}!MAX\_PLAYER\_POSITION@{MAX\_PLAYER\_POSITION}}
+\index{MAX\_PLAYER\_POSITION@{MAX\_PLAYER\_POSITION}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_PLAYER\_POSITION}{MAX\_PLAYER\_POSITION}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+P\+O\+S\+I\+T\+I\+ON~20}
+
+\mbox{\Hypertarget{gorilas_8c_a1c346c944e8204fd06dc057393c7c96d}\label{gorilas_8c_a1c346c944e8204fd06dc057393c7c96d}} 
+\index{gorilas.c@{gorilas.c}!MAX\_PLAYERS@{MAX\_PLAYERS}}
+\index{MAX\_PLAYERS@{MAX\_PLAYERS}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_PLAYERS}{MAX\_PLAYERS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+L\+A\+Y\+E\+RS~2}
+
+\mbox{\Hypertarget{gorilas_8c_ae2533f0fe0cf8eea33e79839b896c7d6}\label{gorilas_8c_ae2533f0fe0cf8eea33e79839b896c7d6}} 
+\index{gorilas.c@{gorilas.c}!MIN\_PLAYER\_POSITION@{MIN\_PLAYER\_POSITION}}
+\index{MIN\_PLAYER\_POSITION@{MIN\_PLAYER\_POSITION}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{MIN\_PLAYER\_POSITION}{MIN\_PLAYER\_POSITION}}
+{\footnotesize\ttfamily \#define M\+I\+N\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+P\+O\+S\+I\+T\+I\+ON~5}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{gorilas_8c_af0cce33331cd6a83a38bc5cf07702394}\label{gorilas_8c_af0cce33331cd6a83a38bc5cf07702394}} 
+\index{gorilas.c@{gorilas.c}!Ball@{Ball}}
+\index{Ball@{Ball}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{Ball}{Ball}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_ball}{Ball}} \mbox{\hyperlink{struct_ball}{Ball}}}
+
+\mbox{\Hypertarget{gorilas_8c_a797091de93a20f8a889f12b18ab1b443}\label{gorilas_8c_a797091de93a20f8a889f12b18ab1b443}} 
+\index{gorilas.c@{gorilas.c}!Building@{Building}}
+\index{Building@{Building}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{Building}{Building}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_building}{Building}} \mbox{\hyperlink{struct_building}{Building}}}
+
+\mbox{\Hypertarget{gorilas_8c_a0ff80083c53a0a02feb5f838fb7cdc28}\label{gorilas_8c_a0ff80083c53a0a02feb5f838fb7cdc28}} 
+\index{gorilas.c@{gorilas.c}!Explosion@{Explosion}}
+\index{Explosion@{Explosion}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{Explosion}{Explosion}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_explosion}{Explosion}} \mbox{\hyperlink{struct_explosion}{Explosion}}}
+
+\mbox{\Hypertarget{gorilas_8c_a480a040facb94f90060562cd65274385}\label{gorilas_8c_a480a040facb94f90060562cd65274385}} 
+\index{gorilas.c@{gorilas.c}!Player@{Player}}
+\index{Player@{Player}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{struct_player}{Player}}}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{gorilas_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{gorilas_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{gorilas.c@{gorilas.c}!main@{main}}
+\index{main@{main}!gorilas.c@{gorilas.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+

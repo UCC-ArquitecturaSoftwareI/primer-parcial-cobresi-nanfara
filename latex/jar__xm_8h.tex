@@ -1,0 +1,456 @@
+\hypertarget{jar__xm_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/jar\+\_\+xm.h}
+\label{jar__xm_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/jar\_xm.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/jar\_xm.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{jar__xm_8h_ad32e422905d003e0677792266225888b}{J\+A\+R\+\_\+\+X\+M\+\_\+\+D\+E\+B\+UG}}~0
+\item 
+\#define \mbox{\hyperlink{jar__xm_8h_a4067f6f90764c2a3282f2d011966bf0a}{J\+A\+R\+\_\+\+X\+M\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON}}~1
+\item 
+\#define \mbox{\hyperlink{jar__xm_8h_aa42845d05a725d425209a30de224e445}{J\+A\+R\+\_\+\+X\+M\+\_\+\+D\+E\+F\+E\+N\+S\+I\+VE}}~1
+\item 
+\#define \mbox{\hyperlink{jar__xm_8h_a6e0f17b0c474bc2d98abe203ed24421f}{J\+A\+R\+\_\+\+X\+M\+\_\+\+R\+A\+M\+P\+I\+NG}}~1
+\item 
+\#define \mbox{\hyperlink{jar__xm_8h_a3195ec4f540a107616f5c285dcffd4e5}{J\+A\+R\+X\+M\+\_\+\+M\+A\+L\+L\+OC}}(sz)~malloc(sz)
+\item 
+\#define \mbox{\hyperlink{jar__xm_8h_a5b68a768a92feadf69bf6d6a4f8047c4}{J\+A\+R\+X\+M\+\_\+\+F\+R\+EE}}(p)~free(p)
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct jar\+\_\+xm\+\_\+context\+\_\+s \mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{jar__xm_8h_af2026fcb105fecaa9eac322caf076ae6}{jar\+\_\+xm\+\_\+create\+\_\+context\+\_\+from\+\_\+file}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$$\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} rate, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{jar__xm_8h_a4f0bd4a385e83456056e3e07da9ac809}{jar\+\_\+xm\+\_\+create\+\_\+context}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$$\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$moddata, \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} rate)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{jar__xm_8h_ac070ed41096d0fe8095f7d51c9073da0}{jar\+\_\+xm\+\_\+create\+\_\+context\+\_\+safe}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$$\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$moddata, size\+\_\+t moddata\+\_\+length, \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} rate)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{jar__xm_8h_a31aa419a40dbc5d9b51d08464f466028}{jar\+\_\+xm\+\_\+free\+\_\+context}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{jar__xm_8h_a818f4b06a0e4d755e7a992446c05f783}{jar\+\_\+xm\+\_\+generate\+\_\+samples}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, float $\ast$output, size\+\_\+t numsamples)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{jar__xm_8h_aad9a0cec4fd5feae711ab79e574bd47e}{jar\+\_\+xm\+\_\+generate\+\_\+samples\+\_\+16bit}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, short $\ast$output, size\+\_\+t numsamples)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{jar__xm_8h_ac5fa7869ada574b7ca87e97e40b12a30}{jar\+\_\+xm\+\_\+generate\+\_\+samples\+\_\+8bit}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$output, size\+\_\+t numsamples)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{jar__xm_8h_a1e80ee9c28af5e2c96399c397da93253}{jar\+\_\+xm\+\_\+set\+\_\+max\+\_\+loop\+\_\+count}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} loopcnt)
+\item 
+\mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{jar__xm_8h_aa384bac2ce9e6944894eb87b1588ece9}{jar\+\_\+xm\+\_\+get\+\_\+loop\+\_\+count}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}})
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{jar__xm_8h_a834da4427caec0a504451f5197c3a06f}{jar\+\_\+xm\+\_\+mute\+\_\+channel}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}})
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{jar__xm_8h_a9c806048773e699bdac60a9a0cb452f3}{jar\+\_\+xm\+\_\+mute\+\_\+instrument}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}})
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{jar__xm_8h_a3e536bea8d9cfac5b5bf8baff29eb7ef}{jar\+\_\+xm\+\_\+get\+\_\+module\+\_\+name}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}})
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{jar__xm_8h_ae82a6bc44e9c4bd46d8c133c7ac08787}{jar\+\_\+xm\+\_\+get\+\_\+tracker\+\_\+name}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}})
+\item 
+\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{jar__xm_8h_ae0e6a8ef772eebc4f92a008d0d98b31b}{jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+channels}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}})
+\item 
+\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{jar__xm_8h_a151f5830ff9cbce88af595f2f10a4c09}{jar\+\_\+xm\+\_\+get\+\_\+module\+\_\+length}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{jar__xm_8h_a89fbe7358512296ed5fdb6bc61bc1113}{jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+patterns}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}})
+\item 
+\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{jar__xm_8h_a1bb971864dc0d3df761e52816d1751e1}{jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+rows}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}})
+\item 
+\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{jar__xm_8h_a2a90d1d709e8671266c43b237f9dda18}{jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+instruments}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}})
+\item 
+\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{jar__xm_8h_a1efab0c719a3a20e28b6d4366f941694}{jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+samples}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{jar__xm_8h_ab70523598961ee73def2477990582a70}{jar\+\_\+xm\+\_\+get\+\_\+playing\+\_\+speed}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} $\ast$bpm, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} $\ast$tempo)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{jar__xm_8h_a37c9aa55f69dd69497df3bcfae76fd69}{jar\+\_\+xm\+\_\+get\+\_\+position}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$pattern\+\_\+index, \mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$pattern, \mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$row, \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aba70cd077c2c52c15358c231c6d293aa}{samples}})
+\item 
+\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{jar__xm_8h_a1cdf0584369839082f8d4d44b82b615e}{jar\+\_\+xm\+\_\+get\+\_\+latest\+\_\+trigger\+\_\+of\+\_\+instrument}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}})
+\item 
+\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{jar__xm_8h_ab495d4f54c501fe382af237c5129f8f2}{jar\+\_\+xm\+\_\+get\+\_\+latest\+\_\+trigger\+\_\+of\+\_\+sample}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} instr, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{structsample}{sample}})
+\item 
+\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{jar__xm_8h_add55659c6898c996d1266b91cba5e009}{jar\+\_\+xm\+\_\+get\+\_\+latest\+\_\+trigger\+\_\+of\+\_\+channel}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}}, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}})
+\item 
+\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{jar__xm_8h_ae144464b304a56ebed1b3e0e6c21c6b9}{jar\+\_\+xm\+\_\+get\+\_\+remaining\+\_\+samples}} (\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{jar__xm_8h_ad32e422905d003e0677792266225888b}\label{jar__xm_8h_ad32e422905d003e0677792266225888b}} 
+\index{jar\_xm.h@{jar\_xm.h}!JAR\_XM\_DEBUG@{JAR\_XM\_DEBUG}}
+\index{JAR\_XM\_DEBUG@{JAR\_XM\_DEBUG}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{JAR\_XM\_DEBUG}{JAR\_XM\_DEBUG}}
+{\footnotesize\ttfamily \#define J\+A\+R\+\_\+\+X\+M\+\_\+\+D\+E\+B\+UG~0}
+
+\mbox{\Hypertarget{jar__xm_8h_aa42845d05a725d425209a30de224e445}\label{jar__xm_8h_aa42845d05a725d425209a30de224e445}} 
+\index{jar\_xm.h@{jar\_xm.h}!JAR\_XM\_DEFENSIVE@{JAR\_XM\_DEFENSIVE}}
+\index{JAR\_XM\_DEFENSIVE@{JAR\_XM\_DEFENSIVE}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{JAR\_XM\_DEFENSIVE}{JAR\_XM\_DEFENSIVE}}
+{\footnotesize\ttfamily \#define J\+A\+R\+\_\+\+X\+M\+\_\+\+D\+E\+F\+E\+N\+S\+I\+VE~1}
+
+\mbox{\Hypertarget{jar__xm_8h_a4067f6f90764c2a3282f2d011966bf0a}\label{jar__xm_8h_a4067f6f90764c2a3282f2d011966bf0a}} 
+\index{jar\_xm.h@{jar\_xm.h}!JAR\_XM\_LINEAR\_INTERPOLATION@{JAR\_XM\_LINEAR\_INTERPOLATION}}
+\index{JAR\_XM\_LINEAR\_INTERPOLATION@{JAR\_XM\_LINEAR\_INTERPOLATION}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{JAR\_XM\_LINEAR\_INTERPOLATION}{JAR\_XM\_LINEAR\_INTERPOLATION}}
+{\footnotesize\ttfamily \#define J\+A\+R\+\_\+\+X\+M\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON~1}
+
+\mbox{\Hypertarget{jar__xm_8h_a6e0f17b0c474bc2d98abe203ed24421f}\label{jar__xm_8h_a6e0f17b0c474bc2d98abe203ed24421f}} 
+\index{jar\_xm.h@{jar\_xm.h}!JAR\_XM\_RAMPING@{JAR\_XM\_RAMPING}}
+\index{JAR\_XM\_RAMPING@{JAR\_XM\_RAMPING}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{JAR\_XM\_RAMPING}{JAR\_XM\_RAMPING}}
+{\footnotesize\ttfamily \#define J\+A\+R\+\_\+\+X\+M\+\_\+\+R\+A\+M\+P\+I\+NG~1}
+
+\mbox{\Hypertarget{jar__xm_8h_a5b68a768a92feadf69bf6d6a4f8047c4}\label{jar__xm_8h_a5b68a768a92feadf69bf6d6a4f8047c4}} 
+\index{jar\_xm.h@{jar\_xm.h}!JARXM\_FREE@{JARXM\_FREE}}
+\index{JARXM\_FREE@{JARXM\_FREE}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{JARXM\_FREE}{JARXM\_FREE}}
+{\footnotesize\ttfamily \#define J\+A\+R\+X\+M\+\_\+\+F\+R\+EE(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~free(p)}
+
+\mbox{\Hypertarget{jar__xm_8h_a3195ec4f540a107616f5c285dcffd4e5}\label{jar__xm_8h_a3195ec4f540a107616f5c285dcffd4e5}} 
+\index{jar\_xm.h@{jar\_xm.h}!JARXM\_MALLOC@{JARXM\_MALLOC}}
+\index{JARXM\_MALLOC@{JARXM\_MALLOC}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{JARXM\_MALLOC}{JARXM\_MALLOC}}
+{\footnotesize\ttfamily \#define J\+A\+R\+X\+M\+\_\+\+M\+A\+L\+L\+OC(\begin{DoxyParamCaption}\item[{}]{sz }\end{DoxyParamCaption})~malloc(sz)}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}\label{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_context\_t@{jar\_xm\_context\_t}}
+\index{jar\_xm\_context\_t@{jar\_xm\_context\_t}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_context\_t}{jar\_xm\_context\_t}}
+{\footnotesize\ttfamily typedef struct jar\+\_\+xm\+\_\+context\+\_\+s \mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}}}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{jar__xm_8h_a4f0bd4a385e83456056e3e07da9ac809}\label{jar__xm_8h_a4f0bd4a385e83456056e3e07da9ac809}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_create\_context@{jar\_xm\_create\_context}}
+\index{jar\_xm\_create\_context@{jar\_xm\_create\_context}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_create\_context()}{jar\_xm\_create\_context()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} jar\+\_\+xm\+\_\+create\+\_\+context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$$\ast$}]{ctx,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{moddata,  }\item[{\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{rate }\end{DoxyParamCaption})}
+
+Create a XM context.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em moddata} & the contents of the module \\
+\hline
+{\em rate} & play rate in Hz, recommended value of 48000\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+0 on success 
+
+1 if module data is not sane 
+
+2 if memory allocation failed
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Obsoleto}
+\item[\mbox{\hyperlink{deprecated__deprecated000006}{Obsoleto}}]This function is unsafe! \end{DoxyRefDesc}
+\begin{DoxySeeAlso}{Ver también}
+\mbox{\hyperlink{jar__xm_8h_ac070ed41096d0fe8095f7d51c9073da0}{jar\+\_\+xm\+\_\+create\+\_\+context\+\_\+safe()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{jar__xm_8h_af2026fcb105fecaa9eac322caf076ae6}\label{jar__xm_8h_af2026fcb105fecaa9eac322caf076ae6}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_create\_context\_from\_file@{jar\_xm\_create\_context\_from\_file}}
+\index{jar\_xm\_create\_context\_from\_file@{jar\_xm\_create\_context\_from\_file}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_create\_context\_from\_file()}{jar\_xm\_create\_context\_from\_file()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} jar\+\_\+xm\+\_\+create\+\_\+context\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$$\ast$}]{ctx,  }\item[{\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{rate,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Create a XM context.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em moddata} & the contents of the module \\
+\hline
+{\em rate} & play rate in Hz, recommended value of 48000\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+0 on success 
+
+1 if module data is not sane 
+
+2 if memory allocation failed 
+
+3 unable to open input file 
+
+4 fseek() failed 
+
+5 fread() failed 
+
+6 unkown error
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Obsoleto}
+\item[\mbox{\hyperlink{deprecated__deprecated000005}{Obsoleto}}]This function is unsafe! \end{DoxyRefDesc}
+\begin{DoxySeeAlso}{Ver también}
+\mbox{\hyperlink{jar__xm_8h_ac070ed41096d0fe8095f7d51c9073da0}{jar\+\_\+xm\+\_\+create\+\_\+context\+\_\+safe()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{jar__xm_8h_ac070ed41096d0fe8095f7d51c9073da0}\label{jar__xm_8h_ac070ed41096d0fe8095f7d51c9073da0}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_create\_context\_safe@{jar\_xm\_create\_context\_safe}}
+\index{jar\_xm\_create\_context\_safe@{jar\_xm\_create\_context\_safe}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_create\_context\_safe()}{jar\_xm\_create\_context\_safe()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} jar\+\_\+xm\+\_\+create\+\_\+context\+\_\+safe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$$\ast$}]{ctx,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{moddata,  }\item[{size\+\_\+t}]{moddata\+\_\+length,  }\item[{\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{rate }\end{DoxyParamCaption})}
+
+Create a XM context.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em moddata} & the contents of the module \\
+\hline
+{\em moddata\+\_\+length} & the length of the contents of the module, in bytes \\
+\hline
+{\em rate} & play rate in Hz, recommended value of 48000\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+0 on success 
+
+1 if module data is not sane 
+
+2 if memory allocation failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{jar__xm_8h_a31aa419a40dbc5d9b51d08464f466028}\label{jar__xm_8h_a31aa419a40dbc5d9b51d08464f466028}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_free\_context@{jar\_xm\_free\_context}}
+\index{jar\_xm\_free\_context@{jar\_xm\_free\_context}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_free\_context()}{jar\_xm\_free\_context()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} jar\+\_\+xm\+\_\+free\+\_\+context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Free a XM context created by \mbox{\hyperlink{jar__xm_8h_a4f0bd4a385e83456056e3e07da9ac809}{jar\+\_\+xm\+\_\+create\+\_\+context()}}. \mbox{\Hypertarget{jar__xm_8h_a818f4b06a0e4d755e7a992446c05f783}\label{jar__xm_8h_a818f4b06a0e4d755e7a992446c05f783}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_generate\_samples@{jar\_xm\_generate\_samples}}
+\index{jar\_xm\_generate\_samples@{jar\_xm\_generate\_samples}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_generate\_samples()}{jar\_xm\_generate\_samples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} jar\+\_\+xm\+\_\+generate\+\_\+samples (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{float $\ast$}]{output,  }\item[{size\+\_\+t}]{numsamples }\end{DoxyParamCaption})}
+
+Play the module and put the sound samples in an output buffer.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em output} & buffer of 2$\ast$numsamples elements (A left and right value for each sample) \\
+\hline
+{\em numsamples} & number of samples to generate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jar__xm_8h_aad9a0cec4fd5feae711ab79e574bd47e}\label{jar__xm_8h_aad9a0cec4fd5feae711ab79e574bd47e}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_generate\_samples\_16bit@{jar\_xm\_generate\_samples\_16bit}}
+\index{jar\_xm\_generate\_samples\_16bit@{jar\_xm\_generate\_samples\_16bit}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_generate\_samples\_16bit()}{jar\_xm\_generate\_samples\_16bit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} jar\+\_\+xm\+\_\+generate\+\_\+samples\+\_\+16bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{short $\ast$}]{output,  }\item[{size\+\_\+t}]{numsamples }\end{DoxyParamCaption})}
+
+Play the module, resample from 32 bit to 16 bit, and put the sound samples in an output buffer.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em output} & buffer of 2$\ast$numsamples elements (A left and right value for each sample) \\
+\hline
+{\em numsamples} & number of samples to generate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jar__xm_8h_ac5fa7869ada574b7ca87e97e40b12a30}\label{jar__xm_8h_ac5fa7869ada574b7ca87e97e40b12a30}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_generate\_samples\_8bit@{jar\_xm\_generate\_samples\_8bit}}
+\index{jar\_xm\_generate\_samples\_8bit@{jar\_xm\_generate\_samples\_8bit}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_generate\_samples\_8bit()}{jar\_xm\_generate\_samples\_8bit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} jar\+\_\+xm\+\_\+generate\+\_\+samples\+\_\+8bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{output,  }\item[{size\+\_\+t}]{numsamples }\end{DoxyParamCaption})}
+
+Play the module, resample from 32 bit to 8 bit, and put the sound samples in an output buffer.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em output} & buffer of 2$\ast$numsamples elements (A left and right value for each sample) \\
+\hline
+{\em numsamples} & number of samples to generate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jar__xm_8h_add55659c6898c996d1266b91cba5e009}\label{jar__xm_8h_add55659c6898c996d1266b91cba5e009}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_latest\_trigger\_of\_channel@{jar\_xm\_get\_latest\_trigger\_of\_channel}}
+\index{jar\_xm\_get\_latest\_trigger\_of\_channel@{jar\_xm\_get\_latest\_trigger\_of\_channel}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_latest\_trigger\_of\_channel()}{jar\_xm\_get\_latest\_trigger\_of\_channel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} jar\+\_\+xm\+\_\+get\+\_\+latest\+\_\+trigger\+\_\+of\+\_\+channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+Get the latest time (in number of generated samples) when any instrument was triggered in a given channel.
+
+\begin{DoxyNote}{Nota}
+Channel numbers go from 1 to jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+channels(...). 
+\end{DoxyNote}
+\mbox{\Hypertarget{jar__xm_8h_a1cdf0584369839082f8d4d44b82b615e}\label{jar__xm_8h_a1cdf0584369839082f8d4d44b82b615e}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_latest\_trigger\_of\_instrument@{jar\_xm\_get\_latest\_trigger\_of\_instrument}}
+\index{jar\_xm\_get\_latest\_trigger\_of\_instrument@{jar\_xm\_get\_latest\_trigger\_of\_instrument}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_latest\_trigger\_of\_instrument()}{jar\_xm\_get\_latest\_trigger\_of\_instrument()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} jar\+\_\+xm\+\_\+get\+\_\+latest\+\_\+trigger\+\_\+of\+\_\+instrument (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+Get the latest time (in number of generated samples) when a particular instrument was triggered in any channel.
+
+\begin{DoxyNote}{Nota}
+Instrument numbers go from 1 to jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+instruments(...). 
+\end{DoxyNote}
+\mbox{\Hypertarget{jar__xm_8h_ab495d4f54c501fe382af237c5129f8f2}\label{jar__xm_8h_ab495d4f54c501fe382af237c5129f8f2}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_latest\_trigger\_of\_sample@{jar\_xm\_get\_latest\_trigger\_of\_sample}}
+\index{jar\_xm\_get\_latest\_trigger\_of\_sample@{jar\_xm\_get\_latest\_trigger\_of\_sample}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_latest\_trigger\_of\_sample()}{jar\_xm\_get\_latest\_trigger\_of\_sample()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} jar\+\_\+xm\+\_\+get\+\_\+latest\+\_\+trigger\+\_\+of\+\_\+sample (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}}]{instr,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}}]{sample }\end{DoxyParamCaption})}
+
+Get the latest time (in number of generated samples) when a particular sample was triggered in any channel.
+
+\begin{DoxyNote}{Nota}
+Instrument numbers go from 1 to jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+instruments(...).
+
+\mbox{\hyperlink{struct_sample}{Sample}} numbers go from 0 to jar\+\_\+xm\+\_\+get\+\_\+nubmer\+\_\+of\+\_\+samples(...,instr)-\/1. 
+\end{DoxyNote}
+\mbox{\Hypertarget{jar__xm_8h_aa384bac2ce9e6944894eb87b1588ece9}\label{jar__xm_8h_aa384bac2ce9e6944894eb87b1588ece9}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_loop\_count@{jar\_xm\_get\_loop\_count}}
+\index{jar\_xm\_get\_loop\_count@{jar\_xm\_get\_loop\_count}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_loop\_count()}{jar\_xm\_get\_loop\_count()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} jar\+\_\+xm\+\_\+get\+\_\+loop\+\_\+count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Get the loop count of the currently playing module. This value is 0 when the module is still playing, 1 when the module has looped once, etc. \mbox{\Hypertarget{jar__xm_8h_a151f5830ff9cbce88af595f2f10a4c09}\label{jar__xm_8h_a151f5830ff9cbce88af595f2f10a4c09}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_module\_length@{jar\_xm\_get\_module\_length}}
+\index{jar\_xm\_get\_module\_length@{jar\_xm\_get\_module\_length}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_module\_length()}{jar\_xm\_get\_module\_length()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} jar\+\_\+xm\+\_\+get\+\_\+module\+\_\+length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Get the module length (in patterns). \mbox{\Hypertarget{jar__xm_8h_a3e536bea8d9cfac5b5bf8baff29eb7ef}\label{jar__xm_8h_a3e536bea8d9cfac5b5bf8baff29eb7ef}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_module\_name@{jar\_xm\_get\_module\_name}}
+\index{jar\_xm\_get\_module\_name@{jar\_xm\_get\_module\_name}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_module\_name()}{jar\_xm\_get\_module\_name()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ jar\+\_\+xm\+\_\+get\+\_\+module\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Get the module name as a N\+U\+L-\/terminated string. \mbox{\Hypertarget{jar__xm_8h_ae0e6a8ef772eebc4f92a008d0d98b31b}\label{jar__xm_8h_ae0e6a8ef772eebc4f92a008d0d98b31b}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_number\_of\_channels@{jar\_xm\_get\_number\_of\_channels}}
+\index{jar\_xm\_get\_number\_of\_channels@{jar\_xm\_get\_number\_of\_channels}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_number\_of\_channels()}{jar\_xm\_get\_number\_of\_channels()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+channels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Get the number of channels. \mbox{\Hypertarget{jar__xm_8h_a2a90d1d709e8671266c43b237f9dda18}\label{jar__xm_8h_a2a90d1d709e8671266c43b237f9dda18}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_number\_of\_instruments@{jar\_xm\_get\_number\_of\_instruments}}
+\index{jar\_xm\_get\_number\_of\_instruments@{jar\_xm\_get\_number\_of\_instruments}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_number\_of\_instruments()}{jar\_xm\_get\_number\_of\_instruments()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+instruments (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Get the number of instruments. \mbox{\Hypertarget{jar__xm_8h_a89fbe7358512296ed5fdb6bc61bc1113}\label{jar__xm_8h_a89fbe7358512296ed5fdb6bc61bc1113}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_number\_of\_patterns@{jar\_xm\_get\_number\_of\_patterns}}
+\index{jar\_xm\_get\_number\_of\_patterns@{jar\_xm\_get\_number\_of\_patterns}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_number\_of\_patterns()}{jar\_xm\_get\_number\_of\_patterns()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+patterns (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Get the number of patterns. \mbox{\Hypertarget{jar__xm_8h_a1bb971864dc0d3df761e52816d1751e1}\label{jar__xm_8h_a1bb971864dc0d3df761e52816d1751e1}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_number\_of\_rows@{jar\_xm\_get\_number\_of\_rows}}
+\index{jar\_xm\_get\_number\_of\_rows@{jar\_xm\_get\_number\_of\_rows}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_number\_of\_rows()}{jar\_xm\_get\_number\_of\_rows()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+rows (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+Get the number of rows of a pattern.
+
+\begin{DoxyNote}{Nota}
+Pattern numbers go from 0 to jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+patterns(...)-\/1. 
+\end{DoxyNote}
+\mbox{\Hypertarget{jar__xm_8h_a1efab0c719a3a20e28b6d4366f941694}\label{jar__xm_8h_a1efab0c719a3a20e28b6d4366f941694}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_number\_of\_samples@{jar\_xm\_get\_number\_of\_samples}}
+\index{jar\_xm\_get\_number\_of\_samples@{jar\_xm\_get\_number\_of\_samples}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_number\_of\_samples()}{jar\_xm\_get\_number\_of\_samples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+samples (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+Get the number of samples of an instrument.
+
+\begin{DoxyNote}{Nota}
+Instrument numbers go from 1 to jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+instruments(...). 
+\end{DoxyNote}
+\mbox{\Hypertarget{jar__xm_8h_ab70523598961ee73def2477990582a70}\label{jar__xm_8h_ab70523598961ee73def2477990582a70}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_playing\_speed@{jar\_xm\_get\_playing\_speed}}
+\index{jar\_xm\_get\_playing\_speed@{jar\_xm\_get\_playing\_speed}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_playing\_speed()}{jar\_xm\_get\_playing\_speed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} jar\+\_\+xm\+\_\+get\+\_\+playing\+\_\+speed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} $\ast$}]{bpm,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} $\ast$}]{tempo }\end{DoxyParamCaption})}
+
+Get the current module speed.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em bpm} & will receive the current B\+PM \\
+\hline
+{\em tempo} & will receive the current tempo (ticks per line) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jar__xm_8h_a37c9aa55f69dd69497df3bcfae76fd69}\label{jar__xm_8h_a37c9aa55f69dd69497df3bcfae76fd69}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_position@{jar\_xm\_get\_position}}
+\index{jar\_xm\_get\_position@{jar\_xm\_get\_position}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_position()}{jar\_xm\_get\_position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} jar\+\_\+xm\+\_\+get\+\_\+position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{pattern\+\_\+index,  }\item[{\mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{pattern,  }\item[{\mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{row,  }\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} $\ast$}]{samples }\end{DoxyParamCaption})}
+
+Get the current position in the module being played.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pattern\+\_\+index} & if not N\+U\+LL, will receive the current pattern index in the P\+OT (pattern order table)\\
+\hline
+{\em pattern} & if not N\+U\+LL, will receive the current pattern number\\
+\hline
+{\em row} & if not N\+U\+LL, will receive the current row\\
+\hline
+{\em samples} & if not N\+U\+LL, will receive the total number of generated samples (divide by sample rate to get seconds of generated audio) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jar__xm_8h_ae144464b304a56ebed1b3e0e6c21c6b9}\label{jar__xm_8h_ae144464b304a56ebed1b3e0e6c21c6b9}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_remaining\_samples@{jar\_xm\_get\_remaining\_samples}}
+\index{jar\_xm\_get\_remaining\_samples@{jar\_xm\_get\_remaining\_samples}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_remaining\_samples()}{jar\_xm\_get\_remaining\_samples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} jar\+\_\+xm\+\_\+get\+\_\+remaining\+\_\+samples (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Get the number of remaining samples. Divide by 2 to get the number of individual LR data samples.
+
+\begin{DoxyNote}{Nota}
+This is the remaining number of samples before the loop starts module again, or halts if on last pass. 
+
+This function is very slow and should only be run once, if at all. 
+\end{DoxyNote}
+\mbox{\Hypertarget{jar__xm_8h_ae82a6bc44e9c4bd46d8c133c7ac08787}\label{jar__xm_8h_ae82a6bc44e9c4bd46d8c133c7ac08787}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_get\_tracker\_name@{jar\_xm\_get\_tracker\_name}}
+\index{jar\_xm\_get\_tracker\_name@{jar\_xm\_get\_tracker\_name}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_get\_tracker\_name()}{jar\_xm\_get\_tracker\_name()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ jar\+\_\+xm\+\_\+get\+\_\+tracker\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Get the tracker name as a N\+U\+L-\/terminated string. \mbox{\Hypertarget{jar__xm_8h_a834da4427caec0a504451f5197c3a06f}\label{jar__xm_8h_a834da4427caec0a504451f5197c3a06f}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_mute\_channel@{jar\_xm\_mute\_channel}}
+\index{jar\_xm\_mute\_channel@{jar\_xm\_mute\_channel}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_mute\_channel()}{jar\_xm\_mute\_channel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} jar\+\_\+xm\+\_\+mute\+\_\+channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}}]{,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{ }\end{DoxyParamCaption})}
+
+Mute or unmute a channel.
+
+\begin{DoxyNote}{Nota}
+Channel numbers go from 1 to jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+channels(...).
+\end{DoxyNote}
+\begin{DoxyReturn}{Devuelve}
+whether the channel was muted. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{jar__xm_8h_a9c806048773e699bdac60a9a0cb452f3}\label{jar__xm_8h_a9c806048773e699bdac60a9a0cb452f3}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_mute\_instrument@{jar\_xm\_mute\_instrument}}
+\index{jar\_xm\_mute\_instrument@{jar\_xm\_mute\_instrument}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_mute\_instrument()}{jar\_xm\_mute\_instrument()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} jar\+\_\+xm\+\_\+mute\+\_\+instrument (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}}]{,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{ }\end{DoxyParamCaption})}
+
+Mute or unmute an instrument.
+
+\begin{DoxyNote}{Nota}
+Instrument numbers go from 1 to jar\+\_\+xm\+\_\+get\+\_\+number\+\_\+of\+\_\+instruments(...).
+\end{DoxyNote}
+\begin{DoxyReturn}{Devuelve}
+whether the instrument was muted. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{jar__xm_8h_a1e80ee9c28af5e2c96399c397da93253}\label{jar__xm_8h_a1e80ee9c28af5e2c96399c397da93253}} 
+\index{jar\_xm.h@{jar\_xm.h}!jar\_xm\_set\_max\_loop\_count@{jar\_xm\_set\_max\_loop\_count}}
+\index{jar\_xm\_set\_max\_loop\_count@{jar\_xm\_set\_max\_loop\_count}!jar\_xm.h@{jar\_xm.h}}
+\doxysubsubsection{\texorpdfstring{jar\_xm\_set\_max\_loop\_count()}{jar\_xm\_set\_max\_loop\_count()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} jar\+\_\+xm\+\_\+set\+\_\+max\+\_\+loop\+\_\+count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jar__xm_8h_aeca179b0a221aa3c2fddefa2da4885ca}{jar\+\_\+xm\+\_\+context\+\_\+t}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{loopcnt }\end{DoxyParamCaption})}
+
+Set the maximum number of times a module can loop. After the specified number of loops, calls to jar\+\_\+xm\+\_\+generate\+\_\+samples will only generate silence. You can control the current number of loops with \mbox{\hyperlink{jar__xm_8h_aa384bac2ce9e6944894eb87b1588ece9}{jar\+\_\+xm\+\_\+get\+\_\+loop\+\_\+count()}}.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em loopcnt} & maximum number of loops. Use 0 to loop indefinitely. \\
+\hline
+\end{DoxyParams}

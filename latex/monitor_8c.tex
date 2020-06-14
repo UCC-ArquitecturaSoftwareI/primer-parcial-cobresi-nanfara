@@ -1,0 +1,117 @@
+\hypertarget{monitor_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/glfw/src/monitor.c}
+\label{monitor_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/glfw/src/monitor.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/glfw/src/monitor.c}}
+{\ttfamily \#include \char`\"{}internal.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{monitor_8c_a2a45c0c0677b73011b7364e2cdd9760d}{\+\_\+glfw\+Input\+Monitor}} (\mbox{\hyperlink{struct___g_l_f_wmonitor}{\+\_\+\+G\+L\+F\+Wmonitor}} $\ast$monitor, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} action, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} placement)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{monitor_8c_a079c865515272434dc96d0f384beda9e}{\+\_\+glfw\+Input\+Monitor\+Window}} (\mbox{\hyperlink{struct___g_l_f_wmonitor}{\+\_\+\+G\+L\+F\+Wmonitor}} $\ast$monitor, \mbox{\hyperlink{struct___g_l_f_wwindow}{\+\_\+\+G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{eglext_8h_a92dbce8e3247f6a78126c99877caacb6}{window}})
+\item 
+\mbox{\hyperlink{struct___g_l_f_wmonitor}{\+\_\+\+G\+L\+F\+Wmonitor}} $\ast$ \mbox{\hyperlink{monitor_8c_aba9010067229bd447389b85b22f15b72}{\+\_\+glfw\+Alloc\+Monitor}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14d7642df08c5cb68e4fb90cc8a73509}{name}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} width\+MM, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} height\+MM)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{monitor_8c_a5555e8488ac56b446d0a28d3330666f6}{\+\_\+glfw\+Free\+Monitor}} (\mbox{\hyperlink{struct___g_l_f_wmonitor}{\+\_\+\+G\+L\+F\+Wmonitor}} $\ast$monitor)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{monitor_8c_acb6a8b432b06fd0accdfc0e046785109}{\+\_\+glfw\+Alloc\+Gamma\+Arrays}} (\mbox{\hyperlink{struct_g_l_f_wgammaramp}{G\+L\+F\+Wgammaramp}} $\ast$ramp, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{monitor_8c_a9ec7f45d75c8b6435f49b22b86672806}{\+\_\+glfw\+Free\+Gamma\+Arrays}} (\mbox{\hyperlink{struct_g_l_f_wgammaramp}{G\+L\+F\+Wgammaramp}} $\ast$ramp)
+\item 
+const \mbox{\hyperlink{struct_g_l_f_wvidmode}{G\+L\+F\+Wvidmode}} $\ast$ \mbox{\hyperlink{monitor_8c_acf6b57bbbf447209081a27abdc00465c}{\+\_\+glfw\+Choose\+Video\+Mode}} (\mbox{\hyperlink{struct___g_l_f_wmonitor}{\+\_\+\+G\+L\+F\+Wmonitor}} $\ast$monitor, const \mbox{\hyperlink{struct_g_l_f_wvidmode}{G\+L\+F\+Wvidmode}} $\ast$desired)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{monitor_8c_aa4fbaa8f018b65095626fc495a53ba9f}{\+\_\+glfw\+Compare\+Video\+Modes}} (const \mbox{\hyperlink{struct_g_l_f_wvidmode}{G\+L\+F\+Wvidmode}} $\ast$fm, const \mbox{\hyperlink{struct_g_l_f_wvidmode}{G\+L\+F\+Wvidmode}} $\ast$sm)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{monitor_8c_a3f83dfd3a9beffeba9bac74ec15071a0}{\+\_\+glfw\+Split\+B\+PP}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} bpp, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$red, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aef30e4e3dccbffce99b7509d5366faef}{green}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ab4fcc6ff520ae4d9de259c8468a5cd93}{blue}})
+\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$$\ast$ \mbox{\hyperlink{group__monitor_ga8c78e5db186ee10d00c053faf81998af}{glfw\+Get\+Monitors}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a22486c0c8d9f7d79a07bf22ecffeeb2f}{count}})
+\begin{DoxyCompactList}\small\item\em Returns the currently connected monitors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$ \mbox{\hyperlink{group__monitor_ga34befff4f9f0fae09dd8de6fb0eb4f3e}{glfw\+Get\+Primary\+Monitor}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\begin{DoxyCompactList}\small\item\em Returns the primary monitor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{group__monitor_ga45b5481a614ad7beb2aade9746d07563}{glfw\+Get\+Monitor\+Pos}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$xpos, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$ypos)
+\begin{DoxyCompactList}\small\item\em Returns the position of the monitor\textquotesingle{}s viewport on the virtual screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{group__monitor_ga5a3ac0f6e3786df47aabccfb5760b31d}{glfw\+Get\+Monitor\+Workarea}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$xpos, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$ypos, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}})
+\begin{DoxyCompactList}\small\item\em Retrieves the work area of the monitor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{group__monitor_gad0e93a9e42b32394369cabbbdc1ab702}{glfw\+Get\+Monitor\+Physical\+Size}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$width\+MM, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$height\+MM)
+\begin{DoxyCompactList}\small\item\em Returns the physical size of the monitor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{group__monitor_ga28d856d94bea2ce8f09a67bb0346aaff}{glfw\+Get\+Monitor\+Content\+Scale}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}}, float $\ast$xscale, float $\ast$yscale)
+\begin{DoxyCompactList}\small\item\em Retrieves the content scale for the specified monitor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{group__monitor_ga6d0ee079c807cd123b56dc3fc01e8fd9}{glfw\+Get\+Monitor\+Name}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}})
+\begin{DoxyCompactList}\small\item\em Returns the name of the specified monitor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{group__monitor_ga6d89c74c1c293f0ab78a00c3c6d1ae44}{glfw\+Set\+Monitor\+User\+Pointer}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}}, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aca2093d4756bde9a55b94e9ff8d9c623}{pointer}})
+\begin{DoxyCompactList}\small\item\em Sets the user pointer of the specified monitor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{group__monitor_ga13cb11e8f507dbc477e10a040f0fad7f}{glfw\+Get\+Monitor\+User\+Pointer}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}})
+\begin{DoxyCompactList}\small\item\em Returns the user pointer of the specified monitor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{group__monitor_gacc7165513fd258601c4cb763c1369693}{G\+L\+F\+Wmonitorfun}} \mbox{\hyperlink{group__monitor_gacfa9978e57c73670577d530df23bf275}{glfw\+Set\+Monitor\+Callback}} (\mbox{\hyperlink{group__monitor_gacc7165513fd258601c4cb763c1369693}{G\+L\+F\+Wmonitorfun}} cbfun)
+\begin{DoxyCompactList}\small\item\em Sets the monitor configuration callback. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} const \mbox{\hyperlink{struct_g_l_f_wvidmode}{G\+L\+F\+Wvidmode}} $\ast$ \mbox{\hyperlink{group__monitor_ga7eaea6132f15e9b5d47eb94f88547f79}{glfw\+Get\+Video\+Modes}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a22486c0c8d9f7d79a07bf22ecffeeb2f}{count}})
+\begin{DoxyCompactList}\small\item\em Returns the available video modes for the specified monitor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} const \mbox{\hyperlink{struct_g_l_f_wvidmode}{G\+L\+F\+Wvidmode}} $\ast$ \mbox{\hyperlink{group__monitor_ga21f7f60de4f4d0fa360c7ad159b75c9e}{glfw\+Get\+Video\+Mode}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}})
+\begin{DoxyCompactList}\small\item\em Returns the current mode of the specified monitor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{group__monitor_ga3e4ab484476c935b4cd0bf49a5c429d6}{glfw\+Set\+Gamma}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}}, float gamma)
+\begin{DoxyCompactList}\small\item\em Generates a gamma ramp and sets it for the specified monitor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} const \mbox{\hyperlink{struct_g_l_f_wgammaramp}{G\+L\+F\+Wgammaramp}} $\ast$ \mbox{\hyperlink{group__monitor_gafe7b41852c1a14fe978f0e5381969885}{glfw\+Get\+Gamma\+Ramp}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}})
+\begin{DoxyCompactList}\small\item\em Returns the current gamma ramp for the specified monitor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{group__monitor_gac9f36a1cfa10eab191d3029ea8bc9558}{glfw\+Set\+Gamma\+Ramp}} (\mbox{\hyperlink{group__monitor_ga8d9efd1cde9426692c73fe40437d0ae3}{G\+L\+F\+Wmonitor}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}}, const \mbox{\hyperlink{struct_g_l_f_wgammaramp}{G\+L\+F\+Wgammaramp}} $\ast$ramp)
+\begin{DoxyCompactList}\small\item\em Sets the current gamma ramp for the specified monitor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{monitor_8c_acb6a8b432b06fd0accdfc0e046785109}\label{monitor_8c_acb6a8b432b06fd0accdfc0e046785109}} 
+\index{monitor.c@{monitor.c}!\_glfwAllocGammaArrays@{\_glfwAllocGammaArrays}}
+\index{\_glfwAllocGammaArrays@{\_glfwAllocGammaArrays}!monitor.c@{monitor.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwAllocGammaArrays()}{\_glfwAllocGammaArrays()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \+\_\+glfw\+Alloc\+Gamma\+Arrays (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_g_l_f_wgammaramp}{G\+L\+F\+Wgammaramp}} $\ast$}]{ramp,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{monitor_8c_aba9010067229bd447389b85b22f15b72}\label{monitor_8c_aba9010067229bd447389b85b22f15b72}} 
+\index{monitor.c@{monitor.c}!\_glfwAllocMonitor@{\_glfwAllocMonitor}}
+\index{\_glfwAllocMonitor@{\_glfwAllocMonitor}!monitor.c@{monitor.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwAllocMonitor()}{\_glfwAllocMonitor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct___g_l_f_wmonitor}{\+\_\+\+G\+L\+F\+Wmonitor}}$\ast$ \+\_\+glfw\+Alloc\+Monitor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{name,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width\+MM,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height\+MM }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{monitor_8c_acf6b57bbbf447209081a27abdc00465c}\label{monitor_8c_acf6b57bbbf447209081a27abdc00465c}} 
+\index{monitor.c@{monitor.c}!\_glfwChooseVideoMode@{\_glfwChooseVideoMode}}
+\index{\_glfwChooseVideoMode@{\_glfwChooseVideoMode}!monitor.c@{monitor.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwChooseVideoMode()}{\_glfwChooseVideoMode()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_g_l_f_wvidmode}{G\+L\+F\+Wvidmode}}$\ast$ \+\_\+glfw\+Choose\+Video\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct___g_l_f_wmonitor}{\+\_\+\+G\+L\+F\+Wmonitor}} $\ast$}]{monitor,  }\item[{const \mbox{\hyperlink{struct_g_l_f_wvidmode}{G\+L\+F\+Wvidmode}} $\ast$}]{desired }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{monitor_8c_aa4fbaa8f018b65095626fc495a53ba9f}\label{monitor_8c_aa4fbaa8f018b65095626fc495a53ba9f}} 
+\index{monitor.c@{monitor.c}!\_glfwCompareVideoModes@{\_glfwCompareVideoModes}}
+\index{\_glfwCompareVideoModes@{\_glfwCompareVideoModes}!monitor.c@{monitor.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwCompareVideoModes()}{\_glfwCompareVideoModes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \+\_\+glfw\+Compare\+Video\+Modes (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_g_l_f_wvidmode}{G\+L\+F\+Wvidmode}} $\ast$}]{fm,  }\item[{const \mbox{\hyperlink{struct_g_l_f_wvidmode}{G\+L\+F\+Wvidmode}} $\ast$}]{sm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{monitor_8c_a9ec7f45d75c8b6435f49b22b86672806}\label{monitor_8c_a9ec7f45d75c8b6435f49b22b86672806}} 
+\index{monitor.c@{monitor.c}!\_glfwFreeGammaArrays@{\_glfwFreeGammaArrays}}
+\index{\_glfwFreeGammaArrays@{\_glfwFreeGammaArrays}!monitor.c@{monitor.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwFreeGammaArrays()}{\_glfwFreeGammaArrays()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \+\_\+glfw\+Free\+Gamma\+Arrays (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_g_l_f_wgammaramp}{G\+L\+F\+Wgammaramp}} $\ast$}]{ramp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{monitor_8c_a5555e8488ac56b446d0a28d3330666f6}\label{monitor_8c_a5555e8488ac56b446d0a28d3330666f6}} 
+\index{monitor.c@{monitor.c}!\_glfwFreeMonitor@{\_glfwFreeMonitor}}
+\index{\_glfwFreeMonitor@{\_glfwFreeMonitor}!monitor.c@{monitor.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwFreeMonitor()}{\_glfwFreeMonitor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \+\_\+glfw\+Free\+Monitor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct___g_l_f_wmonitor}{\+\_\+\+G\+L\+F\+Wmonitor}} $\ast$}]{monitor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{monitor_8c_a2a45c0c0677b73011b7364e2cdd9760d}\label{monitor_8c_a2a45c0c0677b73011b7364e2cdd9760d}} 
+\index{monitor.c@{monitor.c}!\_glfwInputMonitor@{\_glfwInputMonitor}}
+\index{\_glfwInputMonitor@{\_glfwInputMonitor}!monitor.c@{monitor.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwInputMonitor()}{\_glfwInputMonitor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \+\_\+glfw\+Input\+Monitor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct___g_l_f_wmonitor}{\+\_\+\+G\+L\+F\+Wmonitor}} $\ast$}]{monitor,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{action,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{placement }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{monitor_8c_a079c865515272434dc96d0f384beda9e}\label{monitor_8c_a079c865515272434dc96d0f384beda9e}} 
+\index{monitor.c@{monitor.c}!\_glfwInputMonitorWindow@{\_glfwInputMonitorWindow}}
+\index{\_glfwInputMonitorWindow@{\_glfwInputMonitorWindow}!monitor.c@{monitor.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwInputMonitorWindow()}{\_glfwInputMonitorWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \+\_\+glfw\+Input\+Monitor\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct___g_l_f_wmonitor}{\+\_\+\+G\+L\+F\+Wmonitor}} $\ast$}]{monitor,  }\item[{\mbox{\hyperlink{struct___g_l_f_wwindow}{\+\_\+\+G\+L\+F\+Wwindow}} $\ast$}]{window }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{monitor_8c_a3f83dfd3a9beffeba9bac74ec15071a0}\label{monitor_8c_a3f83dfd3a9beffeba9bac74ec15071a0}} 
+\index{monitor.c@{monitor.c}!\_glfwSplitBPP@{\_glfwSplitBPP}}
+\index{\_glfwSplitBPP@{\_glfwSplitBPP}!monitor.c@{monitor.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwSplitBPP()}{\_glfwSplitBPP()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \+\_\+glfw\+Split\+B\+PP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{bpp,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{red,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{green,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{blue }\end{DoxyParamCaption})}
+

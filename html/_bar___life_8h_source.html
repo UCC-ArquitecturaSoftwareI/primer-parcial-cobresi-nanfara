@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Fichero Fuente clases/Bar_Life.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_02fe6bb0d29b159db6747b11f409a1ef.html">clases</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Bar_Life.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_bar___life_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by Abril on 1/5/2020.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_BAR_LIFE_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_BAR_LIFE_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classbar_life.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbar_life.html">barLife</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="examples_2others_2external_2include_2glad_8h.html#aedd0ea77029b98ce91e47c19addcb68f">height</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="examples_2others_2external_2include_2glad_8h.html#a3ce386e55bbeb900c1b23e064b89bd04">width</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> progress;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> status; <span class="comment">// = 0(inicio); =1(jugando); =-1(perdido)</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> step;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="struct_vector2.html">Vector2</a> position;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classbar_life.html#a9e90ba08413227603203d4c68a165ac9">barLife</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classbar_life.html#a6f3f4b54877b114fddec918dcce7f0a3">operator--</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classbar_life.html#ad0c0cbfd247e777820f21cb3c7902729">operator++</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classbar_life.html#a3171715ca17f9ae752b95021a4c2c246">getprogress</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classbar_life.html#a829e96f609c92c73666ad61b5a086708">drawBarLife</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classbar_life.html#a2dfd89a8268a713bd9f0e813d50209bc">setStatus</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classbar_life.html#ab8cc512bcab93b662f1f25e8d86925bf">getStatus</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_BAR_LIFE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassbar_life_html_a2dfd89a8268a713bd9f0e813d50209bc"><div class="ttname"><a href="classbar_life.html#a2dfd89a8268a713bd9f0e813d50209bc">barLife::setStatus</a></div><div class="ttdeci">void setStatus(int)</div><div class="ttdef"><b>Definition:</b> Bar_Life.cpp:48</div></div>
+<div class="ttc" id="aclassbar_life_html_ab8cc512bcab93b662f1f25e8d86925bf"><div class="ttname"><a href="classbar_life.html#ab8cc512bcab93b662f1f25e8d86925bf">barLife::getStatus</a></div><div class="ttdeci">int getStatus()</div><div class="ttdef"><b>Definition:</b> Bar_Life.cpp:56</div></div>
+<div class="ttc" id="aexamples_2others_2external_2include_2glad_8h_html_aedd0ea77029b98ce91e47c19addcb68f"><div class="ttname"><a href="examples_2others_2external_2include_2glad_8h.html#aedd0ea77029b98ce91e47c19addcb68f">height</a></div><div class="ttdeci">GLint GLsizei GLsizei height</div><div class="ttdef"><b>Definition:</b> glad.h:1004</div></div>
+<div class="ttc" id="aclassbar_life_html_a9e90ba08413227603203d4c68a165ac9"><div class="ttname"><a href="classbar_life.html#a9e90ba08413227603203d4c68a165ac9">barLife::barLife</a></div><div class="ttdeci">barLife()</div><div class="ttdef"><b>Definition:</b> Bar_Life.cpp:4</div></div>
+<div class="ttc" id="aexamples_2others_2external_2include_2glad_8h_html_a3ce386e55bbeb900c1b23e064b89bd04"><div class="ttname"><a href="examples_2others_2external_2include_2glad_8h.html#a3ce386e55bbeb900c1b23e064b89bd04">width</a></div><div class="ttdeci">GLint GLsizei width</div><div class="ttdef"><b>Definition:</b> glad.h:1004</div></div>
+<div class="ttc" id="aclassbar_life_html_ad0c0cbfd247e777820f21cb3c7902729"><div class="ttname"><a href="classbar_life.html#ad0c0cbfd247e777820f21cb3c7902729">barLife::operator++</a></div><div class="ttdeci">void operator++()</div><div class="ttdef"><b>Definition:</b> Bar_Life.cpp:18</div></div>
+<div class="ttc" id="aclassbar_life_html_a829e96f609c92c73666ad61b5a086708"><div class="ttname"><a href="classbar_life.html#a829e96f609c92c73666ad61b5a086708">barLife::drawBarLife</a></div><div class="ttdeci">void drawBarLife()</div><div class="ttdef"><b>Definition:</b> Bar_Life.cpp:29</div></div>
+<div class="ttc" id="astruct_vector2_html"><div class="ttname"><a href="struct_vector2.html">Vector2</a></div><div class="ttdef"><b>Definition:</b> raylib.h:171</div></div>
+<div class="ttc" id="aclassbar_life_html_a3171715ca17f9ae752b95021a4c2c246"><div class="ttname"><a href="classbar_life.html#a3171715ca17f9ae752b95021a4c2c246">barLife::getprogress</a></div><div class="ttdeci">int getprogress()</div><div class="ttdef"><b>Definition:</b> Bar_Life.cpp:25</div></div>
+<div class="ttc" id="aclassbar_life_html_a6f3f4b54877b114fddec918dcce7f0a3"><div class="ttname"><a href="classbar_life.html#a6f3f4b54877b114fddec918dcce7f0a3">barLife::operator--</a></div><div class="ttdeci">void operator--()</div><div class="ttdef"><b>Definition:</b> Bar_Life.cpp:14</div></div>
+<div class="ttc" id="aclassbar_life_html"><div class="ttname"><a href="classbar_life.html">barLife</a></div><div class="ttdef"><b>Definition:</b> Bar_Life.h:11</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

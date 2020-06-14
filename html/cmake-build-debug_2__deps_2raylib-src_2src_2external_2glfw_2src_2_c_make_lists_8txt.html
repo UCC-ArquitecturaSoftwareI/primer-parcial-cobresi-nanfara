@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo cmake-build-debug/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:afd80580aa09748c20cccbfc6e8fa1b21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#afd80580aa09748c20cccbfc6e8fa1b21">set</a> (common_HEADERS internal.h mappings.h &quot;${GLFW_BINARY_DIR}/<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a72e0fdf0f845ded60b1fada9e9195cd7">src</a>/glfw_config.h&quot; &quot;${GLFW_SOURCE_DIR}/<a class="el" href="_c_make_options_8txt.html#aadfc06abff110d4abc4cdc452662ba42">include</a>/GLFW/glfw3.h&quot; &quot;${GLFW_SOURCE_DIR}/<a class="el" href="_c_make_options_8txt.html#aadfc06abff110d4abc4cdc452662ba42">include</a>/GLFW/glfw3native.h&quot;) set(common_SOURCES context.c init.c input.c monitor.c vulkan.c window.c) <a class="el" href="_c_make_options_8txt.html#acdb84c6949c566445fe9a245916e060b">if</a>(_GLFW_COCOA) <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a>(glfw_HEADERS $</td></tr>
+<tr class="separator:afd80580aa09748c20cccbfc6e8fa1b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa831136a8a7ce97723b8533a129265b9"><td class="memItemLeft" align="right" valign="top">cocoa_platform h cocoa_joystick h posix_thread h nsgl_context h egl_context h osmesa_context h&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#aa831136a8a7ce97723b8533a129265b9">set</a> (glfw_SOURCES ${common_SOURCES} cocoa_init.m cocoa_joystick.m cocoa_monitor.m cocoa_window.m cocoa_time.c posix_thread.c nsgl_context.m egl_context.c osmesa_context.c) elseif(<a class="el" href="glfw__config_8h.html#acb8519a61091889acf8f79e9b3ffdcfb">_GLFW_WIN32</a>) <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a>(glfw_HEADERS $</td></tr>
+<tr class="separator:aa831136a8a7ce97723b8533a129265b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ec332c7fb9baf4a40cd09617b30345"><td class="memItemLeft" align="right" valign="top">win32_platform h win32_joystick h wgl_context h egl_context h osmesa_context h&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a58ec332c7fb9baf4a40cd09617b30345">set</a> (glfw_SOURCES ${common_SOURCES} win32_init.c win32_joystick.c win32_monitor.c win32_time.c win32_thread.c win32_window.c wgl_context.c egl_context.c osmesa_context.c) elseif(_GLFW_X11) <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a>(glfw_HEADERS $</td></tr>
+<tr class="separator:a58ec332c7fb9baf4a40cd09617b30345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a0dd3f5bcce12398c61de11efe6741"><td class="memItemLeft" align="right" valign="top">x11_platform h xkb_unicode h posix_time h posix_thread h glx_context h egl_context h osmesa_context h&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a85a0dd3f5bcce12398c61de11efe6741">set</a> (glfw_SOURCES ${common_SOURCES} x11_init.c x11_monitor.c x11_window.c xkb_unicode.c posix_time.c posix_thread.c glx_context.c egl_context.c osmesa_context.c) elseif(_GLFW_WAYLAND) <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a>(glfw_HEADERS $</td></tr>
+<tr class="separator:a85a0dd3f5bcce12398c61de11efe6741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0463f12dba81b366362000d05885fb13"><td class="memItemLeft" align="right" valign="top">wl_platform h posix_time h posix_thread h xkb_unicode h egl_context h osmesa_context h&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a0463f12dba81b366362000d05885fb13">set</a> (glfw_SOURCES ${common_SOURCES} wl_init.c wl_monitor.c wl_window.c posix_time.c posix_thread.c xkb_unicode.c egl_context.c osmesa_context.c) <a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a48734e9d94da7c71db7f7437a473bd1e">ecm_add_wayland_client_protocol</a>(glfw_SOURCES PROTOCOL &quot;$</td></tr>
+<tr class="separator:a0463f12dba81b366362000d05885fb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8b3b4bedfc31c9f564b4d2c240101a"><td class="memItemLeft" align="right" valign="top">stable xdg shell xdg shell xml BASENAME xdg shell&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#aae8b3b4bedfc31c9f564b4d2c240101a">ecm_add_wayland_client_protocol</a> (glfw_SOURCES PROTOCOL &quot;${WAYLAND_PROTOCOLS_PKGDATADIR}/unstable/xdg-decoration/xdg-decoration-unstable-v1.xml&quot; BASENAME xdg-decoration) ecm_add_wayland_client_protocol(glfw_SOURCES PROTOCOL &quot;$</td></tr>
+<tr class="separator:aae8b3b4bedfc31c9f564b4d2c240101a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6862234b687cf52df2266b2b24f95bb5"><td class="memItemLeft" align="right" valign="top">stable viewporter viewporter xml BASENAME viewporter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a6862234b687cf52df2266b2b24f95bb5">ecm_add_wayland_client_protocol</a> (glfw_SOURCES PROTOCOL &quot;${WAYLAND_PROTOCOLS_PKGDATADIR}/unstable/relative-<a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a>/relative-<a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a>-unstable-v1.xml&quot; BASENAME relative-<a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a>-unstable-<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0779c3b73f9aa3a0ac5b0139b5d291d9">v1</a>) ecm_add_wayland_client_protocol(glfw_SOURCES PROTOCOL &quot;$</td></tr>
+<tr class="separator:a6862234b687cf52df2266b2b24f95bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48734e9d94da7c71db7f7437a473bd1e"><td class="memItemLeft" align="right" valign="top">unstable <a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a> constraints <a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a> constraints unstable <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0779c3b73f9aa3a0ac5b0139b5d291d9">v1</a> xml BASENAME <a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a> constraints unstable <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0779c3b73f9aa3a0ac5b0139b5d291d9">v1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a48734e9d94da7c71db7f7437a473bd1e">ecm_add_wayland_client_protocol</a> (glfw_SOURCES PROTOCOL &quot;${WAYLAND_PROTOCOLS_PKGDATADIR}/unstable/idle-inhibit/idle-inhibit-unstable-v1.xml&quot; BASENAME idle-inhibit-unstable-<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0779c3b73f9aa3a0ac5b0139b5d291d9">v1</a>) elseif(_GLFW_OSMESA) <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a>(glfw_HEADERS $</td></tr>
+<tr class="separator:a48734e9d94da7c71db7f7437a473bd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04454ef62f38f61d6f9e5b368c518c6f"><td class="memItemLeft" align="right" valign="top">null_platform h null_joystick h posix_time h posix_thread h osmesa_context h&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a04454ef62f38f61d6f9e5b368c518c6f">set</a> (glfw_SOURCES ${common_SOURCES} null_init.c null_monitor.c null_window.c null_joystick.c posix_time.c posix_thread.c osmesa_context.c) <a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a513c946a90957d8fda59c2e295e12780">endif</a>() <a class="el" href="_c_make_options_8txt.html#acdb84c6949c566445fe9a245916e060b">if</a>(_GLFW_X11 <a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a3fc64224cbc88f137edd42bdac4ed82c">OR</a> _GLFW_WAYLAND) <a class="el" href="_c_make_options_8txt.html#acdb84c6949c566445fe9a245916e060b">if</a>(&quot;$</td></tr>
+<tr class="separator:a04454ef62f38f61d6f9e5b368c518c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af105d10f8009ffd8ae2560311d187db9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2_c_make_lists_8txt.html#a8b048968c5d8ab8e230ed4954d8cfb91">STREQUAL</a> Linux&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#af105d10f8009ffd8ae2560311d187db9">set</a> (glfw_HEADERS ${glfw_HEADERS} linux_joystick.h) <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a>(glfw_SOURCES $</td></tr>
+<tr class="separator:af105d10f8009ffd8ae2560311d187db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a2bcb8c966f6d717c985e69ebb1899"><td class="memItemLeft" align="right" valign="top">linux_joystick c&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a61a2bcb8c966f6d717c985e69ebb1899">else</a> () <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a>(glfw_HEADERS $</td></tr>
+<tr class="separator:a61a2bcb8c966f6d717c985e69ebb1899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4ca7b441ef6681b74663df23b2ee97"><td class="memItemLeft" align="right" valign="top">null_joystick h&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a4b4ca7b441ef6681b74663df23b2ee97">set</a> (glfw_SOURCES ${glfw_SOURCES} null_joystick.c) <a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a513c946a90957d8fda59c2e295e12780">endif</a>() <a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a513c946a90957d8fda59c2e295e12780">endif</a>() <a class="el" href="_c_make_options_8txt.html#acdb84c6949c566445fe9a245916e060b">if</a>(APPLE) set_source_files_properties($</td></tr>
+<tr class="separator:a4b4ca7b441ef6681b74663df23b2ee97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513c946a90957d8fda59c2e295e12780"><td class="memItemLeft" align="right" valign="top">PROPERTIES LANGUAGE C&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a513c946a90957d8fda59c2e295e12780">endif</a> () <a class="el" href="_c_make_options_8txt.html#acdb84c6949c566445fe9a245916e060b">if</a>(&quot;$</td></tr>
+<tr class="separator:a513c946a90957d8fda59c2e295e12780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3fc64224cbc88f137edd42bdac4ed82c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2_c_make_lists_8txt.html#a8b048968c5d8ab8e230ed4954d8cfb91">STREQUAL</a> GNU&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2src_2_c_make_lists_8txt.html#a3fc64224cbc88f137edd42bdac4ed82c">OR</a></td></tr>
+<tr class="separator:a3fc64224cbc88f137edd42bdac4ed82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a48734e9d94da7c71db7f7437a473bd1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48734e9d94da7c71db7f7437a473bd1e">&#9670;&nbsp;</a></span>ecm_add_wayland_client_protocol() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unstable <a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a> constraints <a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a> constraints unstable <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0779c3b73f9aa3a0ac5b0139b5d291d9">v1</a> xml BASENAME <a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a> constraints unstable <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0779c3b73f9aa3a0ac5b0139b5d291d9">v1</a> ecm_add_wayland_client_protocol </td>
+          <td>(</td>
+          <td class="paramtype">glfw_SOURCES PROTOCOL &quot;${WAYLAND_PROTOCOLS_PKGDATADIR}/unstable/idle-inhibit/idle-inhibit-unstable-v1.xml&quot; BASENAME idle-inhibit-unstable-&#160;</td>
+          <td class="paramname"><em>v1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6862234b687cf52df2266b2b24f95bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6862234b687cf52df2266b2b24f95bb5">&#9670;&nbsp;</a></span>ecm_add_wayland_client_protocol() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stable viewporter viewporter xml BASENAME viewporter ecm_add_wayland_client_protocol </td>
+          <td>(</td>
+          <td class="paramtype">glfw_SOURCES PROTOCOL &quot;${WAYLAND_PROTOCOLS_PKGDATADIR}/unstable/relative-<a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a>/relative-<a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a>-unstable-v1.xml&quot; BASENAME relative-<a class="el" href="examples_2others_2external_2include_2glad_8h.html#aca2093d4756bde9a55b94e9ff8d9c623">pointer</a>-unstable-&#160;</td>
+          <td class="paramname"><em>v1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae8b3b4bedfc31c9f564b4d2c240101a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae8b3b4bedfc31c9f564b4d2c240101a">&#9670;&nbsp;</a></span>ecm_add_wayland_client_protocol() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stable xdg shell xdg shell xml BASENAME xdg shell ecm_add_wayland_client_protocol </td>
+          <td>(</td>
+          <td class="paramtype">glfw_SOURCES PROTOCOL &quot;${WAYLAND_PROTOCOLS_PKGDATADIR}/unstable/xdg-decoration/xdg-decoration-unstable-v1.xml&quot; BASENAME xdg-&#160;</td>
+          <td class="paramname"><em>decoration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61a2bcb8c966f6d717c985e69ebb1899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a2bcb8c966f6d717c985e69ebb1899">&#9670;&nbsp;</a></span>else()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">linux_joystick c else </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a513c946a90957d8fda59c2e295e12780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513c946a90957d8fda59c2e295e12780">&#9670;&nbsp;</a></span>endif()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PROPERTIES LANGUAGE C endif </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd80580aa09748c20cccbfc6e8fa1b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd80580aa09748c20cccbfc6e8fa1b21">&#9670;&nbsp;</a></span>set() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a> </td>
+          <td>(</td>
+          <td class="paramtype">common_HEADERS internal.h mappings.h &quot;${GLFW_BINARY_DIR}/<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a72e0fdf0f845ded60b1fada9e9195cd7">src</a>/glfw_config.h&quot; &quot;${GLFW_SOURCE_DIR}/<a class="el" href="_c_make_options_8txt.html#aadfc06abff110d4abc4cdc452662ba42">include</a>/GLFW/glfw3.h&quot; &quot;${GLFW_SOURCE_DIR}/<a class="el" href="_c_make_options_8txt.html#aadfc06abff110d4abc4cdc452662ba42">include</a>/GLFW/glfw3native.h&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af105d10f8009ffd8ae2560311d187db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af105d10f8009ffd8ae2560311d187db9">&#9670;&nbsp;</a></span>set() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2_c_make_lists_8txt.html#a8b048968c5d8ab8e230ed4954d8cfb91">STREQUAL</a> Linux <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a> </td>
+          <td>(</td>
+          <td class="paramtype">glfw_HEADERS ${glfw_HEADERS} linux_joystick.&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa831136a8a7ce97723b8533a129265b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa831136a8a7ce97723b8533a129265b9">&#9670;&nbsp;</a></span>set() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cocoa_platform h cocoa_joystick h posix_thread h nsgl_context h egl_context h osmesa_context h <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a> </td>
+          <td>(</td>
+          <td class="paramtype">glfw_SOURCES ${common_SOURCES} cocoa_init.m cocoa_joystick.m cocoa_monitor.m cocoa_window.m cocoa_time.c posix_thread.c nsgl_context.m egl_context.c osmesa_context.&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04454ef62f38f61d6f9e5b368c518c6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04454ef62f38f61d6f9e5b368c518c6f">&#9670;&nbsp;</a></span>set() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">null_platform h null_joystick h posix_time h posix_thread h osmesa_context h <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a> </td>
+          <td>(</td>
+          <td class="paramtype">glfw_SOURCES ${common_SOURCES} null_init.c null_monitor.c null_window.c null_joystick.c posix_time.c posix_thread.c osmesa_context.&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58ec332c7fb9baf4a40cd09617b30345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58ec332c7fb9baf4a40cd09617b30345">&#9670;&nbsp;</a></span>set() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">win32_platform h win32_joystick h wgl_context h egl_context h osmesa_context h <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a> </td>
+          <td>(</td>
+          <td class="paramtype">glfw_SOURCES ${common_SOURCES} win32_init.c win32_joystick.c win32_monitor.c win32_time.c win32_thread.c win32_window.c wgl_context.c egl_context.c osmesa_context.&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0463f12dba81b366362000d05885fb13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0463f12dba81b366362000d05885fb13">&#9670;&nbsp;</a></span>set() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wl_platform h posix_time h posix_thread h xkb_unicode h egl_context h osmesa_context h <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a> </td>
+          <td>(</td>
+          <td class="paramtype">glfw_SOURCES ${common_SOURCES} wl_init.c wl_monitor.c wl_window.c posix_time.c posix_thread.c xkb_unicode.c egl_context.c osmesa_context.&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85a0dd3f5bcce12398c61de11efe6741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85a0dd3f5bcce12398c61de11efe6741">&#9670;&nbsp;</a></span>set() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">x11_platform h xkb_unicode h posix_time h posix_thread h glx_context h egl_context h osmesa_context h <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a> </td>
+          <td>(</td>
+          <td class="paramtype">glfw_SOURCES ${common_SOURCES} x11_init.c x11_monitor.c x11_window.c xkb_unicode.c posix_time.c posix_thread.c glx_context.c egl_context.c osmesa_context.&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b4ca7b441ef6681b74663df23b2ee97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4ca7b441ef6681b74663df23b2ee97">&#9670;&nbsp;</a></span>set() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">null_joystick h <a class="el" href="eglext_8h.html#aeff0e04220766bdd67e3a38ffa302e1c">set</a> </td>
+          <td>(</td>
+          <td class="paramtype">glfw_SOURCES ${glfw_SOURCES} null_joystick.&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a3fc64224cbc88f137edd42bdac4ed82c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fc64224cbc88f137edd42bdac4ed82c">&#9670;&nbsp;</a></span>OR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2_c_make_lists_8txt.html#a8b048968c5d8ab8e230ed4954d8cfb91">STREQUAL</a> GNU OR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

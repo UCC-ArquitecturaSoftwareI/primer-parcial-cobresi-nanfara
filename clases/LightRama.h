@@ -1,50 +1,62 @@
-//
-// Created by Abril on 4/5/2020.
-//
+
+/**
+ * @title       Clase LightMonkey
+ * @file        LightMonkey.h
+ * @version     1.0
+ * @date        4/5/2020
+ * @author      Ticiana Cobresi Serravalle
+ * @author      Nara Abril Nanfara
+ */
 
 #ifndef RAYLIBTEMPLATE_LIGHTRAMA_H
 #define RAYLIBTEMPLATE_LIGHTRAMA_H
+
 #include "Rama.h"
 #include "Visitor.h"
 #include "Visitable.h"
 
-
-class LightRama: public Rama {
+/**
+ * @class LightRama
+ * @brief Clase que representa a las ramas en su tema "light"
+ */
+class LightRama : public Rama {
 public:
-    LightRama(int lado1, int sector1):Rama(lado1, sector1)
-    {
-	GetRectangle();
-        Draw();
-    }
-    void Move() override
-    {
-    int newlado;
-    int newdiseno;
-    if (rama_sector == 4) {
-        rama_sector = 1; //podemos poner que cambie el color
-        newlado = GetRandomValue(0, 1);
-        if (newlado == 0)
-            lado = -1;
-        else
-            lado =1;
-        newdiseno = GetRandomValue(0,9);
-        if (newdiseno < 7)
-            animal = false;
-        else
-            animal = true;
-        GetRectangle();
 
+    /**
+     * @brief constructor de la clase LightRama
+     * @param lado1 Lado en el que se va a construir la rama
+     * @param sector1 Sector en el que se va a construir la rama
+     */
+    LightRama( int lado1 , int sector1 ) : Rama( lado1 , sector1 ) {
+        GetRectangle( );
+        Draw( );
     }
-    else
-        rama_sector = rama_sector +1;
-        Draw();
-    }
-    void Accept(Visitor & v) {
-        v.Visit(*this);
-    }
- 	void Draw();
 
-	void GetRectangle();
+    /**
+     * @brief cambia a la LightRama de posicion
+     */
+    void Move( ) override;
+
+    /**
+     * Funcion de aceptacion a un visitante
+     * @param v
+     */
+    void Accept( Visitor & v ) override {
+        v.Visit( * this );
+    }
+
+    /**
+     * @brief grafica la LightRama en pantalla
+     */
+    void Draw( ) override;
+
+    /**
+     * @details dependiendo de los atributos de la rama, calcula las
+     * coordenadas del rectangulo de la textura correspondiente y las coloca
+     * como el nuevo valor del atributo rect de la rama, esto permite, por ejemplo,
+     * que la imagen de la rama cambie de vacia a con animales.
+     */
+    void GetRectangle( ) override;
 };
 
 

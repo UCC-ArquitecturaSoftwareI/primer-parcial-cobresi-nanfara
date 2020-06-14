@@ -1,0 +1,121 @@
+\hypertarget{light__my__ritual_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/light\+\_\+my\+\_\+ritual/light\+\_\+my\+\_\+ritual.c}
+\label{light__my__ritual_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/light\_my\_ritual/light\_my\_ritual.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/light\_my\_ritual/light\_my\_ritual.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}screens/screens.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{light__my__ritual_8c_a6598ae37155d8d2a090dc7d59b6e7002}{Transition\+To\+Screen}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} screen)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{light__my__ritual_8c_a288ceec21a2d974c59ccee5b06cc61b1}{Change\+To\+Screen}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} screen)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{light__my__ritual_8c_a629dcff3ba612850a8f6e85da23a62fa}{Update\+Transition}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{light__my__ritual_8c_a2a7ae6ed88cf89fc32fc3d90488aaea4}{Draw\+Transition}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{light__my__ritual_8c_a5cf2c5a446b66f83cbeb6885fc64bfb0}{Update\+Draw\+Frame}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{light__my__ritual_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{light__my__ritual_8c_a7242fea9327c0747b47801c13f4e05c9}{screen\+Width}} = 1280
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{light__my__ritual_8c_a8897ff6127a397a8ee4ea76976f8534d}{screen\+Height}} = 720
+\item 
+float \mbox{\hyperlink{light__my__ritual_8c_a01cc73be154dfd41292aa40b2a02924a}{trans\+Alpha}} = 0
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{light__my__ritual_8c_aa0752f175e6efad2c51e995f735ab445}{on\+Transition}} = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{light__my__ritual_8c_a6fcccbcee61ee5c09856d1dab463a439}{trans\+Fade\+Out}} = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{light__my__ritual_8c_ada40daf232547a56448a044700201194}{trans\+From\+Screen}} = -\/1
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{light__my__ritual_8c_aae570020b16ebb5b9749d51f2796b666}{trans\+To\+Screen}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{light__my__ritual_8c_a288ceec21a2d974c59ccee5b06cc61b1}\label{light__my__ritual_8c_a288ceec21a2d974c59ccee5b06cc61b1}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!ChangeToScreen@{ChangeToScreen}}
+\index{ChangeToScreen@{ChangeToScreen}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{ChangeToScreen()}{ChangeToScreen()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Change\+To\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{screen }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{light__my__ritual_8c_a2a7ae6ed88cf89fc32fc3d90488aaea4}\label{light__my__ritual_8c_a2a7ae6ed88cf89fc32fc3d90488aaea4}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!DrawTransition@{DrawTransition}}
+\index{DrawTransition@{DrawTransition}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{DrawTransition()}{DrawTransition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{light__my__ritual_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{light__my__ritual_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!main@{main}}
+\index{main@{main}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{light__my__ritual_8c_a6598ae37155d8d2a090dc7d59b6e7002}\label{light__my__ritual_8c_a6598ae37155d8d2a090dc7d59b6e7002}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!TransitionToScreen@{TransitionToScreen}}
+\index{TransitionToScreen@{TransitionToScreen}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{TransitionToScreen()}{TransitionToScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Transition\+To\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{screen }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{light__my__ritual_8c_a5cf2c5a446b66f83cbeb6885fc64bfb0}\label{light__my__ritual_8c_a5cf2c5a446b66f83cbeb6885fc64bfb0}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!UpdateDrawFrame@{UpdateDrawFrame}}
+\index{UpdateDrawFrame@{UpdateDrawFrame}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{UpdateDrawFrame()}{UpdateDrawFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Draw\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{light__my__ritual_8c_a629dcff3ba612850a8f6e85da23a62fa}\label{light__my__ritual_8c_a629dcff3ba612850a8f6e85da23a62fa}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!UpdateTransition@{UpdateTransition}}
+\index{UpdateTransition@{UpdateTransition}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{UpdateTransition()}{UpdateTransition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{light__my__ritual_8c_aa0752f175e6efad2c51e995f735ab445}\label{light__my__ritual_8c_aa0752f175e6efad2c51e995f735ab445}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!onTransition@{onTransition}}
+\index{onTransition@{onTransition}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{onTransition}{onTransition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} on\+Transition = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}}
+
+\mbox{\Hypertarget{light__my__ritual_8c_a8897ff6127a397a8ee4ea76976f8534d}\label{light__my__ritual_8c_a8897ff6127a397a8ee4ea76976f8534d}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!screenHeight@{screenHeight}}
+\index{screenHeight@{screenHeight}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{screenHeight}{screenHeight}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} screen\+Height = 720}
+
+\mbox{\Hypertarget{light__my__ritual_8c_a7242fea9327c0747b47801c13f4e05c9}\label{light__my__ritual_8c_a7242fea9327c0747b47801c13f4e05c9}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!screenWidth@{screenWidth}}
+\index{screenWidth@{screenWidth}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{screenWidth}{screenWidth}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} screen\+Width = 1280}
+
+\mbox{\Hypertarget{light__my__ritual_8c_a01cc73be154dfd41292aa40b2a02924a}\label{light__my__ritual_8c_a01cc73be154dfd41292aa40b2a02924a}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!transAlpha@{transAlpha}}
+\index{transAlpha@{transAlpha}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{transAlpha}{transAlpha}}
+{\footnotesize\ttfamily float trans\+Alpha = 0}
+
+\mbox{\Hypertarget{light__my__ritual_8c_a6fcccbcee61ee5c09856d1dab463a439}\label{light__my__ritual_8c_a6fcccbcee61ee5c09856d1dab463a439}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!transFadeOut@{transFadeOut}}
+\index{transFadeOut@{transFadeOut}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{transFadeOut}{transFadeOut}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} trans\+Fade\+Out = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}}
+
+\mbox{\Hypertarget{light__my__ritual_8c_ada40daf232547a56448a044700201194}\label{light__my__ritual_8c_ada40daf232547a56448a044700201194}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!transFromScreen@{transFromScreen}}
+\index{transFromScreen@{transFromScreen}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{transFromScreen}{transFromScreen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} trans\+From\+Screen = -\/1}
+
+\mbox{\Hypertarget{light__my__ritual_8c_aae570020b16ebb5b9749d51f2796b666}\label{light__my__ritual_8c_aae570020b16ebb5b9749d51f2796b666}} 
+\index{light\_my\_ritual.c@{light\_my\_ritual.c}!transToScreen@{transToScreen}}
+\index{transToScreen@{transToScreen}!light\_my\_ritual.c@{light\_my\_ritual.c}}
+\doxysubsubsection{\texorpdfstring{transToScreen}{transToScreen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} trans\+To\+Screen = -\/1}
+

@@ -1,0 +1,333 @@
+\hypertarget{structma__context}{}\doxysection{Referencia de la Estructura ma\+\_\+context}
+\label{structma__context}\index{ma\_context@{ma\_context}}
+
+
+{\ttfamily \#include $<$miniaudio.\+h$>$}
+
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{miniaudio_8h_a77beb6b14363c77b1107c9140b400236}{ma\+\_\+backend}} \mbox{\hyperlink{structma__context_a84696d701b4be67f1b8c0a5e2aaceb31}{backend}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_af6d1abf0afc4d860186f9700a94ea67e}{ma\+\_\+log\+\_\+proc}} \mbox{\hyperlink{structma__context_a7ef4389811a476363c473a720e83445a}{log\+Callback}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_a5b6285121d082017c1e2c7452f95afec}{ma\+\_\+thread\+\_\+priority}} \mbox{\hyperlink{structma__context_a7ac85f1752ff0192281bc9cb47939e96}{thread\+Priority}}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{structma__context_ae9bae94748afbb8d5ba99fbd2a3f1d0f}{p\+User\+Data}}
+\item 
+\mbox{\hyperlink{structma__mutex}{ma\+\_\+mutex}} \mbox{\hyperlink{structma__context_a81091b9765634a551f84c35ca4d3ee59}{device\+Enum\+Lock}}
+\item 
+\mbox{\hyperlink{structma__mutex}{ma\+\_\+mutex}} \mbox{\hyperlink{structma__context_ab9218f90d18b241cd3310764658ade8a}{device\+Info\+Lock}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} \mbox{\hyperlink{structma__context_a4990c1e98a79c35bab953e5b76edc4d6}{device\+Info\+Capacity}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} \mbox{\hyperlink{structma__context_a08c078117e8bd13cd6d50315bae9a02c}{playback\+Device\+Info\+Count}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} \mbox{\hyperlink{structma__context_aab349ac42cdf8349e1c6f2efc8567da2}{capture\+Device\+Info\+Count}}
+\item 
+\mbox{\hyperlink{structma__device__info}{ma\+\_\+device\+\_\+info}} $\ast$ \mbox{\hyperlink{structma__context_a54823354a5ec90fa5991f5f2e67ff1f6}{p\+Device\+Infos}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} \mbox{\hyperlink{structma__context_a69bd00e692d0d19d679d41b822dfef52}{is\+Backend\+Asynchronous}}\+: 1
+\item 
+\mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ \mbox{\hyperlink{structma__context_ac95a3b16b0c8d72479a04f62fd4afe9c}{on\+Uninit}} )(\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$p\+Context)
+\item 
+\mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}}($\ast$ \mbox{\hyperlink{structma__context_a5bf1f5b33ac766fa71e2045ea893768c}{on\+Device\+I\+D\+Equal}} )(\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$p\+Context, const \mbox{\hyperlink{unionma__device__id}{ma\+\_\+device\+\_\+id}} $\ast$p\+I\+D0, const \mbox{\hyperlink{unionma__device__id}{ma\+\_\+device\+\_\+id}} $\ast$p\+I\+D1)
+\item 
+\mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ \mbox{\hyperlink{structma__context_a00ae983799e6a39ff01975c0af144065}{on\+Enum\+Devices}} )(\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$p\+Context, \mbox{\hyperlink{miniaudio_8h_ab27587a4d849c878f7ed0471b79fa50a}{ma\+\_\+enum\+\_\+devices\+\_\+callback\+\_\+proc}} callback, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{structma__context_ae9bae94748afbb8d5ba99fbd2a3f1d0f}{p\+User\+Data}})
+\item 
+\mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ \mbox{\hyperlink{structma__context_ac48d47cacf91a9f8b0e20f2d5e018747}{on\+Get\+Device\+Info}} )(\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$p\+Context, \mbox{\hyperlink{miniaudio_8h_a47643cf7ad53bfbc605a23a5a9545cc1}{ma\+\_\+device\+\_\+type}} device\+Type, const \mbox{\hyperlink{unionma__device__id}{ma\+\_\+device\+\_\+id}} $\ast$p\+Device\+ID, \mbox{\hyperlink{miniaudio_8h_a7205e795ceb914cbf97f19487627f3a9}{ma\+\_\+share\+\_\+mode}} share\+Mode, \mbox{\hyperlink{structma__device__info}{ma\+\_\+device\+\_\+info}} $\ast$p\+Device\+Info)
+\item 
+\mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ \mbox{\hyperlink{structma__context_ab09f6c08d361169828fa36f04e0461f9}{on\+Device\+Init}} )(\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$p\+Context, const \mbox{\hyperlink{structma__device__config}{ma\+\_\+device\+\_\+config}} $\ast$p\+Config, \mbox{\hyperlink{miniaudio_8h_a9c271ff318d0525f593c5397b1853688}{ma\+\_\+device}} $\ast$p\+Device)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}($\ast$ \mbox{\hyperlink{structma__context_a4ffb75406f53fdb01047d9cfda596289}{on\+Device\+Uninit}} )(\mbox{\hyperlink{miniaudio_8h_a9c271ff318d0525f593c5397b1853688}{ma\+\_\+device}} $\ast$p\+Device)
+\item 
+\mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ \mbox{\hyperlink{structma__context_a08557aaf5dd3375f6246992aa3346924}{on\+Device\+Start}} )(\mbox{\hyperlink{miniaudio_8h_a9c271ff318d0525f593c5397b1853688}{ma\+\_\+device}} $\ast$p\+Device)
+\item 
+\mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ \mbox{\hyperlink{structma__context_a33b93576228a669095b99049dba11b9e}{on\+Device\+Stop}} )(\mbox{\hyperlink{miniaudio_8h_a9c271ff318d0525f593c5397b1853688}{ma\+\_\+device}} $\ast$p\+Device)
+\item 
+\mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ \mbox{\hyperlink{structma__context_adf94e92fd0b525c56ed3755fe2cdf1d3}{on\+Device\+Main\+Loop}} )(\mbox{\hyperlink{miniaudio_8h_a9c271ff318d0525f593c5397b1853688}{ma\+\_\+device}} $\ast$p\+Device)
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structma__context_a03e7bab27fd140d55a3a226fe3e1dfbc}{\_unused}}\\
+\>\} \mbox{\hyperlink{structma__context_a148fdf794c33a5c185e932c09e4d9d74}{null\_backend}}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{miniaudio_8h_aed5741ea282261eb7ab79960af02e8b1}{ma\_handle}} \mbox{\hyperlink{structma__context_a7679e4361a99bc4c938e331ac8fae845}{pthreadSO}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_a2288d8aa6c6d7a257ce0b58d7964b7ee}{pthread\_create}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_a67c64fa558748eb753ed9ea079e122a3}{pthread\_join}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_a9fd7ef65ff790565aeebb1afa7863b46}{pthread\_mutex\_init}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_aefcbe10f9e349844f5b8abd9ea90721a}{pthread\_mutex\_destroy}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_a96da8dd5a3269e03e4053fbed89fca3c}{pthread\_mutex\_lock}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_a08eeb95ce26df8c9b31bf2bfbff6e3de}{pthread\_mutex\_unlock}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_ab85aa6b502b767ef52ff481de70164c0}{pthread\_cond\_init}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_abb8efd08ad0add62899c9680a79bb97c}{pthread\_cond\_destroy}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_a6602f75119bfd9868bb9f19e6fea5473}{pthread\_cond\_wait}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_aa2de9ca4ea9962cb308eeddacbc27136}{pthread\_cond\_signal}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_a41ce7b1db9a4a5fcdeb0150ae109db39}{pthread\_attr\_init}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_aa640559c80d1424983898a2494ce2516}{pthread\_attr\_destroy}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_a877be893e57d4ec74b6b02de95b9b39a}{pthread\_attr\_setschedpolicy}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_abe0ee812e24301cfebe6affd9a0d8d1a}{pthread\_attr\_getschedparam}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\_proc}} \mbox{\hyperlink{structma__context_a9f7ec74d63d26f83216837aaa492ed17}{pthread\_attr\_setschedparam}}\\
+\>\} \mbox{\hyperlink{structma__context_a49a0ac035f10dc095799822deadd3aea}{posix}}\\
+\>\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structma__context_a03e7bab27fd140d55a3a226fe3e1dfbc}{\_unused}}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{structma__context_a48555907ac15c20e4668260edfe911cf}\label{structma__context_a48555907ac15c20e4668260edfe911cf}} 
+\doxysubsubsection{\texorpdfstring{"@76}{@76}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{structma__context_aae1341951b88b97a7009e45da88c7641}\label{structma__context_aae1341951b88b97a7009e45da88c7641}} 
+\doxysubsubsection{\texorpdfstring{"@78}{@78}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{structma__context_a03e7bab27fd140d55a3a226fe3e1dfbc}\label{structma__context_a03e7bab27fd140d55a3a226fe3e1dfbc}} 
+\index{ma\_context@{ma\_context}!\_unused@{\_unused}}
+\index{\_unused@{\_unused}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{\_unused}{\_unused}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} ma\+\_\+context\+::\+\_\+unused}
+
+\mbox{\Hypertarget{structma__context_a84696d701b4be67f1b8c0a5e2aaceb31}\label{structma__context_a84696d701b4be67f1b8c0a5e2aaceb31}} 
+\index{ma\_context@{ma\_context}!backend@{backend}}
+\index{backend@{backend}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{backend}{backend}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a77beb6b14363c77b1107c9140b400236}{ma\+\_\+backend}} ma\+\_\+context\+::backend}
+
+\mbox{\Hypertarget{structma__context_aab349ac42cdf8349e1c6f2efc8567da2}\label{structma__context_aab349ac42cdf8349e1c6f2efc8567da2}} 
+\index{ma\_context@{ma\_context}!captureDeviceInfoCount@{captureDeviceInfoCount}}
+\index{captureDeviceInfoCount@{captureDeviceInfoCount}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{captureDeviceInfoCount}{captureDeviceInfoCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} ma\+\_\+context\+::capture\+Device\+Info\+Count}
+
+\mbox{\Hypertarget{structma__context_a81091b9765634a551f84c35ca4d3ee59}\label{structma__context_a81091b9765634a551f84c35ca4d3ee59}} 
+\index{ma\_context@{ma\_context}!deviceEnumLock@{deviceEnumLock}}
+\index{deviceEnumLock@{deviceEnumLock}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{deviceEnumLock}{deviceEnumLock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structma__mutex}{ma\+\_\+mutex}} ma\+\_\+context\+::device\+Enum\+Lock}
+
+\mbox{\Hypertarget{structma__context_a4990c1e98a79c35bab953e5b76edc4d6}\label{structma__context_a4990c1e98a79c35bab953e5b76edc4d6}} 
+\index{ma\_context@{ma\_context}!deviceInfoCapacity@{deviceInfoCapacity}}
+\index{deviceInfoCapacity@{deviceInfoCapacity}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{deviceInfoCapacity}{deviceInfoCapacity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} ma\+\_\+context\+::device\+Info\+Capacity}
+
+\mbox{\Hypertarget{structma__context_ab9218f90d18b241cd3310764658ade8a}\label{structma__context_ab9218f90d18b241cd3310764658ade8a}} 
+\index{ma\_context@{ma\_context}!deviceInfoLock@{deviceInfoLock}}
+\index{deviceInfoLock@{deviceInfoLock}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{deviceInfoLock}{deviceInfoLock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structma__mutex}{ma\+\_\+mutex}} ma\+\_\+context\+::device\+Info\+Lock}
+
+\mbox{\Hypertarget{structma__context_a69bd00e692d0d19d679d41b822dfef52}\label{structma__context_a69bd00e692d0d19d679d41b822dfef52}} 
+\index{ma\_context@{ma\_context}!isBackendAsynchronous@{isBackendAsynchronous}}
+\index{isBackendAsynchronous@{isBackendAsynchronous}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{isBackendAsynchronous}{isBackendAsynchronous}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} ma\+\_\+context\+::is\+Backend\+Asynchronous}
+
+\mbox{\Hypertarget{structma__context_a7ef4389811a476363c473a720e83445a}\label{structma__context_a7ef4389811a476363c473a720e83445a}} 
+\index{ma\_context@{ma\_context}!logCallback@{logCallback}}
+\index{logCallback@{logCallback}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{logCallback}{logCallback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_af6d1abf0afc4d860186f9700a94ea67e}{ma\+\_\+log\+\_\+proc}} ma\+\_\+context\+::log\+Callback}
+
+\mbox{\Hypertarget{structma__context_a148fdf794c33a5c185e932c09e4d9d74}\label{structma__context_a148fdf794c33a5c185e932c09e4d9d74}} 
+\index{ma\_context@{ma\_context}!null\_backend@{null\_backend}}
+\index{null\_backend@{null\_backend}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{null\_backend}{null\_backend}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+context\+::null\+\_\+backend}
+
+\mbox{\Hypertarget{structma__context_a5bf1f5b33ac766fa71e2045ea893768c}\label{structma__context_a5bf1f5b33ac766fa71e2045ea893768c}} 
+\index{ma\_context@{ma\_context}!onDeviceIDEqual@{onDeviceIDEqual}}
+\index{onDeviceIDEqual@{onDeviceIDEqual}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{onDeviceIDEqual}{onDeviceIDEqual}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}}($\ast$ ma\+\_\+context\+::on\+Device\+I\+D\+Equal) (\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$p\+Context, const \mbox{\hyperlink{unionma__device__id}{ma\+\_\+device\+\_\+id}} $\ast$p\+I\+D0, const \mbox{\hyperlink{unionma__device__id}{ma\+\_\+device\+\_\+id}} $\ast$p\+I\+D1)}
+
+\mbox{\Hypertarget{structma__context_ab09f6c08d361169828fa36f04e0461f9}\label{structma__context_ab09f6c08d361169828fa36f04e0461f9}} 
+\index{ma\_context@{ma\_context}!onDeviceInit@{onDeviceInit}}
+\index{onDeviceInit@{onDeviceInit}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{onDeviceInit}{onDeviceInit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ ma\+\_\+context\+::on\+Device\+Init) (\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$p\+Context, const \mbox{\hyperlink{structma__device__config}{ma\+\_\+device\+\_\+config}} $\ast$p\+Config, \mbox{\hyperlink{miniaudio_8h_a9c271ff318d0525f593c5397b1853688}{ma\+\_\+device}} $\ast$p\+Device)}
+
+\mbox{\Hypertarget{structma__context_adf94e92fd0b525c56ed3755fe2cdf1d3}\label{structma__context_adf94e92fd0b525c56ed3755fe2cdf1d3}} 
+\index{ma\_context@{ma\_context}!onDeviceMainLoop@{onDeviceMainLoop}}
+\index{onDeviceMainLoop@{onDeviceMainLoop}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{onDeviceMainLoop}{onDeviceMainLoop}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ ma\+\_\+context\+::on\+Device\+Main\+Loop) (\mbox{\hyperlink{miniaudio_8h_a9c271ff318d0525f593c5397b1853688}{ma\+\_\+device}} $\ast$p\+Device)}
+
+\mbox{\Hypertarget{structma__context_a08557aaf5dd3375f6246992aa3346924}\label{structma__context_a08557aaf5dd3375f6246992aa3346924}} 
+\index{ma\_context@{ma\_context}!onDeviceStart@{onDeviceStart}}
+\index{onDeviceStart@{onDeviceStart}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{onDeviceStart}{onDeviceStart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ ma\+\_\+context\+::on\+Device\+Start) (\mbox{\hyperlink{miniaudio_8h_a9c271ff318d0525f593c5397b1853688}{ma\+\_\+device}} $\ast$p\+Device)}
+
+\mbox{\Hypertarget{structma__context_a33b93576228a669095b99049dba11b9e}\label{structma__context_a33b93576228a669095b99049dba11b9e}} 
+\index{ma\_context@{ma\_context}!onDeviceStop@{onDeviceStop}}
+\index{onDeviceStop@{onDeviceStop}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{onDeviceStop}{onDeviceStop}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ ma\+\_\+context\+::on\+Device\+Stop) (\mbox{\hyperlink{miniaudio_8h_a9c271ff318d0525f593c5397b1853688}{ma\+\_\+device}} $\ast$p\+Device)}
+
+\mbox{\Hypertarget{structma__context_a4ffb75406f53fdb01047d9cfda596289}\label{structma__context_a4ffb75406f53fdb01047d9cfda596289}} 
+\index{ma\_context@{ma\_context}!onDeviceUninit@{onDeviceUninit}}
+\index{onDeviceUninit@{onDeviceUninit}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{onDeviceUninit}{onDeviceUninit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}($\ast$ ma\+\_\+context\+::on\+Device\+Uninit) (\mbox{\hyperlink{miniaudio_8h_a9c271ff318d0525f593c5397b1853688}{ma\+\_\+device}} $\ast$p\+Device)}
+
+\mbox{\Hypertarget{structma__context_a00ae983799e6a39ff01975c0af144065}\label{structma__context_a00ae983799e6a39ff01975c0af144065}} 
+\index{ma\_context@{ma\_context}!onEnumDevices@{onEnumDevices}}
+\index{onEnumDevices@{onEnumDevices}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{onEnumDevices}{onEnumDevices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ ma\+\_\+context\+::on\+Enum\+Devices) (\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$p\+Context, \mbox{\hyperlink{miniaudio_8h_ab27587a4d849c878f7ed0471b79fa50a}{ma\+\_\+enum\+\_\+devices\+\_\+callback\+\_\+proc}} callback, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{structma__context_ae9bae94748afbb8d5ba99fbd2a3f1d0f}{p\+User\+Data}})}
+
+\mbox{\Hypertarget{structma__context_ac48d47cacf91a9f8b0e20f2d5e018747}\label{structma__context_ac48d47cacf91a9f8b0e20f2d5e018747}} 
+\index{ma\_context@{ma\_context}!onGetDeviceInfo@{onGetDeviceInfo}}
+\index{onGetDeviceInfo@{onGetDeviceInfo}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{onGetDeviceInfo}{onGetDeviceInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ ma\+\_\+context\+::on\+Get\+Device\+Info) (\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$p\+Context, \mbox{\hyperlink{miniaudio_8h_a47643cf7ad53bfbc605a23a5a9545cc1}{ma\+\_\+device\+\_\+type}} device\+Type, const \mbox{\hyperlink{unionma__device__id}{ma\+\_\+device\+\_\+id}} $\ast$p\+Device\+ID, \mbox{\hyperlink{miniaudio_8h_a7205e795ceb914cbf97f19487627f3a9}{ma\+\_\+share\+\_\+mode}} share\+Mode, \mbox{\hyperlink{structma__device__info}{ma\+\_\+device\+\_\+info}} $\ast$p\+Device\+Info)}
+
+\mbox{\Hypertarget{structma__context_ac95a3b16b0c8d72479a04f62fd4afe9c}\label{structma__context_ac95a3b16b0c8d72479a04f62fd4afe9c}} 
+\index{ma\_context@{ma\_context}!onUninit@{onUninit}}
+\index{onUninit@{onUninit}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{onUninit}{onUninit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_abcbfa155f3947a2b1da5003fd695033f}{ma\+\_\+result}}($\ast$ ma\+\_\+context\+::on\+Uninit) (\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$p\+Context)}
+
+\mbox{\Hypertarget{structma__context_a54823354a5ec90fa5991f5f2e67ff1f6}\label{structma__context_a54823354a5ec90fa5991f5f2e67ff1f6}} 
+\index{ma\_context@{ma\_context}!pDeviceInfos@{pDeviceInfos}}
+\index{pDeviceInfos@{pDeviceInfos}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pDeviceInfos}{pDeviceInfos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structma__device__info}{ma\+\_\+device\+\_\+info}}$\ast$ ma\+\_\+context\+::p\+Device\+Infos}
+
+\mbox{\Hypertarget{structma__context_a08c078117e8bd13cd6d50315bae9a02c}\label{structma__context_a08c078117e8bd13cd6d50315bae9a02c}} 
+\index{ma\_context@{ma\_context}!playbackDeviceInfoCount@{playbackDeviceInfoCount}}
+\index{playbackDeviceInfoCount@{playbackDeviceInfoCount}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{playbackDeviceInfoCount}{playbackDeviceInfoCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} ma\+\_\+context\+::playback\+Device\+Info\+Count}
+
+\mbox{\Hypertarget{structma__context_a49a0ac035f10dc095799822deadd3aea}\label{structma__context_a49a0ac035f10dc095799822deadd3aea}} 
+\index{ma\_context@{ma\_context}!posix@{posix}}
+\index{posix@{posix}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{posix}{posix}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+context\+::posix}
+
+\mbox{\Hypertarget{structma__context_aa640559c80d1424983898a2494ce2516}\label{structma__context_aa640559c80d1424983898a2494ce2516}} 
+\index{ma\_context@{ma\_context}!pthread\_attr\_destroy@{pthread\_attr\_destroy}}
+\index{pthread\_attr\_destroy@{pthread\_attr\_destroy}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_attr\_destroy}{pthread\_attr\_destroy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+attr\+\_\+destroy}
+
+\mbox{\Hypertarget{structma__context_abe0ee812e24301cfebe6affd9a0d8d1a}\label{structma__context_abe0ee812e24301cfebe6affd9a0d8d1a}} 
+\index{ma\_context@{ma\_context}!pthread\_attr\_getschedparam@{pthread\_attr\_getschedparam}}
+\index{pthread\_attr\_getschedparam@{pthread\_attr\_getschedparam}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_attr\_getschedparam}{pthread\_attr\_getschedparam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+attr\+\_\+getschedparam}
+
+\mbox{\Hypertarget{structma__context_a41ce7b1db9a4a5fcdeb0150ae109db39}\label{structma__context_a41ce7b1db9a4a5fcdeb0150ae109db39}} 
+\index{ma\_context@{ma\_context}!pthread\_attr\_init@{pthread\_attr\_init}}
+\index{pthread\_attr\_init@{pthread\_attr\_init}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_attr\_init}{pthread\_attr\_init}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+attr\+\_\+init}
+
+\mbox{\Hypertarget{structma__context_a9f7ec74d63d26f83216837aaa492ed17}\label{structma__context_a9f7ec74d63d26f83216837aaa492ed17}} 
+\index{ma\_context@{ma\_context}!pthread\_attr\_setschedparam@{pthread\_attr\_setschedparam}}
+\index{pthread\_attr\_setschedparam@{pthread\_attr\_setschedparam}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_attr\_setschedparam}{pthread\_attr\_setschedparam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+attr\+\_\+setschedparam}
+
+\mbox{\Hypertarget{structma__context_a877be893e57d4ec74b6b02de95b9b39a}\label{structma__context_a877be893e57d4ec74b6b02de95b9b39a}} 
+\index{ma\_context@{ma\_context}!pthread\_attr\_setschedpolicy@{pthread\_attr\_setschedpolicy}}
+\index{pthread\_attr\_setschedpolicy@{pthread\_attr\_setschedpolicy}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_attr\_setschedpolicy}{pthread\_attr\_setschedpolicy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+attr\+\_\+setschedpolicy}
+
+\mbox{\Hypertarget{structma__context_abb8efd08ad0add62899c9680a79bb97c}\label{structma__context_abb8efd08ad0add62899c9680a79bb97c}} 
+\index{ma\_context@{ma\_context}!pthread\_cond\_destroy@{pthread\_cond\_destroy}}
+\index{pthread\_cond\_destroy@{pthread\_cond\_destroy}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_cond\_destroy}{pthread\_cond\_destroy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+cond\+\_\+destroy}
+
+\mbox{\Hypertarget{structma__context_ab85aa6b502b767ef52ff481de70164c0}\label{structma__context_ab85aa6b502b767ef52ff481de70164c0}} 
+\index{ma\_context@{ma\_context}!pthread\_cond\_init@{pthread\_cond\_init}}
+\index{pthread\_cond\_init@{pthread\_cond\_init}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_cond\_init}{pthread\_cond\_init}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+cond\+\_\+init}
+
+\mbox{\Hypertarget{structma__context_aa2de9ca4ea9962cb308eeddacbc27136}\label{structma__context_aa2de9ca4ea9962cb308eeddacbc27136}} 
+\index{ma\_context@{ma\_context}!pthread\_cond\_signal@{pthread\_cond\_signal}}
+\index{pthread\_cond\_signal@{pthread\_cond\_signal}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_cond\_signal}{pthread\_cond\_signal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+cond\+\_\+signal}
+
+\mbox{\Hypertarget{structma__context_a6602f75119bfd9868bb9f19e6fea5473}\label{structma__context_a6602f75119bfd9868bb9f19e6fea5473}} 
+\index{ma\_context@{ma\_context}!pthread\_cond\_wait@{pthread\_cond\_wait}}
+\index{pthread\_cond\_wait@{pthread\_cond\_wait}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_cond\_wait}{pthread\_cond\_wait}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+cond\+\_\+wait}
+
+\mbox{\Hypertarget{structma__context_a2288d8aa6c6d7a257ce0b58d7964b7ee}\label{structma__context_a2288d8aa6c6d7a257ce0b58d7964b7ee}} 
+\index{ma\_context@{ma\_context}!pthread\_create@{pthread\_create}}
+\index{pthread\_create@{pthread\_create}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_create}{pthread\_create}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+create}
+
+\mbox{\Hypertarget{structma__context_a67c64fa558748eb753ed9ea079e122a3}\label{structma__context_a67c64fa558748eb753ed9ea079e122a3}} 
+\index{ma\_context@{ma\_context}!pthread\_join@{pthread\_join}}
+\index{pthread\_join@{pthread\_join}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_join}{pthread\_join}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+join}
+
+\mbox{\Hypertarget{structma__context_aefcbe10f9e349844f5b8abd9ea90721a}\label{structma__context_aefcbe10f9e349844f5b8abd9ea90721a}} 
+\index{ma\_context@{ma\_context}!pthread\_mutex\_destroy@{pthread\_mutex\_destroy}}
+\index{pthread\_mutex\_destroy@{pthread\_mutex\_destroy}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_mutex\_destroy}{pthread\_mutex\_destroy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+mutex\+\_\+destroy}
+
+\mbox{\Hypertarget{structma__context_a9fd7ef65ff790565aeebb1afa7863b46}\label{structma__context_a9fd7ef65ff790565aeebb1afa7863b46}} 
+\index{ma\_context@{ma\_context}!pthread\_mutex\_init@{pthread\_mutex\_init}}
+\index{pthread\_mutex\_init@{pthread\_mutex\_init}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_mutex\_init}{pthread\_mutex\_init}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+mutex\+\_\+init}
+
+\mbox{\Hypertarget{structma__context_a96da8dd5a3269e03e4053fbed89fca3c}\label{structma__context_a96da8dd5a3269e03e4053fbed89fca3c}} 
+\index{ma\_context@{ma\_context}!pthread\_mutex\_lock@{pthread\_mutex\_lock}}
+\index{pthread\_mutex\_lock@{pthread\_mutex\_lock}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_mutex\_lock}{pthread\_mutex\_lock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+mutex\+\_\+lock}
+
+\mbox{\Hypertarget{structma__context_a08eeb95ce26df8c9b31bf2bfbff6e3de}\label{structma__context_a08eeb95ce26df8c9b31bf2bfbff6e3de}} 
+\index{ma\_context@{ma\_context}!pthread\_mutex\_unlock@{pthread\_mutex\_unlock}}
+\index{pthread\_mutex\_unlock@{pthread\_mutex\_unlock}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthread\_mutex\_unlock}{pthread\_mutex\_unlock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae3a1d0fff373d99cb1298a14192efe68}{ma\+\_\+proc}} ma\+\_\+context\+::pthread\+\_\+mutex\+\_\+unlock}
+
+\mbox{\Hypertarget{structma__context_a7679e4361a99bc4c938e331ac8fae845}\label{structma__context_a7679e4361a99bc4c938e331ac8fae845}} 
+\index{ma\_context@{ma\_context}!pthreadSO@{pthreadSO}}
+\index{pthreadSO@{pthreadSO}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pthreadSO}{pthreadSO}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_aed5741ea282261eb7ab79960af02e8b1}{ma\+\_\+handle}} ma\+\_\+context\+::pthread\+SO}
+
+\mbox{\Hypertarget{structma__context_ae9bae94748afbb8d5ba99fbd2a3f1d0f}\label{structma__context_ae9bae94748afbb8d5ba99fbd2a3f1d0f}} 
+\index{ma\_context@{ma\_context}!pUserData@{pUserData}}
+\index{pUserData@{pUserData}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{pUserData}{pUserData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}$\ast$ ma\+\_\+context\+::p\+User\+Data}
+
+\mbox{\Hypertarget{structma__context_a7ac85f1752ff0192281bc9cb47939e96}\label{structma__context_a7ac85f1752ff0192281bc9cb47939e96}} 
+\index{ma\_context@{ma\_context}!threadPriority@{threadPriority}}
+\index{threadPriority@{threadPriority}!ma\_context@{ma\_context}}
+\doxysubsubsection{\texorpdfstring{threadPriority}{threadPriority}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a5b6285121d082017c1e2c7452f95afec}{ma\+\_\+thread\+\_\+priority}} ma\+\_\+context\+::thread\+Priority}
+
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/\mbox{\hyperlink{miniaudio_8h}{miniaudio.\+h}}\end{DoxyCompactItemize}

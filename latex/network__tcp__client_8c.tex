@@ -1,0 +1,139 @@
+\hypertarget{network__tcp__client_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/examples/network/network\+\_\+tcp\+\_\+client.c}
+\label{network__tcp__client_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/network/network\_tcp\_client.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/network/network\_tcp\_client.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rnet.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{network__tcp__client_8c_a8d11d7fe4a96b8fdf474f525feaa46a1}{Network\+Connect}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{network__tcp__client_8c_aae5e019bb4bdd174089b2fbed56a6a23}{Network\+Update}} ()
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{network__tcp__client_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{network__tcp__client_8c_a9b4412df6226358e417e5d67cbdc38f7}{elapsed}} = 0.\+0f
+\item 
+float \mbox{\hyperlink{network__tcp__client_8c_abdc33cf25e725134a9b48e79c7031bcf}{delay}} = 1.\+0f
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{network__tcp__client_8c_a8bb79de769542b13b0271eb8633756fa}{ping}} = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{network__tcp__client_8c_ab6006b19dba6db38c111faf57a85ae45}{pong}} = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{network__tcp__client_8c_ab36823025f12a809217f7771125658c2}{connected}} = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{network__tcp__client_8c_a41abb64097b0edfeaf4ef1866436f144}{pingmsg}} = \char`\"{}Ping!\char`\"{}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{network__tcp__client_8c_a95b5981c3192af745ccedadf1ddf4900}{pongmsg}} = \char`\"{}Pong!\char`\"{}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{network__tcp__client_8c_a118cad54a817ac93b88012250dd6ce16}{msglen}} = 0
+\item 
+\mbox{\hyperlink{struct_socket_config}{Socket\+Config}} \mbox{\hyperlink{network__tcp__client_8c_afc0357e6cc4716e501462f275cc5a785}{client\+\_\+cfg}} = \{.host = \char`\"{}127.\+0.\+0.\+1\char`\"{}, .\mbox{\hyperlink{network__resolve__host_8c_a8e0798404bf2cf5dabb84c5ba9a4f236}{port}} = \char`\"{}4950\char`\"{}, .\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a890efa53b3d7deeeced6f3a0d6653ed3}{type}} = \mbox{\hyperlink{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97a2843397fd39bd96681bca78a8aa03096}{S\+O\+C\+K\+E\+T\+\_\+\+T\+CP}}, .nonblocking = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}}\}
+\item 
+\mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$ \mbox{\hyperlink{network__tcp__client_8c_ad9d8840366889ded270e9303c5b39230}{client\+\_\+res}} = \mbox{\hyperlink{miniaudio_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}
+\item 
+\mbox{\hyperlink{struct_socket_set}{Socket\+Set}} $\ast$ \mbox{\hyperlink{network__tcp__client_8c_a18a9ff286337b7d8ba84f1b720a9067c}{socket\+\_\+set}} = \mbox{\hyperlink{miniaudio_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{network__tcp__client_8c_a3c9add9adcf152db30073bd755c36355}{recv\+Buffer}} \mbox{[}512\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{network__tcp__client_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{network__tcp__client_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!main@{main}}
+\index{main@{main}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{network__tcp__client_8c_a8d11d7fe4a96b8fdf474f525feaa46a1}\label{network__tcp__client_8c_a8d11d7fe4a96b8fdf474f525feaa46a1}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!NetworkConnect@{NetworkConnect}}
+\index{NetworkConnect@{NetworkConnect}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{NetworkConnect()}{NetworkConnect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Network\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{network__tcp__client_8c_aae5e019bb4bdd174089b2fbed56a6a23}\label{network__tcp__client_8c_aae5e019bb4bdd174089b2fbed56a6a23}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!NetworkUpdate@{NetworkUpdate}}
+\index{NetworkUpdate@{NetworkUpdate}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{NetworkUpdate()}{NetworkUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Network\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{network__tcp__client_8c_afc0357e6cc4716e501462f275cc5a785}\label{network__tcp__client_8c_afc0357e6cc4716e501462f275cc5a785}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!client\_cfg@{client\_cfg}}
+\index{client\_cfg@{client\_cfg}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{client\_cfg}{client\_cfg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_socket_config}{Socket\+Config}} client\+\_\+cfg = \{.host = \char`\"{}127.\+0.\+0.\+1\char`\"{}, .\mbox{\hyperlink{network__resolve__host_8c_a8e0798404bf2cf5dabb84c5ba9a4f236}{port}} = \char`\"{}4950\char`\"{}, .\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a890efa53b3d7deeeced6f3a0d6653ed3}{type}} = \mbox{\hyperlink{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97a2843397fd39bd96681bca78a8aa03096}{S\+O\+C\+K\+E\+T\+\_\+\+T\+CP}}, .nonblocking = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}}\}}
+
+\mbox{\Hypertarget{network__tcp__client_8c_ad9d8840366889ded270e9303c5b39230}\label{network__tcp__client_8c_ad9d8840366889ded270e9303c5b39230}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!client\_res@{client\_res}}
+\index{client\_res@{client\_res}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{client\_res}{client\_res}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_socket_result}{Socket\+Result}}$\ast$ client\+\_\+res = \mbox{\hyperlink{miniaudio_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}}
+
+\mbox{\Hypertarget{network__tcp__client_8c_ab36823025f12a809217f7771125658c2}\label{network__tcp__client_8c_ab36823025f12a809217f7771125658c2}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!connected@{connected}}
+\index{connected@{connected}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{connected}{connected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} connected = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}}
+
+\mbox{\Hypertarget{network__tcp__client_8c_abdc33cf25e725134a9b48e79c7031bcf}\label{network__tcp__client_8c_abdc33cf25e725134a9b48e79c7031bcf}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!delay@{delay}}
+\index{delay@{delay}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{delay}{delay}}
+{\footnotesize\ttfamily float delay = 1.\+0f}
+
+\mbox{\Hypertarget{network__tcp__client_8c_a9b4412df6226358e417e5d67cbdc38f7}\label{network__tcp__client_8c_a9b4412df6226358e417e5d67cbdc38f7}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{elapsed}{elapsed}}
+{\footnotesize\ttfamily float elapsed = 0.\+0f}
+
+\mbox{\Hypertarget{network__tcp__client_8c_a118cad54a817ac93b88012250dd6ce16}\label{network__tcp__client_8c_a118cad54a817ac93b88012250dd6ce16}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!msglen@{msglen}}
+\index{msglen@{msglen}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{msglen}{msglen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} msglen = 0}
+
+\mbox{\Hypertarget{network__tcp__client_8c_a8bb79de769542b13b0271eb8633756fa}\label{network__tcp__client_8c_a8bb79de769542b13b0271eb8633756fa}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!ping@{ping}}
+\index{ping@{ping}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{ping}{ping}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} ping = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}}
+
+\mbox{\Hypertarget{network__tcp__client_8c_a41abb64097b0edfeaf4ef1866436f144}\label{network__tcp__client_8c_a41abb64097b0edfeaf4ef1866436f144}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!pingmsg@{pingmsg}}
+\index{pingmsg@{pingmsg}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{pingmsg}{pingmsg}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ pingmsg = \char`\"{}Ping!\char`\"{}}
+
+\mbox{\Hypertarget{network__tcp__client_8c_ab6006b19dba6db38c111faf57a85ae45}\label{network__tcp__client_8c_ab6006b19dba6db38c111faf57a85ae45}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!pong@{pong}}
+\index{pong@{pong}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{pong}{pong}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} pong = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}}
+
+\mbox{\Hypertarget{network__tcp__client_8c_a95b5981c3192af745ccedadf1ddf4900}\label{network__tcp__client_8c_a95b5981c3192af745ccedadf1ddf4900}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!pongmsg@{pongmsg}}
+\index{pongmsg@{pongmsg}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{pongmsg}{pongmsg}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ pongmsg = \char`\"{}Pong!\char`\"{}}
+
+\mbox{\Hypertarget{network__tcp__client_8c_a3c9add9adcf152db30073bd755c36355}\label{network__tcp__client_8c_a3c9add9adcf152db30073bd755c36355}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!recvBuffer@{recvBuffer}}
+\index{recvBuffer@{recvBuffer}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{recvBuffer}{recvBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} recv\+Buffer\mbox{[}512\mbox{]}}
+
+\mbox{\Hypertarget{network__tcp__client_8c_a18a9ff286337b7d8ba84f1b720a9067c}\label{network__tcp__client_8c_a18a9ff286337b7d8ba84f1b720a9067c}} 
+\index{network\_tcp\_client.c@{network\_tcp\_client.c}!socket\_set@{socket\_set}}
+\index{socket\_set@{socket\_set}!network\_tcp\_client.c@{network\_tcp\_client.c}}
+\doxysubsubsection{\texorpdfstring{socket\_set}{socket\_set}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_socket_set}{Socket\+Set}}$\ast$ socket\+\_\+set = \mbox{\hyperlink{miniaudio_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}}
+

@@ -1,0 +1,180 @@
+\hypertarget{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md20}{}\doxysubsection{history}\label{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md20}
+I\textquotesingle{}ve developed videogames since 2006 and in 2012 I started teaching videogames development to young people with artistic profile, most of them had never written a single line of code.
+
+I started with C language basis and, after searching for the most simple and easy-\/to-\/use library to teach videogames programming, I found Win\+B\+GI; it was great and it worked very well with students, in just a couple of weeks that people that had never written a single line of code were able to program (and understand) a simple P\+O\+NG and some of them even a B\+R\+E\+A\+K\+O\+U\+T!
+
+But Win\+B\+GI was not the clearer and most organized lib. There were a lot of things I found confusing and some function names were not clear enough for most of the students; not to mention points like no transparencies support or no hardware acceleration.
+
+So, I decided to create my own library, hardware accelerated, clear function names, quite organized, well structured, plain C coding and, the most important, primarily intended to learn videogames programming.
+
+Most of my videogames coding experience was in C\# and X\+NA and I really love it (in fact, my students learn C\# after C), so, I decided to use C\# language notation and X\+NA naming conventions. That way, students can jump from raylib to X\+NA, Mono\+Game or similar libs extremely easily.
+
+raylib started as a weekend project and after three months of hard work, raylib 1.\+0 was published on November 2013.
+
+Enjoy it.\hypertarget{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md21}{}\doxysubsection{notes on raylib 1.\+1}\label{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md21}
+On April 2014, after 6 month of first raylib release, raylib 1.\+1 has been released. This new version presents a complete internal redesign of the library to support Open\+GL 1.\+1, Open\+GL 3.\+3+ and Open\+GL ES 2.\+0.
+
+A new module named \href{https://github.com/raysan5/raylib/blob/master/src/rlgl.h}{\texttt{ rlgl}} has been added to the library. This new module translates raylib-\/\+Open\+G\+L-\/style immediate mode functions (i.\+e. \mbox{\hyperlink{raylib-build_2src_2rlgl_8h_a5912b8882c7a10ad020ecfbcc8850877}{rl\+Vertex3f()}}, \mbox{\hyperlink{raylib-build_2src_2rlgl_8h_a9b5d5ccff4766025b1c4503f9abb958c}{rl\+Begin()}}, ...) to different versions of Open\+GL (1.\+1, 3.\+3+, E\+S2), selectable by one define.
+
+\href{https://github.com/raysan5/raylib/blob/master/src/rlgl.h}{\texttt{ rlgl}} also comes with a second new module named \href{https://github.com/raysan5/raylib/blob/master/src/raymath.h}{\texttt{ raymath}}, which includes a bunch of useful functions for 3d-\/math with vectors, matrices and quaternions.
+
+Some other big changes of this new version have been the support for O\+GG files loading and stream playing, and the support of D\+DS texture files (compressed and uncompressed) along with mipmaps support.
+
+Lots of code changes and lot of testing have concluded in this amazing new raylib 1.\+1.\hypertarget{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md22}{}\doxysubsection{notes on raylib 1.\+2}\label{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md22}
+On September 2014, after 5 month of raylib 1.\+1 release, it comes raylib 1.\+2. Again, this version presents a complete internal redesign of \href{https://github.com/raysan5/raylib/blob/master/src/core.c}{\texttt{ core}} module to support two new platforms\+: \href{http://www.android.com/}{\texttt{ Android}} and \href{http://www.raspberrypi.org/}{\texttt{ Raspberry Pi}}.
+
+It\textquotesingle{}s been some month of really hard work to accomodate raylib to those new platforms while keeping it easy for the users. On Android, raylib manages internally the activity cicle, as well as the inputs; on Raspberry Pi, a complete raw input system has been written from scratch.
+
+A new display initialization system has been created to support multiple resolutions, adding black bars if required; user only defines desired screen size and it gets properly displayed.
+
+Now raylib can easily deploy games to Android devices and Raspberry Pi (console mode).
+
+Lots of code changes and lot of testing have concluded in this amazing new raylib 1.\+2.
+
+In December 2014, new raylib 1.\+2.\+2 was published with support to compile directly for web (html5) using \href{http://kripken.github.io/emscripten-site/}{\texttt{ emscripten}} and \href{http://asmjs.org/}{\texttt{ asm.\+js}}.\hypertarget{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md23}{}\doxysubsection{notes on raylib 1.\+3}\label{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md23}
+On September 2015, after 1 year of raylib 1.\+2 release, arrives raylib 1.\+3. This version adds shaders functionality, improves tremendously textures module and also provides some new modules (camera system, gestures system, immediate-\/mode gui).
+
+Shaders support is the biggest addition to raylib 1.\+3, with support for easy shaders loading and use. Loaded shaders can be attached to 3d models or used as fullscreen postrocessing effects. A bunch of postprocessing shaders are also included in this release, check raylib/shaders folder.
+
+Textures module has grown to support most of the internal texture formats available in Open\+GL (R\+G\+B565, R\+G\+B888, R\+G\+B\+A5551, R\+G\+B\+A4444, etc.), including compressed texture formats (D\+XT, E\+T\+C1, E\+T\+C2, A\+S\+TC, P\+V\+RT); raylib 1.\+3 can load .dds, .pkm, .ktx, .astc and .pvr files.
+
+A brand new \href{https://github.com/raysan5/raylib/blob/master/src/camera.c}{\texttt{ camera}} module offers to the user multiple preconfigured ready-\/to-\/use camera systems (free camera, 1st person, 3rd person). Camera modes are very easy to use, just check examples\+: \href{https://github.com/raysan5/raylib/blob/master/examples/core_3d_camera_free.c}{\texttt{ core\+\_\+3d\+\_\+camera\+\_\+free.\+c}} and \href{https://github.com/raysan5/raylib/blob/master/examples/core_3d_camera_first_person.c}{\texttt{ core\+\_\+3d\+\_\+camera\+\_\+first\+\_\+person.\+c}}.
+
+New \href{https://github.com/raysan5/raylib/blob/master/src/gestures.h}{\texttt{ gestures}} module simplifies gestures detection on Android and H\+T\+M\+L5 programs.
+
+\href{https://github.com/raysan5/raylib/blob/master/src/raygui.h}{\texttt{ raygui}}, the new immediate-\/mode G\+UI module offers a set of functions to create simple user interfaces, primary intended for tools development. It\textquotesingle{}s still in experimental state but already fully functional.
+
+Most of the examples have been completely rewritten and +10 new examples have been added to show the new raylib features.
+
+Lots of code changes and lot of testing have concluded in this amazing new raylib 1.\+3.\hypertarget{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md24}{}\doxysubsection{notes on raylib 1.\+4}\label{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md24}
+On February 2016, after 4 months of raylib 1.\+3 release, it comes raylib 1.\+4. For this new version, lots of parts of the library have been reviewed, lots of bugs have been solved and some interesting features have been added.
+
+First big addition is a set of \href{https://github.com/raysan5/raylib/blob/master/src/raylib.h\#L673}{\texttt{ Image manipulation functions}} have been added to crop, resize, colorize, flip, dither and even draw image-\/to-\/image or text-\/to-\/image. Now a basic image processing can be done before converting the image to texture for usage.
+
+Sprite\+Fonts system has been improved, adding support for Angel\+Code fonts (.fnt) and True\+Type Fonts (using \href{https://github.com/nothings/stb/blob/master/stb_truetype.h}{\texttt{ stb\+\_\+truetype}} helper library). Now raylib can read standard .fnt font data and also generate at loading a Sprite\+Font from a T\+TF file.
+
+New \href{https://github.com/raysan5/raylib/blob/master/src/physac.h}{\texttt{ physac}} physics module for basic 2D physics support. Still in development but already functional. Module comes with some usage examples for basic jump and level interaction and also force-\/based physic movements.
+
+\href{https://github.com/raysan5/raylib/blob/master/src/raymath.h}{\texttt{ raymath}} module has been reviewed; some bugs have been solved and the module has been converted to a header-\/only file for easier portability, optionally, functions can also be used as inline.
+
+\href{https://github.com/raysan5/raylib/blob/master/src/gestures.c}{\texttt{ gestures}} module has redesigned and simplified, now it can process touch events from any source, including mouse. This way, gestures system can be used on any platform providing an unified way to work with inputs and allowing the user to create multiplatform games with only one source code.
+
+Raspberry Pi input system has been redesigned to better read raw inputs using generic Linux event handlers (keyboard\+:{\ttfamily stdin}, mouse\+:{\ttfamily /dev/input/mouse0}, gamepad\+:{\ttfamily /dev/input/js0}). Gamepad support has also been added (experimental).
+
+Other important improvements are the functional raycast system for 3D picking, including some ray collision-\/detection functions, and the addition of two simple functions for persistent data storage. Now raylib user can save and load game data in a file (only some platforms supported). A simple \href{https://github.com/raysan5/raylib/blob/master/src/easings.h}{\texttt{ easings}} module has also been added for values animation.
+
+Up to 8 new code examples have been added to show the new raylib features and +10 complete game samples have been provided to learn how to create some classic games like Arkanoid, Asteroids, \mbox{\hyperlink{struct_missile}{Missile}} Commander, \mbox{\hyperlink{struct_snake}{Snake}} or Tetris.
+
+Lots of code changes and lots of hours of hard work have concluded in this amazing new raylib 1.\+4.\hypertarget{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md25}{}\doxysubsection{notes on raylib 1.\+5}\label{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md25}
+On July 2016, after 5 months of raylib 1.\+4 release, arrives raylib 1.\+5. This new version is the biggest boost of the library until now, lots of parts of the library have been redesigned, lots of bugs have been solved and some {\bfseries{A\+M\+A\+Z\+I\+NG}} new features have been added.
+
+VR support\+: raylib supports {\bfseries{Oculus Rift C\+V1}}, one of the most anticipated VR devices in the market. Additionally, raylib supports simulated VR stereo rendering, independent of the VR device; it means, raylib can generate stereo renders with custom head-\/mounted-\/display device parameteres, that way, any VR device in the market can be {\bfseries{simulated in any platform}} just configuring device parameters (and consequently, lens distortion). To enable VR is \href{https://github.com/raysan5/raylib/blob/master/examples/core_oculus_rift.c}{\texttt{ extremely easy}}.
+
+New materials system\+: now raylib supports standard material properties for 3D models, including diffuse-\/ambient-\/specular colors and diffuse-\/normal-\/specular textures. Just assign values to standard material and everything is processed internally.
+
+New lighting system\+: added support for up to 8 configurable lights and 3 light types\+: {\bfseries{point}}, {\bfseries{directional}} and {\bfseries{spot}} lights. Just create a light, configure its parameters and raylib manages render internally for every 3d object using standard material.
+
+Complete gamepad support on Raspberry Pi\+: Gamepad system has been completely redesigned. Now multiple gamepads can be easily configured and used; gamepad data is read and processed in raw mode in a second thread.
+
+Redesigned physics module\+: \href{https://github.com/raysan5/raylib/blob/master/src/physac.h}{\texttt{ physac}} module has been converted to header only and usage \href{https://github.com/raysan5/raylib/blob/master/examples/physics_basic_rigidbody.c}{\texttt{ has been simplified}}. Performance has also been singnificantly improved, now physic objects are managed internally in a second thread.
+
+\mbox{\hyperlink{class_audio}{Audio}} chiptunese support and mixing channels\+: Added support for module audio music (.xm, .mod) loading and playing. Multiple mixing channels are now also supported. All this features thanks to the amazing work of @kd7tck.
+
+Other additions include a \href{https://github.com/raysan5/raylib/blob/master/examples/core_2d_camera.c}{\texttt{ 2D camera system}}, render textures for offline render (and most comprehensive \href{https://github.com/raysan5/raylib/blob/master/examples/shaders_postprocessing.c}{\texttt{ postprocessing}}) or support for legacy Open\+GL 2.\+1 on desktop platforms.
+
+This new version is so massive that is difficult to list all the improvements, most of raylib modules have been reviewed and \href{https://github.com/raysan5/raylib/blob/master/src/rlgl.c}{\texttt{ rlgl}} module has been completely redesigned to accomodate to new material-\/lighting systems and stereo rendering. You can check \href{https://github.com/raysan5/raylib/blob/master/CHANGELOG}{\texttt{ C\+H\+A\+N\+G\+E\+L\+OG}} file for a more detailed list of changes.
+
+Up to 8 new code examples have been added to show the new raylib features and also some samples to show the usage of \href{https://github.com/raysan5/raylib/blob/master/examples/rlgl_standalone.c}{\texttt{ rlgl}} and \href{https://github.com/raysan5/raylib/blob/master/examples/audio_standalone.c}{\texttt{ audio}} raylib modules as standalone libraries.
+
+Lots of code changes (+400 commits) and lots of hours of hard work have concluded in this amazing new raylib 1.\+5.\hypertarget{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md26}{}\doxysubsection{notes on raylib 1.\+6}\label{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md26}
+On November 2016, only 4 months after raylib 1.\+5, arrives raylib 1.\+6. This new version represents another big review of the library and includes some interesting additions. This version conmmemorates raylib 3rd anniversary (raylib 1.\+0 was published on November 2013) and it is a stepping stone for raylib future. raylib roadmap has been reviewed and redefined to focus on its primary objective\+: create a simple and easy-\/to-\/use library to learn videogames programming. Some of the new features\+:
+
+Complete \href{https://github.com/raysan5/raylib-lua}{\texttt{ raylib Lua binding}}. All raylib functions plus the +60 code examples have been ported to Lua, now Lua users can enjoy coding videogames in Lua while using all the internal power of raylib. This addition also open the doors to Lua scripting support for a future raylib-\/based engine, being able to move game logic (Init, Update, Draw, De-\/\+Init) to Lua scripts while keep using raylib functionality.
+
+Completely redesigned \href{https://github.com/raysan5/raylib/blob/master/src/raudio.c}{\texttt{ audio module}}. Based on the new direction taken in raylib 1.\+5, it has been further improved and more functionality added (+20 new functions) to allow raw audio processing and streaming. \href{https://github.com/raysan5/raylib/blob/master/src/external/dr_flac.h}{\texttt{ F\+L\+AC file format support}} has also been added. In the same line, \href{https://github.com/kcat/openal-soft}{\texttt{ Open\+AL Soft}} backend is now provided as a static library in Windows to allow static linking and get ride of Open\+A\+L32.\+dll. Now raylib Windows games are completey self-\/contained, no external libraries required any more!
+
+\href{https://github.com/victorfisac/Physac}{\texttt{ Physac}} module has been moved to its own repository and it has been improved A L\+OT, actually, library has been completely rewritten from scratch by \href{https://github.com/victorfisac}{\texttt{ @victorfisac}}, multiple samples have been added together with countless new features to match current standard 2D physic libraries. Results are amazing!
+
+Camera and gestures modules have been reviewed, highly simplified and ported to single-\/file header-\/only libraries for easier portability and usage flexibility. Consequently, camera system usage has been simplified in all examples.
+
+Improved Gamepad support on Windows and Raspberry Pi with the addition of new functions for custom gamepad configurations but supporting by default P\+S3 and Xbox-\/based gamepads.
+
+Improved textures and text functionality, adding new functions for texture filtering control and better T\+T\+F/\+Angel\+Code fonts loading and generation support.
+
+Build system improvement. Added support for raylib dynamic library generation (raylib.\+dll) for users that prefer dynamic library linking. Also thinking on advance users, it has been added pre-\/configured \href{https://github.com/raysan5/raylib/tree/master/project/vs2015}{\texttt{ Visual Studio C++ 2015 solution}} with raylib project and C/\+C++ examples for users that prefer that professional I\+DE and compiler.
+
+New examples, new functions, complete code-\/base review, multiple bugs corrected... this is raylib 1.\+6. Enjoy making games.\hypertarget{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md27}{}\doxysubsection{notes on raylib 1.\+7}\label{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md27}
+On May 2017, around 6 month after raylib 1.\+6, comes another raylib instalment, raylib 1.\+7. This time library has been improved a lot in terms of consistency and cleanness. As stated in \href{https://www.patreon.com/posts/raylib-future-7501034}{\texttt{ this patreon article}}, this new raylib version has focused efforts in becoming more simple and easy-\/to-\/use to learn videogames programming. Some highlights of this new version are\+:
+
+More than 30 new functions added to the library, functions to control \mbox{\hyperlink{class_window}{Window}}, utils to work with filenames and extensions, functions to draw lines with custom thick, mesh loading, functions for 3d ray collisions detailed detection, funtions for VR simulation and much more... Just check \mbox{[}C\+H\+A\+N\+G\+E\+L\+OG\mbox{]}(C\+H\+A\+N\+G\+E\+L\+OG) for a detailed list of additions!
+
+Support of \href{https://github.com/raysan5/raylib/issues/200}{\texttt{ configuration flags}} on every raylib module. Advance users can customize raylib just choosing desired features, defining some configuration flags on modules compilation. That way users can control library size and available functionality.
+
+Improved \href{https://github.com/raysan5/raylib/blob/master/src/Makefile}{\texttt{ build system}} for all supported platforms (Windows, Linux, O\+SX, R\+PI, Android, H\+T\+M\+L5) with a unique Makefile to compile sources. Added support for Android compilation with a custom standalone toolchain and also multiple build compliation flags.
+
+New \href{http://www.raylib.com/examples.html}{\texttt{ examples}} and \href{http://www.raylib.com/games.html}{\texttt{ sample games}} added. All samples material has been reviewed, removing useless examples and adding more comprehensive ones; all material has been ported to latest raylib version and tested in multiple platforms. Examples folder structure has been improved and also build systems.
+
+Improved library consistency and organization in general. Functions and parameters have been renamed, some parts of the library have been cleaned and simplyfied, some functions has been moved to examples (lighting, Oculus Rift C\+V1 support) towards a more generic library implementation. Lots of hours have been invested in this process...
+
+Some other features\+: Gamepad support on H\+T\+M\+L5, R\+PI touch screen support, 32bit audio support, frames timing improvements, public log system, rres file format support, automatic G\+IF recording...
+
+And here it is another version of {\bfseries{raylib, a simple and easy-\/to-\/use library to enjoy videogames programming}}. Enjoy it.\hypertarget{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md28}{}\doxysubsection{notes on raylib 1.\+8}\label{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md28}
+October 2017, around 5 months after latest raylib version, another release is published\+: raylib 1.\+8. Again, several modules of the library have been reviewed and some new functionality added. Main changes of this new release are\+:
+
+\href{https://github.com/raysan5/raylib/blob/master/examples/textures/textures_image_generation.c}{\texttt{ Procedural image generation}} function, a set of new functions have been added to generate gradients, checked, noise and cellular images from scratch. \mbox{\hyperlink{struct_image}{Image}} generation could be useful for certain textures or learning pourpouses.
+
+\href{https://github.com/raysan5/raylib/blob/master/examples/models/models_mesh_generation.c}{\texttt{ Parametric mesh generation}} functions, create 3d meshes from scratch just defining a set of parameters, meshes like cube, sphere, cylinder, torus, knot and more can be very useful for prototyping or for lighting and texture testing.
+
+P\+BR Materials support, a completely redesigned shaders and material system allows advance materials definition and usage, with fully customizable shaders. Some new functions have been added to generate the environment textures required for P\+BR shading and a a new complete \href{https://github.com/raysan5/raylib/blob/master/examples/models/models_material_pbr.c}{\texttt{ P\+BR material example}} is also provided for reference.
+
+Custom Android A\+PK build pipeline with \href{https://github.com/raysan5/raylib/blob/master/templates/simple_game/Makefile}{\texttt{ simple Makefile}}. Actually, full code building mechanism based on plain Makefile has been completely reviewed and Android building has been added for sources and also for examples and templates building into final A\+PK package. This way, raylib Android building has been greatly simplified and integrated seamlessly into standard build scripts.
+
+\href{https://github.com/raysan5/raylib/blob/master/src/rlgl.h}{\texttt{ rlgl}} module has been completely reviewed and most of the functions renamed for consistency. This way, standalone usage of rlgl is promoted, with a \href{https://github.com/raysan5/raylib/blob/master/examples/others/rlgl_standalone.c}{\texttt{ complete example provided}}. rlgl offers a pseudo-\/\+Open\+GL 1.\+1 immediate-\/mode programming-\/style layer, with backends to multiple Open\+GL versions.
+
+\href{https://github.com/raysan5/raylib/blob/master/src/raymath.h}{\texttt{ raymath}} library has been also reviewed to align with other advance math libraries like \href{https://github.com/g-truc/glm}{\texttt{ G\+LM}}. \mbox{\hyperlink{struct_matrix}{Matrix}} math has been improved and simplified, some new Quaternion functions have been added and \mbox{\hyperlink{struct_vector3}{Vector3}} functions have been renamed all around the library for consistency with new \mbox{\hyperlink{struct_vector2}{Vector2}} functionality.
+
+Additionally, as always, examples and templates have been reviewed to work with new version (some new examples have been added), all external libraries have been updated to latest stable version and latest Notepad++ and Min\+GW have been configured to work with new raylib. For a full list of changes, just check \mbox{[}C\+H\+A\+N\+G\+E\+L\+OG\mbox{]}(C\+H\+A\+N\+G\+E\+L\+OG).
+
+New installer provided, web updated, examples re-\/builded, documentation reviewed... {\bfseries{new raylib 1.\+8 published}}. Enjoy coding games.\hypertarget{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md29}{}\doxysubsection{notes on raylib 2.\+0}\label{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md29}
+It\textquotesingle{}s been 9 month since last raylib version was published, a lots of things have changed since then... This new raylib version represents an inflexion point in the development of the library and so, we jump to a new major version... Here it is the result of almost {\bfseries{5 years and thousands of hours of hard work}}... here it is... {\bfseries{raylib 2.\+0}}
+
+In {\bfseries{raylib 2.\+0}} the full A\+PI has been carefully reviewed for better consistency, some new functionality has been added and the overall raylib experience has been greatly improved... The key features of new version are\+:
+
+{\bfseries{Complete removal of external dependencies.}} Finally, raylib does not require external libraries to be installed and linked along with raylib, all required libraries are contained and compiled within raylib. Obviously some external libraries are required but only the strictly platform-\/dependant ones, the ones that come installed with the OS. So, raylib becomes a self-\/contained platform-\/independent games development library.
+
+{\bfseries{Full redesign of audio module to use the amazing miniaudio library}}, along with external dependencies removal, Open\+AL library has been replaced by \href{https://github.com/dr-soft/miniaudio}{\texttt{ miniaudio}}, this brand new library offers automatic dynamic linking with default OS audio systems. Undoubtly, the perfect low-\/level companion for raylib audio module!
+
+{\bfseries{Support for continuous integration building$\ast$$\ast$$\ast$ through App\+Veyor and Travis CI. Consequently, raylib Git\+Hub develop branch has been removed, simplyfing the code-\/base to a single master branch, always stable. Every time a new commit is deployed, library is compiled for $\ast$$\ast$up-\/to 12 different configurations}}, including multiple platforms, 32bit/64bit and multiple compiler options! All those binaries are automatically attached to any new release!
+
+{\bfseries{More platforms supported and tested}}, including B\+SD family (Free\+B\+SD, open\+B\+SD, Net\+B\+SD, Dragon\+Fly) and Linux-\/based family platforms (open\+S\+U\+SE, Debian, Ubuntu, Arch, Nix\+OS...). raylib has already been added to some package managers! Oh, and last but not less important, {\bfseries{Android 64bit}} is already supported by raylib!
+
+{\bfseries{Support for T\+CC compiler!}} Thanks to the lack of external dependencies, raylib can now be easily compiled with a {\bfseries{minimal toolchain}}, like the one provide by Tiny C Compiler. It opens the door to an amazing future, allowing, for example, static linkage of libtcc for {\bfseries{runtime compilation of raylib-\/based code}}... and the library itself if required! Moreover, T\+CC is blazing fast, it can compile all raylib in a couple of seconds!
+
+Refactored all raylib configuration \#defines into a {\bfseries{centralized {\ttfamily config.\+h} header}}, with more than {\bfseries{40 possible configuration options}} to compile a totally customizable raylib version including only desired options like supported file-\/formats or specific functionality support. It allows generating a trully ligth-\/weight version of the library if desired!
+
+A part of that, lots of new features, like a brand {\bfseries{new font rendering and packaging system}} for T\+TF fonts with {\bfseries{S\+DF support}} (thanks to the amazing S\+TB headers), new functions for {\bfseries{C\+PU image data manipulation}}, new orthographic 3d camera mode, a complete review of {\ttfamily raymath.\+h} single-\/file header-\/only library for better consistency and performance, new examples and way, \href{https://github.com/raysan5/raylib/blob/master/CHANGELOG}{\texttt{ way more}}.
+
+Probably by now, {\bfseries{raylib 2.\+0 is the simplest and easiest-\/to-\/use library to enjoy (and learn) videogames programming}}... but, undoubtly its development has exceeded any initial objective; raylib has become a simple and easy-\/to-\/use trully multiplatform portable standalone media library with thousands of possibilities... and that\textquotesingle{}s just the beginning!\hypertarget{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md30}{}\doxysubsection{notes on raylib 2.\+5}\label{md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y_autotoc_md30}
+After almost one years since latest raylib installment, here it is {\bfseries{raylib 2.\+5}}. A lot of work has been put on this new version and consequently I decided to bump versioning several digits. The complete list of changes and additions is humungous, details can be found in the \mbox{[}C\+H\+A\+N\+G\+E\+L\+OG\mbox{]}(C\+H\+A\+N\+G\+E\+L\+OG), and here it is a short recap with the highlight improvements.
+
+New {\bfseries{window management and filesystem functions}} to query monitor information, deal with clipboard, check directory files info and even launch a U\+RL with default system web browser. Experimental {\bfseries{High-\/\+D\+PI monitor support}} has also been added through a compile flag.
+
+{\bfseries{Redesigned Gamepad mechanism}}, now generic for all platforms and gamepads, no more specific gamepad configurations. {\bfseries{Redesigned U\+WP input system}}, now raylib supports U\+WP seamlessly, previous implementation required a custom input system implemented in user code.
+
+{\ttfamily rlgl} module has been redesigned to {\bfseries{support a unique buffer for shapes drawing batching}}, including L\+I\+N\+ES, T\+R\+I\+A\+N\+G\+L\+ES, Q\+U\+A\+DS in the same indexed buffer, also added support for multi-\/buffering if required. Additionally, {\ttfamily \mbox{\hyperlink{raylib-build_2src_2rlgl_8h_a5f926caa45b57b3de67aa0afc2d2bb0e}{rl\+Push\+Matrix()}}}/{\ttfamily \mbox{\hyperlink{raylib-build_2src_2rlgl_8h_ac957925e053ada7dc541bd4bedfecb9f}{rl\+Pop\+Matrix()}}} functionality has been reviewed to behave exactly like Open\+GL 1.\+1, {\ttfamily models\+\_\+rlgl\+\_\+solar\+\_\+system} example has been added to illustrate this behaviour.
+
+{\bfseries{VR simulator}} has been reviewed to {\bfseries{allow custom configuration of Head-\/\+Mounted-\/\+Device parameters and distortion shader}}, {\ttfamily core\+\_\+vr\+\_\+simulator} has been properly adapted to showcase this new functionality, now the VR simulator is a generic configurable stereo rendering system that allows any VR device simulation with just a few lines of code or even dynamic tweaking of H\+MD parameters.
+
+Support for {\bfseries{Unicode text drawing}}; now raylib processes U\+T\+F8 strings on drawing, supporting Unicode codepoints, allowing rendering mostly any existent language (as long as the font with the glyphs is provided). An amazing example showing this feature has also been added\+: {\ttfamily text\+\_\+unicode}.
+
+Brand {\bfseries{new text management A\+PI}}, with the addition of multiple functions to deal with string data, including functionality like replace, insert, join, split, append, to uppercase, to lower... Note that most of those functions are intended for text management on rendering, using pre-\/loaded internal buffers, avoiding new memory allocation that user should free manually.
+
+Multiple {\bfseries{new shapes and textures drawing functions}} to support rings ({\ttfamily \mbox{\hyperlink{raylib-build_2src_2raylib_8h_aa19bc414b1b4ea8f1be756ca55b00560}{Draw\+Ring()}}}, {\ttfamily \mbox{\hyperlink{raylib-build_2src_2raylib_8h_a1f2cfdfbd468e5404c8410e626effa9f}{Draw\+Ring\+Lines()}}}), circle sectors ({\ttfamily \mbox{\hyperlink{raylib-build_2src_2raylib_8h_a2f8064968efa259ae98a27c811235f51}{Draw\+Circle\+Sector()}}}, {\ttfamily \mbox{\hyperlink{raylib-build_2src_2raylib_8h_adc55cc7ab6c5467d5af2e7fbc2e81092}{Draw\+Circle\+Sector\+Lines()}}}), rounded rectangles ({\ttfamily \mbox{\hyperlink{raylib-build_2src_2raylib_8h_ac017d3b0411887353a1fe08f03ad1659}{Draw\+Rectangle\+Rounded()}}}, {\ttfamily \mbox{\hyperlink{raylib-build_2src_2raylib_8h_a2d3caa58b5051428152dea55385e7260}{Draw\+Rectangle\+Rounded\+Lines()}}}) and also n-\/patch textures ({\ttfamily \mbox{\hyperlink{raylib-build_2src_2raylib_8h_ad71929b691c419163f0d42bbd40eccbc}{Draw\+Texture\+N\+Patch()}}}), detailed examples have been added to illustrate all this new functionality.
+
+Experimental {\bfseries{cubemap support}}, to automatically load multiple cubemap layouts ({\ttfamily \mbox{\hyperlink{raylib-build_2src_2raylib_8h_a6e356e0e74eed4c6ff14c0c38e280099}{Load\+Texture\+Cubemap()}}}). It required some internal {\ttfamily rlgl} redesign to allow cubemap textures.
+
+{\bfseries{Skeletal animation support for 3d models}}, this addition implied a redesign of {\ttfamily \mbox{\hyperlink{struct_model}{Model}}} data structure to accomodate multiple mesh/multiple materials support and bones information. Multiple models functions have been reviewed and added on this process, also {\bfseries{gl\+TF models loading support}} has been added.
+
+This is a just a brief list with some of the changes of the new {\bfseries{raylib 2.\+5}} but there is way more, about {\bfseries{70 new functions}} have been added and several subsystems have been redesigned. More than {\bfseries{30 new examples}} have been created to show the new functionalities and better illustrate already available ones.
+
+It has been a long year of hard work to make raylib a solid technology to develop new products over it. 

@@ -1,36 +1,27 @@
-//
-// Created by Abril on 13/4/2020.
-//
-#include <string>
+
 #include "Monkey.h"
 #include "raylib.h"
-/*
-Monkey::Monkey() {
-    char left;
-    mov = 0
-    Draw();
-}
-*/
 
 void Monkey::move_right() {
     if (lado == 1)
     {
+        mov = 1;
         Draw();
+        mov = 0;
     }
     else
         newlado();
-    //Bajar arbol
 }
 
 void Monkey::move_left() {
     if (lado == -1)
     {
-	mov = 1;
+	    mov = 1;
         Draw();
+        mov = 0;
     }
     else
         newlado();
-    //Bajar arbol
 }
 
 void Monkey::newlado()

@@ -1,0 +1,236 @@
+\hypertarget{structandroid__app}{}\doxysection{Referencia de la Estructura android\+\_\+app}
+\label{structandroid__app}\index{android\_app@{android\_app}}
+
+
+{\ttfamily \#include $<$android\+\_\+native\+\_\+app\+\_\+glue.\+h$>$}
+
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{structandroid__app_a7db5bcb24a007843cd551d94f90b6a83}{user\+Data}}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}($\ast$ \mbox{\hyperlink{structandroid__app_a69e6a61ebff05365e6fcde4ed14e6789}{on\+App\+Cmd}} )(struct \mbox{\hyperlink{structandroid__app}{android\+\_\+app}} $\ast$app, \mbox{\hyperlink{stdint_8h_ab1967d8591af1a4e48c37fd2b0f184d0}{int32\+\_\+t}} cmd)
+\item 
+\mbox{\hyperlink{stdint_8h_ab1967d8591af1a4e48c37fd2b0f184d0}{int32\+\_\+t}}($\ast$ \mbox{\hyperlink{structandroid__app_aba2fed988bfbfd74db05247d688b4d30}{on\+Input\+Event}} )(struct \mbox{\hyperlink{structandroid__app}{android\+\_\+app}} $\ast$app, A\+Input\+Event $\ast$event)
+\item 
+A\+Native\+Activity $\ast$ \mbox{\hyperlink{structandroid__app_a2d6bfa818258be6c0a99f9cd5b52e84e}{activity}}
+\item 
+A\+Configuration $\ast$ \mbox{\hyperlink{structandroid__app_a213d5969dfae6fc952d2c6dc10077066}{config}}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{structandroid__app_a25fd3ec42798fb7cffc243502b35a5e3}{saved\+State}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structandroid__app_a2194e58c113f617e474728d15193e4e1}{saved\+State\+Size}}
+\item 
+A\+Looper $\ast$ \mbox{\hyperlink{structandroid__app_aacbfb39562eb5b5386e9affb2e5c852a}{looper}}
+\item 
+A\+Input\+Queue $\ast$ \mbox{\hyperlink{structandroid__app_a4f86310f53e837ef5c66afd74f91ce2d}{input\+Queue}}
+\item 
+A\+Native\+Window $\ast$ \mbox{\hyperlink{structandroid__app_a7a0fd7c92b854bd467d982bddd7b7db8}{window}}
+\item 
+A\+Rect \mbox{\hyperlink{structandroid__app_a8502b9a38db281f86421191fba5e82ab}{content\+Rect}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structandroid__app_aa7ec7147572780debc989a1d4d175383}{activity\+State}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structandroid__app_a28aec6ab9685d0cba4a1fcb2fb78ea99}{destroy\+Requested}}
+\item 
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{structandroid__app_a3a1f74c4af609c4c7ae4457a7c686f61}{mutex}}
+\item 
+pthread\+\_\+cond\+\_\+t \mbox{\hyperlink{structandroid__app_a89324f948282d6551d919cefdcd667b0}{cond}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structandroid__app_a9b66853f6e98efd59c9a4b27b4e1fbef}{msgread}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structandroid__app_adef48f78848f853957640e9798a99390}{msgwrite}}
+\item 
+pthread\+\_\+t \mbox{\hyperlink{structandroid__app_ad4673c395bd118da630a9519b2637bca}{thread}}
+\item 
+struct \mbox{\hyperlink{structandroid__poll__source}{android\+\_\+poll\+\_\+source}} \mbox{\hyperlink{structandroid__app_a6cb348c61073727f63377d17f46cb65a}{cmd\+Poll\+Source}}
+\item 
+struct \mbox{\hyperlink{structandroid__poll__source}{android\+\_\+poll\+\_\+source}} \mbox{\hyperlink{structandroid__app_a166449235d0e396b525bb999de75c0a4}{input\+Poll\+Source}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structandroid__app_a190c62e896f82c250374fad40ba8ae24}{running}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structandroid__app_ac73b6aa897edb307e948d0eee9626c98}{state\+Saved}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structandroid__app_ab4b551733da7fe120c791392f65f5679}{destroyed}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structandroid__app_ae89558379501525a919e14b7f672a4fe}{redraw\+Needed}}
+\item 
+A\+Input\+Queue $\ast$ \mbox{\hyperlink{structandroid__app_a9fc6db2fc1dc138141bfb7575bd14750}{pending\+Input\+Queue}}
+\item 
+A\+Native\+Window $\ast$ \mbox{\hyperlink{structandroid__app_ae1d06ab52beb0aeace4a8673b6351be4}{pending\+Window}}
+\item 
+A\+Rect \mbox{\hyperlink{structandroid__app_ad4fa67ecf38286ac638b97cf936a8196}{pending\+Content\+Rect}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+This is the interface for the standard glue code of a threaded application. In this model, the application\textquotesingle{}s code is running in its own thread separate from the main thread of the process. It is not required that this thread be associated with the Java VM, although it will need to be in order to make J\+NI calls any Java objects. 
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{structandroid__app_a2d6bfa818258be6c0a99f9cd5b52e84e}\label{structandroid__app_a2d6bfa818258be6c0a99f9cd5b52e84e}} 
+\index{android\_app@{android\_app}!activity@{activity}}
+\index{activity@{activity}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{activity}{activity}}
+{\footnotesize\ttfamily A\+Native\+Activity$\ast$ android\+\_\+app\+::activity}
+
+\mbox{\Hypertarget{structandroid__app_aa7ec7147572780debc989a1d4d175383}\label{structandroid__app_aa7ec7147572780debc989a1d4d175383}} 
+\index{android\_app@{android\_app}!activityState@{activityState}}
+\index{activityState@{activityState}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{activityState}{activityState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} android\+\_\+app\+::activity\+State}
+
+\mbox{\Hypertarget{structandroid__app_a6cb348c61073727f63377d17f46cb65a}\label{structandroid__app_a6cb348c61073727f63377d17f46cb65a}} 
+\index{android\_app@{android\_app}!cmdPollSource@{cmdPollSource}}
+\index{cmdPollSource@{cmdPollSource}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{cmdPollSource}{cmdPollSource}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structandroid__poll__source}{android\+\_\+poll\+\_\+source}} android\+\_\+app\+::cmd\+Poll\+Source}
+
+\mbox{\Hypertarget{structandroid__app_a89324f948282d6551d919cefdcd667b0}\label{structandroid__app_a89324f948282d6551d919cefdcd667b0}} 
+\index{android\_app@{android\_app}!cond@{cond}}
+\index{cond@{cond}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{cond}{cond}}
+{\footnotesize\ttfamily pthread\+\_\+cond\+\_\+t android\+\_\+app\+::cond}
+
+\mbox{\Hypertarget{structandroid__app_a213d5969dfae6fc952d2c6dc10077066}\label{structandroid__app_a213d5969dfae6fc952d2c6dc10077066}} 
+\index{android\_app@{android\_app}!config@{config}}
+\index{config@{config}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily A\+Configuration$\ast$ android\+\_\+app\+::config}
+
+\mbox{\Hypertarget{structandroid__app_a8502b9a38db281f86421191fba5e82ab}\label{structandroid__app_a8502b9a38db281f86421191fba5e82ab}} 
+\index{android\_app@{android\_app}!contentRect@{contentRect}}
+\index{contentRect@{contentRect}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{contentRect}{contentRect}}
+{\footnotesize\ttfamily A\+Rect android\+\_\+app\+::content\+Rect}
+
+\mbox{\Hypertarget{structandroid__app_ab4b551733da7fe120c791392f65f5679}\label{structandroid__app_ab4b551733da7fe120c791392f65f5679}} 
+\index{android\_app@{android\_app}!destroyed@{destroyed}}
+\index{destroyed@{destroyed}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{destroyed}{destroyed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} android\+\_\+app\+::destroyed}
+
+\mbox{\Hypertarget{structandroid__app_a28aec6ab9685d0cba4a1fcb2fb78ea99}\label{structandroid__app_a28aec6ab9685d0cba4a1fcb2fb78ea99}} 
+\index{android\_app@{android\_app}!destroyRequested@{destroyRequested}}
+\index{destroyRequested@{destroyRequested}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{destroyRequested}{destroyRequested}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} android\+\_\+app\+::destroy\+Requested}
+
+\mbox{\Hypertarget{structandroid__app_a166449235d0e396b525bb999de75c0a4}\label{structandroid__app_a166449235d0e396b525bb999de75c0a4}} 
+\index{android\_app@{android\_app}!inputPollSource@{inputPollSource}}
+\index{inputPollSource@{inputPollSource}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{inputPollSource}{inputPollSource}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structandroid__poll__source}{android\+\_\+poll\+\_\+source}} android\+\_\+app\+::input\+Poll\+Source}
+
+\mbox{\Hypertarget{structandroid__app_a4f86310f53e837ef5c66afd74f91ce2d}\label{structandroid__app_a4f86310f53e837ef5c66afd74f91ce2d}} 
+\index{android\_app@{android\_app}!inputQueue@{inputQueue}}
+\index{inputQueue@{inputQueue}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{inputQueue}{inputQueue}}
+{\footnotesize\ttfamily A\+Input\+Queue$\ast$ android\+\_\+app\+::input\+Queue}
+
+\mbox{\Hypertarget{structandroid__app_aacbfb39562eb5b5386e9affb2e5c852a}\label{structandroid__app_aacbfb39562eb5b5386e9affb2e5c852a}} 
+\index{android\_app@{android\_app}!looper@{looper}}
+\index{looper@{looper}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{looper}{looper}}
+{\footnotesize\ttfamily A\+Looper$\ast$ android\+\_\+app\+::looper}
+
+\mbox{\Hypertarget{structandroid__app_a9b66853f6e98efd59c9a4b27b4e1fbef}\label{structandroid__app_a9b66853f6e98efd59c9a4b27b4e1fbef}} 
+\index{android\_app@{android\_app}!msgread@{msgread}}
+\index{msgread@{msgread}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{msgread}{msgread}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} android\+\_\+app\+::msgread}
+
+\mbox{\Hypertarget{structandroid__app_adef48f78848f853957640e9798a99390}\label{structandroid__app_adef48f78848f853957640e9798a99390}} 
+\index{android\_app@{android\_app}!msgwrite@{msgwrite}}
+\index{msgwrite@{msgwrite}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{msgwrite}{msgwrite}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} android\+\_\+app\+::msgwrite}
+
+\mbox{\Hypertarget{structandroid__app_a3a1f74c4af609c4c7ae4457a7c686f61}\label{structandroid__app_a3a1f74c4af609c4c7ae4457a7c686f61}} 
+\index{android\_app@{android\_app}!mutex@{mutex}}
+\index{mutex@{mutex}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{mutex}{mutex}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t android\+\_\+app\+::mutex}
+
+\mbox{\Hypertarget{structandroid__app_a69e6a61ebff05365e6fcde4ed14e6789}\label{structandroid__app_a69e6a61ebff05365e6fcde4ed14e6789}} 
+\index{android\_app@{android\_app}!onAppCmd@{onAppCmd}}
+\index{onAppCmd@{onAppCmd}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{onAppCmd}{onAppCmd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}($\ast$ android\+\_\+app\+::on\+App\+Cmd) (struct \mbox{\hyperlink{structandroid__app}{android\+\_\+app}} $\ast$app, \mbox{\hyperlink{stdint_8h_ab1967d8591af1a4e48c37fd2b0f184d0}{int32\+\_\+t}} cmd)}
+
+\mbox{\Hypertarget{structandroid__app_aba2fed988bfbfd74db05247d688b4d30}\label{structandroid__app_aba2fed988bfbfd74db05247d688b4d30}} 
+\index{android\_app@{android\_app}!onInputEvent@{onInputEvent}}
+\index{onInputEvent@{onInputEvent}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{onInputEvent}{onInputEvent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_ab1967d8591af1a4e48c37fd2b0f184d0}{int32\+\_\+t}}($\ast$ android\+\_\+app\+::on\+Input\+Event) (struct \mbox{\hyperlink{structandroid__app}{android\+\_\+app}} $\ast$app, A\+Input\+Event $\ast$event)}
+
+\mbox{\Hypertarget{structandroid__app_ad4fa67ecf38286ac638b97cf936a8196}\label{structandroid__app_ad4fa67ecf38286ac638b97cf936a8196}} 
+\index{android\_app@{android\_app}!pendingContentRect@{pendingContentRect}}
+\index{pendingContentRect@{pendingContentRect}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{pendingContentRect}{pendingContentRect}}
+{\footnotesize\ttfamily A\+Rect android\+\_\+app\+::pending\+Content\+Rect}
+
+\mbox{\Hypertarget{structandroid__app_a9fc6db2fc1dc138141bfb7575bd14750}\label{structandroid__app_a9fc6db2fc1dc138141bfb7575bd14750}} 
+\index{android\_app@{android\_app}!pendingInputQueue@{pendingInputQueue}}
+\index{pendingInputQueue@{pendingInputQueue}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{pendingInputQueue}{pendingInputQueue}}
+{\footnotesize\ttfamily A\+Input\+Queue$\ast$ android\+\_\+app\+::pending\+Input\+Queue}
+
+\mbox{\Hypertarget{structandroid__app_ae1d06ab52beb0aeace4a8673b6351be4}\label{structandroid__app_ae1d06ab52beb0aeace4a8673b6351be4}} 
+\index{android\_app@{android\_app}!pendingWindow@{pendingWindow}}
+\index{pendingWindow@{pendingWindow}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{pendingWindow}{pendingWindow}}
+{\footnotesize\ttfamily A\+Native\+Window$\ast$ android\+\_\+app\+::pending\+Window}
+
+\mbox{\Hypertarget{structandroid__app_ae89558379501525a919e14b7f672a4fe}\label{structandroid__app_ae89558379501525a919e14b7f672a4fe}} 
+\index{android\_app@{android\_app}!redrawNeeded@{redrawNeeded}}
+\index{redrawNeeded@{redrawNeeded}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{redrawNeeded}{redrawNeeded}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} android\+\_\+app\+::redraw\+Needed}
+
+\mbox{\Hypertarget{structandroid__app_a190c62e896f82c250374fad40ba8ae24}\label{structandroid__app_a190c62e896f82c250374fad40ba8ae24}} 
+\index{android\_app@{android\_app}!running@{running}}
+\index{running@{running}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} android\+\_\+app\+::running}
+
+\mbox{\Hypertarget{structandroid__app_a25fd3ec42798fb7cffc243502b35a5e3}\label{structandroid__app_a25fd3ec42798fb7cffc243502b35a5e3}} 
+\index{android\_app@{android\_app}!savedState@{savedState}}
+\index{savedState@{savedState}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{savedState}{savedState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}$\ast$ android\+\_\+app\+::saved\+State}
+
+\mbox{\Hypertarget{structandroid__app_a2194e58c113f617e474728d15193e4e1}\label{structandroid__app_a2194e58c113f617e474728d15193e4e1}} 
+\index{android\_app@{android\_app}!savedStateSize@{savedStateSize}}
+\index{savedStateSize@{savedStateSize}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{savedStateSize}{savedStateSize}}
+{\footnotesize\ttfamily size\+\_\+t android\+\_\+app\+::saved\+State\+Size}
+
+\mbox{\Hypertarget{structandroid__app_ac73b6aa897edb307e948d0eee9626c98}\label{structandroid__app_ac73b6aa897edb307e948d0eee9626c98}} 
+\index{android\_app@{android\_app}!stateSaved@{stateSaved}}
+\index{stateSaved@{stateSaved}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{stateSaved}{stateSaved}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} android\+\_\+app\+::state\+Saved}
+
+\mbox{\Hypertarget{structandroid__app_ad4673c395bd118da630a9519b2637bca}\label{structandroid__app_ad4673c395bd118da630a9519b2637bca}} 
+\index{android\_app@{android\_app}!thread@{thread}}
+\index{thread@{thread}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{thread}{thread}}
+{\footnotesize\ttfamily pthread\+\_\+t android\+\_\+app\+::thread}
+
+\mbox{\Hypertarget{structandroid__app_a7db5bcb24a007843cd551d94f90b6a83}\label{structandroid__app_a7db5bcb24a007843cd551d94f90b6a83}} 
+\index{android\_app@{android\_app}!userData@{userData}}
+\index{userData@{userData}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{userData}{userData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}$\ast$ android\+\_\+app\+::user\+Data}
+
+\mbox{\Hypertarget{structandroid__app_a7a0fd7c92b854bd467d982bddd7b7db8}\label{structandroid__app_a7a0fd7c92b854bd467d982bddd7b7db8}} 
+\index{android\_app@{android\_app}!window@{window}}
+\index{window@{window}!android\_app@{android\_app}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily A\+Native\+Window$\ast$ android\+\_\+app\+::window}
+
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/android/native\+\_\+app\+\_\+glue/\mbox{\hyperlink{android__native__app__glue_8h}{android\+\_\+native\+\_\+app\+\_\+glue.\+h}}\end{DoxyCompactItemize}

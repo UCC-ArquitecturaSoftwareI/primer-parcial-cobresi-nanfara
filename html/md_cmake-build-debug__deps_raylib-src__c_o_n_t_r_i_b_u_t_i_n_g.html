@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Contributing to raylib</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Contributing to raylib </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Hello contributors! Welcome to raylib!</p>
+<p>Do you enjoy raylib and want to contribute? Nice! You can help with the following points:</p>
+<ul>
+<li>C programming - Can you write/review/test/improve the code?</li>
+<li>Documentation/Tutorials/Example - Can you write some tutorial/example?</li>
+<li>Web Development - Can you help <a href="https://github.com/raysan5/raylib.com">with the website</a>?</li>
+<li>Porting to other platforms - Can you port and compile raylib on other systems?</li>
+<li>Testing - Can you find some bugs in raylib?</li>
+</ul>
+<p>This document contains a set of guidelines to contribute to the project. These are mostly guidelines, not rules. Use your best judgement, and feel free to propose changes to this document in a pull request.</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+raylib philosophy</h2>
+<ul>
+<li>raylib is a tool to enjoy videogames programming, every single function in raylib should be a tutorial on itself.</li>
+<li>raylib is SIMPLE and EASY-TO-USE, I tried to keep it compact with a small set of functions, if a function is too complex or is not clearly useful, better not to include it.</li>
+<li>raylib is open source and free; educators and institutions can use this tool to TEACH videogames programming completely by free.</li>
+<li>raylib is collaborative; contribution of tutorials / code examples / bug fixes / code comments are highly appreciated.</li>
+<li>raylib's license (and its external libs respective licenses) allow using it for commercial products.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Some interesting reads to start with</h2>
+<ul>
+<li><a class="el" href="md_cmake-build-debug__deps_raylib-src__h_i_s_t_o_r_y.html">raylib history</a></li>
+<li><a href="https://github.com/raysan5/raylib/wiki/raylib-architecture">raylib architecture</a></li>
+<li>[raylib license](LICENSE)</li>
+<li><a class="el" href="md_cmake-build-debug__deps_raylib-src__r_o_a_d_m_a_p.html">raylib roadmap</a></li>
+</ul>
+<p><a href="https://github.com/raysan5/raylib/wiki">raylib Wiki</a> contains some information about the library and is open to anyone for edit. Feel free to review it if required, just take care not to break something.</p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+raylib C coding conventions</h2>
+<p>Despite being written in C, raylib does not follow the standard Hungarian notation for C, it <a href="https://github.com/raysan5/raylib/wiki/raylib-coding-conventions">follows Pascal-case/camel-case notation</a>, more common on C# language. All code formatting decisions have been carefully taken to make it easier for students to read, write and understand code.</p>
+<p>Source code is extensively commented for that purpose, raylib primary learning method is:</p>
+<blockquote class="doxtable">
+<p>learn by reading code and examples </p>
+</blockquote>
+<p>For detailed information on building raylib and examples, please see <a href="https://github.com/raysan5/raylib/wiki">raylib Wiki</a>.</p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Opening new Issues</h2>
+<p>To open new issue for raylib (bug, enhancement, discussion...), just try to follow these rules:</p>
+<ul>
+<li>Make sure the issue has not already been reported before by searching on GitHub under Issues.</li>
+<li>If you're unable to find an open issue addressing the problem, open a new one. Be sure to include a title and clear description, as much relevant information as possible, and a code sample demonstrating the unexpected behavior.</li>
+<li>If applies, attach some screenshot of the issue and a .zip file with the code sample and required resources.</li>
+<li>On issue description, add a brackets tag about the raylib module that relates to this issue. If don't know which module, just report the issue, I will review it.</li>
+<li>You can check other issues to see how is being done!</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Sending a Pull-Request</h2>
+<ul>
+<li>Make sure the PR description clearly describes the problem and solution. Include the relevant issue number if applicable.</li>
+<li>Don't send big pull requests (lots of changelists), they are difficult to review. It's better to send small pull requests, one at a time.</li>
+<li>Verify that changes don't break the build (at least on Windows platform). As many platforms where you can test it, the better, but don't worry if you cannot test all the platforms.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Contact information</h2>
+<p>If you have any doubt, don't hesitate to <a href="#" onclick="location.href='mai'+'lto:'+'ray'+'@r'+'ayl'+'ib'+'.co'+'m'; return false;">contact me</a>!. You can write me a direct mail but you can also contact me on the following networks:</p>
+<ul>
+<li><a href="https://www.reddit.com/r/raylib/">raylib reddit</a> - A good place for discussions or to ask for help.</li>
+<li><a href="https://discord.gg/VkzNHUE">raylib Discord</a> - A direct communication channel for project discussions.</li>
+<li><a href="https://twitter.com/raysan5">raylib twitter</a> - My personal twitter account, I usually post about raylib, you can send me PMs.</li>
+<li><a href="http://www.raylib.com/">raylib web</a> - On top-right corner there is a bunch of networks where you can find me.</li>
+</ul>
+<p>Thank you very much for your time! :)</p>
+<hr  />
+<p>Here is a list of raylib contributors, these people have invested part of their time contributing (in some way or another) to make the raylib project better. Huge thanks to all of them!</p>
+<ul>
+<li><a href="https://github.com/Zopokx">Zopokx</a> for testing the web.</li>
+<li><a href="http://www.elendow.com">Elendow</a> for testing and helping on web development.</li>
+<li>Victor Dual for implementing and testing 3D shapes functions.</li>
+<li>Marc Palau for implementing and testing 3D shapes functions and contribute on camera and gestures modules.</li>
+<li>Kevin Gato for improving texture internal formats support and helping on raygui development.</li>
+<li>Daniel Nicolas for improving texture internal formats support and helping on raygui development.</li>
+<li>Marc Agüera for testing and using raylib on a real product (<a href="http://www.koalaseasons.com">Koala Seasons</a>)</li>
+<li>Daniel Moreno for testing and using raylib on a real product (<a href="http://www.koalaseasons.com">Koala Seasons</a>)</li>
+<li>Daniel Gomez for testing and using raylib on a real product (<a href="http://www.koalaseasons.com">Koala Seasons</a>)</li>
+<li><a href="https://github.com/anidealgift">Sergio Martinez</a> for helping on raygui development and tools development (raygui_styler).</li>
+<li><a href="https://github.com/victorfisac">Victor Fisac</a> for developing physics raylib module (physac) and implementing PBR materials and lighting systems... among multiple other improvements and multiple tools and games.</li>
+<li>Albert Martos for helping on raygui and porting examples and game-templates to Android and HTML5.</li>
+<li>Ian Eito for helping on raygui and porting examples and game-templates to Android and HTML5.</li>
+<li><a href="https://github.com/procedural">procedural</a> for testing raylib on Linux, correcting some bugs and adding several mouse functions.</li>
+<li><a href="https://github.com/cHemingway">Chris Hemingway</a> for improving raylib on OSX build system.</li>
+<li><a href="https://github.com/LelixSuper">Emanuele Petriglia</a> for working on multiple GNU/Linux improvements and developing <a href="https://github.com/LelixSuper/TicTacToe">TicTacToe</a> raylib game.</li>
+<li><a href="https://github.com/kd7tck">Joshua Reisenauer</a> for adding audio modules support (XM, MOD) and reviewing audio system.</li>
+<li><a href="https://github.com/paezao">Marcelo Paez</a> for helping on OSX High DPI display issue.</li>
+<li><a href="https://github.com/ghassanpl">Ghassan Al-Mashareqa</a> for an amazing contribution to raylib Lua module.</li>
+<li><a href="https://github.com/teodor-stoenescu">Teodor Stoenescu</a> for improvements on OBJ object loading.</li>
+<li><a href="https://github.com/RDR8">RDR8</a> for helping with Linux build improvements.</li>
+<li><a href="https://github.com/ficoos">Saggi Mizrahi</a> for multiple fixes on Linux and audio system.</li>
+<li><a href="https://github.com/xspager">Daniel Lemos</a> for fixing issues on Linux games building.</li>
+<li><a href="https://github.com/joeld42">Joel Davis</a> for adding raycast picking utilities and a <a href="https://github.com/raysan5/raylib/blob/master/examples/models/models_mesh_picking.c">great example</a></li>
+<li><a href="https://github.com/AudioMorphology">Richard Goodwin</a> for adding RPI touchscreen support.</li>
+<li><a href="https://github.com/gen2brain">Milan Nikolic</a> for adding Android build support with custom standalone toolchain.</li>
+<li><a href="https://github.com/jubalh">Michael Vetter</a> for improvements on build system and his work on Suse Linux package... and multiple fixes!</li>
+<li><a href="https://github.com/nounoursheureux">Wilhem Barbier</a> for adding <a class="el" href="struct_image.html">Image</a> generation functions, shaders work and some fixes.</li>
+<li><a href="https://github.com/define-private-public">Benjamin Summerton</a> for improving OSX building and his amazing work on CMake build sytem.</li>
+<li><a href="https://github.com/Martinfx">MartinFX</a> for adding compilation support for FreeBSD OS and derivatives.</li>
+<li><a href="https://github.com/a3f">Ahmad Fatoum</a> for implementing CI support for raylib (Travis and AppVeyor) and great improvements on build system.</li>
+<li><a href="https://github.com/SamNChiet">SamNChiet</a> for a greatly improved UWP input implementation.</li>
+<li><a href="https://github.com/mackron">David Reid</a> for a complete review of audio module to support his amazing miniaudio library.</li>
+<li><a href="https://github.com/questor">Kai</a> for multiple code reviews and improvements.</li>
+<li><a href="https://github.com/autious">Max Danielsson</a> for adding support for orthographic 3d camera projection</li>
+<li><a href="https://github.com/TheLumaio">Lumaio</a> for his great work on GBuffers and <a class="el" href="raylib-build_2src_2raylib_8h.html#af7a77c4811d3639d29f76f018d79f5fb">GetCollisionRayModel()</a>.</li>
+<li><a href="https://github.com/culacant">Jonas Daeyaert</a> for an amazing work on IQM animated models support.</li>
+<li><a href="https://github.com/SethArchambault">Seth Archambault</a> for the work on Android Gamepad support (SNES model).</li>
+<li><a href="https://github.com/D3nX">D3nX</a> for adding Code::Blocks project template.</li>
+<li><a href="https://github.com/Syphonx">Jak Barnes</a> for a great work on <code>rnet</code>, new raylib network module</li>
+<li><a href="https://github.com/Demizdor">Vlad Adrian</a> for an amazing work on Unicode support, new shapes functions and raygui.</li>
+<li><a href="https://github.com/Rover656">Reece Mackie</a> for a great work on improving UWP support</li>
+<li>[flashback-fx](flashback-fx) for improving easings library and example</li>
+<li><a href="https://github.com/overdev">Jorge A. Gomes</a> for adding nine-patch textures support and example</li>
+<li><a href="https://github.com/Berni8k">Berni8k</a> for improving Raspberry Pi input system, using evdev</li>
+<li><a href="https://github.com/wbrbr">Wilhem Barbier</a> for implementing glTF loading support and solving several issues</li>
+<li><a href="https://github.com/MarcoLizza">Marco Lizza</a> for improving logging system and multiple issues</li>
+<li><a href="https://github.com/anatagawa">Anata</a> for creating amazing examples and contributing with them</li>
+<li><a href="https://github.com/narice">Narice</a> made easings.h includable as standalone header</li>
+<li><a href="https://github.com/ProfJski">Eric J.</a> for shaders_eratosthenes example contribution</li>
+<li><a href="https://github.com/PompPenguin">PompPenguin</a> for reviewing 3rd person camera</li>
+<li><a href="https://github.com/msmshazan">Mohamed Shazan</a> for adding support for ANGLE graphics backend</li>
+</ul>
+<p>Please, if I forget someone in this list, excuse me and send a PR! </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

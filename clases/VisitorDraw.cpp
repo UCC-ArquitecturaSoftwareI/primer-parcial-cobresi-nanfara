@@ -12,28 +12,28 @@ void VisitorDraw::Visit(NightMonkey &monkey) {
     if (monkey.lado == 1)
     {
         position.x = 600;
-        rect.y = 1500;
+        monkey.rect.y = 1500;
         if (monkey.mov)
         {
-            if (rect.x == 900)
-                rect.x = 0;
+            if (monkey.rect.x == 900)
+                monkey.rect.x = 0;
             else
-                rect.x = rect.x+300;
+                monkey.rect.x = monkey.rect.x+300;
         }
     }
     if (monkey.lado == -1)
     {
         position.x = 300;
-        rect.y = 1800;
+        monkey.rect.y = 1800;
         if (monkey.mov)
         {
-            if (rect.x == 900)
-                rect.x = 0;
+            if (monkey.rect.x == 900)
+                monkey.rect.x = 0;
             else
-                rect.x = rect.x+300;
+                monkey.rect.x = monkey.rect.x+300;
         }
     }
-    DrawTextureRec(SingletonGame::get().sprite, rect, position, WHITE);
+    DrawTextureRec(SingletonGame::get().sprite, monkey.rect, position, WHITE);
     monkey.monkey_position = position;
 }
 
@@ -42,28 +42,28 @@ void VisitorDraw::Visit(LightMonkey &monkey) {
     if (monkey.lado == 1)
     {
         position.x = 600;
-        rect.y = 300;
+        monkey.rect.y = 300;
         if (monkey.mov)
         {
-            if (rect.x == 900)
-                rect.x = 0;
+            if (monkey.rect.x == 900)
+                monkey.rect.x = 0;
             else
-                rect.x = rect.x+300;
+                monkey.rect.x = monkey.rect.x+300;
         }
     }
     if (monkey.lado == -1)
     {
         position.x = 300;
-        rect.y = 600;
+        monkey.rect.y = 600;
         if (monkey.mov)
         {
-            if (rect.x == 900)
-                rect.x = 0;
+            if (monkey.rect.x == 900)
+                monkey.rect.x = 0;
             else
-                rect.x = rect.x+300;
+                monkey.rect.x = monkey.rect.x+300;
         }
     }
-    DrawTextureRec(SingletonGame::get().sprite, rect, position, WHITE);
+    DrawTextureRec(SingletonGame::get().sprite, monkey.rect, position, WHITE);
     monkey.monkey_position = position;
 
 }

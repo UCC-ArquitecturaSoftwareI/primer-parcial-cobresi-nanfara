@@ -1,0 +1,956 @@
+\hypertarget{raygui_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/examples/shapes/raygui.h}
+\label{raygui_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/shapes/raygui.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/shapes/raygui.h}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{raygui_8h_a7e761d8d68f83f60ffdc573b0e8445cf}{R\+A\+Y\+G\+U\+I\+\_\+\+V\+E\+R\+S\+I\+ON}}~\char`\"{}2.\+5-\/dev\char`\"{}
+\item 
+\#define \mbox{\hyperlink{raygui_8h_aa9f078937abc1bef5723c2d53442a32e}{T\+E\+X\+T\+E\+D\+I\+T\+\_\+\+C\+U\+R\+S\+O\+R\+\_\+\+B\+L\+I\+N\+K\+\_\+\+F\+R\+A\+M\+ES}}~20
+\item 
+\#define \mbox{\hyperlink{raygui_8h_a8c956dde6f8d8c41d8b350776b24890b}{N\+U\+M\+\_\+\+C\+O\+N\+T\+R\+O\+LS}}~16
+\item 
+\#define \mbox{\hyperlink{raygui_8h_aebe94ae6363476b4f38310d2e285da2f}{N\+U\+M\+\_\+\+P\+R\+O\+P\+S\+\_\+\+D\+E\+F\+A\+U\+LT}}~16
+\item 
+\#define \mbox{\hyperlink{raygui_8h_af30730ee231616c52b7dc619db18aba0}{N\+U\+M\+\_\+\+P\+R\+O\+P\+S\+\_\+\+E\+X\+T\+E\+N\+D\+ED}}~8
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{raygui_8h_aecf95defd54876416b4f316df021b758}{Gui\+Control\+State}} \{ \mbox{\hyperlink{raygui_8h_aecf95defd54876416b4f316df021b758a88795c23a65dc6c3d0d32080a7757b7c}{G\+U\+I\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+R\+M\+AL}} = 0, 
+\mbox{\hyperlink{raygui_8h_aecf95defd54876416b4f316df021b758acb49e937a74efc72b503aa2bee5b0e51}{G\+U\+I\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+O\+C\+U\+S\+ED}}, 
+\mbox{\hyperlink{raygui_8h_aecf95defd54876416b4f316df021b758af453ed0e6d003e468b8e18c655609bac}{G\+U\+I\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+E\+S\+S\+ED}}, 
+\mbox{\hyperlink{raygui_8h_aecf95defd54876416b4f316df021b758a4a0a793477cd2f58f6c8da13ad40b71b}{G\+U\+I\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63}{Gui\+Text\+Alignment}} \{ \mbox{\hyperlink{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63af8fe643f578dfb798dfc59d2d28a0fb4}{G\+U\+I\+\_\+\+T\+E\+X\+T\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+FT}} = 0, 
+\mbox{\hyperlink{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63a10cc9b127ea61881c6b7d1d21641af12}{G\+U\+I\+\_\+\+T\+E\+X\+T\+\_\+\+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER}}, 
+\mbox{\hyperlink{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63ae6c71d9ce5d0c7f278b24ae8d228740a}{G\+U\+I\+\_\+\+T\+E\+X\+T\+\_\+\+A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67}{Gui\+Control}} \{ \newline
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67a88ec7d5086d2469ba843c7fcceade8a6}{D\+E\+F\+A\+U\+LT}} = 0, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67a0f90de4d94720fdd5156fd7e7c3b0c9b}{L\+A\+B\+EL}}, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67a7d67f007544f534278ecca3cdca12565}{B\+U\+T\+T\+ON}}, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67a4acfde02350139a12fcef53ff7289aa7}{T\+O\+G\+G\+LE}}, 
+\newline
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67a47cabfc4ab8d55f6764f18bcf173f67c}{S\+L\+I\+D\+ER}}, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67ad6daef225442419e1ec2a9744a6df4cb}{P\+R\+O\+G\+R\+E\+S\+S\+B\+AR}}, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67ad4afc07a484c051b7ea30dce69afe3e8}{C\+H\+E\+C\+K\+B\+OX}}, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67aeb6d73055f99e0170907c4352dd1c448}{C\+O\+M\+B\+O\+B\+OX}}, 
+\newline
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67a3d0eb2c12a94489d826cad358bba5302}{D\+R\+O\+P\+D\+O\+W\+N\+B\+OX}}, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67accba5b31f181364f9d34bb6eb03a1e76}{T\+E\+X\+T\+B\+OX}}, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67a430cec5db8749b949f29a5d83ee187f0}{V\+A\+L\+U\+E\+B\+OX}}, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67a67f109c354a3e519b67ddd09801cfbf4}{S\+P\+I\+N\+N\+ER}}, 
+\newline
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67a69bf5f43a5657e35056de1b8ed098b10}{L\+I\+S\+T\+V\+I\+EW}}, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67a70865fc1d625e84fda5dc6172dc4198f}{C\+O\+L\+O\+R\+P\+I\+C\+K\+ER}}, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67a95f321f7f597a08478ddfd6fbb763a2f}{S\+C\+R\+O\+L\+L\+B\+AR}}, 
+\mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67afe4c21755babfece7188666f75c7386b}{R\+E\+S\+E\+R\+V\+ED}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1}{Gui\+Control\+Property}} \{ \newline
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1af8634308b067b8b79178e0a63da7efe0}{B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+N\+O\+R\+M\+AL}} = 0, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1ad650c04c2ee2d379e128d1beba9df688}{B\+A\+S\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+N\+O\+R\+M\+AL}}, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a7548d38cd988998192aa77d401cc8342}{T\+E\+X\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+N\+O\+R\+M\+AL}}, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a009acca4a7d3c62231231dceec57f49b}{B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+O\+C\+U\+S\+ED}}, 
+\newline
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a5e6188ee005ba73e435fa3e9fd8165a5}{B\+A\+S\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+O\+C\+U\+S\+ED}}, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a85babaa9b1fd126dbc603642fa9a9594}{T\+E\+X\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+O\+C\+U\+S\+ED}}, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1aa9f1d6bc84377fbcb833a611f692e27a}{B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+R\+E\+S\+S\+ED}}, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a57d46b93cf2b36d7cea65efcbbf15d82}{B\+A\+S\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+R\+E\+S\+S\+ED}}, 
+\newline
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a4cc3c3aaf4684e5d8c4d21f53af104ef}{T\+E\+X\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+R\+E\+S\+S\+ED}}, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a0bb15fcf82564cb1a531767a725bfbe5}{B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+I\+S\+A\+B\+L\+ED}}, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a1136d41e9a220b3fb3498adcc2315d3c}{B\+A\+S\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+I\+S\+A\+B\+L\+ED}}, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1aaf644980874bce110e909ca6485ff870}{T\+E\+X\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+I\+S\+A\+B\+L\+ED}}, 
+\newline
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1aded5381912f056601d1176623676616e}{B\+O\+R\+D\+E\+R\+\_\+\+W\+I\+D\+TH}}, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1ab9ffdd5bf8979d8a51a6998c0fee823d}{I\+N\+N\+E\+R\+\_\+\+P\+A\+D\+D\+I\+NG}}, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a1ccb3465b25c3edbab31ba084e28816b}{T\+E\+X\+T\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}}, 
+\mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a72e6684e1e71d2880fb61574e939938d}{R\+E\+S\+E\+R\+V\+E\+D02}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_a17de833ff993431f4ac6cc8ba08add90}{Gui\+Default\+Property}} \{ \mbox{\hyperlink{raygui_8h_a17de833ff993431f4ac6cc8ba08add90aab85e7aef81e229c3c76325e0e75436d}{T\+E\+X\+T\+\_\+\+S\+I\+ZE}} = 16, 
+\mbox{\hyperlink{raygui_8h_a17de833ff993431f4ac6cc8ba08add90aa433e1700c04b3c02f13148d480aa688}{T\+E\+X\+T\+\_\+\+S\+P\+A\+C\+I\+NG}}, 
+\mbox{\hyperlink{raygui_8h_a17de833ff993431f4ac6cc8ba08add90a40f73c873f86a176acfce02743798227}{L\+I\+N\+E\+\_\+\+C\+O\+L\+OR}}, 
+\mbox{\hyperlink{raygui_8h_a17de833ff993431f4ac6cc8ba08add90a117d47299801a6d56fb15bce568b37f8}{B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_a72edeb854281d354e186b8648ac8ceb9}{Gui\+Toggle\+Property}} \{ \mbox{\hyperlink{raygui_8h_a72edeb854281d354e186b8648ac8ceb9ac9f3ee5ff837cdd986f6b5cf4fdb8820}{G\+R\+O\+U\+P\+\_\+\+P\+A\+D\+D\+I\+NG}} = 16
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_a441e234e39a930bcf3ed40a2527b4989}{Gui\+Slider\+Property}} \{ \mbox{\hyperlink{raygui_8h_a441e234e39a930bcf3ed40a2527b4989ac9cbd877dff24294b4a1c69b606ab922}{S\+L\+I\+D\+E\+R\+\_\+\+W\+I\+D\+TH}} = 16, 
+\mbox{\hyperlink{raygui_8h_a441e234e39a930bcf3ed40a2527b4989ab135bd21467d025bdd8459fdedc32bb8}{T\+E\+X\+T\+\_\+\+P\+A\+D\+D\+I\+NG}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_a660a0bac7d1e1e3bb53f4fe7a99614b9}{Gui\+Check\+Box\+Property}} \{ \mbox{\hyperlink{raygui_8h_a660a0bac7d1e1e3bb53f4fe7a99614b9a06da0f5457f2a37bcce16e5ecd2e4e9a}{C\+H\+E\+C\+K\+\_\+\+T\+E\+X\+T\+\_\+\+P\+A\+D\+D\+I\+NG}} = 16
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_a50f634129951db5f8af4c98d259a882a}{Gui\+Combo\+Box\+Property}} \{ \mbox{\hyperlink{raygui_8h_a50f634129951db5f8af4c98d259a882aaf8dfe4c76ee00ebc087afbd11d8b697c}{S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+W\+I\+D\+TH}} = 16, 
+\mbox{\hyperlink{raygui_8h_a50f634129951db5f8af4c98d259a882aaed70e5f3e47bd6dc93209ef5192faa81}{S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+P\+A\+D\+D\+I\+NG}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_ae2b272de3cc073248129cfca913ce4c0}{Gui\+Dropdown\+Box\+Property}} \{ \mbox{\hyperlink{raygui_8h_ae2b272de3cc073248129cfca913ce4c0af0544e03161682e3b33985be5cbea2a9}{A\+R\+R\+O\+W\+\_\+\+R\+I\+G\+H\+T\+\_\+\+P\+A\+D\+D\+I\+NG}} = 16
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_a76885d61062344d493bbf74bab382b7d}{Gui\+Text\+Box\+Property}} \{ \mbox{\hyperlink{raygui_8h_a76885d61062344d493bbf74bab382b7da1cce5d6a05f4079c6c0ed59d8412f466}{M\+U\+L\+T\+I\+L\+I\+N\+E\+\_\+\+P\+A\+D\+D\+I\+NG}} = 16, 
+\mbox{\hyperlink{raygui_8h_a76885d61062344d493bbf74bab382b7dacfe7e10af5d3e9baed021e7d57cd786a}{C\+O\+L\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+E\+D\+\_\+\+FG}}, 
+\mbox{\hyperlink{raygui_8h_a76885d61062344d493bbf74bab382b7da2355a85ca3c6c6ca1817e61170ddcb33}{C\+O\+L\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+E\+D\+\_\+\+BG}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_adf65a4d46bef50cf3a349ab49f01765b}{Gui\+Spinner\+Property}} \{ \mbox{\hyperlink{raygui_8h_adf65a4d46bef50cf3a349ab49f01765ba49bfbe692325f21f7ba698b3e03389e0}{S\+E\+L\+E\+C\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+W\+I\+D\+TH}} = 16, 
+\mbox{\hyperlink{raygui_8h_adf65a4d46bef50cf3a349ab49f01765ba2e3b4928d94ce0c0c24d867241b7a25d}{S\+E\+L\+E\+C\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+P\+A\+D\+D\+I\+NG}}, 
+\mbox{\hyperlink{raygui_8h_adf65a4d46bef50cf3a349ab49f01765ba07e54092a45e96754e29d412ae28fda0}{S\+E\+L\+E\+C\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+W\+I\+D\+TH}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_a25a974a08b2365ee15938c6981d882bd}{Gui\+Scroll\+Bar\+Property}} \{ \newline
+\mbox{\hyperlink{raygui_8h_a25a974a08b2365ee15938c6981d882bda022f5d961ebe5fa0557b386c9006a66e}{A\+R\+R\+O\+W\+S\+\_\+\+S\+I\+ZE}} = 16, 
+\mbox{\hyperlink{raygui_8h_a25a974a08b2365ee15938c6981d882bda3c77f1bbe72ac073575a063221aef33c}{S\+L\+I\+D\+E\+R\+\_\+\+P\+A\+D\+D\+I\+NG}}, 
+\mbox{\hyperlink{raygui_8h_a25a974a08b2365ee15938c6981d882bdacf0ddb49419b568c655d888ce182f758}{S\+L\+I\+D\+E\+R\+\_\+\+S\+I\+ZE}}, 
+\mbox{\hyperlink{raygui_8h_a25a974a08b2365ee15938c6981d882bda10d7b933ceea8cd5572efd8a1980a3ba}{S\+C\+R\+O\+L\+L\+\_\+\+S\+P\+E\+ED}}, 
+\newline
+\mbox{\hyperlink{raygui_8h_a25a974a08b2365ee15938c6981d882bda9af29dbb7a8c3eb94efa8b6ec8238d1c}{A\+R\+R\+O\+W\+S\+\_\+\+V\+I\+S\+I\+B\+LE}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_af2cf9198029142330caa1ad70c4094b8}{Gui\+Scroll\+Bar\+Side}} \{ \mbox{\hyperlink{raygui_8h_af2cf9198029142330caa1ad70c4094b8aa2e6f250b68a015fbf886e9fd743c75a}{S\+C\+R\+O\+L\+L\+B\+A\+R\+\_\+\+L\+E\+F\+T\+\_\+\+S\+I\+DE}} = 0, 
+\mbox{\hyperlink{raygui_8h_af2cf9198029142330caa1ad70c4094b8a923926740b26adaedf34e18dadf7ee47}{S\+C\+R\+O\+L\+L\+B\+A\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+S\+I\+DE}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_a81534ee93412bbbdda8730ef61c83609}{Gui\+List\+View\+Property}} \{ \mbox{\hyperlink{raygui_8h_a81534ee93412bbbdda8730ef61c83609a055c3b9982528cf180ebd90bc0a72e29}{E\+L\+E\+M\+E\+N\+T\+S\+\_\+\+H\+E\+I\+G\+HT}} = 16, 
+\mbox{\hyperlink{raygui_8h_a81534ee93412bbbdda8730ef61c83609aa8c02b149069c2634fbba12d0e87006e}{E\+L\+E\+M\+E\+N\+T\+S\+\_\+\+P\+A\+D\+D\+I\+NG}}, 
+\mbox{\hyperlink{raygui_8h_a81534ee93412bbbdda8730ef61c83609a4691c6111e0fc3e84062e48e9387fa5f}{S\+C\+R\+O\+L\+L\+B\+A\+R\+\_\+\+W\+I\+D\+TH}}, 
+\mbox{\hyperlink{raygui_8h_a81534ee93412bbbdda8730ef61c83609a93ef029f386cd2f139c7d6673f2d2d48}{S\+C\+R\+O\+L\+L\+B\+A\+R\+\_\+\+S\+I\+DE}}
+ \}
+\item 
+enum \mbox{\hyperlink{raygui_8h_a419b300f893da84c6f72fc58fa2947ba}{Gui\+Color\+Picker\+Property}} \{ \newline
+\mbox{\hyperlink{raygui_8h_a419b300f893da84c6f72fc58fa2947baaa831dbefaae0c2cb6db50248a137a64e}{C\+O\+L\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+S\+I\+ZE}} = 16, 
+\mbox{\hyperlink{raygui_8h_a419b300f893da84c6f72fc58fa2947baa0966fbeef9f011bc0954cf717cde09fc}{B\+A\+R\+\_\+\+W\+I\+D\+TH}}, 
+\mbox{\hyperlink{raygui_8h_a419b300f893da84c6f72fc58fa2947baa572aac7080db8ed062f888e4539dfbd9}{B\+A\+R\+\_\+\+P\+A\+D\+D\+I\+NG}}, 
+\mbox{\hyperlink{raygui_8h_a419b300f893da84c6f72fc58fa2947baab871a902fe93ae1a53188a752382feb5}{B\+A\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+H\+E\+I\+G\+HT}}, 
+\newline
+\mbox{\hyperlink{raygui_8h_a419b300f893da84c6f72fc58fa2947baae76f31eb189df5e89a3f066d04dffa6a}{B\+A\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+P\+A\+D\+D\+I\+NG}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a417ea7e38a3daf309a357f37330c965e}{Gui\+Enable}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a1bbc414c815d6155dba5e225d9b09aa9}{Gui\+Disable}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a87a1007d04d0840787ac93299403e2d3}{Gui\+Lock}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a8118f5d2879eeaf266593647046b0aa0}{Gui\+Unlock}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a67ad59bbdb766609ba061ff837d58664}{Gui\+State}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{furmap_8txt_aeb0c888342a76b499c20664b1c4c9aeb}{state}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a71c303b9930963a784c310a740cbc72e}{Gui\+Font}} (\mbox{\hyperlink{struct_font}{Font}} \mbox{\hyperlink{templates_2advance__game_2screens_2screens_8h_a1e52b0778d1df763fc5b497c26ead7a9}{font}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_ac8220b86c5064912f9de3c6038c77bcd}{Gui\+Fade}} (float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a090ebe65994a3ee4bb60ae3472abffc5}{alpha}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a703ddfe8b17264567f31ff9e61bdbcb6}{Gui\+Set\+Style}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} control, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} property, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6a4f8a1a444e9080b297963b3db29fe0}{value}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{raygui_8h_a2beef71a09c330968ea4bf05570edc7d}{Gui\+Get\+Style}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} control, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} property)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_a246e71c5c648554c9fd5fe3fdceab1da}{Gui\+Window\+Box}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_afba7bf3ae75b92c4be55806951110723}{Gui\+Group\+Box}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a22121f8d19eca226785f74ed77132da0}{Gui\+Line}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a228a887053cbbf038539570e0cd28876}{Gui\+Panel}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{raygui_8h_a6ffb0e60ec6e46fe1c0d7e069b30e611}{Gui\+Scroll\+Panel}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, \mbox{\hyperlink{struct_rectangle}{Rectangle}} content, \mbox{\hyperlink{struct_vector2}{Vector2}} $\ast$scroll)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a2117e0877e2c1a882a2e7a0ea183df77}{Gui\+Label}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_ae71355ca377e534296a1d818c3db8f87}{Gui\+Button}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_a7d94a8ffa15084be8d5cda61113bc76b}{Gui\+Label\+Button}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_a74244354da89155e169ce41e8286d322}{Gui\+Image\+Button}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, \mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_a3bb62c0c927508133af5d17f516d8632}{Gui\+Image\+Button\+Ex}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, \mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{struct_rectangle}{Rectangle}} tex\+Source, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_a05110b4a8b2c9f6a9f927eb1043dc691}{Gui\+Toggle}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} active)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{raygui_8h_a0b82342499dec9138116fde3e9ac591b}{Gui\+Toggle\+Group}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} active)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_ac2051475791258f2ca1d068836cdb9cf}{Gui\+Check\+Box}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} checked)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{raygui_8h_ad97177217c54443caf7c3bafef4bba8c}{Gui\+Combo\+Box}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} active)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_a6a4459159c9c99e35a8223a4301c748d}{Gui\+Dropdown\+Box}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$active, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} edit\+Mode)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_a171fc35e9a86f8d321ed9865d294b6ee}{Gui\+Spinner}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6a4f8a1a444e9080b297963b3db29fe0}{value}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} min\+Value, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} max\+Value, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} edit\+Mode)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_a1713f8af39df0706938c833d1725f761}{Gui\+Value\+Box}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6a4f8a1a444e9080b297963b3db29fe0}{value}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} min\+Value, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} max\+Value, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} edit\+Mode)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_a5f1c720ab53a3d7c44e90c213e07c928}{Gui\+Text\+Box}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} text\+Size, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} edit\+Mode)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_aaf91dfeb5fd11fb0b70856a7d758c7c0}{Gui\+Text\+Box\+Multi}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} text\+Size, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} edit\+Mode)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF float \mbox{\hyperlink{raygui_8h_a8e0a5bdf321b260bdefb906bb5909979}{Gui\+Slider}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6a4f8a1a444e9080b297963b3db29fe0}{value}}, float min\+Value, float max\+Value, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} show\+Value)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF float \mbox{\hyperlink{raygui_8h_a378ebd9cf075e6a46b92ea8b24886b84}{Gui\+Slider\+Bar}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6a4f8a1a444e9080b297963b3db29fe0}{value}}, float min\+Value, float max\+Value, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} show\+Value)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF float \mbox{\hyperlink{raygui_8h_aab18abbe1724d9b390f96dd557f2ee64}{Gui\+Progress\+Bar}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6a4f8a1a444e9080b297963b3db29fe0}{value}}, float min\+Value, float max\+Value, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} show\+Value)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a7f095377587d5db9841386b4912c33e1}{Gui\+Status\+Bar}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a6124d8a82409bfe9eda5456e0ace0ea4}{Gui\+Dummy\+Rec}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{raygui_8h_ab366597a5c8aecd178dbc0dd66db0db4}{Gui\+Scroll\+Bar}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6a4f8a1a444e9080b297963b3db29fe0}{value}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} min\+Value, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} max\+Value)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{raygui_8h_a231da5078e2db4dc0381a49712328feb}{Gui\+Grid}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, float spacing, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} subdivs)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_a3ed1fa266bb18200585af7766b688b8f}{Gui\+List\+View}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$active, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$scroll\+Index, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} edit\+Mode)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{raygui_8h_a914dd0eb5ec50510bddda08f7f178907}{Gui\+List\+View\+Ex}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$$\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a22486c0c8d9f7d79a07bf22ecffeeb2f}{count}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6274613d79de73fa67d1b6c4aa70c9d3}{enabled}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$active, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$focus, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$scroll\+Index, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} edit\+Mode)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{raygui_8h_aae16a7ee45f1ed20e8274b067d6c1bd1}{Gui\+Message\+Box}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$window\+Title, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ab5d4c2bfcb78f279c688575297d42f74}{message}}, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$buttons)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{raygui_8h_acc83e8d847f3e75b7a1f7eeea88daba4}{Gui\+Text\+Input\+Box}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$window\+Title, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ab5d4c2bfcb78f279c688575297d42f74}{message}}, \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$buttons)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{raygui_8h_a73defe21e25075969653e99224b87d0c}{Gui\+Color\+Picker}} (\mbox{\hyperlink{struct_rectangle}{Rectangle}} bounds, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_ae5875ee6d92c71ace3e77f4af2d52bbb}{Gui\+Load\+Style}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$file\+Name)
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a0c1f295550858a589d05b23214c4448f}{Gui\+Load\+Style\+Props}} (const \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$props, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a22486c0c8d9f7d79a07bf22ecffeeb2f}{count}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_ab21677f290821dd4f0b6b567bde73705}{Gui\+Load\+Style\+Default}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{raygui_8h_a249fb211fdd03502aea00065333ab361}{Gui\+Update\+Style\+Complete}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+R\+A\+Y\+G\+U\+I\+D\+EF const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{raygui_8h_a85dc16b6277294d94239543bf2ca725e}{Gui\+Icon\+Text}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} icon\+Id, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{raygui_8h_a8c956dde6f8d8c41d8b350776b24890b}\label{raygui_8h_a8c956dde6f8d8c41d8b350776b24890b}} 
+\index{raygui.h@{raygui.h}!NUM\_CONTROLS@{NUM\_CONTROLS}}
+\index{NUM\_CONTROLS@{NUM\_CONTROLS}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_CONTROLS}{NUM\_CONTROLS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+C\+O\+N\+T\+R\+O\+LS~16}
+
+\mbox{\Hypertarget{raygui_8h_aebe94ae6363476b4f38310d2e285da2f}\label{raygui_8h_aebe94ae6363476b4f38310d2e285da2f}} 
+\index{raygui.h@{raygui.h}!NUM\_PROPS\_DEFAULT@{NUM\_PROPS\_DEFAULT}}
+\index{NUM\_PROPS\_DEFAULT@{NUM\_PROPS\_DEFAULT}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_PROPS\_DEFAULT}{NUM\_PROPS\_DEFAULT}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+P\+R\+O\+P\+S\+\_\+\+D\+E\+F\+A\+U\+LT~16}
+
+\mbox{\Hypertarget{raygui_8h_af30730ee231616c52b7dc619db18aba0}\label{raygui_8h_af30730ee231616c52b7dc619db18aba0}} 
+\index{raygui.h@{raygui.h}!NUM\_PROPS\_EXTENDED@{NUM\_PROPS\_EXTENDED}}
+\index{NUM\_PROPS\_EXTENDED@{NUM\_PROPS\_EXTENDED}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_PROPS\_EXTENDED}{NUM\_PROPS\_EXTENDED}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+P\+R\+O\+P\+S\+\_\+\+E\+X\+T\+E\+N\+D\+ED~8}
+
+\mbox{\Hypertarget{raygui_8h_a7e761d8d68f83f60ffdc573b0e8445cf}\label{raygui_8h_a7e761d8d68f83f60ffdc573b0e8445cf}} 
+\index{raygui.h@{raygui.h}!RAYGUI\_VERSION@{RAYGUI\_VERSION}}
+\index{RAYGUI\_VERSION@{RAYGUI\_VERSION}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{RAYGUI\_VERSION}{RAYGUI\_VERSION}}
+{\footnotesize\ttfamily \#define R\+A\+Y\+G\+U\+I\+\_\+\+V\+E\+R\+S\+I\+ON~\char`\"{}2.\+5-\/dev\char`\"{}}
+
+\mbox{\Hypertarget{raygui_8h_aa9f078937abc1bef5723c2d53442a32e}\label{raygui_8h_aa9f078937abc1bef5723c2d53442a32e}} 
+\index{raygui.h@{raygui.h}!TEXTEDIT\_CURSOR\_BLINK\_FRAMES@{TEXTEDIT\_CURSOR\_BLINK\_FRAMES}}
+\index{TEXTEDIT\_CURSOR\_BLINK\_FRAMES@{TEXTEDIT\_CURSOR\_BLINK\_FRAMES}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{TEXTEDIT\_CURSOR\_BLINK\_FRAMES}{TEXTEDIT\_CURSOR\_BLINK\_FRAMES}}
+{\footnotesize\ttfamily \#define T\+E\+X\+T\+E\+D\+I\+T\+\_\+\+C\+U\+R\+S\+O\+R\+\_\+\+B\+L\+I\+N\+K\+\_\+\+F\+R\+A\+M\+ES~20}
+
+
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{raygui_8h_a660a0bac7d1e1e3bb53f4fe7a99614b9}\label{raygui_8h_a660a0bac7d1e1e3bb53f4fe7a99614b9}} 
+\index{raygui.h@{raygui.h}!GuiCheckBoxProperty@{GuiCheckBoxProperty}}
+\index{GuiCheckBoxProperty@{GuiCheckBoxProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiCheckBoxProperty}{GuiCheckBoxProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_a660a0bac7d1e1e3bb53f4fe7a99614b9}{Gui\+Check\+Box\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHECK\_TEXT\_PADDING@{CHECK\_TEXT\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!CHECK\_TEXT\_PADDING@{CHECK\_TEXT\_PADDING}}}\mbox{\Hypertarget{raygui_8h_a660a0bac7d1e1e3bb53f4fe7a99614b9a06da0f5457f2a37bcce16e5ecd2e4e9a}\label{raygui_8h_a660a0bac7d1e1e3bb53f4fe7a99614b9a06da0f5457f2a37bcce16e5ecd2e4e9a}} 
+C\+H\+E\+C\+K\+\_\+\+T\+E\+X\+T\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_a419b300f893da84c6f72fc58fa2947ba}\label{raygui_8h_a419b300f893da84c6f72fc58fa2947ba}} 
+\index{raygui.h@{raygui.h}!GuiColorPickerProperty@{GuiColorPickerProperty}}
+\index{GuiColorPickerProperty@{GuiColorPickerProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiColorPickerProperty}{GuiColorPickerProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_a419b300f893da84c6f72fc58fa2947ba}{Gui\+Color\+Picker\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COLOR\_SELECTOR\_SIZE@{COLOR\_SELECTOR\_SIZE}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!COLOR\_SELECTOR\_SIZE@{COLOR\_SELECTOR\_SIZE}}}\mbox{\Hypertarget{raygui_8h_a419b300f893da84c6f72fc58fa2947baaa831dbefaae0c2cb6db50248a137a64e}\label{raygui_8h_a419b300f893da84c6f72fc58fa2947baaa831dbefaae0c2cb6db50248a137a64e}} 
+C\+O\+L\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+S\+I\+ZE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BAR\_WIDTH@{BAR\_WIDTH}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BAR\_WIDTH@{BAR\_WIDTH}}}\mbox{\Hypertarget{raygui_8h_a419b300f893da84c6f72fc58fa2947baa0966fbeef9f011bc0954cf717cde09fc}\label{raygui_8h_a419b300f893da84c6f72fc58fa2947baa0966fbeef9f011bc0954cf717cde09fc}} 
+B\+A\+R\+\_\+\+W\+I\+D\+TH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BAR\_PADDING@{BAR\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BAR\_PADDING@{BAR\_PADDING}}}\mbox{\Hypertarget{raygui_8h_a419b300f893da84c6f72fc58fa2947baa572aac7080db8ed062f888e4539dfbd9}\label{raygui_8h_a419b300f893da84c6f72fc58fa2947baa572aac7080db8ed062f888e4539dfbd9}} 
+B\+A\+R\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BAR\_SELECTOR\_HEIGHT@{BAR\_SELECTOR\_HEIGHT}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BAR\_SELECTOR\_HEIGHT@{BAR\_SELECTOR\_HEIGHT}}}\mbox{\Hypertarget{raygui_8h_a419b300f893da84c6f72fc58fa2947baab871a902fe93ae1a53188a752382feb5}\label{raygui_8h_a419b300f893da84c6f72fc58fa2947baab871a902fe93ae1a53188a752382feb5}} 
+B\+A\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+H\+E\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BAR\_SELECTOR\_PADDING@{BAR\_SELECTOR\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BAR\_SELECTOR\_PADDING@{BAR\_SELECTOR\_PADDING}}}\mbox{\Hypertarget{raygui_8h_a419b300f893da84c6f72fc58fa2947baae76f31eb189df5e89a3f066d04dffa6a}\label{raygui_8h_a419b300f893da84c6f72fc58fa2947baae76f31eb189df5e89a3f066d04dffa6a}} 
+B\+A\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_a50f634129951db5f8af4c98d259a882a}\label{raygui_8h_a50f634129951db5f8af4c98d259a882a}} 
+\index{raygui.h@{raygui.h}!GuiComboBoxProperty@{GuiComboBoxProperty}}
+\index{GuiComboBoxProperty@{GuiComboBoxProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiComboBoxProperty}{GuiComboBoxProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_a50f634129951db5f8af4c98d259a882a}{Gui\+Combo\+Box\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECTOR\_WIDTH@{SELECTOR\_WIDTH}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SELECTOR\_WIDTH@{SELECTOR\_WIDTH}}}\mbox{\Hypertarget{raygui_8h_a50f634129951db5f8af4c98d259a882aaf8dfe4c76ee00ebc087afbd11d8b697c}\label{raygui_8h_a50f634129951db5f8af4c98d259a882aaf8dfe4c76ee00ebc087afbd11d8b697c}} 
+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+W\+I\+D\+TH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECTOR\_PADDING@{SELECTOR\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SELECTOR\_PADDING@{SELECTOR\_PADDING}}}\mbox{\Hypertarget{raygui_8h_a50f634129951db5f8af4c98d259a882aaed70e5f3e47bd6dc93209ef5192faa81}\label{raygui_8h_a50f634129951db5f8af4c98d259a882aaed70e5f3e47bd6dc93209ef5192faa81}} 
+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67}} 
+\index{raygui.h@{raygui.h}!GuiControl@{GuiControl}}
+\index{GuiControl@{GuiControl}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiControl}{GuiControl}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_ab3e903e89895c462efc254a942de7d67}{Gui\+Control}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEFAULT@{DEFAULT}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!DEFAULT@{DEFAULT}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67a88ec7d5086d2469ba843c7fcceade8a6}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67a88ec7d5086d2469ba843c7fcceade8a6}} 
+D\+E\+F\+A\+U\+LT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LABEL@{LABEL}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!LABEL@{LABEL}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67a0f90de4d94720fdd5156fd7e7c3b0c9b}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67a0f90de4d94720fdd5156fd7e7c3b0c9b}} 
+L\+A\+B\+EL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON@{BUTTON}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BUTTON@{BUTTON}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67a7d67f007544f534278ecca3cdca12565}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67a7d67f007544f534278ecca3cdca12565}} 
+B\+U\+T\+T\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TOGGLE@{TOGGLE}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!TOGGLE@{TOGGLE}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67a4acfde02350139a12fcef53ff7289aa7}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67a4acfde02350139a12fcef53ff7289aa7}} 
+T\+O\+G\+G\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLIDER@{SLIDER}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SLIDER@{SLIDER}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67a47cabfc4ab8d55f6764f18bcf173f67c}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67a47cabfc4ab8d55f6764f18bcf173f67c}} 
+S\+L\+I\+D\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PROGRESSBAR@{PROGRESSBAR}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!PROGRESSBAR@{PROGRESSBAR}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67ad6daef225442419e1ec2a9744a6df4cb}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67ad6daef225442419e1ec2a9744a6df4cb}} 
+P\+R\+O\+G\+R\+E\+S\+S\+B\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHECKBOX@{CHECKBOX}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!CHECKBOX@{CHECKBOX}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67ad4afc07a484c051b7ea30dce69afe3e8}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67ad4afc07a484c051b7ea30dce69afe3e8}} 
+C\+H\+E\+C\+K\+B\+OX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMBOBOX@{COMBOBOX}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!COMBOBOX@{COMBOBOX}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67aeb6d73055f99e0170907c4352dd1c448}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67aeb6d73055f99e0170907c4352dd1c448}} 
+C\+O\+M\+B\+O\+B\+OX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DROPDOWNBOX@{DROPDOWNBOX}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!DROPDOWNBOX@{DROPDOWNBOX}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67a3d0eb2c12a94489d826cad358bba5302}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67a3d0eb2c12a94489d826cad358bba5302}} 
+D\+R\+O\+P\+D\+O\+W\+N\+B\+OX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TEXTBOX@{TEXTBOX}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!TEXTBOX@{TEXTBOX}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67accba5b31f181364f9d34bb6eb03a1e76}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67accba5b31f181364f9d34bb6eb03a1e76}} 
+T\+E\+X\+T\+B\+OX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VALUEBOX@{VALUEBOX}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!VALUEBOX@{VALUEBOX}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67a430cec5db8749b949f29a5d83ee187f0}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67a430cec5db8749b949f29a5d83ee187f0}} 
+V\+A\+L\+U\+E\+B\+OX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPINNER@{SPINNER}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SPINNER@{SPINNER}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67a67f109c354a3e519b67ddd09801cfbf4}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67a67f109c354a3e519b67ddd09801cfbf4}} 
+S\+P\+I\+N\+N\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LISTVIEW@{LISTVIEW}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!LISTVIEW@{LISTVIEW}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67a69bf5f43a5657e35056de1b8ed098b10}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67a69bf5f43a5657e35056de1b8ed098b10}} 
+L\+I\+S\+T\+V\+I\+EW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COLORPICKER@{COLORPICKER}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!COLORPICKER@{COLORPICKER}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67a70865fc1d625e84fda5dc6172dc4198f}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67a70865fc1d625e84fda5dc6172dc4198f}} 
+C\+O\+L\+O\+R\+P\+I\+C\+K\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCROLLBAR@{SCROLLBAR}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SCROLLBAR@{SCROLLBAR}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67a95f321f7f597a08478ddfd6fbb763a2f}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67a95f321f7f597a08478ddfd6fbb763a2f}} 
+S\+C\+R\+O\+L\+L\+B\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESERVED@{RESERVED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!RESERVED@{RESERVED}}}\mbox{\Hypertarget{raygui_8h_ab3e903e89895c462efc254a942de7d67afe4c21755babfece7188666f75c7386b}\label{raygui_8h_ab3e903e89895c462efc254a942de7d67afe4c21755babfece7188666f75c7386b}} 
+R\+E\+S\+E\+R\+V\+ED&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1}} 
+\index{raygui.h@{raygui.h}!GuiControlProperty@{GuiControlProperty}}
+\index{GuiControlProperty@{GuiControlProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiControlProperty}{GuiControlProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1}{Gui\+Control\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BORDER\_COLOR\_NORMAL@{BORDER\_COLOR\_NORMAL}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BORDER\_COLOR\_NORMAL@{BORDER\_COLOR\_NORMAL}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1af8634308b067b8b79178e0a63da7efe0}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1af8634308b067b8b79178e0a63da7efe0}} 
+B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+N\+O\+R\+M\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BASE\_COLOR\_NORMAL@{BASE\_COLOR\_NORMAL}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BASE\_COLOR\_NORMAL@{BASE\_COLOR\_NORMAL}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1ad650c04c2ee2d379e128d1beba9df688}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1ad650c04c2ee2d379e128d1beba9df688}} 
+B\+A\+S\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+N\+O\+R\+M\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TEXT\_COLOR\_NORMAL@{TEXT\_COLOR\_NORMAL}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!TEXT\_COLOR\_NORMAL@{TEXT\_COLOR\_NORMAL}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a7548d38cd988998192aa77d401cc8342}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a7548d38cd988998192aa77d401cc8342}} 
+T\+E\+X\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+N\+O\+R\+M\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BORDER\_COLOR\_FOCUSED@{BORDER\_COLOR\_FOCUSED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BORDER\_COLOR\_FOCUSED@{BORDER\_COLOR\_FOCUSED}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a009acca4a7d3c62231231dceec57f49b}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a009acca4a7d3c62231231dceec57f49b}} 
+B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+O\+C\+U\+S\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BASE\_COLOR\_FOCUSED@{BASE\_COLOR\_FOCUSED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BASE\_COLOR\_FOCUSED@{BASE\_COLOR\_FOCUSED}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a5e6188ee005ba73e435fa3e9fd8165a5}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a5e6188ee005ba73e435fa3e9fd8165a5}} 
+B\+A\+S\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+O\+C\+U\+S\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TEXT\_COLOR\_FOCUSED@{TEXT\_COLOR\_FOCUSED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!TEXT\_COLOR\_FOCUSED@{TEXT\_COLOR\_FOCUSED}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a85babaa9b1fd126dbc603642fa9a9594}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a85babaa9b1fd126dbc603642fa9a9594}} 
+T\+E\+X\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+O\+C\+U\+S\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BORDER\_COLOR\_PRESSED@{BORDER\_COLOR\_PRESSED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BORDER\_COLOR\_PRESSED@{BORDER\_COLOR\_PRESSED}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1aa9f1d6bc84377fbcb833a611f692e27a}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1aa9f1d6bc84377fbcb833a611f692e27a}} 
+B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+R\+E\+S\+S\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BASE\_COLOR\_PRESSED@{BASE\_COLOR\_PRESSED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BASE\_COLOR\_PRESSED@{BASE\_COLOR\_PRESSED}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a57d46b93cf2b36d7cea65efcbbf15d82}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a57d46b93cf2b36d7cea65efcbbf15d82}} 
+B\+A\+S\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+R\+E\+S\+S\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TEXT\_COLOR\_PRESSED@{TEXT\_COLOR\_PRESSED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!TEXT\_COLOR\_PRESSED@{TEXT\_COLOR\_PRESSED}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a4cc3c3aaf4684e5d8c4d21f53af104ef}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a4cc3c3aaf4684e5d8c4d21f53af104ef}} 
+T\+E\+X\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+R\+E\+S\+S\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BORDER\_COLOR\_DISABLED@{BORDER\_COLOR\_DISABLED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BORDER\_COLOR\_DISABLED@{BORDER\_COLOR\_DISABLED}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a0bb15fcf82564cb1a531767a725bfbe5}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a0bb15fcf82564cb1a531767a725bfbe5}} 
+B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+I\+S\+A\+B\+L\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BASE\_COLOR\_DISABLED@{BASE\_COLOR\_DISABLED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BASE\_COLOR\_DISABLED@{BASE\_COLOR\_DISABLED}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a1136d41e9a220b3fb3498adcc2315d3c}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a1136d41e9a220b3fb3498adcc2315d3c}} 
+B\+A\+S\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+I\+S\+A\+B\+L\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TEXT\_COLOR\_DISABLED@{TEXT\_COLOR\_DISABLED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!TEXT\_COLOR\_DISABLED@{TEXT\_COLOR\_DISABLED}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1aaf644980874bce110e909ca6485ff870}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1aaf644980874bce110e909ca6485ff870}} 
+T\+E\+X\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+I\+S\+A\+B\+L\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BORDER\_WIDTH@{BORDER\_WIDTH}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BORDER\_WIDTH@{BORDER\_WIDTH}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1aded5381912f056601d1176623676616e}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1aded5381912f056601d1176623676616e}} 
+B\+O\+R\+D\+E\+R\+\_\+\+W\+I\+D\+TH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INNER\_PADDING@{INNER\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!INNER\_PADDING@{INNER\_PADDING}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1ab9ffdd5bf8979d8a51a6998c0fee823d}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1ab9ffdd5bf8979d8a51a6998c0fee823d}} 
+I\+N\+N\+E\+R\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TEXT\_ALIGNMENT@{TEXT\_ALIGNMENT}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!TEXT\_ALIGNMENT@{TEXT\_ALIGNMENT}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a1ccb3465b25c3edbab31ba084e28816b}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a1ccb3465b25c3edbab31ba084e28816b}} 
+T\+E\+X\+T\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESERVED02@{RESERVED02}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!RESERVED02@{RESERVED02}}}\mbox{\Hypertarget{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a72e6684e1e71d2880fb61574e939938d}\label{raygui_8h_a7abcc01cad807efc9b469dffcb5986f1a72e6684e1e71d2880fb61574e939938d}} 
+R\+E\+S\+E\+R\+V\+E\+D02&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_aecf95defd54876416b4f316df021b758}\label{raygui_8h_aecf95defd54876416b4f316df021b758}} 
+\index{raygui.h@{raygui.h}!GuiControlState@{GuiControlState}}
+\index{GuiControlState@{GuiControlState}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiControlState}{GuiControlState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_aecf95defd54876416b4f316df021b758}{Gui\+Control\+State}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GUI\_STATE\_NORMAL@{GUI\_STATE\_NORMAL}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!GUI\_STATE\_NORMAL@{GUI\_STATE\_NORMAL}}}\mbox{\Hypertarget{raygui_8h_aecf95defd54876416b4f316df021b758a88795c23a65dc6c3d0d32080a7757b7c}\label{raygui_8h_aecf95defd54876416b4f316df021b758a88795c23a65dc6c3d0d32080a7757b7c}} 
+G\+U\+I\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+R\+M\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GUI\_STATE\_FOCUSED@{GUI\_STATE\_FOCUSED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!GUI\_STATE\_FOCUSED@{GUI\_STATE\_FOCUSED}}}\mbox{\Hypertarget{raygui_8h_aecf95defd54876416b4f316df021b758acb49e937a74efc72b503aa2bee5b0e51}\label{raygui_8h_aecf95defd54876416b4f316df021b758acb49e937a74efc72b503aa2bee5b0e51}} 
+G\+U\+I\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+O\+C\+U\+S\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GUI\_STATE\_PRESSED@{GUI\_STATE\_PRESSED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!GUI\_STATE\_PRESSED@{GUI\_STATE\_PRESSED}}}\mbox{\Hypertarget{raygui_8h_aecf95defd54876416b4f316df021b758af453ed0e6d003e468b8e18c655609bac}\label{raygui_8h_aecf95defd54876416b4f316df021b758af453ed0e6d003e468b8e18c655609bac}} 
+G\+U\+I\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+E\+S\+S\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GUI\_STATE\_DISABLED@{GUI\_STATE\_DISABLED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!GUI\_STATE\_DISABLED@{GUI\_STATE\_DISABLED}}}\mbox{\Hypertarget{raygui_8h_aecf95defd54876416b4f316df021b758a4a0a793477cd2f58f6c8da13ad40b71b}\label{raygui_8h_aecf95defd54876416b4f316df021b758a4a0a793477cd2f58f6c8da13ad40b71b}} 
+G\+U\+I\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_a17de833ff993431f4ac6cc8ba08add90}\label{raygui_8h_a17de833ff993431f4ac6cc8ba08add90}} 
+\index{raygui.h@{raygui.h}!GuiDefaultProperty@{GuiDefaultProperty}}
+\index{GuiDefaultProperty@{GuiDefaultProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiDefaultProperty}{GuiDefaultProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_a17de833ff993431f4ac6cc8ba08add90}{Gui\+Default\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TEXT\_SIZE@{TEXT\_SIZE}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!TEXT\_SIZE@{TEXT\_SIZE}}}\mbox{\Hypertarget{raygui_8h_a17de833ff993431f4ac6cc8ba08add90aab85e7aef81e229c3c76325e0e75436d}\label{raygui_8h_a17de833ff993431f4ac6cc8ba08add90aab85e7aef81e229c3c76325e0e75436d}} 
+T\+E\+X\+T\+\_\+\+S\+I\+ZE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TEXT\_SPACING@{TEXT\_SPACING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!TEXT\_SPACING@{TEXT\_SPACING}}}\mbox{\Hypertarget{raygui_8h_a17de833ff993431f4ac6cc8ba08add90aa433e1700c04b3c02f13148d480aa688}\label{raygui_8h_a17de833ff993431f4ac6cc8ba08add90aa433e1700c04b3c02f13148d480aa688}} 
+T\+E\+X\+T\+\_\+\+S\+P\+A\+C\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LINE\_COLOR@{LINE\_COLOR}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!LINE\_COLOR@{LINE\_COLOR}}}\mbox{\Hypertarget{raygui_8h_a17de833ff993431f4ac6cc8ba08add90a40f73c873f86a176acfce02743798227}\label{raygui_8h_a17de833ff993431f4ac6cc8ba08add90a40f73c873f86a176acfce02743798227}} 
+L\+I\+N\+E\+\_\+\+C\+O\+L\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BACKGROUND\_COLOR@{BACKGROUND\_COLOR}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!BACKGROUND\_COLOR@{BACKGROUND\_COLOR}}}\mbox{\Hypertarget{raygui_8h_a17de833ff993431f4ac6cc8ba08add90a117d47299801a6d56fb15bce568b37f8}\label{raygui_8h_a17de833ff993431f4ac6cc8ba08add90a117d47299801a6d56fb15bce568b37f8}} 
+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_ae2b272de3cc073248129cfca913ce4c0}\label{raygui_8h_ae2b272de3cc073248129cfca913ce4c0}} 
+\index{raygui.h@{raygui.h}!GuiDropdownBoxProperty@{GuiDropdownBoxProperty}}
+\index{GuiDropdownBoxProperty@{GuiDropdownBoxProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiDropdownBoxProperty}{GuiDropdownBoxProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_ae2b272de3cc073248129cfca913ce4c0}{Gui\+Dropdown\+Box\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARROW\_RIGHT\_PADDING@{ARROW\_RIGHT\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!ARROW\_RIGHT\_PADDING@{ARROW\_RIGHT\_PADDING}}}\mbox{\Hypertarget{raygui_8h_ae2b272de3cc073248129cfca913ce4c0af0544e03161682e3b33985be5cbea2a9}\label{raygui_8h_ae2b272de3cc073248129cfca913ce4c0af0544e03161682e3b33985be5cbea2a9}} 
+A\+R\+R\+O\+W\+\_\+\+R\+I\+G\+H\+T\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_a81534ee93412bbbdda8730ef61c83609}\label{raygui_8h_a81534ee93412bbbdda8730ef61c83609}} 
+\index{raygui.h@{raygui.h}!GuiListViewProperty@{GuiListViewProperty}}
+\index{GuiListViewProperty@{GuiListViewProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiListViewProperty}{GuiListViewProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_a81534ee93412bbbdda8730ef61c83609}{Gui\+List\+View\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ELEMENTS\_HEIGHT@{ELEMENTS\_HEIGHT}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!ELEMENTS\_HEIGHT@{ELEMENTS\_HEIGHT}}}\mbox{\Hypertarget{raygui_8h_a81534ee93412bbbdda8730ef61c83609a055c3b9982528cf180ebd90bc0a72e29}\label{raygui_8h_a81534ee93412bbbdda8730ef61c83609a055c3b9982528cf180ebd90bc0a72e29}} 
+E\+L\+E\+M\+E\+N\+T\+S\+\_\+\+H\+E\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ELEMENTS\_PADDING@{ELEMENTS\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!ELEMENTS\_PADDING@{ELEMENTS\_PADDING}}}\mbox{\Hypertarget{raygui_8h_a81534ee93412bbbdda8730ef61c83609aa8c02b149069c2634fbba12d0e87006e}\label{raygui_8h_a81534ee93412bbbdda8730ef61c83609aa8c02b149069c2634fbba12d0e87006e}} 
+E\+L\+E\+M\+E\+N\+T\+S\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCROLLBAR\_WIDTH@{SCROLLBAR\_WIDTH}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SCROLLBAR\_WIDTH@{SCROLLBAR\_WIDTH}}}\mbox{\Hypertarget{raygui_8h_a81534ee93412bbbdda8730ef61c83609a4691c6111e0fc3e84062e48e9387fa5f}\label{raygui_8h_a81534ee93412bbbdda8730ef61c83609a4691c6111e0fc3e84062e48e9387fa5f}} 
+S\+C\+R\+O\+L\+L\+B\+A\+R\+\_\+\+W\+I\+D\+TH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCROLLBAR\_SIDE@{SCROLLBAR\_SIDE}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SCROLLBAR\_SIDE@{SCROLLBAR\_SIDE}}}\mbox{\Hypertarget{raygui_8h_a81534ee93412bbbdda8730ef61c83609a93ef029f386cd2f139c7d6673f2d2d48}\label{raygui_8h_a81534ee93412bbbdda8730ef61c83609a93ef029f386cd2f139c7d6673f2d2d48}} 
+S\+C\+R\+O\+L\+L\+B\+A\+R\+\_\+\+S\+I\+DE&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_a25a974a08b2365ee15938c6981d882bd}\label{raygui_8h_a25a974a08b2365ee15938c6981d882bd}} 
+\index{raygui.h@{raygui.h}!GuiScrollBarProperty@{GuiScrollBarProperty}}
+\index{GuiScrollBarProperty@{GuiScrollBarProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiScrollBarProperty}{GuiScrollBarProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_a25a974a08b2365ee15938c6981d882bd}{Gui\+Scroll\+Bar\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARROWS\_SIZE@{ARROWS\_SIZE}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!ARROWS\_SIZE@{ARROWS\_SIZE}}}\mbox{\Hypertarget{raygui_8h_a25a974a08b2365ee15938c6981d882bda022f5d961ebe5fa0557b386c9006a66e}\label{raygui_8h_a25a974a08b2365ee15938c6981d882bda022f5d961ebe5fa0557b386c9006a66e}} 
+A\+R\+R\+O\+W\+S\+\_\+\+S\+I\+ZE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLIDER\_PADDING@{SLIDER\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SLIDER\_PADDING@{SLIDER\_PADDING}}}\mbox{\Hypertarget{raygui_8h_a25a974a08b2365ee15938c6981d882bda3c77f1bbe72ac073575a063221aef33c}\label{raygui_8h_a25a974a08b2365ee15938c6981d882bda3c77f1bbe72ac073575a063221aef33c}} 
+S\+L\+I\+D\+E\+R\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLIDER\_SIZE@{SLIDER\_SIZE}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SLIDER\_SIZE@{SLIDER\_SIZE}}}\mbox{\Hypertarget{raygui_8h_a25a974a08b2365ee15938c6981d882bdacf0ddb49419b568c655d888ce182f758}\label{raygui_8h_a25a974a08b2365ee15938c6981d882bdacf0ddb49419b568c655d888ce182f758}} 
+S\+L\+I\+D\+E\+R\+\_\+\+S\+I\+ZE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCROLL\_SPEED@{SCROLL\_SPEED}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SCROLL\_SPEED@{SCROLL\_SPEED}}}\mbox{\Hypertarget{raygui_8h_a25a974a08b2365ee15938c6981d882bda10d7b933ceea8cd5572efd8a1980a3ba}\label{raygui_8h_a25a974a08b2365ee15938c6981d882bda10d7b933ceea8cd5572efd8a1980a3ba}} 
+S\+C\+R\+O\+L\+L\+\_\+\+S\+P\+E\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARROWS\_VISIBLE@{ARROWS\_VISIBLE}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!ARROWS\_VISIBLE@{ARROWS\_VISIBLE}}}\mbox{\Hypertarget{raygui_8h_a25a974a08b2365ee15938c6981d882bda9af29dbb7a8c3eb94efa8b6ec8238d1c}\label{raygui_8h_a25a974a08b2365ee15938c6981d882bda9af29dbb7a8c3eb94efa8b6ec8238d1c}} 
+A\+R\+R\+O\+W\+S\+\_\+\+V\+I\+S\+I\+B\+LE&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_af2cf9198029142330caa1ad70c4094b8}\label{raygui_8h_af2cf9198029142330caa1ad70c4094b8}} 
+\index{raygui.h@{raygui.h}!GuiScrollBarSide@{GuiScrollBarSide}}
+\index{GuiScrollBarSide@{GuiScrollBarSide}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiScrollBarSide}{GuiScrollBarSide}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_af2cf9198029142330caa1ad70c4094b8}{Gui\+Scroll\+Bar\+Side}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCROLLBAR\_LEFT\_SIDE@{SCROLLBAR\_LEFT\_SIDE}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SCROLLBAR\_LEFT\_SIDE@{SCROLLBAR\_LEFT\_SIDE}}}\mbox{\Hypertarget{raygui_8h_af2cf9198029142330caa1ad70c4094b8aa2e6f250b68a015fbf886e9fd743c75a}\label{raygui_8h_af2cf9198029142330caa1ad70c4094b8aa2e6f250b68a015fbf886e9fd743c75a}} 
+S\+C\+R\+O\+L\+L\+B\+A\+R\+\_\+\+L\+E\+F\+T\+\_\+\+S\+I\+DE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCROLLBAR\_RIGHT\_SIDE@{SCROLLBAR\_RIGHT\_SIDE}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SCROLLBAR\_RIGHT\_SIDE@{SCROLLBAR\_RIGHT\_SIDE}}}\mbox{\Hypertarget{raygui_8h_af2cf9198029142330caa1ad70c4094b8a923926740b26adaedf34e18dadf7ee47}\label{raygui_8h_af2cf9198029142330caa1ad70c4094b8a923926740b26adaedf34e18dadf7ee47}} 
+S\+C\+R\+O\+L\+L\+B\+A\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+S\+I\+DE&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_a441e234e39a930bcf3ed40a2527b4989}\label{raygui_8h_a441e234e39a930bcf3ed40a2527b4989}} 
+\index{raygui.h@{raygui.h}!GuiSliderProperty@{GuiSliderProperty}}
+\index{GuiSliderProperty@{GuiSliderProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiSliderProperty}{GuiSliderProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_a441e234e39a930bcf3ed40a2527b4989}{Gui\+Slider\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLIDER\_WIDTH@{SLIDER\_WIDTH}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SLIDER\_WIDTH@{SLIDER\_WIDTH}}}\mbox{\Hypertarget{raygui_8h_a441e234e39a930bcf3ed40a2527b4989ac9cbd877dff24294b4a1c69b606ab922}\label{raygui_8h_a441e234e39a930bcf3ed40a2527b4989ac9cbd877dff24294b4a1c69b606ab922}} 
+S\+L\+I\+D\+E\+R\+\_\+\+W\+I\+D\+TH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TEXT\_PADDING@{TEXT\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!TEXT\_PADDING@{TEXT\_PADDING}}}\mbox{\Hypertarget{raygui_8h_a441e234e39a930bcf3ed40a2527b4989ab135bd21467d025bdd8459fdedc32bb8}\label{raygui_8h_a441e234e39a930bcf3ed40a2527b4989ab135bd21467d025bdd8459fdedc32bb8}} 
+T\+E\+X\+T\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_adf65a4d46bef50cf3a349ab49f01765b}\label{raygui_8h_adf65a4d46bef50cf3a349ab49f01765b}} 
+\index{raygui.h@{raygui.h}!GuiSpinnerProperty@{GuiSpinnerProperty}}
+\index{GuiSpinnerProperty@{GuiSpinnerProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiSpinnerProperty}{GuiSpinnerProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_adf65a4d46bef50cf3a349ab49f01765b}{Gui\+Spinner\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECT\_BUTTON\_WIDTH@{SELECT\_BUTTON\_WIDTH}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SELECT\_BUTTON\_WIDTH@{SELECT\_BUTTON\_WIDTH}}}\mbox{\Hypertarget{raygui_8h_adf65a4d46bef50cf3a349ab49f01765ba49bfbe692325f21f7ba698b3e03389e0}\label{raygui_8h_adf65a4d46bef50cf3a349ab49f01765ba49bfbe692325f21f7ba698b3e03389e0}} 
+S\+E\+L\+E\+C\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+W\+I\+D\+TH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECT\_BUTTON\_PADDING@{SELECT\_BUTTON\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SELECT\_BUTTON\_PADDING@{SELECT\_BUTTON\_PADDING}}}\mbox{\Hypertarget{raygui_8h_adf65a4d46bef50cf3a349ab49f01765ba2e3b4928d94ce0c0c24d867241b7a25d}\label{raygui_8h_adf65a4d46bef50cf3a349ab49f01765ba2e3b4928d94ce0c0c24d867241b7a25d}} 
+S\+E\+L\+E\+C\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECT\_BUTTON\_BORDER\_WIDTH@{SELECT\_BUTTON\_BORDER\_WIDTH}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!SELECT\_BUTTON\_BORDER\_WIDTH@{SELECT\_BUTTON\_BORDER\_WIDTH}}}\mbox{\Hypertarget{raygui_8h_adf65a4d46bef50cf3a349ab49f01765ba07e54092a45e96754e29d412ae28fda0}\label{raygui_8h_adf65a4d46bef50cf3a349ab49f01765ba07e54092a45e96754e29d412ae28fda0}} 
+S\+E\+L\+E\+C\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+W\+I\+D\+TH&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63}\label{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63}} 
+\index{raygui.h@{raygui.h}!GuiTextAlignment@{GuiTextAlignment}}
+\index{GuiTextAlignment@{GuiTextAlignment}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiTextAlignment}{GuiTextAlignment}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63}{Gui\+Text\+Alignment}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GUI\_TEXT\_ALIGN\_LEFT@{GUI\_TEXT\_ALIGN\_LEFT}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!GUI\_TEXT\_ALIGN\_LEFT@{GUI\_TEXT\_ALIGN\_LEFT}}}\mbox{\Hypertarget{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63af8fe643f578dfb798dfc59d2d28a0fb4}\label{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63af8fe643f578dfb798dfc59d2d28a0fb4}} 
+G\+U\+I\+\_\+\+T\+E\+X\+T\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GUI\_TEXT\_ALIGN\_CENTER@{GUI\_TEXT\_ALIGN\_CENTER}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!GUI\_TEXT\_ALIGN\_CENTER@{GUI\_TEXT\_ALIGN\_CENTER}}}\mbox{\Hypertarget{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63a10cc9b127ea61881c6b7d1d21641af12}\label{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63a10cc9b127ea61881c6b7d1d21641af12}} 
+G\+U\+I\+\_\+\+T\+E\+X\+T\+\_\+\+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GUI\_TEXT\_ALIGN\_RIGHT@{GUI\_TEXT\_ALIGN\_RIGHT}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!GUI\_TEXT\_ALIGN\_RIGHT@{GUI\_TEXT\_ALIGN\_RIGHT}}}\mbox{\Hypertarget{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63ae6c71d9ce5d0c7f278b24ae8d228740a}\label{raygui_8h_a08a3bb0881553f99b82d088ce8cd0d63ae6c71d9ce5d0c7f278b24ae8d228740a}} 
+G\+U\+I\+\_\+\+T\+E\+X\+T\+\_\+\+A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_a76885d61062344d493bbf74bab382b7d}\label{raygui_8h_a76885d61062344d493bbf74bab382b7d}} 
+\index{raygui.h@{raygui.h}!GuiTextBoxProperty@{GuiTextBoxProperty}}
+\index{GuiTextBoxProperty@{GuiTextBoxProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiTextBoxProperty}{GuiTextBoxProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_a76885d61062344d493bbf74bab382b7d}{Gui\+Text\+Box\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MULTILINE\_PADDING@{MULTILINE\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!MULTILINE\_PADDING@{MULTILINE\_PADDING}}}\mbox{\Hypertarget{raygui_8h_a76885d61062344d493bbf74bab382b7da1cce5d6a05f4079c6c0ed59d8412f466}\label{raygui_8h_a76885d61062344d493bbf74bab382b7da1cce5d6a05f4079c6c0ed59d8412f466}} 
+M\+U\+L\+T\+I\+L\+I\+N\+E\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COLOR\_SELECTED\_FG@{COLOR\_SELECTED\_FG}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!COLOR\_SELECTED\_FG@{COLOR\_SELECTED\_FG}}}\mbox{\Hypertarget{raygui_8h_a76885d61062344d493bbf74bab382b7dacfe7e10af5d3e9baed021e7d57cd786a}\label{raygui_8h_a76885d61062344d493bbf74bab382b7dacfe7e10af5d3e9baed021e7d57cd786a}} 
+C\+O\+L\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+E\+D\+\_\+\+FG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COLOR\_SELECTED\_BG@{COLOR\_SELECTED\_BG}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!COLOR\_SELECTED\_BG@{COLOR\_SELECTED\_BG}}}\mbox{\Hypertarget{raygui_8h_a76885d61062344d493bbf74bab382b7da2355a85ca3c6c6ca1817e61170ddcb33}\label{raygui_8h_a76885d61062344d493bbf74bab382b7da2355a85ca3c6c6ca1817e61170ddcb33}} 
+C\+O\+L\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+E\+D\+\_\+\+BG&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{raygui_8h_a72edeb854281d354e186b8648ac8ceb9}\label{raygui_8h_a72edeb854281d354e186b8648ac8ceb9}} 
+\index{raygui.h@{raygui.h}!GuiToggleProperty@{GuiToggleProperty}}
+\index{GuiToggleProperty@{GuiToggleProperty}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiToggleProperty}{GuiToggleProperty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raygui_8h_a72edeb854281d354e186b8648ac8ceb9}{Gui\+Toggle\+Property}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GROUP\_PADDING@{GROUP\_PADDING}!raygui.h@{raygui.h}}\index{raygui.h@{raygui.h}!GROUP\_PADDING@{GROUP\_PADDING}}}\mbox{\Hypertarget{raygui_8h_a72edeb854281d354e186b8648ac8ceb9ac9f3ee5ff837cdd986f6b5cf4fdb8820}\label{raygui_8h_a72edeb854281d354e186b8648ac8ceb9ac9f3ee5ff837cdd986f6b5cf4fdb8820}} 
+G\+R\+O\+U\+P\+\_\+\+P\+A\+D\+D\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{raygui_8h_ae71355ca377e534296a1d818c3db8f87}\label{raygui_8h_ae71355ca377e534296a1d818c3db8f87}} 
+\index{raygui.h@{raygui.h}!GuiButton@{GuiButton}}
+\index{GuiButton@{GuiButton}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiButton()}{GuiButton()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_ac2051475791258f2ca1d068836cdb9cf}\label{raygui_8h_ac2051475791258f2ca1d068836cdb9cf}} 
+\index{raygui.h@{raygui.h}!GuiCheckBox@{GuiCheckBox}}
+\index{GuiCheckBox@{GuiCheckBox}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiCheckBox()}{GuiCheckBox()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Check\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{checked }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a73defe21e25075969653e99224b87d0c}\label{raygui_8h_a73defe21e25075969653e99224b87d0c}} 
+\index{raygui.h@{raygui.h}!GuiColorPicker@{GuiColorPicker}}
+\index{GuiColorPicker@{GuiColorPicker}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiColorPicker()}{GuiColorPicker()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{struct_color}{Color}} Gui\+Color\+Picker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_ad97177217c54443caf7c3bafef4bba8c}\label{raygui_8h_ad97177217c54443caf7c3bafef4bba8c}} 
+\index{raygui.h@{raygui.h}!GuiComboBox@{GuiComboBox}}
+\index{GuiComboBox@{GuiComboBox}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiComboBox()}{GuiComboBox()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Gui\+Combo\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{active }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a1bbc414c815d6155dba5e225d9b09aa9}\label{raygui_8h_a1bbc414c815d6155dba5e225d9b09aa9}} 
+\index{raygui.h@{raygui.h}!GuiDisable@{GuiDisable}}
+\index{GuiDisable@{GuiDisable}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiDisable()}{GuiDisable()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Disable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a6a4459159c9c99e35a8223a4301c748d}\label{raygui_8h_a6a4459159c9c99e35a8223a4301c748d}} 
+\index{raygui.h@{raygui.h}!GuiDropdownBox@{GuiDropdownBox}}
+\index{GuiDropdownBox@{GuiDropdownBox}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiDropdownBox()}{GuiDropdownBox()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Dropdown\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{active,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{edit\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a6124d8a82409bfe9eda5456e0ace0ea4}\label{raygui_8h_a6124d8a82409bfe9eda5456e0ace0ea4}} 
+\index{raygui.h@{raygui.h}!GuiDummyRec@{GuiDummyRec}}
+\index{GuiDummyRec@{GuiDummyRec}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiDummyRec()}{GuiDummyRec()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Dummy\+Rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a417ea7e38a3daf309a357f37330c965e}\label{raygui_8h_a417ea7e38a3daf309a357f37330c965e}} 
+\index{raygui.h@{raygui.h}!GuiEnable@{GuiEnable}}
+\index{GuiEnable@{GuiEnable}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiEnable()}{GuiEnable()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_ac8220b86c5064912f9de3c6038c77bcd}\label{raygui_8h_ac8220b86c5064912f9de3c6038c77bcd}} 
+\index{raygui.h@{raygui.h}!GuiFade@{GuiFade}}
+\index{GuiFade@{GuiFade}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiFade()}{GuiFade()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Fade (\begin{DoxyParamCaption}\item[{float}]{alpha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a71c303b9930963a784c310a740cbc72e}\label{raygui_8h_a71c303b9930963a784c310a740cbc72e}} 
+\index{raygui.h@{raygui.h}!GuiFont@{GuiFont}}
+\index{GuiFont@{GuiFont}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiFont()}{GuiFont()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_font}{Font}}}]{font }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a2beef71a09c330968ea4bf05570edc7d}\label{raygui_8h_a2beef71a09c330968ea4bf05570edc7d}} 
+\index{raygui.h@{raygui.h}!GuiGetStyle@{GuiGetStyle}}
+\index{GuiGetStyle@{GuiGetStyle}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiGetStyle()}{GuiGetStyle()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Gui\+Get\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{control,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{property }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a231da5078e2db4dc0381a49712328feb}\label{raygui_8h_a231da5078e2db4dc0381a49712328feb}} 
+\index{raygui.h@{raygui.h}!GuiGrid@{GuiGrid}}
+\index{GuiGrid@{GuiGrid}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiGrid()}{GuiGrid()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{struct_vector2}{Vector2}} Gui\+Grid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{float}]{spacing,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{subdivs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_afba7bf3ae75b92c4be55806951110723}\label{raygui_8h_afba7bf3ae75b92c4be55806951110723}} 
+\index{raygui.h@{raygui.h}!GuiGroupBox@{GuiGroupBox}}
+\index{GuiGroupBox@{GuiGroupBox}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiGroupBox()}{GuiGroupBox()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Group\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a85dc16b6277294d94239543bf2ca725e}\label{raygui_8h_a85dc16b6277294d94239543bf2ca725e}} 
+\index{raygui.h@{raygui.h}!GuiIconText@{GuiIconText}}
+\index{GuiIconText@{GuiIconText}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiIconText()}{GuiIconText()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ Gui\+Icon\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{icon\+Id,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a74244354da89155e169ce41e8286d322}\label{raygui_8h_a74244354da89155e169ce41e8286d322}} 
+\index{raygui.h@{raygui.h}!GuiImageButton@{GuiImageButton}}
+\index{GuiImageButton@{GuiImageButton}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiImageButton()}{GuiImageButton()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Image\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a3bb62c0c927508133af5d17f516d8632}\label{raygui_8h_a3bb62c0c927508133af5d17f516d8632}} 
+\index{raygui.h@{raygui.h}!GuiImageButtonEx@{GuiImageButtonEx}}
+\index{GuiImageButtonEx@{GuiImageButtonEx}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiImageButtonEx()}{GuiImageButtonEx()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Image\+Button\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{tex\+Source,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a2117e0877e2c1a882a2e7a0ea183df77}\label{raygui_8h_a2117e0877e2c1a882a2e7a0ea183df77}} 
+\index{raygui.h@{raygui.h}!GuiLabel@{GuiLabel}}
+\index{GuiLabel@{GuiLabel}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiLabel()}{GuiLabel()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a7d94a8ffa15084be8d5cda61113bc76b}\label{raygui_8h_a7d94a8ffa15084be8d5cda61113bc76b}} 
+\index{raygui.h@{raygui.h}!GuiLabelButton@{GuiLabelButton}}
+\index{GuiLabelButton@{GuiLabelButton}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiLabelButton()}{GuiLabelButton()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Label\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a22121f8d19eca226785f74ed77132da0}\label{raygui_8h_a22121f8d19eca226785f74ed77132da0}} 
+\index{raygui.h@{raygui.h}!GuiLine@{GuiLine}}
+\index{GuiLine@{GuiLine}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiLine()}{GuiLine()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a3ed1fa266bb18200585af7766b688b8f}\label{raygui_8h_a3ed1fa266bb18200585af7766b688b8f}} 
+\index{raygui.h@{raygui.h}!GuiListView@{GuiListView}}
+\index{GuiListView@{GuiListView}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiListView()}{GuiListView()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+List\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{active,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{scroll\+Index,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{edit\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a914dd0eb5ec50510bddda08f7f178907}\label{raygui_8h_a914dd0eb5ec50510bddda08f7f178907}} 
+\index{raygui.h@{raygui.h}!GuiListViewEx@{GuiListViewEx}}
+\index{GuiListViewEx@{GuiListViewEx}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiListViewEx()}{GuiListViewEx()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+List\+View\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$$\ast$}]{text,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{count,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{enabled,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{active,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{focus,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{scroll\+Index,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{edit\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_ae5875ee6d92c71ace3e77f4af2d52bbb}\label{raygui_8h_ae5875ee6d92c71ace3e77f4af2d52bbb}} 
+\index{raygui.h@{raygui.h}!GuiLoadStyle@{GuiLoadStyle}}
+\index{GuiLoadStyle@{GuiLoadStyle}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiLoadStyle()}{GuiLoadStyle()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Load\+Style (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_ab21677f290821dd4f0b6b567bde73705}\label{raygui_8h_ab21677f290821dd4f0b6b567bde73705}} 
+\index{raygui.h@{raygui.h}!GuiLoadStyleDefault@{GuiLoadStyleDefault}}
+\index{GuiLoadStyleDefault@{GuiLoadStyleDefault}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiLoadStyleDefault()}{GuiLoadStyleDefault()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Load\+Style\+Default (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a0c1f295550858a589d05b23214c4448f}\label{raygui_8h_a0c1f295550858a589d05b23214c4448f}} 
+\index{raygui.h@{raygui.h}!GuiLoadStyleProps@{GuiLoadStyleProps}}
+\index{GuiLoadStyleProps@{GuiLoadStyleProps}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiLoadStyleProps()}{GuiLoadStyleProps()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Load\+Style\+Props (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{props,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a87a1007d04d0840787ac93299403e2d3}\label{raygui_8h_a87a1007d04d0840787ac93299403e2d3}} 
+\index{raygui.h@{raygui.h}!GuiLock@{GuiLock}}
+\index{GuiLock@{GuiLock}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiLock()}{GuiLock()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Lock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_aae16a7ee45f1ed20e8274b067d6c1bd1}\label{raygui_8h_aae16a7ee45f1ed20e8274b067d6c1bd1}} 
+\index{raygui.h@{raygui.h}!GuiMessageBox@{GuiMessageBox}}
+\index{GuiMessageBox@{GuiMessageBox}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiMessageBox()}{GuiMessageBox()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Gui\+Message\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{window\+Title,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{message,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{buttons }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a228a887053cbbf038539570e0cd28876}\label{raygui_8h_a228a887053cbbf038539570e0cd28876}} 
+\index{raygui.h@{raygui.h}!GuiPanel@{GuiPanel}}
+\index{GuiPanel@{GuiPanel}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiPanel()}{GuiPanel()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_aab18abbe1724d9b390f96dd557f2ee64}\label{raygui_8h_aab18abbe1724d9b390f96dd557f2ee64}} 
+\index{raygui.h@{raygui.h}!GuiProgressBar@{GuiProgressBar}}
+\index{GuiProgressBar@{GuiProgressBar}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiProgressBar()}{GuiProgressBar()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF float Gui\+Progress\+Bar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{float}]{value,  }\item[{float}]{min\+Value,  }\item[{float}]{max\+Value,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{show\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_ab366597a5c8aecd178dbc0dd66db0db4}\label{raygui_8h_ab366597a5c8aecd178dbc0dd66db0db4}} 
+\index{raygui.h@{raygui.h}!GuiScrollBar@{GuiScrollBar}}
+\index{GuiScrollBar@{GuiScrollBar}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiScrollBar()}{GuiScrollBar()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Gui\+Scroll\+Bar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{value,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{min\+Value,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{max\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a6ffb0e60ec6e46fe1c0d7e069b30e611}\label{raygui_8h_a6ffb0e60ec6e46fe1c0d7e069b30e611}} 
+\index{raygui.h@{raygui.h}!GuiScrollPanel@{GuiScrollPanel}}
+\index{GuiScrollPanel@{GuiScrollPanel}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiScrollPanel()}{GuiScrollPanel()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{struct_rectangle}{Rectangle}} Gui\+Scroll\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{content,  }\item[{\mbox{\hyperlink{struct_vector2}{Vector2}} $\ast$}]{scroll }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a703ddfe8b17264567f31ff9e61bdbcb6}\label{raygui_8h_a703ddfe8b17264567f31ff9e61bdbcb6}} 
+\index{raygui.h@{raygui.h}!GuiSetStyle@{GuiSetStyle}}
+\index{GuiSetStyle@{GuiSetStyle}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiSetStyle()}{GuiSetStyle()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Set\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{control,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{property,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a8e0a5bdf321b260bdefb906bb5909979}\label{raygui_8h_a8e0a5bdf321b260bdefb906bb5909979}} 
+\index{raygui.h@{raygui.h}!GuiSlider@{GuiSlider}}
+\index{GuiSlider@{GuiSlider}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiSlider()}{GuiSlider()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF float Gui\+Slider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{float}]{value,  }\item[{float}]{min\+Value,  }\item[{float}]{max\+Value,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{show\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a378ebd9cf075e6a46b92ea8b24886b84}\label{raygui_8h_a378ebd9cf075e6a46b92ea8b24886b84}} 
+\index{raygui.h@{raygui.h}!GuiSliderBar@{GuiSliderBar}}
+\index{GuiSliderBar@{GuiSliderBar}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiSliderBar()}{GuiSliderBar()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF float Gui\+Slider\+Bar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{float}]{value,  }\item[{float}]{min\+Value,  }\item[{float}]{max\+Value,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{show\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a171fc35e9a86f8d321ed9865d294b6ee}\label{raygui_8h_a171fc35e9a86f8d321ed9865d294b6ee}} 
+\index{raygui.h@{raygui.h}!GuiSpinner@{GuiSpinner}}
+\index{GuiSpinner@{GuiSpinner}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiSpinner()}{GuiSpinner()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Spinner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{value,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{min\+Value,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{max\+Value,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{edit\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a67ad59bbdb766609ba061ff837d58664}\label{raygui_8h_a67ad59bbdb766609ba061ff837d58664}} 
+\index{raygui.h@{raygui.h}!GuiState@{GuiState}}
+\index{GuiState@{GuiState}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiState()}{GuiState()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a7f095377587d5db9841386b4912c33e1}\label{raygui_8h_a7f095377587d5db9841386b4912c33e1}} 
+\index{raygui.h@{raygui.h}!GuiStatusBar@{GuiStatusBar}}
+\index{GuiStatusBar@{GuiStatusBar}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiStatusBar()}{GuiStatusBar()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Status\+Bar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a5f1c720ab53a3d7c44e90c213e07c928}\label{raygui_8h_a5f1c720ab53a3d7c44e90c213e07c928}} 
+\index{raygui.h@{raygui.h}!GuiTextBox@{GuiTextBox}}
+\index{GuiTextBox@{GuiTextBox}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiTextBox()}{GuiTextBox()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Text\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{text\+Size,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{edit\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_aaf91dfeb5fd11fb0b70856a7d758c7c0}\label{raygui_8h_aaf91dfeb5fd11fb0b70856a7d758c7c0}} 
+\index{raygui.h@{raygui.h}!GuiTextBoxMulti@{GuiTextBoxMulti}}
+\index{GuiTextBoxMulti@{GuiTextBoxMulti}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiTextBoxMulti()}{GuiTextBoxMulti()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Text\+Box\+Multi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{text\+Size,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{edit\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_acc83e8d847f3e75b7a1f7eeea88daba4}\label{raygui_8h_acc83e8d847f3e75b7a1f7eeea88daba4}} 
+\index{raygui.h@{raygui.h}!GuiTextInputBox@{GuiTextInputBox}}
+\index{GuiTextInputBox@{GuiTextInputBox}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiTextInputBox()}{GuiTextInputBox()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Gui\+Text\+Input\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{window\+Title,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{message,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{buttons }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a05110b4a8b2c9f6a9f927eb1043dc691}\label{raygui_8h_a05110b4a8b2c9f6a9f927eb1043dc691}} 
+\index{raygui.h@{raygui.h}!GuiToggle@{GuiToggle}}
+\index{GuiToggle@{GuiToggle}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiToggle()}{GuiToggle()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Toggle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{active }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a0b82342499dec9138116fde3e9ac591b}\label{raygui_8h_a0b82342499dec9138116fde3e9ac591b}} 
+\index{raygui.h@{raygui.h}!GuiToggleGroup@{GuiToggleGroup}}
+\index{GuiToggleGroup@{GuiToggleGroup}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiToggleGroup()}{GuiToggleGroup()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Gui\+Toggle\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{active }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a8118f5d2879eeaf266593647046b0aa0}\label{raygui_8h_a8118f5d2879eeaf266593647046b0aa0}} 
+\index{raygui.h@{raygui.h}!GuiUnlock@{GuiUnlock}}
+\index{GuiUnlock@{GuiUnlock}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiUnlock()}{GuiUnlock()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Unlock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a249fb211fdd03502aea00065333ab361}\label{raygui_8h_a249fb211fdd03502aea00065333ab361}} 
+\index{raygui.h@{raygui.h}!GuiUpdateStyleComplete@{GuiUpdateStyleComplete}}
+\index{GuiUpdateStyleComplete@{GuiUpdateStyleComplete}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiUpdateStyleComplete()}{GuiUpdateStyleComplete()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gui\+Update\+Style\+Complete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a1713f8af39df0706938c833d1725f761}\label{raygui_8h_a1713f8af39df0706938c833d1725f761}} 
+\index{raygui.h@{raygui.h}!GuiValueBox@{GuiValueBox}}
+\index{GuiValueBox@{GuiValueBox}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiValueBox()}{GuiValueBox()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Value\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{value,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{min\+Value,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{max\+Value,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{edit\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{raygui_8h_a246e71c5c648554c9fd5fe3fdceab1da}\label{raygui_8h_a246e71c5c648554c9fd5fe3fdceab1da}} 
+\index{raygui.h@{raygui.h}!GuiWindowBox@{GuiWindowBox}}
+\index{GuiWindowBox@{GuiWindowBox}!raygui.h@{raygui.h}}
+\doxysubsubsection{\texorpdfstring{GuiWindowBox()}{GuiWindowBox()}}
+{\footnotesize\ttfamily R\+A\+Y\+G\+U\+I\+D\+EF \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Gui\+Window\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{bounds,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text }\end{DoxyParamCaption})}
+

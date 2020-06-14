@@ -1,0 +1,1750 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/src/text.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_522cffce0e7f7aeeda0715820aff089e.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo text.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="raylib-src_2src_2raylib_8h_source.html">raylib.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="__deps_2raylib-src_2src_2config_8h_source.html">config.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stb__rect__pack_8h_source.html">external/stb_rect_pack.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stb__truetype_8h_source.html">external/stb_truetype.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a0791e69f0dcd58efa795dd50eb8c6cd0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a0791e69f0dcd58efa795dd50eb8c6cd0">STB_RECT_PACK_IMPLEMENTATION</a></td></tr>
+<tr class="separator:a0791e69f0dcd58efa795dd50eb8c6cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb252cc9576591994fdf2f89baddc630"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#adb252cc9576591994fdf2f89baddc630">STBTT_STATIC</a></td></tr>
+<tr class="separator:adb252cc9576591994fdf2f89baddc630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa2f2d0d9d6726cfae6da070e736347"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#afaa2f2d0d9d6726cfae6da070e736347">STB_TRUETYPE_IMPLEMENTATION</a></td></tr>
+<tr class="separator:afaa2f2d0d9d6726cfae6da070e736347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f856fcad55cb79b60a2125e0c0eb51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a57f856fcad55cb79b60a2125e0c0eb51">MAX_TEXT_BUFFER_LENGTH</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="separator:a57f856fcad55cb79b60a2125e0c0eb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec8472dadb8a58d8e40f0aed52e5d51c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#aec8472dadb8a58d8e40f0aed52e5d51c">MAX_TEXT_UNICODE_CHARS</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:aec8472dadb8a58d8e40f0aed52e5d51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85dd79b9f0d4eda8105f287e662c8f6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a85dd79b9f0d4eda8105f287e662c8f6e">TEXTSPLIT_MAX_TEXT_BUFFER_LENGTH</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="separator:a85dd79b9f0d4eda8105f287e662c8f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96be0ef979be3fc7b15e66e9998a2678"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a96be0ef979be3fc7b15e66e9998a2678">TEXTSPLIT_MAX_SUBSTRINGS_COUNT</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:a96be0ef979be3fc7b15e66e9998a2678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53403b709717305a8d0a8e692a70de6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#ab53403b709717305a8d0a8e692a70de6">BIT_CHECK</a>(<a class="el" href="examples_2others_2external_2include_2glad_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>,  <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>)&#160;&#160;&#160;((<a class="el" href="examples_2others_2external_2include_2glad_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>) &amp; (1u &lt;&lt; (<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>)))</td></tr>
+<tr class="separator:ab53403b709717305a8d0a8e692a70de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257e9ac41a56598e87ecd32f46e78395"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a257e9ac41a56598e87ecd32f46e78395">DEFAULT_TTF_FONTSIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a257e9ac41a56598e87ecd32f46e78395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed5ddfe18a4f0b52534c6de9c0956af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#aaed5ddfe18a4f0b52534c6de9c0956af">DEFAULT_TTF_NUMCHARS</a>&#160;&#160;&#160;95</td></tr>
+<tr class="separator:aaed5ddfe18a4f0b52534c6de9c0956af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7230b502da6ab03552b233a9722416"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#acc7230b502da6ab03552b233a9722416">DEFAULT_FIRST_CHAR</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:acc7230b502da6ab03552b233a9722416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b769e391cd935d795ce1cf44c2315d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a5b769e391cd935d795ce1cf44c2315d4">COLOR_EQUAL</a>(col1,  col2)&#160;&#160;&#160;((<a class="el" href="src_2external_2glad_8h.html#abe08814c2f72843fde4d8df41440d5a0">col1.r</a> == <a class="el" href="src_2external_2glad_8h.html#abe08814c2f72843fde4d8df41440d5a0">col2.r</a>)&amp;&amp;(<a class="el" href="src_2external_2glad_8h.html#a9cd653b1648845554169fbc3a3f6d37a">col1.g</a> == <a class="el" href="src_2external_2glad_8h.html#a9cd653b1648845554169fbc3a3f6d37a">col2.g</a>)&amp;&amp;(<a class="el" href="src_2external_2glad_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">col1.b</a> == <a class="el" href="src_2external_2glad_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">col2.b</a>)&amp;&amp;(<a class="el" href="src_2external_2glad_8h.html#ac8729153468b5dcf13f971b21d84d4e5">col1.a</a> == <a class="el" href="src_2external_2glad_8h.html#ac8729153468b5dcf13f971b21d84d4e5">col2.a</a>))</td></tr>
+<tr class="separator:a5b769e391cd935d795ce1cf44c2315d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae788350fc4de6f598f85cb98beeba5b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#ae788350fc4de6f598f85cb98beeba5b5">MAX_FONTCHARS</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:ae788350fc4de6f598f85cb98beeba5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3748006eb91df1f5fc68bd195f528002"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a3748006eb91df1f5fc68bd195f528002">SDF_CHAR_PADDING</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a3748006eb91df1f5fc68bd195f528002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef877a3b6489220d13fd7c5548e3801"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#afef877a3b6489220d13fd7c5548e3801">SDF_ON_EDGE_VALUE</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:afef877a3b6489220d13fd7c5548e3801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5e48b4c5ce96efb8808988783a5f28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a1b5e48b4c5ce96efb8808988783a5f28">SDF_PIXEL_DIST_SCALE</a>&#160;&#160;&#160;64.0f</td></tr>
+<tr class="separator:a1b5e48b4c5ce96efb8808988783a5f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8112e7a8aade3f9132206c49b9c8da1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a8112e7a8aade3f9132206c49b9c8da1f">BITMAP_ALPHA_THRESHOLD</a>&#160;&#160;&#160;80</td></tr>
+<tr class="separator:a8112e7a8aade3f9132206c49b9c8da1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08390593a08abc1965dc352f415a1f90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a08390593a08abc1965dc352f415a1f90">TEXT_CHARACTER_NOTFOUND</a>&#160;&#160;&#160;63</td></tr>
+<tr class="separator:a08390593a08abc1965dc352f415a1f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e697f58a5d806a740bba344b63fe5b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a5e697f58a5d806a740bba344b63fe5b6">UNORDERED_CHARSET</a></td></tr>
+<tr class="separator:a5e697f58a5d806a740bba344b63fe5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d1ecc7432b1a99c91be68177bafccd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#ae7d1ecc7432b1a99c91be68177bafccd">MAX_TEXTFORMAT_BUFFERS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ae7d1ecc7432b1a99c91be68177bafccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d796b98c583d49e83adabd74a63bf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#ad4d796b98c583d49e83adabd74a63bf6">MAX_BUFFER_SIZE</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:ad4d796b98c583d49e83adabd74a63bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a8484fb93b071180266b4e0a4c23fc296"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a8484fb93b071180266b4e0a4c23fc296">LoadFontDefault</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a8484fb93b071180266b4e0a4c23fc296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ffb11e46b52a9706555b02ccbc19da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a24ffb11e46b52a9706555b02ccbc19da">UnloadFontDefault</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a24ffb11e46b52a9706555b02ccbc19da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c27a81dd37c596295654a82e201137"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#ab0c27a81dd37c596295654a82e201137">GetFontDefault</a> ()</td></tr>
+<tr class="separator:ab0c27a81dd37c596295654a82e201137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af0b11c77b23684cd8c95127b39929c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a3af0b11c77b23684cd8c95127b39929c">LoadFont</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *fileName)</td></tr>
+<tr class="separator:a3af0b11c77b23684cd8c95127b39929c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace56777465bba6fe79619d4a82accc79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#ace56777465bba6fe79619d4a82accc79">LoadFontEx</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *fileName, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> fontSize, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *fontChars, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> charsCount)</td></tr>
+<tr class="separator:ace56777465bba6fe79619d4a82accc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56705d5b2c3d2c7c9bbeda302142d948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a56705d5b2c3d2c7c9bbeda302142d948">LoadFontFromImage</a> (<a class="el" href="struct_image.html">Image</a> <a class="el" href="eglext_8h.html#a0a221b005894579fea3b9eb7bfc2ee71">image</a>, <a class="el" href="struct_color.html">Color</a> key, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> firstChar)</td></tr>
+<tr class="separator:a56705d5b2c3d2c7c9bbeda302142d948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9982f0ee47577c1b7d6306c46b274405"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_char_info.html">CharInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a9982f0ee47577c1b7d6306c46b274405">LoadFontData</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *fileName, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> fontSize, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *fontChars, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> charsCount, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a890efa53b3d7deeeced6f3a0d6653ed3">type</a>)</td></tr>
+<tr class="separator:a9982f0ee47577c1b7d6306c46b274405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a78736feb9157aaaf6532d59a3e6ea1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a1a78736feb9157aaaf6532d59a3e6ea1">GenImageFontAtlas</a> (const <a class="el" href="struct_char_info.html">CharInfo</a> *chars, <a class="el" href="struct_rectangle.html">Rectangle</a> **charRecs, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> charsCount, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> fontSize, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> padding, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> packMethod)</td></tr>
+<tr class="separator:a1a78736feb9157aaaf6532d59a3e6ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf732c815ab45f012072256766574a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#abaf732c815ab45f012072256766574a4">UnloadFont</a> (<a class="el" href="struct_font.html">Font</a> <a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a1e52b0778d1df763fc5b497c26ead7a9">font</a>)</td></tr>
+<tr class="separator:abaf732c815ab45f012072256766574a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ced13adb512f945c159aa3a7aa6175e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a7ced13adb512f945c159aa3a7aa6175e">DrawFPS</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> posX, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> posY)</td></tr>
+<tr class="separator:a7ced13adb512f945c159aa3a7aa6175e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75e0f9fe436edf4a3aa5abed4df28ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#ab75e0f9fe436edf4a3aa5abed4df28ca">DrawText</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> posX, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> posY, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> fontSize, <a class="el" href="struct_color.html">Color</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a69995a929d818b8b467d4593c24d98bc">color</a>)</td></tr>
+<tr class="separator:ab75e0f9fe436edf4a3aa5abed4df28ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d92bb1b8f3ae92c9d17c66ded5694a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a77d92bb1b8f3ae92c9d17c66ded5694a">DrawTextCodepoint</a> (<a class="el" href="struct_font.html">Font</a> <a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a1e52b0778d1df763fc5b497c26ead7a9">font</a>, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> codepoint, <a class="el" href="struct_vector2.html">Vector2</a> position, float scale, <a class="el" href="struct_color.html">Color</a> tint)</td></tr>
+<tr class="separator:a77d92bb1b8f3ae92c9d17c66ded5694a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa48e7e0974c35abf9b50f04e62ed9e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#afa48e7e0974c35abf9b50f04e62ed9e7">DrawTextEx</a> (<a class="el" href="struct_font.html">Font</a> <a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a1e52b0778d1df763fc5b497c26ead7a9">font</a>, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, <a class="el" href="struct_vector2.html">Vector2</a> position, float fontSize, float spacing, <a class="el" href="struct_color.html">Color</a> tint)</td></tr>
+<tr class="separator:afa48e7e0974c35abf9b50f04e62ed9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d812c7918ebecdeadcef593aa1ef63e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a1d812c7918ebecdeadcef593aa1ef63e">DrawTextRec</a> (<a class="el" href="struct_font.html">Font</a> <a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a1e52b0778d1df763fc5b497c26ead7a9">font</a>, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, <a class="el" href="struct_rectangle.html">Rectangle</a> rec, float fontSize, float spacing, <a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> wordWrap, <a class="el" href="struct_color.html">Color</a> tint)</td></tr>
+<tr class="separator:a1d812c7918ebecdeadcef593aa1ef63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac476138b141373d327d8b2dfa39ff9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#aeac476138b141373d327d8b2dfa39ff9">DrawTextRecEx</a> (<a class="el" href="struct_font.html">Font</a> <a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a1e52b0778d1df763fc5b497c26ead7a9">font</a>, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, <a class="el" href="struct_rectangle.html">Rectangle</a> rec, float fontSize, float spacing, <a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> wordWrap, <a class="el" href="struct_color.html">Color</a> tint, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> selectStart, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> selectLength, <a class="el" href="struct_color.html">Color</a> selectTint, <a class="el" href="struct_color.html">Color</a> selectBackTint)</td></tr>
+<tr class="separator:aeac476138b141373d327d8b2dfa39ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34469970dc39e965e5aab01140e2932f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a34469970dc39e965e5aab01140e2932f">MeasureText</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> fontSize)</td></tr>
+<tr class="separator:a34469970dc39e965e5aab01140e2932f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea62af28450b68a1c99c00a1fc562ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a4ea62af28450b68a1c99c00a1fc562ca">MeasureTextEx</a> (<a class="el" href="struct_font.html">Font</a> <a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a1e52b0778d1df763fc5b497c26ead7a9">font</a>, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, float fontSize, float spacing)</td></tr>
+<tr class="separator:a4ea62af28450b68a1c99c00a1fc562ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c1bca5f2d858bf4f0a75788cf537e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a37c1bca5f2d858bf4f0a75788cf537e0">GetGlyphIndex</a> (<a class="el" href="struct_font.html">Font</a> <a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a1e52b0778d1df763fc5b497c26ead7a9">font</a>, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> codepoint)</td></tr>
+<tr class="separator:a37c1bca5f2d858bf4f0a75788cf537e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2744f3dbfac87e50e85dad25eaacc4b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a2744f3dbfac87e50e85dad25eaacc4b0">TextCopy</a> (<a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a92034251bfd455d524a9b5610cddba00">dst</a>, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a72e0fdf0f845ded60b1fada9e9195cd7">src</a>)</td></tr>
+<tr class="separator:a2744f3dbfac87e50e85dad25eaacc4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27de470afa89a9b701b0167644998d60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a27de470afa89a9b701b0167644998d60">TextIsEqual</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *text1, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *text2)</td></tr>
+<tr class="separator:a27de470afa89a9b701b0167644998d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac8f1891934193dc88fd85f493c3a41"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a5ac8f1891934193dc88fd85f493c3a41">TextLength</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>)</td></tr>
+<tr class="separator:a5ac8f1891934193dc88fd85f493c3a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13794c4fd76dceddce9a353705294c2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#aa13794c4fd76dceddce9a353705294c2">TextFormat</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>,...)</td></tr>
+<tr class="separator:aa13794c4fd76dceddce9a353705294c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72358be7b0e2f35a39796ee676f2a89a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a72358be7b0e2f35a39796ee676f2a89a">TextSubtext</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> position, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a3c8469415bbc83dd1341af15c67f1cef">length</a>)</td></tr>
+<tr class="separator:a72358be7b0e2f35a39796ee676f2a89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9212cf80e7c1c096ecd192d4129a9621"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a9212cf80e7c1c096ecd192d4129a9621">TextReplace</a> (<a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *replace, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *by)</td></tr>
+<tr class="separator:a9212cf80e7c1c096ecd192d4129a9621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f38bc38943ca7c5acfc8811423aa806"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a8f38bc38943ca7c5acfc8811423aa806">TextInsert</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *insert, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> position)</td></tr>
+<tr class="separator:a8f38bc38943ca7c5acfc8811423aa806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae00fa6a91e1e811fd5d3b8ef6725629a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#ae00fa6a91e1e811fd5d3b8ef6725629a">TextJoin</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> **textList, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a22486c0c8d9f7d79a07bf22ecffeeb2f">count</a>, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *delimiter)</td></tr>
+<tr class="separator:ae00fa6a91e1e811fd5d3b8ef6725629a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83835a943cea8c2627a3411dcf1b7f64"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a83835a943cea8c2627a3411dcf1b7f64">TextSplit</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> delimiter, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a22486c0c8d9f7d79a07bf22ecffeeb2f">count</a>)</td></tr>
+<tr class="separator:a83835a943cea8c2627a3411dcf1b7f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b12f937ee26c5ff847d62250dc2d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a30b12f937ee26c5ff847d62250dc2d2c">TextAppend</a> (<a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *append, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *position)</td></tr>
+<tr class="separator:a30b12f937ee26c5ff847d62250dc2d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd90fa13a2612689a6e0d9429ac4d33f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#afd90fa13a2612689a6e0d9429ac4d33f">TextFindIndex</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *find)</td></tr>
+<tr class="separator:afd90fa13a2612689a6e0d9429ac4d33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b88526cce6e74fe4e738237b631f568"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a5b88526cce6e74fe4e738237b631f568">TextToUpper</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>)</td></tr>
+<tr class="separator:a5b88526cce6e74fe4e738237b631f568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578094e6860734f719e64d45e8675626"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a578094e6860734f719e64d45e8675626">TextToLower</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>)</td></tr>
+<tr class="separator:a578094e6860734f719e64d45e8675626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90856371f14b56c8a562ca94e672c840"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a90856371f14b56c8a562ca94e672c840">TextToPascal</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>)</td></tr>
+<tr class="separator:a90856371f14b56c8a562ca94e672c840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43640b85ae37b909b4cee50d40d9d534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a43640b85ae37b909b4cee50d40d9d534">TextToInteger</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>)</td></tr>
+<tr class="separator:a43640b85ae37b909b4cee50d40d9d534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9abb6888667e60ad0e573e94418a4590"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a9abb6888667e60ad0e573e94418a4590">TextToUtf8</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *codepoints, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a3c8469415bbc83dd1341af15c67f1cef">length</a>)</td></tr>
+<tr class="separator:a9abb6888667e60ad0e573e94418a4590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f4d977faf2309eed61d0e8afb6819e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#ad3f4d977faf2309eed61d0e8afb6819e">GetCodepoints</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a22486c0c8d9f7d79a07bf22ecffeeb2f">count</a>)</td></tr>
+<tr class="separator:ad3f4d977faf2309eed61d0e8afb6819e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff5ce90eb415f943628d84ee1db210a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#acff5ce90eb415f943628d84ee1db210a">GetCodepointsCount</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>)</td></tr>
+<tr class="separator:acff5ce90eb415f943628d84ee1db210a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46ca91757f17dfaf87858d1bdaadb35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#ab46ca91757f17dfaf87858d1bdaadb35">GetNextCodepoint</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="text__unicode_8c.html#a5633b1433389cec21ade3811bbe9ca5b">text</a>, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *bytesProcessed)</td></tr>
+<tr class="separator:ab46ca91757f17dfaf87858d1bdaadb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd85a8ea7ac17639e046b7d86cdd04b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2raylib_8h.html#a9e7a90ce1dc00f769afb0be0a6c7ade7">RLAPI</a> const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="text_8c.html#a7fd85a8ea7ac17639e046b7d86cdd04b">CodepointToUtf8</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> codepoint, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *byteLength)</td></tr>
+<tr class="separator:a7fd85a8ea7ac17639e046b7d86cdd04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="ab53403b709717305a8d0a8e692a70de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab53403b709717305a8d0a8e692a70de6">&#9670;&nbsp;</a></span>BIT_CHECK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BIT_CHECK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="examples_2others_2external_2include_2glad_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="examples_2others_2external_2include_2glad_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="examples_2others_2external_2include_2glad_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>) &amp; (1u &lt;&lt; (<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8112e7a8aade3f9132206c49b9c8da1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8112e7a8aade3f9132206c49b9c8da1f">&#9670;&nbsp;</a></span>BITMAP_ALPHA_THRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BITMAP_ALPHA_THRESHOLD&#160;&#160;&#160;80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b769e391cd935d795ce1cf44c2315d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b769e391cd935d795ce1cf44c2315d4">&#9670;&nbsp;</a></span>COLOR_EQUAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLOR_EQUAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">col1, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">col2&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="src_2external_2glad_8h.html#abe08814c2f72843fde4d8df41440d5a0">col1.r</a> == <a class="el" href="src_2external_2glad_8h.html#abe08814c2f72843fde4d8df41440d5a0">col2.r</a>)&amp;&amp;(<a class="el" href="src_2external_2glad_8h.html#a9cd653b1648845554169fbc3a3f6d37a">col1.g</a> == <a class="el" href="src_2external_2glad_8h.html#a9cd653b1648845554169fbc3a3f6d37a">col2.g</a>)&amp;&amp;(<a class="el" href="src_2external_2glad_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">col1.b</a> == <a class="el" href="src_2external_2glad_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">col2.b</a>)&amp;&amp;(<a class="el" href="src_2external_2glad_8h.html#ac8729153468b5dcf13f971b21d84d4e5">col1.a</a> == <a class="el" href="src_2external_2glad_8h.html#ac8729153468b5dcf13f971b21d84d4e5">col2.a</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc7230b502da6ab03552b233a9722416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7230b502da6ab03552b233a9722416">&#9670;&nbsp;</a></span>DEFAULT_FIRST_CHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_FIRST_CHAR&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a257e9ac41a56598e87ecd32f46e78395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257e9ac41a56598e87ecd32f46e78395">&#9670;&nbsp;</a></span>DEFAULT_TTF_FONTSIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_TTF_FONTSIZE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaed5ddfe18a4f0b52534c6de9c0956af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaed5ddfe18a4f0b52534c6de9c0956af">&#9670;&nbsp;</a></span>DEFAULT_TTF_NUMCHARS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_TTF_NUMCHARS&#160;&#160;&#160;95</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4d796b98c583d49e83adabd74a63bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d796b98c583d49e83adabd74a63bf6">&#9670;&nbsp;</a></span>MAX_BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_BUFFER_SIZE&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae788350fc4de6f598f85cb98beeba5b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae788350fc4de6f598f85cb98beeba5b5">&#9670;&nbsp;</a></span>MAX_FONTCHARS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_FONTCHARS&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57f856fcad55cb79b60a2125e0c0eb51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57f856fcad55cb79b60a2125e0c0eb51">&#9670;&nbsp;</a></span>MAX_TEXT_BUFFER_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TEXT_BUFFER_LENGTH&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec8472dadb8a58d8e40f0aed52e5d51c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec8472dadb8a58d8e40f0aed52e5d51c">&#9670;&nbsp;</a></span>MAX_TEXT_UNICODE_CHARS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TEXT_UNICODE_CHARS&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7d1ecc7432b1a99c91be68177bafccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7d1ecc7432b1a99c91be68177bafccd">&#9670;&nbsp;</a></span>MAX_TEXTFORMAT_BUFFERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TEXTFORMAT_BUFFERS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3748006eb91df1f5fc68bd195f528002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3748006eb91df1f5fc68bd195f528002">&#9670;&nbsp;</a></span>SDF_CHAR_PADDING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SDF_CHAR_PADDING&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afef877a3b6489220d13fd7c5548e3801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef877a3b6489220d13fd7c5548e3801">&#9670;&nbsp;</a></span>SDF_ON_EDGE_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SDF_ON_EDGE_VALUE&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b5e48b4c5ce96efb8808988783a5f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5e48b4c5ce96efb8808988783a5f28">&#9670;&nbsp;</a></span>SDF_PIXEL_DIST_SCALE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SDF_PIXEL_DIST_SCALE&#160;&#160;&#160;64.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0791e69f0dcd58efa795dd50eb8c6cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0791e69f0dcd58efa795dd50eb8c6cd0">&#9670;&nbsp;</a></span>STB_RECT_PACK_IMPLEMENTATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STB_RECT_PACK_IMPLEMENTATION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaa2f2d0d9d6726cfae6da070e736347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa2f2d0d9d6726cfae6da070e736347">&#9670;&nbsp;</a></span>STB_TRUETYPE_IMPLEMENTATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STB_TRUETYPE_IMPLEMENTATION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb252cc9576591994fdf2f89baddc630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb252cc9576591994fdf2f89baddc630">&#9670;&nbsp;</a></span>STBTT_STATIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBTT_STATIC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08390593a08abc1965dc352f415a1f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08390593a08abc1965dc352f415a1f90">&#9670;&nbsp;</a></span>TEXT_CHARACTER_NOTFOUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEXT_CHARACTER_NOTFOUND&#160;&#160;&#160;63</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96be0ef979be3fc7b15e66e9998a2678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96be0ef979be3fc7b15e66e9998a2678">&#9670;&nbsp;</a></span>TEXTSPLIT_MAX_SUBSTRINGS_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEXTSPLIT_MAX_SUBSTRINGS_COUNT&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85dd79b9f0d4eda8105f287e662c8f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85dd79b9f0d4eda8105f287e662c8f6e">&#9670;&nbsp;</a></span>TEXTSPLIT_MAX_TEXT_BUFFER_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEXTSPLIT_MAX_TEXT_BUFFER_LENGTH&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e697f58a5d806a740bba344b63fe5b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e697f58a5d806a740bba344b63fe5b6">&#9670;&nbsp;</a></span>UNORDERED_CHARSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNORDERED_CHARSET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a7fd85a8ea7ac17639e046b7d86cdd04b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd85a8ea7ac17639e046b7d86cdd04b">&#9670;&nbsp;</a></span>CodepointToUtf8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2raylib_8h.html#a9e7a90ce1dc00f769afb0be0a6c7ade7">RLAPI</a> const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>* CodepointToUtf8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>codepoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *&#160;</td>
+          <td class="paramname"><em>byteLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ced13adb512f945c159aa3a7aa6175e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ced13adb512f945c159aa3a7aa6175e">&#9670;&nbsp;</a></span>DrawFPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> DrawFPS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>posX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>posY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab75e0f9fe436edf4a3aa5abed4df28ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab75e0f9fe436edf4a3aa5abed4df28ca">&#9670;&nbsp;</a></span>DrawText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> DrawText </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>posX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>posY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>fontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77d92bb1b8f3ae92c9d17c66ded5694a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d92bb1b8f3ae92c9d17c66ded5694a">&#9670;&nbsp;</a></span>DrawTextCodepoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> DrawTextCodepoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_font.html">Font</a>&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>codepoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>tint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa48e7e0974c35abf9b50f04e62ed9e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa48e7e0974c35abf9b50f04e62ed9e7">&#9670;&nbsp;</a></span>DrawTextEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> DrawTextEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_font.html">Font</a>&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>spacing</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>tint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d812c7918ebecdeadcef593aa1ef63e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d812c7918ebecdeadcef593aa1ef63e">&#9670;&nbsp;</a></span>DrawTextRec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> DrawTextRec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_font.html">Font</a>&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td>
+          <td class="paramname"><em>rec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>spacing</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td>
+          <td class="paramname"><em>wordWrap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>tint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeac476138b141373d327d8b2dfa39ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac476138b141373d327d8b2dfa39ff9">&#9670;&nbsp;</a></span>DrawTextRecEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> DrawTextRecEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_font.html">Font</a>&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td>
+          <td class="paramname"><em>rec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>spacing</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td>
+          <td class="paramname"><em>wordWrap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>tint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>selectStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>selectLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>selectTint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>selectBackTint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a78736feb9157aaaf6532d59a3e6ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a78736feb9157aaaf6532d59a3e6ea1">&#9670;&nbsp;</a></span>GenImageFontAtlas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_image.html">Image</a> GenImageFontAtlas </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_char_info.html">CharInfo</a> *&#160;</td>
+          <td class="paramname"><em>chars</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_rectangle.html">Rectangle</a> **&#160;</td>
+          <td class="paramname"><em>charRecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>charsCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>fontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>padding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>packMethod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3f4d977faf2309eed61d0e8afb6819e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f4d977faf2309eed61d0e8afb6819e">&#9670;&nbsp;</a></span>GetCodepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>* GetCodepoints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acff5ce90eb415f943628d84ee1db210a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acff5ce90eb415f943628d84ee1db210a">&#9670;&nbsp;</a></span>GetCodepointsCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> GetCodepointsCount </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0c27a81dd37c596295654a82e201137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c27a81dd37c596295654a82e201137">&#9670;&nbsp;</a></span>GetFontDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_font.html">Font</a> GetFontDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37c1bca5f2d858bf4f0a75788cf537e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c1bca5f2d858bf4f0a75788cf537e0">&#9670;&nbsp;</a></span>GetGlyphIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> GetGlyphIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_font.html">Font</a>&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>codepoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab46ca91757f17dfaf87858d1bdaadb35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46ca91757f17dfaf87858d1bdaadb35">&#9670;&nbsp;</a></span>GetNextCodepoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> GetNextCodepoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *&#160;</td>
+          <td class="paramname"><em>bytesProcessed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3af0b11c77b23684cd8c95127b39929c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3af0b11c77b23684cd8c95127b39929c">&#9670;&nbsp;</a></span>LoadFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_font.html">Font</a> LoadFont </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9982f0ee47577c1b7d6306c46b274405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9982f0ee47577c1b7d6306c46b274405">&#9670;&nbsp;</a></span>LoadFontData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_char_info.html">CharInfo</a>* LoadFontData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>fontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *&#160;</td>
+          <td class="paramname"><em>fontChars</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>charsCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8484fb93b071180266b4e0a4c23fc296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8484fb93b071180266b4e0a4c23fc296">&#9670;&nbsp;</a></span>LoadFontDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> LoadFontDefault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace56777465bba6fe79619d4a82accc79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace56777465bba6fe79619d4a82accc79">&#9670;&nbsp;</a></span>LoadFontEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_font.html">Font</a> LoadFontEx </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>fontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *&#160;</td>
+          <td class="paramname"><em>fontChars</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>charsCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56705d5b2c3d2c7c9bbeda302142d948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56705d5b2c3d2c7c9bbeda302142d948">&#9670;&nbsp;</a></span>LoadFontFromImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_font.html">Font</a> LoadFontFromImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_image.html">Image</a>&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>firstChar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34469970dc39e965e5aab01140e2932f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34469970dc39e965e5aab01140e2932f">&#9670;&nbsp;</a></span>MeasureText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> MeasureText </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>fontSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ea62af28450b68a1c99c00a1fc562ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea62af28450b68a1c99c00a1fc562ca">&#9670;&nbsp;</a></span>MeasureTextEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector2.html">Vector2</a> MeasureTextEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_font.html">Font</a>&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>spacing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30b12f937ee26c5ff847d62250dc2d2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b12f937ee26c5ff847d62250dc2d2c">&#9670;&nbsp;</a></span>TextAppend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> TextAppend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>append</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2744f3dbfac87e50e85dad25eaacc4b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2744f3dbfac87e50e85dad25eaacc4b0">&#9670;&nbsp;</a></span>TextCopy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> TextCopy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd90fa13a2612689a6e0d9429ac4d33f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd90fa13a2612689a6e0d9429ac4d33f">&#9670;&nbsp;</a></span>TextFindIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> TextFindIndex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>find</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa13794c4fd76dceddce9a353705294c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa13794c4fd76dceddce9a353705294c2">&#9670;&nbsp;</a></span>TextFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>* TextFormat </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f38bc38943ca7c5acfc8811423aa806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f38bc38943ca7c5acfc8811423aa806">&#9670;&nbsp;</a></span>TextInsert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>* TextInsert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>insert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27de470afa89a9b701b0167644998d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27de470afa89a9b701b0167644998d60">&#9670;&nbsp;</a></span>TextIsEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> TextIsEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae00fa6a91e1e811fd5d3b8ef6725629a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae00fa6a91e1e811fd5d3b8ef6725629a">&#9670;&nbsp;</a></span>TextJoin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>* TextJoin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> **&#160;</td>
+          <td class="paramname"><em>textList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>delimiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ac8f1891934193dc88fd85f493c3a41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ac8f1891934193dc88fd85f493c3a41">&#9670;&nbsp;</a></span>TextLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> TextLength </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9212cf80e7c1c096ecd192d4129a9621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9212cf80e7c1c096ecd192d4129a9621">&#9670;&nbsp;</a></span>TextReplace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>* TextReplace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>replace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>by</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83835a943cea8c2627a3411dcf1b7f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83835a943cea8c2627a3411dcf1b7f64">&#9670;&nbsp;</a></span>TextSplit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>** TextSplit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>&#160;</td>
+          <td class="paramname"><em>delimiter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72358be7b0e2f35a39796ee676f2a89a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72358be7b0e2f35a39796ee676f2a89a">&#9670;&nbsp;</a></span>TextSubtext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>* TextSubtext </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43640b85ae37b909b4cee50d40d9d534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43640b85ae37b909b4cee50d40d9d534">&#9670;&nbsp;</a></span>TextToInteger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> TextToInteger </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a578094e6860734f719e64d45e8675626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a578094e6860734f719e64d45e8675626">&#9670;&nbsp;</a></span>TextToLower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>* TextToLower </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90856371f14b56c8a562ca94e672c840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90856371f14b56c8a562ca94e672c840">&#9670;&nbsp;</a></span>TextToPascal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>* TextToPascal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b88526cce6e74fe4e738237b631f568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b88526cce6e74fe4e738237b631f568">&#9670;&nbsp;</a></span>TextToUpper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>* TextToUpper </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9abb6888667e60ad0e573e94418a4590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9abb6888667e60ad0e573e94418a4590">&#9670;&nbsp;</a></span>TextToUtf8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>* TextToUtf8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *&#160;</td>
+          <td class="paramname"><em>codepoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abaf732c815ab45f012072256766574a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf732c815ab45f012072256766574a4">&#9670;&nbsp;</a></span>UnloadFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> UnloadFont </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_font.html">Font</a>&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24ffb11e46b52a9706555b02ccbc19da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ffb11e46b52a9706555b02ccbc19da">&#9670;&nbsp;</a></span>UnloadFontDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> UnloadFontDefault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

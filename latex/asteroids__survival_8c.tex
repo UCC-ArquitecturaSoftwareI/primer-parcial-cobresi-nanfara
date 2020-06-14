@@ -1,0 +1,101 @@
+\hypertarget{asteroids__survival_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/asteroids\+\_\+survival.c}
+\label{asteroids__survival_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/asteroids\_survival.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/asteroids\_survival.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_player}{Player}}
+\item 
+struct \mbox{\hyperlink{struct_meteor}{Meteor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{asteroids__survival_8c_a1cef014f74bf89aa00a5b3a6d446d925}{P\+L\+A\+Y\+E\+R\+\_\+\+B\+A\+S\+E\+\_\+\+S\+I\+ZE}}~20.\+0f
+\item 
+\#define \mbox{\hyperlink{asteroids__survival_8c_af49bad41acef45feb40939c0cf9d5d35}{P\+L\+A\+Y\+E\+R\+\_\+\+S\+P\+E\+ED}}~6.\+0f
+\item 
+\#define \mbox{\hyperlink{asteroids__survival_8c_a6486f468df05c37b35e20d8b443a12b3}{P\+L\+A\+Y\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+H\+O\+O\+TS}}~10
+\item 
+\#define \mbox{\hyperlink{asteroids__survival_8c_a580ac424c1f5949476b28493a2d70845}{M\+E\+T\+E\+O\+R\+S\+\_\+\+S\+P\+E\+ED}}~2
+\item 
+\#define \mbox{\hyperlink{asteroids__survival_8c_a41905feeccb3654a377ed3876fa3c3d4}{M\+A\+X\+\_\+\+M\+E\+D\+I\+U\+M\+\_\+\+M\+E\+T\+E\+O\+RS}}~8
+\item 
+\#define \mbox{\hyperlink{asteroids__survival_8c_a232024734c2b32942542d59cf29f0d78}{M\+A\+X\+\_\+\+S\+M\+A\+L\+L\+\_\+\+M\+E\+T\+E\+O\+RS}}~16
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{asteroids__survival_8c_a480a040facb94f90060562cd65274385}{Player}}
+\item 
+typedef struct \mbox{\hyperlink{struct_meteor}{Meteor}} \mbox{\hyperlink{asteroids__survival_8c_aa752361375ed6b8e78d665267d14c08a}{Meteor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{asteroids__survival_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{asteroids__survival_8c_a41905feeccb3654a377ed3876fa3c3d4}\label{asteroids__survival_8c_a41905feeccb3654a377ed3876fa3c3d4}} 
+\index{asteroids\_survival.c@{asteroids\_survival.c}!MAX\_MEDIUM\_METEORS@{MAX\_MEDIUM\_METEORS}}
+\index{MAX\_MEDIUM\_METEORS@{MAX\_MEDIUM\_METEORS}!asteroids\_survival.c@{asteroids\_survival.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_MEDIUM\_METEORS}{MAX\_MEDIUM\_METEORS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+M\+E\+D\+I\+U\+M\+\_\+\+M\+E\+T\+E\+O\+RS~8}
+
+\mbox{\Hypertarget{asteroids__survival_8c_a232024734c2b32942542d59cf29f0d78}\label{asteroids__survival_8c_a232024734c2b32942542d59cf29f0d78}} 
+\index{asteroids\_survival.c@{asteroids\_survival.c}!MAX\_SMALL\_METEORS@{MAX\_SMALL\_METEORS}}
+\index{MAX\_SMALL\_METEORS@{MAX\_SMALL\_METEORS}!asteroids\_survival.c@{asteroids\_survival.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_SMALL\_METEORS}{MAX\_SMALL\_METEORS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+S\+M\+A\+L\+L\+\_\+\+M\+E\+T\+E\+O\+RS~16}
+
+\mbox{\Hypertarget{asteroids__survival_8c_a580ac424c1f5949476b28493a2d70845}\label{asteroids__survival_8c_a580ac424c1f5949476b28493a2d70845}} 
+\index{asteroids\_survival.c@{asteroids\_survival.c}!METEORS\_SPEED@{METEORS\_SPEED}}
+\index{METEORS\_SPEED@{METEORS\_SPEED}!asteroids\_survival.c@{asteroids\_survival.c}}
+\doxysubsubsection{\texorpdfstring{METEORS\_SPEED}{METEORS\_SPEED}}
+{\footnotesize\ttfamily \#define M\+E\+T\+E\+O\+R\+S\+\_\+\+S\+P\+E\+ED~2}
+
+\mbox{\Hypertarget{asteroids__survival_8c_a1cef014f74bf89aa00a5b3a6d446d925}\label{asteroids__survival_8c_a1cef014f74bf89aa00a5b3a6d446d925}} 
+\index{asteroids\_survival.c@{asteroids\_survival.c}!PLAYER\_BASE\_SIZE@{PLAYER\_BASE\_SIZE}}
+\index{PLAYER\_BASE\_SIZE@{PLAYER\_BASE\_SIZE}!asteroids\_survival.c@{asteroids\_survival.c}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_BASE\_SIZE}{PLAYER\_BASE\_SIZE}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+E\+R\+\_\+\+B\+A\+S\+E\+\_\+\+S\+I\+ZE~20.\+0f}
+
+\mbox{\Hypertarget{asteroids__survival_8c_a6486f468df05c37b35e20d8b443a12b3}\label{asteroids__survival_8c_a6486f468df05c37b35e20d8b443a12b3}} 
+\index{asteroids\_survival.c@{asteroids\_survival.c}!PLAYER\_MAX\_SHOOTS@{PLAYER\_MAX\_SHOOTS}}
+\index{PLAYER\_MAX\_SHOOTS@{PLAYER\_MAX\_SHOOTS}!asteroids\_survival.c@{asteroids\_survival.c}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_MAX\_SHOOTS}{PLAYER\_MAX\_SHOOTS}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+H\+O\+O\+TS~10}
+
+\mbox{\Hypertarget{asteroids__survival_8c_af49bad41acef45feb40939c0cf9d5d35}\label{asteroids__survival_8c_af49bad41acef45feb40939c0cf9d5d35}} 
+\index{asteroids\_survival.c@{asteroids\_survival.c}!PLAYER\_SPEED@{PLAYER\_SPEED}}
+\index{PLAYER\_SPEED@{PLAYER\_SPEED}!asteroids\_survival.c@{asteroids\_survival.c}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_SPEED}{PLAYER\_SPEED}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+E\+R\+\_\+\+S\+P\+E\+ED~6.\+0f}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{asteroids__survival_8c_aa752361375ed6b8e78d665267d14c08a}\label{asteroids__survival_8c_aa752361375ed6b8e78d665267d14c08a}} 
+\index{asteroids\_survival.c@{asteroids\_survival.c}!Meteor@{Meteor}}
+\index{Meteor@{Meteor}!asteroids\_survival.c@{asteroids\_survival.c}}
+\doxysubsubsection{\texorpdfstring{Meteor}{Meteor}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_meteor}{Meteor}} \mbox{\hyperlink{struct_meteor}{Meteor}}}
+
+\mbox{\Hypertarget{asteroids__survival_8c_a480a040facb94f90060562cd65274385}\label{asteroids__survival_8c_a480a040facb94f90060562cd65274385}} 
+\index{asteroids\_survival.c@{asteroids\_survival.c}!Player@{Player}}
+\index{Player@{Player}!asteroids\_survival.c@{asteroids\_survival.c}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{struct_player}{Player}}}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{asteroids__survival_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{asteroids__survival_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{asteroids\_survival.c@{asteroids\_survival.c}!main@{main}}
+\index{main@{main}!asteroids\_survival.c@{asteroids\_survival.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,57 @@
+\hypertarget{context_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/glfw/src/context.c}
+\label{context_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/glfw/src/context.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/glfw/src/context.c}}
+{\ttfamily \#include \char`\"{}internal.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{internal_8h_ac5743c31bece872e24528b5a45e354c5}{G\+L\+F\+Wbool}} \mbox{\hyperlink{context_8c_a659c5d5b0cd359304004700d16a76954}{\+\_\+glfw\+Is\+Valid\+Context\+Config}} (const \mbox{\hyperlink{struct___g_l_f_wctxconfig}{\+\_\+\+G\+L\+F\+Wctxconfig}} $\ast$ctxconfig)
+\item 
+const \mbox{\hyperlink{struct___g_l_f_wfbconfig}{\+\_\+\+G\+L\+F\+Wfbconfig}} $\ast$ \mbox{\hyperlink{context_8c_a276a94e57c3120e6a79651acb1b8f535}{\+\_\+glfw\+Choose\+F\+B\+Config}} (const \mbox{\hyperlink{struct___g_l_f_wfbconfig}{\+\_\+\+G\+L\+F\+Wfbconfig}} $\ast$desired, const \mbox{\hyperlink{struct___g_l_f_wfbconfig}{\+\_\+\+G\+L\+F\+Wfbconfig}} $\ast$alternatives, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a22486c0c8d9f7d79a07bf22ecffeeb2f}{count}})
+\item 
+\mbox{\hyperlink{internal_8h_ac5743c31bece872e24528b5a45e354c5}{G\+L\+F\+Wbool}} \mbox{\hyperlink{context_8c_ad31e31c6a588d6770188033eed87305b}{\+\_\+glfw\+Refresh\+Context\+Attribs}} (\mbox{\hyperlink{struct___g_l_f_wwindow}{\+\_\+\+G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{eglext_8h_a92dbce8e3247f6a78126c99877caacb6}{window}}, const \mbox{\hyperlink{struct___g_l_f_wctxconfig}{\+\_\+\+G\+L\+F\+Wctxconfig}} $\ast$ctxconfig)
+\item 
+\mbox{\hyperlink{internal_8h_ac5743c31bece872e24528b5a45e354c5}{G\+L\+F\+Wbool}} \mbox{\hyperlink{context_8c_a6fb78d968ce928112060770a16dca695}{\+\_\+glfw\+String\+In\+Extension\+String}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a5ef8ce60531c971745798ebb9f61a5d8}{string}}, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$extensions)
+\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{group__context_gafd76c93e15ec8b0b90506a9936a46185}{glfw\+Make\+Context\+Current}} (\mbox{\hyperlink{group__window_ga3c96d80d363e67d13a41b5d1821f3242}{G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}})
+\begin{DoxyCompactList}\small\item\em Makes the context of the specified window current for the calling thread. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{group__window_ga3c96d80d363e67d13a41b5d1821f3242}{G\+L\+F\+Wwindow}} $\ast$ \mbox{\hyperlink{group__context_gab5fde1ef6238bfb82c7a2293f86172de}{glfw\+Get\+Current\+Context}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\begin{DoxyCompactList}\small\item\em Returns the window whose context is current on the calling thread. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{group__window_gafb827800eedbfcbc97b1e5408df668d7}{glfw\+Swap\+Buffers}} (\mbox{\hyperlink{group__window_ga3c96d80d363e67d13a41b5d1821f3242}{G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{eglext_8h_a48fc485a2a8834589d1f1afeec65193c}{handle}})
+\begin{DoxyCompactList}\small\item\em Swaps the front and back buffers of the specified window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{group__context_ga12a595c06947cec4967c6e1f14210a8a}{glfw\+Swap\+Interval}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} interval)
+\begin{DoxyCompactList}\small\item\em Sets the swap interval for the current context. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{group__context_ga9a28c712d35f9e43534e1d03b051c04c}{glfw\+Extension\+Supported}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$extension)
+\begin{DoxyCompactList}\small\item\em Returns whether the specified extension is available. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h_a56da5036b2cc259351ae22fd6439bb47}{G\+L\+F\+W\+A\+PI}} \mbox{\hyperlink{group__context_ga3d47c2d2fbe0be9c505d0e04e91a133c}{G\+L\+F\+Wglproc}} \mbox{\hyperlink{group__context_ga0e8af175218929615c16e74938c10f2a}{glfw\+Get\+Proc\+Address}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$procname)
+\begin{DoxyCompactList}\small\item\em Returns the address of the specified function for the current context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{context_8c_a276a94e57c3120e6a79651acb1b8f535}\label{context_8c_a276a94e57c3120e6a79651acb1b8f535}} 
+\index{context.c@{context.c}!\_glfwChooseFBConfig@{\_glfwChooseFBConfig}}
+\index{\_glfwChooseFBConfig@{\_glfwChooseFBConfig}!context.c@{context.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwChooseFBConfig()}{\_glfwChooseFBConfig()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct___g_l_f_wfbconfig}{\+\_\+\+G\+L\+F\+Wfbconfig}}$\ast$ \+\_\+glfw\+Choose\+F\+B\+Config (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct___g_l_f_wfbconfig}{\+\_\+\+G\+L\+F\+Wfbconfig}} $\ast$}]{desired,  }\item[{const \mbox{\hyperlink{struct___g_l_f_wfbconfig}{\+\_\+\+G\+L\+F\+Wfbconfig}} $\ast$}]{alternatives,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{context_8c_a659c5d5b0cd359304004700d16a76954}\label{context_8c_a659c5d5b0cd359304004700d16a76954}} 
+\index{context.c@{context.c}!\_glfwIsValidContextConfig@{\_glfwIsValidContextConfig}}
+\index{\_glfwIsValidContextConfig@{\_glfwIsValidContextConfig}!context.c@{context.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwIsValidContextConfig()}{\_glfwIsValidContextConfig()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{internal_8h_ac5743c31bece872e24528b5a45e354c5}{G\+L\+F\+Wbool}} \+\_\+glfw\+Is\+Valid\+Context\+Config (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct___g_l_f_wctxconfig}{\+\_\+\+G\+L\+F\+Wctxconfig}} $\ast$}]{ctxconfig }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{context_8c_ad31e31c6a588d6770188033eed87305b}\label{context_8c_ad31e31c6a588d6770188033eed87305b}} 
+\index{context.c@{context.c}!\_glfwRefreshContextAttribs@{\_glfwRefreshContextAttribs}}
+\index{\_glfwRefreshContextAttribs@{\_glfwRefreshContextAttribs}!context.c@{context.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwRefreshContextAttribs()}{\_glfwRefreshContextAttribs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{internal_8h_ac5743c31bece872e24528b5a45e354c5}{G\+L\+F\+Wbool}} \+\_\+glfw\+Refresh\+Context\+Attribs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct___g_l_f_wwindow}{\+\_\+\+G\+L\+F\+Wwindow}} $\ast$}]{window,  }\item[{const \mbox{\hyperlink{struct___g_l_f_wctxconfig}{\+\_\+\+G\+L\+F\+Wctxconfig}} $\ast$}]{ctxconfig }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{context_8c_a6fb78d968ce928112060770a16dca695}\label{context_8c_a6fb78d968ce928112060770a16dca695}} 
+\index{context.c@{context.c}!\_glfwStringInExtensionString@{\_glfwStringInExtensionString}}
+\index{\_glfwStringInExtensionString@{\_glfwStringInExtensionString}!context.c@{context.c}}
+\doxysubsubsection{\texorpdfstring{\_glfwStringInExtensionString()}{\_glfwStringInExtensionString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{internal_8h_ac5743c31bece872e24528b5a45e354c5}{G\+L\+F\+Wbool}} \+\_\+glfw\+String\+In\+Extension\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{string,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{extensions }\end{DoxyParamCaption})}
+

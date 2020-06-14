@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia de la Estructura ma_event</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos públicos</a> &#124;
+<a href="structma__event-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Estructura ma_event</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="miniaudio_8h_source.html">miniaudio.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos públicos</h2></td></tr>
+<tr class="memitem:a7d7e575d92772f175f5e089e4134a3e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structma__context.html">ma_context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structma__event.html#a7d7e575d92772f175f5e089e4134a3e8">pContext</a></td></tr>
+<tr class="separator:a7d7e575d92772f175f5e089e4134a3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7993cc3d8f682b52423e4739807260ba"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a51283d3d90007d4a35c6248eec29c277"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:aa1693c122e2409ac64198d7e5bd8b849"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;pthread_mutex_t&#160;&#160;&#160;<a class="el" href="structma__event.html#a08b1f6e2e282802f56400c2833f5a75c">mutex</a></td></tr>
+<tr class="separator:aa1693c122e2409ac64198d7e5bd8b849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec77fcd23dd3760964d981057c98daca"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;pthread_cond_t&#160;&#160;&#160;<a class="el" href="structma__event.html#a188151481628432df6a1a19fd23eb16a">condition</a></td></tr>
+<tr class="separator:aec77fcd23dd3760964d981057c98daca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77144b5ad7419dbc621692a93d77057b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="miniaudio_8h.html#af43e50f791fcd241fc78ff7829b0dbde">ma_uint32</a>&#160;&#160;&#160;<a class="el" href="structma__event.html#adf18d480e9057ab10100cb89a10af24a">value</a></td></tr>
+<tr class="separator:a77144b5ad7419dbc621692a93d77057b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51283d3d90007d4a35c6248eec29c277"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structma__event.html#a522a5a5b094c801b8f247a6d89678462">posix</a></td></tr>
+<tr class="separator:a51283d3d90007d4a35c6248eec29c277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0567e6966c3a4fffd2464026291a18f1"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;&#160;&#160;<a class="el" href="structma__event.html#a9b48720b4e5d66908fc8f5c0c6a7c14a">_unused</a></td></tr>
+<tr class="separator:a0567e6966c3a4fffd2464026291a18f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7993cc3d8f682b52423e4739807260ba"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a7993cc3d8f682b52423e4739807260ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los datos miembro</h2>
+<a id="a7993cc3d8f682b52423e4739807260ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7993cc3d8f682b52423e4739807260ba">&#9670;&nbsp;</a></span>@65</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... } </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b48720b4e5d66908fc8f5c0c6a7c14a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b48720b4e5d66908fc8f5c0c6a7c14a">&#9670;&nbsp;</a></span>_unused</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> ma_event::_unused</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a188151481628432df6a1a19fd23eb16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a188151481628432df6a1a19fd23eb16a">&#9670;&nbsp;</a></span>condition</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_cond_t ma_event::condition</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08b1f6e2e282802f56400c2833f5a75c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b1f6e2e282802f56400c2833f5a75c">&#9670;&nbsp;</a></span>mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_mutex_t ma_event::mutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d7e575d92772f175f5e089e4134a3e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d7e575d92772f175f5e089e4134a3e8">&#9670;&nbsp;</a></span>pContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structma__context.html">ma_context</a>* ma_event::pContext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a522a5a5b094c801b8f247a6d89678462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a522a5a5b094c801b8f247a6d89678462">&#9670;&nbsp;</a></span>posix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  ma_event::posix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf18d480e9057ab10100cb89a10af24a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf18d480e9057ab10100cb89a10af24a">&#9670;&nbsp;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="miniaudio_8h.html#af43e50f791fcd241fc78ff7829b0dbde">ma_uint32</a> ma_event::value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentación para esta estructura fue generada a partir del siguiente fichero:<ul>
+<li>cmake-build-debug/_deps/raylib-src/src/external/<a class="el" href="miniaudio_8h_source.html">miniaudio.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

@@ -1,0 +1,97 @@
+\hypertarget{struct_physics_manifold_data}{}\doxysection{Referencia de la Estructura Physics\+Manifold\+Data}
+\label{struct_physics_manifold_data}\index{PhysicsManifoldData@{PhysicsManifoldData}}
+
+
+{\ttfamily \#include $<$physac.\+h$>$}
+
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{struct_physics_manifold_data_a057615e1c266e507cb81e53fadc77853}{id}}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2physac_8h_a2a45f6cce4f2030b210e81ea55c78dab}{Physics\+Body}} \mbox{\hyperlink{struct_physics_manifold_data_a8b9adc2b5fceba4eab9c224e3079edbb}{bodyA}}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2physac_8h_a2a45f6cce4f2030b210e81ea55c78dab}{Physics\+Body}} \mbox{\hyperlink{struct_physics_manifold_data_a97dbad58901dd9267be5045cf52a511a}{bodyB}}
+\item 
+float \mbox{\hyperlink{struct_physics_manifold_data_a868a68c64dd6f291aedcf3a2764e4bf2}{penetration}}
+\item 
+\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{struct_physics_manifold_data_a9c9eade4e50c97a592288e2e2f565016}{normal}}
+\item 
+\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{struct_physics_manifold_data_aa8e017922412115205fc3bfe32cc33d1}{contacts}} \mbox{[}2\mbox{]}
+\item 
+unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{struct_physics_manifold_data_a70c76d2e063f23ce62ccd079106befdc}{contacts\+Count}}
+\item 
+float \mbox{\hyperlink{struct_physics_manifold_data_ae3fc5313ddb7c51486548d460e93aac6}{restitution}}
+\item 
+float \mbox{\hyperlink{struct_physics_manifold_data_a5959f1f4df66a0eb440666ad325792bb}{dynamic\+Friction}}
+\item 
+float \mbox{\hyperlink{struct_physics_manifold_data_a09ef92a60c14444d42b7be39629c1ae3}{static\+Friction}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{struct_physics_manifold_data_a8b9adc2b5fceba4eab9c224e3079edbb}\label{struct_physics_manifold_data_a8b9adc2b5fceba4eab9c224e3079edbb}} 
+\index{PhysicsManifoldData@{PhysicsManifoldData}!bodyA@{bodyA}}
+\index{bodyA@{bodyA}!PhysicsManifoldData@{PhysicsManifoldData}}
+\doxysubsubsection{\texorpdfstring{bodyA}{bodyA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2physac_8h_a2a45f6cce4f2030b210e81ea55c78dab}{Physics\+Body}} Physics\+Manifold\+Data\+::bodyA}
+
+\mbox{\Hypertarget{struct_physics_manifold_data_a97dbad58901dd9267be5045cf52a511a}\label{struct_physics_manifold_data_a97dbad58901dd9267be5045cf52a511a}} 
+\index{PhysicsManifoldData@{PhysicsManifoldData}!bodyB@{bodyB}}
+\index{bodyB@{bodyB}!PhysicsManifoldData@{PhysicsManifoldData}}
+\doxysubsubsection{\texorpdfstring{bodyB}{bodyB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2physac_8h_a2a45f6cce4f2030b210e81ea55c78dab}{Physics\+Body}} Physics\+Manifold\+Data\+::bodyB}
+
+\mbox{\Hypertarget{struct_physics_manifold_data_aa8e017922412115205fc3bfe32cc33d1}\label{struct_physics_manifold_data_aa8e017922412115205fc3bfe32cc33d1}} 
+\index{PhysicsManifoldData@{PhysicsManifoldData}!contacts@{contacts}}
+\index{contacts@{contacts}!PhysicsManifoldData@{PhysicsManifoldData}}
+\doxysubsubsection{\texorpdfstring{contacts}{contacts}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} Physics\+Manifold\+Data\+::contacts}
+
+\mbox{\Hypertarget{struct_physics_manifold_data_a70c76d2e063f23ce62ccd079106befdc}\label{struct_physics_manifold_data_a70c76d2e063f23ce62ccd079106befdc}} 
+\index{PhysicsManifoldData@{PhysicsManifoldData}!contactsCount@{contactsCount}}
+\index{contactsCount@{contactsCount}!PhysicsManifoldData@{PhysicsManifoldData}}
+\doxysubsubsection{\texorpdfstring{contactsCount}{contactsCount}}
+{\footnotesize\ttfamily unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Physics\+Manifold\+Data\+::contacts\+Count}
+
+\mbox{\Hypertarget{struct_physics_manifold_data_a5959f1f4df66a0eb440666ad325792bb}\label{struct_physics_manifold_data_a5959f1f4df66a0eb440666ad325792bb}} 
+\index{PhysicsManifoldData@{PhysicsManifoldData}!dynamicFriction@{dynamicFriction}}
+\index{dynamicFriction@{dynamicFriction}!PhysicsManifoldData@{PhysicsManifoldData}}
+\doxysubsubsection{\texorpdfstring{dynamicFriction}{dynamicFriction}}
+{\footnotesize\ttfamily float Physics\+Manifold\+Data\+::dynamic\+Friction}
+
+\mbox{\Hypertarget{struct_physics_manifold_data_a057615e1c266e507cb81e53fadc77853}\label{struct_physics_manifold_data_a057615e1c266e507cb81e53fadc77853}} 
+\index{PhysicsManifoldData@{PhysicsManifoldData}!id@{id}}
+\index{id@{id}!PhysicsManifoldData@{PhysicsManifoldData}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Physics\+Manifold\+Data\+::id}
+
+\mbox{\Hypertarget{struct_physics_manifold_data_a9c9eade4e50c97a592288e2e2f565016}\label{struct_physics_manifold_data_a9c9eade4e50c97a592288e2e2f565016}} 
+\index{PhysicsManifoldData@{PhysicsManifoldData}!normal@{normal}}
+\index{normal@{normal}!PhysicsManifoldData@{PhysicsManifoldData}}
+\doxysubsubsection{\texorpdfstring{normal}{normal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} Physics\+Manifold\+Data\+::normal}
+
+\mbox{\Hypertarget{struct_physics_manifold_data_a868a68c64dd6f291aedcf3a2764e4bf2}\label{struct_physics_manifold_data_a868a68c64dd6f291aedcf3a2764e4bf2}} 
+\index{PhysicsManifoldData@{PhysicsManifoldData}!penetration@{penetration}}
+\index{penetration@{penetration}!PhysicsManifoldData@{PhysicsManifoldData}}
+\doxysubsubsection{\texorpdfstring{penetration}{penetration}}
+{\footnotesize\ttfamily float Physics\+Manifold\+Data\+::penetration}
+
+\mbox{\Hypertarget{struct_physics_manifold_data_ae3fc5313ddb7c51486548d460e93aac6}\label{struct_physics_manifold_data_ae3fc5313ddb7c51486548d460e93aac6}} 
+\index{PhysicsManifoldData@{PhysicsManifoldData}!restitution@{restitution}}
+\index{restitution@{restitution}!PhysicsManifoldData@{PhysicsManifoldData}}
+\doxysubsubsection{\texorpdfstring{restitution}{restitution}}
+{\footnotesize\ttfamily float Physics\+Manifold\+Data\+::restitution}
+
+\mbox{\Hypertarget{struct_physics_manifold_data_a09ef92a60c14444d42b7be39629c1ae3}\label{struct_physics_manifold_data_a09ef92a60c14444d42b7be39629c1ae3}} 
+\index{PhysicsManifoldData@{PhysicsManifoldData}!staticFriction@{staticFriction}}
+\index{staticFriction@{staticFriction}!PhysicsManifoldData@{PhysicsManifoldData}}
+\doxysubsubsection{\texorpdfstring{staticFriction}{staticFriction}}
+{\footnotesize\ttfamily float Physics\+Manifold\+Data\+::static\+Friction}
+
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+cmake-\/build-\/debug/\+\_\+deps/raylib-\/build/src/\mbox{\hyperlink{raylib-build_2src_2physac_8h}{physac.\+h}}\end{DoxyCompactItemize}

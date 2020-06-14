@@ -1,0 +1,83 @@
+\hypertarget{_base_app_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/projects/\+V\+S2017.U\+W\+P/raylib.App.\+U\+WP/\+Base\+App.h}
+\label{_base_app_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/projects/VS2017.UWP/raylib.App.UWP/BaseApp.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/projects/VS2017.UWP/raylib.App.UWP/BaseApp.h}}
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$wrl.\+h$>$}\newline
+{\ttfamily \#include $<$E\+G\+L/eglplatform.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_base_app}{Base\+App}}
+\item 
+class \mbox{\hyperlink{classsealed}{sealed$<$ App\+Type $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_base_app_8h_ad761fc433a36d1adba0eb03bda34f047}{M\+A\+X\+\_\+\+G\+A\+M\+E\+P\+A\+DS}}~4
+\item 
+\#define \mbox{\hyperlink{_base_app_8h_a30fe4bb02572a080ae83fc24aff648a6}{M\+A\+X\+\_\+\+G\+A\+M\+E\+P\+A\+D\+\_\+\+B\+U\+T\+T\+O\+NS}}~32
+\item 
+\#define \mbox{\hyperlink{_base_app_8h_a56b705cd04101bb8adb6725e7d25c93d}{M\+A\+X\+\_\+\+G\+A\+M\+E\+P\+A\+D\+\_\+\+A\+X\+IS}}~8
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+E\+G\+L\+Native\+Window\+Type \mbox{\hyperlink{_base_app_8h_ab192ce052cf032c7974bd9d71c694157}{uwp\+Window}}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{_base_app_8h_a07d04caa245441b09f5a64bbd80ec59a}{cursor\+Locked}} = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}
+\item 
+\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{_base_app_8h_ab9517433abe5f15fbf30ad6f7fa2f01e}{mouse\+Delta}} = \{0, 0\}
+\item 
+Core\+Cursor \mbox{\hyperlink{_base_app_8h_a8a3cdbd20e3c003b53575844c0eb70e7}{regular\+Cursor}} = \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a083de4c8e32ad3d9059245f26be721de}{ref}} new Core\+Cursor(Core\+Cursor\+Type\+::\+Arrow, 0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{_base_app_8h_a56b705cd04101bb8adb6725e7d25c93d}\label{_base_app_8h_a56b705cd04101bb8adb6725e7d25c93d}} 
+\index{BaseApp.h@{BaseApp.h}!MAX\_GAMEPAD\_AXIS@{MAX\_GAMEPAD\_AXIS}}
+\index{MAX\_GAMEPAD\_AXIS@{MAX\_GAMEPAD\_AXIS}!BaseApp.h@{BaseApp.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_GAMEPAD\_AXIS}{MAX\_GAMEPAD\_AXIS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+G\+A\+M\+E\+P\+A\+D\+\_\+\+A\+X\+IS~8}
+
+\mbox{\Hypertarget{_base_app_8h_a30fe4bb02572a080ae83fc24aff648a6}\label{_base_app_8h_a30fe4bb02572a080ae83fc24aff648a6}} 
+\index{BaseApp.h@{BaseApp.h}!MAX\_GAMEPAD\_BUTTONS@{MAX\_GAMEPAD\_BUTTONS}}
+\index{MAX\_GAMEPAD\_BUTTONS@{MAX\_GAMEPAD\_BUTTONS}!BaseApp.h@{BaseApp.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_GAMEPAD\_BUTTONS}{MAX\_GAMEPAD\_BUTTONS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+G\+A\+M\+E\+P\+A\+D\+\_\+\+B\+U\+T\+T\+O\+NS~32}
+
+\mbox{\Hypertarget{_base_app_8h_ad761fc433a36d1adba0eb03bda34f047}\label{_base_app_8h_ad761fc433a36d1adba0eb03bda34f047}} 
+\index{BaseApp.h@{BaseApp.h}!MAX\_GAMEPADS@{MAX\_GAMEPADS}}
+\index{MAX\_GAMEPADS@{MAX\_GAMEPADS}!BaseApp.h@{BaseApp.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_GAMEPADS}{MAX\_GAMEPADS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+G\+A\+M\+E\+P\+A\+DS~4}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{_base_app_8h_a07d04caa245441b09f5a64bbd80ec59a}\label{_base_app_8h_a07d04caa245441b09f5a64bbd80ec59a}} 
+\index{BaseApp.h@{BaseApp.h}!cursorLocked@{cursorLocked}}
+\index{cursorLocked@{cursorLocked}!BaseApp.h@{BaseApp.h}}
+\doxysubsubsection{\texorpdfstring{cursorLocked}{cursorLocked}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} cursor\+Locked = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}}
+
+\mbox{\Hypertarget{_base_app_8h_ab9517433abe5f15fbf30ad6f7fa2f01e}\label{_base_app_8h_ab9517433abe5f15fbf30ad6f7fa2f01e}} 
+\index{BaseApp.h@{BaseApp.h}!mouseDelta@{mouseDelta}}
+\index{mouseDelta@{mouseDelta}!BaseApp.h@{BaseApp.h}}
+\doxysubsubsection{\texorpdfstring{mouseDelta}{mouseDelta}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} mouse\+Delta = \{0, 0\}}
+
+\mbox{\Hypertarget{_base_app_8h_a8a3cdbd20e3c003b53575844c0eb70e7}\label{_base_app_8h_a8a3cdbd20e3c003b53575844c0eb70e7}} 
+\index{BaseApp.h@{BaseApp.h}!regularCursor@{regularCursor}}
+\index{regularCursor@{regularCursor}!BaseApp.h@{BaseApp.h}}
+\doxysubsubsection{\texorpdfstring{regularCursor}{regularCursor}}
+{\footnotesize\ttfamily Core\+Cursor regular\+Cursor = \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a083de4c8e32ad3d9059245f26be721de}{ref}} new Core\+Cursor(Core\+Cursor\+Type\+::\+Arrow, 0)}
+
+\mbox{\Hypertarget{_base_app_8h_ab192ce052cf032c7974bd9d71c694157}\label{_base_app_8h_ab192ce052cf032c7974bd9d71c694157}} 
+\index{BaseApp.h@{BaseApp.h}!uwpWindow@{uwpWindow}}
+\index{uwpWindow@{uwpWindow}!BaseApp.h@{BaseApp.h}}
+\doxysubsubsection{\texorpdfstring{uwpWindow}{uwpWindow}}
+{\footnotesize\ttfamily E\+G\+L\+Native\+Window\+Type uwp\+Window}
+

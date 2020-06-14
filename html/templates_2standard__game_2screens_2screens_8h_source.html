@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Fichero Fuente cmake-build-debug/_deps/raylib-src/templates/standard_game/screens/screens.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_c92bae1501032ee79e42c81b2de81218.html">templates</a></li><li class="navelem"><a class="el" href="dir_95884c5ef4b789fa25a8027854e46002.html">standard_game</a></li><li class="navelem"><a class="el" href="dir_f0f3b50da9ac1ba36c5bab6494c4a6a7.html">screens</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">screens.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="templates_2standard__game_2screens_2screens_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*   raylib - Standard Game template</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*   Screens Functions Declarations (Init, Update, Draw, Unload)</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*   Copyright (c) 2014-2020 Ramon Santamaria (@raysan5)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*   This software is provided &quot;as-is&quot;, without any express or implied warranty. In no event</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*   will the authors be held liable for any damages arising from the use of this software.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*   Permission is granted to anyone to use this software for any purpose, including commercial</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*   applications, and to alter it and redistribute it freely, subject to the following restrictions:</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*     1. The origin of this software must not be misrepresented; you must not claim that you</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*     wrote the original software. If you use this software in a product, an acknowledgment</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*     in the product documentation would be appreciated but is not required.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">*     2. Altered source versions must be plainly marked as such, and must not be misrepresented</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">*     as being the original software.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">*     3. This notice may not be removed or altered from any source distribution.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">**********************************************************************************************/</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef SCREENS_H</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define SCREENS_H</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Types and Structures Definition</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="templates_2standard__game_2screens_2screens_8h.html#a4784cee37448bfc0976f6966ca192df3">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="arkanoid_8c.html#a74fa4be11c0eaf0601894bed6ed01402">GameScreen</a> { <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a> = 0, <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d">OPTIONS</a>, <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a> } <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402">GameScreen</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// Global Variables Definition</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="templates_2standard__game_2screens_2screens_8h.html#a095d002ae1c7d161bc2a08f2b3d5a1b6">   37</a></span>&#160;<a class="code" href="arkanoid_8c.html#a74fa4be11c0eaf0601894bed6ed01402">GameScreen</a> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a095d002ae1c7d161bc2a08f2b3d5a1b6">currentScreen</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {            <span class="comment">// Prevents name mangling of functions</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// Logo Screen Functions Declaration</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#ad92f3a4b046eef8d87b327a15f1e74d7">InitLogoScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a35157c4fa7c36cec67dfc268cd5064dc">UpdateLogoScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a8c85502e1083adfc863549240bd2e402">DrawLogoScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#af8d9ca5dce1ab0e74d9c31b5eeec5bd8">UnloadLogoScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">int</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#abe37f4d9c4c03777d3e0fb3f47918466">FinishLogoScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">// Title Screen Functions Declaration</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="templates_2standard__game_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">   55</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#aa0b4d8d943e1631a9995008c03d38a6b">InitTitleScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a0f8347f7bfabb1828448cbe369c1d834">UpdateTitleScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#ae000e2560b4fa357c73b60f96c6cc6c0">DrawTitleScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#accc105ccd8702191afb00cc77846bb8c">UnloadTitleScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">int</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a7ce8053bc30204e797c5ee0f279d0148">FinishTitleScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// Options Screen Functions Declaration</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2koala__seasons_2screens_2screens_8h.html#a0ead223c76b8891401b0ebd6cc51c55e">InitOptionsScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2koala__seasons_2screens_2screens_8h.html#abdb9dc801173fb92dfb5b3605639d744">UpdateOptionsScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2koala__seasons_2screens_2screens_8h.html#a24599b01d6bc891832f518db5f361e77">DrawOptionsScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2koala__seasons_2screens_2screens_8h.html#a54e2d05bacb2c6b93f257adf992d65a6">UnloadOptionsScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">int</span> <a class="code" href="games_2koala__seasons_2screens_2screens_8h.html#a201dee8b9557333812ac76d9d0820c28">FinishOptionsScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">// Gameplay Screen Functions Declaration</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a76918e73a46306124299f0ecdded70ac">InitGameplayScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#ae375af3a5eb93543369403b716cbc0a8">UpdateGameplayScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a8b8fc25f26ad73f9c08497af8b074ccf">DrawGameplayScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#ac96945d9b745690aa8ff1c909c816188">UnloadGameplayScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">int</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#abe4d51d9e25770ad24c45f83837211be">FinishGameplayScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">// Ending Screen Functions Declaration</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a8a73b54354cdc2042bcde35392558130">InitEndingScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a1f6794d5a7e0deb5f56e019c1792eba6">UpdateEndingScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#ad8b8aef9264e99b0c868b3b128a27da1">DrawEndingScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a7c886dbf9a5a990809ba32210f4ed7b2">UnloadEndingScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">int</span> <a class="code" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a682581a3eda04659aacfb3d8353aed71">FinishEndingScreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif // SCREENS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_accc105ccd8702191afb00cc77846bb8c"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#accc105ccd8702191afb00cc77846bb8c">UnloadTitleScreen</a></div><div class="ttdeci">void UnloadTitleScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_title.c:143</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a></div><div class="ttdeci">@ TITLE</div><div class="ttdef"><b>Definition:</b> screens.h:57</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_ac96945d9b745690aa8ff1c909c816188"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#ac96945d9b745690aa8ff1c909c816188">UnloadGameplayScreen</a></div><div class="ttdeci">void UnloadGameplayScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_gameplay.c:601</div></div>
+<div class="ttc" id="agames_2koala__seasons_2screens_2screens_8h_html_a24599b01d6bc891832f518db5f361e77"><div class="ttname"><a href="games_2koala__seasons_2screens_2screens_8h.html#a24599b01d6bc891832f518db5f361e77">DrawOptionsScreen</a></div><div class="ttdeci">void DrawOptionsScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_options.c:56</div></div>
+<div class="ttc" id="agames_2koala__seasons_2screens_2screens_8h_html_a0ead223c76b8891401b0ebd6cc51c55e"><div class="ttname"><a href="games_2koala__seasons_2screens_2screens_8h.html#a0ead223c76b8891401b0ebd6cc51c55e">InitOptionsScreen</a></div><div class="ttdeci">void InitOptionsScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_options.c:42</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a35157c4fa7c36cec67dfc268cd5064dc"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a35157c4fa7c36cec67dfc268cd5064dc">UpdateLogoScreen</a></div><div class="ttdeci">void UpdateLogoScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_logo.c:81</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_ae375af3a5eb93543369403b716cbc0a8"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#ae375af3a5eb93543369403b716cbc0a8">UpdateGameplayScreen</a></div><div class="ttdeci">void UpdateGameplayScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_gameplay.c:321</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a0f8347f7bfabb1828448cbe369c1d834"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a0f8347f7bfabb1828448cbe369c1d834">UpdateTitleScreen</a></div><div class="ttdeci">void UpdateTitleScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_title.c:77</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a8a73b54354cdc2042bcde35392558130"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a8a73b54354cdc2042bcde35392558130">InitEndingScreen</a></div><div class="ttdeci">void InitEndingScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_ending.c:44</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_abe4d51d9e25770ad24c45f83837211be"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#abe4d51d9e25770ad24c45f83837211be">FinishGameplayScreen</a></div><div class="ttdeci">int FinishGameplayScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_gameplay.c:620</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_ad92f3a4b046eef8d87b327a15f1e74d7"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#ad92f3a4b046eef8d87b327a15f1e74d7">InitLogoScreen</a></div><div class="ttdeci">void InitLogoScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_logo.c:59</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_ae000e2560b4fa357c73b60f96c6cc6c0"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#ae000e2560b4fa357c73b60f96c6cc6c0">DrawTitleScreen</a></div><div class="ttdeci">void DrawTitleScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_title.c:124</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_af8d9ca5dce1ab0e74d9c31b5eeec5bd8"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#af8d9ca5dce1ab0e74d9c31b5eeec5bd8">UnloadLogoScreen</a></div><div class="ttdeci">void UnloadLogoScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_logo.c:202</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a682581a3eda04659aacfb3d8353aed71"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a682581a3eda04659aacfb3d8353aed71">FinishEndingScreen</a></div><div class="ttdeci">int FinishEndingScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_ending.c:93</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_aa0b4d8d943e1631a9995008c03d38a6b"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#aa0b4d8d943e1631a9995008c03d38a6b">InitTitleScreen</a></div><div class="ttdeci">void InitTitleScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_title.c:55</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a76918e73a46306124299f0ecdded70ac"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a76918e73a46306124299f0ecdded70ac">InitGameplayScreen</a></div><div class="ttdeci">void InitGameplayScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_gameplay.c:169</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a7c886dbf9a5a990809ba32210f4ed7b2"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a7c886dbf9a5a990809ba32210f4ed7b2">UnloadEndingScreen</a></div><div class="ttdeci">void UnloadEndingScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_ending.c:87</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_abe37f4d9c4c03777d3e0fb3f47918466"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#abe37f4d9c4c03777d3e0fb3f47918466">FinishLogoScreen</a></div><div class="ttdeci">int FinishLogoScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_logo.c:208</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a></div><div class="ttdeci">@ GAMEPLAY</div><div class="ttdef"><b>Definition:</b> screens.h:57</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a8c85502e1083adfc863549240bd2e402"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a8c85502e1083adfc863549240bd2e402">DrawLogoScreen</a></div><div class="ttdeci">void DrawLogoScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_logo.c:154</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a095d002ae1c7d161bc2a08f2b3d5a1b6"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a095d002ae1c7d161bc2a08f2b3d5a1b6">currentScreen</a></div><div class="ttdeci">GameScreen currentScreen</div><div class="ttdef"><b>Definition:</b> screens.h:39</div></div>
+<div class="ttc" id="agames_2koala__seasons_2screens_2screens_8h_html_a54e2d05bacb2c6b93f257adf992d65a6"><div class="ttname"><a href="games_2koala__seasons_2screens_2screens_8h.html#a54e2d05bacb2c6b93f257adf992d65a6">UnloadOptionsScreen</a></div><div class="ttdeci">void UnloadOptionsScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_options.c:62</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a8b8fc25f26ad73f9c08497af8b074ccf"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a8b8fc25f26ad73f9c08497af8b074ccf">DrawGameplayScreen</a></div><div class="ttdeci">void DrawGameplayScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_gameplay.c:514</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a></div><div class="ttdeci">@ LOGO</div><div class="ttdef"><b>Definition:</b> screens.h:57</div></div>
+<div class="ttc" id="agames_2koala__seasons_2screens_2screens_8h_html_a201dee8b9557333812ac76d9d0820c28"><div class="ttname"><a href="games_2koala__seasons_2screens_2screens_8h.html#a201dee8b9557333812ac76d9d0820c28">FinishOptionsScreen</a></div><div class="ttdeci">int FinishOptionsScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_options.c:68</div></div>
+<div class="ttc" id="agames_2koala__seasons_2screens_2screens_8h_html_abdb9dc801173fb92dfb5b3605639d744"><div class="ttname"><a href="games_2koala__seasons_2screens_2screens_8h.html#abdb9dc801173fb92dfb5b3605639d744">UpdateOptionsScreen</a></div><div class="ttdeci">void UpdateOptionsScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_options.c:50</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a></div><div class="ttdeci">@ ENDING</div><div class="ttdef"><b>Definition:</b> screens.h:57</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a7ce8053bc30204e797c5ee0f279d0148"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a7ce8053bc30204e797c5ee0f279d0148">FinishTitleScreen</a></div><div class="ttdeci">int FinishTitleScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_title.c:151</div></div>
+<div class="ttc" id="aarkanoid_8c_html_a74fa4be11c0eaf0601894bed6ed01402"><div class="ttname"><a href="arkanoid_8c.html#a74fa4be11c0eaf0601894bed6ed01402">GameScreen</a></div><div class="ttdeci">GameScreen</div><div class="ttdef"><b>Definition:</b> arkanoid.c:35</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_ad8b8aef9264e99b0c868b3b128a27da1"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#ad8b8aef9264e99b0c868b3b128a27da1">DrawEndingScreen</a></div><div class="ttdeci">void DrawEndingScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_ending.c:70</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d">OPTIONS</a></div><div class="ttdeci">@ OPTIONS</div><div class="ttdef"><b>Definition:</b> screens.h:57</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a1f6794d5a7e0deb5f56e019c1792eba6"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a1f6794d5a7e0deb5f56e019c1792eba6">UpdateEndingScreen</a></div><div class="ttdeci">void UpdateEndingScreen(void)</div><div class="ttdef"><b>Definition:</b> screen_ending.c:54</div></div>
+<div class="ttc" id="agames_2cat__vs__roomba_2screens_2screens_8h_html_a74fa4be11c0eaf0601894bed6ed01402"><div class="ttname"><a href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402">GameScreen</a></div><div class="ttdeci">GameScreen</div><div class="ttdef"><b>Definition:</b> screens.h:34</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

@@ -1,0 +1,1126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/games/koala_seasons/screens/screen_gameplay.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_7aebff1416c495ebb69e3cc957d2473c.html">games</a></li><li class="navelem"><a class="el" href="dir_6b63c939c6182c9d8bb6deaec11b8333.html">koala_seasons</a></li><li class="navelem"><a class="el" href="dir_d9c59b5b2ee09a157446e65185be5c2a.html">screens</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#define-members">defines</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo screen_gameplay.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;raylib.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="games_2koala__seasons_2screens_2screens_8h_source.html">screens.h</a>&quot;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="atlas01_8h_source.html">atlas01.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="atlas02_8h_source.html">atlas02.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_particle.html">Particle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_particle_speed.html">ParticleSpeed</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_particle_ray.html">ParticleRay</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_particle_system.html">ParticleSystem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_particle_system_storm.html">ParticleSystemStorm</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pop_up_score.html">PopUpScore</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_particle_system_speed.html">ParticleSystemSpeed</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_particle_system_ray.html">ParticleSystemRay</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a544651f3405cff79c40d898a8e54f507"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a544651f3405cff79c40d898a8e54f507">MAX_ENEMIES</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a544651f3405cff79c40d898a8e54f507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37cff863e65daaa42b567b48ceb9d7cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a37cff863e65daaa42b567b48ceb9d7cd">MAX_BAMBOO</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a37cff863e65daaa42b567b48ceb9d7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a135442a176107af00c85d6fff9e08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a53a135442a176107af00c85d6fff9e08">MAX_LEAVES</a>&#160;&#160;&#160;14</td></tr>
+<tr class="separator:a53a135442a176107af00c85d6fff9e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21a27d4e4301ff9dcd36eabcfa6d923"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#af21a27d4e4301ff9dcd36eabcfa6d923">MAX_FIRE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:af21a27d4e4301ff9dcd36eabcfa6d923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832b01889d84e4f591ba34974cbc1528"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a832b01889d84e4f591ba34974cbc1528">MAX_FIRE_FLAMES</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:a832b01889d84e4f591ba34974cbc1528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1c776148e02d68fcd6466dbf0fbcee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a1c1c776148e02d68fcd6466dbf0fbcee">MAX_ICE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a1c1c776148e02d68fcd6466dbf0fbcee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649e3e6c17c40fa018bbcd1eaad6a852"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a649e3e6c17c40fa018bbcd1eaad6a852">MAX_RESIN</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a649e3e6c17c40fa018bbcd1eaad6a852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f33af1367b8ba64125857fe1056c92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ac2f33af1367b8ba64125857fe1056c92">MAX_WIND</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:ac2f33af1367b8ba64125857fe1056c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b318e80d2457f5ce3e00a6cf1543c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a43b318e80d2457f5ce3e00a6cf1543c8">MAX_PARTICLES</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:a43b318e80d2457f5ce3e00a6cf1543c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8694df421ed1473a5a0541d9321acca6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a8694df421ed1473a5a0541d9321acca6">MAX_PARTICLES_RAY</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a8694df421ed1473a5a0541d9321acca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41a1557e54e81083693cb77bb8c9b2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#af41a1557e54e81083693cb77bb8c9b2c">MAX_PARTICLES_SPEED</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:af41a1557e54e81083693cb77bb8c9b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad425f1b81f641677a8e2657c4b7c4a5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ad425f1b81f641677a8e2657c4b7c4a5d">MAX_PARTICLES_STORM</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:ad425f1b81f641677a8e2657c4b7c4a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3553b3932cbfeeac4526ce7ca0336b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#aac3553b3932cbfeeac4526ce7ca0336b">SPEED</a>&#160;&#160;&#160;3*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td></tr>
+<tr class="separator:aac3553b3932cbfeeac4526ce7ca0336b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee551d17fffb6235cc7123499dbf7d65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#aee551d17fffb6235cc7123499dbf7d65">JUMP</a>&#160;&#160;&#160;15*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td></tr>
+<tr class="separator:aee551d17fffb6235cc7123499dbf7d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb829b5c1f4b28551f42a1c36a2a36b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#acb829b5c1f4b28551f42a1c36a2a36b5">FLYINGMOV</a>&#160;&#160;&#160;10*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td></tr>
+<tr class="separator:acb829b5c1f4b28551f42a1c36a2a36b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6801baa546c6112d19eb095111d24720"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a6801baa546c6112d19eb095111d24720">GRAVITY</a>&#160;&#160;&#160;1*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td></tr>
+<tr class="separator:a6801baa546c6112d19eb095111d24720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae900d778bdeb2009b92faed81a2b654c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ae900d778bdeb2009b92faed81a2b654c">ICEGRAVITY</a>&#160;&#160;&#160;4*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td></tr>
+<tr class="separator:ae900d778bdeb2009b92faed81a2b654c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30351828f2097cf336584f77279f0f2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a30351828f2097cf336584f77279f0f2c">KICKSPEED</a>&#160;&#160;&#160;3*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td></tr>
+<tr class="separator:a30351828f2097cf336584f77279f0f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3697680c1d5223e84d4caedaa05bc002"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a3697680c1d5223e84d4caedaa05bc002">SEASONCHANGE</a>&#160;&#160;&#160;1200</td></tr>
+<tr class="separator:a3697680c1d5223e84d4caedaa05bc002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486f954b9fc974d4a151532ca487bb37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a486f954b9fc974d4a151532ca487bb37">SEASONTRANSITION</a>&#160;&#160;&#160;<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a3697680c1d5223e84d4caedaa05bc002">SEASONCHANGE</a>/6</td></tr>
+<tr class="separator:a486f954b9fc974d4a151532ca487bb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e7b22c66616cf32063cd7cb8a834f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ad2e7b22c66616cf32063cd7cb8a834f0">ICESPAWNCHANCE</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:ad2e7b22c66616cf32063cd7cb8a834f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea58d9a0e44b5c5c68b7f0d4748903e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#aea58d9a0e44b5c5c68b7f0d4748903e1">RESINSPAWNCHANCE</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:aea58d9a0e44b5c5c68b7f0d4748903e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d01390d2b6b7e88e6b71e4b4ac6ccc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a4d01390d2b6b7e88e6b71e4b4ac6ccc6">FIRESPAWNCHANCE</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a4d01390d2b6b7e88e6b71e4b4ac6ccc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5065be7004b16564e7868985cf663f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#aa5065be7004b16564e7868985cf663f2">WINDSPAWNCHANCE</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:aa5065be7004b16564e7868985cf663f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22ec9077cc661592cf396480c7714e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ae22ec9077cc661592cf396480c7714e4">DINGOSPAWNCHANCE</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:ae22ec9077cc661592cf396480c7714e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d855e6dfbb103ee855cf74c6094338"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ad1d855e6dfbb103ee855cf74c6094338">OWLSPAWNCHANCE</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:ad1d855e6dfbb103ee855cf74c6094338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab990c1b3558664c7f86f9912b93d1359"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ab990c1b3558664c7f86f9912b93d1359">SNAKESPAWNCHANCE</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:ab990c1b3558664c7f86f9912b93d1359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d918a08b463d55ff28d97963e0447f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a24d918a08b463d55ff28d97963e0447f">BEE_SPAWNCHANCE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a24d918a08b463d55ff28d97963e0447f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9ddfb9a3f6cfb138da9ba5ce144efe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a5c9ddfb9a3f6cfb138da9ba5ce144efe">EAGLE_SPAWNCHANCE</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a5c9ddfb9a3f6cfb138da9ba5ce144efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0291b317f2b3ca992ed254df41ec9684"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a0291b317f2b3ca992ed254df41ec9684">EAGLE_TIME_DELAY</a>&#160;&#160;&#160;600</td></tr>
+<tr class="separator:a0291b317f2b3ca992ed254df41ec9684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf918ef9b47cd70d5b6d82fe40b2bc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#acbf918ef9b47cd70d5b6d82fe40b2bc2">DINGOSCORE</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:acbf918ef9b47cd70d5b6d82fe40b2bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb88e6b883634fef2d0cf3497aaf367"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#afbb88e6b883634fef2d0cf3497aaf367">OWLSCORE</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:afbb88e6b883634fef2d0cf3497aaf367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a16a247aff1b0fc3d2cd9c576eaf71f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a4a16a247aff1b0fc3d2cd9c576eaf71f">SNAKESCORE</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:a4a16a247aff1b0fc3d2cd9c576eaf71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51a8f84c71db989a5a4037f3e5d9b4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ae51a8f84c71db989a5a4037f3e5d9b4e">BEESCORE</a>&#160;&#160;&#160;300</td></tr>
+<tr class="separator:ae51a8f84c71db989a5a4037f3e5d9b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb82c6f75326a0b08b000a663ba3d04b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#abb82c6f75326a0b08b000a663ba3d04b">EAGLESCORE</a>&#160;&#160;&#160;300</td></tr>
+<tr class="separator:abb82c6f75326a0b08b000a663ba3d04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad062f2d4b98a252c45b2b5aca9ea3e4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ad062f2d4b98a252c45b2b5aca9ea3e4e">LEAVESTOTRANSFORM</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:ad062f2d4b98a252c45b2b5aca9ea3e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff334c653790f2e15308a9492cbb3532"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#aff334c653790f2e15308a9492cbb3532">MAXTIMESPAWN</a>&#160;&#160;&#160;85</td></tr>
+<tr class="separator:aff334c653790f2e15308a9492cbb3532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60abca541c12497fc6031e27a4681a66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a60abca541c12497fc6031e27a4681a66">MINTIMESPAWN</a>&#160;&#160;&#160;35</td></tr>
+<tr class="separator:a60abca541c12497fc6031e27a4681a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2099d72523373b3eec8cc01527ae1c78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a2099d72523373b3eec8cc01527ae1c78">STARTINGMONTH</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a2099d72523373b3eec8cc01527ae1c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5a28a63ef56df5a65e66abc66c229d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#aca5a28a63ef56df5a65e66abc66c229d">PROGRESION_START</a>&#160;&#160;&#160;3600</td></tr>
+<tr class="separator:aca5a28a63ef56df5a65e66abc66c229d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b3a16921eb0936e83506461cdbf9f76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a1b3a16921eb0936e83506461cdbf9f76">PROGRESION_DURATION</a>&#160;&#160;&#160;12000</td></tr>
+<tr class="separator:a1b3a16921eb0936e83506461cdbf9f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33395094cef0d9d8e438b435efd05922"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a33395094cef0d9d8e438b435efd05922">PROGRESOIN_MAX_SPAWNCHANCE</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a33395094cef0d9d8e438b435efd05922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185097b23f602668695d107e1db7dfb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a185097b23f602668695d107e1db7dfb4">PROGRESION_MAX_SPEED</a>&#160;&#160;&#160;0.5</td></tr>
+<tr class="separator:a185097b23f602668695d107e1db7dfb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a1dd483e554bd9db6e8d0aeab50544118"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a1dd483e554bd9db6e8d0aeab50544118">SeasonState</a> { <br />
+&#160;&#160;<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a1dd483e554bd9db6e8d0aeab50544118a1d8c9db74467f6c2fdad36f154ca6873">WINTER</a>, 
+<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a1dd483e554bd9db6e8d0aeab50544118a74ce3137b26cdafc19bdb66d881971fa">SPRING</a>, 
+<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a1dd483e554bd9db6e8d0aeab50544118a6d813ab9ea240f6c6eeff923ccb680ae">SUMMER</a>, 
+<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a1dd483e554bd9db6e8d0aeab50544118a9115c69bd310223cf4ca0da58ed7b498">FALL</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a1dd483e554bd9db6e8d0aeab50544118a544dafaf104c4d12f4f6590528c12c3c">TRANSITION</a>
+<br />
+ }</td></tr>
+<tr class="separator:a1dd483e554bd9db6e8d0aeab50544118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb49c0f7fdac0c7c2623541b14b114f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a5cb49c0f7fdac0c7c2623541b14b114f">KoalaState</a> { <br />
+&#160;&#160;<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a5cb49c0f7fdac0c7c2623541b14b114fab8cd32180a1d5897df8369b127256ad1">JUMPING</a>, 
+<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a5cb49c0f7fdac0c7c2623541b14b114fa552dbfc018bbff8b37c76efea76ca893">KICK</a>, 
+<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a5cb49c0f7fdac0c7c2623541b14b114fa60b105762de1fa818f3f3201648fc792">FINALFORM</a>, 
+<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a5cb49c0f7fdac0c7c2623541b14b114fad11f2cfb7e6bae7b4df60a155829aefc">GRABED</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a5cb49c0f7fdac0c7c2623541b14b114fab986fd686b69180596fc0b268e222101">ONWIND</a>
+<br />
+ }</td></tr>
+<tr class="separator:a5cb49c0f7fdac0c7c2623541b14b114f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a76918e73a46306124299f0ecdded70ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a76918e73a46306124299f0ecdded70ac">InitGameplayScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a76918e73a46306124299f0ecdded70ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae375af3a5eb93543369403b716cbc0a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ae375af3a5eb93543369403b716cbc0a8">UpdateGameplayScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:ae375af3a5eb93543369403b716cbc0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8fc25f26ad73f9c08497af8b074ccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a8b8fc25f26ad73f9c08497af8b074ccf">DrawGameplayScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a8b8fc25f26ad73f9c08497af8b074ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96945d9b745690aa8ff1c909c816188"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ac96945d9b745690aa8ff1c909c816188">UnloadGameplayScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:ac96945d9b745690aa8ff1c909c816188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4d51d9e25770ad24c45f83837211be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#abe4d51d9e25770ad24c45f83837211be">FinishGameplayScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:abe4d51d9e25770ad24c45f83837211be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a882a2d9448014558b8d43acf76337af7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a882a2d9448014558b8d43acf76337af7">textFinalForm</a> [32] = &quot;THIS ISN'T EVEN MY FINAL FORM!&quot;</td></tr>
+<tr class="separator:a882a2d9448014558b8d43acf76337af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa01770a50d0f2a5af5bbfcd6de84863"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#afa01770a50d0f2a5af5bbfcd6de84863">textSpring1</a> [32] = &quot;FLOWER POWER!&quot;</td></tr>
+<tr class="separator:afa01770a50d0f2a5af5bbfcd6de84863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d82f5c68d8c18b1eae1c5c07986c517"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a0d82f5c68d8c18b1eae1c5c07986c517">textSummer1</a> [32] = &quot;PREPARE FOR THE SUMMER!&quot;</td></tr>
+<tr class="separator:a0d82f5c68d8c18b1eae1c5c07986c517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a160a2a419fe86ad09c5c59accb6fa"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ac8a160a2a419fe86ad09c5c59accb6fa">textFall1</a> [32] = &quot;HERE COMES THE FALL!&quot;</td></tr>
+<tr class="separator:ac8a160a2a419fe86ad09c5c59accb6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2c673d5846069bb0e0479e527ccd16"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a0a2c673d5846069bb0e0479e527ccd16">textWinter1</a> [32] = &quot;WINTER IS COMING!&quot;</td></tr>
+<tr class="separator:a0a2c673d5846069bb0e0479e527ccd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35bbefebc58084ab6cf698135b711ff8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a35bbefebc58084ab6cf698135b711ff8">textSpring2</a> [32] = &quot;POLLEN IS IN THE AIR&quot;</td></tr>
+<tr class="separator:a35bbefebc58084ab6cf698135b711ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f6c9300072e5eda3cdbe21b45cf984"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#ad5f6c9300072e5eda3cdbe21b45cf984">textSummer2</a> [32] = &quot;HAPPY NEW YEAR!&quot;</td></tr>
+<tr class="separator:ad5f6c9300072e5eda3cdbe21b45cf984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8419eaa2c33b9c52d70acc13b7a6b6a5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a8419eaa2c33b9c52d70acc13b7a6b6a5">textFall2</a> [32] = &quot;IT'S RAINING RAIN&quot;</td></tr>
+<tr class="separator:a8419eaa2c33b9c52d70acc13b7a6b6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31c8fd3c5852555e0edc92d34fc5d2bc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a31c8fd3c5852555e0edc92d34fc5d2bc">textWinter2</a> [32] = &quot;LET IT SNOW!&quot;</td></tr>
+<tr class="separator:a31c8fd3c5852555e0edc92d34fc5d2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a24d918a08b463d55ff28d97963e0447f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d918a08b463d55ff28d97963e0447f">&#9670;&nbsp;</a></span>BEE_SPAWNCHANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BEE_SPAWNCHANCE&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae51a8f84c71db989a5a4037f3e5d9b4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51a8f84c71db989a5a4037f3e5d9b4e">&#9670;&nbsp;</a></span>BEESCORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BEESCORE&#160;&#160;&#160;300</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbf918ef9b47cd70d5b6d82fe40b2bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf918ef9b47cd70d5b6d82fe40b2bc2">&#9670;&nbsp;</a></span>DINGOSCORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DINGOSCORE&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae22ec9077cc661592cf396480c7714e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae22ec9077cc661592cf396480c7714e4">&#9670;&nbsp;</a></span>DINGOSPAWNCHANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DINGOSPAWNCHANCE&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c9ddfb9a3f6cfb138da9ba5ce144efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9ddfb9a3f6cfb138da9ba5ce144efe">&#9670;&nbsp;</a></span>EAGLE_SPAWNCHANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EAGLE_SPAWNCHANCE&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0291b317f2b3ca992ed254df41ec9684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0291b317f2b3ca992ed254df41ec9684">&#9670;&nbsp;</a></span>EAGLE_TIME_DELAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EAGLE_TIME_DELAY&#160;&#160;&#160;600</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb82c6f75326a0b08b000a663ba3d04b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb82c6f75326a0b08b000a663ba3d04b">&#9670;&nbsp;</a></span>EAGLESCORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EAGLESCORE&#160;&#160;&#160;300</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d01390d2b6b7e88e6b71e4b4ac6ccc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d01390d2b6b7e88e6b71e4b4ac6ccc6">&#9670;&nbsp;</a></span>FIRESPAWNCHANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FIRESPAWNCHANCE&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb829b5c1f4b28551f42a1c36a2a36b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb829b5c1f4b28551f42a1c36a2a36b5">&#9670;&nbsp;</a></span>FLYINGMOV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLYINGMOV&#160;&#160;&#160;10*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6801baa546c6112d19eb095111d24720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6801baa546c6112d19eb095111d24720">&#9670;&nbsp;</a></span>GRAVITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRAVITY&#160;&#160;&#160;1*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae900d778bdeb2009b92faed81a2b654c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae900d778bdeb2009b92faed81a2b654c">&#9670;&nbsp;</a></span>ICEGRAVITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICEGRAVITY&#160;&#160;&#160;4*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2e7b22c66616cf32063cd7cb8a834f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e7b22c66616cf32063cd7cb8a834f0">&#9670;&nbsp;</a></span>ICESPAWNCHANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICESPAWNCHANCE&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee551d17fffb6235cc7123499dbf7d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee551d17fffb6235cc7123499dbf7d65">&#9670;&nbsp;</a></span>JUMP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUMP&#160;&#160;&#160;15*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30351828f2097cf336584f77279f0f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30351828f2097cf336584f77279f0f2c">&#9670;&nbsp;</a></span>KICKSPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KICKSPEED&#160;&#160;&#160;3*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad062f2d4b98a252c45b2b5aca9ea3e4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad062f2d4b98a252c45b2b5aca9ea3e4e">&#9670;&nbsp;</a></span>LEAVESTOTRANSFORM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEAVESTOTRANSFORM&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37cff863e65daaa42b567b48ceb9d7cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37cff863e65daaa42b567b48ceb9d7cd">&#9670;&nbsp;</a></span>MAX_BAMBOO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_BAMBOO&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a544651f3405cff79c40d898a8e54f507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544651f3405cff79c40d898a8e54f507">&#9670;&nbsp;</a></span>MAX_ENEMIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_ENEMIES&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af21a27d4e4301ff9dcd36eabcfa6d923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af21a27d4e4301ff9dcd36eabcfa6d923">&#9670;&nbsp;</a></span>MAX_FIRE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_FIRE&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a832b01889d84e4f591ba34974cbc1528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832b01889d84e4f591ba34974cbc1528">&#9670;&nbsp;</a></span>MAX_FIRE_FLAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_FIRE_FLAMES&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c1c776148e02d68fcd6466dbf0fbcee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c1c776148e02d68fcd6466dbf0fbcee">&#9670;&nbsp;</a></span>MAX_ICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_ICE&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53a135442a176107af00c85d6fff9e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a135442a176107af00c85d6fff9e08">&#9670;&nbsp;</a></span>MAX_LEAVES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_LEAVES&#160;&#160;&#160;14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43b318e80d2457f5ce3e00a6cf1543c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b318e80d2457f5ce3e00a6cf1543c8">&#9670;&nbsp;</a></span>MAX_PARTICLES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_PARTICLES&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8694df421ed1473a5a0541d9321acca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8694df421ed1473a5a0541d9321acca6">&#9670;&nbsp;</a></span>MAX_PARTICLES_RAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_PARTICLES_RAY&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af41a1557e54e81083693cb77bb8c9b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41a1557e54e81083693cb77bb8c9b2c">&#9670;&nbsp;</a></span>MAX_PARTICLES_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_PARTICLES_SPEED&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad425f1b81f641677a8e2657c4b7c4a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad425f1b81f641677a8e2657c4b7c4a5d">&#9670;&nbsp;</a></span>MAX_PARTICLES_STORM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_PARTICLES_STORM&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a649e3e6c17c40fa018bbcd1eaad6a852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649e3e6c17c40fa018bbcd1eaad6a852">&#9670;&nbsp;</a></span>MAX_RESIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_RESIN&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2f33af1367b8ba64125857fe1056c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f33af1367b8ba64125857fe1056c92">&#9670;&nbsp;</a></span>MAX_WIND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_WIND&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff334c653790f2e15308a9492cbb3532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff334c653790f2e15308a9492cbb3532">&#9670;&nbsp;</a></span>MAXTIMESPAWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXTIMESPAWN&#160;&#160;&#160;85</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60abca541c12497fc6031e27a4681a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60abca541c12497fc6031e27a4681a66">&#9670;&nbsp;</a></span>MINTIMESPAWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MINTIMESPAWN&#160;&#160;&#160;35</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbb88e6b883634fef2d0cf3497aaf367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb88e6b883634fef2d0cf3497aaf367">&#9670;&nbsp;</a></span>OWLSCORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OWLSCORE&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1d855e6dfbb103ee855cf74c6094338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d855e6dfbb103ee855cf74c6094338">&#9670;&nbsp;</a></span>OWLSPAWNCHANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OWLSPAWNCHANCE&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b3a16921eb0936e83506461cdbf9f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b3a16921eb0936e83506461cdbf9f76">&#9670;&nbsp;</a></span>PROGRESION_DURATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROGRESION_DURATION&#160;&#160;&#160;12000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a185097b23f602668695d107e1db7dfb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a185097b23f602668695d107e1db7dfb4">&#9670;&nbsp;</a></span>PROGRESION_MAX_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROGRESION_MAX_SPEED&#160;&#160;&#160;0.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca5a28a63ef56df5a65e66abc66c229d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca5a28a63ef56df5a65e66abc66c229d">&#9670;&nbsp;</a></span>PROGRESION_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROGRESION_START&#160;&#160;&#160;3600</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33395094cef0d9d8e438b435efd05922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33395094cef0d9d8e438b435efd05922">&#9670;&nbsp;</a></span>PROGRESOIN_MAX_SPAWNCHANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROGRESOIN_MAX_SPAWNCHANCE&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea58d9a0e44b5c5c68b7f0d4748903e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea58d9a0e44b5c5c68b7f0d4748903e1">&#9670;&nbsp;</a></span>RESINSPAWNCHANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESINSPAWNCHANCE&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3697680c1d5223e84d4caedaa05bc002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3697680c1d5223e84d4caedaa05bc002">&#9670;&nbsp;</a></span>SEASONCHANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEASONCHANGE&#160;&#160;&#160;1200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a486f954b9fc974d4a151532ca487bb37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486f954b9fc974d4a151532ca487bb37">&#9670;&nbsp;</a></span>SEASONTRANSITION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEASONTRANSITION&#160;&#160;&#160;<a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a3697680c1d5223e84d4caedaa05bc002">SEASONCHANGE</a>/6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a16a247aff1b0fc3d2cd9c576eaf71f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a16a247aff1b0fc3d2cd9c576eaf71f">&#9670;&nbsp;</a></span>SNAKESCORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SNAKESCORE&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab990c1b3558664c7f86f9912b93d1359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab990c1b3558664c7f86f9912b93d1359">&#9670;&nbsp;</a></span>SNAKESPAWNCHANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SNAKESPAWNCHANCE&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac3553b3932cbfeeac4526ce7ca0336b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3553b3932cbfeeac4526ce7ca0336b">&#9670;&nbsp;</a></span>SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPEED&#160;&#160;&#160;3*<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#acffcd7b591a8a3d9842ec96f28295b9d">TIME_FACTOR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2099d72523373b3eec8cc01527ae1c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2099d72523373b3eec8cc01527ae1c78">&#9670;&nbsp;</a></span>STARTINGMONTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STARTINGMONTH&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5065be7004b16564e7868985cf663f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5065be7004b16564e7868985cf663f2">&#9670;&nbsp;</a></span>WINDSPAWNCHANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WINDSPAWNCHANCE&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="a5cb49c0f7fdac0c7c2623541b14b114f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cb49c0f7fdac0c7c2623541b14b114f">&#9670;&nbsp;</a></span>KoalaState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a5cb49c0f7fdac0c7c2623541b14b114f">KoalaState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a5cb49c0f7fdac0c7c2623541b14b114fab8cd32180a1d5897df8369b127256ad1"></a>JUMPING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5cb49c0f7fdac0c7c2623541b14b114fa552dbfc018bbff8b37c76efea76ca893"></a>KICK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5cb49c0f7fdac0c7c2623541b14b114fa60b105762de1fa818f3f3201648fc792"></a>FINALFORM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5cb49c0f7fdac0c7c2623541b14b114fad11f2cfb7e6bae7b4df60a155829aefc"></a>GRABED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5cb49c0f7fdac0c7c2623541b14b114fab986fd686b69180596fc0b268e222101"></a>ONWIND&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1dd483e554bd9db6e8d0aeab50544118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd483e554bd9db6e8d0aeab50544118">&#9670;&nbsp;</a></span>SeasonState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="games_2koala__seasons_2screens_2screen__gameplay_8c.html#a1dd483e554bd9db6e8d0aeab50544118">SeasonState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a1dd483e554bd9db6e8d0aeab50544118a1d8c9db74467f6c2fdad36f154ca6873"></a>WINTER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dd483e554bd9db6e8d0aeab50544118a74ce3137b26cdafc19bdb66d881971fa"></a>SPRING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dd483e554bd9db6e8d0aeab50544118a6d813ab9ea240f6c6eeff923ccb680ae"></a>SUMMER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dd483e554bd9db6e8d0aeab50544118a9115c69bd310223cf4ca0da58ed7b498"></a>FALL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dd483e554bd9db6e8d0aeab50544118a544dafaf104c4d12f4f6590528c12c3c"></a>TRANSITION&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a8b8fc25f26ad73f9c08497af8b074ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8fc25f26ad73f9c08497af8b074ccf">&#9670;&nbsp;</a></span>DrawGameplayScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> DrawGameplayScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe4d51d9e25770ad24c45f83837211be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4d51d9e25770ad24c45f83837211be">&#9670;&nbsp;</a></span>FinishGameplayScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> FinishGameplayScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76918e73a46306124299f0ecdded70ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76918e73a46306124299f0ecdded70ac">&#9670;&nbsp;</a></span>InitGameplayScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> InitGameplayScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac96945d9b745690aa8ff1c909c816188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96945d9b745690aa8ff1c909c816188">&#9670;&nbsp;</a></span>UnloadGameplayScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> UnloadGameplayScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae375af3a5eb93543369403b716cbc0a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae375af3a5eb93543369403b716cbc0a8">&#9670;&nbsp;</a></span>UpdateGameplayScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> UpdateGameplayScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="ac8a160a2a419fe86ad09c5c59accb6fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8a160a2a419fe86ad09c5c59accb6fa">&#9670;&nbsp;</a></span>textFall1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> textFall1[32] = &quot;HERE COMES THE FALL!&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8419eaa2c33b9c52d70acc13b7a6b6a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8419eaa2c33b9c52d70acc13b7a6b6a5">&#9670;&nbsp;</a></span>textFall2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> textFall2[32] = &quot;IT'S RAINING RAIN&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a882a2d9448014558b8d43acf76337af7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a882a2d9448014558b8d43acf76337af7">&#9670;&nbsp;</a></span>textFinalForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> textFinalForm[32] = &quot;THIS ISN'T EVEN MY FINAL FORM!&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa01770a50d0f2a5af5bbfcd6de84863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa01770a50d0f2a5af5bbfcd6de84863">&#9670;&nbsp;</a></span>textSpring1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> textSpring1[32] = &quot;FLOWER POWER!&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35bbefebc58084ab6cf698135b711ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35bbefebc58084ab6cf698135b711ff8">&#9670;&nbsp;</a></span>textSpring2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> textSpring2[32] = &quot;POLLEN IS IN THE AIR&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d82f5c68d8c18b1eae1c5c07986c517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d82f5c68d8c18b1eae1c5c07986c517">&#9670;&nbsp;</a></span>textSummer1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> textSummer1[32] = &quot;PREPARE FOR THE SUMMER!&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5f6c9300072e5eda3cdbe21b45cf984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f6c9300072e5eda3cdbe21b45cf984">&#9670;&nbsp;</a></span>textSummer2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> textSummer2[32] = &quot;HAPPY NEW YEAR!&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a2c673d5846069bb0e0479e527ccd16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2c673d5846069bb0e0479e527ccd16">&#9670;&nbsp;</a></span>textWinter1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> textWinter1[32] = &quot;WINTER IS COMING!&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31c8fd3c5852555e0edc92d34fc5d2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c8fd3c5852555e0edc92d34fc5d2bc">&#9670;&nbsp;</a></span>textWinter2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> textWinter2[32] = &quot;LET IT SNOW!&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/src/external/glfw/src/init.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_522cffce0e7f7aeeda0715820aff089e.html">src</a></li><li class="navelem"><a class="el" href="dir_740e7e63c4fd631fa936466e993aeac5.html">external</a></li><li class="navelem"><a class="el" href="dir_fc592c499cb06c0baaba446292b5ff4d.html">glfw</a></li><li class="navelem"><a class="el" href="dir_43d03d9358785fa949ceb51da348f374.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo init.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="internal_8h_source.html">internal.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mappings_8h_source.html">mappings.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a7f0a5b0d879baead229ef5e7381648e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#a7f0a5b0d879baead229ef5e7381648e8">_glfw_strdup</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a633906574fe6e39b7f2840bed0e49832">source</a>)</td></tr>
+<tr class="separator:a7f0a5b0d879baead229ef5e7381648e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27e3c452fbb2a7133339f77b72fcf37"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#af27e3c452fbb2a7133339f77b72fcf37">_glfw_fminf</a> (float <a class="el" href="examples_2others_2external_2include_2glad_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, float <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>)</td></tr>
+<tr class="separator:af27e3c452fbb2a7133339f77b72fcf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159e9723ec02405ea951cea91b1cff30"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#a159e9723ec02405ea951cea91b1cff30">_glfw_fmaxf</a> (float <a class="el" href="examples_2others_2external_2include_2glad_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, float <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>)</td></tr>
+<tr class="separator:a159e9723ec02405ea951cea91b1cff30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3287b282ec57a4a89127ae51f49f10f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#a3287b282ec57a4a89127ae51f49f10f5">_glfwInputError</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> code, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a3f8f226b5004bbc9a172e2bbf28ed102">format</a>,...)</td></tr>
+<tr class="separator:a3287b282ec57a4a89127ae51f49f10f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab41771f0215a2e0afb4cf1cf98082d40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__init.html#gab41771f0215a2e0afb4cf1cf98082d40">glfwInit</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="memdesc:gab41771f0215a2e0afb4cf1cf98082d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the GLFW library.  <a href="group__init.html#gab41771f0215a2e0afb4cf1cf98082d40">Más...</a><br /></td></tr>
+<tr class="separator:gab41771f0215a2e0afb4cf1cf98082d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd90e6fd4819ea9e22e5e739519a6504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__init.html#gafd90e6fd4819ea9e22e5e739519a6504">glfwTerminate</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="memdesc:gafd90e6fd4819ea9e22e5e739519a6504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the GLFW library.  <a href="group__init.html#gafd90e6fd4819ea9e22e5e739519a6504">Más...</a><br /></td></tr>
+<tr class="separator:gafd90e6fd4819ea9e22e5e739519a6504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac85e41aab1c2bd6fc740f4377d9e7e9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__init.html#gac85e41aab1c2bd6fc740f4377d9e7e9f">glfwInitHint</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> hint, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a6a4f8a1a444e9080b297963b3db29fe0">value</a>)</td></tr>
+<tr class="memdesc:gac85e41aab1c2bd6fc740f4377d9e7e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the specified init hint to the desired value.  <a href="group__init.html#gac85e41aab1c2bd6fc740f4377d9e7e9f">Más...</a><br /></td></tr>
+<tr class="separator:gac85e41aab1c2bd6fc740f4377d9e7e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2402c7824ac0194c13722790ff9559ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__init.html#ga2402c7824ac0194c13722790ff9559ff">glfwGetVersion</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *major, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *minor, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> *rev)</td></tr>
+<tr class="memdesc:ga2402c7824ac0194c13722790ff9559ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the version of the GLFW library.  <a href="group__init.html#ga2402c7824ac0194c13722790ff9559ff">Más...</a><br /></td></tr>
+<tr class="separator:ga2402c7824ac0194c13722790ff9559ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5952184a0db36e24d1de7805b8b0945"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__init.html#gae5952184a0db36e24d1de7805b8b0945">glfwGetVersionString</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="memdesc:gae5952184a0db36e24d1de7805b8b0945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string describing the compile-time configuration.  <a href="group__init.html#gae5952184a0db36e24d1de7805b8b0945">Más...</a><br /></td></tr>
+<tr class="separator:gae5952184a0db36e24d1de7805b8b0945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee7bac4c7e1b2769207747c1b5ae2f9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__init.html#gaee7bac4c7e1b2769207747c1b5ae2f9e">glfwGetError</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> **description)</td></tr>
+<tr class="memdesc:gaee7bac4c7e1b2769207747c1b5ae2f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns and clears the last error for the calling thread.  <a href="group__init.html#gaee7bac4c7e1b2769207747c1b5ae2f9e">Más...</a><br /></td></tr>
+<tr class="separator:gaee7bac4c7e1b2769207747c1b5ae2f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5919096b958c47102126061fb5a6f9c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="group__init.html#gaa684e3f8b44b6a35000119d524d49e6d">GLFWerrorfun</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__init.html#ga5919096b958c47102126061fb5a6f9c3">glfwSetErrorCallback</a> (<a class="el" href="group__init.html#gaa684e3f8b44b6a35000119d524d49e6d">GLFWerrorfun</a> cbfun)</td></tr>
+<tr class="memdesc:ga5919096b958c47102126061fb5a6f9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the error callback.  <a href="group__init.html#ga5919096b958c47102126061fb5a6f9c3">Más...</a><br /></td></tr>
+<tr class="separator:ga5919096b958c47102126061fb5a6f9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3007bc654ca6468ee69759007f70ba1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct___g_l_f_wlibrary.html">_GLFWlibrary</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#a3007bc654ca6468ee69759007f70ba1e">_glfw</a> = { <a class="el" href="group__init.html#gac877fe3b627d21ef3a0a23e0a73ba8c5">GLFW_FALSE</a> }</td></tr>
+<tr class="separator:a3007bc654ca6468ee69759007f70ba1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a159e9723ec02405ea951cea91b1cff30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a159e9723ec02405ea951cea91b1cff30">&#9670;&nbsp;</a></span>_glfw_fmaxf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _glfw_fmaxf </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af27e3c452fbb2a7133339f77b72fcf37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27e3c452fbb2a7133339f77b72fcf37">&#9670;&nbsp;</a></span>_glfw_fminf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _glfw_fminf </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f0a5b0d879baead229ef5e7381648e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f0a5b0d879baead229ef5e7381648e8">&#9670;&nbsp;</a></span>_glfw_strdup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>* _glfw_strdup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3287b282ec57a4a89127ae51f49f10f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3287b282ec57a4a89127ae51f49f10f5">&#9670;&nbsp;</a></span>_glfwInputError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> _glfwInputError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a3007bc654ca6468ee69759007f70ba1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3007bc654ca6468ee69759007f70ba1e">&#9670;&nbsp;</a></span>_glfw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct___g_l_f_wlibrary.html">_GLFWlibrary</a> _glfw = { <a class="el" href="group__init.html#gac877fe3b627d21ef3a0a23e0a73ba8c5">GLFW_FALSE</a> }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

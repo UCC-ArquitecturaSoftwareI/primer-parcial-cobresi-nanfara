@@ -1,0 +1,86 @@
+\hypertarget{android__native__app__glue_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/android/native\+\_\+app\+\_\+glue/android\+\_\+native\+\_\+app\+\_\+glue.c}
+\label{android__native__app__glue_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/android/native\_app\_glue/android\_native\_app\_glue.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/android/native\_app\_glue/android\_native\_app\_glue.c}}
+{\ttfamily \#include $<$jni.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sys/resource.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}android\+\_\+native\+\_\+app\+\_\+glue.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$android/log.\+h$>$}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{android__native__app__glue_8c_a5512e59d578a380a441a70256af997d0}{L\+O\+GI}}(...)~((\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})\+\_\+\+\_\+android\+\_\+log\+\_\+print(A\+N\+D\+R\+O\+I\+D\+\_\+\+L\+O\+G\+\_\+\+I\+N\+FO, \char`\"{}threaded\+\_\+app\char`\"{}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \mbox{\hyperlink{android__native__app__glue_8c_ae02538a80ad5fc009caec73487d11a8d}{L\+O\+GE}}(...)~((\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})\+\_\+\+\_\+android\+\_\+log\+\_\+print(A\+N\+D\+R\+O\+I\+D\+\_\+\+L\+O\+G\+\_\+\+E\+R\+R\+OR, \char`\"{}threaded\+\_\+app\char`\"{}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\item 
+\#define \mbox{\hyperlink{android__native__app__glue_8c_ab78bd305488c62caf8515ee765b1ed49}{L\+O\+GV}}(...)~((\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})\+\_\+\+\_\+android\+\_\+log\+\_\+print(A\+N\+D\+R\+O\+I\+D\+\_\+\+L\+O\+G\+\_\+\+V\+E\+R\+B\+O\+SE, \char`\"{}threaded\+\_\+app\char`\"{}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stdint_8h_aef44329758059c91c76d334e8fc09700}{int8\+\_\+t}} \mbox{\hyperlink{android__native__app__glue_8c_a05d3cc727656e360f4d2bb290ceec365}{android\+\_\+app\+\_\+read\+\_\+cmd}} (struct \mbox{\hyperlink{structandroid__app}{android\+\_\+app}} $\ast$\mbox{\hyperlink{structandroid__app}{android\+\_\+app}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{android__native__app__glue_8c_a19fcc2ceab1c8d7f0664f9436950bf18}{android\+\_\+app\+\_\+pre\+\_\+exec\+\_\+cmd}} (struct \mbox{\hyperlink{structandroid__app}{android\+\_\+app}} $\ast$\mbox{\hyperlink{structandroid__app}{android\+\_\+app}}, \mbox{\hyperlink{stdint_8h_aef44329758059c91c76d334e8fc09700}{int8\+\_\+t}} cmd)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{android__native__app__glue_8c_af0b682de686fba098479227bc5a2f044}{android\+\_\+app\+\_\+post\+\_\+exec\+\_\+cmd}} (struct \mbox{\hyperlink{structandroid__app}{android\+\_\+app}} $\ast$\mbox{\hyperlink{structandroid__app}{android\+\_\+app}}, \mbox{\hyperlink{stdint_8h_aef44329758059c91c76d334e8fc09700}{int8\+\_\+t}} cmd)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{android__native__app__glue_8c_ad6cb2999c43578c26088c6a5147ccdc1}{app\+\_\+dummy}} ()
+\item 
+J\+N\+I\+E\+X\+P\+O\+RT \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{android__native__app__glue_8c_a6d1ff6aedb4762d41037e7c708179144}{A\+Native\+Activity\+\_\+on\+Create}} (A\+Native\+Activity $\ast$activity, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$saved\+State, size\+\_\+t saved\+State\+Size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{android__native__app__glue_8c_ae02538a80ad5fc009caec73487d11a8d}\label{android__native__app__glue_8c_ae02538a80ad5fc009caec73487d11a8d}} 
+\index{android\_native\_app\_glue.c@{android\_native\_app\_glue.c}!LOGE@{LOGE}}
+\index{LOGE@{LOGE}!android\_native\_app\_glue.c@{android\_native\_app\_glue.c}}
+\doxysubsubsection{\texorpdfstring{LOGE}{LOGE}}
+{\footnotesize\ttfamily \#define L\+O\+GE(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~((\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})\+\_\+\+\_\+android\+\_\+log\+\_\+print(A\+N\+D\+R\+O\+I\+D\+\_\+\+L\+O\+G\+\_\+\+E\+R\+R\+OR, \char`\"{}threaded\+\_\+app\char`\"{}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+\mbox{\Hypertarget{android__native__app__glue_8c_a5512e59d578a380a441a70256af997d0}\label{android__native__app__glue_8c_a5512e59d578a380a441a70256af997d0}} 
+\index{android\_native\_app\_glue.c@{android\_native\_app\_glue.c}!LOGI@{LOGI}}
+\index{LOGI@{LOGI}!android\_native\_app\_glue.c@{android\_native\_app\_glue.c}}
+\doxysubsubsection{\texorpdfstring{LOGI}{LOGI}}
+{\footnotesize\ttfamily \#define L\+O\+GI(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~((\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})\+\_\+\+\_\+android\+\_\+log\+\_\+print(A\+N\+D\+R\+O\+I\+D\+\_\+\+L\+O\+G\+\_\+\+I\+N\+FO, \char`\"{}threaded\+\_\+app\char`\"{}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+\mbox{\Hypertarget{android__native__app__glue_8c_ab78bd305488c62caf8515ee765b1ed49}\label{android__native__app__glue_8c_ab78bd305488c62caf8515ee765b1ed49}} 
+\index{android\_native\_app\_glue.c@{android\_native\_app\_glue.c}!LOGV@{LOGV}}
+\index{LOGV@{LOGV}!android\_native\_app\_glue.c@{android\_native\_app\_glue.c}}
+\doxysubsubsection{\texorpdfstring{LOGV}{LOGV}}
+{\footnotesize\ttfamily \#define L\+O\+GV(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~((\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})\+\_\+\+\_\+android\+\_\+log\+\_\+print(A\+N\+D\+R\+O\+I\+D\+\_\+\+L\+O\+G\+\_\+\+V\+E\+R\+B\+O\+SE, \char`\"{}threaded\+\_\+app\char`\"{}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{android__native__app__glue_8c_a6d1ff6aedb4762d41037e7c708179144}\label{android__native__app__glue_8c_a6d1ff6aedb4762d41037e7c708179144}} 
+\index{android\_native\_app\_glue.c@{android\_native\_app\_glue.c}!ANativeActivity\_onCreate@{ANativeActivity\_onCreate}}
+\index{ANativeActivity\_onCreate@{ANativeActivity\_onCreate}!android\_native\_app\_glue.c@{android\_native\_app\_glue.c}}
+\doxysubsubsection{\texorpdfstring{ANativeActivity\_onCreate()}{ANativeActivity\_onCreate()}}
+{\footnotesize\ttfamily J\+N\+I\+E\+X\+P\+O\+RT \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} A\+Native\+Activity\+\_\+on\+Create (\begin{DoxyParamCaption}\item[{A\+Native\+Activity $\ast$}]{activity,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{saved\+State,  }\item[{size\+\_\+t}]{saved\+State\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{android__native__app__glue_8c_af0b682de686fba098479227bc5a2f044}\label{android__native__app__glue_8c_af0b682de686fba098479227bc5a2f044}} 
+\index{android\_native\_app\_glue.c@{android\_native\_app\_glue.c}!android\_app\_post\_exec\_cmd@{android\_app\_post\_exec\_cmd}}
+\index{android\_app\_post\_exec\_cmd@{android\_app\_post\_exec\_cmd}!android\_native\_app\_glue.c@{android\_native\_app\_glue.c}}
+\doxysubsubsection{\texorpdfstring{android\_app\_post\_exec\_cmd()}{android\_app\_post\_exec\_cmd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} android\+\_\+app\+\_\+post\+\_\+exec\+\_\+cmd (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structandroid__app}{android\+\_\+app}} $\ast$}]{android\+\_\+app,  }\item[{\mbox{\hyperlink{stdint_8h_aef44329758059c91c76d334e8fc09700}{int8\+\_\+t}}}]{cmd }\end{DoxyParamCaption})}
+
+Call with the command returned by \mbox{\hyperlink{android__native__app__glue_8h_a05d3cc727656e360f4d2bb290ceec365}{android\+\_\+app\+\_\+read\+\_\+cmd()}} to do the final post-\/processing of the given command. You must have done your own actions for the command before calling this function. \mbox{\Hypertarget{android__native__app__glue_8c_a19fcc2ceab1c8d7f0664f9436950bf18}\label{android__native__app__glue_8c_a19fcc2ceab1c8d7f0664f9436950bf18}} 
+\index{android\_native\_app\_glue.c@{android\_native\_app\_glue.c}!android\_app\_pre\_exec\_cmd@{android\_app\_pre\_exec\_cmd}}
+\index{android\_app\_pre\_exec\_cmd@{android\_app\_pre\_exec\_cmd}!android\_native\_app\_glue.c@{android\_native\_app\_glue.c}}
+\doxysubsubsection{\texorpdfstring{android\_app\_pre\_exec\_cmd()}{android\_app\_pre\_exec\_cmd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} android\+\_\+app\+\_\+pre\+\_\+exec\+\_\+cmd (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structandroid__app}{android\+\_\+app}} $\ast$}]{android\+\_\+app,  }\item[{\mbox{\hyperlink{stdint_8h_aef44329758059c91c76d334e8fc09700}{int8\+\_\+t}}}]{cmd }\end{DoxyParamCaption})}
+
+Call with the command returned by \mbox{\hyperlink{android__native__app__glue_8h_a05d3cc727656e360f4d2bb290ceec365}{android\+\_\+app\+\_\+read\+\_\+cmd()}} to do the initial pre-\/processing of the given command. You can perform your own actions for the command after calling this function. \mbox{\Hypertarget{android__native__app__glue_8c_a05d3cc727656e360f4d2bb290ceec365}\label{android__native__app__glue_8c_a05d3cc727656e360f4d2bb290ceec365}} 
+\index{android\_native\_app\_glue.c@{android\_native\_app\_glue.c}!android\_app\_read\_cmd@{android\_app\_read\_cmd}}
+\index{android\_app\_read\_cmd@{android\_app\_read\_cmd}!android\_native\_app\_glue.c@{android\_native\_app\_glue.c}}
+\doxysubsubsection{\texorpdfstring{android\_app\_read\_cmd()}{android\_app\_read\_cmd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aef44329758059c91c76d334e8fc09700}{int8\+\_\+t}} android\+\_\+app\+\_\+read\+\_\+cmd (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structandroid__app}{android\+\_\+app}} $\ast$}]{android\+\_\+app }\end{DoxyParamCaption})}
+
+Call when A\+Looper\+\_\+poll\+All() returns L\+O\+O\+P\+E\+R\+\_\+\+I\+D\+\_\+\+M\+A\+IN, reading the next app command message. \mbox{\Hypertarget{android__native__app__glue_8c_ad6cb2999c43578c26088c6a5147ccdc1}\label{android__native__app__glue_8c_ad6cb2999c43578c26088c6a5147ccdc1}} 
+\index{android\_native\_app\_glue.c@{android\_native\_app\_glue.c}!app\_dummy@{app\_dummy}}
+\index{app\_dummy@{app\_dummy}!android\_native\_app\_glue.c@{android\_native\_app\_glue.c}}
+\doxysubsubsection{\texorpdfstring{app\_dummy()}{app\_dummy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} app\+\_\+dummy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

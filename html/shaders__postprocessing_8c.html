@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/examples/shaders/shaders_postprocessing.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_2c6be2658a970b1f85a0c369e1597916.html">examples</a></li><li class="navelem"><a class="el" href="dir_62b008937bbbf5cc42421e42e02f2947.html">shaders</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo shaders_postprocessing.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;raylib.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:aaba262429a637565be50b2f1580d42a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shaders__postprocessing_8c.html#aaba262429a637565be50b2f1580d42a4">GLSL_VERSION</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:aaba262429a637565be50b2f1580d42a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af008c824157c29836407e9c5181cb7c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shaders__postprocessing_8c.html#af008c824157c29836407e9c5181cb7c3">MAX_POSTPRO_SHADERS</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:af008c824157c29836407e9c5181cb7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a488679c72aadfa18bf64abe01cad1399"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399">PostproShader</a> { <br />
+&#160;&#160;<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399a7ee19f0c7ec6c0c6c114ec8247f201af">FX_GRAYSCALE</a> = 0, 
+<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399a962e02c1c28f4aad6137201fbd0e012a">FX_POSTERIZATION</a>, 
+<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399a690c44a7c10dc6d602d2f797625eb46a">FX_DREAM_VISION</a>, 
+<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399a747008cdb241ad49476c7a4eb2e58611">FX_PIXELIZER</a>, 
+<br />
+&#160;&#160;<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399ace72fcb8bc59bfe5e6f33d539e63d827">FX_CROSS_HATCHING</a>, 
+<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399adcb8d9254b16323a8ecf765ad1c886ce">FX_CROSS_STITCHING</a>, 
+<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399aabccfb0abed6eda8f2055acabc64ef40">FX_PREDATOR_VIEW</a>, 
+<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399a8e0ca8940d2cf812d58fd890725c8b73">FX_SCANLINES</a>, 
+<br />
+&#160;&#160;<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399a3de62dfe88c3a86bf8d150cec0d2d98c">FX_FISHEYE</a>, 
+<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399a0060f6912e8ab485418dbe6678dbdccc">FX_SOBEL</a>, 
+<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399abfe889c885369915eedb41c2a7829b39">FX_BLOOM</a>, 
+<a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399a0cc6b6b55c7cd95358558447008127a7">FX_BLUR</a>
+<br />
+ }</td></tr>
+<tr class="separator:a488679c72aadfa18bf64abe01cad1399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shaders__postprocessing_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="aaba262429a637565be50b2f1580d42a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba262429a637565be50b2f1580d42a4">&#9670;&nbsp;</a></span>GLSL_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GLSL_VERSION&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af008c824157c29836407e9c5181cb7c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af008c824157c29836407e9c5181cb7c3">&#9670;&nbsp;</a></span>MAX_POSTPRO_SHADERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_POSTPRO_SHADERS&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="a488679c72aadfa18bf64abe01cad1399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a488679c72aadfa18bf64abe01cad1399">&#9670;&nbsp;</a></span>PostproShader</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="shaders__postprocessing_8c.html#a488679c72aadfa18bf64abe01cad1399">PostproShader</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399a7ee19f0c7ec6c0c6c114ec8247f201af"></a>FX_GRAYSCALE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399a962e02c1c28f4aad6137201fbd0e012a"></a>FX_POSTERIZATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399a690c44a7c10dc6d602d2f797625eb46a"></a>FX_DREAM_VISION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399a747008cdb241ad49476c7a4eb2e58611"></a>FX_PIXELIZER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399ace72fcb8bc59bfe5e6f33d539e63d827"></a>FX_CROSS_HATCHING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399adcb8d9254b16323a8ecf765ad1c886ce"></a>FX_CROSS_STITCHING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399aabccfb0abed6eda8f2055acabc64ef40"></a>FX_PREDATOR_VIEW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399a8e0ca8940d2cf812d58fd890725c8b73"></a>FX_SCANLINES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399a3de62dfe88c3a86bf8d150cec0d2d98c"></a>FX_FISHEYE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399a0060f6912e8ab485418dbe6678dbdccc"></a>FX_SOBEL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399abfe889c885369915eedb41c2a7829b39"></a>FX_BLOOM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a488679c72aadfa18bf64abe01cad1399a0cc6b6b55c7cd95358558447008127a7"></a>FX_BLUR&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

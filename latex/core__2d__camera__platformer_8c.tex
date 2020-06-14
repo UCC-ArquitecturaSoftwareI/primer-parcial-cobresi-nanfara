@@ -1,0 +1,125 @@
+\hypertarget{core__2d__camera__platformer_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/examples/core/core\+\_\+2d\+\_\+camera\+\_\+platformer.c}
+\label{core__2d__camera__platformer_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/core/core\_2d\_camera\_platformer.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/core/core\_2d\_camera\_platformer.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}raymath.\+h\char`\"{}}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_player}{Player}}
+\item 
+struct \mbox{\hyperlink{struct_env_item}{Env\+Item}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{core__2d__camera__platformer_8c_aed9ea78689ecce0b7264c02c7f8a9a54}{G}}~400
+\item 
+\#define \mbox{\hyperlink{core__2d__camera__platformer_8c_a01b5960a4eaa9764865bd376f17f3986}{P\+L\+A\+Y\+E\+R\+\_\+\+J\+U\+M\+P\+\_\+\+S\+PD}}~350.\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}
+\item 
+\#define \mbox{\hyperlink{core__2d__camera__platformer_8c_a9f797b5cc7dcef15bc45be0cdeaef165}{P\+L\+A\+Y\+E\+R\+\_\+\+H\+O\+R\+\_\+\+S\+PD}}~200.\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{core__2d__camera__platformer_8c_a480a040facb94f90060562cd65274385}{Player}}
+\item 
+typedef struct \mbox{\hyperlink{struct_env_item}{Env\+Item}} \mbox{\hyperlink{core__2d__camera__platformer_8c_a4ddc58659868db5befb7b4496af0e081}{Env\+Item}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{core__2d__camera__platformer_8c_a7cd3c4e6208c4be3870bf724049a0c18}{Update\+Player}} (\mbox{\hyperlink{struct_player}{Player}} $\ast$\mbox{\hyperlink{player_8h_af61d6983a9396a11078805087518af88}{player}}, \mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$env\+Items, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} env\+Items\+Length, float delta)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{core__2d__camera__platformer_8c_a4886a688d53970abeffe566eadf486bf}{Update\+Camera\+Center}} (\mbox{\hyperlink{struct_camera2_d}{Camera2D}} $\ast$camera, \mbox{\hyperlink{struct_player}{Player}} $\ast$\mbox{\hyperlink{player_8h_af61d6983a9396a11078805087518af88}{player}}, \mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$env\+Items, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} env\+Items\+Length, float delta, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{core__2d__camera__platformer_8c_af2df3e399f8a56e850e0efc16f108892}{Update\+Camera\+Center\+Inside\+Map}} (\mbox{\hyperlink{struct_camera2_d}{Camera2D}} $\ast$camera, \mbox{\hyperlink{struct_player}{Player}} $\ast$\mbox{\hyperlink{player_8h_af61d6983a9396a11078805087518af88}{player}}, \mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$env\+Items, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} env\+Items\+Length, float delta, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{core__2d__camera__platformer_8c_a9b827a372f0aad6e6562b587fdcfea87}{Update\+Camera\+Center\+Smooth\+Follow}} (\mbox{\hyperlink{struct_camera2_d}{Camera2D}} $\ast$camera, \mbox{\hyperlink{struct_player}{Player}} $\ast$\mbox{\hyperlink{player_8h_af61d6983a9396a11078805087518af88}{player}}, \mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$env\+Items, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} env\+Items\+Length, float delta, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{core__2d__camera__platformer_8c_a8628d50d43d7f4617cc5827f68f469a1}{Update\+Camera\+Even\+Out\+On\+Landing}} (\mbox{\hyperlink{struct_camera2_d}{Camera2D}} $\ast$camera, \mbox{\hyperlink{struct_player}{Player}} $\ast$\mbox{\hyperlink{player_8h_af61d6983a9396a11078805087518af88}{player}}, \mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$env\+Items, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} env\+Items\+Length, float delta, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{core__2d__camera__platformer_8c_a1b9817f7d35b624c789c09e723ab328f}{Update\+Camera\+Player\+Bounds\+Push}} (\mbox{\hyperlink{struct_camera2_d}{Camera2D}} $\ast$camera, \mbox{\hyperlink{struct_player}{Player}} $\ast$\mbox{\hyperlink{player_8h_af61d6983a9396a11078805087518af88}{player}}, \mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$env\+Items, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} env\+Items\+Length, float delta, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{core__2d__camera__platformer_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_aed9ea78689ecce0b7264c02c7f8a9a54}\label{core__2d__camera__platformer_8c_aed9ea78689ecce0b7264c02c7f8a9a54}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!G@{G}}
+\index{G@{G}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily \#define G~400}
+
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_a9f797b5cc7dcef15bc45be0cdeaef165}\label{core__2d__camera__platformer_8c_a9f797b5cc7dcef15bc45be0cdeaef165}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!PLAYER\_HOR\_SPD@{PLAYER\_HOR\_SPD}}
+\index{PLAYER\_HOR\_SPD@{PLAYER\_HOR\_SPD}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_HOR\_SPD}{PLAYER\_HOR\_SPD}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+E\+R\+\_\+\+H\+O\+R\+\_\+\+S\+PD~200.\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}}
+
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_a01b5960a4eaa9764865bd376f17f3986}\label{core__2d__camera__platformer_8c_a01b5960a4eaa9764865bd376f17f3986}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!PLAYER\_JUMP\_SPD@{PLAYER\_JUMP\_SPD}}
+\index{PLAYER\_JUMP\_SPD@{PLAYER\_JUMP\_SPD}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_JUMP\_SPD}{PLAYER\_JUMP\_SPD}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+E\+R\+\_\+\+J\+U\+M\+P\+\_\+\+S\+PD~350.\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_a4ddc58659868db5befb7b4496af0e081}\label{core__2d__camera__platformer_8c_a4ddc58659868db5befb7b4496af0e081}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!EnvItem@{EnvItem}}
+\index{EnvItem@{EnvItem}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{EnvItem}{EnvItem}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_env_item}{Env\+Item}} \mbox{\hyperlink{struct_env_item}{Env\+Item}}}
+
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_a480a040facb94f90060562cd65274385}\label{core__2d__camera__platformer_8c_a480a040facb94f90060562cd65274385}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!Player@{Player}}
+\index{Player@{Player}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{struct_player}{Player}}}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{core__2d__camera__platformer_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!main@{main}}
+\index{main@{main}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_a4886a688d53970abeffe566eadf486bf}\label{core__2d__camera__platformer_8c_a4886a688d53970abeffe566eadf486bf}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!UpdateCameraCenter@{UpdateCameraCenter}}
+\index{UpdateCameraCenter@{UpdateCameraCenter}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{UpdateCameraCenter()}{UpdateCameraCenter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Camera\+Center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_camera2_d}{Camera2D}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$}]{env\+Items,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{env\+Items\+Length,  }\item[{float}]{delta,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_af2df3e399f8a56e850e0efc16f108892}\label{core__2d__camera__platformer_8c_af2df3e399f8a56e850e0efc16f108892}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!UpdateCameraCenterInsideMap@{UpdateCameraCenterInsideMap}}
+\index{UpdateCameraCenterInsideMap@{UpdateCameraCenterInsideMap}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{UpdateCameraCenterInsideMap()}{UpdateCameraCenterInsideMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Camera\+Center\+Inside\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_camera2_d}{Camera2D}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$}]{env\+Items,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{env\+Items\+Length,  }\item[{float}]{delta,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_a9b827a372f0aad6e6562b587fdcfea87}\label{core__2d__camera__platformer_8c_a9b827a372f0aad6e6562b587fdcfea87}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!UpdateCameraCenterSmoothFollow@{UpdateCameraCenterSmoothFollow}}
+\index{UpdateCameraCenterSmoothFollow@{UpdateCameraCenterSmoothFollow}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{UpdateCameraCenterSmoothFollow()}{UpdateCameraCenterSmoothFollow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Camera\+Center\+Smooth\+Follow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_camera2_d}{Camera2D}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$}]{env\+Items,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{env\+Items\+Length,  }\item[{float}]{delta,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_a8628d50d43d7f4617cc5827f68f469a1}\label{core__2d__camera__platformer_8c_a8628d50d43d7f4617cc5827f68f469a1}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!UpdateCameraEvenOutOnLanding@{UpdateCameraEvenOutOnLanding}}
+\index{UpdateCameraEvenOutOnLanding@{UpdateCameraEvenOutOnLanding}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{UpdateCameraEvenOutOnLanding()}{UpdateCameraEvenOutOnLanding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Camera\+Even\+Out\+On\+Landing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_camera2_d}{Camera2D}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$}]{env\+Items,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{env\+Items\+Length,  }\item[{float}]{delta,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_a1b9817f7d35b624c789c09e723ab328f}\label{core__2d__camera__platformer_8c_a1b9817f7d35b624c789c09e723ab328f}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!UpdateCameraPlayerBoundsPush@{UpdateCameraPlayerBoundsPush}}
+\index{UpdateCameraPlayerBoundsPush@{UpdateCameraPlayerBoundsPush}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{UpdateCameraPlayerBoundsPush()}{UpdateCameraPlayerBoundsPush()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Camera\+Player\+Bounds\+Push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_camera2_d}{Camera2D}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$}]{env\+Items,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{env\+Items\+Length,  }\item[{float}]{delta,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{core__2d__camera__platformer_8c_a7cd3c4e6208c4be3870bf724049a0c18}\label{core__2d__camera__platformer_8c_a7cd3c4e6208c4be3870bf724049a0c18}} 
+\index{core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}!UpdatePlayer@{UpdatePlayer}}
+\index{UpdatePlayer@{UpdatePlayer}!core\_2d\_camera\_platformer.c@{core\_2d\_camera\_platformer.c}}
+\doxysubsubsection{\texorpdfstring{UpdatePlayer()}{UpdatePlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{struct_env_item}{Env\+Item}} $\ast$}]{env\+Items,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{env\+Items\+Length,  }\item[{float}]{delta }\end{DoxyParamCaption})}
+

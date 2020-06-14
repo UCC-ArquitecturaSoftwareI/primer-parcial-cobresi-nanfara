@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/games/transmission/screens/screen_mission.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_7aebff1416c495ebb69e3cc957d2473c.html">games</a></li><li class="navelem"><a class="el" href="dir_8dc14d917e63bf43a5f5f7684bbcfe24.html">transmission</a></li><li class="navelem"><a class="el" href="dir_bd92626791119b813b8b6cc2f42e521c.html">screens</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo screen_mission.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;raylib.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="games_2transmission_2screens_2screens_8h_source.html">screens.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a30a80c84ba6c26fb2ae8bc79d68359a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen__mission_8c.html#a30a80c84ba6c26fb2ae8bc79d68359a8">MISSION_MAX_LENGTH</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:a30a80c84ba6c26fb2ae8bc79d68359a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5431ae33af418e5bf3dc5754239c78cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen__mission_8c.html#a5431ae33af418e5bf3dc5754239c78cd">KEYWORD_MAX_LENGTH</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a5431ae33af418e5bf3dc5754239c78cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a67c004debd722fcfbbd45cd9bb648a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen__mission_8c.html#a3a67c004debd722fcfbbd45cd9bb648a">MAX_LINE_CHAR</a>&#160;&#160;&#160;75</td></tr>
+<tr class="separator:a3a67c004debd722fcfbbd45cd9bb648a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:add6ea5d38d9b2ab92da46dba1cd4fb40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen__mission_8c.html#add6ea5d38d9b2ab92da46dba1cd4fb40">InitMissionScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:add6ea5d38d9b2ab92da46dba1cd4fb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8e6a5ff72813501b5904365022dfd95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen__mission_8c.html#ad8e6a5ff72813501b5904365022dfd95">UpdateMissionScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:ad8e6a5ff72813501b5904365022dfd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356a040deb95998d9b89edcbd7bb928c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen__mission_8c.html#a356a040deb95998d9b89edcbd7bb928c">DrawMissionScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a356a040deb95998d9b89edcbd7bb928c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3e3b9a397c1fa1a7e67a10cd019bc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen__mission_8c.html#a1d3e3b9a397c1fa1a7e67a10cd019bc1">UnloadMissionScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a1d3e3b9a397c1fa1a7e67a10cd019bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85764055272cb42e56df40ff8b625fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen__mission_8c.html#aa85764055272cb42e56df40ff8b625fc">FinishMissionScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:aa85764055272cb42e56df40ff8b625fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a5431ae33af418e5bf3dc5754239c78cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5431ae33af418e5bf3dc5754239c78cd">&#9670;&nbsp;</a></span>KEYWORD_MAX_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEYWORD_MAX_LENGTH&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a67c004debd722fcfbbd45cd9bb648a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a67c004debd722fcfbbd45cd9bb648a">&#9670;&nbsp;</a></span>MAX_LINE_CHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_LINE_CHAR&#160;&#160;&#160;75</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30a80c84ba6c26fb2ae8bc79d68359a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a80c84ba6c26fb2ae8bc79d68359a8">&#9670;&nbsp;</a></span>MISSION_MAX_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MISSION_MAX_LENGTH&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a356a040deb95998d9b89edcbd7bb928c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356a040deb95998d9b89edcbd7bb928c">&#9670;&nbsp;</a></span>DrawMissionScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> DrawMissionScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa85764055272cb42e56df40ff8b625fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85764055272cb42e56df40ff8b625fc">&#9670;&nbsp;</a></span>FinishMissionScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> FinishMissionScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add6ea5d38d9b2ab92da46dba1cd4fb40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6ea5d38d9b2ab92da46dba1cd4fb40">&#9670;&nbsp;</a></span>InitMissionScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> InitMissionScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d3e3b9a397c1fa1a7e67a10cd019bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3e3b9a397c1fa1a7e67a10cd019bc1">&#9670;&nbsp;</a></span>UnloadMissionScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> UnloadMissionScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8e6a5ff72813501b5904365022dfd95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e6a5ff72813501b5904365022dfd95">&#9670;&nbsp;</a></span>UpdateMissionScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> UpdateMissionScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

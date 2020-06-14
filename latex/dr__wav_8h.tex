@@ -1,0 +1,919 @@
+\hypertarget{dr__wav_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/dr\+\_\+wav.h}
+\label{dr__wav_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/dr\_wav.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/dr\_wav.h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdrwav__chunk__header}{drwav\+\_\+chunk\+\_\+header}}
+\item 
+struct \mbox{\hyperlink{structdrwav____memory__stream}{drwav\+\_\+\+\_\+memory\+\_\+stream}}
+\item 
+struct \mbox{\hyperlink{structdrwav____memory__stream__write}{drwav\+\_\+\+\_\+memory\+\_\+stream\+\_\+write}}
+\item 
+struct \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}}
+\item 
+struct \mbox{\hyperlink{structdrwav__fmt}{drwav\+\_\+fmt}}
+\item 
+struct \mbox{\hyperlink{structdrwav__smpl__loop}{drwav\+\_\+smpl\+\_\+loop}}
+\item 
+struct \mbox{\hyperlink{structdrwav__smpl}{drwav\+\_\+smpl}}
+\item 
+struct \mbox{\hyperlink{structdrwav}{drwav}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{dr__wav_8h_ab1dfb36a3381290850e5afd7eb9ec2ad}{D\+R\+W\+A\+V\+\_\+\+T\+R\+UE}}~1
+\item 
+\#define \mbox{\hyperlink{dr__wav_8h_a093e5fd35f7001af6febcc540825fb28}{D\+R\+W\+A\+V\+\_\+\+F\+A\+L\+SE}}~0
+\item 
+\#define \mbox{\hyperlink{dr__wav_8h_a8804aa8b2267e5d0a5ebf433dbf433e3}{D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+P\+CM}}~0x1
+\item 
+\#define \mbox{\hyperlink{dr__wav_8h_ab3077a4d3e43aeb7769e5539274e6130}{D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+A\+D\+P\+CM}}~0x2
+\item 
+\#define \mbox{\hyperlink{dr__wav_8h_ade52a22af3dde8fa637e7258fc3c34a4}{D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+I\+E\+E\+E\+\_\+\+F\+L\+O\+AT}}~0x3
+\item 
+\#define \mbox{\hyperlink{dr__wav_8h_aac85303b228b086427890296bceaa243}{D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+A\+L\+AW}}~0x6
+\item 
+\#define \mbox{\hyperlink{dr__wav_8h_a662479788c14c01dbe4f6113d457c3c9}{D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+U\+L\+AW}}~0x7
+\item 
+\#define \mbox{\hyperlink{dr__wav_8h_a49a82fad306a802e50d401b602de3219}{D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+D\+V\+I\+\_\+\+A\+D\+P\+CM}}~0x11
+\item 
+\#define \mbox{\hyperlink{dr__wav_8h_a51c6c37a181cf259f3bf9057c6c052a0}{D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+E\+X\+T\+E\+N\+S\+I\+B\+LE}}~0x\+F\+F\+FE
+\item 
+\#define \mbox{\hyperlink{dr__wav_8h_afa31308fe6e6a0d80660cc713500d2a3}{D\+R\+W\+A\+V\+\_\+\+M\+A\+X\+\_\+\+S\+M\+P\+L\+\_\+\+L\+O\+O\+PS}}~1
+\item 
+\#define \mbox{\hyperlink{dr__wav_8h_a1bc62dedfa8f36a61810e9718d22f547}{D\+R\+W\+A\+V\+\_\+\+S\+E\+Q\+U\+E\+N\+T\+I\+AL}}~0x00000001
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{stdint_8h_aef44329758059c91c76d334e8fc09700}{int8\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a063338bd34acd049e152112d7e9ddeaf}{drwav\+\_\+int8}}
+\item 
+typedef \mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}}
+\item 
+typedef \mbox{\hyperlink{stdint_8h_a269259c924dce846340ddbb810db2e3c}{int16\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}}
+\item 
+typedef \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a9436f11d6a2b08331c7e759b62e60c55}{drwav\+\_\+uint16}}
+\item 
+typedef \mbox{\hyperlink{stdint_8h_ab1967d8591af1a4e48c37fd2b0f184d0}{int32\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}}
+\item 
+typedef \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}}
+\item 
+typedef \mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a76dd825eb3b3c61e8d54b5b322b6fe4d}{drwav\+\_\+int64}}
+\item 
+typedef \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}
+\item 
+typedef \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} \mbox{\hyperlink{dr__wav_8h_a041e9e1ee21cd25f007de7baf285d9fd}{drwav\+\_\+bool8}}
+\item 
+typedef \mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}} \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}}
+\item 
+typedef size\+\_\+t($\ast$ \mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}}) (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Buffer\+Out, size\+\_\+t bytes\+To\+Read)
+\item 
+typedef size\+\_\+t($\ast$ \mbox{\hyperlink{dr__wav_8h_abded69a687507b6572db8ce854891350}{drwav\+\_\+write\+\_\+proc}}) (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Data, size\+\_\+t bytes\+To\+Write)
+\item 
+typedef \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}}($\ast$ \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}) (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ae60229696c2ec17c9e00af4899bf738e}{offset}}, \mbox{\hyperlink{dr__wav_8h_aa0e83447af6f3534236fae01da003d8c}{drwav\+\_\+seek\+\_\+origin}} origin)
+\item 
+typedef \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}($\ast$ \mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}}) (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Chunk\+User\+Data, \mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Read\+Seek\+User\+Data, const \mbox{\hyperlink{structdrwav__chunk__header}{drwav\+\_\+chunk\+\_\+header}} $\ast$p\+Chunk\+Header)
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{dr__wav_8h_aa0e83447af6f3534236fae01da003d8c}{drwav\+\_\+seek\+\_\+origin}} \{ \mbox{\hyperlink{dr__wav_8h_aa0e83447af6f3534236fae01da003d8caab31d3894961ecc5e411e7b0b0ddca4d}{drwav\+\_\+seek\+\_\+origin\+\_\+start}}, 
+\mbox{\hyperlink{dr__wav_8h_aa0e83447af6f3534236fae01da003d8ca85a13e0d2d0131629ae390c288d056c4}{drwav\+\_\+seek\+\_\+origin\+\_\+current}}
+ \}
+\item 
+enum \mbox{\hyperlink{dr__wav_8h_a0d6b4071cf04dc3fb0d37bbd030c3993}{drwav\+\_\+container}} \{ \mbox{\hyperlink{dr__wav_8h_a0d6b4071cf04dc3fb0d37bbd030c3993a93fde41937ed3d8f34e56e2a449754aa}{drwav\+\_\+container\+\_\+riff}}, 
+\mbox{\hyperlink{dr__wav_8h_a0d6b4071cf04dc3fb0d37bbd030c3993a82e82b19721ae7fc0ee13a3b4689e5dc}{drwav\+\_\+container\+\_\+w64}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_a854de42cea8df698964e5f580f836e74}{drwav\+\_\+init}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_abe7e6b9b417ad4dacfc7ee879cc57fa9}{drwav\+\_\+init\+\_\+ex}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}} on\+Chunk, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Read\+Seek\+User\+Data, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Chunk\+User\+Data, \mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d4f56e54693280c6d9b1177c12c867d}{flags}})
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_acc45a41139fb7a168c81b5ef808fb3ed}{drwav\+\_\+init\+\_\+write}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format, \mbox{\hyperlink{dr__wav_8h_abded69a687507b6572db8ce854891350}{drwav\+\_\+write\+\_\+proc}} on\+Write, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_adf357a39f96898d50275f5b35797cf40}{drwav\+\_\+init\+\_\+write\+\_\+sequential}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} total\+Sample\+Count, \mbox{\hyperlink{dr__wav_8h_abded69a687507b6572db8ce854891350}{drwav\+\_\+write\+\_\+proc}} on\+Write, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a67a7e41d033d5d787fa59398622a40a7}{drwav\+\_\+uninit}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav)
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a45ca31e8284c6f653abce09baf14e2ae}{drwav\+\_\+open}} (\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data)
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a7453b140b69a08d0cea06460d251e1c4}{drwav\+\_\+open\+\_\+ex}} (\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}} on\+Chunk, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Read\+Seek\+User\+Data, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Chunk\+User\+Data, \mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d4f56e54693280c6d9b1177c12c867d}{flags}})
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a67c66b90af63ccff51fa559f479ef9cd}{drwav\+\_\+open\+\_\+write}} (const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format, \mbox{\hyperlink{dr__wav_8h_abded69a687507b6572db8ce854891350}{drwav\+\_\+write\+\_\+proc}} on\+Write, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data)
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a534736d3f499289d06d3046580de636b}{drwav\+\_\+open\+\_\+write\+\_\+sequential}} (const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} total\+Sample\+Count, \mbox{\hyperlink{dr__wav_8h_abded69a687507b6572db8ce854891350}{drwav\+\_\+write\+\_\+proc}} on\+Write, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_ad8bab60f34651ab3eeeba5fb602f538e}{drwav\+\_\+close}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav)
+\item 
+size\+\_\+t \mbox{\hyperlink{dr__wav_8h_ad51036bf902dca50c55ddf1fca519473}{drwav\+\_\+read\+\_\+raw}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, size\+\_\+t bytes\+To\+Read, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Buffer\+Out)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} \mbox{\hyperlink{dr__wav_8h_a39233d0594166a95a6722c33c499c22c}{drwav\+\_\+read\+\_\+pcm\+\_\+frames}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} frames\+To\+Read, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Buffer\+Out)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_a7c12272557aa5186a42b62e1ba264f06}{drwav\+\_\+seek\+\_\+to\+\_\+pcm\+\_\+frame}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} target\+Frame\+Index)
+\item 
+size\+\_\+t \mbox{\hyperlink{dr__wav_8h_a705c79486163795811d346a0db6403da}{drwav\+\_\+write\+\_\+raw}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, size\+\_\+t bytes\+To\+Write, const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Data)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} \mbox{\hyperlink{dr__wav_8h_a3a3c4537dcfc3b956779fbe8ba8b89d5}{drwav\+\_\+write\+\_\+pcm\+\_\+frames}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} frames\+To\+Write, const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Data)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} \mbox{\hyperlink{dr__wav_8h_a74e42a408b4f730718b71bea7869f2f0}{drwav\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s16}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} frames\+To\+Read, \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$p\+Buffer\+Out)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a024c7c1eea1ba8c9a0a550b694138d41}{drwav\+\_\+u8\+\_\+to\+\_\+s16}} (\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a24e1c7935e40ca9c88a5d375e0b461ad}{drwav\+\_\+s24\+\_\+to\+\_\+s16}} (\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_ac9a83beaf0d1608ec76380b036f22f81}{drwav\+\_\+s32\+\_\+to\+\_\+s16}} (\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a48a6036592c4a3a80227c1e30c6a9cf2}{drwav\+\_\+f32\+\_\+to\+\_\+s16}} (\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$p\+Out, const float $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a5e87ef06bd808a14ec64f399568281d0}{drwav\+\_\+f64\+\_\+to\+\_\+s16}} (\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$p\+Out, const double $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a500cad06f9449b625cc4395eff89c841}{drwav\+\_\+alaw\+\_\+to\+\_\+s16}} (\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a48115a87c11351e8d5b86948ae5cb783}{drwav\+\_\+mulaw\+\_\+to\+\_\+s16}} (\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} \mbox{\hyperlink{dr__wav_8h_af417e16f905ce4acd09ded09a4da82f8}{drwav\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+f32}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} frames\+To\+Read, float $\ast$p\+Buffer\+Out)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a349d187f48e5af160d0196ef49e9e082}{drwav\+\_\+u8\+\_\+to\+\_\+f32}} (float $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_af3d48564d88925e60591c5936fd903ed}{drwav\+\_\+s16\+\_\+to\+\_\+f32}} (float $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a85b2c8993ac1f213ab27b8d67e8a5e5b}{drwav\+\_\+s24\+\_\+to\+\_\+f32}} (float $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_ab4b0a003ee9330fc7a763b0f7c9b5adf}{drwav\+\_\+s32\+\_\+to\+\_\+f32}} (float $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a75d5210763a68baad6146e1ab8f35222}{drwav\+\_\+f64\+\_\+to\+\_\+f32}} (float $\ast$p\+Out, const double $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_ae2c778d56c8fb2d3da819c6e38592e53}{drwav\+\_\+alaw\+\_\+to\+\_\+f32}} (float $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a9963f1205746765fe6d2942b53d525f9}{drwav\+\_\+mulaw\+\_\+to\+\_\+f32}} (float $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} \mbox{\hyperlink{dr__wav_8h_af53ddc4cde3df8872dfe9a7b8803206c}{drwav\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s32}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} frames\+To\+Read, \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$p\+Buffer\+Out)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_ac53fb712f9e7457e9246f691e5d8d569}{drwav\+\_\+u8\+\_\+to\+\_\+s32}} (\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a159b695e48027e50ff7e2ef0cb470240}{drwav\+\_\+s16\+\_\+to\+\_\+s32}} (\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a268edcc427afdcf93b39698551f1c61a}{drwav\+\_\+s24\+\_\+to\+\_\+s32}} (\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a23845ce67cd06df4178ba64bfd2e0496}{drwav\+\_\+f32\+\_\+to\+\_\+s32}} (\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$p\+Out, const float $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a5be7ddad25b30720cc815bf0b21eb545}{drwav\+\_\+f64\+\_\+to\+\_\+s32}} (\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$p\+Out, const double $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a18a0177e1e69082919ef516dff966a5d}{drwav\+\_\+alaw\+\_\+to\+\_\+s32}} (\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_a8a8b463e0370743ea970956ce7177e2e}{drwav\+\_\+mulaw\+\_\+to\+\_\+s32}} (\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$p\+Out, const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$p\+In, size\+\_\+t sample\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_a8854c3af3a672724edc62bc5351b86a0}{drwav\+\_\+init\+\_\+file}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_a83dbb9e3d39f4a55c10c730de979a369}{drwav\+\_\+init\+\_\+file\+\_\+ex}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, \mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}} on\+Chunk, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Chunk\+User\+Data, \mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d4f56e54693280c6d9b1177c12c867d}{flags}})
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_af2b3790423ec1676852e91a3105b2f68}{drwav\+\_\+init\+\_\+file\+\_\+write}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_a2ce6881ce860b1ffad1110a11c0dcc5e}{drwav\+\_\+init\+\_\+file\+\_\+write\+\_\+sequential}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} total\+Sample\+Count)
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_aab1a884294a95b626cd6a07ea017746a}{drwav\+\_\+open\+\_\+file}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename)
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_aa3cce20c862844bb1fbf1bbc9fcf828b}{drwav\+\_\+open\+\_\+file\+\_\+ex}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, \mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}} on\+Chunk, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Chunk\+User\+Data, \mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d4f56e54693280c6d9b1177c12c867d}{flags}})
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_ae32c42903844fcd27940c4c33ee051ed}{drwav\+\_\+open\+\_\+file\+\_\+write}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format)
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a8310b1b802a8d7b785db5b3694ab69c8}{drwav\+\_\+open\+\_\+file\+\_\+write\+\_\+sequential}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} total\+Sample\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_ad77efb958572340c3a9a4842f5c25244}{drwav\+\_\+init\+\_\+memory}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, size\+\_\+t \mbox{\hyperlink{gl2ext_8h_a9ea2ddb297818884b1942bf375e45da4}{data\+Size}})
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_a128965c61a7eead67e098d6bddb1cdf2}{drwav\+\_\+init\+\_\+memory\+\_\+ex}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, size\+\_\+t \mbox{\hyperlink{gl2ext_8h_a9ea2ddb297818884b1942bf375e45da4}{data\+Size}}, \mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}} on\+Chunk, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Chunk\+User\+Data, \mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d4f56e54693280c6d9b1177c12c867d}{flags}})
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_add13bd59575bbf73516f050588d58ac6}{drwav\+\_\+init\+\_\+memory\+\_\+write}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$pp\+Data, size\+\_\+t $\ast$p\+Data\+Size, const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_aafdddd6653592a7990f5d22e82097df5}{drwav\+\_\+init\+\_\+memory\+\_\+write\+\_\+sequential}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$pp\+Data, size\+\_\+t $\ast$p\+Data\+Size, const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} total\+Sample\+Count)
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_ab3541916857b1eff8e76b0a052ce8a58}{drwav\+\_\+open\+\_\+memory}} (const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, size\+\_\+t \mbox{\hyperlink{gl2ext_8h_a9ea2ddb297818884b1942bf375e45da4}{data\+Size}})
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a3f5585baac2f9ebc582456581acc8e56}{drwav\+\_\+open\+\_\+memory\+\_\+ex}} (const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, size\+\_\+t \mbox{\hyperlink{gl2ext_8h_a9ea2ddb297818884b1942bf375e45da4}{data\+Size}}, \mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}} on\+Chunk, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Chunk\+User\+Data, \mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d4f56e54693280c6d9b1177c12c867d}{flags}})
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_aeb8f420eef810c3236827dee5dda3803}{drwav\+\_\+open\+\_\+memory\+\_\+write}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$pp\+Data, size\+\_\+t $\ast$p\+Data\+Size, const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format)
+\item 
+\mbox{\hyperlink{structdrwav}{drwav}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a6784b75e4d99270a46f23482298cc5f4}{drwav\+\_\+open\+\_\+memory\+\_\+write\+\_\+sequential}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$pp\+Data, size\+\_\+t $\ast$p\+Data\+Size, const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$p\+Format, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} total\+Sample\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a456ff68c5325eebe6f13ba71c0e7f32a}{drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s16}} (\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Frame\+Count)
+\item 
+float $\ast$ \mbox{\hyperlink{dr__wav_8h_ad60d21960b30b7a6656ac076f86cd950}{drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+f32}} (\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Frame\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a4bbbf49b2635368afe6c0e923681bbc9}{drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s32}} (\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Frame\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$ \mbox{\hyperlink{dr__wav_8h_afc4072f1ea74309ee2c3331df2a48d65}{drwav\+\_\+open\+\_\+file\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s16}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Frame\+Count)
+\item 
+float $\ast$ \mbox{\hyperlink{dr__wav_8h_a848af720689d6386eea87628a5d0c443}{drwav\+\_\+open\+\_\+file\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+f32}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Frame\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a1bec5845e916dc067004294be92c7e61}{drwav\+\_\+open\+\_\+file\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s32}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Frame\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$ \mbox{\hyperlink{dr__wav_8h_ac60bff4e50f0af033a7fdc4b3ce41a1a}{drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s16}} (const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, size\+\_\+t \mbox{\hyperlink{gl2ext_8h_a9ea2ddb297818884b1942bf375e45da4}{data\+Size}}, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Frame\+Count)
+\item 
+float $\ast$ \mbox{\hyperlink{dr__wav_8h_ae893586f5a464b8f41ddc495182ec90c}{drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+f32}} (const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, size\+\_\+t \mbox{\hyperlink{gl2ext_8h_a9ea2ddb297818884b1942bf375e45da4}{data\+Size}}, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Frame\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a3d5f976ade348cc461521373993660a2}{drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s32}} (const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, size\+\_\+t \mbox{\hyperlink{gl2ext_8h_a9ea2ddb297818884b1942bf375e45da4}{data\+Size}}, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Frame\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dr__wav_8h_af85f679b4b08b63ede1739bbd0393571}{drwav\+\_\+free}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Data\+Returned\+By\+Open\+And\+Read)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} \mbox{\hyperlink{dr__wav_8h_a6a08a93c478e313becb0583c3ccd2161}{drwav\+\_\+read}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} samples\+To\+Read, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Buffer\+Out)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} \mbox{\hyperlink{dr__wav_8h_a2f664abc5aa6720d807814aeee1bf503}{drwav\+\_\+read\+\_\+s16}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} samples\+To\+Read, \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$p\+Buffer\+Out)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} \mbox{\hyperlink{dr__wav_8h_afd99cb4c4304754642e8124ac850481c}{drwav\+\_\+read\+\_\+f32}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} samples\+To\+Read, float $\ast$p\+Buffer\+Out)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} \mbox{\hyperlink{dr__wav_8h_ab2294bc72486feb4105b35b93490645d}{drwav\+\_\+read\+\_\+s32}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} samples\+To\+Read, \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$p\+Buffer\+Out)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} \mbox{\hyperlink{dr__wav_8h_a837d7efc0bd768b2ff2a1fb98495c4fc}{drwav\+\_\+seek\+\_\+to\+\_\+sample}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} \mbox{\hyperlink{structsample}{sample}})
+\item 
+\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} \mbox{\hyperlink{dr__wav_8h_a83cf34f9deb521dec55015b81da1fd88}{drwav\+\_\+write}} (\mbox{\hyperlink{structdrwav}{drwav}} $\ast$p\+Wav, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} samples\+To\+Write, const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Data)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a0d1507b0fdcfd0682c2ce42034be7dcf}{drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+s16}} (\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Sample\+Count)
+\item 
+float $\ast$ \mbox{\hyperlink{dr__wav_8h_ac349f70d99f9f92800edad0a4535f647}{drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+f32}} (\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Sample\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$ \mbox{\hyperlink{dr__wav_8h_ae64ce1569cb89896af27e4454a70d325}{drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+s32}} (\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Sample\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$ \mbox{\hyperlink{dr__wav_8h_a8f1c82c79e7c4573b2fed85a38d7bef1}{drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+s16}} (const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, size\+\_\+t \mbox{\hyperlink{gl2ext_8h_a9ea2ddb297818884b1942bf375e45da4}{data\+Size}}, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Sample\+Count)
+\item 
+float $\ast$ \mbox{\hyperlink{dr__wav_8h_a63b527600b5793b4d4694cc47ef873af}{drwav\+\_\+open\+\_\+file\+\_\+and\+\_\+read\+\_\+f32}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Sample\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$ \mbox{\hyperlink{dr__wav_8h_ad02ca14c985a44c7b1c9016b3b2b47f7}{drwav\+\_\+open\+\_\+file\+\_\+and\+\_\+read\+\_\+s32}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Sample\+Count)
+\item 
+float $\ast$ \mbox{\hyperlink{dr__wav_8h_a12b25420503cbd062b060c482f7e2776}{drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+f32}} (const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, size\+\_\+t \mbox{\hyperlink{gl2ext_8h_a9ea2ddb297818884b1942bf375e45da4}{data\+Size}}, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Sample\+Count)
+\item 
+\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$ \mbox{\hyperlink{dr__wav_8h_aefc645f9ead93e60d5aa6f46b02afd26}{drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+s32}} (const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, size\+\_\+t \mbox{\hyperlink{gl2ext_8h_a9ea2ddb297818884b1942bf375e45da4}{data\+Size}}, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+Rate, \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$total\+Sample\+Count)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{dr__wav_8h_ab3077a4d3e43aeb7769e5539274e6130}\label{dr__wav_8h_ab3077a4d3e43aeb7769e5539274e6130}} 
+\index{dr\_wav.h@{dr\_wav.h}!DR\_WAVE\_FORMAT\_ADPCM@{DR\_WAVE\_FORMAT\_ADPCM}}
+\index{DR\_WAVE\_FORMAT\_ADPCM@{DR\_WAVE\_FORMAT\_ADPCM}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{DR\_WAVE\_FORMAT\_ADPCM}{DR\_WAVE\_FORMAT\_ADPCM}}
+{\footnotesize\ttfamily \#define D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+A\+D\+P\+CM~0x2}
+
+\mbox{\Hypertarget{dr__wav_8h_aac85303b228b086427890296bceaa243}\label{dr__wav_8h_aac85303b228b086427890296bceaa243}} 
+\index{dr\_wav.h@{dr\_wav.h}!DR\_WAVE\_FORMAT\_ALAW@{DR\_WAVE\_FORMAT\_ALAW}}
+\index{DR\_WAVE\_FORMAT\_ALAW@{DR\_WAVE\_FORMAT\_ALAW}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{DR\_WAVE\_FORMAT\_ALAW}{DR\_WAVE\_FORMAT\_ALAW}}
+{\footnotesize\ttfamily \#define D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+A\+L\+AW~0x6}
+
+\mbox{\Hypertarget{dr__wav_8h_a49a82fad306a802e50d401b602de3219}\label{dr__wav_8h_a49a82fad306a802e50d401b602de3219}} 
+\index{dr\_wav.h@{dr\_wav.h}!DR\_WAVE\_FORMAT\_DVI\_ADPCM@{DR\_WAVE\_FORMAT\_DVI\_ADPCM}}
+\index{DR\_WAVE\_FORMAT\_DVI\_ADPCM@{DR\_WAVE\_FORMAT\_DVI\_ADPCM}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{DR\_WAVE\_FORMAT\_DVI\_ADPCM}{DR\_WAVE\_FORMAT\_DVI\_ADPCM}}
+{\footnotesize\ttfamily \#define D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+D\+V\+I\+\_\+\+A\+D\+P\+CM~0x11}
+
+\mbox{\Hypertarget{dr__wav_8h_a51c6c37a181cf259f3bf9057c6c052a0}\label{dr__wav_8h_a51c6c37a181cf259f3bf9057c6c052a0}} 
+\index{dr\_wav.h@{dr\_wav.h}!DR\_WAVE\_FORMAT\_EXTENSIBLE@{DR\_WAVE\_FORMAT\_EXTENSIBLE}}
+\index{DR\_WAVE\_FORMAT\_EXTENSIBLE@{DR\_WAVE\_FORMAT\_EXTENSIBLE}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{DR\_WAVE\_FORMAT\_EXTENSIBLE}{DR\_WAVE\_FORMAT\_EXTENSIBLE}}
+{\footnotesize\ttfamily \#define D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+E\+X\+T\+E\+N\+S\+I\+B\+LE~0x\+F\+F\+FE}
+
+\mbox{\Hypertarget{dr__wav_8h_ade52a22af3dde8fa637e7258fc3c34a4}\label{dr__wav_8h_ade52a22af3dde8fa637e7258fc3c34a4}} 
+\index{dr\_wav.h@{dr\_wav.h}!DR\_WAVE\_FORMAT\_IEEE\_FLOAT@{DR\_WAVE\_FORMAT\_IEEE\_FLOAT}}
+\index{DR\_WAVE\_FORMAT\_IEEE\_FLOAT@{DR\_WAVE\_FORMAT\_IEEE\_FLOAT}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{DR\_WAVE\_FORMAT\_IEEE\_FLOAT}{DR\_WAVE\_FORMAT\_IEEE\_FLOAT}}
+{\footnotesize\ttfamily \#define D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+I\+E\+E\+E\+\_\+\+F\+L\+O\+AT~0x3}
+
+\mbox{\Hypertarget{dr__wav_8h_a662479788c14c01dbe4f6113d457c3c9}\label{dr__wav_8h_a662479788c14c01dbe4f6113d457c3c9}} 
+\index{dr\_wav.h@{dr\_wav.h}!DR\_WAVE\_FORMAT\_MULAW@{DR\_WAVE\_FORMAT\_MULAW}}
+\index{DR\_WAVE\_FORMAT\_MULAW@{DR\_WAVE\_FORMAT\_MULAW}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{DR\_WAVE\_FORMAT\_MULAW}{DR\_WAVE\_FORMAT\_MULAW}}
+{\footnotesize\ttfamily \#define D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+U\+L\+AW~0x7}
+
+\mbox{\Hypertarget{dr__wav_8h_a8804aa8b2267e5d0a5ebf433dbf433e3}\label{dr__wav_8h_a8804aa8b2267e5d0a5ebf433dbf433e3}} 
+\index{dr\_wav.h@{dr\_wav.h}!DR\_WAVE\_FORMAT\_PCM@{DR\_WAVE\_FORMAT\_PCM}}
+\index{DR\_WAVE\_FORMAT\_PCM@{DR\_WAVE\_FORMAT\_PCM}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{DR\_WAVE\_FORMAT\_PCM}{DR\_WAVE\_FORMAT\_PCM}}
+{\footnotesize\ttfamily \#define D\+R\+\_\+\+W\+A\+V\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+P\+CM~0x1}
+
+\mbox{\Hypertarget{dr__wav_8h_a093e5fd35f7001af6febcc540825fb28}\label{dr__wav_8h_a093e5fd35f7001af6febcc540825fb28}} 
+\index{dr\_wav.h@{dr\_wav.h}!DRWAV\_FALSE@{DRWAV\_FALSE}}
+\index{DRWAV\_FALSE@{DRWAV\_FALSE}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{DRWAV\_FALSE}{DRWAV\_FALSE}}
+{\footnotesize\ttfamily \#define D\+R\+W\+A\+V\+\_\+\+F\+A\+L\+SE~0}
+
+\mbox{\Hypertarget{dr__wav_8h_afa31308fe6e6a0d80660cc713500d2a3}\label{dr__wav_8h_afa31308fe6e6a0d80660cc713500d2a3}} 
+\index{dr\_wav.h@{dr\_wav.h}!DRWAV\_MAX\_SMPL\_LOOPS@{DRWAV\_MAX\_SMPL\_LOOPS}}
+\index{DRWAV\_MAX\_SMPL\_LOOPS@{DRWAV\_MAX\_SMPL\_LOOPS}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{DRWAV\_MAX\_SMPL\_LOOPS}{DRWAV\_MAX\_SMPL\_LOOPS}}
+{\footnotesize\ttfamily \#define D\+R\+W\+A\+V\+\_\+\+M\+A\+X\+\_\+\+S\+M\+P\+L\+\_\+\+L\+O\+O\+PS~1}
+
+\mbox{\Hypertarget{dr__wav_8h_a1bc62dedfa8f36a61810e9718d22f547}\label{dr__wav_8h_a1bc62dedfa8f36a61810e9718d22f547}} 
+\index{dr\_wav.h@{dr\_wav.h}!DRWAV\_SEQUENTIAL@{DRWAV\_SEQUENTIAL}}
+\index{DRWAV\_SEQUENTIAL@{DRWAV\_SEQUENTIAL}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{DRWAV\_SEQUENTIAL}{DRWAV\_SEQUENTIAL}}
+{\footnotesize\ttfamily \#define D\+R\+W\+A\+V\+\_\+\+S\+E\+Q\+U\+E\+N\+T\+I\+AL~0x00000001}
+
+\mbox{\Hypertarget{dr__wav_8h_ab1dfb36a3381290850e5afd7eb9ec2ad}\label{dr__wav_8h_ab1dfb36a3381290850e5afd7eb9ec2ad}} 
+\index{dr\_wav.h@{dr\_wav.h}!DRWAV\_TRUE@{DRWAV\_TRUE}}
+\index{DRWAV\_TRUE@{DRWAV\_TRUE}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{DRWAV\_TRUE}{DRWAV\_TRUE}}
+{\footnotesize\ttfamily \#define D\+R\+W\+A\+V\+\_\+\+T\+R\+UE~1}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}\label{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_bool32@{drwav\_bool32}}
+\index{drwav\_bool32@{drwav\_bool32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_bool32}{drwav\_bool32}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}} \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}}}
+
+\mbox{\Hypertarget{dr__wav_8h_a041e9e1ee21cd25f007de7baf285d9fd}\label{dr__wav_8h_a041e9e1ee21cd25f007de7baf285d9fd}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_bool8@{drwav\_bool8}}
+\index{drwav\_bool8@{drwav\_bool8}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_bool8}{drwav\_bool8}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} \mbox{\hyperlink{dr__wav_8h_a041e9e1ee21cd25f007de7baf285d9fd}{drwav\+\_\+bool8}}}
+
+\mbox{\Hypertarget{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}\label{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_chunk\_proc@{drwav\_chunk\_proc}}
+\index{drwav\_chunk\_proc@{drwav\_chunk\_proc}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_chunk\_proc}{drwav\_chunk\_proc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}($\ast$ drwav\+\_\+chunk\+\_\+proc) (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Chunk\+User\+Data, \mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}} on\+Read, \mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}} on\+Seek, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Read\+Seek\+User\+Data, const \mbox{\hyperlink{structdrwav__chunk__header}{drwav\+\_\+chunk\+\_\+header}} $\ast$p\+Chunk\+Header)}
+
+\mbox{\Hypertarget{dr__wav_8h_a6e863526e399700718dc709bb639f49c}\label{dr__wav_8h_a6e863526e399700718dc709bb639f49c}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_int16@{drwav\_int16}}
+\index{drwav\_int16@{drwav\_int16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_int16}{drwav\_int16}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{stdint_8h_a269259c924dce846340ddbb810db2e3c}{int16\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}}}
+
+\mbox{\Hypertarget{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}\label{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_int32@{drwav\_int32}}
+\index{drwav\_int32@{drwav\_int32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_int32}{drwav\_int32}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{stdint_8h_ab1967d8591af1a4e48c37fd2b0f184d0}{int32\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}}}
+
+\mbox{\Hypertarget{dr__wav_8h_a76dd825eb3b3c61e8d54b5b322b6fe4d}\label{dr__wav_8h_a76dd825eb3b3c61e8d54b5b322b6fe4d}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_int64@{drwav\_int64}}
+\index{drwav\_int64@{drwav\_int64}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_int64}{drwav\_int64}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a76dd825eb3b3c61e8d54b5b322b6fe4d}{drwav\+\_\+int64}}}
+
+\mbox{\Hypertarget{dr__wav_8h_a063338bd34acd049e152112d7e9ddeaf}\label{dr__wav_8h_a063338bd34acd049e152112d7e9ddeaf}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_int8@{drwav\_int8}}
+\index{drwav\_int8@{drwav\_int8}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_int8}{drwav\_int8}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{stdint_8h_aef44329758059c91c76d334e8fc09700}{int8\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a063338bd34acd049e152112d7e9ddeaf}{drwav\+\_\+int8}}}
+
+\mbox{\Hypertarget{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}\label{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_read\_proc@{drwav\_read\_proc}}
+\index{drwav\_read\_proc@{drwav\_read\_proc}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_read\_proc}{drwav\_read\_proc}}
+{\footnotesize\ttfamily typedef size\+\_\+t($\ast$ drwav\+\_\+read\+\_\+proc) (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Buffer\+Out, size\+\_\+t bytes\+To\+Read)}
+
+\mbox{\Hypertarget{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}\label{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_seek\_proc@{drwav\_seek\_proc}}
+\index{drwav\_seek\_proc@{drwav\_seek\_proc}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_seek\_proc}{drwav\_seek\_proc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}}($\ast$ drwav\+\_\+seek\+\_\+proc) (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ae60229696c2ec17c9e00af4899bf738e}{offset}}, \mbox{\hyperlink{dr__wav_8h_aa0e83447af6f3534236fae01da003d8c}{drwav\+\_\+seek\+\_\+origin}} origin)}
+
+\mbox{\Hypertarget{dr__wav_8h_a9436f11d6a2b08331c7e759b62e60c55}\label{dr__wav_8h_a9436f11d6a2b08331c7e759b62e60c55}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_uint16@{drwav\_uint16}}
+\index{drwav\_uint16@{drwav\_uint16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_uint16}{drwav\_uint16}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a9436f11d6a2b08331c7e759b62e60c55}{drwav\+\_\+uint16}}}
+
+\mbox{\Hypertarget{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}\label{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_uint32@{drwav\_uint32}}
+\index{drwav\_uint32@{drwav\_uint32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_uint32}{drwav\_uint32}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}}}
+
+\mbox{\Hypertarget{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}\label{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_uint64@{drwav\_uint64}}
+\index{drwav\_uint64@{drwav\_uint64}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_uint64}{drwav\_uint64}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}
+
+\mbox{\Hypertarget{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}\label{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_uint8@{drwav\_uint8}}
+\index{drwav\_uint8@{drwav\_uint8}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_uint8}{drwav\_uint8}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}}}
+
+\mbox{\Hypertarget{dr__wav_8h_abded69a687507b6572db8ce854891350}\label{dr__wav_8h_abded69a687507b6572db8ce854891350}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_write\_proc@{drwav\_write\_proc}}
+\index{drwav\_write\_proc@{drwav\_write\_proc}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_write\_proc}{drwav\_write\_proc}}
+{\footnotesize\ttfamily typedef size\+\_\+t($\ast$ drwav\+\_\+write\+\_\+proc) (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+User\+Data, const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$p\+Data, size\+\_\+t bytes\+To\+Write)}
+
+
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{dr__wav_8h_a0d6b4071cf04dc3fb0d37bbd030c3993}\label{dr__wav_8h_a0d6b4071cf04dc3fb0d37bbd030c3993}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_container@{drwav\_container}}
+\index{drwav\_container@{drwav\_container}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_container}{drwav\_container}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{dr__wav_8h_a0d6b4071cf04dc3fb0d37bbd030c3993}{drwav\+\_\+container}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{drwav\_container\_riff@{drwav\_container\_riff}!dr\_wav.h@{dr\_wav.h}}\index{dr\_wav.h@{dr\_wav.h}!drwav\_container\_riff@{drwav\_container\_riff}}}\mbox{\Hypertarget{dr__wav_8h_a0d6b4071cf04dc3fb0d37bbd030c3993a93fde41937ed3d8f34e56e2a449754aa}\label{dr__wav_8h_a0d6b4071cf04dc3fb0d37bbd030c3993a93fde41937ed3d8f34e56e2a449754aa}} 
+drwav\+\_\+container\+\_\+riff&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{drwav\_container\_w64@{drwav\_container\_w64}!dr\_wav.h@{dr\_wav.h}}\index{dr\_wav.h@{dr\_wav.h}!drwav\_container\_w64@{drwav\_container\_w64}}}\mbox{\Hypertarget{dr__wav_8h_a0d6b4071cf04dc3fb0d37bbd030c3993a82e82b19721ae7fc0ee13a3b4689e5dc}\label{dr__wav_8h_a0d6b4071cf04dc3fb0d37bbd030c3993a82e82b19721ae7fc0ee13a3b4689e5dc}} 
+drwav\+\_\+container\+\_\+w64&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{dr__wav_8h_aa0e83447af6f3534236fae01da003d8c}\label{dr__wav_8h_aa0e83447af6f3534236fae01da003d8c}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_seek\_origin@{drwav\_seek\_origin}}
+\index{drwav\_seek\_origin@{drwav\_seek\_origin}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_seek\_origin}{drwav\_seek\_origin}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{dr__wav_8h_aa0e83447af6f3534236fae01da003d8c}{drwav\+\_\+seek\+\_\+origin}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{drwav\_seek\_origin\_start@{drwav\_seek\_origin\_start}!dr\_wav.h@{dr\_wav.h}}\index{dr\_wav.h@{dr\_wav.h}!drwav\_seek\_origin\_start@{drwav\_seek\_origin\_start}}}\mbox{\Hypertarget{dr__wav_8h_aa0e83447af6f3534236fae01da003d8caab31d3894961ecc5e411e7b0b0ddca4d}\label{dr__wav_8h_aa0e83447af6f3534236fae01da003d8caab31d3894961ecc5e411e7b0b0ddca4d}} 
+drwav\+\_\+seek\+\_\+origin\+\_\+start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{drwav\_seek\_origin\_current@{drwav\_seek\_origin\_current}!dr\_wav.h@{dr\_wav.h}}\index{dr\_wav.h@{dr\_wav.h}!drwav\_seek\_origin\_current@{drwav\_seek\_origin\_current}}}\mbox{\Hypertarget{dr__wav_8h_aa0e83447af6f3534236fae01da003d8ca85a13e0d2d0131629ae390c288d056c4}\label{dr__wav_8h_aa0e83447af6f3534236fae01da003d8ca85a13e0d2d0131629ae390c288d056c4}} 
+drwav\+\_\+seek\+\_\+origin\+\_\+current&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{dr__wav_8h_ae2c778d56c8fb2d3da819c6e38592e53}\label{dr__wav_8h_ae2c778d56c8fb2d3da819c6e38592e53}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_alaw\_to\_f32@{drwav\_alaw\_to\_f32}}
+\index{drwav\_alaw\_to\_f32@{drwav\_alaw\_to\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_alaw\_to\_f32()}{drwav\_alaw\_to\_f32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+alaw\+\_\+to\+\_\+f32 (\begin{DoxyParamCaption}\item[{float $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a500cad06f9449b625cc4395eff89c841}\label{dr__wav_8h_a500cad06f9449b625cc4395eff89c841}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_alaw\_to\_s16@{drwav\_alaw\_to\_s16}}
+\index{drwav\_alaw\_to\_s16@{drwav\_alaw\_to\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_alaw\_to\_s16()}{drwav\_alaw\_to\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+alaw\+\_\+to\+\_\+s16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a18a0177e1e69082919ef516dff966a5d}\label{dr__wav_8h_a18a0177e1e69082919ef516dff966a5d}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_alaw\_to\_s32@{drwav\_alaw\_to\_s32}}
+\index{drwav\_alaw\_to\_s32@{drwav\_alaw\_to\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_alaw\_to\_s32()}{drwav\_alaw\_to\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+alaw\+\_\+to\+\_\+s32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ad8bab60f34651ab3eeeba5fb602f538e}\label{dr__wav_8h_ad8bab60f34651ab3eeeba5fb602f538e}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_close@{drwav\_close}}
+\index{drwav\_close@{drwav\_close}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_close()}{drwav\_close()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a48a6036592c4a3a80227c1e30c6a9cf2}\label{dr__wav_8h_a48a6036592c4a3a80227c1e30c6a9cf2}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_f32\_to\_s16@{drwav\_f32\_to\_s16}}
+\index{drwav\_f32\_to\_s16@{drwav\_f32\_to\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_f32\_to\_s16()}{drwav\_f32\_to\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+f32\+\_\+to\+\_\+s16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$}]{p\+Out,  }\item[{const float $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a23845ce67cd06df4178ba64bfd2e0496}\label{dr__wav_8h_a23845ce67cd06df4178ba64bfd2e0496}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_f32\_to\_s32@{drwav\_f32\_to\_s32}}
+\index{drwav\_f32\_to\_s32@{drwav\_f32\_to\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_f32\_to\_s32()}{drwav\_f32\_to\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+f32\+\_\+to\+\_\+s32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$}]{p\+Out,  }\item[{const float $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a75d5210763a68baad6146e1ab8f35222}\label{dr__wav_8h_a75d5210763a68baad6146e1ab8f35222}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_f64\_to\_f32@{drwav\_f64\_to\_f32}}
+\index{drwav\_f64\_to\_f32@{drwav\_f64\_to\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_f64\_to\_f32()}{drwav\_f64\_to\_f32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+f64\+\_\+to\+\_\+f32 (\begin{DoxyParamCaption}\item[{float $\ast$}]{p\+Out,  }\item[{const double $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a5e87ef06bd808a14ec64f399568281d0}\label{dr__wav_8h_a5e87ef06bd808a14ec64f399568281d0}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_f64\_to\_s16@{drwav\_f64\_to\_s16}}
+\index{drwav\_f64\_to\_s16@{drwav\_f64\_to\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_f64\_to\_s16()}{drwav\_f64\_to\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+f64\+\_\+to\+\_\+s16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$}]{p\+Out,  }\item[{const double $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a5be7ddad25b30720cc815bf0b21eb545}\label{dr__wav_8h_a5be7ddad25b30720cc815bf0b21eb545}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_f64\_to\_s32@{drwav\_f64\_to\_s32}}
+\index{drwav\_f64\_to\_s32@{drwav\_f64\_to\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_f64\_to\_s32()}{drwav\_f64\_to\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+f64\+\_\+to\+\_\+s32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$}]{p\+Out,  }\item[{const double $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_af85f679b4b08b63ede1739bbd0393571}\label{dr__wav_8h_af85f679b4b08b63ede1739bbd0393571}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_free@{drwav\_free}}
+\index{drwav\_free@{drwav\_free}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_free()}{drwav\_free()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Data\+Returned\+By\+Open\+And\+Read }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a854de42cea8df698964e5f580f836e74}\label{dr__wav_8h_a854de42cea8df698964e5f580f836e74}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init@{drwav\_init}}
+\index{drwav\_init@{drwav\_init}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init()}{drwav\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}}}]{on\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_abe7e6b9b417ad4dacfc7ee879cc57fa9}\label{dr__wav_8h_abe7e6b9b417ad4dacfc7ee879cc57fa9}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init\_ex@{drwav\_init\_ex}}
+\index{drwav\_init\_ex@{drwav\_init\_ex}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init\_ex()}{drwav\_init\_ex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init\+\_\+ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}}}]{on\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}}}]{on\+Chunk,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Read\+Seek\+User\+Data,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Chunk\+User\+Data,  }\item[{\mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}}}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a8854c3af3a672724edc62bc5351b86a0}\label{dr__wav_8h_a8854c3af3a672724edc62bc5351b86a0}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init\_file@{drwav\_init\_file}}
+\index{drwav\_init\_file@{drwav\_init\_file}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init\_file()}{drwav\_init\_file()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a83dbb9e3d39f4a55c10c730de979a369}\label{dr__wav_8h_a83dbb9e3d39f4a55c10c730de979a369}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init\_file\_ex@{drwav\_init\_file\_ex}}
+\index{drwav\_init\_file\_ex@{drwav\_init\_file\_ex}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init\_file\_ex()}{drwav\_init\_file\_ex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init\+\_\+file\+\_\+ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{\mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}}}]{on\+Chunk,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Chunk\+User\+Data,  }\item[{\mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}}}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_af2b3790423ec1676852e91a3105b2f68}\label{dr__wav_8h_af2b3790423ec1676852e91a3105b2f68}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init\_file\_write@{drwav\_init\_file\_write}}
+\index{drwav\_init\_file\_write@{drwav\_init\_file\_write}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init\_file\_write()}{drwav\_init\_file\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init\+\_\+file\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a2ce6881ce860b1ffad1110a11c0dcc5e}\label{dr__wav_8h_a2ce6881ce860b1ffad1110a11c0dcc5e}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init\_file\_write\_sequential@{drwav\_init\_file\_write\_sequential}}
+\index{drwav\_init\_file\_write\_sequential@{drwav\_init\_file\_write\_sequential}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init\_file\_write\_sequential()}{drwav\_init\_file\_write\_sequential()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init\+\_\+file\+\_\+write\+\_\+sequential (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ad77efb958572340c3a9a4842f5c25244}\label{dr__wav_8h_ad77efb958572340c3a9a4842f5c25244}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init\_memory@{drwav\_init\_memory}}
+\index{drwav\_init\_memory@{drwav\_init\_memory}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init\_memory()}{drwav\_init\_memory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init\+\_\+memory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{size\+\_\+t}]{data\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a128965c61a7eead67e098d6bddb1cdf2}\label{dr__wav_8h_a128965c61a7eead67e098d6bddb1cdf2}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init\_memory\_ex@{drwav\_init\_memory\_ex}}
+\index{drwav\_init\_memory\_ex@{drwav\_init\_memory\_ex}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init\_memory\_ex()}{drwav\_init\_memory\_ex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init\+\_\+memory\+\_\+ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{size\+\_\+t}]{data\+Size,  }\item[{\mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}}}]{on\+Chunk,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Chunk\+User\+Data,  }\item[{\mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}}}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_add13bd59575bbf73516f050588d58ac6}\label{dr__wav_8h_add13bd59575bbf73516f050588d58ac6}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init\_memory\_write@{drwav\_init\_memory\_write}}
+\index{drwav\_init\_memory\_write@{drwav\_init\_memory\_write}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init\_memory\_write()}{drwav\_init\_memory\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init\+\_\+memory\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$}]{pp\+Data,  }\item[{size\+\_\+t $\ast$}]{p\+Data\+Size,  }\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_aafdddd6653592a7990f5d22e82097df5}\label{dr__wav_8h_aafdddd6653592a7990f5d22e82097df5}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init\_memory\_write\_sequential@{drwav\_init\_memory\_write\_sequential}}
+\index{drwav\_init\_memory\_write\_sequential@{drwav\_init\_memory\_write\_sequential}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init\_memory\_write\_sequential()}{drwav\_init\_memory\_write\_sequential()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init\+\_\+memory\+\_\+write\+\_\+sequential (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$}]{pp\+Data,  }\item[{size\+\_\+t $\ast$}]{p\+Data\+Size,  }\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_acc45a41139fb7a168c81b5ef808fb3ed}\label{dr__wav_8h_acc45a41139fb7a168c81b5ef808fb3ed}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init\_write@{drwav\_init\_write}}
+\index{drwav\_init\_write@{drwav\_init\_write}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init\_write()}{drwav\_init\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format,  }\item[{\mbox{\hyperlink{dr__wav_8h_abded69a687507b6572db8ce854891350}{drwav\+\_\+write\+\_\+proc}}}]{on\+Write,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_adf357a39f96898d50275f5b35797cf40}\label{dr__wav_8h_adf357a39f96898d50275f5b35797cf40}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_init\_write\_sequential@{drwav\_init\_write\_sequential}}
+\index{drwav\_init\_write\_sequential@{drwav\_init\_write\_sequential}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_init\_write\_sequential()}{drwav\_init\_write\_sequential()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+init\+\_\+write\+\_\+sequential (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{total\+Sample\+Count,  }\item[{\mbox{\hyperlink{dr__wav_8h_abded69a687507b6572db8ce854891350}{drwav\+\_\+write\+\_\+proc}}}]{on\+Write,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a9963f1205746765fe6d2942b53d525f9}\label{dr__wav_8h_a9963f1205746765fe6d2942b53d525f9}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_mulaw\_to\_f32@{drwav\_mulaw\_to\_f32}}
+\index{drwav\_mulaw\_to\_f32@{drwav\_mulaw\_to\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_mulaw\_to\_f32()}{drwav\_mulaw\_to\_f32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+mulaw\+\_\+to\+\_\+f32 (\begin{DoxyParamCaption}\item[{float $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a48115a87c11351e8d5b86948ae5cb783}\label{dr__wav_8h_a48115a87c11351e8d5b86948ae5cb783}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_mulaw\_to\_s16@{drwav\_mulaw\_to\_s16}}
+\index{drwav\_mulaw\_to\_s16@{drwav\_mulaw\_to\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_mulaw\_to\_s16()}{drwav\_mulaw\_to\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+mulaw\+\_\+to\+\_\+s16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a8a8b463e0370743ea970956ce7177e2e}\label{dr__wav_8h_a8a8b463e0370743ea970956ce7177e2e}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_mulaw\_to\_s32@{drwav\_mulaw\_to\_s32}}
+\index{drwav\_mulaw\_to\_s32@{drwav\_mulaw\_to\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_mulaw\_to\_s32()}{drwav\_mulaw\_to\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+mulaw\+\_\+to\+\_\+s32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a45ca31e8284c6f653abce09baf14e2ae}\label{dr__wav_8h_a45ca31e8284c6f653abce09baf14e2ae}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open@{drwav\_open}}
+\index{drwav\_open@{drwav\_open}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open()}{drwav\_open()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}}}]{on\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ac349f70d99f9f92800edad0a4535f647}\label{dr__wav_8h_ac349f70d99f9f92800edad0a4535f647}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_and\_read\_f32@{drwav\_open\_and\_read\_f32}}
+\index{drwav\_open\_and\_read\_f32@{drwav\_open\_and\_read\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_and\_read\_f32()}{drwav\_open\_and\_read\_f32()}}
+{\footnotesize\ttfamily float$\ast$ drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+f32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}}}]{on\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ad60d21960b30b7a6656ac076f86cd950}\label{dr__wav_8h_ad60d21960b30b7a6656ac076f86cd950}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_and\_read\_pcm\_frames\_f32@{drwav\_open\_and\_read\_pcm\_frames\_f32}}
+\index{drwav\_open\_and\_read\_pcm\_frames\_f32@{drwav\_open\_and\_read\_pcm\_frames\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_and\_read\_pcm\_frames\_f32()}{drwav\_open\_and\_read\_pcm\_frames\_f32()}}
+{\footnotesize\ttfamily float$\ast$ drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+f32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}}}]{on\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Frame\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a456ff68c5325eebe6f13ba71c0e7f32a}\label{dr__wav_8h_a456ff68c5325eebe6f13ba71c0e7f32a}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_and\_read\_pcm\_frames\_s16@{drwav\_open\_and\_read\_pcm\_frames\_s16}}
+\index{drwav\_open\_and\_read\_pcm\_frames\_s16@{drwav\_open\_and\_read\_pcm\_frames\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_and\_read\_pcm\_frames\_s16()}{drwav\_open\_and\_read\_pcm\_frames\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}}$\ast$ drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}}}]{on\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Frame\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a4bbbf49b2635368afe6c0e923681bbc9}\label{dr__wav_8h_a4bbbf49b2635368afe6c0e923681bbc9}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_and\_read\_pcm\_frames\_s32@{drwav\_open\_and\_read\_pcm\_frames\_s32}}
+\index{drwav\_open\_and\_read\_pcm\_frames\_s32@{drwav\_open\_and\_read\_pcm\_frames\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_and\_read\_pcm\_frames\_s32()}{drwav\_open\_and\_read\_pcm\_frames\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}}$\ast$ drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}}}]{on\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Frame\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a0d1507b0fdcfd0682c2ce42034be7dcf}\label{dr__wav_8h_a0d1507b0fdcfd0682c2ce42034be7dcf}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_and\_read\_s16@{drwav\_open\_and\_read\_s16}}
+\index{drwav\_open\_and\_read\_s16@{drwav\_open\_and\_read\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_and\_read\_s16()}{drwav\_open\_and\_read\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}}$\ast$ drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+s16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}}}]{on\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ae64ce1569cb89896af27e4454a70d325}\label{dr__wav_8h_ae64ce1569cb89896af27e4454a70d325}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_and\_read\_s32@{drwav\_open\_and\_read\_s32}}
+\index{drwav\_open\_and\_read\_s32@{drwav\_open\_and\_read\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_and\_read\_s32()}{drwav\_open\_and\_read\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}}$\ast$ drwav\+\_\+open\+\_\+and\+\_\+read\+\_\+s32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}}}]{on\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a7453b140b69a08d0cea06460d251e1c4}\label{dr__wav_8h_a7453b140b69a08d0cea06460d251e1c4}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_ex@{drwav\_open\_ex}}
+\index{drwav\_open\_ex@{drwav\_open\_ex}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_ex()}{drwav\_open\_ex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open\+\_\+ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_af6936eb29cda3efef3190c60f59116c8}{drwav\+\_\+read\+\_\+proc}}}]{on\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}}}]{on\+Chunk,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Read\+Seek\+User\+Data,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Chunk\+User\+Data,  }\item[{\mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}}}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_aab1a884294a95b626cd6a07ea017746a}\label{dr__wav_8h_aab1a884294a95b626cd6a07ea017746a}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_file@{drwav\_open\_file}}
+\index{drwav\_open\_file@{drwav\_open\_file}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_file()}{drwav\_open\_file()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open\+\_\+file (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a63b527600b5793b4d4694cc47ef873af}\label{dr__wav_8h_a63b527600b5793b4d4694cc47ef873af}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_file\_and\_read\_f32@{drwav\_open\_file\_and\_read\_f32}}
+\index{drwav\_open\_file\_and\_read\_f32@{drwav\_open\_file\_and\_read\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_file\_and\_read\_f32()}{drwav\_open\_file\_and\_read\_f32()}}
+{\footnotesize\ttfamily float$\ast$ drwav\+\_\+open\+\_\+file\+\_\+and\+\_\+read\+\_\+f32 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a848af720689d6386eea87628a5d0c443}\label{dr__wav_8h_a848af720689d6386eea87628a5d0c443}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_file\_and\_read\_pcm\_frames\_f32@{drwav\_open\_file\_and\_read\_pcm\_frames\_f32}}
+\index{drwav\_open\_file\_and\_read\_pcm\_frames\_f32@{drwav\_open\_file\_and\_read\_pcm\_frames\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_file\_and\_read\_pcm\_frames\_f32()}{drwav\_open\_file\_and\_read\_pcm\_frames\_f32()}}
+{\footnotesize\ttfamily float$\ast$ drwav\+\_\+open\+\_\+file\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+f32 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Frame\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_afc4072f1ea74309ee2c3331df2a48d65}\label{dr__wav_8h_afc4072f1ea74309ee2c3331df2a48d65}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_file\_and\_read\_pcm\_frames\_s16@{drwav\_open\_file\_and\_read\_pcm\_frames\_s16}}
+\index{drwav\_open\_file\_and\_read\_pcm\_frames\_s16@{drwav\_open\_file\_and\_read\_pcm\_frames\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_file\_and\_read\_pcm\_frames\_s16()}{drwav\_open\_file\_and\_read\_pcm\_frames\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}}$\ast$ drwav\+\_\+open\+\_\+file\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s16 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Frame\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a1bec5845e916dc067004294be92c7e61}\label{dr__wav_8h_a1bec5845e916dc067004294be92c7e61}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_file\_and\_read\_pcm\_frames\_s32@{drwav\_open\_file\_and\_read\_pcm\_frames\_s32}}
+\index{drwav\_open\_file\_and\_read\_pcm\_frames\_s32@{drwav\_open\_file\_and\_read\_pcm\_frames\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_file\_and\_read\_pcm\_frames\_s32()}{drwav\_open\_file\_and\_read\_pcm\_frames\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}}$\ast$ drwav\+\_\+open\+\_\+file\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s32 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Frame\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ad02ca14c985a44c7b1c9016b3b2b47f7}\label{dr__wav_8h_ad02ca14c985a44c7b1c9016b3b2b47f7}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_file\_and\_read\_s32@{drwav\_open\_file\_and\_read\_s32}}
+\index{drwav\_open\_file\_and\_read\_s32@{drwav\_open\_file\_and\_read\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_file\_and\_read\_s32()}{drwav\_open\_file\_and\_read\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}}$\ast$ drwav\+\_\+open\+\_\+file\+\_\+and\+\_\+read\+\_\+s32 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_aa3cce20c862844bb1fbf1bbc9fcf828b}\label{dr__wav_8h_aa3cce20c862844bb1fbf1bbc9fcf828b}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_file\_ex@{drwav\_open\_file\_ex}}
+\index{drwav\_open\_file\_ex@{drwav\_open\_file\_ex}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_file\_ex()}{drwav\_open\_file\_ex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open\+\_\+file\+\_\+ex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{\mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}}}]{on\+Chunk,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Chunk\+User\+Data,  }\item[{\mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}}}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ae32c42903844fcd27940c4c33ee051ed}\label{dr__wav_8h_ae32c42903844fcd27940c4c33ee051ed}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_file\_write@{drwav\_open\_file\_write}}
+\index{drwav\_open\_file\_write@{drwav\_open\_file\_write}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_file\_write()}{drwav\_open\_file\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open\+\_\+file\+\_\+write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a8310b1b802a8d7b785db5b3694ab69c8}\label{dr__wav_8h_a8310b1b802a8d7b785db5b3694ab69c8}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_file\_write\_sequential@{drwav\_open\_file\_write\_sequential}}
+\index{drwav\_open\_file\_write\_sequential@{drwav\_open\_file\_write\_sequential}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_file\_write\_sequential()}{drwav\_open\_file\_write\_sequential()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open\+\_\+file\+\_\+write\+\_\+sequential (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ab3541916857b1eff8e76b0a052ce8a58}\label{dr__wav_8h_ab3541916857b1eff8e76b0a052ce8a58}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_memory@{drwav\_open\_memory}}
+\index{drwav\_open\_memory@{drwav\_open\_memory}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_memory()}{drwav\_open\_memory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open\+\_\+memory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{size\+\_\+t}]{data\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a12b25420503cbd062b060c482f7e2776}\label{dr__wav_8h_a12b25420503cbd062b060c482f7e2776}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_memory\_and\_read\_f32@{drwav\_open\_memory\_and\_read\_f32}}
+\index{drwav\_open\_memory\_and\_read\_f32@{drwav\_open\_memory\_and\_read\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_memory\_and\_read\_f32()}{drwav\_open\_memory\_and\_read\_f32()}}
+{\footnotesize\ttfamily float$\ast$ drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+f32 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{size\+\_\+t}]{data\+Size,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ae893586f5a464b8f41ddc495182ec90c}\label{dr__wav_8h_ae893586f5a464b8f41ddc495182ec90c}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_memory\_and\_read\_pcm\_frames\_f32@{drwav\_open\_memory\_and\_read\_pcm\_frames\_f32}}
+\index{drwav\_open\_memory\_and\_read\_pcm\_frames\_f32@{drwav\_open\_memory\_and\_read\_pcm\_frames\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_memory\_and\_read\_pcm\_frames\_f32()}{drwav\_open\_memory\_and\_read\_pcm\_frames\_f32()}}
+{\footnotesize\ttfamily float$\ast$ drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+f32 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{size\+\_\+t}]{data\+Size,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Frame\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ac60bff4e50f0af033a7fdc4b3ce41a1a}\label{dr__wav_8h_ac60bff4e50f0af033a7fdc4b3ce41a1a}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_memory\_and\_read\_pcm\_frames\_s16@{drwav\_open\_memory\_and\_read\_pcm\_frames\_s16}}
+\index{drwav\_open\_memory\_and\_read\_pcm\_frames\_s16@{drwav\_open\_memory\_and\_read\_pcm\_frames\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_memory\_and\_read\_pcm\_frames\_s16()}{drwav\_open\_memory\_and\_read\_pcm\_frames\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}}$\ast$ drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s16 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{size\+\_\+t}]{data\+Size,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Frame\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a3d5f976ade348cc461521373993660a2}\label{dr__wav_8h_a3d5f976ade348cc461521373993660a2}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_memory\_and\_read\_pcm\_frames\_s32@{drwav\_open\_memory\_and\_read\_pcm\_frames\_s32}}
+\index{drwav\_open\_memory\_and\_read\_pcm\_frames\_s32@{drwav\_open\_memory\_and\_read\_pcm\_frames\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_memory\_and\_read\_pcm\_frames\_s32()}{drwav\_open\_memory\_and\_read\_pcm\_frames\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}}$\ast$ drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s32 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{size\+\_\+t}]{data\+Size,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Frame\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a8f1c82c79e7c4573b2fed85a38d7bef1}\label{dr__wav_8h_a8f1c82c79e7c4573b2fed85a38d7bef1}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_memory\_and\_read\_s16@{drwav\_open\_memory\_and\_read\_s16}}
+\index{drwav\_open\_memory\_and\_read\_s16@{drwav\_open\_memory\_and\_read\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_memory\_and\_read\_s16()}{drwav\_open\_memory\_and\_read\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$ drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+s16 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{size\+\_\+t}]{data\+Size,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_aefc645f9ead93e60d5aa6f46b02afd26}\label{dr__wav_8h_aefc645f9ead93e60d5aa6f46b02afd26}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_memory\_and\_read\_s32@{drwav\_open\_memory\_and\_read\_s32}}
+\index{drwav\_open\_memory\_and\_read\_s32@{drwav\_open\_memory\_and\_read\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_memory\_and\_read\_s32()}{drwav\_open\_memory\_and\_read\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}}$\ast$ drwav\+\_\+open\+\_\+memory\+\_\+and\+\_\+read\+\_\+s32 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{size\+\_\+t}]{data\+Size,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+Rate,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} $\ast$}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a3f5585baac2f9ebc582456581acc8e56}\label{dr__wav_8h_a3f5585baac2f9ebc582456581acc8e56}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_memory\_ex@{drwav\_open\_memory\_ex}}
+\index{drwav\_open\_memory\_ex@{drwav\_open\_memory\_ex}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_memory\_ex()}{drwav\_open\_memory\_ex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open\+\_\+memory\+\_\+ex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{size\+\_\+t}]{data\+Size,  }\item[{\mbox{\hyperlink{dr__wav_8h_a49662b80cb21029d46a30f54cbe6c5f6}{drwav\+\_\+chunk\+\_\+proc}}}]{on\+Chunk,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Chunk\+User\+Data,  }\item[{\mbox{\hyperlink{dr__wav_8h_abc45fec3e082fc2382791d8caaab4f92}{drwav\+\_\+uint32}}}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_aeb8f420eef810c3236827dee5dda3803}\label{dr__wav_8h_aeb8f420eef810c3236827dee5dda3803}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_memory\_write@{drwav\_open\_memory\_write}}
+\index{drwav\_open\_memory\_write@{drwav\_open\_memory\_write}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_memory\_write()}{drwav\_open\_memory\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open\+\_\+memory\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$}]{pp\+Data,  }\item[{size\+\_\+t $\ast$}]{p\+Data\+Size,  }\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a6784b75e4d99270a46f23482298cc5f4}\label{dr__wav_8h_a6784b75e4d99270a46f23482298cc5f4}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_memory\_write\_sequential@{drwav\_open\_memory\_write\_sequential}}
+\index{drwav\_open\_memory\_write\_sequential@{drwav\_open\_memory\_write\_sequential}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_memory\_write\_sequential()}{drwav\_open\_memory\_write\_sequential()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open\+\_\+memory\+\_\+write\+\_\+sequential (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$}]{pp\+Data,  }\item[{size\+\_\+t $\ast$}]{p\+Data\+Size,  }\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{total\+Sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a67c66b90af63ccff51fa559f479ef9cd}\label{dr__wav_8h_a67c66b90af63ccff51fa559f479ef9cd}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_write@{drwav\_open\_write}}
+\index{drwav\_open\_write@{drwav\_open\_write}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_write()}{drwav\_open\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open\+\_\+write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format,  }\item[{\mbox{\hyperlink{dr__wav_8h_abded69a687507b6572db8ce854891350}{drwav\+\_\+write\+\_\+proc}}}]{on\+Write,  }\item[{\mbox{\hyperlink{dr__wav_8h_a38fb9d5d047556e6681dccb8ae82a154}{drwav\+\_\+seek\+\_\+proc}}}]{on\+Seek,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a534736d3f499289d06d3046580de636b}\label{dr__wav_8h_a534736d3f499289d06d3046580de636b}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_open\_write\_sequential@{drwav\_open\_write\_sequential}}
+\index{drwav\_open\_write\_sequential@{drwav\_open\_write\_sequential}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_open\_write\_sequential()}{drwav\_open\_write\_sequential()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrwav}{drwav}}$\ast$ drwav\+\_\+open\+\_\+write\+\_\+sequential (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdrwav__data__format}{drwav\+\_\+data\+\_\+format}} $\ast$}]{p\+Format,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{total\+Sample\+Count,  }\item[{\mbox{\hyperlink{dr__wav_8h_abded69a687507b6572db8ce854891350}{drwav\+\_\+write\+\_\+proc}}}]{on\+Write,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+User\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a6a08a93c478e313becb0583c3ccd2161}\label{dr__wav_8h_a6a08a93c478e313becb0583c3ccd2161}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_read@{drwav\_read}}
+\index{drwav\_read@{drwav\_read}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_read()}{drwav\_read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} drwav\+\_\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{samples\+To\+Read,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Buffer\+Out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_afd99cb4c4304754642e8124ac850481c}\label{dr__wav_8h_afd99cb4c4304754642e8124ac850481c}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_read\_f32@{drwav\_read\_f32}}
+\index{drwav\_read\_f32@{drwav\_read\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_read\_f32()}{drwav\_read\_f32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} drwav\+\_\+read\+\_\+f32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{samples\+To\+Read,  }\item[{float $\ast$}]{p\+Buffer\+Out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a39233d0594166a95a6722c33c499c22c}\label{dr__wav_8h_a39233d0594166a95a6722c33c499c22c}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_read\_pcm\_frames@{drwav\_read\_pcm\_frames}}
+\index{drwav\_read\_pcm\_frames@{drwav\_read\_pcm\_frames}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_read\_pcm\_frames()}{drwav\_read\_pcm\_frames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} drwav\+\_\+read\+\_\+pcm\+\_\+frames (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{frames\+To\+Read,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Buffer\+Out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_af417e16f905ce4acd09ded09a4da82f8}\label{dr__wav_8h_af417e16f905ce4acd09ded09a4da82f8}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_read\_pcm\_frames\_f32@{drwav\_read\_pcm\_frames\_f32}}
+\index{drwav\_read\_pcm\_frames\_f32@{drwav\_read\_pcm\_frames\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_read\_pcm\_frames\_f32()}{drwav\_read\_pcm\_frames\_f32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} drwav\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+f32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{frames\+To\+Read,  }\item[{float $\ast$}]{p\+Buffer\+Out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a74e42a408b4f730718b71bea7869f2f0}\label{dr__wav_8h_a74e42a408b4f730718b71bea7869f2f0}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_read\_pcm\_frames\_s16@{drwav\_read\_pcm\_frames\_s16}}
+\index{drwav\_read\_pcm\_frames\_s16@{drwav\_read\_pcm\_frames\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_read\_pcm\_frames\_s16()}{drwav\_read\_pcm\_frames\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} drwav\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{frames\+To\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$}]{p\+Buffer\+Out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_af53ddc4cde3df8872dfe9a7b8803206c}\label{dr__wav_8h_af53ddc4cde3df8872dfe9a7b8803206c}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_read\_pcm\_frames\_s32@{drwav\_read\_pcm\_frames\_s32}}
+\index{drwav\_read\_pcm\_frames\_s32@{drwav\_read\_pcm\_frames\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_read\_pcm\_frames\_s32()}{drwav\_read\_pcm\_frames\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} drwav\+\_\+read\+\_\+pcm\+\_\+frames\+\_\+s32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{frames\+To\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$}]{p\+Buffer\+Out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ad51036bf902dca50c55ddf1fca519473}\label{dr__wav_8h_ad51036bf902dca50c55ddf1fca519473}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_read\_raw@{drwav\_read\_raw}}
+\index{drwav\_read\_raw@{drwav\_read\_raw}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_read\_raw()}{drwav\_read\_raw()}}
+{\footnotesize\ttfamily size\+\_\+t drwav\+\_\+read\+\_\+raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{size\+\_\+t}]{bytes\+To\+Read,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Buffer\+Out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a2f664abc5aa6720d807814aeee1bf503}\label{dr__wav_8h_a2f664abc5aa6720d807814aeee1bf503}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_read\_s16@{drwav\_read\_s16}}
+\index{drwav\_read\_s16@{drwav\_read\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_read\_s16()}{drwav\_read\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} drwav\+\_\+read\+\_\+s16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{samples\+To\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$}]{p\+Buffer\+Out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ab2294bc72486feb4105b35b93490645d}\label{dr__wav_8h_ab2294bc72486feb4105b35b93490645d}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_read\_s32@{drwav\_read\_s32}}
+\index{drwav\_read\_s32@{drwav\_read\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_read\_s32()}{drwav\_read\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} drwav\+\_\+read\+\_\+s32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{samples\+To\+Read,  }\item[{\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$}]{p\+Buffer\+Out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_af3d48564d88925e60591c5936fd903ed}\label{dr__wav_8h_af3d48564d88925e60591c5936fd903ed}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_s16\_to\_f32@{drwav\_s16\_to\_f32}}
+\index{drwav\_s16\_to\_f32@{drwav\_s16\_to\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_s16\_to\_f32()}{drwav\_s16\_to\_f32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+s16\+\_\+to\+\_\+f32 (\begin{DoxyParamCaption}\item[{float $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a159b695e48027e50ff7e2ef0cb470240}\label{dr__wav_8h_a159b695e48027e50ff7e2ef0cb470240}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_s16\_to\_s32@{drwav\_s16\_to\_s32}}
+\index{drwav\_s16\_to\_s32@{drwav\_s16\_to\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_s16\_to\_s32()}{drwav\_s16\_to\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+s16\+\_\+to\+\_\+s32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a85b2c8993ac1f213ab27b8d67e8a5e5b}\label{dr__wav_8h_a85b2c8993ac1f213ab27b8d67e8a5e5b}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_s24\_to\_f32@{drwav\_s24\_to\_f32}}
+\index{drwav\_s24\_to\_f32@{drwav\_s24\_to\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_s24\_to\_f32()}{drwav\_s24\_to\_f32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+s24\+\_\+to\+\_\+f32 (\begin{DoxyParamCaption}\item[{float $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a24e1c7935e40ca9c88a5d375e0b461ad}\label{dr__wav_8h_a24e1c7935e40ca9c88a5d375e0b461ad}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_s24\_to\_s16@{drwav\_s24\_to\_s16}}
+\index{drwav\_s24\_to\_s16@{drwav\_s24\_to\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_s24\_to\_s16()}{drwav\_s24\_to\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+s24\+\_\+to\+\_\+s16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a268edcc427afdcf93b39698551f1c61a}\label{dr__wav_8h_a268edcc427afdcf93b39698551f1c61a}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_s24\_to\_s32@{drwav\_s24\_to\_s32}}
+\index{drwav\_s24\_to\_s32@{drwav\_s24\_to\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_s24\_to\_s32()}{drwav\_s24\_to\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+s24\+\_\+to\+\_\+s32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ab4b0a003ee9330fc7a763b0f7c9b5adf}\label{dr__wav_8h_ab4b0a003ee9330fc7a763b0f7c9b5adf}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_s32\_to\_f32@{drwav\_s32\_to\_f32}}
+\index{drwav\_s32\_to\_f32@{drwav\_s32\_to\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_s32\_to\_f32()}{drwav\_s32\_to\_f32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+s32\+\_\+to\+\_\+f32 (\begin{DoxyParamCaption}\item[{float $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ac9a83beaf0d1608ec76380b036f22f81}\label{dr__wav_8h_ac9a83beaf0d1608ec76380b036f22f81}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_s32\_to\_s16@{drwav\_s32\_to\_s16}}
+\index{drwav\_s32\_to\_s16@{drwav\_s32\_to\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_s32\_to\_s16()}{drwav\_s32\_to\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+s32\+\_\+to\+\_\+s16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a7c12272557aa5186a42b62e1ba264f06}\label{dr__wav_8h_a7c12272557aa5186a42b62e1ba264f06}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_seek\_to\_pcm\_frame@{drwav\_seek\_to\_pcm\_frame}}
+\index{drwav\_seek\_to\_pcm\_frame@{drwav\_seek\_to\_pcm\_frame}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_seek\_to\_pcm\_frame()}{drwav\_seek\_to\_pcm\_frame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+seek\+\_\+to\+\_\+pcm\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{target\+Frame\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a837d7efc0bd768b2ff2a1fb98495c4fc}\label{dr__wav_8h_a837d7efc0bd768b2ff2a1fb98495c4fc}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_seek\_to\_sample@{drwav\_seek\_to\_sample}}
+\index{drwav\_seek\_to\_sample@{drwav\_seek\_to\_sample}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_seek\_to\_sample()}{drwav\_seek\_to\_sample()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a3fba84bb8a4fd85639b88c686bd699e9}{drwav\+\_\+bool32}} drwav\+\_\+seek\+\_\+to\+\_\+sample (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{sample }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a349d187f48e5af160d0196ef49e9e082}\label{dr__wav_8h_a349d187f48e5af160d0196ef49e9e082}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_u8\_to\_f32@{drwav\_u8\_to\_f32}}
+\index{drwav\_u8\_to\_f32@{drwav\_u8\_to\_f32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_u8\_to\_f32()}{drwav\_u8\_to\_f32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+u8\+\_\+to\+\_\+f32 (\begin{DoxyParamCaption}\item[{float $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a024c7c1eea1ba8c9a0a550b694138d41}\label{dr__wav_8h_a024c7c1eea1ba8c9a0a550b694138d41}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_u8\_to\_s16@{drwav\_u8\_to\_s16}}
+\index{drwav\_u8\_to\_s16@{drwav\_u8\_to\_s16}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_u8\_to\_s16()}{drwav\_u8\_to\_s16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+u8\+\_\+to\+\_\+s16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_a6e863526e399700718dc709bb639f49c}{drwav\+\_\+int16}} $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_ac53fb712f9e7457e9246f691e5d8d569}\label{dr__wav_8h_ac53fb712f9e7457e9246f691e5d8d569}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_u8\_to\_s32@{drwav\_u8\_to\_s32}}
+\index{drwav\_u8\_to\_s32@{drwav\_u8\_to\_s32}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_u8\_to\_s32()}{drwav\_u8\_to\_s32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+u8\+\_\+to\+\_\+s32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dr__wav_8h_ae8d47d4d05c2f243a1f5efdf478d91ca}{drwav\+\_\+int32}} $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{dr__wav_8h_a57ff8d4c4c6c081cf12ca7355b285bd9}{drwav\+\_\+uint8}} $\ast$}]{p\+In,  }\item[{size\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a67a7e41d033d5d787fa59398622a40a7}\label{dr__wav_8h_a67a7e41d033d5d787fa59398622a40a7}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_uninit@{drwav\_uninit}}
+\index{drwav\_uninit@{drwav\_uninit}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_uninit()}{drwav\_uninit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} drwav\+\_\+uninit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a83cf34f9deb521dec55015b81da1fd88}\label{dr__wav_8h_a83cf34f9deb521dec55015b81da1fd88}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_write@{drwav\_write}}
+\index{drwav\_write@{drwav\_write}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_write()}{drwav\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} drwav\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{samples\+To\+Write,  }\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a3a3c4537dcfc3b956779fbe8ba8b89d5}\label{dr__wav_8h_a3a3c4537dcfc3b956779fbe8ba8b89d5}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_write\_pcm\_frames@{drwav\_write\_pcm\_frames}}
+\index{drwav\_write\_pcm\_frames@{drwav\_write\_pcm\_frames}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_write\_pcm\_frames()}{drwav\_write\_pcm\_frames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}} drwav\+\_\+write\+\_\+pcm\+\_\+frames (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{\mbox{\hyperlink{dr__wav_8h_a40d5f9d483e3480547e3e740d322e000}{drwav\+\_\+uint64}}}]{frames\+To\+Write,  }\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dr__wav_8h_a705c79486163795811d346a0db6403da}\label{dr__wav_8h_a705c79486163795811d346a0db6403da}} 
+\index{dr\_wav.h@{dr\_wav.h}!drwav\_write\_raw@{drwav\_write\_raw}}
+\index{drwav\_write\_raw@{drwav\_write\_raw}!dr\_wav.h@{dr\_wav.h}}
+\doxysubsubsection{\texorpdfstring{drwav\_write\_raw()}{drwav\_write\_raw()}}
+{\footnotesize\ttfamily size\+\_\+t drwav\+\_\+write\+\_\+raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdrwav}{drwav}} $\ast$}]{p\+Wav,  }\item[{size\+\_\+t}]{bytes\+To\+Write,  }\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{p\+Data }\end{DoxyParamCaption})}
+

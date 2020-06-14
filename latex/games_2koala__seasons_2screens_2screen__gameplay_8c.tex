@@ -1,0 +1,582 @@
+\hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/koala\+\_\+seasons/screens/screen\+\_\+gameplay.c}
+\label{games_2koala__seasons_2screens_2screen__gameplay_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/koala\_seasons/screens/screen\_gameplay.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/koala\_seasons/screens/screen\_gameplay.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}screens.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}atlas01.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}atlas02.\+h\char`\"{}}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_particle}{Particle}}
+\item 
+struct \mbox{\hyperlink{struct_particle_speed}{Particle\+Speed}}
+\item 
+struct \mbox{\hyperlink{struct_particle_ray}{Particle\+Ray}}
+\item 
+struct \mbox{\hyperlink{struct_particle_system}{Particle\+System}}
+\item 
+struct \mbox{\hyperlink{struct_particle_system_storm}{Particle\+System\+Storm}}
+\item 
+struct \mbox{\hyperlink{struct_pop_up_score}{Pop\+Up\+Score}}
+\item 
+struct \mbox{\hyperlink{struct_particle_system_speed}{Particle\+System\+Speed}}
+\item 
+struct \mbox{\hyperlink{struct_particle_system_ray}{Particle\+System\+Ray}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a544651f3405cff79c40d898a8e54f507}{M\+A\+X\+\_\+\+E\+N\+E\+M\+I\+ES}}~16
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a37cff863e65daaa42b567b48ceb9d7cd}{M\+A\+X\+\_\+\+B\+A\+M\+B\+OO}}~16
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a53a135442a176107af00c85d6fff9e08}{M\+A\+X\+\_\+\+L\+E\+A\+V\+ES}}~14
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_af21a27d4e4301ff9dcd36eabcfa6d923}{M\+A\+X\+\_\+\+F\+I\+RE}}~10
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a832b01889d84e4f591ba34974cbc1528}{M\+A\+X\+\_\+\+F\+I\+R\+E\+\_\+\+F\+L\+A\+M\+ES}}~20
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a1c1c776148e02d68fcd6466dbf0fbcee}{M\+A\+X\+\_\+\+I\+CE}}~10
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a649e3e6c17c40fa018bbcd1eaad6a852}{M\+A\+X\+\_\+\+R\+E\+S\+IN}}~10
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ac2f33af1367b8ba64125857fe1056c92}{M\+A\+X\+\_\+\+W\+I\+ND}}~10
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a43b318e80d2457f5ce3e00a6cf1543c8}{M\+A\+X\+\_\+\+P\+A\+R\+T\+I\+C\+L\+ES}}~128
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a8694df421ed1473a5a0541d9321acca6}{M\+A\+X\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+S\+\_\+\+R\+AY}}~8
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_af41a1557e54e81083693cb77bb8c9b2c}{M\+A\+X\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+S\+\_\+\+S\+P\+E\+ED}}~64
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ad425f1b81f641677a8e2657c4b7c4a5d}{M\+A\+X\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+S\+\_\+\+S\+T\+O\+RM}}~512
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_aac3553b3932cbfeeac4526ce7ca0336b}{S\+P\+E\+ED}}~3$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_aee551d17fffb6235cc7123499dbf7d65}{J\+U\+MP}}~15$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_acb829b5c1f4b28551f42a1c36a2a36b5}{F\+L\+Y\+I\+N\+G\+M\+OV}}~10$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a6801baa546c6112d19eb095111d24720}{G\+R\+A\+V\+I\+TY}}~1$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ae900d778bdeb2009b92faed81a2b654c}{I\+C\+E\+G\+R\+A\+V\+I\+TY}}~4$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a30351828f2097cf336584f77279f0f2c}{K\+I\+C\+K\+S\+P\+E\+ED}}~3$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a3697680c1d5223e84d4caedaa05bc002}{S\+E\+A\+S\+O\+N\+C\+H\+A\+N\+GE}}~1200
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a486f954b9fc974d4a151532ca487bb37}{S\+E\+A\+S\+O\+N\+T\+R\+A\+N\+S\+I\+T\+I\+ON}}~\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a3697680c1d5223e84d4caedaa05bc002}{S\+E\+A\+S\+O\+N\+C\+H\+A\+N\+GE}}/6
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ad2e7b22c66616cf32063cd7cb8a834f0}{I\+C\+E\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE}}~30
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_aea58d9a0e44b5c5c68b7f0d4748903e1}{R\+E\+S\+I\+N\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE}}~30
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a4d01390d2b6b7e88e6b71e4b4ac6ccc6}{F\+I\+R\+E\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE}}~30
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_aa5065be7004b16564e7868985cf663f2}{W\+I\+N\+D\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE}}~30
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ae22ec9077cc661592cf396480c7714e4}{D\+I\+N\+G\+O\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE}}~30
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ad1d855e6dfbb103ee855cf74c6094338}{O\+W\+L\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE}}~30
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ab990c1b3558664c7f86f9912b93d1359}{S\+N\+A\+K\+E\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE}}~30
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a24d918a08b463d55ff28d97963e0447f}{B\+E\+E\+\_\+\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE}}~10
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a5c9ddfb9a3f6cfb138da9ba5ce144efe}{E\+A\+G\+L\+E\+\_\+\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE}}~5
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a0291b317f2b3ca992ed254df41ec9684}{E\+A\+G\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+D\+E\+L\+AY}}~600
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_acbf918ef9b47cd70d5b6d82fe40b2bc2}{D\+I\+N\+G\+O\+S\+C\+O\+RE}}~100
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_afbb88e6b883634fef2d0cf3497aaf367}{O\+W\+L\+S\+C\+O\+RE}}~100
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a4a16a247aff1b0fc3d2cd9c576eaf71f}{S\+N\+A\+K\+E\+S\+C\+O\+RE}}~100
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ae51a8f84c71db989a5a4037f3e5d9b4e}{B\+E\+E\+S\+C\+O\+RE}}~300
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_abb82c6f75326a0b08b000a663ba3d04b}{E\+A\+G\+L\+E\+S\+C\+O\+RE}}~300
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ad062f2d4b98a252c45b2b5aca9ea3e4e}{L\+E\+A\+V\+E\+S\+T\+O\+T\+R\+A\+N\+S\+F\+O\+RM}}~100
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_aff334c653790f2e15308a9492cbb3532}{M\+A\+X\+T\+I\+M\+E\+S\+P\+A\+WN}}~85
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a60abca541c12497fc6031e27a4681a66}{M\+I\+N\+T\+I\+M\+E\+S\+P\+A\+WN}}~35
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a2099d72523373b3eec8cc01527ae1c78}{S\+T\+A\+R\+T\+I\+N\+G\+M\+O\+N\+TH}}~0
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_aca5a28a63ef56df5a65e66abc66c229d}{P\+R\+O\+G\+R\+E\+S\+I\+O\+N\+\_\+\+S\+T\+A\+RT}}~3600
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a1b3a16921eb0936e83506461cdbf9f76}{P\+R\+O\+G\+R\+E\+S\+I\+O\+N\+\_\+\+D\+U\+R\+A\+T\+I\+ON}}~12000
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a33395094cef0d9d8e438b435efd05922}{P\+R\+O\+G\+R\+E\+S\+O\+I\+N\+\_\+\+M\+A\+X\+\_\+\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE}}~30
+\item 
+\#define \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a185097b23f602668695d107e1db7dfb4}{P\+R\+O\+G\+R\+E\+S\+I\+O\+N\+\_\+\+M\+A\+X\+\_\+\+S\+P\+E\+ED}}~0.\+5
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118}{Season\+State}} \{ \newline
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a1d8c9db74467f6c2fdad36f154ca6873}{W\+I\+N\+T\+ER}}, 
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a74ce3137b26cdafc19bdb66d881971fa}{S\+P\+R\+I\+NG}}, 
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a6d813ab9ea240f6c6eeff923ccb680ae}{S\+U\+M\+M\+ER}}, 
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a9115c69bd310223cf4ca0da58ed7b498}{F\+A\+LL}}, 
+\newline
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a544dafaf104c4d12f4f6590528c12c3c}{T\+R\+A\+N\+S\+I\+T\+I\+ON}}
+ \}
+\item 
+enum \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114f}{Koala\+State}} \{ \newline
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fab8cd32180a1d5897df8369b127256ad1}{J\+U\+M\+P\+I\+NG}}, 
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fa552dbfc018bbff8b37c76efea76ca893}{K\+I\+CK}}, 
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fa60b105762de1fa818f3f3201648fc792}{F\+I\+N\+A\+L\+F\+O\+RM}}, 
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fad11f2cfb7e6bae7b4df60a155829aefc}{G\+R\+A\+B\+ED}}, 
+\newline
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fab986fd686b69180596fc0b268e222101}{O\+N\+W\+I\+ND}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a76918e73a46306124299f0ecdded70ac}{Init\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ae375af3a5eb93543369403b716cbc0a8}{Update\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a8b8fc25f26ad73f9c08497af8b074ccf}{Draw\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ac96945d9b745690aa8ff1c909c816188}{Unload\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_abe4d51d9e25770ad24c45f83837211be}{Finish\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a882a2d9448014558b8d43acf76337af7}{text\+Final\+Form}} \mbox{[}32\mbox{]} = \char`\"{}T\+H\+IS I\+SN\textquotesingle{}T E\+V\+EN MY F\+I\+N\+AL F\+O\+R\+M!\char`\"{}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_afa01770a50d0f2a5af5bbfcd6de84863}{text\+Spring1}} \mbox{[}32\mbox{]} = \char`\"{}F\+L\+O\+W\+ER P\+O\+W\+E\+R!\char`\"{}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a0d82f5c68d8c18b1eae1c5c07986c517}{text\+Summer1}} \mbox{[}32\mbox{]} = \char`\"{}P\+R\+E\+P\+A\+RE F\+OR T\+HE S\+U\+M\+M\+E\+R!\char`\"{}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ac8a160a2a419fe86ad09c5c59accb6fa}{text\+Fall1}} \mbox{[}32\mbox{]} = \char`\"{}H\+E\+RE C\+O\+M\+ES T\+HE F\+A\+L\+L!\char`\"{}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a0a2c673d5846069bb0e0479e527ccd16}{text\+Winter1}} \mbox{[}32\mbox{]} = \char`\"{}W\+I\+N\+T\+ER IS C\+O\+M\+I\+N\+G!\char`\"{}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a35bbefebc58084ab6cf698135b711ff8}{text\+Spring2}} \mbox{[}32\mbox{]} = \char`\"{}P\+O\+L\+L\+EN IS IN T\+HE A\+IR\char`\"{}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_ad5f6c9300072e5eda3cdbe21b45cf984}{text\+Summer2}} \mbox{[}32\mbox{]} = \char`\"{}H\+A\+P\+PY N\+EW Y\+E\+A\+R!\char`\"{}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a8419eaa2c33b9c52d70acc13b7a6b6a5}{text\+Fall2}} \mbox{[}32\mbox{]} = \char`\"{}IT\textquotesingle{}S R\+A\+I\+N\+I\+NG R\+A\+IN\char`\"{}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a31c8fd3c5852555e0edc92d34fc5d2bc}{text\+Winter2}} \mbox{[}32\mbox{]} = \char`\"{}L\+ET IT S\+N\+O\+W!\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a24d918a08b463d55ff28d97963e0447f}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a24d918a08b463d55ff28d97963e0447f}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!BEE\_SPAWNCHANCE@{BEE\_SPAWNCHANCE}}
+\index{BEE\_SPAWNCHANCE@{BEE\_SPAWNCHANCE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{BEE\_SPAWNCHANCE}{BEE\_SPAWNCHANCE}}
+{\footnotesize\ttfamily \#define B\+E\+E\+\_\+\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE~10}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ae51a8f84c71db989a5a4037f3e5d9b4e}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ae51a8f84c71db989a5a4037f3e5d9b4e}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!BEESCORE@{BEESCORE}}
+\index{BEESCORE@{BEESCORE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{BEESCORE}{BEESCORE}}
+{\footnotesize\ttfamily \#define B\+E\+E\+S\+C\+O\+RE~300}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_acbf918ef9b47cd70d5b6d82fe40b2bc2}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_acbf918ef9b47cd70d5b6d82fe40b2bc2}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!DINGOSCORE@{DINGOSCORE}}
+\index{DINGOSCORE@{DINGOSCORE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{DINGOSCORE}{DINGOSCORE}}
+{\footnotesize\ttfamily \#define D\+I\+N\+G\+O\+S\+C\+O\+RE~100}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ae22ec9077cc661592cf396480c7714e4}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ae22ec9077cc661592cf396480c7714e4}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!DINGOSPAWNCHANCE@{DINGOSPAWNCHANCE}}
+\index{DINGOSPAWNCHANCE@{DINGOSPAWNCHANCE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{DINGOSPAWNCHANCE}{DINGOSPAWNCHANCE}}
+{\footnotesize\ttfamily \#define D\+I\+N\+G\+O\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE~30}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a5c9ddfb9a3f6cfb138da9ba5ce144efe}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a5c9ddfb9a3f6cfb138da9ba5ce144efe}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!EAGLE\_SPAWNCHANCE@{EAGLE\_SPAWNCHANCE}}
+\index{EAGLE\_SPAWNCHANCE@{EAGLE\_SPAWNCHANCE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{EAGLE\_SPAWNCHANCE}{EAGLE\_SPAWNCHANCE}}
+{\footnotesize\ttfamily \#define E\+A\+G\+L\+E\+\_\+\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE~5}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a0291b317f2b3ca992ed254df41ec9684}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a0291b317f2b3ca992ed254df41ec9684}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!EAGLE\_TIME\_DELAY@{EAGLE\_TIME\_DELAY}}
+\index{EAGLE\_TIME\_DELAY@{EAGLE\_TIME\_DELAY}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{EAGLE\_TIME\_DELAY}{EAGLE\_TIME\_DELAY}}
+{\footnotesize\ttfamily \#define E\+A\+G\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+D\+E\+L\+AY~600}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_abb82c6f75326a0b08b000a663ba3d04b}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_abb82c6f75326a0b08b000a663ba3d04b}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!EAGLESCORE@{EAGLESCORE}}
+\index{EAGLESCORE@{EAGLESCORE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{EAGLESCORE}{EAGLESCORE}}
+{\footnotesize\ttfamily \#define E\+A\+G\+L\+E\+S\+C\+O\+RE~300}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a4d01390d2b6b7e88e6b71e4b4ac6ccc6}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a4d01390d2b6b7e88e6b71e4b4ac6ccc6}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!FIRESPAWNCHANCE@{FIRESPAWNCHANCE}}
+\index{FIRESPAWNCHANCE@{FIRESPAWNCHANCE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{FIRESPAWNCHANCE}{FIRESPAWNCHANCE}}
+{\footnotesize\ttfamily \#define F\+I\+R\+E\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE~30}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_acb829b5c1f4b28551f42a1c36a2a36b5}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_acb829b5c1f4b28551f42a1c36a2a36b5}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!FLYINGMOV@{FLYINGMOV}}
+\index{FLYINGMOV@{FLYINGMOV}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{FLYINGMOV}{FLYINGMOV}}
+{\footnotesize\ttfamily \#define F\+L\+Y\+I\+N\+G\+M\+OV~10$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a6801baa546c6112d19eb095111d24720}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a6801baa546c6112d19eb095111d24720}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!GRAVITY@{GRAVITY}}
+\index{GRAVITY@{GRAVITY}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{GRAVITY}{GRAVITY}}
+{\footnotesize\ttfamily \#define G\+R\+A\+V\+I\+TY~1$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ae900d778bdeb2009b92faed81a2b654c}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ae900d778bdeb2009b92faed81a2b654c}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!ICEGRAVITY@{ICEGRAVITY}}
+\index{ICEGRAVITY@{ICEGRAVITY}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{ICEGRAVITY}{ICEGRAVITY}}
+{\footnotesize\ttfamily \#define I\+C\+E\+G\+R\+A\+V\+I\+TY~4$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ad2e7b22c66616cf32063cd7cb8a834f0}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ad2e7b22c66616cf32063cd7cb8a834f0}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!ICESPAWNCHANCE@{ICESPAWNCHANCE}}
+\index{ICESPAWNCHANCE@{ICESPAWNCHANCE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{ICESPAWNCHANCE}{ICESPAWNCHANCE}}
+{\footnotesize\ttfamily \#define I\+C\+E\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE~30}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_aee551d17fffb6235cc7123499dbf7d65}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_aee551d17fffb6235cc7123499dbf7d65}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!JUMP@{JUMP}}
+\index{JUMP@{JUMP}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{JUMP}{JUMP}}
+{\footnotesize\ttfamily \#define J\+U\+MP~15$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a30351828f2097cf336584f77279f0f2c}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a30351828f2097cf336584f77279f0f2c}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!KICKSPEED@{KICKSPEED}}
+\index{KICKSPEED@{KICKSPEED}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{KICKSPEED}{KICKSPEED}}
+{\footnotesize\ttfamily \#define K\+I\+C\+K\+S\+P\+E\+ED~3$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ad062f2d4b98a252c45b2b5aca9ea3e4e}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ad062f2d4b98a252c45b2b5aca9ea3e4e}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!LEAVESTOTRANSFORM@{LEAVESTOTRANSFORM}}
+\index{LEAVESTOTRANSFORM@{LEAVESTOTRANSFORM}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{LEAVESTOTRANSFORM}{LEAVESTOTRANSFORM}}
+{\footnotesize\ttfamily \#define L\+E\+A\+V\+E\+S\+T\+O\+T\+R\+A\+N\+S\+F\+O\+RM~100}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a37cff863e65daaa42b567b48ceb9d7cd}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a37cff863e65daaa42b567b48ceb9d7cd}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_BAMBOO@{MAX\_BAMBOO}}
+\index{MAX\_BAMBOO@{MAX\_BAMBOO}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_BAMBOO}{MAX\_BAMBOO}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+B\+A\+M\+B\+OO~16}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a544651f3405cff79c40d898a8e54f507}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a544651f3405cff79c40d898a8e54f507}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_ENEMIES@{MAX\_ENEMIES}}
+\index{MAX\_ENEMIES@{MAX\_ENEMIES}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_ENEMIES}{MAX\_ENEMIES}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+E\+N\+E\+M\+I\+ES~16}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_af21a27d4e4301ff9dcd36eabcfa6d923}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_af21a27d4e4301ff9dcd36eabcfa6d923}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_FIRE@{MAX\_FIRE}}
+\index{MAX\_FIRE@{MAX\_FIRE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_FIRE}{MAX\_FIRE}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+F\+I\+RE~10}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a832b01889d84e4f591ba34974cbc1528}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a832b01889d84e4f591ba34974cbc1528}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_FIRE\_FLAMES@{MAX\_FIRE\_FLAMES}}
+\index{MAX\_FIRE\_FLAMES@{MAX\_FIRE\_FLAMES}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_FIRE\_FLAMES}{MAX\_FIRE\_FLAMES}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+F\+I\+R\+E\+\_\+\+F\+L\+A\+M\+ES~20}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a1c1c776148e02d68fcd6466dbf0fbcee}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a1c1c776148e02d68fcd6466dbf0fbcee}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_ICE@{MAX\_ICE}}
+\index{MAX\_ICE@{MAX\_ICE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_ICE}{MAX\_ICE}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+I\+CE~10}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a53a135442a176107af00c85d6fff9e08}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a53a135442a176107af00c85d6fff9e08}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_LEAVES@{MAX\_LEAVES}}
+\index{MAX\_LEAVES@{MAX\_LEAVES}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_LEAVES}{MAX\_LEAVES}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+L\+E\+A\+V\+ES~14}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a43b318e80d2457f5ce3e00a6cf1543c8}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a43b318e80d2457f5ce3e00a6cf1543c8}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_PARTICLES@{MAX\_PARTICLES}}
+\index{MAX\_PARTICLES@{MAX\_PARTICLES}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_PARTICLES}{MAX\_PARTICLES}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+A\+R\+T\+I\+C\+L\+ES~128}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a8694df421ed1473a5a0541d9321acca6}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a8694df421ed1473a5a0541d9321acca6}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_PARTICLES\_RAY@{MAX\_PARTICLES\_RAY}}
+\index{MAX\_PARTICLES\_RAY@{MAX\_PARTICLES\_RAY}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_PARTICLES\_RAY}{MAX\_PARTICLES\_RAY}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+S\+\_\+\+R\+AY~8}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_af41a1557e54e81083693cb77bb8c9b2c}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_af41a1557e54e81083693cb77bb8c9b2c}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_PARTICLES\_SPEED@{MAX\_PARTICLES\_SPEED}}
+\index{MAX\_PARTICLES\_SPEED@{MAX\_PARTICLES\_SPEED}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_PARTICLES\_SPEED}{MAX\_PARTICLES\_SPEED}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+S\+\_\+\+S\+P\+E\+ED~64}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ad425f1b81f641677a8e2657c4b7c4a5d}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ad425f1b81f641677a8e2657c4b7c4a5d}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_PARTICLES\_STORM@{MAX\_PARTICLES\_STORM}}
+\index{MAX\_PARTICLES\_STORM@{MAX\_PARTICLES\_STORM}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_PARTICLES\_STORM}{MAX\_PARTICLES\_STORM}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+S\+\_\+\+S\+T\+O\+RM~512}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a649e3e6c17c40fa018bbcd1eaad6a852}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a649e3e6c17c40fa018bbcd1eaad6a852}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_RESIN@{MAX\_RESIN}}
+\index{MAX\_RESIN@{MAX\_RESIN}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_RESIN}{MAX\_RESIN}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+R\+E\+S\+IN~10}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ac2f33af1367b8ba64125857fe1056c92}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ac2f33af1367b8ba64125857fe1056c92}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_WIND@{MAX\_WIND}}
+\index{MAX\_WIND@{MAX\_WIND}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_WIND}{MAX\_WIND}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+W\+I\+ND~10}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_aff334c653790f2e15308a9492cbb3532}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_aff334c653790f2e15308a9492cbb3532}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAXTIMESPAWN@{MAXTIMESPAWN}}
+\index{MAXTIMESPAWN@{MAXTIMESPAWN}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAXTIMESPAWN}{MAXTIMESPAWN}}
+{\footnotesize\ttfamily \#define M\+A\+X\+T\+I\+M\+E\+S\+P\+A\+WN~85}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a60abca541c12497fc6031e27a4681a66}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a60abca541c12497fc6031e27a4681a66}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MINTIMESPAWN@{MINTIMESPAWN}}
+\index{MINTIMESPAWN@{MINTIMESPAWN}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MINTIMESPAWN}{MINTIMESPAWN}}
+{\footnotesize\ttfamily \#define M\+I\+N\+T\+I\+M\+E\+S\+P\+A\+WN~35}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_afbb88e6b883634fef2d0cf3497aaf367}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_afbb88e6b883634fef2d0cf3497aaf367}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!OWLSCORE@{OWLSCORE}}
+\index{OWLSCORE@{OWLSCORE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{OWLSCORE}{OWLSCORE}}
+{\footnotesize\ttfamily \#define O\+W\+L\+S\+C\+O\+RE~100}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ad1d855e6dfbb103ee855cf74c6094338}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ad1d855e6dfbb103ee855cf74c6094338}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!OWLSPAWNCHANCE@{OWLSPAWNCHANCE}}
+\index{OWLSPAWNCHANCE@{OWLSPAWNCHANCE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{OWLSPAWNCHANCE}{OWLSPAWNCHANCE}}
+{\footnotesize\ttfamily \#define O\+W\+L\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE~30}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a1b3a16921eb0936e83506461cdbf9f76}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a1b3a16921eb0936e83506461cdbf9f76}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!PROGRESION\_DURATION@{PROGRESION\_DURATION}}
+\index{PROGRESION\_DURATION@{PROGRESION\_DURATION}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{PROGRESION\_DURATION}{PROGRESION\_DURATION}}
+{\footnotesize\ttfamily \#define P\+R\+O\+G\+R\+E\+S\+I\+O\+N\+\_\+\+D\+U\+R\+A\+T\+I\+ON~12000}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a185097b23f602668695d107e1db7dfb4}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a185097b23f602668695d107e1db7dfb4}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!PROGRESION\_MAX\_SPEED@{PROGRESION\_MAX\_SPEED}}
+\index{PROGRESION\_MAX\_SPEED@{PROGRESION\_MAX\_SPEED}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{PROGRESION\_MAX\_SPEED}{PROGRESION\_MAX\_SPEED}}
+{\footnotesize\ttfamily \#define P\+R\+O\+G\+R\+E\+S\+I\+O\+N\+\_\+\+M\+A\+X\+\_\+\+S\+P\+E\+ED~0.\+5}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_aca5a28a63ef56df5a65e66abc66c229d}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_aca5a28a63ef56df5a65e66abc66c229d}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!PROGRESION\_START@{PROGRESION\_START}}
+\index{PROGRESION\_START@{PROGRESION\_START}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{PROGRESION\_START}{PROGRESION\_START}}
+{\footnotesize\ttfamily \#define P\+R\+O\+G\+R\+E\+S\+I\+O\+N\+\_\+\+S\+T\+A\+RT~3600}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a33395094cef0d9d8e438b435efd05922}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a33395094cef0d9d8e438b435efd05922}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!PROGRESOIN\_MAX\_SPAWNCHANCE@{PROGRESOIN\_MAX\_SPAWNCHANCE}}
+\index{PROGRESOIN\_MAX\_SPAWNCHANCE@{PROGRESOIN\_MAX\_SPAWNCHANCE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{PROGRESOIN\_MAX\_SPAWNCHANCE}{PROGRESOIN\_MAX\_SPAWNCHANCE}}
+{\footnotesize\ttfamily \#define P\+R\+O\+G\+R\+E\+S\+O\+I\+N\+\_\+\+M\+A\+X\+\_\+\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE~30}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_aea58d9a0e44b5c5c68b7f0d4748903e1}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_aea58d9a0e44b5c5c68b7f0d4748903e1}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!RESINSPAWNCHANCE@{RESINSPAWNCHANCE}}
+\index{RESINSPAWNCHANCE@{RESINSPAWNCHANCE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{RESINSPAWNCHANCE}{RESINSPAWNCHANCE}}
+{\footnotesize\ttfamily \#define R\+E\+S\+I\+N\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE~30}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a3697680c1d5223e84d4caedaa05bc002}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a3697680c1d5223e84d4caedaa05bc002}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!SEASONCHANGE@{SEASONCHANGE}}
+\index{SEASONCHANGE@{SEASONCHANGE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{SEASONCHANGE}{SEASONCHANGE}}
+{\footnotesize\ttfamily \#define S\+E\+A\+S\+O\+N\+C\+H\+A\+N\+GE~1200}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a486f954b9fc974d4a151532ca487bb37}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a486f954b9fc974d4a151532ca487bb37}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!SEASONTRANSITION@{SEASONTRANSITION}}
+\index{SEASONTRANSITION@{SEASONTRANSITION}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{SEASONTRANSITION}{SEASONTRANSITION}}
+{\footnotesize\ttfamily \#define S\+E\+A\+S\+O\+N\+T\+R\+A\+N\+S\+I\+T\+I\+ON~\mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a3697680c1d5223e84d4caedaa05bc002}{S\+E\+A\+S\+O\+N\+C\+H\+A\+N\+GE}}/6}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a4a16a247aff1b0fc3d2cd9c576eaf71f}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a4a16a247aff1b0fc3d2cd9c576eaf71f}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!SNAKESCORE@{SNAKESCORE}}
+\index{SNAKESCORE@{SNAKESCORE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{SNAKESCORE}{SNAKESCORE}}
+{\footnotesize\ttfamily \#define S\+N\+A\+K\+E\+S\+C\+O\+RE~100}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ab990c1b3558664c7f86f9912b93d1359}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ab990c1b3558664c7f86f9912b93d1359}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!SNAKESPAWNCHANCE@{SNAKESPAWNCHANCE}}
+\index{SNAKESPAWNCHANCE@{SNAKESPAWNCHANCE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{SNAKESPAWNCHANCE}{SNAKESPAWNCHANCE}}
+{\footnotesize\ttfamily \#define S\+N\+A\+K\+E\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE~30}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_aac3553b3932cbfeeac4526ce7ca0336b}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_aac3553b3932cbfeeac4526ce7ca0336b}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!SPEED@{SPEED}}
+\index{SPEED@{SPEED}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{SPEED}{SPEED}}
+{\footnotesize\ttfamily \#define S\+P\+E\+ED~3$\ast$\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_acffcd7b591a8a3d9842ec96f28295b9d}{T\+I\+M\+E\+\_\+\+F\+A\+C\+T\+OR}}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a2099d72523373b3eec8cc01527ae1c78}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a2099d72523373b3eec8cc01527ae1c78}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!STARTINGMONTH@{STARTINGMONTH}}
+\index{STARTINGMONTH@{STARTINGMONTH}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{STARTINGMONTH}{STARTINGMONTH}}
+{\footnotesize\ttfamily \#define S\+T\+A\+R\+T\+I\+N\+G\+M\+O\+N\+TH~0}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_aa5065be7004b16564e7868985cf663f2}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_aa5065be7004b16564e7868985cf663f2}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!WINDSPAWNCHANCE@{WINDSPAWNCHANCE}}
+\index{WINDSPAWNCHANCE@{WINDSPAWNCHANCE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{WINDSPAWNCHANCE}{WINDSPAWNCHANCE}}
+{\footnotesize\ttfamily \#define W\+I\+N\+D\+S\+P\+A\+W\+N\+C\+H\+A\+N\+CE~30}
+
+
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114f}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114f}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!KoalaState@{KoalaState}}
+\index{KoalaState@{KoalaState}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{KoalaState}{KoalaState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114f}{Koala\+State}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JUMPING@{JUMPING}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!JUMPING@{JUMPING}}}\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fab8cd32180a1d5897df8369b127256ad1}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fab8cd32180a1d5897df8369b127256ad1}} 
+J\+U\+M\+P\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KICK@{KICK}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!KICK@{KICK}}}\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fa552dbfc018bbff8b37c76efea76ca893}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fa552dbfc018bbff8b37c76efea76ca893}} 
+K\+I\+CK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FINALFORM@{FINALFORM}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!FINALFORM@{FINALFORM}}}\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fa60b105762de1fa818f3f3201648fc792}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fa60b105762de1fa818f3f3201648fc792}} 
+F\+I\+N\+A\+L\+F\+O\+RM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRABED@{GRABED}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!GRABED@{GRABED}}}\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fad11f2cfb7e6bae7b4df60a155829aefc}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fad11f2cfb7e6bae7b4df60a155829aefc}} 
+G\+R\+A\+B\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONWIND@{ONWIND}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!ONWIND@{ONWIND}}}\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fab986fd686b69180596fc0b268e222101}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a5cb49c0f7fdac0c7c2623541b14b114fab986fd686b69180596fc0b268e222101}} 
+O\+N\+W\+I\+ND&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!SeasonState@{SeasonState}}
+\index{SeasonState@{SeasonState}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{SeasonState}{SeasonState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118}{Season\+State}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WINTER@{WINTER}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!WINTER@{WINTER}}}\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a1d8c9db74467f6c2fdad36f154ca6873}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a1d8c9db74467f6c2fdad36f154ca6873}} 
+W\+I\+N\+T\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPRING@{SPRING}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!SPRING@{SPRING}}}\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a74ce3137b26cdafc19bdb66d881971fa}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a74ce3137b26cdafc19bdb66d881971fa}} 
+S\+P\+R\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUMMER@{SUMMER}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!SUMMER@{SUMMER}}}\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a6d813ab9ea240f6c6eeff923ccb680ae}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a6d813ab9ea240f6c6eeff923ccb680ae}} 
+S\+U\+M\+M\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FALL@{FALL}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!FALL@{FALL}}}\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a9115c69bd310223cf4ca0da58ed7b498}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a9115c69bd310223cf4ca0da58ed7b498}} 
+F\+A\+LL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TRANSITION@{TRANSITION}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!TRANSITION@{TRANSITION}}}\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a544dafaf104c4d12f4f6590528c12c3c}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a1dd483e554bd9db6e8d0aeab50544118a544dafaf104c4d12f4f6590528c12c3c}} 
+T\+R\+A\+N\+S\+I\+T\+I\+ON&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a8b8fc25f26ad73f9c08497af8b074ccf}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a8b8fc25f26ad73f9c08497af8b074ccf}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!DrawGameplayScreen@{DrawGameplayScreen}}
+\index{DrawGameplayScreen@{DrawGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{DrawGameplayScreen()}{DrawGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_abe4d51d9e25770ad24c45f83837211be}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_abe4d51d9e25770ad24c45f83837211be}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!FinishGameplayScreen@{FinishGameplayScreen}}
+\index{FinishGameplayScreen@{FinishGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{FinishGameplayScreen()}{FinishGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Finish\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a76918e73a46306124299f0ecdded70ac}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a76918e73a46306124299f0ecdded70ac}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!InitGameplayScreen@{InitGameplayScreen}}
+\index{InitGameplayScreen@{InitGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{InitGameplayScreen()}{InitGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Init\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ac96945d9b745690aa8ff1c909c816188}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ac96945d9b745690aa8ff1c909c816188}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!UnloadGameplayScreen@{UnloadGameplayScreen}}
+\index{UnloadGameplayScreen@{UnloadGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{UnloadGameplayScreen()}{UnloadGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ae375af3a5eb93543369403b716cbc0a8}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ae375af3a5eb93543369403b716cbc0a8}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!UpdateGameplayScreen@{UpdateGameplayScreen}}
+\index{UpdateGameplayScreen@{UpdateGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{UpdateGameplayScreen()}{UpdateGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ac8a160a2a419fe86ad09c5c59accb6fa}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ac8a160a2a419fe86ad09c5c59accb6fa}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!textFall1@{textFall1}}
+\index{textFall1@{textFall1}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{textFall1}{textFall1}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} text\+Fall1\mbox{[}32\mbox{]} = \char`\"{}H\+E\+RE C\+O\+M\+ES T\+HE F\+A\+L\+L!\char`\"{}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a8419eaa2c33b9c52d70acc13b7a6b6a5}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a8419eaa2c33b9c52d70acc13b7a6b6a5}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!textFall2@{textFall2}}
+\index{textFall2@{textFall2}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{textFall2}{textFall2}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} text\+Fall2\mbox{[}32\mbox{]} = \char`\"{}IT\textquotesingle{}S R\+A\+I\+N\+I\+NG R\+A\+IN\char`\"{}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a882a2d9448014558b8d43acf76337af7}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a882a2d9448014558b8d43acf76337af7}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!textFinalForm@{textFinalForm}}
+\index{textFinalForm@{textFinalForm}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{textFinalForm}{textFinalForm}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} text\+Final\+Form\mbox{[}32\mbox{]} = \char`\"{}T\+H\+IS I\+SN\textquotesingle{}T E\+V\+EN MY F\+I\+N\+AL F\+O\+R\+M!\char`\"{}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_afa01770a50d0f2a5af5bbfcd6de84863}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_afa01770a50d0f2a5af5bbfcd6de84863}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!textSpring1@{textSpring1}}
+\index{textSpring1@{textSpring1}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{textSpring1}{textSpring1}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} text\+Spring1\mbox{[}32\mbox{]} = \char`\"{}F\+L\+O\+W\+ER P\+O\+W\+E\+R!\char`\"{}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a35bbefebc58084ab6cf698135b711ff8}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a35bbefebc58084ab6cf698135b711ff8}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!textSpring2@{textSpring2}}
+\index{textSpring2@{textSpring2}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{textSpring2}{textSpring2}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} text\+Spring2\mbox{[}32\mbox{]} = \char`\"{}P\+O\+L\+L\+EN IS IN T\+HE A\+IR\char`\"{}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a0d82f5c68d8c18b1eae1c5c07986c517}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a0d82f5c68d8c18b1eae1c5c07986c517}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!textSummer1@{textSummer1}}
+\index{textSummer1@{textSummer1}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{textSummer1}{textSummer1}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} text\+Summer1\mbox{[}32\mbox{]} = \char`\"{}P\+R\+E\+P\+A\+RE F\+OR T\+HE S\+U\+M\+M\+E\+R!\char`\"{}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_ad5f6c9300072e5eda3cdbe21b45cf984}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_ad5f6c9300072e5eda3cdbe21b45cf984}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!textSummer2@{textSummer2}}
+\index{textSummer2@{textSummer2}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{textSummer2}{textSummer2}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} text\+Summer2\mbox{[}32\mbox{]} = \char`\"{}H\+A\+P\+PY N\+EW Y\+E\+A\+R!\char`\"{}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a0a2c673d5846069bb0e0479e527ccd16}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a0a2c673d5846069bb0e0479e527ccd16}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!textWinter1@{textWinter1}}
+\index{textWinter1@{textWinter1}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{textWinter1}{textWinter1}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} text\+Winter1\mbox{[}32\mbox{]} = \char`\"{}W\+I\+N\+T\+ER IS C\+O\+M\+I\+N\+G!\char`\"{}}
+
+\mbox{\Hypertarget{games_2koala__seasons_2screens_2screen__gameplay_8c_a31c8fd3c5852555e0edc92d34fc5d2bc}\label{games_2koala__seasons_2screens_2screen__gameplay_8c_a31c8fd3c5852555e0edc92d34fc5d2bc}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!textWinter2@{textWinter2}}
+\index{textWinter2@{textWinter2}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{textWinter2}{textWinter2}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} text\+Winter2\mbox{[}32\mbox{]} = \char`\"{}L\+ET IT S\+N\+O\+W!\char`\"{}}
+

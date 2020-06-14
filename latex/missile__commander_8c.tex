@@ -1,0 +1,198 @@
+\hypertarget{missile__commander_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/missile\+\_\+commander.c}
+\label{missile__commander_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/missile\_commander.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/missile\_commander.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_missile}{Missile}}
+\item 
+struct \mbox{\hyperlink{struct_interceptor}{Interceptor}}
+\item 
+struct \mbox{\hyperlink{struct_explosion}{Explosion}}
+\item 
+struct \mbox{\hyperlink{struct_launcher}{Launcher}}
+\item 
+struct \mbox{\hyperlink{struct_building}{Building}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_aed68af5c2c961342d874f4e559deac70}{M\+A\+X\+\_\+\+M\+I\+S\+S\+I\+L\+ES}}~100
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_a7a8f0c1af97019e9eff199c956355523}{M\+A\+X\+\_\+\+I\+N\+T\+E\+R\+C\+E\+P\+T\+O\+RS}}~30
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_a6c82cf7ac9ed0c4e5551f7722e87bc99}{M\+A\+X\+\_\+\+E\+X\+P\+L\+O\+S\+I\+O\+NS}}~100
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_ad4e8225395c8337e7a98ab8be3c7f17e}{L\+A\+U\+N\+C\+H\+E\+R\+S\+\_\+\+A\+M\+O\+U\+NT}}~3
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_a3121132997ac303b0f5f936de663b1d5}{B\+U\+I\+L\+D\+I\+N\+G\+S\+\_\+\+A\+M\+O\+U\+NT}}~6
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_a424e5403be7450cbafec878a8567093b}{L\+A\+U\+N\+C\+H\+E\+R\+\_\+\+S\+I\+ZE}}~80
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_ad6778273ea3f0f9e18d4eb0fa8986b89}{B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+S\+I\+ZE}}~60
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_a4c992f76521ac05122ed2ee4b447cb3e}{E\+X\+P\+L\+O\+S\+I\+O\+N\+\_\+\+R\+A\+D\+I\+US}}~40
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_ad732a73881fc4402a1309791ae339341}{M\+I\+S\+S\+I\+L\+E\+\_\+\+S\+P\+E\+ED}}~1
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_acf30be6d3754cfa8fa8694eb24b1d729}{M\+I\+S\+S\+I\+L\+E\+\_\+\+L\+A\+U\+N\+C\+H\+\_\+\+F\+R\+A\+M\+ES}}~80
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_a3635d1d57855288bee5526e0520741b7}{I\+N\+T\+E\+R\+C\+E\+P\+T\+O\+R\+\_\+\+S\+P\+E\+ED}}~10
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_a538d773d3d73f58f7ae08cae623c1fd9}{E\+X\+P\+L\+O\+S\+I\+O\+N\+\_\+\+I\+N\+C\+R\+E\+A\+S\+E\+\_\+\+T\+I\+ME}}~90
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_abfa8e8f2939d65bf47a9a07edf3088cf}{E\+X\+P\+L\+O\+S\+I\+O\+N\+\_\+\+T\+O\+T\+A\+L\+\_\+\+T\+I\+ME}}~210
+\item 
+\#define \mbox{\hyperlink{missile__commander_8c_a9d533ad47b827e7d7cb7e251171ba951}{E\+X\+P\+L\+O\+S\+I\+O\+N\+\_\+\+C\+O\+L\+OR}}~(\mbox{\hyperlink{struct_color}{Color}})\{ 125, 125, 125, 125 \}
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_missile}{Missile}} \mbox{\hyperlink{missile__commander_8c_a1c1d76156b05b483481e7526cc65483b}{Missile}}
+\item 
+typedef struct \mbox{\hyperlink{struct_interceptor}{Interceptor}} \mbox{\hyperlink{missile__commander_8c_a4f7df7e8066321edbeb001316c4be2fd}{Interceptor}}
+\item 
+typedef struct \mbox{\hyperlink{struct_explosion}{Explosion}} \mbox{\hyperlink{missile__commander_8c_a0ff80083c53a0a02feb5f838fb7cdc28}{Explosion}}
+\item 
+typedef struct \mbox{\hyperlink{struct_launcher}{Launcher}} \mbox{\hyperlink{missile__commander_8c_ad43b3ec5b8922e3fdef99afb3960f474}{Launcher}}
+\item 
+typedef struct \mbox{\hyperlink{struct_building}{Building}} \mbox{\hyperlink{missile__commander_8c_a797091de93a20f8a889f12b18ab1b443}{Building}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{missile__commander_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{missile__commander_8c_ad6778273ea3f0f9e18d4eb0fa8986b89}\label{missile__commander_8c_ad6778273ea3f0f9e18d4eb0fa8986b89}} 
+\index{missile\_commander.c@{missile\_commander.c}!BUILDING\_SIZE@{BUILDING\_SIZE}}
+\index{BUILDING\_SIZE@{BUILDING\_SIZE}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{BUILDING\_SIZE}{BUILDING\_SIZE}}
+{\footnotesize\ttfamily \#define B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+S\+I\+ZE~60}
+
+\mbox{\Hypertarget{missile__commander_8c_a3121132997ac303b0f5f936de663b1d5}\label{missile__commander_8c_a3121132997ac303b0f5f936de663b1d5}} 
+\index{missile\_commander.c@{missile\_commander.c}!BUILDINGS\_AMOUNT@{BUILDINGS\_AMOUNT}}
+\index{BUILDINGS\_AMOUNT@{BUILDINGS\_AMOUNT}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{BUILDINGS\_AMOUNT}{BUILDINGS\_AMOUNT}}
+{\footnotesize\ttfamily \#define B\+U\+I\+L\+D\+I\+N\+G\+S\+\_\+\+A\+M\+O\+U\+NT~6}
+
+\mbox{\Hypertarget{missile__commander_8c_a9d533ad47b827e7d7cb7e251171ba951}\label{missile__commander_8c_a9d533ad47b827e7d7cb7e251171ba951}} 
+\index{missile\_commander.c@{missile\_commander.c}!EXPLOSION\_COLOR@{EXPLOSION\_COLOR}}
+\index{EXPLOSION\_COLOR@{EXPLOSION\_COLOR}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{EXPLOSION\_COLOR}{EXPLOSION\_COLOR}}
+{\footnotesize\ttfamily \#define E\+X\+P\+L\+O\+S\+I\+O\+N\+\_\+\+C\+O\+L\+OR~(\mbox{\hyperlink{struct_color}{Color}})\{ 125, 125, 125, 125 \}}
+
+\mbox{\Hypertarget{missile__commander_8c_a538d773d3d73f58f7ae08cae623c1fd9}\label{missile__commander_8c_a538d773d3d73f58f7ae08cae623c1fd9}} 
+\index{missile\_commander.c@{missile\_commander.c}!EXPLOSION\_INCREASE\_TIME@{EXPLOSION\_INCREASE\_TIME}}
+\index{EXPLOSION\_INCREASE\_TIME@{EXPLOSION\_INCREASE\_TIME}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{EXPLOSION\_INCREASE\_TIME}{EXPLOSION\_INCREASE\_TIME}}
+{\footnotesize\ttfamily \#define E\+X\+P\+L\+O\+S\+I\+O\+N\+\_\+\+I\+N\+C\+R\+E\+A\+S\+E\+\_\+\+T\+I\+ME~90}
+
+\mbox{\Hypertarget{missile__commander_8c_a4c992f76521ac05122ed2ee4b447cb3e}\label{missile__commander_8c_a4c992f76521ac05122ed2ee4b447cb3e}} 
+\index{missile\_commander.c@{missile\_commander.c}!EXPLOSION\_RADIUS@{EXPLOSION\_RADIUS}}
+\index{EXPLOSION\_RADIUS@{EXPLOSION\_RADIUS}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{EXPLOSION\_RADIUS}{EXPLOSION\_RADIUS}}
+{\footnotesize\ttfamily \#define E\+X\+P\+L\+O\+S\+I\+O\+N\+\_\+\+R\+A\+D\+I\+US~40}
+
+\mbox{\Hypertarget{missile__commander_8c_abfa8e8f2939d65bf47a9a07edf3088cf}\label{missile__commander_8c_abfa8e8f2939d65bf47a9a07edf3088cf}} 
+\index{missile\_commander.c@{missile\_commander.c}!EXPLOSION\_TOTAL\_TIME@{EXPLOSION\_TOTAL\_TIME}}
+\index{EXPLOSION\_TOTAL\_TIME@{EXPLOSION\_TOTAL\_TIME}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{EXPLOSION\_TOTAL\_TIME}{EXPLOSION\_TOTAL\_TIME}}
+{\footnotesize\ttfamily \#define E\+X\+P\+L\+O\+S\+I\+O\+N\+\_\+\+T\+O\+T\+A\+L\+\_\+\+T\+I\+ME~210}
+
+\mbox{\Hypertarget{missile__commander_8c_a3635d1d57855288bee5526e0520741b7}\label{missile__commander_8c_a3635d1d57855288bee5526e0520741b7}} 
+\index{missile\_commander.c@{missile\_commander.c}!INTERCEPTOR\_SPEED@{INTERCEPTOR\_SPEED}}
+\index{INTERCEPTOR\_SPEED@{INTERCEPTOR\_SPEED}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{INTERCEPTOR\_SPEED}{INTERCEPTOR\_SPEED}}
+{\footnotesize\ttfamily \#define I\+N\+T\+E\+R\+C\+E\+P\+T\+O\+R\+\_\+\+S\+P\+E\+ED~10}
+
+\mbox{\Hypertarget{missile__commander_8c_a424e5403be7450cbafec878a8567093b}\label{missile__commander_8c_a424e5403be7450cbafec878a8567093b}} 
+\index{missile\_commander.c@{missile\_commander.c}!LAUNCHER\_SIZE@{LAUNCHER\_SIZE}}
+\index{LAUNCHER\_SIZE@{LAUNCHER\_SIZE}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{LAUNCHER\_SIZE}{LAUNCHER\_SIZE}}
+{\footnotesize\ttfamily \#define L\+A\+U\+N\+C\+H\+E\+R\+\_\+\+S\+I\+ZE~80}
+
+\mbox{\Hypertarget{missile__commander_8c_ad4e8225395c8337e7a98ab8be3c7f17e}\label{missile__commander_8c_ad4e8225395c8337e7a98ab8be3c7f17e}} 
+\index{missile\_commander.c@{missile\_commander.c}!LAUNCHERS\_AMOUNT@{LAUNCHERS\_AMOUNT}}
+\index{LAUNCHERS\_AMOUNT@{LAUNCHERS\_AMOUNT}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{LAUNCHERS\_AMOUNT}{LAUNCHERS\_AMOUNT}}
+{\footnotesize\ttfamily \#define L\+A\+U\+N\+C\+H\+E\+R\+S\+\_\+\+A\+M\+O\+U\+NT~3}
+
+\mbox{\Hypertarget{missile__commander_8c_a6c82cf7ac9ed0c4e5551f7722e87bc99}\label{missile__commander_8c_a6c82cf7ac9ed0c4e5551f7722e87bc99}} 
+\index{missile\_commander.c@{missile\_commander.c}!MAX\_EXPLOSIONS@{MAX\_EXPLOSIONS}}
+\index{MAX\_EXPLOSIONS@{MAX\_EXPLOSIONS}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_EXPLOSIONS}{MAX\_EXPLOSIONS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+E\+X\+P\+L\+O\+S\+I\+O\+NS~100}
+
+\mbox{\Hypertarget{missile__commander_8c_a7a8f0c1af97019e9eff199c956355523}\label{missile__commander_8c_a7a8f0c1af97019e9eff199c956355523}} 
+\index{missile\_commander.c@{missile\_commander.c}!MAX\_INTERCEPTORS@{MAX\_INTERCEPTORS}}
+\index{MAX\_INTERCEPTORS@{MAX\_INTERCEPTORS}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_INTERCEPTORS}{MAX\_INTERCEPTORS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+I\+N\+T\+E\+R\+C\+E\+P\+T\+O\+RS~30}
+
+\mbox{\Hypertarget{missile__commander_8c_aed68af5c2c961342d874f4e559deac70}\label{missile__commander_8c_aed68af5c2c961342d874f4e559deac70}} 
+\index{missile\_commander.c@{missile\_commander.c}!MAX\_MISSILES@{MAX\_MISSILES}}
+\index{MAX\_MISSILES@{MAX\_MISSILES}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_MISSILES}{MAX\_MISSILES}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+M\+I\+S\+S\+I\+L\+ES~100}
+
+\mbox{\Hypertarget{missile__commander_8c_acf30be6d3754cfa8fa8694eb24b1d729}\label{missile__commander_8c_acf30be6d3754cfa8fa8694eb24b1d729}} 
+\index{missile\_commander.c@{missile\_commander.c}!MISSILE\_LAUNCH\_FRAMES@{MISSILE\_LAUNCH\_FRAMES}}
+\index{MISSILE\_LAUNCH\_FRAMES@{MISSILE\_LAUNCH\_FRAMES}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{MISSILE\_LAUNCH\_FRAMES}{MISSILE\_LAUNCH\_FRAMES}}
+{\footnotesize\ttfamily \#define M\+I\+S\+S\+I\+L\+E\+\_\+\+L\+A\+U\+N\+C\+H\+\_\+\+F\+R\+A\+M\+ES~80}
+
+\mbox{\Hypertarget{missile__commander_8c_ad732a73881fc4402a1309791ae339341}\label{missile__commander_8c_ad732a73881fc4402a1309791ae339341}} 
+\index{missile\_commander.c@{missile\_commander.c}!MISSILE\_SPEED@{MISSILE\_SPEED}}
+\index{MISSILE\_SPEED@{MISSILE\_SPEED}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{MISSILE\_SPEED}{MISSILE\_SPEED}}
+{\footnotesize\ttfamily \#define M\+I\+S\+S\+I\+L\+E\+\_\+\+S\+P\+E\+ED~1}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{missile__commander_8c_a797091de93a20f8a889f12b18ab1b443}\label{missile__commander_8c_a797091de93a20f8a889f12b18ab1b443}} 
+\index{missile\_commander.c@{missile\_commander.c}!Building@{Building}}
+\index{Building@{Building}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{Building}{Building}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_building}{Building}} \mbox{\hyperlink{struct_building}{Building}}}
+
+\mbox{\Hypertarget{missile__commander_8c_a0ff80083c53a0a02feb5f838fb7cdc28}\label{missile__commander_8c_a0ff80083c53a0a02feb5f838fb7cdc28}} 
+\index{missile\_commander.c@{missile\_commander.c}!Explosion@{Explosion}}
+\index{Explosion@{Explosion}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{Explosion}{Explosion}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_explosion}{Explosion}} \mbox{\hyperlink{struct_explosion}{Explosion}}}
+
+\mbox{\Hypertarget{missile__commander_8c_a4f7df7e8066321edbeb001316c4be2fd}\label{missile__commander_8c_a4f7df7e8066321edbeb001316c4be2fd}} 
+\index{missile\_commander.c@{missile\_commander.c}!Interceptor@{Interceptor}}
+\index{Interceptor@{Interceptor}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{Interceptor}{Interceptor}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_interceptor}{Interceptor}} \mbox{\hyperlink{struct_interceptor}{Interceptor}}}
+
+\mbox{\Hypertarget{missile__commander_8c_ad43b3ec5b8922e3fdef99afb3960f474}\label{missile__commander_8c_ad43b3ec5b8922e3fdef99afb3960f474}} 
+\index{missile\_commander.c@{missile\_commander.c}!Launcher@{Launcher}}
+\index{Launcher@{Launcher}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{Launcher}{Launcher}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_launcher}{Launcher}} \mbox{\hyperlink{struct_launcher}{Launcher}}}
+
+\mbox{\Hypertarget{missile__commander_8c_a1c1d76156b05b483481e7526cc65483b}\label{missile__commander_8c_a1c1d76156b05b483481e7526cc65483b}} 
+\index{missile\_commander.c@{missile\_commander.c}!Missile@{Missile}}
+\index{Missile@{Missile}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{Missile}{Missile}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_missile}{Missile}} \mbox{\hyperlink{struct_missile}{Missile}}}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{missile__commander_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{missile__commander_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{missile\_commander.c@{missile\_commander.c}!main@{main}}
+\index{main@{main}!missile\_commander.c@{missile\_commander.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+

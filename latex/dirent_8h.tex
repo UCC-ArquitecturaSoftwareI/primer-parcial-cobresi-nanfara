@@ -1,0 +1,95 @@
+\hypertarget{dirent_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/dirent.h}
+\label{dirent_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/dirent.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/dirent.h}}
+{\ttfamily \#include $<$io.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdirent}{dirent}}
+\item 
+struct \mbox{\hyperlink{struct_d_i_r}{D\+IR}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{dirent_8h_acd1b0e99956e2b1293ea8b248ab7f68b}{D\+I\+R\+E\+N\+T\+\_\+\+M\+A\+L\+L\+OC}}(sz)~malloc(sz)
+\item 
+\#define \mbox{\hyperlink{dirent_8h_a76d075063d3efcf6ea50099914a2dd26}{D\+I\+R\+E\+N\+T\+\_\+\+F\+R\+EE}}(p)~free(p)
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_d_i_r}{D\+IR}} \mbox{\hyperlink{dirent_8h_a805632179a707f8794b35f089c940cb3}{D\+IR}}
+\item 
+typedef ptrdiff\+\_\+t \mbox{\hyperlink{dirent_8h_a399d6f07b81ec726a8973e3c939cca48}{handle\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_d_i_r}{D\+IR}} $\ast$ \mbox{\hyperlink{dirent_8h_a4fcc7ee570eeaee1fe6264604b91257f}{opendir}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14d7642df08c5cb68e4fb90cc8a73509}{name}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{dirent_8h_ac0258906f9453b8abf03e945aa9c9676}{closedir}} (\mbox{\hyperlink{struct_d_i_r}{D\+IR}} $\ast$dir)
+\item 
+struct \mbox{\hyperlink{structdirent}{dirent}} $\ast$ \mbox{\hyperlink{dirent_8h_ab1ebcf210f49b305423bcc413c6427ee}{readdir}} (\mbox{\hyperlink{struct_d_i_r}{D\+IR}} $\ast$dir)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{dirent_8h_aa9b34669494ad61ee2035dee1eefee4f}{rewinddir}} (\mbox{\hyperlink{struct_d_i_r}{D\+IR}} $\ast$dir)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{dirent_8h_a76d075063d3efcf6ea50099914a2dd26}\label{dirent_8h_a76d075063d3efcf6ea50099914a2dd26}} 
+\index{dirent.h@{dirent.h}!DIRENT\_FREE@{DIRENT\_FREE}}
+\index{DIRENT\_FREE@{DIRENT\_FREE}!dirent.h@{dirent.h}}
+\doxysubsubsection{\texorpdfstring{DIRENT\_FREE}{DIRENT\_FREE}}
+{\footnotesize\ttfamily \#define D\+I\+R\+E\+N\+T\+\_\+\+F\+R\+EE(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~free(p)}
+
+\mbox{\Hypertarget{dirent_8h_acd1b0e99956e2b1293ea8b248ab7f68b}\label{dirent_8h_acd1b0e99956e2b1293ea8b248ab7f68b}} 
+\index{dirent.h@{dirent.h}!DIRENT\_MALLOC@{DIRENT\_MALLOC}}
+\index{DIRENT\_MALLOC@{DIRENT\_MALLOC}!dirent.h@{dirent.h}}
+\doxysubsubsection{\texorpdfstring{DIRENT\_MALLOC}{DIRENT\_MALLOC}}
+{\footnotesize\ttfamily \#define D\+I\+R\+E\+N\+T\+\_\+\+M\+A\+L\+L\+OC(\begin{DoxyParamCaption}\item[{}]{sz }\end{DoxyParamCaption})~malloc(sz)}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{dirent_8h_a805632179a707f8794b35f089c940cb3}\label{dirent_8h_a805632179a707f8794b35f089c940cb3}} 
+\index{dirent.h@{dirent.h}!DIR@{DIR}}
+\index{DIR@{DIR}!dirent.h@{dirent.h}}
+\doxysubsubsection{\texorpdfstring{DIR}{DIR}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_d_i_r}{D\+IR}} \mbox{\hyperlink{struct_d_i_r}{D\+IR}}}
+
+\mbox{\Hypertarget{dirent_8h_a399d6f07b81ec726a8973e3c939cca48}\label{dirent_8h_a399d6f07b81ec726a8973e3c939cca48}} 
+\index{dirent.h@{dirent.h}!handle\_type@{handle\_type}}
+\index{handle\_type@{handle\_type}!dirent.h@{dirent.h}}
+\doxysubsubsection{\texorpdfstring{handle\_type}{handle\_type}}
+{\footnotesize\ttfamily typedef ptrdiff\+\_\+t \mbox{\hyperlink{dirent_8h_a399d6f07b81ec726a8973e3c939cca48}{handle\+\_\+type}}}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{dirent_8h_ac0258906f9453b8abf03e945aa9c9676}\label{dirent_8h_ac0258906f9453b8abf03e945aa9c9676}} 
+\index{dirent.h@{dirent.h}!closedir@{closedir}}
+\index{closedir@{closedir}!dirent.h@{dirent.h}}
+\doxysubsubsection{\texorpdfstring{closedir()}{closedir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} closedir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_i_r}{D\+IR}} $\ast$}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dirent_8h_a4fcc7ee570eeaee1fe6264604b91257f}\label{dirent_8h_a4fcc7ee570eeaee1fe6264604b91257f}} 
+\index{dirent.h@{dirent.h}!opendir@{opendir}}
+\index{opendir@{opendir}!dirent.h@{dirent.h}}
+\doxysubsubsection{\texorpdfstring{opendir()}{opendir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_d_i_r}{D\+IR}} $\ast$ opendir (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dirent_8h_ab1ebcf210f49b305423bcc413c6427ee}\label{dirent_8h_ab1ebcf210f49b305423bcc413c6427ee}} 
+\index{dirent.h@{dirent.h}!readdir@{readdir}}
+\index{readdir@{readdir}!dirent.h@{dirent.h}}
+\doxysubsubsection{\texorpdfstring{readdir()}{readdir()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structdirent}{dirent}} $\ast$ readdir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_i_r}{D\+IR}} $\ast$}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dirent_8h_aa9b34669494ad61ee2035dee1eefee4f}\label{dirent_8h_aa9b34669494ad61ee2035dee1eefee4f}} 
+\index{dirent.h@{dirent.h}!rewinddir@{rewinddir}}
+\index{rewinddir@{rewinddir}!dirent.h@{dirent.h}}
+\doxysubsubsection{\texorpdfstring{rewinddir()}{rewinddir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} rewinddir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_i_r}{D\+IR}} $\ast$}]{dir }\end{DoxyParamCaption})}
+

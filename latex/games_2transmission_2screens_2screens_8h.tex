@@ -1,0 +1,877 @@
+\hypertarget{games_2transmission_2screens_2screens_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/transmission/screens/screens.h}
+\label{games_2transmission_2screens_2screens_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/transmission/screens/screens.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/transmission/screens/screens.h}}
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_word}{Word}}
+\item 
+struct \mbox{\hyperlink{struct_mission}{Mission}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a2d8bf08667c875f78e2f0e866c787f39}{M\+A\+X\+\_\+\+C\+O\+D\+I\+N\+G\+\_\+\+W\+O\+R\+DS}}~12
+\item 
+\#define \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a350e71e4c09cb59d2206c3afdcc1dd41}{M\+A\+X\+\_\+\+M\+I\+S\+S\+I\+O\+N\+\_\+\+W\+O\+R\+DS}}~8
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{arkanoid_8c_a74fa4be11c0eaf0601894bed6ed01402}{Game\+Screen}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a4784cee37448bfc0976f6966ca192df3}{Game\+Screen}}
+\item 
+typedef struct \mbox{\hyperlink{struct_word}{Word}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_ab9b4806844f645e08cfa71d73f1e7c7a}{Word}}
+\item 
+typedef struct \mbox{\hyperlink{struct_mission}{Mission}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a64926fd0c189ec57c7f4b36b7d42925d}{Mission}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402}{Game\+Screen}} \{ \newline
+\mbox{\hyperlink{arkanoid_8c_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}{L\+O\+GO}}, 
+\mbox{\hyperlink{arkanoid_8c_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{arkanoid_8c_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\mbox{\hyperlink{arkanoid_8c_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\newline
+\mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}{L\+O\+GO}} = 0, 
+\mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}{O\+P\+T\+I\+O\+NS}}, 
+\mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\newline
+\mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{00__drturtle__screens_8c_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{00__drturtle__screens_8c_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\mbox{\hyperlink{00__drturtle__screens_8c_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\newline
+\mbox{\hyperlink{01__drturtle__scrolling_8c_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{01__drturtle__scrolling_8c_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\mbox{\hyperlink{01__drturtle__scrolling_8c_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{02__drturtle__player_8c_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\newline
+\mbox{\hyperlink{02__drturtle__player_8c_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\mbox{\hyperlink{02__drturtle__player_8c_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{03__drturtle__enemies_8c_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{03__drturtle__enemies_8c_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\newline
+\mbox{\hyperlink{03__drturtle__enemies_8c_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{04__drturtle__gui_8c_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{04__drturtle__gui_8c_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\mbox{\hyperlink{04__drturtle__gui_8c_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\newline
+\mbox{\hyperlink{05__drturtle__audio_8c_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{05__drturtle__audio_8c_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\mbox{\hyperlink{05__drturtle__audio_8c_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{06__drturtle__final_8c_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\newline
+\mbox{\hyperlink{06__drturtle__final_8c_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\mbox{\hyperlink{06__drturtle__final_8c_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{drturtle__final__web_8c_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}} = 0, 
+\mbox{\hyperlink{drturtle__final__web_8c_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\newline
+\mbox{\hyperlink{drturtle__final__web_8c_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{games_2just__do_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}{L\+O\+GO}}, 
+\mbox{\hyperlink{games_2just__do_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a347c0681989a203acc9c2752de9c970e}{L\+E\+V\+E\+L00}}, 
+\mbox{\hyperlink{games_2just__do_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ada477cdcf4c5138fda497cf1f2b06d29}{L\+E\+V\+E\+L01}}, 
+\newline
+\mbox{\hyperlink{games_2just__do_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402afc8b17e3a7eb9a6a4cbb2dbd849e9ed7}{L\+E\+V\+E\+L02}}, 
+\mbox{\hyperlink{games_2just__do_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6f3005a7294141705952887ea16a6183}{L\+E\+V\+E\+L03}}, 
+\mbox{\hyperlink{games_2just__do_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a9456d02b0ee079cbd7f83b01abe2d573}{L\+E\+V\+E\+L04}}, 
+\mbox{\hyperlink{games_2just__do_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6ca1034976146ed59880abedf065e018}{L\+E\+V\+E\+L05}}, 
+\newline
+\mbox{\hyperlink{games_2just__do_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402acc6e4dd9a3526c140d14605e776e2cb7}{L\+E\+V\+E\+L06}}, 
+\mbox{\hyperlink{games_2just__do_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a5391e639aa32c47c501f8941e27ccbc7}{L\+E\+V\+E\+L07}}, 
+\mbox{\hyperlink{games_2just__do_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ae55dc3164403d6d014f8f6c9789c653f}{L\+E\+V\+E\+L08}}, 
+\mbox{\hyperlink{games_2just__do_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ae685f5f4dbaefc441e0c74166a4f03da}{L\+E\+V\+E\+L09}}, 
+\newline
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}{L\+O\+GO}}, 
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}{O\+P\+T\+I\+O\+NS}}, 
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\newline
+\mbox{\hyperlink{games_2koala__seasons_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{games_2light__my__ritual_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a89d85877dc492cbbc24e133cde4c0ee1}{L\+O\+G\+O\+\_\+\+RL}} = 0, 
+\mbox{\hyperlink{games_2light__my__ritual_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{games_2light__my__ritual_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\newline
+\mbox{\hyperlink{games_2skully__escape_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}{L\+O\+GO}} = 0, 
+\mbox{\hyperlink{games_2skully__escape_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a89d85877dc492cbbc24e133cde4c0ee1}{L\+O\+G\+O\+\_\+\+RL}}, 
+\mbox{\hyperlink{games_2skully__escape_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{games_2skully__escape_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402af873278d3989e825a52a60659b3e94da}{A\+T\+T\+IC}}, 
+\newline
+\mbox{\hyperlink{games_2skully__escape_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402afa1a6eed7296c8e79032b47b24b6439a}{A\+I\+S\+L\+E01}}, 
+\mbox{\hyperlink{games_2skully__escape_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aea6f5ca662b07f36a04c548500d474b8}{A\+I\+S\+L\+E02}}, 
+\mbox{\hyperlink{games_2skully__escape_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a895d33fddde8c1b84d5d9cb427b02863}{B\+A\+T\+H\+R\+O\+OM}}, 
+\mbox{\hyperlink{games_2skully__escape_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a671f2b54c9978637db75a3b3631c8185}{L\+I\+V\+I\+N\+G\+R\+O\+OM}}, 
+\newline
+\mbox{\hyperlink{games_2skully__escape_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a4ee84499c713a291f1748ca7207f19ca}{K\+I\+T\+C\+H\+EN}}, 
+\mbox{\hyperlink{games_2skully__escape_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a7c9c5d0e0a1ad8e25b740f51359e8853}{A\+R\+M\+O\+RY}}, 
+\mbox{\hyperlink{games_2skully__escape_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}{L\+O\+GO}} = 0, 
+\newline
+\mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ae92f6a2bb46918da226bb46c591605c8}{M\+I\+S\+S\+I\+ON}}, 
+\mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\newline
+\mbox{\hyperlink{games_2wave__collector_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}{L\+O\+GO}} = 0, 
+\mbox{\hyperlink{games_2wave__collector_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{games_2wave__collector_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\mbox{\hyperlink{games_2wave__collector_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\newline
+\mbox{\hyperlink{templates_2advance__game_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}{L\+O\+GO}} = 0, 
+\mbox{\hyperlink{templates_2advance__game_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{templates_2advance__game_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}{O\+P\+T\+I\+O\+NS}}, 
+\mbox{\hyperlink{templates_2advance__game_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\newline
+\mbox{\hyperlink{templates_2advance__game_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{simple__game_8c_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}{L\+O\+GO}} = 0, 
+\mbox{\hyperlink{simple__game_8c_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{simple__game_8c_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\newline
+\mbox{\hyperlink{simple__game_8c_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{templates_2standard__game_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}{L\+O\+GO}} = 0, 
+\mbox{\hyperlink{templates_2standard__game_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}{T\+I\+T\+LE}}, 
+\mbox{\hyperlink{templates_2standard__game_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}{O\+P\+T\+I\+O\+NS}}, 
+\newline
+\mbox{\hyperlink{templates_2standard__game_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}{G\+A\+M\+E\+P\+L\+AY}}, 
+\mbox{\hyperlink{templates_2standard__game_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}{E\+N\+D\+I\+NG}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_afa809c48d42a40d4b93c7083dede3846}{Is\+Button\+Pressed}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_aabb56a7fcaedd312f95be58b705e741c}{Draw\+Button}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}})
+\item 
+\mbox{\hyperlink{struct_mission}{Mission}} $\ast$ \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a424fd53beb9c04e429bb14a706632dac}{Load\+Missions}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$file\+Name)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_ad92f3a4b046eef8d87b327a15f1e74d7}{Init\+Logo\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a35157c4fa7c36cec67dfc268cd5064dc}{Update\+Logo\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a8c85502e1083adfc863549240bd2e402}{Draw\+Logo\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_af8d9ca5dce1ab0e74d9c31b5eeec5bd8}{Unload\+Logo\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_abe37f4d9c4c03777d3e0fb3f47918466}{Finish\+Logo\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_aa0b4d8d943e1631a9995008c03d38a6b}{Init\+Title\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a0f8347f7bfabb1828448cbe369c1d834}{Update\+Title\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_ae000e2560b4fa357c73b60f96c6cc6c0}{Draw\+Title\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_accc105ccd8702191afb00cc77846bb8c}{Unload\+Title\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a7ce8053bc30204e797c5ee0f279d0148}{Finish\+Title\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_add6ea5d38d9b2ab92da46dba1cd4fb40}{Init\+Mission\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_ad8e6a5ff72813501b5904365022dfd95}{Update\+Mission\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a356a040deb95998d9b89edcbd7bb928c}{Draw\+Mission\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a1d3e3b9a397c1fa1a7e67a10cd019bc1}{Unload\+Mission\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_aa85764055272cb42e56df40ff8b625fc}{Finish\+Mission\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a76918e73a46306124299f0ecdded70ac}{Init\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_ae375af3a5eb93543369403b716cbc0a8}{Update\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a8b8fc25f26ad73f9c08497af8b074ccf}{Draw\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_ac96945d9b745690aa8ff1c909c816188}{Unload\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_abe4d51d9e25770ad24c45f83837211be}{Finish\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a8a73b54354cdc2042bcde35392558130}{Init\+Ending\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a1f6794d5a7e0deb5f56e019c1792eba6}{Update\+Ending\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_ad8b8aef9264e99b0c868b3b128a27da1}{Draw\+Ending\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a7c886dbf9a5a990809ba32210f4ed7b2}{Unload\+Ending\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a682581a3eda04659aacfb3d8353aed71}{Finish\+Ending\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{arkanoid_8c_a74fa4be11c0eaf0601894bed6ed01402}{Game\+Screen}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a095d002ae1c7d161bc2a08f2b3d5a1b6}{current\+Screen}}
+\item 
+\mbox{\hyperlink{struct_music}{Music}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a8e4a12cb358091be4a5f7447b57e2014}{music}}
+\item 
+\mbox{\hyperlink{struct_sound}{Sound}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a74ae2faa37c4d1b5994a6fcf6cdff665}{fx\+Button}}
+\item 
+\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_aa58a3afc7ed4ffeedd975a80a0f14292}{rec\+Button}}
+\item 
+float \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a282abc6642a9ef44b4d077e5418e5b0a}{fade\+Button}}
+\item 
+\mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a3428d958319ef8849d578af394826255}{color\+Button}}
+\item 
+\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a074b1dcf62cb7ec67139cd063e90a9f8}{tex\+Button}}
+\item 
+\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_ac13171bd08511bfe7d3b7ab61714bbf2}{text\+Position\+Button}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_acaa3c78867996255213db6bf4faffde0}{font\+Size\+Button}}
+\item 
+\mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a10f5139355e5c0c7e1c8fec689a27ff3}{text\+Color\+Button}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a2049de9bc367940047476be616eeda11}{current\+Mission}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a5299438629168f3a6b8ca547edd483bc}{total\+Missions}}
+\item 
+\mbox{\hyperlink{struct_font}{Font}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_afcc7dce2765203f6ada23369de26ba58}{font\+Mission}}
+\item 
+\mbox{\hyperlink{struct_word}{Word}} \mbox{\hyperlink{games_2transmission_2screens_2screens_8h_ac9d2de8c92737c0320ce51cdfe17ede8}{message\+Words}} \mbox{[}\mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a350e71e4c09cb59d2206c3afdcc1dd41}{M\+A\+X\+\_\+\+M\+I\+S\+S\+I\+O\+N\+\_\+\+W\+O\+R\+DS}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a2d8bf08667c875f78e2f0e866c787f39}\label{games_2transmission_2screens_2screens_8h_a2d8bf08667c875f78e2f0e866c787f39}} 
+\index{screens.h@{screens.h}!MAX\_CODING\_WORDS@{MAX\_CODING\_WORDS}}
+\index{MAX\_CODING\_WORDS@{MAX\_CODING\_WORDS}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_CODING\_WORDS}{MAX\_CODING\_WORDS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+C\+O\+D\+I\+N\+G\+\_\+\+W\+O\+R\+DS~12}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a350e71e4c09cb59d2206c3afdcc1dd41}\label{games_2transmission_2screens_2screens_8h_a350e71e4c09cb59d2206c3afdcc1dd41}} 
+\index{screens.h@{screens.h}!MAX\_MISSION\_WORDS@{MAX\_MISSION\_WORDS}}
+\index{MAX\_MISSION\_WORDS@{MAX\_MISSION\_WORDS}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_MISSION\_WORDS}{MAX\_MISSION\_WORDS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+M\+I\+S\+S\+I\+O\+N\+\_\+\+W\+O\+R\+DS~8}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a4784cee37448bfc0976f6966ca192df3}\label{games_2transmission_2screens_2screens_8h_a4784cee37448bfc0976f6966ca192df3}} 
+\index{screens.h@{screens.h}!GameScreen@{GameScreen}}
+\index{GameScreen@{GameScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{GameScreen}{GameScreen}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{arkanoid_8c_a74fa4be11c0eaf0601894bed6ed01402}{Game\+Screen}} \mbox{\hyperlink{arkanoid_8c_a74fa4be11c0eaf0601894bed6ed01402}{Game\+Screen}}}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a64926fd0c189ec57c7f4b36b7d42925d}\label{games_2transmission_2screens_2screens_8h_a64926fd0c189ec57c7f4b36b7d42925d}} 
+\index{screens.h@{screens.h}!Mission@{Mission}}
+\index{Mission@{Mission}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{Mission}{Mission}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_mission}{Mission}} \mbox{\hyperlink{struct_mission}{Mission}}}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_ab9b4806844f645e08cfa71d73f1e7c7a}\label{games_2transmission_2screens_2screens_8h_ab9b4806844f645e08cfa71d73f1e7c7a}} 
+\index{screens.h@{screens.h}!Word@{Word}}
+\index{Word@{Word}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{Word}{Word}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_word}{Word}} \mbox{\hyperlink{struct_word}{Word}}}
+
+
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402}} 
+\index{screens.h@{screens.h}!GameScreen@{GameScreen}}
+\index{GameScreen@{GameScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{GameScreen}{GameScreen}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{arkanoid_8c_a74fa4be11c0eaf0601894bed6ed01402}{Game\+Screen}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO@{LOGO}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO@{LOGO}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}} 
+L\+O\+GO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO@{LOGO}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO@{LOGO}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}} 
+L\+O\+GO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OPTIONS@{OPTIONS}!screens.h@{screens.h}}\index{screens.h@{screens.h}!OPTIONS@{OPTIONS}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}} 
+O\+P\+T\+I\+O\+NS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO@{LOGO}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO@{LOGO}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}} 
+L\+O\+GO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL00@{LEVEL00}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LEVEL00@{LEVEL00}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a347c0681989a203acc9c2752de9c970e}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a347c0681989a203acc9c2752de9c970e}} 
+L\+E\+V\+E\+L00&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL01@{LEVEL01}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LEVEL01@{LEVEL01}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ada477cdcf4c5138fda497cf1f2b06d29}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ada477cdcf4c5138fda497cf1f2b06d29}} 
+L\+E\+V\+E\+L01&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL02@{LEVEL02}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LEVEL02@{LEVEL02}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402afc8b17e3a7eb9a6a4cbb2dbd849e9ed7}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402afc8b17e3a7eb9a6a4cbb2dbd849e9ed7}} 
+L\+E\+V\+E\+L02&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL03@{LEVEL03}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LEVEL03@{LEVEL03}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6f3005a7294141705952887ea16a6183}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6f3005a7294141705952887ea16a6183}} 
+L\+E\+V\+E\+L03&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL04@{LEVEL04}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LEVEL04@{LEVEL04}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a9456d02b0ee079cbd7f83b01abe2d573}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a9456d02b0ee079cbd7f83b01abe2d573}} 
+L\+E\+V\+E\+L04&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL05@{LEVEL05}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LEVEL05@{LEVEL05}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6ca1034976146ed59880abedf065e018}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6ca1034976146ed59880abedf065e018}} 
+L\+E\+V\+E\+L05&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL06@{LEVEL06}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LEVEL06@{LEVEL06}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402acc6e4dd9a3526c140d14605e776e2cb7}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402acc6e4dd9a3526c140d14605e776e2cb7}} 
+L\+E\+V\+E\+L06&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL07@{LEVEL07}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LEVEL07@{LEVEL07}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a5391e639aa32c47c501f8941e27ccbc7}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a5391e639aa32c47c501f8941e27ccbc7}} 
+L\+E\+V\+E\+L07&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL08@{LEVEL08}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LEVEL08@{LEVEL08}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ae55dc3164403d6d014f8f6c9789c653f}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ae55dc3164403d6d014f8f6c9789c653f}} 
+L\+E\+V\+E\+L08&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL09@{LEVEL09}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LEVEL09@{LEVEL09}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ae685f5f4dbaefc441e0c74166a4f03da}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ae685f5f4dbaefc441e0c74166a4f03da}} 
+L\+E\+V\+E\+L09&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO@{LOGO}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO@{LOGO}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}} 
+L\+O\+GO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OPTIONS@{OPTIONS}!screens.h@{screens.h}}\index{screens.h@{screens.h}!OPTIONS@{OPTIONS}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}} 
+O\+P\+T\+I\+O\+NS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO\_RL@{LOGO\_RL}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO\_RL@{LOGO\_RL}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a89d85877dc492cbbc24e133cde4c0ee1}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a89d85877dc492cbbc24e133cde4c0ee1}} 
+L\+O\+G\+O\+\_\+\+RL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO@{LOGO}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO@{LOGO}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}} 
+L\+O\+GO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO\_RL@{LOGO\_RL}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO\_RL@{LOGO\_RL}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a89d85877dc492cbbc24e133cde4c0ee1}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a89d85877dc492cbbc24e133cde4c0ee1}} 
+L\+O\+G\+O\+\_\+\+RL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ATTIC@{ATTIC}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ATTIC@{ATTIC}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402af873278d3989e825a52a60659b3e94da}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402af873278d3989e825a52a60659b3e94da}} 
+A\+T\+T\+IC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AISLE01@{AISLE01}!screens.h@{screens.h}}\index{screens.h@{screens.h}!AISLE01@{AISLE01}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402afa1a6eed7296c8e79032b47b24b6439a}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402afa1a6eed7296c8e79032b47b24b6439a}} 
+A\+I\+S\+L\+E01&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AISLE02@{AISLE02}!screens.h@{screens.h}}\index{screens.h@{screens.h}!AISLE02@{AISLE02}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aea6f5ca662b07f36a04c548500d474b8}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aea6f5ca662b07f36a04c548500d474b8}} 
+A\+I\+S\+L\+E02&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BATHROOM@{BATHROOM}!screens.h@{screens.h}}\index{screens.h@{screens.h}!BATHROOM@{BATHROOM}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a895d33fddde8c1b84d5d9cb427b02863}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a895d33fddde8c1b84d5d9cb427b02863}} 
+B\+A\+T\+H\+R\+O\+OM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIVINGROOM@{LIVINGROOM}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LIVINGROOM@{LIVINGROOM}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a671f2b54c9978637db75a3b3631c8185}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a671f2b54c9978637db75a3b3631c8185}} 
+L\+I\+V\+I\+N\+G\+R\+O\+OM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KITCHEN@{KITCHEN}!screens.h@{screens.h}}\index{screens.h@{screens.h}!KITCHEN@{KITCHEN}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a4ee84499c713a291f1748ca7207f19ca}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a4ee84499c713a291f1748ca7207f19ca}} 
+K\+I\+T\+C\+H\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARMORY@{ARMORY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ARMORY@{ARMORY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a7c9c5d0e0a1ad8e25b740f51359e8853}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a7c9c5d0e0a1ad8e25b740f51359e8853}} 
+A\+R\+M\+O\+RY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO@{LOGO}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO@{LOGO}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}} 
+L\+O\+GO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MISSION@{MISSION}!screens.h@{screens.h}}\index{screens.h@{screens.h}!MISSION@{MISSION}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ae92f6a2bb46918da226bb46c591605c8}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402ae92f6a2bb46918da226bb46c591605c8}} 
+M\+I\+S\+S\+I\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO@{LOGO}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO@{LOGO}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}} 
+L\+O\+GO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO@{LOGO}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO@{LOGO}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}} 
+L\+O\+GO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OPTIONS@{OPTIONS}!screens.h@{screens.h}}\index{screens.h@{screens.h}!OPTIONS@{OPTIONS}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}} 
+O\+P\+T\+I\+O\+NS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO@{LOGO}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO@{LOGO}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}} 
+L\+O\+GO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOGO@{LOGO}!screens.h@{screens.h}}\index{screens.h@{screens.h}!LOGO@{LOGO}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2}} 
+L\+O\+GO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TITLE@{TITLE}!screens.h@{screens.h}}\index{screens.h@{screens.h}!TITLE@{TITLE}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05}} 
+T\+I\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OPTIONS@{OPTIONS}!screens.h@{screens.h}}\index{screens.h@{screens.h}!OPTIONS@{OPTIONS}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d}} 
+O\+P\+T\+I\+O\+NS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEPLAY@{GAMEPLAY}!screens.h@{screens.h}}\index{screens.h@{screens.h}!GAMEPLAY@{GAMEPLAY}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be}} 
+G\+A\+M\+E\+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDING@{ENDING}!screens.h@{screens.h}}\index{screens.h@{screens.h}!ENDING@{ENDING}}}\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}\label{games_2transmission_2screens_2screens_8h_a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75}} 
+E\+N\+D\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_aabb56a7fcaedd312f95be58b705e741c}\label{games_2transmission_2screens_2screens_8h_aabb56a7fcaedd312f95be58b705e741c}} 
+\index{screens.h@{screens.h}!DrawButton@{DrawButton}}
+\index{DrawButton@{DrawButton}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{DrawButton()}{DrawButton()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Button (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_ad8b8aef9264e99b0c868b3b128a27da1}\label{games_2transmission_2screens_2screens_8h_ad8b8aef9264e99b0c868b3b128a27da1}} 
+\index{screens.h@{screens.h}!DrawEndingScreen@{DrawEndingScreen}}
+\index{DrawEndingScreen@{DrawEndingScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{DrawEndingScreen()}{DrawEndingScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Ending\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a8b8fc25f26ad73f9c08497af8b074ccf}\label{games_2transmission_2screens_2screens_8h_a8b8fc25f26ad73f9c08497af8b074ccf}} 
+\index{screens.h@{screens.h}!DrawGameplayScreen@{DrawGameplayScreen}}
+\index{DrawGameplayScreen@{DrawGameplayScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{DrawGameplayScreen()}{DrawGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a8c85502e1083adfc863549240bd2e402}\label{games_2transmission_2screens_2screens_8h_a8c85502e1083adfc863549240bd2e402}} 
+\index{screens.h@{screens.h}!DrawLogoScreen@{DrawLogoScreen}}
+\index{DrawLogoScreen@{DrawLogoScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{DrawLogoScreen()}{DrawLogoScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Logo\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a356a040deb95998d9b89edcbd7bb928c}\label{games_2transmission_2screens_2screens_8h_a356a040deb95998d9b89edcbd7bb928c}} 
+\index{screens.h@{screens.h}!DrawMissionScreen@{DrawMissionScreen}}
+\index{DrawMissionScreen@{DrawMissionScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{DrawMissionScreen()}{DrawMissionScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Mission\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_ae000e2560b4fa357c73b60f96c6cc6c0}\label{games_2transmission_2screens_2screens_8h_ae000e2560b4fa357c73b60f96c6cc6c0}} 
+\index{screens.h@{screens.h}!DrawTitleScreen@{DrawTitleScreen}}
+\index{DrawTitleScreen@{DrawTitleScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{DrawTitleScreen()}{DrawTitleScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Title\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a682581a3eda04659aacfb3d8353aed71}\label{games_2transmission_2screens_2screens_8h_a682581a3eda04659aacfb3d8353aed71}} 
+\index{screens.h@{screens.h}!FinishEndingScreen@{FinishEndingScreen}}
+\index{FinishEndingScreen@{FinishEndingScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{FinishEndingScreen()}{FinishEndingScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Finish\+Ending\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_abe4d51d9e25770ad24c45f83837211be}\label{games_2transmission_2screens_2screens_8h_abe4d51d9e25770ad24c45f83837211be}} 
+\index{screens.h@{screens.h}!FinishGameplayScreen@{FinishGameplayScreen}}
+\index{FinishGameplayScreen@{FinishGameplayScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{FinishGameplayScreen()}{FinishGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Finish\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_abe37f4d9c4c03777d3e0fb3f47918466}\label{games_2transmission_2screens_2screens_8h_abe37f4d9c4c03777d3e0fb3f47918466}} 
+\index{screens.h@{screens.h}!FinishLogoScreen@{FinishLogoScreen}}
+\index{FinishLogoScreen@{FinishLogoScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{FinishLogoScreen()}{FinishLogoScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Finish\+Logo\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_aa85764055272cb42e56df40ff8b625fc}\label{games_2transmission_2screens_2screens_8h_aa85764055272cb42e56df40ff8b625fc}} 
+\index{screens.h@{screens.h}!FinishMissionScreen@{FinishMissionScreen}}
+\index{FinishMissionScreen@{FinishMissionScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{FinishMissionScreen()}{FinishMissionScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Finish\+Mission\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a7ce8053bc30204e797c5ee0f279d0148}\label{games_2transmission_2screens_2screens_8h_a7ce8053bc30204e797c5ee0f279d0148}} 
+\index{screens.h@{screens.h}!FinishTitleScreen@{FinishTitleScreen}}
+\index{FinishTitleScreen@{FinishTitleScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{FinishTitleScreen()}{FinishTitleScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Finish\+Title\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a8a73b54354cdc2042bcde35392558130}\label{games_2transmission_2screens_2screens_8h_a8a73b54354cdc2042bcde35392558130}} 
+\index{screens.h@{screens.h}!InitEndingScreen@{InitEndingScreen}}
+\index{InitEndingScreen@{InitEndingScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{InitEndingScreen()}{InitEndingScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Init\+Ending\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a76918e73a46306124299f0ecdded70ac}\label{games_2transmission_2screens_2screens_8h_a76918e73a46306124299f0ecdded70ac}} 
+\index{screens.h@{screens.h}!InitGameplayScreen@{InitGameplayScreen}}
+\index{InitGameplayScreen@{InitGameplayScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{InitGameplayScreen()}{InitGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Init\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_ad92f3a4b046eef8d87b327a15f1e74d7}\label{games_2transmission_2screens_2screens_8h_ad92f3a4b046eef8d87b327a15f1e74d7}} 
+\index{screens.h@{screens.h}!InitLogoScreen@{InitLogoScreen}}
+\index{InitLogoScreen@{InitLogoScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{InitLogoScreen()}{InitLogoScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Init\+Logo\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_add6ea5d38d9b2ab92da46dba1cd4fb40}\label{games_2transmission_2screens_2screens_8h_add6ea5d38d9b2ab92da46dba1cd4fb40}} 
+\index{screens.h@{screens.h}!InitMissionScreen@{InitMissionScreen}}
+\index{InitMissionScreen@{InitMissionScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{InitMissionScreen()}{InitMissionScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Init\+Mission\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_aa0b4d8d943e1631a9995008c03d38a6b}\label{games_2transmission_2screens_2screens_8h_aa0b4d8d943e1631a9995008c03d38a6b}} 
+\index{screens.h@{screens.h}!InitTitleScreen@{InitTitleScreen}}
+\index{InitTitleScreen@{InitTitleScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{InitTitleScreen()}{InitTitleScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Init\+Title\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_afa809c48d42a40d4b93c7083dede3846}\label{games_2transmission_2screens_2screens_8h_afa809c48d42a40d4b93c7083dede3846}} 
+\index{screens.h@{screens.h}!IsButtonPressed@{IsButtonPressed}}
+\index{IsButtonPressed@{IsButtonPressed}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{IsButtonPressed()}{IsButtonPressed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Is\+Button\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a424fd53beb9c04e429bb14a706632dac}\label{games_2transmission_2screens_2screens_8h_a424fd53beb9c04e429bb14a706632dac}} 
+\index{screens.h@{screens.h}!LoadMissions@{LoadMissions}}
+\index{LoadMissions@{LoadMissions}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{LoadMissions()}{LoadMissions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mission}{Mission}}$\ast$ Load\+Missions (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a7c886dbf9a5a990809ba32210f4ed7b2}\label{games_2transmission_2screens_2screens_8h_a7c886dbf9a5a990809ba32210f4ed7b2}} 
+\index{screens.h@{screens.h}!UnloadEndingScreen@{UnloadEndingScreen}}
+\index{UnloadEndingScreen@{UnloadEndingScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{UnloadEndingScreen()}{UnloadEndingScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Ending\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_ac96945d9b745690aa8ff1c909c816188}\label{games_2transmission_2screens_2screens_8h_ac96945d9b745690aa8ff1c909c816188}} 
+\index{screens.h@{screens.h}!UnloadGameplayScreen@{UnloadGameplayScreen}}
+\index{UnloadGameplayScreen@{UnloadGameplayScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{UnloadGameplayScreen()}{UnloadGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_af8d9ca5dce1ab0e74d9c31b5eeec5bd8}\label{games_2transmission_2screens_2screens_8h_af8d9ca5dce1ab0e74d9c31b5eeec5bd8}} 
+\index{screens.h@{screens.h}!UnloadLogoScreen@{UnloadLogoScreen}}
+\index{UnloadLogoScreen@{UnloadLogoScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{UnloadLogoScreen()}{UnloadLogoScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Logo\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a1d3e3b9a397c1fa1a7e67a10cd019bc1}\label{games_2transmission_2screens_2screens_8h_a1d3e3b9a397c1fa1a7e67a10cd019bc1}} 
+\index{screens.h@{screens.h}!UnloadMissionScreen@{UnloadMissionScreen}}
+\index{UnloadMissionScreen@{UnloadMissionScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{UnloadMissionScreen()}{UnloadMissionScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Mission\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_accc105ccd8702191afb00cc77846bb8c}\label{games_2transmission_2screens_2screens_8h_accc105ccd8702191afb00cc77846bb8c}} 
+\index{screens.h@{screens.h}!UnloadTitleScreen@{UnloadTitleScreen}}
+\index{UnloadTitleScreen@{UnloadTitleScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{UnloadTitleScreen()}{UnloadTitleScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Title\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a1f6794d5a7e0deb5f56e019c1792eba6}\label{games_2transmission_2screens_2screens_8h_a1f6794d5a7e0deb5f56e019c1792eba6}} 
+\index{screens.h@{screens.h}!UpdateEndingScreen@{UpdateEndingScreen}}
+\index{UpdateEndingScreen@{UpdateEndingScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{UpdateEndingScreen()}{UpdateEndingScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Ending\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_ae375af3a5eb93543369403b716cbc0a8}\label{games_2transmission_2screens_2screens_8h_ae375af3a5eb93543369403b716cbc0a8}} 
+\index{screens.h@{screens.h}!UpdateGameplayScreen@{UpdateGameplayScreen}}
+\index{UpdateGameplayScreen@{UpdateGameplayScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{UpdateGameplayScreen()}{UpdateGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a35157c4fa7c36cec67dfc268cd5064dc}\label{games_2transmission_2screens_2screens_8h_a35157c4fa7c36cec67dfc268cd5064dc}} 
+\index{screens.h@{screens.h}!UpdateLogoScreen@{UpdateLogoScreen}}
+\index{UpdateLogoScreen@{UpdateLogoScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{UpdateLogoScreen()}{UpdateLogoScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Logo\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_ad8e6a5ff72813501b5904365022dfd95}\label{games_2transmission_2screens_2screens_8h_ad8e6a5ff72813501b5904365022dfd95}} 
+\index{screens.h@{screens.h}!UpdateMissionScreen@{UpdateMissionScreen}}
+\index{UpdateMissionScreen@{UpdateMissionScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{UpdateMissionScreen()}{UpdateMissionScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Mission\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a0f8347f7bfabb1828448cbe369c1d834}\label{games_2transmission_2screens_2screens_8h_a0f8347f7bfabb1828448cbe369c1d834}} 
+\index{screens.h@{screens.h}!UpdateTitleScreen@{UpdateTitleScreen}}
+\index{UpdateTitleScreen@{UpdateTitleScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{UpdateTitleScreen()}{UpdateTitleScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Title\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a3428d958319ef8849d578af394826255}\label{games_2transmission_2screens_2screens_8h_a3428d958319ef8849d578af394826255}} 
+\index{screens.h@{screens.h}!colorButton@{colorButton}}
+\index{colorButton@{colorButton}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{colorButton}{colorButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_color}{Color}} color\+Button}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a2049de9bc367940047476be616eeda11}\label{games_2transmission_2screens_2screens_8h_a2049de9bc367940047476be616eeda11}} 
+\index{screens.h@{screens.h}!currentMission@{currentMission}}
+\index{currentMission@{currentMission}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{currentMission}{currentMission}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} current\+Mission}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a095d002ae1c7d161bc2a08f2b3d5a1b6}\label{games_2transmission_2screens_2screens_8h_a095d002ae1c7d161bc2a08f2b3d5a1b6}} 
+\index{screens.h@{screens.h}!currentScreen@{currentScreen}}
+\index{currentScreen@{currentScreen}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{currentScreen}{currentScreen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arkanoid_8c_a74fa4be11c0eaf0601894bed6ed01402}{Game\+Screen}} current\+Screen}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a282abc6642a9ef44b4d077e5418e5b0a}\label{games_2transmission_2screens_2screens_8h_a282abc6642a9ef44b4d077e5418e5b0a}} 
+\index{screens.h@{screens.h}!fadeButton@{fadeButton}}
+\index{fadeButton@{fadeButton}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{fadeButton}{fadeButton}}
+{\footnotesize\ttfamily float fade\+Button}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_afcc7dce2765203f6ada23369de26ba58}\label{games_2transmission_2screens_2screens_8h_afcc7dce2765203f6ada23369de26ba58}} 
+\index{screens.h@{screens.h}!fontMission@{fontMission}}
+\index{fontMission@{fontMission}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{fontMission}{fontMission}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_font}{Font}} font\+Mission}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_acaa3c78867996255213db6bf4faffde0}\label{games_2transmission_2screens_2screens_8h_acaa3c78867996255213db6bf4faffde0}} 
+\index{screens.h@{screens.h}!fontSizeButton@{fontSizeButton}}
+\index{fontSizeButton@{fontSizeButton}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{fontSizeButton}{fontSizeButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} font\+Size\+Button}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a74ae2faa37c4d1b5994a6fcf6cdff665}\label{games_2transmission_2screens_2screens_8h_a74ae2faa37c4d1b5994a6fcf6cdff665}} 
+\index{screens.h@{screens.h}!fxButton@{fxButton}}
+\index{fxButton@{fxButton}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{fxButton}{fxButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sound}{Sound}} fx\+Button}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_ac9d2de8c92737c0320ce51cdfe17ede8}\label{games_2transmission_2screens_2screens_8h_ac9d2de8c92737c0320ce51cdfe17ede8}} 
+\index{screens.h@{screens.h}!messageWords@{messageWords}}
+\index{messageWords@{messageWords}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{messageWords}{messageWords}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_word}{Word}} message\+Words\mbox{[}\mbox{\hyperlink{games_2transmission_2screens_2screens_8h_a350e71e4c09cb59d2206c3afdcc1dd41}{M\+A\+X\+\_\+\+M\+I\+S\+S\+I\+O\+N\+\_\+\+W\+O\+R\+DS}}\mbox{]}}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a8e4a12cb358091be4a5f7447b57e2014}\label{games_2transmission_2screens_2screens_8h_a8e4a12cb358091be4a5f7447b57e2014}} 
+\index{screens.h@{screens.h}!music@{music}}
+\index{music@{music}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{music}{music}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_music}{Music}} music}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_aa58a3afc7ed4ffeedd975a80a0f14292}\label{games_2transmission_2screens_2screens_8h_aa58a3afc7ed4ffeedd975a80a0f14292}} 
+\index{screens.h@{screens.h}!recButton@{recButton}}
+\index{recButton@{recButton}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{recButton}{recButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} rec\+Button}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a074b1dcf62cb7ec67139cd063e90a9f8}\label{games_2transmission_2screens_2screens_8h_a074b1dcf62cb7ec67139cd063e90a9f8}} 
+\index{screens.h@{screens.h}!texButton@{texButton}}
+\index{texButton@{texButton}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{texButton}{texButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_texture2_d}{Texture2D}} tex\+Button}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a10f5139355e5c0c7e1c8fec689a27ff3}\label{games_2transmission_2screens_2screens_8h_a10f5139355e5c0c7e1c8fec689a27ff3}} 
+\index{screens.h@{screens.h}!textColorButton@{textColorButton}}
+\index{textColorButton@{textColorButton}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{textColorButton}{textColorButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_color}{Color}} text\+Color\+Button}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_ac13171bd08511bfe7d3b7ab61714bbf2}\label{games_2transmission_2screens_2screens_8h_ac13171bd08511bfe7d3b7ab61714bbf2}} 
+\index{screens.h@{screens.h}!textPositionButton@{textPositionButton}}
+\index{textPositionButton@{textPositionButton}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{textPositionButton}{textPositionButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} text\+Position\+Button}
+
+\mbox{\Hypertarget{games_2transmission_2screens_2screens_8h_a5299438629168f3a6b8ca547edd483bc}\label{games_2transmission_2screens_2screens_8h_a5299438629168f3a6b8ca547edd483bc}} 
+\index{screens.h@{screens.h}!totalMissions@{totalMissions}}
+\index{totalMissions@{totalMissions}!screens.h@{screens.h}}
+\doxysubsubsection{\texorpdfstring{totalMissions}{totalMissions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} total\+Missions}
+

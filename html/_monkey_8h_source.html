@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Fichero Fuente clases/Monkey.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_02fe6bb0d29b159db6747b11f409a1ef.html">clases</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Monkey.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_monkey_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by Abril on 13/4/2020.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_MONKEY_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_MONKEY_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;raylib.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_visitor_8h.html">Visitor.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_visitable_8h.html">Visitable.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//class Visitor;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//class VisitorDraw;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//class VisitorGetRectangle;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_monkey.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_monkey.html">Monkey</a>: <span class="keyword">public</span> <a class="code" href="class_visitable.html">Visitable</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_monkey.html#a5429f152679a8823285871aaba478618">   19</a></span>&#160;        <a class="code" href="struct_vector2.html">Vector2</a> <a class="code" href="class_monkey.html#a5429f152679a8823285871aaba478618">monkey_position</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_monkey.html#a549d1e08546fdecf1c1bfd0565472e81">   20</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_monkey.html#a549d1e08546fdecf1c1bfd0565472e81">lado</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_monkey.html#a4a78e66783b37e6b723cfa96a20b5121">   21</a></span>&#160;        <a class="code" href="struct_rectangle.html">Rectangle</a> <a class="code" href="class_monkey.html#a4a78e66783b37e6b723cfa96a20b5121">rect</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//Hacer bool</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_monkey.html#ae415a2829c515847f1dd312d2940b42e">   23</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_monkey.html#ae415a2829c515847f1dd312d2940b42e">mov</a>=0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_monkey.html#a157a26fb6ca19971f118d7ac7b27d732">   25</a></span>&#160;        <a class="code" href="class_monkey.html#a157a26fb6ca19971f118d7ac7b27d732">Monkey</a>()</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//            lado = 1;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//            monkey_position = Draw(0, lado);</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_monkey.html#ac400fcebf746c122415dfe8cbe101abe">   30</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_monkey.html#ac400fcebf746c122415dfe8cbe101abe">Draw</a>() =0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_monkey.html#a276633672619ced7b0d1e4e3c10b9601">   31</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_monkey.html#a276633672619ced7b0d1e4e3c10b9601">Accept</a>(<a class="code" href="class_visitor.html">Visitor</a>&amp;) =0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_monkey.html#a6124f7bdcaeaf4680c2ee5c0cd8f4873">move_right</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_monkey.html#a08a532bbe4d4160688fdf9c1053634de">move_left</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_monkey.html#a7c5b4494b55a310f1647f9d38b774396">newlado</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="struct_rectangle.html">Rectangle</a> <a class="code" href="class_monkey.html#a5c0bb05df6c26e0d03f5e11a8733abe2">getRectangle</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_MONKEY_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_monkey_html_a5429f152679a8823285871aaba478618"><div class="ttname"><a href="class_monkey.html#a5429f152679a8823285871aaba478618">Monkey::monkey_position</a></div><div class="ttdeci">Vector2 monkey_position</div><div class="ttdef"><b>Definition:</b> Monkey.h:19</div></div>
+<div class="ttc" id="aclass_monkey_html_a08a532bbe4d4160688fdf9c1053634de"><div class="ttname"><a href="class_monkey.html#a08a532bbe4d4160688fdf9c1053634de">Monkey::move_left</a></div><div class="ttdeci">void move_left()</div><div class="ttdef"><b>Definition:</b> Monkey.cpp:27</div></div>
+<div class="ttc" id="a_visitable_8h_html"><div class="ttname"><a href="_visitable_8h.html">Visitable.h</a></div></div>
+<div class="ttc" id="aclass_monkey_html_a7c5b4494b55a310f1647f9d38b774396"><div class="ttname"><a href="class_monkey.html#a7c5b4494b55a310f1647f9d38b774396">Monkey::newlado</a></div><div class="ttdeci">void newlado()</div><div class="ttdef"><b>Definition:</b> Monkey.cpp:39</div></div>
+<div class="ttc" id="aclass_monkey_html_a276633672619ced7b0d1e4e3c10b9601"><div class="ttname"><a href="class_monkey.html#a276633672619ced7b0d1e4e3c10b9601">Monkey::Accept</a></div><div class="ttdeci">virtual void Accept(Visitor &amp;)=0</div></div>
+<div class="ttc" id="aclass_monkey_html_a157a26fb6ca19971f118d7ac7b27d732"><div class="ttname"><a href="class_monkey.html#a157a26fb6ca19971f118d7ac7b27d732">Monkey::Monkey</a></div><div class="ttdeci">Monkey()</div><div class="ttdef"><b>Definition:</b> Monkey.h:25</div></div>
+<div class="ttc" id="aclass_monkey_html_a4a78e66783b37e6b723cfa96a20b5121"><div class="ttname"><a href="class_monkey.html#a4a78e66783b37e6b723cfa96a20b5121">Monkey::rect</a></div><div class="ttdeci">Rectangle rect</div><div class="ttdef"><b>Definition:</b> Monkey.h:21</div></div>
+<div class="ttc" id="aclass_monkey_html_a549d1e08546fdecf1c1bfd0565472e81"><div class="ttname"><a href="class_monkey.html#a549d1e08546fdecf1c1bfd0565472e81">Monkey::lado</a></div><div class="ttdeci">int lado</div><div class="ttdef"><b>Definition:</b> Monkey.h:20</div></div>
+<div class="ttc" id="astruct_vector2_html"><div class="ttname"><a href="struct_vector2.html">Vector2</a></div><div class="ttdef"><b>Definition:</b> raylib.h:171</div></div>
+<div class="ttc" id="aclass_visitable_html"><div class="ttname"><a href="class_visitable.html">Visitable</a></div><div class="ttdef"><b>Definition:</b> Visitable.h:26</div></div>
+<div class="ttc" id="aclass_monkey_html_ae415a2829c515847f1dd312d2940b42e"><div class="ttname"><a href="class_monkey.html#ae415a2829c515847f1dd312d2940b42e">Monkey::mov</a></div><div class="ttdeci">int mov</div><div class="ttdef"><b>Definition:</b> Monkey.h:23</div></div>
+<div class="ttc" id="aclass_monkey_html_a6124f7bdcaeaf4680c2ee5c0cd8f4873"><div class="ttname"><a href="class_monkey.html#a6124f7bdcaeaf4680c2ee5c0cd8f4873">Monkey::move_right</a></div><div class="ttdeci">void move_right()</div><div class="ttdef"><b>Definition:</b> Monkey.cpp:15</div></div>
+<div class="ttc" id="aclass_visitor_html"><div class="ttname"><a href="class_visitor.html">Visitor</a></div><div class="ttdef"><b>Definition:</b> Visitor.h:39</div></div>
+<div class="ttc" id="a_visitor_8h_html"><div class="ttname"><a href="_visitor_8h.html">Visitor.h</a></div></div>
+<div class="ttc" id="astruct_rectangle_html"><div class="ttname"><a href="struct_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> raylib.h:211</div></div>
+<div class="ttc" id="aclass_monkey_html"><div class="ttname"><a href="class_monkey.html">Monkey</a></div><div class="ttdef"><b>Definition:</b> Monkey.h:17</div></div>
+<div class="ttc" id="aclass_monkey_html_a5c0bb05df6c26e0d03f5e11a8733abe2"><div class="ttname"><a href="class_monkey.html#a5c0bb05df6c26e0d03f5e11a8733abe2">Monkey::getRectangle</a></div><div class="ttdeci">Rectangle getRectangle()</div><div class="ttdef"><b>Definition:</b> Monkey.cpp:56</div></div>
+<div class="ttc" id="aclass_monkey_html_ac400fcebf746c122415dfe8cbe101abe"><div class="ttname"><a href="class_monkey.html#ac400fcebf746c122415dfe8cbe101abe">Monkey::Draw</a></div><div class="ttdeci">virtual void Draw()=0</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

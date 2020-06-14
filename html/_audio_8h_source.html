@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Fichero Fuente clases/Audio.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_02fe6bb0d29b159db6747b11f409a1ef.html">clases</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Audio.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_audio_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_AUDIO_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_AUDIO_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;raylib.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_audio.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_audio.html">Audio</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_audio.html#a74afc81a1b6b5218124a835419c8dc75">   21</a></span>&#160;    <a class="code" href="struct_music.html">Music</a> <a class="code" href="class_audio.html#a74afc81a1b6b5218124a835419c8dc75">music</a> { };    </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_audio.html#aa9d3935a2b91ab4b825bc0cb05f245ea">   26</a></span>&#160;    <a class="code" href="class_audio.html#aa9d3935a2b91ab4b825bc0cb05f245ea">Audio</a> ( ) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="raylib-build_2src_2raudio_8h.html#a1e766d3051655099c78761f122c065d0">InitAudioDevice</a> ( );</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="class_audio.html#a74afc81a1b6b5218124a835419c8dc75">music</a> = <a class="code" href="raylib-build_2src_2raudio_8h.html#ad019d08f0287d2bca8f2cb50e14aa0d9">LoadMusicStream</a> ( <span class="stringliteral">&quot;resources/Cyberpunk Moonlight Sonata.mp3&quot;</span> );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="raylib-build_2src_2raudio_8h.html#a4c5a0e67b853412824da3882ddd99914">PlayMusicStream</a> ( <a class="code" href="class_audio.html#a74afc81a1b6b5218124a835419c8dc75">music</a> );</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_audio.html#ae5491945b8eae16e3cb7bc3d99729235">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_audio.html#ae5491945b8eae16e3cb7bc3d99729235">updateAudio</a> ( ) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="raylib-build_2src_2raudio_8h.html#a11070e13c79ce75de1a9b4e80e42dea3">UpdateMusicStream</a> ( <a class="code" href="class_audio.html#a74afc81a1b6b5218124a835419c8dc75">music</a> );</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_audio.html#af954f4262ae7178fa1795f4fc9c5b531">   42</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_audio.html#af954f4262ae7178fa1795f4fc9c5b531">Descargar</a> ( ) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="raylib-build_2src_2raudio_8h.html#a8896e43335f56da2b8b950301d2d7508">UnloadMusicStream</a> ( <a class="code" href="class_audio.html#a74afc81a1b6b5218124a835419c8dc75">music</a> );   <span class="comment">// Descargo la musica de RAM</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="raylib-build_2src_2raudio_8h.html#acc2a74de6b55193aadb8415f5db8f72f">CloseAudioDevice</a> ( );</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_AUDIO_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="araylib-build_2src_2raudio_8h_html_a1e766d3051655099c78761f122c065d0"><div class="ttname"><a href="raylib-build_2src_2raudio_8h.html#a1e766d3051655099c78761f122c065d0">InitAudioDevice</a></div><div class="ttdeci">void InitAudioDevice(void)</div><div class="ttdef"><b>Definition:</b> raudio.c:494</div></div>
+<div class="ttc" id="araylib-build_2src_2raudio_8h_html_a4c5a0e67b853412824da3882ddd99914"><div class="ttname"><a href="raylib-build_2src_2raudio_8h.html#a4c5a0e67b853412824da3882ddd99914">PlayMusicStream</a></div><div class="ttdeci">void PlayMusicStream(Music music)</div><div class="ttdef"><b>Definition:</b> raudio.c:1342</div></div>
+<div class="ttc" id="araylib-build_2src_2raudio_8h_html_acc2a74de6b55193aadb8415f5db8f72f"><div class="ttname"><a href="raylib-build_2src_2raudio_8h.html#acc2a74de6b55193aadb8415f5db8f72f">CloseAudioDevice</a></div><div class="ttdeci">void CloseAudioDevice(void)</div><div class="ttdef"><b>Definition:</b> raudio.c:563</div></div>
+<div class="ttc" id="astruct_music_html"><div class="ttname"><a href="struct_music.html">Music</a></div><div class="ttdef"><b>Definition:</b> raudio.h:110</div></div>
+<div class="ttc" id="aclass_audio_html_a74afc81a1b6b5218124a835419c8dc75"><div class="ttname"><a href="class_audio.html#a74afc81a1b6b5218124a835419c8dc75">Audio::music</a></div><div class="ttdeci">Music music</div><div class="ttdef"><b>Definition:</b> Audio.h:21</div></div>
+<div class="ttc" id="araylib-build_2src_2raudio_8h_html_ad019d08f0287d2bca8f2cb50e14aa0d9"><div class="ttname"><a href="raylib-build_2src_2raudio_8h.html#ad019d08f0287d2bca8f2cb50e14aa0d9">LoadMusicStream</a></div><div class="ttdeci">Music LoadMusicStream(const char *fileName)</div><div class="ttdef"><b>Definition:</b> raudio.c:1178</div></div>
+<div class="ttc" id="aclass_audio_html_aa9d3935a2b91ab4b825bc0cb05f245ea"><div class="ttname"><a href="class_audio.html#aa9d3935a2b91ab4b825bc0cb05f245ea">Audio::Audio</a></div><div class="ttdeci">Audio()</div><div class="ttdoc">Constructor de Audio.</div><div class="ttdef"><b>Definition:</b> Audio.h:26</div></div>
+<div class="ttc" id="araylib-build_2src_2raudio_8h_html_a11070e13c79ce75de1a9b4e80e42dea3"><div class="ttname"><a href="raylib-build_2src_2raudio_8h.html#a11070e13c79ce75de1a9b4e80e42dea3">UpdateMusicStream</a></div><div class="ttdeci">void UpdateMusicStream(Music music)</div><div class="ttdef"><b>Definition:</b> raudio.c:1400</div></div>
+<div class="ttc" id="aclass_audio_html_ae5491945b8eae16e3cb7bc3d99729235"><div class="ttname"><a href="class_audio.html#ae5491945b8eae16e3cb7bc3d99729235">Audio::updateAudio</a></div><div class="ttdeci">void updateAudio()</div><div class="ttdoc">updeteAudio: actualiza el audio</div><div class="ttdef"><b>Definition:</b> Audio.h:35</div></div>
+<div class="ttc" id="aclass_audio_html_af954f4262ae7178fa1795f4fc9c5b531"><div class="ttname"><a href="class_audio.html#af954f4262ae7178fa1795f4fc9c5b531">Audio::Descargar</a></div><div class="ttdeci">void Descargar()</div><div class="ttdoc">Descargar: Descarga la música de RAM.</div><div class="ttdef"><b>Definition:</b> Audio.h:42</div></div>
+<div class="ttc" id="aclass_audio_html"><div class="ttname"><a href="class_audio.html">Audio</a></div><div class="ttdoc">Clase para la manipulacion del audio.</div><div class="ttdef"><b>Definition:</b> Audio.h:19</div></div>
+<div class="ttc" id="araylib-build_2src_2raudio_8h_html_a8896e43335f56da2b8b950301d2d7508"><div class="ttname"><a href="raylib-build_2src_2raudio_8h.html#a8896e43335f56da2b8b950301d2d7508">UnloadMusicStream</a></div><div class="ttdeci">void UnloadMusicStream(Music music)</div><div class="ttdef"><b>Definition:</b> raudio.c:1319</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

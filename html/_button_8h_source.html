@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Fichero Fuente clases/Button.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_02fe6bb0d29b159db6747b11f409a1ef.html">clases</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Button.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_button_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by Abril on 4/5/2020.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_BUTTON_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_BUTTON_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;raylib.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_visitor_8h.html">Visitor.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_visitable_8h.html">Visitable.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_button.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_button.html">Button</a>: <span class="keyword">public</span> <a class="code" href="class_visitable.html">Visitable</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_button.html#ab076ede42ff6b6f6428bb2f93bfcdb01">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_button.html#ab076ede42ff6b6f6428bb2f93bfcdb01">theme</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_button.html#a287023a3d03b547e9dda922953e1799a">   15</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_button.html#a287023a3d03b547e9dda922953e1799a">estado</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_button.html#afa56a7269785e9753afea3cc0090e745">   16</a></span>&#160;    <a class="code" href="struct_vector2.html">Vector2</a> <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_button.html#a3598ffa4e13f3a252c6df4385798139c">   17</a></span>&#160;    <a class="code" href="struct_rectangle.html">Rectangle</a> <a class="code" href="class_button.html#a3598ffa4e13f3a252c6df4385798139c">rectangulo</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_button.html#ae6123a2c0afa0768f49189983da0907e">   18</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_button.html#ae6123a2c0afa0768f49189983da0907e">Draw</a>() = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_button.html#a3e4158895f5c7c6b63355317cde596c0">   19</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_button.html#a3e4158895f5c7c6b63355317cde596c0">Draw</a>(<a class="code" href="struct_vector2.html">Vector2</a> pos, <span class="keywordtype">int</span> est) = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_button.html#af5fb91984279f5dae6c590dac5b9267d">   20</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="struct_rectangle.html">Rectangle</a> <a class="code" href="class_button.html#af5fb91984279f5dae6c590dac5b9267d">GetRectangle</a>() = 0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_button.html#a928dfe00eea08dc1569aba627d4fcaa5">   21</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_button.html#a928dfe00eea08dc1569aba627d4fcaa5">Accept</a>(<a class="code" href="class_visitor.html">Visitor</a>&amp;) = 0;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_light_button.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_light_button.html">LightButton</a>: <span class="keyword">public</span> <a class="code" href="class_button.html">Button</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_light_button.html#a81efdd5e5d81e15b9bda69e782d4e880">   27</a></span>&#160;    <a class="code" href="class_light_button.html#a81efdd5e5d81e15b9bda69e782d4e880">LightButton</a>()</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">x</a> = 600;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">y</a> = 50;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="class_button.html#a287023a3d03b547e9dda922953e1799a">estado</a> = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="class_button.html#a3598ffa4e13f3a252c6df4385798139c">rectangulo</a> = {<a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">x</a> + 60, <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">y</a> + 60, 175, 175};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_light_button.html#aca2ba256bb61279cb8d51e3dbe1fb0c5">Draw</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_light_button.html#aca2ba256bb61279cb8d51e3dbe1fb0c5">Draw</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_light_button.html#ad41ef66bc814580b705c15313e34533a">   36</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_light_button.html#ad41ef66bc814580b705c15313e34533a">Draw</a>(<a class="code" href="struct_vector2.html">Vector2</a> pos, <span class="keywordtype">int</span> est)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;     {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a> = pos;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_button.html#a287023a3d03b547e9dda922953e1799a">estado</a> = est;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="class_light_button.html#aca2ba256bb61279cb8d51e3dbe1fb0c5">Draw</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;     }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_light_button.html#adc78b10c0df1a600dcdec5ecc0227948">   43</a></span>&#160;    <a class="code" href="struct_rectangle.html">Rectangle</a> <a class="code" href="class_light_button.html#adc78b10c0df1a600dcdec5ecc0227948">GetRectangle</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_button.html#a3598ffa4e13f3a252c6df4385798139c">rectangulo</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_light_button.html#aa359eac1ef029f80dedf33deedff5fc5">   47</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_light_button.html#aa359eac1ef029f80dedf33deedff5fc5">Accept</a>(<a class="code" href="class_visitor.html">Visitor</a> &amp; <a class="code" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>.Visit(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_night_button.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_night_button.html">NightButton</a>: <span class="keyword">public</span> <a class="code" href="class_button.html">Button</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_night_button.html#a9551baf7a9ccdc50000caa34ebad1050">Draw</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_night_button.html#ad7d04ba53611a77f98636a156cfa0481">   56</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_night_button.html#ad7d04ba53611a77f98636a156cfa0481">Draw</a>(<a class="code" href="struct_vector2.html">Vector2</a> pos, <span class="keywordtype">int</span> est)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a> = pos;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_button.html#a287023a3d03b547e9dda922953e1799a">estado</a> = est;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="class_night_button.html#a9551baf7a9ccdc50000caa34ebad1050">Draw</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_night_button.html#a1bf3125a5165ffd81f7c525f0a7a3d4a">   63</a></span>&#160;    <a class="code" href="class_night_button.html#a1bf3125a5165ffd81f7c525f0a7a3d4a">NightButton</a>()</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">x</a> = 300;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">y</a> = 50;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_button.html#a287023a3d03b547e9dda922953e1799a">estado</a> = 0;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_button.html#a3598ffa4e13f3a252c6df4385798139c">rectangulo</a> = {<a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">x</a> + 60, <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">y</a> + 60, 175, 175};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_night_button.html#a9551baf7a9ccdc50000caa34ebad1050">Draw</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_night_button.html#a90761fa8050dfeed10ae857873699d20">   71</a></span>&#160;    <a class="code" href="struct_rectangle.html">Rectangle</a> <a class="code" href="class_night_button.html#a90761fa8050dfeed10ae857873699d20">GetRectangle</a>()</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_button.html#a3598ffa4e13f3a252c6df4385798139c">rectangulo</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_night_button.html#a727eb66063af6c62b61d777adecc9bee">   75</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_night_button.html#a727eb66063af6c62b61d777adecc9bee">Accept</a>(<a class="code" href="class_visitor.html">Visitor</a> &amp; <a class="code" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>.Visit(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_start_button.html">   80</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_start_button.html">StartButton</a>: <span class="keyword">public</span> <a class="code" href="class_button.html">Button</a></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_start_button.html#a073514a6af445a9dc7a057d79a0f054f">Draw</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_start_button.html#a1939fe8d6b1dd4041fdd203ec2b0d01f">   84</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_start_button.html#a1939fe8d6b1dd4041fdd203ec2b0d01f">Draw</a>(<a class="code" href="struct_vector2.html">Vector2</a> pos, <span class="keywordtype">int</span> est)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a> = pos;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_button.html#a287023a3d03b547e9dda922953e1799a">estado</a> = est;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_start_button.html#a073514a6af445a9dc7a057d79a0f054f">Draw</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_start_button.html#a4e1d70591d520bdb32215f06c6b6c518">   91</a></span>&#160;    <a class="code" href="class_start_button.html#a4e1d70591d520bdb32215f06c6b6c518">StartButton</a>()</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="class_button.html#ab076ede42ff6b6f6428bb2f93bfcdb01">theme</a> = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">x</a> = 450;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">y</a> = 650;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="class_button.html#a3598ffa4e13f3a252c6df4385798139c">rectangulo</a> = {<a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">x</a> + 10, <a class="code" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a>.<a class="code" href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">y</a> + 100, 280, 120};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="class_button.html#a287023a3d03b547e9dda922953e1799a">estado</a> = 0;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="class_start_button.html#a073514a6af445a9dc7a057d79a0f054f">Draw</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_start_button.html#adf06b930a22f0ebba5017283267880af">  100</a></span>&#160;    <a class="code" href="struct_rectangle.html">Rectangle</a> <a class="code" href="class_start_button.html#adf06b930a22f0ebba5017283267880af">GetRectangle</a>()</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_button.html#a3598ffa4e13f3a252c6df4385798139c">rectangulo</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_start_button.html#ad806496e8f8053487a8663e7411190e4">  104</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_start_button.html#ad806496e8f8053487a8663e7411190e4">SetTheme</a>(<span class="keywordtype">int</span> i)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="class_button.html#ab076ede42ff6b6f6428bb2f93bfcdb01">theme</a> = i;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_start_button.html#ad3698892f3b35771f9b6ff6379911087">  108</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_start_button.html#ad3698892f3b35771f9b6ff6379911087">Accept</a>(<a class="code" href="class_visitor.html">Visitor</a> &amp; <a class="code" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>.Visit(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_skin.html">  113</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_skin.html">Skin</a>: <span class="keyword">public</span> <a class="code" href="class_visitable.html">Visitable</a></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_skin.html#a2e1d51a4ad51ea2f2c72f50471a96193">  116</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_skin.html#a2e1d51a4ad51ea2f2c72f50471a96193">tema</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_skin.html#aefdd4b3ec8439146af68a251a38e9e4e">  117</a></span>&#160;    <a class="code" href="struct_vector2.html">Vector2</a> <a class="code" href="class_skin.html#aefdd4b3ec8439146af68a251a38e9e4e">position</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_skin.html#a01a28ac85e5dbc92467c959dd101e4a9">  118</a></span>&#160;    <a class="code" href="class_skin.html#a01a28ac85e5dbc92467c959dd101e4a9">Skin</a> ()</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="class_skin.html#a2e1d51a4ad51ea2f2c72f50471a96193">tema</a> = 0;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="class_skin.html#aefdd4b3ec8439146af68a251a38e9e4e">position</a>.<a class="code" href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">x</a> = 450;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="class_skin.html#aefdd4b3ec8439146af68a251a38e9e4e">position</a>.<a class="code" href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">y</a> = 400;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_skin.html#a60ee7314a9955dcac259e305be3b8c41">Draw</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_skin.html#a85e1b2598606510ae871a878918b49c6">  126</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_skin.html#a85e1b2598606510ae871a878918b49c6">Accept</a>(<a class="code" href="class_visitor.html">Visitor</a> &amp; <a class="code" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>.Visit(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_BUTTON_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_start_button_html_ad806496e8f8053487a8663e7411190e4"><div class="ttname"><a href="class_start_button.html#ad806496e8f8053487a8663e7411190e4">StartButton::SetTheme</a></div><div class="ttdeci">void SetTheme(int i)</div><div class="ttdef"><b>Definition:</b> Button.h:104</div></div>
+<div class="ttc" id="aclass_start_button_html_ad3698892f3b35771f9b6ff6379911087"><div class="ttname"><a href="class_start_button.html#ad3698892f3b35771f9b6ff6379911087">StartButton::Accept</a></div><div class="ttdeci">void Accept(Visitor &amp;v)</div><div class="ttdef"><b>Definition:</b> Button.h:108</div></div>
+<div class="ttc" id="aclass_skin_html_aefdd4b3ec8439146af68a251a38e9e4e"><div class="ttname"><a href="class_skin.html#aefdd4b3ec8439146af68a251a38e9e4e">Skin::position</a></div><div class="ttdeci">Vector2 position</div><div class="ttdef"><b>Definition:</b> Button.h:117</div></div>
+<div class="ttc" id="aclass_start_button_html"><div class="ttname"><a href="class_start_button.html">StartButton</a></div><div class="ttdef"><b>Definition:</b> Button.h:81</div></div>
+<div class="ttc" id="astruct_vector2_html_a046bb8d17a876acc49415128dc0502f2"><div class="ttname"><a href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">Vector2::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> raylib.h:172</div></div>
+<div class="ttc" id="a_visitable_8h_html"><div class="ttname"><a href="_visitable_8h.html">Visitable.h</a></div></div>
+<div class="ttc" id="aclass_night_button_html_a90761fa8050dfeed10ae857873699d20"><div class="ttname"><a href="class_night_button.html#a90761fa8050dfeed10ae857873699d20">NightButton::GetRectangle</a></div><div class="ttdeci">Rectangle GetRectangle()</div><div class="ttdef"><b>Definition:</b> Button.h:71</div></div>
+<div class="ttc" id="aclass_start_button_html_a4e1d70591d520bdb32215f06c6b6c518"><div class="ttname"><a href="class_start_button.html#a4e1d70591d520bdb32215f06c6b6c518">StartButton::StartButton</a></div><div class="ttdeci">StartButton()</div><div class="ttdef"><b>Definition:</b> Button.h:91</div></div>
+<div class="ttc" id="aclass_button_html_a3e4158895f5c7c6b63355317cde596c0"><div class="ttname"><a href="class_button.html#a3e4158895f5c7c6b63355317cde596c0">Button::Draw</a></div><div class="ttdeci">virtual void Draw(Vector2 pos, int est)=0</div></div>
+<div class="ttc" id="aclass_button_html_ab076ede42ff6b6f6428bb2f93bfcdb01"><div class="ttname"><a href="class_button.html#ab076ede42ff6b6f6428bb2f93bfcdb01">Button::theme</a></div><div class="ttdeci">int theme</div><div class="ttdef"><b>Definition:</b> Button.h:14</div></div>
+<div class="ttc" id="aclass_light_button_html_a81efdd5e5d81e15b9bda69e782d4e880"><div class="ttname"><a href="class_light_button.html#a81efdd5e5d81e15b9bda69e782d4e880">LightButton::LightButton</a></div><div class="ttdeci">LightButton()</div><div class="ttdef"><b>Definition:</b> Button.h:27</div></div>
+<div class="ttc" id="aclass_button_html_a287023a3d03b547e9dda922953e1799a"><div class="ttname"><a href="class_button.html#a287023a3d03b547e9dda922953e1799a">Button::estado</a></div><div class="ttdeci">int estado</div><div class="ttdef"><b>Definition:</b> Button.h:15</div></div>
+<div class="ttc" id="aclass_button_html_ae6123a2c0afa0768f49189983da0907e"><div class="ttname"><a href="class_button.html#ae6123a2c0afa0768f49189983da0907e">Button::Draw</a></div><div class="ttdeci">virtual void Draw()=0</div></div>
+<div class="ttc" id="aclass_light_button_html_adc78b10c0df1a600dcdec5ecc0227948"><div class="ttname"><a href="class_light_button.html#adc78b10c0df1a600dcdec5ecc0227948">LightButton::GetRectangle</a></div><div class="ttdeci">Rectangle GetRectangle()</div><div class="ttdef"><b>Definition:</b> Button.h:43</div></div>
+<div class="ttc" id="aclass_start_button_html_adf06b930a22f0ebba5017283267880af"><div class="ttname"><a href="class_start_button.html#adf06b930a22f0ebba5017283267880af">StartButton::GetRectangle</a></div><div class="ttdeci">Rectangle GetRectangle()</div><div class="ttdef"><b>Definition:</b> Button.h:100</div></div>
+<div class="ttc" id="aclass_light_button_html_aca2ba256bb61279cb8d51e3dbe1fb0c5"><div class="ttname"><a href="class_light_button.html#aca2ba256bb61279cb8d51e3dbe1fb0c5">LightButton::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Button.cpp:9</div></div>
+<div class="ttc" id="aclass_night_button_html"><div class="ttname"><a href="class_night_button.html">NightButton</a></div><div class="ttdef"><b>Definition:</b> Button.h:53</div></div>
+<div class="ttc" id="aclass_button_html_afa56a7269785e9753afea3cc0090e745"><div class="ttname"><a href="class_button.html#afa56a7269785e9753afea3cc0090e745">Button::position</a></div><div class="ttdeci">Vector2 position</div><div class="ttdef"><b>Definition:</b> Button.h:16</div></div>
+<div class="ttc" id="aclass_night_button_html_ad7d04ba53611a77f98636a156cfa0481"><div class="ttname"><a href="class_night_button.html#ad7d04ba53611a77f98636a156cfa0481">NightButton::Draw</a></div><div class="ttdeci">void Draw(Vector2 pos, int est)</div><div class="ttdef"><b>Definition:</b> Button.h:56</div></div>
+<div class="ttc" id="aclass_button_html_a3598ffa4e13f3a252c6df4385798139c"><div class="ttname"><a href="class_button.html#a3598ffa4e13f3a252c6df4385798139c">Button::rectangulo</a></div><div class="ttdeci">Rectangle rectangulo</div><div class="ttdef"><b>Definition:</b> Button.h:17</div></div>
+<div class="ttc" id="astruct_vector2_html_a0e07bad05f01ed811b909a2eef97f9e2"><div class="ttname"><a href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">Vector2::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> raylib.h:173</div></div>
+<div class="ttc" id="aclass_button_html_a928dfe00eea08dc1569aba627d4fcaa5"><div class="ttname"><a href="class_button.html#a928dfe00eea08dc1569aba627d4fcaa5">Button::Accept</a></div><div class="ttdeci">virtual void Accept(Visitor &amp;)=0</div></div>
+<div class="ttc" id="aclass_light_button_html"><div class="ttname"><a href="class_light_button.html">LightButton</a></div><div class="ttdef"><b>Definition:</b> Button.h:25</div></div>
+<div class="ttc" id="aclass_start_button_html_a073514a6af445a9dc7a057d79a0f054f"><div class="ttname"><a href="class_start_button.html#a073514a6af445a9dc7a057d79a0f054f">StartButton::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Button.cpp:22</div></div>
+<div class="ttc" id="aclass_start_button_html_a1939fe8d6b1dd4041fdd203ec2b0d01f"><div class="ttname"><a href="class_start_button.html#a1939fe8d6b1dd4041fdd203ec2b0d01f">StartButton::Draw</a></div><div class="ttdeci">void Draw(Vector2 pos, int est)</div><div class="ttdef"><b>Definition:</b> Button.h:84</div></div>
+<div class="ttc" id="aclass_night_button_html_a9551baf7a9ccdc50000caa34ebad1050"><div class="ttname"><a href="class_night_button.html#a9551baf7a9ccdc50000caa34ebad1050">NightButton::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Button.cpp:15</div></div>
+<div class="ttc" id="aclass_night_button_html_a727eb66063af6c62b61d777adecc9bee"><div class="ttname"><a href="class_night_button.html#a727eb66063af6c62b61d777adecc9bee">NightButton::Accept</a></div><div class="ttdeci">void Accept(Visitor &amp;v)</div><div class="ttdef"><b>Definition:</b> Button.h:75</div></div>
+<div class="ttc" id="aclass_skin_html_a01a28ac85e5dbc92467c959dd101e4a9"><div class="ttname"><a href="class_skin.html#a01a28ac85e5dbc92467c959dd101e4a9">Skin::Skin</a></div><div class="ttdeci">Skin()</div><div class="ttdef"><b>Definition:</b> Button.h:118</div></div>
+<div class="ttc" id="aclass_button_html"><div class="ttname"><a href="class_button.html">Button</a></div><div class="ttdef"><b>Definition:</b> Button.h:12</div></div>
+<div class="ttc" id="aclass_skin_html_a85e1b2598606510ae871a878918b49c6"><div class="ttname"><a href="class_skin.html#a85e1b2598606510ae871a878918b49c6">Skin::Accept</a></div><div class="ttdeci">void Accept(Visitor &amp;v)</div><div class="ttdef"><b>Definition:</b> Button.h:126</div></div>
+<div class="ttc" id="aclass_night_button_html_a1bf3125a5165ffd81f7c525f0a7a3d4a"><div class="ttname"><a href="class_night_button.html#a1bf3125a5165ffd81f7c525f0a7a3d4a">NightButton::NightButton</a></div><div class="ttdeci">NightButton()</div><div class="ttdef"><b>Definition:</b> Button.h:63</div></div>
+<div class="ttc" id="astruct_vector2_html"><div class="ttname"><a href="struct_vector2.html">Vector2</a></div><div class="ttdef"><b>Definition:</b> raylib.h:171</div></div>
+<div class="ttc" id="aclass_button_html_af5fb91984279f5dae6c590dac5b9267d"><div class="ttname"><a href="class_button.html#af5fb91984279f5dae6c590dac5b9267d">Button::GetRectangle</a></div><div class="ttdeci">virtual Rectangle GetRectangle()=0</div></div>
+<div class="ttc" id="aclass_light_button_html_ad41ef66bc814580b705c15313e34533a"><div class="ttname"><a href="class_light_button.html#ad41ef66bc814580b705c15313e34533a">LightButton::Draw</a></div><div class="ttdeci">void Draw(Vector2 pos, int est)</div><div class="ttdef"><b>Definition:</b> Button.h:36</div></div>
+<div class="ttc" id="aclass_visitable_html"><div class="ttname"><a href="class_visitable.html">Visitable</a></div><div class="ttdef"><b>Definition:</b> Visitable.h:26</div></div>
+<div class="ttc" id="aclass_light_button_html_aa359eac1ef029f80dedf33deedff5fc5"><div class="ttname"><a href="class_light_button.html#aa359eac1ef029f80dedf33deedff5fc5">LightButton::Accept</a></div><div class="ttdeci">void Accept(Visitor &amp;v)</div><div class="ttdef"><b>Definition:</b> Button.h:47</div></div>
+<div class="ttc" id="aclass_visitor_html"><div class="ttname"><a href="class_visitor.html">Visitor</a></div><div class="ttdef"><b>Definition:</b> Visitor.h:39</div></div>
+<div class="ttc" id="aclass_skin_html"><div class="ttname"><a href="class_skin.html">Skin</a></div><div class="ttdef"><b>Definition:</b> Button.h:114</div></div>
+<div class="ttc" id="a_visitor_8h_html"><div class="ttname"><a href="_visitor_8h.html">Visitor.h</a></div></div>
+<div class="ttc" id="astruct_rectangle_html"><div class="ttname"><a href="struct_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> raylib.h:211</div></div>
+<div class="ttc" id="aexamples_2others_2external_2include_2glad_8h_html_a14cfbe2fc2234f5504618905b69d1e06"><div class="ttname"><a href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a></div><div class="ttdeci">const GLdouble * v</div><div class="ttdef"><b>Definition:</b> glad.h:1487</div></div>
+<div class="ttc" id="aclass_skin_html_a2e1d51a4ad51ea2f2c72f50471a96193"><div class="ttname"><a href="class_skin.html#a2e1d51a4ad51ea2f2c72f50471a96193">Skin::tema</a></div><div class="ttdeci">int tema</div><div class="ttdef"><b>Definition:</b> Button.h:116</div></div>
+<div class="ttc" id="aclass_skin_html_a60ee7314a9955dcac259e305be3b8c41"><div class="ttname"><a href="class_skin.html#a60ee7314a9955dcac259e305be3b8c41">Skin::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Button.cpp:29</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

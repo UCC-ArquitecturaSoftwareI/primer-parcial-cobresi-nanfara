@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/games/light_my_ritual/screens/screen_gameplay.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_7aebff1416c495ebb69e3cc957d2473c.html">games</a></li><li class="navelem"><a class="el" href="dir_54d495d63a050af255d9faf4efb650fe.html">light_my_ritual</a></li><li class="navelem"><a class="el" href="dir_321db2267d4f02aa5c071f48ad955162.html">screens</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#define-members">defines</a> &#124;
+<a href="#typedef-members">typedefs</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo screen_gameplay.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;raylib.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="games_2light__my__ritual_2screens_2screens_8h_source.html">screens.h</a>&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html">Player</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_enemy.html">Enemy</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_spot.html">LightSpot</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a4bbc8172a9e5fc1cd420562fe5fb0531"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a4bbc8172a9e5fc1cd420562fe5fb0531">MAX_LIGHTS_I</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a4bbc8172a9e5fc1cd420562fe5fb0531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc28f4fc91fe20321be0fe2eb5852d16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#adc28f4fc91fe20321be0fe2eb5852d16">MAX_LIGHTS_II</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:adc28f4fc91fe20321be0fe2eb5852d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ad577582b9ef17a287b9053a827dc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a53ad577582b9ef17a287b9053a827dc0">MAX_LIGHTS_III</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:a53ad577582b9ef17a287b9053a827dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544651f3405cff79c40d898a8e54f507"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a544651f3405cff79c40d898a8e54f507">MAX_ENEMIES</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a544651f3405cff79c40d898a8e54f507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976762ed1273c35c6ef8fe0252198568"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a976762ed1273c35c6ef8fe0252198568">MAX_PLAYER_ENERGY</a>&#160;&#160;&#160;40.0f</td></tr>
+<tr class="separator:a976762ed1273c35c6ef8fe0252198568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91fc85e402f35d06261b89c23da705b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a91fc85e402f35d06261b89c23da705b8">ENERGY_REFILL_RATIO</a>&#160;&#160;&#160;0.2<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0fdda94b8b7e64884690244028f455ba">f</a></td></tr>
+<tr class="separator:a91fc85e402f35d06261b89c23da705b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364f3481500be94b8fa439a1ddbf9f79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a364f3481500be94b8fa439a1ddbf9f79">GAMEPAD_SENSITIVITY</a>&#160;&#160;&#160;4.0f</td></tr>
+<tr class="separator:a364f3481500be94b8fa439a1ddbf9f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c81da5d9b7a22bad2a3277c2b1dcc9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a9c81da5d9b7a22bad2a3277c2b1dcc9a">LIGHT_ANIM_FRAMES</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a9c81da5d9b7a22bad2a3277c2b1dcc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+typedefs</h2></td></tr>
+<tr class="memitem:a480a040facb94f90060562cd65274385"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a480a040facb94f90060562cd65274385">Player</a></td></tr>
+<tr class="separator:a480a040facb94f90060562cd65274385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af975ad1eb2a131dcfa7620809ae9bf92"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_enemy.html">Enemy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#af975ad1eb2a131dcfa7620809ae9bf92">Enemy</a></td></tr>
+<tr class="separator:af975ad1eb2a131dcfa7620809ae9bf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad55f94c0bd6e5afae8819e0d31adc3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_light_spot.html">LightSpot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#afad55f94c0bd6e5afae8819e0d31adc3">LightSpot</a></td></tr>
+<tr class="separator:afad55f94c0bd6e5afae8819e0d31adc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a924748ed0b47752f92312fbab5e80864"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a924748ed0b47752f92312fbab5e80864">LightedLevel</a> { <a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a924748ed0b47752f92312fbab5e80864a370282cb59127cee55e40d84be06de84">LEVEL_I</a>, 
+<a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a924748ed0b47752f92312fbab5e80864ac4c86782f6faa4167855fd5492e449e8">LEVEL_II</a>, 
+<a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a924748ed0b47752f92312fbab5e80864a7edacdefb8aa60277e4170b2fd200d43">LEVEL_III</a>, 
+<a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a924748ed0b47752f92312fbab5e80864ad6e2e47908889d66c6e03900b02af317">LEVEL_FINISHED</a>
+ }</td></tr>
+<tr class="separator:a924748ed0b47752f92312fbab5e80864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a76918e73a46306124299f0ecdded70ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a76918e73a46306124299f0ecdded70ac">InitGameplayScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a76918e73a46306124299f0ecdded70ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae375af3a5eb93543369403b716cbc0a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#ae375af3a5eb93543369403b716cbc0a8">UpdateGameplayScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:ae375af3a5eb93543369403b716cbc0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8fc25f26ad73f9c08497af8b074ccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a8b8fc25f26ad73f9c08497af8b074ccf">DrawGameplayScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a8b8fc25f26ad73f9c08497af8b074ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96945d9b745690aa8ff1c909c816188"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#ac96945d9b745690aa8ff1c909c816188">UnloadGameplayScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:ac96945d9b745690aa8ff1c909c816188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4d51d9e25770ad24c45f83837211be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#abe4d51d9e25770ad24c45f83837211be">FinishGameplayScreen</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:abe4d51d9e25770ad24c45f83837211be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a91fc85e402f35d06261b89c23da705b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91fc85e402f35d06261b89c23da705b8">&#9670;&nbsp;</a></span>ENERGY_REFILL_RATIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENERGY_REFILL_RATIO&#160;&#160;&#160;0.2<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0fdda94b8b7e64884690244028f455ba">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a364f3481500be94b8fa439a1ddbf9f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a364f3481500be94b8fa439a1ddbf9f79">&#9670;&nbsp;</a></span>GAMEPAD_SENSITIVITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GAMEPAD_SENSITIVITY&#160;&#160;&#160;4.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c81da5d9b7a22bad2a3277c2b1dcc9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c81da5d9b7a22bad2a3277c2b1dcc9a">&#9670;&nbsp;</a></span>LIGHT_ANIM_FRAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIGHT_ANIM_FRAMES&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a544651f3405cff79c40d898a8e54f507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544651f3405cff79c40d898a8e54f507">&#9670;&nbsp;</a></span>MAX_ENEMIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_ENEMIES&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bbc8172a9e5fc1cd420562fe5fb0531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bbc8172a9e5fc1cd420562fe5fb0531">&#9670;&nbsp;</a></span>MAX_LIGHTS_I</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_LIGHTS_I&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc28f4fc91fe20321be0fe2eb5852d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc28f4fc91fe20321be0fe2eb5852d16">&#9670;&nbsp;</a></span>MAX_LIGHTS_II</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_LIGHTS_II&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53ad577582b9ef17a287b9053a827dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ad577582b9ef17a287b9053a827dc0">&#9670;&nbsp;</a></span>MAX_LIGHTS_III</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_LIGHTS_III&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a976762ed1273c35c6ef8fe0252198568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976762ed1273c35c6ef8fe0252198568">&#9670;&nbsp;</a></span>MAX_PLAYER_ENERGY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_PLAYER_ENERGY&#160;&#160;&#160;40.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los 'typedefs'</h2>
+<a id="af975ad1eb2a131dcfa7620809ae9bf92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af975ad1eb2a131dcfa7620809ae9bf92">&#9670;&nbsp;</a></span>Enemy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_enemy.html">Enemy</a> <a class="el" href="struct_enemy.html">Enemy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afad55f94c0bd6e5afae8819e0d31adc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad55f94c0bd6e5afae8819e0d31adc3">&#9670;&nbsp;</a></span>LightSpot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_light_spot.html">LightSpot</a> <a class="el" href="struct_light_spot.html">LightSpot</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a480a040facb94f90060562cd65274385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480a040facb94f90060562cd65274385">&#9670;&nbsp;</a></span>Player</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_player.html">Player</a> <a class="el" href="struct_player.html">Player</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="a924748ed0b47752f92312fbab5e80864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924748ed0b47752f92312fbab5e80864">&#9670;&nbsp;</a></span>LightedLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a924748ed0b47752f92312fbab5e80864">LightedLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a924748ed0b47752f92312fbab5e80864a370282cb59127cee55e40d84be06de84"></a>LEVEL_I&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a924748ed0b47752f92312fbab5e80864ac4c86782f6faa4167855fd5492e449e8"></a>LEVEL_II&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a924748ed0b47752f92312fbab5e80864a7edacdefb8aa60277e4170b2fd200d43"></a>LEVEL_III&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a924748ed0b47752f92312fbab5e80864ad6e2e47908889d66c6e03900b02af317"></a>LEVEL_FINISHED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a8b8fc25f26ad73f9c08497af8b074ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8fc25f26ad73f9c08497af8b074ccf">&#9670;&nbsp;</a></span>DrawGameplayScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> DrawGameplayScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe4d51d9e25770ad24c45f83837211be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4d51d9e25770ad24c45f83837211be">&#9670;&nbsp;</a></span>FinishGameplayScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> FinishGameplayScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76918e73a46306124299f0ecdded70ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76918e73a46306124299f0ecdded70ac">&#9670;&nbsp;</a></span>InitGameplayScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> InitGameplayScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac96945d9b745690aa8ff1c909c816188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96945d9b745690aa8ff1c909c816188">&#9670;&nbsp;</a></span>UnloadGameplayScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> UnloadGameplayScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae375af3a5eb93543369403b716cbc0a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae375af3a5eb93543369403b716cbc0a8">&#9670;&nbsp;</a></span>UpdateGameplayScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> UpdateGameplayScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>
