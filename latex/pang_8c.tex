@@ -1,0 +1,113 @@
+\hypertarget{pang_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/pang.c}
+\label{pang_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/pang.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/pang.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_player}{Player}}
+\item 
+struct \mbox{\hyperlink{struct_shoot}{Shoot}}
+\item 
+struct \mbox{\hyperlink{struct_ball}{Ball}}
+\item 
+struct \mbox{\hyperlink{struct_points}{Points}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{pang_8c_a1cef014f74bf89aa00a5b3a6d446d925}{P\+L\+A\+Y\+E\+R\+\_\+\+B\+A\+S\+E\+\_\+\+S\+I\+ZE}}~20.\+0f
+\item 
+\#define \mbox{\hyperlink{pang_8c_af49bad41acef45feb40939c0cf9d5d35}{P\+L\+A\+Y\+E\+R\+\_\+\+S\+P\+E\+ED}}~5.\+0f
+\item 
+\#define \mbox{\hyperlink{pang_8c_a6486f468df05c37b35e20d8b443a12b3}{P\+L\+A\+Y\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+H\+O\+O\+TS}}~1
+\item 
+\#define \mbox{\hyperlink{pang_8c_a9667bd273f97f59108089176dab3aa6f}{M\+A\+X\+\_\+\+B\+I\+G\+\_\+\+B\+A\+L\+LS}}~2
+\item 
+\#define \mbox{\hyperlink{pang_8c_a028da5be6b5f0ad299fa97bf62724e84}{B\+A\+L\+L\+S\+\_\+\+S\+P\+E\+ED}}~2.\+0f
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{pang_8c_a480a040facb94f90060562cd65274385}{Player}}
+\item 
+typedef struct \mbox{\hyperlink{struct_shoot}{Shoot}} \mbox{\hyperlink{pang_8c_ae6fe4fb3e7b38f97762b613838612381}{Shoot}}
+\item 
+typedef struct \mbox{\hyperlink{struct_ball}{Ball}} \mbox{\hyperlink{pang_8c_af0cce33331cd6a83a38bc5cf07702394}{Ball}}
+\item 
+typedef struct \mbox{\hyperlink{struct_points}{Points}} \mbox{\hyperlink{pang_8c_a1f9a172680ec12199963a8eea1c8ee3d}{Points}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{pang_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{pang_8c_a028da5be6b5f0ad299fa97bf62724e84}\label{pang_8c_a028da5be6b5f0ad299fa97bf62724e84}} 
+\index{pang.c@{pang.c}!BALLS\_SPEED@{BALLS\_SPEED}}
+\index{BALLS\_SPEED@{BALLS\_SPEED}!pang.c@{pang.c}}
+\doxysubsubsection{\texorpdfstring{BALLS\_SPEED}{BALLS\_SPEED}}
+{\footnotesize\ttfamily \#define B\+A\+L\+L\+S\+\_\+\+S\+P\+E\+ED~2.\+0f}
+
+\mbox{\Hypertarget{pang_8c_a9667bd273f97f59108089176dab3aa6f}\label{pang_8c_a9667bd273f97f59108089176dab3aa6f}} 
+\index{pang.c@{pang.c}!MAX\_BIG\_BALLS@{MAX\_BIG\_BALLS}}
+\index{MAX\_BIG\_BALLS@{MAX\_BIG\_BALLS}!pang.c@{pang.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_BIG\_BALLS}{MAX\_BIG\_BALLS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+B\+I\+G\+\_\+\+B\+A\+L\+LS~2}
+
+\mbox{\Hypertarget{pang_8c_a1cef014f74bf89aa00a5b3a6d446d925}\label{pang_8c_a1cef014f74bf89aa00a5b3a6d446d925}} 
+\index{pang.c@{pang.c}!PLAYER\_BASE\_SIZE@{PLAYER\_BASE\_SIZE}}
+\index{PLAYER\_BASE\_SIZE@{PLAYER\_BASE\_SIZE}!pang.c@{pang.c}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_BASE\_SIZE}{PLAYER\_BASE\_SIZE}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+E\+R\+\_\+\+B\+A\+S\+E\+\_\+\+S\+I\+ZE~20.\+0f}
+
+\mbox{\Hypertarget{pang_8c_a6486f468df05c37b35e20d8b443a12b3}\label{pang_8c_a6486f468df05c37b35e20d8b443a12b3}} 
+\index{pang.c@{pang.c}!PLAYER\_MAX\_SHOOTS@{PLAYER\_MAX\_SHOOTS}}
+\index{PLAYER\_MAX\_SHOOTS@{PLAYER\_MAX\_SHOOTS}!pang.c@{pang.c}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_MAX\_SHOOTS}{PLAYER\_MAX\_SHOOTS}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+H\+O\+O\+TS~1}
+
+\mbox{\Hypertarget{pang_8c_af49bad41acef45feb40939c0cf9d5d35}\label{pang_8c_af49bad41acef45feb40939c0cf9d5d35}} 
+\index{pang.c@{pang.c}!PLAYER\_SPEED@{PLAYER\_SPEED}}
+\index{PLAYER\_SPEED@{PLAYER\_SPEED}!pang.c@{pang.c}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_SPEED}{PLAYER\_SPEED}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+E\+R\+\_\+\+S\+P\+E\+ED~5.\+0f}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{pang_8c_af0cce33331cd6a83a38bc5cf07702394}\label{pang_8c_af0cce33331cd6a83a38bc5cf07702394}} 
+\index{pang.c@{pang.c}!Ball@{Ball}}
+\index{Ball@{Ball}!pang.c@{pang.c}}
+\doxysubsubsection{\texorpdfstring{Ball}{Ball}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_ball}{Ball}} \mbox{\hyperlink{struct_ball}{Ball}}}
+
+\mbox{\Hypertarget{pang_8c_a480a040facb94f90060562cd65274385}\label{pang_8c_a480a040facb94f90060562cd65274385}} 
+\index{pang.c@{pang.c}!Player@{Player}}
+\index{Player@{Player}!pang.c@{pang.c}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{struct_player}{Player}}}
+
+\mbox{\Hypertarget{pang_8c_a1f9a172680ec12199963a8eea1c8ee3d}\label{pang_8c_a1f9a172680ec12199963a8eea1c8ee3d}} 
+\index{pang.c@{pang.c}!Points@{Points}}
+\index{Points@{Points}!pang.c@{pang.c}}
+\doxysubsubsection{\texorpdfstring{Points}{Points}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_points}{Points}} \mbox{\hyperlink{struct_points}{Points}}}
+
+\mbox{\Hypertarget{pang_8c_ae6fe4fb3e7b38f97762b613838612381}\label{pang_8c_ae6fe4fb3e7b38f97762b613838612381}} 
+\index{pang.c@{pang.c}!Shoot@{Shoot}}
+\index{Shoot@{Shoot}!pang.c@{pang.c}}
+\doxysubsubsection{\texorpdfstring{Shoot}{Shoot}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_shoot}{Shoot}} \mbox{\hyperlink{struct_shoot}{Shoot}}}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{pang_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{pang_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{pang.c@{pang.c}!main@{main}}
+\index{main@{main}!pang.c@{pang.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,253 @@
+\hypertarget{easings__testbed_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/examples/others/easings\+\_\+testbed.c}
+\label{easings__testbed_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/others/easings\_testbed.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/others/easings\_testbed.c}}
+{\ttfamily \#include $<$raylib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}easings.\+h\char`\"{}}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{easings__testbed_8c_aa968a61524f9ed159c4c5464cb26dd41}{F\+O\+N\+T\+\_\+\+S\+I\+ZE}}~20
+\item 
+\#define \mbox{\hyperlink{easings__testbed_8c_ab4adbd2ba1453efc302517ceb8d959b3}{D\+\_\+\+S\+T\+EP}}~20.\+0f
+\item 
+\#define \mbox{\hyperlink{easings__testbed_8c_ad76ae6c4d3b38ff33821ce277c0e9bbb}{D\+\_\+\+S\+T\+E\+P\+\_\+\+F\+I\+NE}}~2.\+0f
+\item 
+\#define \mbox{\hyperlink{easings__testbed_8c_aaa7024334e5cf5e1c87f45dac16e5249}{D\+\_\+\+M\+IN}}~1.\+0f
+\item 
+\#define \mbox{\hyperlink{easings__testbed_8c_a80559d0c68c2da7e9f75937fd154a93c}{D\+\_\+\+M\+AX}}~10000.\+0f
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12d}{Easing\+Types}} \{ \newline
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dabed044ed001c948402fc63363108a4c5}{E\+A\+S\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da0246cc0d2fc7a2024bd40e3c45ffec41}{E\+A\+S\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+IN}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12daf293ffda123203bc2d043a04e9232e2e}{E\+A\+S\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da955040458a291d3fab535b81adeedd94}{E\+A\+S\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+I\+N\+\_\+\+O\+UT}}, 
+\newline
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da033fe7884078b46fac35d3c38e3192a4}{E\+A\+S\+E\+\_\+\+S\+I\+N\+E\+\_\+\+IN}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da18792bc423f297a66288d40e6ee49d57}{E\+A\+S\+E\+\_\+\+S\+I\+N\+E\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dadcd3603422491a26f4a1624eba471b5f}{E\+A\+S\+E\+\_\+\+S\+I\+N\+E\+\_\+\+I\+N\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da9e1b2677703f150d3820ccd87185a2bb}{E\+A\+S\+E\+\_\+\+C\+I\+R\+C\+\_\+\+IN}}, 
+\newline
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da90136cc7c951ea4d952b9e22a45b7bbb}{E\+A\+S\+E\+\_\+\+C\+I\+R\+C\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2e1b76fa06c0e1a0e1fa6cbb354d9253}{E\+A\+S\+E\+\_\+\+C\+I\+R\+C\+\_\+\+I\+N\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12daf710734e8f5fa7e8777b2507228eed9e}{E\+A\+S\+E\+\_\+\+C\+U\+B\+I\+C\+\_\+\+IN}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dad7707c6f912833327efc0092a273d7ef}{E\+A\+S\+E\+\_\+\+C\+U\+B\+I\+C\+\_\+\+O\+UT}}, 
+\newline
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2f62ac19c70453a506505e2a401db17c}{E\+A\+S\+E\+\_\+\+C\+U\+B\+I\+C\+\_\+\+I\+N\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da432813045535908bd594591369f8337f}{E\+A\+S\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+IN}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da8c51680a15dc26b5ebdae96a6671f748}{E\+A\+S\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da4c228f0a5b3726939805c7bf785d5c66}{E\+A\+S\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+I\+N\+\_\+\+O\+UT}}, 
+\newline
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dad8715bb6893cf4b9b785de9bbc890323}{E\+A\+S\+E\+\_\+\+E\+X\+P\+O\+\_\+\+IN}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da068d7805da7b5239babb4a3622f937fa}{E\+A\+S\+E\+\_\+\+E\+X\+P\+O\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da1e1b6d496c55aa515b40428e52a7628a}{E\+A\+S\+E\+\_\+\+E\+X\+P\+O\+\_\+\+I\+N\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dab5d7c8deccf6fc982464e99ca5bc5854}{E\+A\+S\+E\+\_\+\+B\+A\+C\+K\+\_\+\+IN}}, 
+\newline
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2a36962f466f04bc4d51ec222ede6190}{E\+A\+S\+E\+\_\+\+B\+A\+C\+K\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da3a998f56b090a35abe7edbaa5945e25d}{E\+A\+S\+E\+\_\+\+B\+A\+C\+K\+\_\+\+I\+N\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da1bb5b1f94df2a8ac6fbef912e441353e}{E\+A\+S\+E\+\_\+\+B\+O\+U\+N\+C\+E\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da8d66b2f83f3c64e2cd42a7acc5311b7b}{E\+A\+S\+E\+\_\+\+B\+O\+U\+N\+C\+E\+\_\+\+IN}}, 
+\newline
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da0c4cb88490c354aed91eeb621acdcd7f}{E\+A\+S\+E\+\_\+\+B\+O\+U\+N\+C\+E\+\_\+\+I\+N\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da1564846f21a9dc5e1035f9e612a3d46f}{E\+A\+S\+E\+\_\+\+E\+L\+A\+S\+T\+I\+C\+\_\+\+IN}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2ed4d815caf34bf5c494f09cfe6b15ce}{E\+A\+S\+E\+\_\+\+E\+L\+A\+S\+T\+I\+C\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da8170d58ea037601d002d0561716d1bf8}{E\+A\+S\+E\+\_\+\+E\+L\+A\+S\+T\+I\+C\+\_\+\+I\+N\+\_\+\+O\+UT}}, 
+\newline
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da26a1b99d70668d513d6ac835cbe4ad82}{N\+U\+M\+\_\+\+E\+A\+S\+I\+N\+G\+\_\+\+T\+Y\+P\+ES}}, 
+\mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12daf4cea3de4300c0951572ad61e9f951a6}{E\+A\+S\+I\+N\+G\+\_\+\+N\+O\+NE}} = N\+U\+M\+\_\+\+E\+A\+S\+I\+N\+G\+\_\+\+T\+Y\+P\+ES
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{easings__testbed_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{easings__testbed_8c_a80559d0c68c2da7e9f75937fd154a93c}\label{easings__testbed_8c_a80559d0c68c2da7e9f75937fd154a93c}} 
+\index{easings\_testbed.c@{easings\_testbed.c}!D\_MAX@{D\_MAX}}
+\index{D\_MAX@{D\_MAX}!easings\_testbed.c@{easings\_testbed.c}}
+\doxysubsubsection{\texorpdfstring{D\_MAX}{D\_MAX}}
+{\footnotesize\ttfamily \#define D\+\_\+\+M\+AX~10000.\+0f}
+
+\mbox{\Hypertarget{easings__testbed_8c_aaa7024334e5cf5e1c87f45dac16e5249}\label{easings__testbed_8c_aaa7024334e5cf5e1c87f45dac16e5249}} 
+\index{easings\_testbed.c@{easings\_testbed.c}!D\_MIN@{D\_MIN}}
+\index{D\_MIN@{D\_MIN}!easings\_testbed.c@{easings\_testbed.c}}
+\doxysubsubsection{\texorpdfstring{D\_MIN}{D\_MIN}}
+{\footnotesize\ttfamily \#define D\+\_\+\+M\+IN~1.\+0f}
+
+\mbox{\Hypertarget{easings__testbed_8c_ab4adbd2ba1453efc302517ceb8d959b3}\label{easings__testbed_8c_ab4adbd2ba1453efc302517ceb8d959b3}} 
+\index{easings\_testbed.c@{easings\_testbed.c}!D\_STEP@{D\_STEP}}
+\index{D\_STEP@{D\_STEP}!easings\_testbed.c@{easings\_testbed.c}}
+\doxysubsubsection{\texorpdfstring{D\_STEP}{D\_STEP}}
+{\footnotesize\ttfamily \#define D\+\_\+\+S\+T\+EP~20.\+0f}
+
+\mbox{\Hypertarget{easings__testbed_8c_ad76ae6c4d3b38ff33821ce277c0e9bbb}\label{easings__testbed_8c_ad76ae6c4d3b38ff33821ce277c0e9bbb}} 
+\index{easings\_testbed.c@{easings\_testbed.c}!D\_STEP\_FINE@{D\_STEP\_FINE}}
+\index{D\_STEP\_FINE@{D\_STEP\_FINE}!easings\_testbed.c@{easings\_testbed.c}}
+\doxysubsubsection{\texorpdfstring{D\_STEP\_FINE}{D\_STEP\_FINE}}
+{\footnotesize\ttfamily \#define D\+\_\+\+S\+T\+E\+P\+\_\+\+F\+I\+NE~2.\+0f}
+
+\mbox{\Hypertarget{easings__testbed_8c_aa968a61524f9ed159c4c5464cb26dd41}\label{easings__testbed_8c_aa968a61524f9ed159c4c5464cb26dd41}} 
+\index{easings\_testbed.c@{easings\_testbed.c}!FONT\_SIZE@{FONT\_SIZE}}
+\index{FONT\_SIZE@{FONT\_SIZE}!easings\_testbed.c@{easings\_testbed.c}}
+\doxysubsubsection{\texorpdfstring{FONT\_SIZE}{FONT\_SIZE}}
+{\footnotesize\ttfamily \#define F\+O\+N\+T\+\_\+\+S\+I\+ZE~20}
+
+
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12d}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12d}} 
+\index{easings\_testbed.c@{easings\_testbed.c}!EasingTypes@{EasingTypes}}
+\index{EasingTypes@{EasingTypes}!easings\_testbed.c@{easings\_testbed.c}}
+\doxysubsubsection{\texorpdfstring{EasingTypes}{EasingTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12d}{Easing\+Types}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_LINEAR\_NONE@{EASE\_LINEAR\_NONE}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_LINEAR\_NONE@{EASE\_LINEAR\_NONE}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dabed044ed001c948402fc63363108a4c5}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dabed044ed001c948402fc63363108a4c5}} 
+E\+A\+S\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_LINEAR\_IN@{EASE\_LINEAR\_IN}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_LINEAR\_IN@{EASE\_LINEAR\_IN}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da0246cc0d2fc7a2024bd40e3c45ffec41}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da0246cc0d2fc7a2024bd40e3c45ffec41}} 
+E\+A\+S\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_LINEAR\_OUT@{EASE\_LINEAR\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_LINEAR\_OUT@{EASE\_LINEAR\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12daf293ffda123203bc2d043a04e9232e2e}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12daf293ffda123203bc2d043a04e9232e2e}} 
+E\+A\+S\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_LINEAR\_IN\_OUT@{EASE\_LINEAR\_IN\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_LINEAR\_IN\_OUT@{EASE\_LINEAR\_IN\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da955040458a291d3fab535b81adeedd94}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da955040458a291d3fab535b81adeedd94}} 
+E\+A\+S\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+I\+N\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_SINE\_IN@{EASE\_SINE\_IN}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_SINE\_IN@{EASE\_SINE\_IN}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da033fe7884078b46fac35d3c38e3192a4}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da033fe7884078b46fac35d3c38e3192a4}} 
+E\+A\+S\+E\+\_\+\+S\+I\+N\+E\+\_\+\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_SINE\_OUT@{EASE\_SINE\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_SINE\_OUT@{EASE\_SINE\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da18792bc423f297a66288d40e6ee49d57}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da18792bc423f297a66288d40e6ee49d57}} 
+E\+A\+S\+E\+\_\+\+S\+I\+N\+E\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_SINE\_IN\_OUT@{EASE\_SINE\_IN\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_SINE\_IN\_OUT@{EASE\_SINE\_IN\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dadcd3603422491a26f4a1624eba471b5f}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dadcd3603422491a26f4a1624eba471b5f}} 
+E\+A\+S\+E\+\_\+\+S\+I\+N\+E\+\_\+\+I\+N\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_CIRC\_IN@{EASE\_CIRC\_IN}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_CIRC\_IN@{EASE\_CIRC\_IN}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da9e1b2677703f150d3820ccd87185a2bb}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da9e1b2677703f150d3820ccd87185a2bb}} 
+E\+A\+S\+E\+\_\+\+C\+I\+R\+C\+\_\+\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_CIRC\_OUT@{EASE\_CIRC\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_CIRC\_OUT@{EASE\_CIRC\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da90136cc7c951ea4d952b9e22a45b7bbb}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da90136cc7c951ea4d952b9e22a45b7bbb}} 
+E\+A\+S\+E\+\_\+\+C\+I\+R\+C\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_CIRC\_IN\_OUT@{EASE\_CIRC\_IN\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_CIRC\_IN\_OUT@{EASE\_CIRC\_IN\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2e1b76fa06c0e1a0e1fa6cbb354d9253}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2e1b76fa06c0e1a0e1fa6cbb354d9253}} 
+E\+A\+S\+E\+\_\+\+C\+I\+R\+C\+\_\+\+I\+N\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_CUBIC\_IN@{EASE\_CUBIC\_IN}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_CUBIC\_IN@{EASE\_CUBIC\_IN}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12daf710734e8f5fa7e8777b2507228eed9e}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12daf710734e8f5fa7e8777b2507228eed9e}} 
+E\+A\+S\+E\+\_\+\+C\+U\+B\+I\+C\+\_\+\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_CUBIC\_OUT@{EASE\_CUBIC\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_CUBIC\_OUT@{EASE\_CUBIC\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dad7707c6f912833327efc0092a273d7ef}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dad7707c6f912833327efc0092a273d7ef}} 
+E\+A\+S\+E\+\_\+\+C\+U\+B\+I\+C\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_CUBIC\_IN\_OUT@{EASE\_CUBIC\_IN\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_CUBIC\_IN\_OUT@{EASE\_CUBIC\_IN\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2f62ac19c70453a506505e2a401db17c}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2f62ac19c70453a506505e2a401db17c}} 
+E\+A\+S\+E\+\_\+\+C\+U\+B\+I\+C\+\_\+\+I\+N\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_QUAD\_IN@{EASE\_QUAD\_IN}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_QUAD\_IN@{EASE\_QUAD\_IN}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da432813045535908bd594591369f8337f}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da432813045535908bd594591369f8337f}} 
+E\+A\+S\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_QUAD\_OUT@{EASE\_QUAD\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_QUAD\_OUT@{EASE\_QUAD\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da8c51680a15dc26b5ebdae96a6671f748}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da8c51680a15dc26b5ebdae96a6671f748}} 
+E\+A\+S\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_QUAD\_IN\_OUT@{EASE\_QUAD\_IN\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_QUAD\_IN\_OUT@{EASE\_QUAD\_IN\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da4c228f0a5b3726939805c7bf785d5c66}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da4c228f0a5b3726939805c7bf785d5c66}} 
+E\+A\+S\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+I\+N\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_EXPO\_IN@{EASE\_EXPO\_IN}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_EXPO\_IN@{EASE\_EXPO\_IN}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dad8715bb6893cf4b9b785de9bbc890323}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dad8715bb6893cf4b9b785de9bbc890323}} 
+E\+A\+S\+E\+\_\+\+E\+X\+P\+O\+\_\+\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_EXPO\_OUT@{EASE\_EXPO\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_EXPO\_OUT@{EASE\_EXPO\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da068d7805da7b5239babb4a3622f937fa}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da068d7805da7b5239babb4a3622f937fa}} 
+E\+A\+S\+E\+\_\+\+E\+X\+P\+O\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_EXPO\_IN\_OUT@{EASE\_EXPO\_IN\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_EXPO\_IN\_OUT@{EASE\_EXPO\_IN\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da1e1b6d496c55aa515b40428e52a7628a}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da1e1b6d496c55aa515b40428e52a7628a}} 
+E\+A\+S\+E\+\_\+\+E\+X\+P\+O\+\_\+\+I\+N\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_BACK\_IN@{EASE\_BACK\_IN}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_BACK\_IN@{EASE\_BACK\_IN}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dab5d7c8deccf6fc982464e99ca5bc5854}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12dab5d7c8deccf6fc982464e99ca5bc5854}} 
+E\+A\+S\+E\+\_\+\+B\+A\+C\+K\+\_\+\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_BACK\_OUT@{EASE\_BACK\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_BACK\_OUT@{EASE\_BACK\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2a36962f466f04bc4d51ec222ede6190}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2a36962f466f04bc4d51ec222ede6190}} 
+E\+A\+S\+E\+\_\+\+B\+A\+C\+K\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_BACK\_IN\_OUT@{EASE\_BACK\_IN\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_BACK\_IN\_OUT@{EASE\_BACK\_IN\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da3a998f56b090a35abe7edbaa5945e25d}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da3a998f56b090a35abe7edbaa5945e25d}} 
+E\+A\+S\+E\+\_\+\+B\+A\+C\+K\+\_\+\+I\+N\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_BOUNCE\_OUT@{EASE\_BOUNCE\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_BOUNCE\_OUT@{EASE\_BOUNCE\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da1bb5b1f94df2a8ac6fbef912e441353e}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da1bb5b1f94df2a8ac6fbef912e441353e}} 
+E\+A\+S\+E\+\_\+\+B\+O\+U\+N\+C\+E\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_BOUNCE\_IN@{EASE\_BOUNCE\_IN}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_BOUNCE\_IN@{EASE\_BOUNCE\_IN}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da8d66b2f83f3c64e2cd42a7acc5311b7b}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da8d66b2f83f3c64e2cd42a7acc5311b7b}} 
+E\+A\+S\+E\+\_\+\+B\+O\+U\+N\+C\+E\+\_\+\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_BOUNCE\_IN\_OUT@{EASE\_BOUNCE\_IN\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_BOUNCE\_IN\_OUT@{EASE\_BOUNCE\_IN\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da0c4cb88490c354aed91eeb621acdcd7f}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da0c4cb88490c354aed91eeb621acdcd7f}} 
+E\+A\+S\+E\+\_\+\+B\+O\+U\+N\+C\+E\+\_\+\+I\+N\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_ELASTIC\_IN@{EASE\_ELASTIC\_IN}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_ELASTIC\_IN@{EASE\_ELASTIC\_IN}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da1564846f21a9dc5e1035f9e612a3d46f}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da1564846f21a9dc5e1035f9e612a3d46f}} 
+E\+A\+S\+E\+\_\+\+E\+L\+A\+S\+T\+I\+C\+\_\+\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_ELASTIC\_OUT@{EASE\_ELASTIC\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_ELASTIC\_OUT@{EASE\_ELASTIC\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2ed4d815caf34bf5c494f09cfe6b15ce}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da2ed4d815caf34bf5c494f09cfe6b15ce}} 
+E\+A\+S\+E\+\_\+\+E\+L\+A\+S\+T\+I\+C\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASE\_ELASTIC\_IN\_OUT@{EASE\_ELASTIC\_IN\_OUT}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASE\_ELASTIC\_IN\_OUT@{EASE\_ELASTIC\_IN\_OUT}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da8170d58ea037601d002d0561716d1bf8}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da8170d58ea037601d002d0561716d1bf8}} 
+E\+A\+S\+E\+\_\+\+E\+L\+A\+S\+T\+I\+C\+\_\+\+I\+N\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NUM\_EASING\_TYPES@{NUM\_EASING\_TYPES}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!NUM\_EASING\_TYPES@{NUM\_EASING\_TYPES}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da26a1b99d70668d513d6ac835cbe4ad82}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12da26a1b99d70668d513d6ac835cbe4ad82}} 
+N\+U\+M\+\_\+\+E\+A\+S\+I\+N\+G\+\_\+\+T\+Y\+P\+ES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EASING\_NONE@{EASING\_NONE}!easings\_testbed.c@{easings\_testbed.c}}\index{easings\_testbed.c@{easings\_testbed.c}!EASING\_NONE@{EASING\_NONE}}}\mbox{\Hypertarget{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12daf4cea3de4300c0951572ad61e9f951a6}\label{easings__testbed_8c_a789ada3335c1669550c57d2959d9c12daf4cea3de4300c0951572ad61e9f951a6}} 
+E\+A\+S\+I\+N\+G\+\_\+\+N\+O\+NE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{easings__testbed_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{easings__testbed_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{easings\_testbed.c@{easings\_testbed.c}!main@{main}}
+\index{main@{main}!easings\_testbed.c@{easings\_testbed.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{easings__testbed_8c_aba8ee0097ed023656fd4c3d7f0eee9af}\label{easings__testbed_8c_aba8ee0097ed023656fd4c3d7f0eee9af}} 
+\index{easings\_testbed.c@{easings\_testbed.c}!func@{func}}
+\index{func@{func}!easings\_testbed.c@{easings\_testbed.c}}
+\doxysubsubsection{\texorpdfstring{func}{func}}
+{\footnotesize\ttfamily float($\ast$ \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}}) (float, float, float, float)}
+
+\mbox{\Hypertarget{easings__testbed_8c_a8f8f80d37794cde9472343e4487ba3eb}\label{easings__testbed_8c_a8f8f80d37794cde9472343e4487ba3eb}} 
+\index{easings\_testbed.c@{easings\_testbed.c}!name@{name}}
+\index{name@{name}!easings\_testbed.c@{easings\_testbed.c}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14d7642df08c5cb68e4fb90cc8a73509}{name}}}
+

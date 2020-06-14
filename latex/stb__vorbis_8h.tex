@@ -1,0 +1,378 @@
+\hypertarget{stb__vorbis_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/stb\+\_\+vorbis.h}
+\label{stb__vorbis_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/stb\_vorbis.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/stb\_vorbis.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstb__vorbis__alloc}{stb\+\_\+vorbis\+\_\+alloc}}
+\item 
+struct \mbox{\hyperlink{structstb__vorbis__info}{stb\+\_\+vorbis\+\_\+info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}}~extern
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644}{S\+T\+B\+Vorbis\+Error}} \{ \newline
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a8fb17b5792b1463fe7e6152195d26f19}{V\+O\+R\+B\+I\+S\+\_\+\+\_\+no\+\_\+error}}, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a03255ba6dfd62d6530c8f67e8bc04861}{V\+O\+R\+B\+I\+S\+\_\+need\+\_\+more\+\_\+data}} =1, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a7f6a5d2c76b796bb56bcf5f41e183dde}{V\+O\+R\+B\+I\+S\+\_\+invalid\+\_\+api\+\_\+mixing}}, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a9f9f1fc7205e4745ebe278ee6dcff5a9}{V\+O\+R\+B\+I\+S\+\_\+outofmem}}, 
+\newline
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a6d4bef85b593d569b17ec5f5eef8eccc}{V\+O\+R\+B\+I\+S\+\_\+feature\+\_\+not\+\_\+supported}}, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a5d8a45ddaddf102b73c40a1857826159}{V\+O\+R\+B\+I\+S\+\_\+too\+\_\+many\+\_\+channels}}, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644aba12de4c5865bae04137ac7ddd5a9830}{V\+O\+R\+B\+I\+S\+\_\+file\+\_\+open\+\_\+failure}}, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a02fb188ec8eab3d98b0d804110a3afe1}{V\+O\+R\+B\+I\+S\+\_\+seek\+\_\+without\+\_\+length}}, 
+\newline
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a27dd0deb7a2b9c1b4904e0a74ee2dbff}{V\+O\+R\+B\+I\+S\+\_\+unexpected\+\_\+eof}} =10, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a4a1160dd71b457811cb9d8d6ee0c37a6}{V\+O\+R\+B\+I\+S\+\_\+seek\+\_\+invalid}}, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a72bb5f27569f3e6b64ccd6ef10abe242}{V\+O\+R\+B\+I\+S\+\_\+invalid\+\_\+setup}} =20, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644ab391db45d817609255602c76b2ccf0c1}{V\+O\+R\+B\+I\+S\+\_\+invalid\+\_\+stream}}, 
+\newline
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a399244ebaba15c4c7fedfd8e7231adb0}{V\+O\+R\+B\+I\+S\+\_\+missing\+\_\+capture\+\_\+pattern}} =30, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644ad88a7e313975aa9bf140e4a8db5f5e53}{V\+O\+R\+B\+I\+S\+\_\+invalid\+\_\+stream\+\_\+structure\+\_\+version}}, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a3b2e936724f1ac37d491b06325163d8b}{V\+O\+R\+B\+I\+S\+\_\+continued\+\_\+packet\+\_\+flag\+\_\+invalid}}, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a295f6c7912e05a89ceb1a217d6705369}{V\+O\+R\+B\+I\+S\+\_\+incorrect\+\_\+stream\+\_\+serial\+\_\+number}}, 
+\newline
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a09cab39192d56d72b8ad2fb334593775}{V\+O\+R\+B\+I\+S\+\_\+invalid\+\_\+first\+\_\+page}}, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a07706341bbd7190ea2909e79d1922798}{V\+O\+R\+B\+I\+S\+\_\+bad\+\_\+packet\+\_\+type}}, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a555029d9dbfc200a2e5bd155089eb30c}{V\+O\+R\+B\+I\+S\+\_\+cant\+\_\+find\+\_\+last\+\_\+page}}, 
+\mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a08640b74e73325d965e69da1a2752c7a}{V\+O\+R\+B\+I\+S\+\_\+seek\+\_\+failed}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{structstb__vorbis__info}{stb\+\_\+vorbis\+\_\+info}} \mbox{\hyperlink{stb__vorbis_8h_ae71e26fa0985f565d9fbe9b6a19f4fbd}{stb\+\_\+vorbis\+\_\+get\+\_\+info}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}})
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_add7d1f7a77e79f0804214e24eb4def17}{stb\+\_\+vorbis\+\_\+get\+\_\+error}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}})
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{stb__vorbis_8h_a3b0c8d363c100d8603a345020f84222b}{stb\+\_\+vorbis\+\_\+close}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}})
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_ade1fab06013b163cb1e66a3e3e209189}{stb\+\_\+vorbis\+\_\+get\+\_\+sample\+\_\+offset}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}})
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_a9bbd5391fd3e33f866547e0c396a1bc0}{stb\+\_\+vorbis\+\_\+get\+\_\+file\+\_\+offset}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}})
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$ \mbox{\hyperlink{stb__vorbis_8h_aad07255b26c0294dd36f096f2f200dc5}{stb\+\_\+vorbis\+\_\+open\+\_\+pushdata}} (const unsigned \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$datablock, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} datablock\+\_\+length\+\_\+in\+\_\+bytes, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$datablock\+\_\+memory\+\_\+consumed\+\_\+in\+\_\+bytes, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$error, const \mbox{\hyperlink{structstb__vorbis__alloc}{stb\+\_\+vorbis\+\_\+alloc}} $\ast$alloc\+\_\+buffer)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_a679d635b6ed57fde26f197c686d04d9b}{stb\+\_\+vorbis\+\_\+decode\+\_\+frame\+\_\+pushdata}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, const unsigned \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$datablock, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} datablock\+\_\+length\+\_\+in\+\_\+bytes, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, float $\ast$$\ast$$\ast$output, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aba70cd077c2c52c15358c231c6d293aa}{samples}})
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{stb__vorbis_8h_a9e83f68d00ea55014111b031825427f0}{stb\+\_\+vorbis\+\_\+flush\+\_\+pushdata}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}})
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_ab7b1dadfd10f7f761c7bd6a5c7cc2a91}{stb\+\_\+vorbis\+\_\+decode\+\_\+filename}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+\_\+rate, short $\ast$$\ast$output)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_a936a8b70c3b3eeaaa7b2ebe0d26bd75d}{stb\+\_\+vorbis\+\_\+decode\+\_\+memory}} (const unsigned \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$mem, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a30ee67aa502329a88f4a203775adfa1a}{len}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$sample\+\_\+rate, short $\ast$$\ast$output)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$ \mbox{\hyperlink{stb__vorbis_8h_a6f2c364f50b17d53699394ddaed1172c}{stb\+\_\+vorbis\+\_\+open\+\_\+memory}} (const unsigned \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a30ee67aa502329a88f4a203775adfa1a}{len}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$error, const \mbox{\hyperlink{structstb__vorbis__alloc}{stb\+\_\+vorbis\+\_\+alloc}} $\ast$alloc\+\_\+buffer)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$ \mbox{\hyperlink{stb__vorbis_8h_a2cb3d726494c26462da5987fbd545f7c}{stb\+\_\+vorbis\+\_\+open\+\_\+filename}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$error, const \mbox{\hyperlink{structstb__vorbis__alloc}{stb\+\_\+vorbis\+\_\+alloc}} $\ast$alloc\+\_\+buffer)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$ \mbox{\hyperlink{stb__vorbis_8h_ad88d31f4a04fd3531540519f86f62d01}{stb\+\_\+vorbis\+\_\+open\+\_\+file}} (F\+I\+LE $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} close\+\_\+handle\+\_\+on\+\_\+close, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$error, const \mbox{\hyperlink{structstb__vorbis__alloc}{stb\+\_\+vorbis\+\_\+alloc}} $\ast$alloc\+\_\+buffer)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$ \mbox{\hyperlink{stb__vorbis_8h_a1d17a2e3a7946615c0cb36824363b4b5}{stb\+\_\+vorbis\+\_\+open\+\_\+file\+\_\+section}} (F\+I\+LE $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} close\+\_\+handle\+\_\+on\+\_\+close, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$error, const \mbox{\hyperlink{structstb__vorbis__alloc}{stb\+\_\+vorbis\+\_\+alloc}} $\ast$alloc\+\_\+buffer, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a30ee67aa502329a88f4a203775adfa1a}{len}})
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_ab42d3e23ffa795ac041141fc069a3bf0}{stb\+\_\+vorbis\+\_\+seek\+\_\+frame}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sample\+\_\+number)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_ad0535085484edacc5bac826a9e749d8e}{stb\+\_\+vorbis\+\_\+seek}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sample\+\_\+number)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_ae0e06b611c01ba49b7e0499a2451f6f1}{stb\+\_\+vorbis\+\_\+seek\+\_\+start}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}})
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_acd7bd3a22d9a3d938a421bb79d0ebd3b}{stb\+\_\+vorbis\+\_\+stream\+\_\+length\+\_\+in\+\_\+samples}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}})
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} float \mbox{\hyperlink{stb__vorbis_8h_abcc3f7aa0d2f7b0fce5b92e9f4a73177}{stb\+\_\+vorbis\+\_\+stream\+\_\+length\+\_\+in\+\_\+seconds}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}})
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_aeb08a61647660873fa9d6a1939292887}{stb\+\_\+vorbis\+\_\+get\+\_\+frame\+\_\+float}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$channels, float $\ast$$\ast$$\ast$output)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_a262d0595c48c371b4d2a01929fed6dfe}{stb\+\_\+vorbis\+\_\+get\+\_\+frame\+\_\+short\+\_\+interleaved}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} num\+\_\+c, short $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a7bd7b5e409950ac3449c78baf3205f4b}{buffer}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} num\+\_\+shorts)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_a95667519d2283b696c86f5772e49e735}{stb\+\_\+vorbis\+\_\+get\+\_\+frame\+\_\+short}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} num\+\_\+c, short $\ast$$\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a7bd7b5e409950ac3449c78baf3205f4b}{buffer}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} num\+\_\+samples)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_a672fe46320e3e7693868675a77d93031}{stb\+\_\+vorbis\+\_\+get\+\_\+samples\+\_\+float\+\_\+interleaved}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} channels, float $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a7bd7b5e409950ac3449c78baf3205f4b}{buffer}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} num\+\_\+floats)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_a5718611614740ab2e46fad0e3597cd20}{stb\+\_\+vorbis\+\_\+get\+\_\+samples\+\_\+float}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} channels, float $\ast$$\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a7bd7b5e409950ac3449c78baf3205f4b}{buffer}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} num\+\_\+samples)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_ab4b0a74ccd55a5466a3a84c953835347}{stb\+\_\+vorbis\+\_\+get\+\_\+samples\+\_\+short\+\_\+interleaved}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} channels, short $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a7bd7b5e409950ac3449c78baf3205f4b}{buffer}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} num\+\_\+shorts)
+\item 
+\mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{stb__vorbis_8h_ac0a9d7eca5e04fc68d060dffbc535ccf}{stb\+\_\+vorbis\+\_\+get\+\_\+samples\+\_\+short}} (\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} channels, short $\ast$$\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a7bd7b5e409950ac3449c78baf3205f4b}{buffer}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} num\+\_\+samples)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}\label{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!STBVDEF@{STBVDEF}}
+\index{STBVDEF@{STBVDEF}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{STBVDEF}{STBVDEF}}
+{\footnotesize\ttfamily \#define S\+T\+B\+V\+D\+EF~extern}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}\label{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis@{stb\_vorbis}}
+\index{stb\_vorbis@{stb\_vorbis}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis}{stb\_vorbis}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}}}
+
+
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!STBVorbisError@{STBVorbisError}}
+\index{STBVorbisError@{STBVorbisError}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{STBVorbisError}{STBVorbisError}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644}{S\+T\+B\+Vorbis\+Error}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_\_no\_error@{VORBIS\_\_no\_error}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_\_no\_error@{VORBIS\_\_no\_error}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a8fb17b5792b1463fe7e6152195d26f19}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a8fb17b5792b1463fe7e6152195d26f19}} 
+V\+O\+R\+B\+I\+S\+\_\+\+\_\+no\+\_\+error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_need\_more\_data@{VORBIS\_need\_more\_data}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_need\_more\_data@{VORBIS\_need\_more\_data}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a03255ba6dfd62d6530c8f67e8bc04861}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a03255ba6dfd62d6530c8f67e8bc04861}} 
+V\+O\+R\+B\+I\+S\+\_\+need\+\_\+more\+\_\+data&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_invalid\_api\_mixing@{VORBIS\_invalid\_api\_mixing}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_invalid\_api\_mixing@{VORBIS\_invalid\_api\_mixing}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a7f6a5d2c76b796bb56bcf5f41e183dde}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a7f6a5d2c76b796bb56bcf5f41e183dde}} 
+V\+O\+R\+B\+I\+S\+\_\+invalid\+\_\+api\+\_\+mixing&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_outofmem@{VORBIS\_outofmem}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_outofmem@{VORBIS\_outofmem}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a9f9f1fc7205e4745ebe278ee6dcff5a9}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a9f9f1fc7205e4745ebe278ee6dcff5a9}} 
+V\+O\+R\+B\+I\+S\+\_\+outofmem&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_feature\_not\_supported@{VORBIS\_feature\_not\_supported}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_feature\_not\_supported@{VORBIS\_feature\_not\_supported}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a6d4bef85b593d569b17ec5f5eef8eccc}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a6d4bef85b593d569b17ec5f5eef8eccc}} 
+V\+O\+R\+B\+I\+S\+\_\+feature\+\_\+not\+\_\+supported&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_too\_many\_channels@{VORBIS\_too\_many\_channels}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_too\_many\_channels@{VORBIS\_too\_many\_channels}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a5d8a45ddaddf102b73c40a1857826159}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a5d8a45ddaddf102b73c40a1857826159}} 
+V\+O\+R\+B\+I\+S\+\_\+too\+\_\+many\+\_\+channels&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_file\_open\_failure@{VORBIS\_file\_open\_failure}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_file\_open\_failure@{VORBIS\_file\_open\_failure}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644aba12de4c5865bae04137ac7ddd5a9830}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644aba12de4c5865bae04137ac7ddd5a9830}} 
+V\+O\+R\+B\+I\+S\+\_\+file\+\_\+open\+\_\+failure&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_seek\_without\_length@{VORBIS\_seek\_without\_length}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_seek\_without\_length@{VORBIS\_seek\_without\_length}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a02fb188ec8eab3d98b0d804110a3afe1}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a02fb188ec8eab3d98b0d804110a3afe1}} 
+V\+O\+R\+B\+I\+S\+\_\+seek\+\_\+without\+\_\+length&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_unexpected\_eof@{VORBIS\_unexpected\_eof}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_unexpected\_eof@{VORBIS\_unexpected\_eof}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a27dd0deb7a2b9c1b4904e0a74ee2dbff}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a27dd0deb7a2b9c1b4904e0a74ee2dbff}} 
+V\+O\+R\+B\+I\+S\+\_\+unexpected\+\_\+eof&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_seek\_invalid@{VORBIS\_seek\_invalid}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_seek\_invalid@{VORBIS\_seek\_invalid}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a4a1160dd71b457811cb9d8d6ee0c37a6}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a4a1160dd71b457811cb9d8d6ee0c37a6}} 
+V\+O\+R\+B\+I\+S\+\_\+seek\+\_\+invalid&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_invalid\_setup@{VORBIS\_invalid\_setup}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_invalid\_setup@{VORBIS\_invalid\_setup}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a72bb5f27569f3e6b64ccd6ef10abe242}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a72bb5f27569f3e6b64ccd6ef10abe242}} 
+V\+O\+R\+B\+I\+S\+\_\+invalid\+\_\+setup&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_invalid\_stream@{VORBIS\_invalid\_stream}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_invalid\_stream@{VORBIS\_invalid\_stream}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644ab391db45d817609255602c76b2ccf0c1}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644ab391db45d817609255602c76b2ccf0c1}} 
+V\+O\+R\+B\+I\+S\+\_\+invalid\+\_\+stream&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_missing\_capture\_pattern@{VORBIS\_missing\_capture\_pattern}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_missing\_capture\_pattern@{VORBIS\_missing\_capture\_pattern}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a399244ebaba15c4c7fedfd8e7231adb0}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a399244ebaba15c4c7fedfd8e7231adb0}} 
+V\+O\+R\+B\+I\+S\+\_\+missing\+\_\+capture\+\_\+pattern&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_invalid\_stream\_structure\_version@{VORBIS\_invalid\_stream\_structure\_version}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_invalid\_stream\_structure\_version@{VORBIS\_invalid\_stream\_structure\_version}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644ad88a7e313975aa9bf140e4a8db5f5e53}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644ad88a7e313975aa9bf140e4a8db5f5e53}} 
+V\+O\+R\+B\+I\+S\+\_\+invalid\+\_\+stream\+\_\+structure\+\_\+version&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_continued\_packet\_flag\_invalid@{VORBIS\_continued\_packet\_flag\_invalid}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_continued\_packet\_flag\_invalid@{VORBIS\_continued\_packet\_flag\_invalid}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a3b2e936724f1ac37d491b06325163d8b}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a3b2e936724f1ac37d491b06325163d8b}} 
+V\+O\+R\+B\+I\+S\+\_\+continued\+\_\+packet\+\_\+flag\+\_\+invalid&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_incorrect\_stream\_serial\_number@{VORBIS\_incorrect\_stream\_serial\_number}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_incorrect\_stream\_serial\_number@{VORBIS\_incorrect\_stream\_serial\_number}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a295f6c7912e05a89ceb1a217d6705369}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a295f6c7912e05a89ceb1a217d6705369}} 
+V\+O\+R\+B\+I\+S\+\_\+incorrect\+\_\+stream\+\_\+serial\+\_\+number&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_invalid\_first\_page@{VORBIS\_invalid\_first\_page}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_invalid\_first\_page@{VORBIS\_invalid\_first\_page}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a09cab39192d56d72b8ad2fb334593775}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a09cab39192d56d72b8ad2fb334593775}} 
+V\+O\+R\+B\+I\+S\+\_\+invalid\+\_\+first\+\_\+page&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_bad\_packet\_type@{VORBIS\_bad\_packet\_type}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_bad\_packet\_type@{VORBIS\_bad\_packet\_type}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a07706341bbd7190ea2909e79d1922798}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a07706341bbd7190ea2909e79d1922798}} 
+V\+O\+R\+B\+I\+S\+\_\+bad\+\_\+packet\+\_\+type&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_cant\_find\_last\_page@{VORBIS\_cant\_find\_last\_page}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_cant\_find\_last\_page@{VORBIS\_cant\_find\_last\_page}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a555029d9dbfc200a2e5bd155089eb30c}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a555029d9dbfc200a2e5bd155089eb30c}} 
+V\+O\+R\+B\+I\+S\+\_\+cant\+\_\+find\+\_\+last\+\_\+page&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VORBIS\_seek\_failed@{VORBIS\_seek\_failed}!stb\_vorbis.h@{stb\_vorbis.h}}\index{stb\_vorbis.h@{stb\_vorbis.h}!VORBIS\_seek\_failed@{VORBIS\_seek\_failed}}}\mbox{\Hypertarget{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a08640b74e73325d965e69da1a2752c7a}\label{stb__vorbis_8h_a2827ae29a055de005d8769ef0e0cd644a08640b74e73325d965e69da1a2752c7a}} 
+V\+O\+R\+B\+I\+S\+\_\+seek\+\_\+failed&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{stb__vorbis_8h_a3b0c8d363c100d8603a345020f84222b}\label{stb__vorbis_8h_a3b0c8d363c100d8603a345020f84222b}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_close@{stb\_vorbis\_close}}
+\index{stb\_vorbis\_close@{stb\_vorbis\_close}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_close()}{stb\_vorbis\_close()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} stb\+\_\+vorbis\+\_\+close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_ab7b1dadfd10f7f761c7bd6a5c7cc2a91}\label{stb__vorbis_8h_ab7b1dadfd10f7f761c7bd6a5c7cc2a91}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_decode\_filename@{stb\_vorbis\_decode\_filename}}
+\index{stb\_vorbis\_decode\_filename@{stb\_vorbis\_decode\_filename}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_decode\_filename()}{stb\_vorbis\_decode\_filename()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+decode\+\_\+filename (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+\_\+rate,  }\item[{short $\ast$$\ast$}]{output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_a679d635b6ed57fde26f197c686d04d9b}\label{stb__vorbis_8h_a679d635b6ed57fde26f197c686d04d9b}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_decode\_frame\_pushdata@{stb\_vorbis\_decode\_frame\_pushdata}}
+\index{stb\_vorbis\_decode\_frame\_pushdata@{stb\_vorbis\_decode\_frame\_pushdata}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_decode\_frame\_pushdata()}{stb\_vorbis\_decode\_frame\_pushdata()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+decode\+\_\+frame\+\_\+pushdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f,  }\item[{const unsigned \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{datablock,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{datablock\+\_\+length\+\_\+in\+\_\+bytes,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{float $\ast$$\ast$$\ast$}]{output,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{samples }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_a936a8b70c3b3eeaaa7b2ebe0d26bd75d}\label{stb__vorbis_8h_a936a8b70c3b3eeaaa7b2ebe0d26bd75d}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_decode\_memory@{stb\_vorbis\_decode\_memory}}
+\index{stb\_vorbis\_decode\_memory@{stb\_vorbis\_decode\_memory}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_decode\_memory()}{stb\_vorbis\_decode\_memory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+decode\+\_\+memory (\begin{DoxyParamCaption}\item[{const unsigned \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{mem,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{len,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{sample\+\_\+rate,  }\item[{short $\ast$$\ast$}]{output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_a9e83f68d00ea55014111b031825427f0}\label{stb__vorbis_8h_a9e83f68d00ea55014111b031825427f0}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_flush\_pushdata@{stb\_vorbis\_flush\_pushdata}}
+\index{stb\_vorbis\_flush\_pushdata@{stb\_vorbis\_flush\_pushdata}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_flush\_pushdata()}{stb\_vorbis\_flush\_pushdata()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} stb\+\_\+vorbis\+\_\+flush\+\_\+pushdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_add7d1f7a77e79f0804214e24eb4def17}\label{stb__vorbis_8h_add7d1f7a77e79f0804214e24eb4def17}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_get\_error@{stb\_vorbis\_get\_error}}
+\index{stb\_vorbis\_get\_error@{stb\_vorbis\_get\_error}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_get\_error()}{stb\_vorbis\_get\_error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+get\+\_\+error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_a9bbd5391fd3e33f866547e0c396a1bc0}\label{stb__vorbis_8h_a9bbd5391fd3e33f866547e0c396a1bc0}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_get\_file\_offset@{stb\_vorbis\_get\_file\_offset}}
+\index{stb\_vorbis\_get\_file\_offset@{stb\_vorbis\_get\_file\_offset}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_get\_file\_offset()}{stb\_vorbis\_get\_file\_offset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+get\+\_\+file\+\_\+offset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_aeb08a61647660873fa9d6a1939292887}\label{stb__vorbis_8h_aeb08a61647660873fa9d6a1939292887}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_get\_frame\_float@{stb\_vorbis\_get\_frame\_float}}
+\index{stb\_vorbis\_get\_frame\_float@{stb\_vorbis\_get\_frame\_float}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_get\_frame\_float()}{stb\_vorbis\_get\_frame\_float()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+get\+\_\+frame\+\_\+float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{channels,  }\item[{float $\ast$$\ast$$\ast$}]{output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_a95667519d2283b696c86f5772e49e735}\label{stb__vorbis_8h_a95667519d2283b696c86f5772e49e735}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_get\_frame\_short@{stb\_vorbis\_get\_frame\_short}}
+\index{stb\_vorbis\_get\_frame\_short@{stb\_vorbis\_get\_frame\_short}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_get\_frame\_short()}{stb\_vorbis\_get\_frame\_short()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+get\+\_\+frame\+\_\+short (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{num\+\_\+c,  }\item[{short $\ast$$\ast$}]{buffer,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{num\+\_\+samples }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_a262d0595c48c371b4d2a01929fed6dfe}\label{stb__vorbis_8h_a262d0595c48c371b4d2a01929fed6dfe}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_get\_frame\_short\_interleaved@{stb\_vorbis\_get\_frame\_short\_interleaved}}
+\index{stb\_vorbis\_get\_frame\_short\_interleaved@{stb\_vorbis\_get\_frame\_short\_interleaved}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_get\_frame\_short\_interleaved()}{stb\_vorbis\_get\_frame\_short\_interleaved()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+get\+\_\+frame\+\_\+short\+\_\+interleaved (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{num\+\_\+c,  }\item[{short $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{num\+\_\+shorts }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_ae71e26fa0985f565d9fbe9b6a19f4fbd}\label{stb__vorbis_8h_ae71e26fa0985f565d9fbe9b6a19f4fbd}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_get\_info@{stb\_vorbis\_get\_info}}
+\index{stb\_vorbis\_get\_info@{stb\_vorbis\_get\_info}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_get\_info()}{stb\_vorbis\_get\_info()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{structstb__vorbis__info}{stb\+\_\+vorbis\+\_\+info}} stb\+\_\+vorbis\+\_\+get\+\_\+info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_ade1fab06013b163cb1e66a3e3e209189}\label{stb__vorbis_8h_ade1fab06013b163cb1e66a3e3e209189}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_get\_sample\_offset@{stb\_vorbis\_get\_sample\_offset}}
+\index{stb\_vorbis\_get\_sample\_offset@{stb\_vorbis\_get\_sample\_offset}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_get\_sample\_offset()}{stb\_vorbis\_get\_sample\_offset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+get\+\_\+sample\+\_\+offset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_a5718611614740ab2e46fad0e3597cd20}\label{stb__vorbis_8h_a5718611614740ab2e46fad0e3597cd20}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_get\_samples\_float@{stb\_vorbis\_get\_samples\_float}}
+\index{stb\_vorbis\_get\_samples\_float@{stb\_vorbis\_get\_samples\_float}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_get\_samples\_float()}{stb\_vorbis\_get\_samples\_float()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+get\+\_\+samples\+\_\+float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{channels,  }\item[{float $\ast$$\ast$}]{buffer,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{num\+\_\+samples }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_a672fe46320e3e7693868675a77d93031}\label{stb__vorbis_8h_a672fe46320e3e7693868675a77d93031}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_get\_samples\_float\_interleaved@{stb\_vorbis\_get\_samples\_float\_interleaved}}
+\index{stb\_vorbis\_get\_samples\_float\_interleaved@{stb\_vorbis\_get\_samples\_float\_interleaved}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_get\_samples\_float\_interleaved()}{stb\_vorbis\_get\_samples\_float\_interleaved()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+get\+\_\+samples\+\_\+float\+\_\+interleaved (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{channels,  }\item[{float $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{num\+\_\+floats }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_ac0a9d7eca5e04fc68d060dffbc535ccf}\label{stb__vorbis_8h_ac0a9d7eca5e04fc68d060dffbc535ccf}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_get\_samples\_short@{stb\_vorbis\_get\_samples\_short}}
+\index{stb\_vorbis\_get\_samples\_short@{stb\_vorbis\_get\_samples\_short}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_get\_samples\_short()}{stb\_vorbis\_get\_samples\_short()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+get\+\_\+samples\+\_\+short (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{channels,  }\item[{short $\ast$$\ast$}]{buffer,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{num\+\_\+samples }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_ab4b0a74ccd55a5466a3a84c953835347}\label{stb__vorbis_8h_ab4b0a74ccd55a5466a3a84c953835347}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_get\_samples\_short\_interleaved@{stb\_vorbis\_get\_samples\_short\_interleaved}}
+\index{stb\_vorbis\_get\_samples\_short\_interleaved@{stb\_vorbis\_get\_samples\_short\_interleaved}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_get\_samples\_short\_interleaved()}{stb\_vorbis\_get\_samples\_short\_interleaved()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+get\+\_\+samples\+\_\+short\+\_\+interleaved (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{channels,  }\item[{short $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{num\+\_\+shorts }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_ad88d31f4a04fd3531540519f86f62d01}\label{stb__vorbis_8h_ad88d31f4a04fd3531540519f86f62d01}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_open\_file@{stb\_vorbis\_open\_file}}
+\index{stb\_vorbis\_open\_file@{stb\_vorbis\_open\_file}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_open\_file()}{stb\_vorbis\_open\_file()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}}$\ast$ stb\+\_\+vorbis\+\_\+open\+\_\+file (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{close\+\_\+handle\+\_\+on\+\_\+close,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{error,  }\item[{const \mbox{\hyperlink{structstb__vorbis__alloc}{stb\+\_\+vorbis\+\_\+alloc}} $\ast$}]{alloc\+\_\+buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_a1d17a2e3a7946615c0cb36824363b4b5}\label{stb__vorbis_8h_a1d17a2e3a7946615c0cb36824363b4b5}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_open\_file\_section@{stb\_vorbis\_open\_file\_section}}
+\index{stb\_vorbis\_open\_file\_section@{stb\_vorbis\_open\_file\_section}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_open\_file\_section()}{stb\_vorbis\_open\_file\_section()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}}$\ast$ stb\+\_\+vorbis\+\_\+open\+\_\+file\+\_\+section (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{close\+\_\+handle\+\_\+on\+\_\+close,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{error,  }\item[{const \mbox{\hyperlink{structstb__vorbis__alloc}{stb\+\_\+vorbis\+\_\+alloc}} $\ast$}]{alloc\+\_\+buffer,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_a2cb3d726494c26462da5987fbd545f7c}\label{stb__vorbis_8h_a2cb3d726494c26462da5987fbd545f7c}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_open\_filename@{stb\_vorbis\_open\_filename}}
+\index{stb\_vorbis\_open\_filename@{stb\_vorbis\_open\_filename}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_open\_filename()}{stb\_vorbis\_open\_filename()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}}$\ast$ stb\+\_\+vorbis\+\_\+open\+\_\+filename (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{error,  }\item[{const \mbox{\hyperlink{structstb__vorbis__alloc}{stb\+\_\+vorbis\+\_\+alloc}} $\ast$}]{alloc\+\_\+buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_a6f2c364f50b17d53699394ddaed1172c}\label{stb__vorbis_8h_a6f2c364f50b17d53699394ddaed1172c}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_open\_memory@{stb\_vorbis\_open\_memory}}
+\index{stb\_vorbis\_open\_memory@{stb\_vorbis\_open\_memory}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_open\_memory()}{stb\_vorbis\_open\_memory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}}$\ast$ stb\+\_\+vorbis\+\_\+open\+\_\+memory (\begin{DoxyParamCaption}\item[{const unsigned \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{data,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{len,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{error,  }\item[{const \mbox{\hyperlink{structstb__vorbis__alloc}{stb\+\_\+vorbis\+\_\+alloc}} $\ast$}]{alloc\+\_\+buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_aad07255b26c0294dd36f096f2f200dc5}\label{stb__vorbis_8h_aad07255b26c0294dd36f096f2f200dc5}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_open\_pushdata@{stb\_vorbis\_open\_pushdata}}
+\index{stb\_vorbis\_open\_pushdata@{stb\_vorbis\_open\_pushdata}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_open\_pushdata()}{stb\_vorbis\_open\_pushdata()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}}$\ast$ stb\+\_\+vorbis\+\_\+open\+\_\+pushdata (\begin{DoxyParamCaption}\item[{const unsigned \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{datablock,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{datablock\+\_\+length\+\_\+in\+\_\+bytes,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{datablock\+\_\+memory\+\_\+consumed\+\_\+in\+\_\+bytes,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{error,  }\item[{const \mbox{\hyperlink{structstb__vorbis__alloc}{stb\+\_\+vorbis\+\_\+alloc}} $\ast$}]{alloc\+\_\+buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_ad0535085484edacc5bac826a9e749d8e}\label{stb__vorbis_8h_ad0535085484edacc5bac826a9e749d8e}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_seek@{stb\_vorbis\_seek}}
+\index{stb\_vorbis\_seek@{stb\_vorbis\_seek}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_seek()}{stb\_vorbis\_seek()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+seek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sample\+\_\+number }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_ab42d3e23ffa795ac041141fc069a3bf0}\label{stb__vorbis_8h_ab42d3e23ffa795ac041141fc069a3bf0}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_seek\_frame@{stb\_vorbis\_seek\_frame}}
+\index{stb\_vorbis\_seek\_frame@{stb\_vorbis\_seek\_frame}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_seek\_frame()}{stb\_vorbis\_seek\_frame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+seek\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sample\+\_\+number }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_ae0e06b611c01ba49b7e0499a2451f6f1}\label{stb__vorbis_8h_ae0e06b611c01ba49b7e0499a2451f6f1}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_seek\_start@{stb\_vorbis\_seek\_start}}
+\index{stb\_vorbis\_seek\_start@{stb\_vorbis\_seek\_start}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_seek\_start()}{stb\_vorbis\_seek\_start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+seek\+\_\+start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_acd7bd3a22d9a3d938a421bb79d0ebd3b}\label{stb__vorbis_8h_acd7bd3a22d9a3d938a421bb79d0ebd3b}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_stream\_length\_in\_samples@{stb\_vorbis\_stream\_length\_in\_samples}}
+\index{stb\_vorbis\_stream\_length\_in\_samples@{stb\_vorbis\_stream\_length\_in\_samples}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_stream\_length\_in\_samples()}{stb\_vorbis\_stream\_length\_in\_samples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stb\+\_\+vorbis\+\_\+stream\+\_\+length\+\_\+in\+\_\+samples (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__vorbis_8h_abcc3f7aa0d2f7b0fce5b92e9f4a73177}\label{stb__vorbis_8h_abcc3f7aa0d2f7b0fce5b92e9f4a73177}} 
+\index{stb\_vorbis.h@{stb\_vorbis.h}!stb\_vorbis\_stream\_length\_in\_seconds@{stb\_vorbis\_stream\_length\_in\_seconds}}
+\index{stb\_vorbis\_stream\_length\_in\_seconds@{stb\_vorbis\_stream\_length\_in\_seconds}!stb\_vorbis.h@{stb\_vorbis.h}}
+\doxysubsubsection{\texorpdfstring{stb\_vorbis\_stream\_length\_in\_seconds()}{stb\_vorbis\_stream\_length\_in\_seconds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__vorbis_8h_a5e66d6cbf7a03bc094c953294f718684}{S\+T\+B\+V\+D\+EF}} float stb\+\_\+vorbis\+\_\+stream\+\_\+length\+\_\+in\+\_\+seconds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stb__vorbis_8h_ac67810bd2e7c1a2590015ef0ed708930}{stb\+\_\+vorbis}} $\ast$}]{f }\end{DoxyParamCaption})}
+

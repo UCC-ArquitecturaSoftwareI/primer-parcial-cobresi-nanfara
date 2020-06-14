@@ -1,0 +1,212 @@
+\hypertarget{structdrmp3}{}\doxysection{Referencia de la Estructura drmp3}
+\label{structdrmp3}\index{drmp3@{drmp3}}
+
+
+{\ttfamily \#include $<$dr\+\_\+mp3.\+h$>$}
+
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structdrmp3dec}{drmp3dec}} \mbox{\hyperlink{structdrmp3_aff4724123bbdf3b8e3071601c1f73ff7}{decoder}}
+\item 
+\mbox{\hyperlink{structdrmp3dec__frame__info}{drmp3dec\+\_\+frame\+\_\+info}} \mbox{\hyperlink{structdrmp3_aa855f80f6dbc32827875ca95c8ea29bb}{frame\+Info}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} \mbox{\hyperlink{structdrmp3_ade030203edf619566625bd278421d4e7}{channels}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} \mbox{\hyperlink{structdrmp3_a125a69b581af18055b9aced80a68ddea}{sample\+Rate}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_a8d518e74045cca06d5e9398bf919130c}{drmp3\+\_\+read\+\_\+proc}} \mbox{\hyperlink{structdrmp3_aba375c193b3077addacb4ec3b7907752}{on\+Read}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_a421a67ffd75b8c16b5870b68033b7a9b}{drmp3\+\_\+seek\+\_\+proc}} \mbox{\hyperlink{structdrmp3_ab40a369b3de3d2991076a566570a459b}{on\+Seek}}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{structdrmp3_addb6bdb74e7b37f350c167ae211541df}{p\+User\+Data}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} \mbox{\hyperlink{structdrmp3_aec49fe9de2778f11bb2013957fc12029}{mp3\+Frame\+Channels}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} \mbox{\hyperlink{structdrmp3_ade76fd0c402a551a22c0a06a0b8eb5dc}{mp3\+Frame\+Sample\+Rate}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} \mbox{\hyperlink{structdrmp3_a57052dc84770d6a2789b40388101af39}{pcm\+Frames\+Consumed\+In\+M\+P3\+Frame}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} \mbox{\hyperlink{structdrmp3_ae3017f4bdc17a2df39c4f635bbc875d6}{pcm\+Frames\+Remaining\+In\+M\+P3\+Frame}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_aa64367150a89739ed3581a6dd0c6d5e2}{drmp3\+\_\+uint8}} \mbox{\hyperlink{structdrmp3_aab662efd612811b662d0dec87233e4f2}{pcm\+Frames}} \mbox{[}sizeof(float) $\ast$\mbox{\hyperlink{dr__mp3_8h_a7bc707cf672a7623b621d19047cc8584}{D\+R\+M\+P3\+\_\+\+M\+A\+X\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+P\+E\+R\+\_\+\+F\+R\+A\+ME}}\mbox{]}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_ae97c13073e620e43f412638e292ceb0f}{drmp3\+\_\+uint64}} \mbox{\hyperlink{structdrmp3_a6500ce0ed15aa4b63622ca9f10b8011e}{current\+P\+C\+M\+Frame}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_ae97c13073e620e43f412638e292ceb0f}{drmp3\+\_\+uint64}} \mbox{\hyperlink{structdrmp3_a89971e4af6f62c59f99a1c908690efe3}{stream\+Cursor}}
+\item 
+\mbox{\hyperlink{structdrmp3__src}{drmp3\+\_\+src}} \mbox{\hyperlink{structdrmp3_abca1d417df91139e0973195b23c8b1e7}{src}}
+\item 
+\mbox{\hyperlink{structdrmp3__seek__point}{drmp3\+\_\+seek\+\_\+point}} $\ast$ \mbox{\hyperlink{structdrmp3_ae13ed70982604f33706b9f4a3fd40e76}{p\+Seek\+Points}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} \mbox{\hyperlink{structdrmp3_ae9095cc4be150c2ed98c9a4f53041f19}{seek\+Point\+Count}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structdrmp3_ad1d4cb4cb6209977963313a27f34c3bd}{data\+Size}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structdrmp3_ac76c099fa2b2d5746a53114cdcb2404d}{data\+Capacity}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_aa64367150a89739ed3581a6dd0c6d5e2}{drmp3\+\_\+uint8}} $\ast$ \mbox{\hyperlink{structdrmp3_ab213ff0f962562a012673a75670a663c}{p\+Data}}
+\item 
+\mbox{\hyperlink{dr__mp3_8h_af83487abc315b9bf3f15bdd348d9dfe3}{drmp3\+\_\+bool32}} \mbox{\hyperlink{structdrmp3_aec144001a290a012c3976112deeaa025}{at\+End}}\+: 1
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>const \mbox{\hyperlink{dr__mp3_8h_aa64367150a89739ed3581a6dd0c6d5e2}{drmp3\_uint8}} $\ast$ \mbox{\hyperlink{structdrmp3_a841837e8ec3d26f2604e3bb36592bff0}{pData}}\\
+\>size\_t \mbox{\hyperlink{structdrmp3_ad1d4cb4cb6209977963313a27f34c3bd}{dataSize}}\\
+\>size\_t \mbox{\hyperlink{structdrmp3_ac12020a4a574c20bc6940edb465ce385}{currentReadPos}}\\
+\} \mbox{\hyperlink{structdrmp3_aebe9c427f829b07531c1b50cef581d7c}{memory}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{structdrmp3_aec144001a290a012c3976112deeaa025}\label{structdrmp3_aec144001a290a012c3976112deeaa025}} 
+\index{drmp3@{drmp3}!atEnd@{atEnd}}
+\index{atEnd@{atEnd}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{atEnd}{atEnd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_af83487abc315b9bf3f15bdd348d9dfe3}{drmp3\+\_\+bool32}} drmp3\+::at\+End}
+
+\mbox{\Hypertarget{structdrmp3_ade030203edf619566625bd278421d4e7}\label{structdrmp3_ade030203edf619566625bd278421d4e7}} 
+\index{drmp3@{drmp3}!channels@{channels}}
+\index{channels@{channels}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{channels}{channels}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} drmp3\+::channels}
+
+\mbox{\Hypertarget{structdrmp3_a6500ce0ed15aa4b63622ca9f10b8011e}\label{structdrmp3_a6500ce0ed15aa4b63622ca9f10b8011e}} 
+\index{drmp3@{drmp3}!currentPCMFrame@{currentPCMFrame}}
+\index{currentPCMFrame@{currentPCMFrame}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{currentPCMFrame}{currentPCMFrame}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_ae97c13073e620e43f412638e292ceb0f}{drmp3\+\_\+uint64}} drmp3\+::current\+P\+C\+M\+Frame}
+
+\mbox{\Hypertarget{structdrmp3_ac12020a4a574c20bc6940edb465ce385}\label{structdrmp3_ac12020a4a574c20bc6940edb465ce385}} 
+\index{drmp3@{drmp3}!currentReadPos@{currentReadPos}}
+\index{currentReadPos@{currentReadPos}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{currentReadPos}{currentReadPos}}
+{\footnotesize\ttfamily size\+\_\+t drmp3\+::current\+Read\+Pos}
+
+\mbox{\Hypertarget{structdrmp3_ac76c099fa2b2d5746a53114cdcb2404d}\label{structdrmp3_ac76c099fa2b2d5746a53114cdcb2404d}} 
+\index{drmp3@{drmp3}!dataCapacity@{dataCapacity}}
+\index{dataCapacity@{dataCapacity}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{dataCapacity}{dataCapacity}}
+{\footnotesize\ttfamily size\+\_\+t drmp3\+::data\+Capacity}
+
+\mbox{\Hypertarget{structdrmp3_ad1d4cb4cb6209977963313a27f34c3bd}\label{structdrmp3_ad1d4cb4cb6209977963313a27f34c3bd}} 
+\index{drmp3@{drmp3}!dataSize@{dataSize}}
+\index{dataSize@{dataSize}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{dataSize}{dataSize}}
+{\footnotesize\ttfamily size\+\_\+t drmp3\+::data\+Size}
+
+\mbox{\Hypertarget{structdrmp3_aff4724123bbdf3b8e3071601c1f73ff7}\label{structdrmp3_aff4724123bbdf3b8e3071601c1f73ff7}} 
+\index{drmp3@{drmp3}!decoder@{decoder}}
+\index{decoder@{decoder}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{decoder}{decoder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrmp3dec}{drmp3dec}} drmp3\+::decoder}
+
+\mbox{\Hypertarget{structdrmp3_aa855f80f6dbc32827875ca95c8ea29bb}\label{structdrmp3_aa855f80f6dbc32827875ca95c8ea29bb}} 
+\index{drmp3@{drmp3}!frameInfo@{frameInfo}}
+\index{frameInfo@{frameInfo}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{frameInfo}{frameInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrmp3dec__frame__info}{drmp3dec\+\_\+frame\+\_\+info}} drmp3\+::frame\+Info}
+
+\mbox{\Hypertarget{structdrmp3_aebe9c427f829b07531c1b50cef581d7c}\label{structdrmp3_aebe9c427f829b07531c1b50cef581d7c}} 
+\index{drmp3@{drmp3}!memory@{memory}}
+\index{memory@{memory}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{memory}{memory}}
+{\footnotesize\ttfamily struct \{ ... \}  drmp3\+::memory}
+
+\mbox{\Hypertarget{structdrmp3_aec49fe9de2778f11bb2013957fc12029}\label{structdrmp3_aec49fe9de2778f11bb2013957fc12029}} 
+\index{drmp3@{drmp3}!mp3FrameChannels@{mp3FrameChannels}}
+\index{mp3FrameChannels@{mp3FrameChannels}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{mp3FrameChannels}{mp3FrameChannels}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} drmp3\+::mp3\+Frame\+Channels}
+
+\mbox{\Hypertarget{structdrmp3_ade76fd0c402a551a22c0a06a0b8eb5dc}\label{structdrmp3_ade76fd0c402a551a22c0a06a0b8eb5dc}} 
+\index{drmp3@{drmp3}!mp3FrameSampleRate@{mp3FrameSampleRate}}
+\index{mp3FrameSampleRate@{mp3FrameSampleRate}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{mp3FrameSampleRate}{mp3FrameSampleRate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} drmp3\+::mp3\+Frame\+Sample\+Rate}
+
+\mbox{\Hypertarget{structdrmp3_aba375c193b3077addacb4ec3b7907752}\label{structdrmp3_aba375c193b3077addacb4ec3b7907752}} 
+\index{drmp3@{drmp3}!onRead@{onRead}}
+\index{onRead@{onRead}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{onRead}{onRead}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_a8d518e74045cca06d5e9398bf919130c}{drmp3\+\_\+read\+\_\+proc}} drmp3\+::on\+Read}
+
+\mbox{\Hypertarget{structdrmp3_ab40a369b3de3d2991076a566570a459b}\label{structdrmp3_ab40a369b3de3d2991076a566570a459b}} 
+\index{drmp3@{drmp3}!onSeek@{onSeek}}
+\index{onSeek@{onSeek}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{onSeek}{onSeek}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_a421a67ffd75b8c16b5870b68033b7a9b}{drmp3\+\_\+seek\+\_\+proc}} drmp3\+::on\+Seek}
+
+\mbox{\Hypertarget{structdrmp3_aab662efd612811b662d0dec87233e4f2}\label{structdrmp3_aab662efd612811b662d0dec87233e4f2}} 
+\index{drmp3@{drmp3}!pcmFrames@{pcmFrames}}
+\index{pcmFrames@{pcmFrames}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{pcmFrames}{pcmFrames}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_aa64367150a89739ed3581a6dd0c6d5e2}{drmp3\+\_\+uint8}} drmp3\+::pcm\+Frames\mbox{[}sizeof(float) $\ast$\mbox{\hyperlink{dr__mp3_8h_a7bc707cf672a7623b621d19047cc8584}{D\+R\+M\+P3\+\_\+\+M\+A\+X\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+P\+E\+R\+\_\+\+F\+R\+A\+ME}}\mbox{]}}
+
+\mbox{\Hypertarget{structdrmp3_a57052dc84770d6a2789b40388101af39}\label{structdrmp3_a57052dc84770d6a2789b40388101af39}} 
+\index{drmp3@{drmp3}!pcmFramesConsumedInMP3Frame@{pcmFramesConsumedInMP3Frame}}
+\index{pcmFramesConsumedInMP3Frame@{pcmFramesConsumedInMP3Frame}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{pcmFramesConsumedInMP3Frame}{pcmFramesConsumedInMP3Frame}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} drmp3\+::pcm\+Frames\+Consumed\+In\+M\+P3\+Frame}
+
+\mbox{\Hypertarget{structdrmp3_ae3017f4bdc17a2df39c4f635bbc875d6}\label{structdrmp3_ae3017f4bdc17a2df39c4f635bbc875d6}} 
+\index{drmp3@{drmp3}!pcmFramesRemainingInMP3Frame@{pcmFramesRemainingInMP3Frame}}
+\index{pcmFramesRemainingInMP3Frame@{pcmFramesRemainingInMP3Frame}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{pcmFramesRemainingInMP3Frame}{pcmFramesRemainingInMP3Frame}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} drmp3\+::pcm\+Frames\+Remaining\+In\+M\+P3\+Frame}
+
+\mbox{\Hypertarget{structdrmp3_ab213ff0f962562a012673a75670a663c}\label{structdrmp3_ab213ff0f962562a012673a75670a663c}} 
+\index{drmp3@{drmp3}!pData@{pData}}
+\index{pData@{pData}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{pData}{pData}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_aa64367150a89739ed3581a6dd0c6d5e2}{drmp3\+\_\+uint8}}$\ast$ drmp3\+::p\+Data}
+
+\mbox{\Hypertarget{structdrmp3_a841837e8ec3d26f2604e3bb36592bff0}\label{structdrmp3_a841837e8ec3d26f2604e3bb36592bff0}} 
+\index{drmp3@{drmp3}!pData@{pData}}
+\index{pData@{pData}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{pData}{pData}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{dr__mp3_8h_aa64367150a89739ed3581a6dd0c6d5e2}{drmp3\+\_\+uint8}}$\ast$ drmp3\+::p\+Data}
+
+\mbox{\Hypertarget{structdrmp3_ae13ed70982604f33706b9f4a3fd40e76}\label{structdrmp3_ae13ed70982604f33706b9f4a3fd40e76}} 
+\index{drmp3@{drmp3}!pSeekPoints@{pSeekPoints}}
+\index{pSeekPoints@{pSeekPoints}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{pSeekPoints}{pSeekPoints}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrmp3__seek__point}{drmp3\+\_\+seek\+\_\+point}}$\ast$ drmp3\+::p\+Seek\+Points}
+
+\mbox{\Hypertarget{structdrmp3_addb6bdb74e7b37f350c167ae211541df}\label{structdrmp3_addb6bdb74e7b37f350c167ae211541df}} 
+\index{drmp3@{drmp3}!pUserData@{pUserData}}
+\index{pUserData@{pUserData}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{pUserData}{pUserData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}$\ast$ drmp3\+::p\+User\+Data}
+
+\mbox{\Hypertarget{structdrmp3_a125a69b581af18055b9aced80a68ddea}\label{structdrmp3_a125a69b581af18055b9aced80a68ddea}} 
+\index{drmp3@{drmp3}!sampleRate@{sampleRate}}
+\index{sampleRate@{sampleRate}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{sampleRate}{sampleRate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} drmp3\+::sample\+Rate}
+
+\mbox{\Hypertarget{structdrmp3_ae9095cc4be150c2ed98c9a4f53041f19}\label{structdrmp3_ae9095cc4be150c2ed98c9a4f53041f19}} 
+\index{drmp3@{drmp3}!seekPointCount@{seekPointCount}}
+\index{seekPointCount@{seekPointCount}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{seekPointCount}{seekPointCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_a24f0702b4b0ea918522fdc7b92686e55}{drmp3\+\_\+uint32}} drmp3\+::seek\+Point\+Count}
+
+\mbox{\Hypertarget{structdrmp3_abca1d417df91139e0973195b23c8b1e7}\label{structdrmp3_abca1d417df91139e0973195b23c8b1e7}} 
+\index{drmp3@{drmp3}!src@{src}}
+\index{src@{src}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{src}{src}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdrmp3__src}{drmp3\+\_\+src}} drmp3\+::src}
+
+\mbox{\Hypertarget{structdrmp3_a89971e4af6f62c59f99a1c908690efe3}\label{structdrmp3_a89971e4af6f62c59f99a1c908690efe3}} 
+\index{drmp3@{drmp3}!streamCursor@{streamCursor}}
+\index{streamCursor@{streamCursor}!drmp3@{drmp3}}
+\doxysubsubsection{\texorpdfstring{streamCursor}{streamCursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dr__mp3_8h_ae97c13073e620e43f412638e292ceb0f}{drmp3\+\_\+uint64}} drmp3\+::stream\+Cursor}
+
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/\mbox{\hyperlink{dr__mp3_8h}{dr\+\_\+mp3.\+h}}\end{DoxyCompactItemize}

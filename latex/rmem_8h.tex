@@ -1,0 +1,317 @@
+\hypertarget{rmem_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/rmem.h}
+\label{rmem_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/rmem.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/rmem.h}}
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_mem_node}{Mem\+Node}}
+\item 
+struct \mbox{\hyperlink{struct_alloc_list}{Alloc\+List}}
+\item 
+struct \mbox{\hyperlink{struct_stack}{Stack}}
+\item 
+struct \mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}}
+\item 
+struct \mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}}
+\item 
+struct \mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}}
+\item 
+\#define \mbox{\hyperlink{rmem_8h_a5f395b8a3068ad9a269f4602498f7591}{M\+E\+M\+P\+O\+O\+L\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+S\+I\+ZE}}~8
+\item 
+\#define \mbox{\hyperlink{rmem_8h_a04afcbb837a684c4f3d3b1b486287190}{M\+E\+M\+P\+O\+O\+L\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+B\+I\+TS}}~3
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_mem_node}{Mem\+Node}} \mbox{\hyperlink{rmem_8h_a9602ec481b1f794ab5645c4d697e80db}{Mem\+Node}}
+\item 
+typedef struct \mbox{\hyperlink{struct_alloc_list}{Alloc\+List}} \mbox{\hyperlink{rmem_8h_a5be068afeab468bfddffec0f8b5d71db}{Alloc\+List}}
+\item 
+typedef struct \mbox{\hyperlink{struct_stack}{Stack}} \mbox{\hyperlink{rmem_8h_acccdaeb94a63f3757825012007215c0d}{Stack}}
+\item 
+typedef struct \mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} \mbox{\hyperlink{rmem_8h_ad5db06a1517234bdc45c4b9dae4af28a}{Mem\+Pool}}
+\item 
+typedef struct \mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} \mbox{\hyperlink{rmem_8h_a48b7ab21b9b6f7e73ed6990850e47e44}{Obj\+Pool}}
+\item 
+typedef struct \mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} \mbox{\hyperlink{rmem_8h_a0609ef0688090bca79a76499191d35e4}{Bi\+Stack}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} \mbox{\hyperlink{rmem_8h_a324b26e5d1e3289a2b039856b079d808}{Create\+Mem\+Pool}} (size\+\_\+t bytes)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} \mbox{\hyperlink{rmem_8h_abde4665ff2148c2527e6fca20cf61dc7}{Create\+Mem\+Pool\+From\+Buffer}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ad8a8baf08bc0399738960c9259571911}{buf}}, size\+\_\+t bytes)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_aaf98a4c250b5e6670ba2533cb28e6ae9}{Destroy\+Mem\+Pool}} (\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$mempool)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{rmem_8h_afd18ef8a54ef84c4680028a31f88498d}{Mem\+Pool\+Alloc}} (\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$mempool, size\+\_\+t bytes)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{rmem_8h_a32fe2bc197a5f3db5ac48a89a44e4ea1}{Mem\+Pool\+Realloc}} (\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$mempool, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ptr, size\+\_\+t bytes)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_a71180071c9f54be796b3e131db0815e0}{Mem\+Pool\+Free}} (\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$mempool, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ptr)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_aadd725ed659a3b20dd7ce4b7f9915d2d}{Mem\+Pool\+Clean\+Up}} (\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$mempool, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$ptrref)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_a79edd190fa353cc1857fa5c221485be7}{Mem\+Pool\+Reset}} (\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$mempool)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{rmem_8h_a841e392000d4a990ad7a66abfd9724c2}{Mem\+Pool\+Defrag}} (\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$mempool)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} size\+\_\+t \mbox{\hyperlink{rmem_8h_a0b2cd24960bb44ff0e90372304eeffa1}{Get\+Mem\+Pool\+Free\+Memory}} (const \mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} mempool)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_aee00c374febd8615b41c8c76eb503712}{Toggle\+Mem\+Pool\+Auto\+Defrag}} (\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$mempool)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} \mbox{\hyperlink{rmem_8h_a3e07898887cd718d7cdc8a0d5d89c267}{Create\+Obj\+Pool}} (size\+\_\+t objsize, size\+\_\+t \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a30ee67aa502329a88f4a203775adfa1a}{len}})
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} \mbox{\hyperlink{rmem_8h_a591b70e2297ae3827682d8d7fc9d8c1a}{Create\+Obj\+Pool\+From\+Buffer}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ad8a8baf08bc0399738960c9259571911}{buf}}, size\+\_\+t objsize, size\+\_\+t \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a30ee67aa502329a88f4a203775adfa1a}{len}})
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_a0d17353a55b91c5b1c12a21f497b7c12}{Destroy\+Obj\+Pool}} (\mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} $\ast$objpool)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{rmem_8h_ac078ac0f57a0f4c4a3e45dafd6655ff6}{Obj\+Pool\+Alloc}} (\mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} $\ast$objpool)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_a432354a4baead199c655c0be494b356d}{Obj\+Pool\+Free}} (\mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} $\ast$objpool, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ptr)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_a4c37937548eb1e7ca5b36e68eb0de7ec}{Obj\+Pool\+Clean\+Up}} (\mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} $\ast$objpool, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$ptrref)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} \mbox{\hyperlink{rmem_8h_a31ecfc6c3a1ad97744971b9ffb39968b}{Create\+Bi\+Stack}} (size\+\_\+t \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a30ee67aa502329a88f4a203775adfa1a}{len}})
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} \mbox{\hyperlink{rmem_8h_a0ae0bd4f39b0f0b8ff894f79c1a59291}{Create\+Bi\+Stack\+From\+Buffer}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ad8a8baf08bc0399738960c9259571911}{buf}}, size\+\_\+t \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a30ee67aa502329a88f4a203775adfa1a}{len}})
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_ab61cff476c902bf9a8ad11aca5fa4d77}{Destroy\+Bi\+Stack}} (\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$destack)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{rmem_8h_a4998526f8b2de29e306507be7ec7fbda}{Bi\+Stack\+Alloc\+Front}} (\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$destack, size\+\_\+t \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a30ee67aa502329a88f4a203775adfa1a}{len}})
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{rmem_8h_a895f812f27f5d19678617b273f6a7528}{Bi\+Stack\+Alloc\+Back}} (\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$destack, size\+\_\+t \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a30ee67aa502329a88f4a203775adfa1a}{len}})
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_acb462ea9db1343a547ed4e33ee101d76}{Bi\+Stack\+Reset\+Front}} (\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$destack)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_a873264b46e5c2591488ad1189b3fba49}{Bi\+Stack\+Reset\+Back}} (\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$destack)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rmem_8h_ae7861d19d0a5bff05c382d44a2c17f72}{Bi\+Stack\+Reset\+All}} (\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$destack)
+\item 
+\mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{stdint_8h_abd3131a20f4053d808d4277db3e39a23}{intptr\+\_\+t}} \mbox{\hyperlink{rmem_8h_a6098b4f8c34f0a67ee79f3102b16f657}{Bi\+Stack\+Margins}} (\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} destack)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{rmem_8h_a04afcbb837a684c4f3d3b1b486287190}\label{rmem_8h_a04afcbb837a684c4f3d3b1b486287190}} 
+\index{rmem.h@{rmem.h}!MEMPOOL\_BUCKET\_BITS@{MEMPOOL\_BUCKET\_BITS}}
+\index{MEMPOOL\_BUCKET\_BITS@{MEMPOOL\_BUCKET\_BITS}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{MEMPOOL\_BUCKET\_BITS}{MEMPOOL\_BUCKET\_BITS}}
+{\footnotesize\ttfamily \#define M\+E\+M\+P\+O\+O\+L\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+B\+I\+TS~3}
+
+\mbox{\Hypertarget{rmem_8h_a5f395b8a3068ad9a269f4602498f7591}\label{rmem_8h_a5f395b8a3068ad9a269f4602498f7591}} 
+\index{rmem.h@{rmem.h}!MEMPOOL\_BUCKET\_SIZE@{MEMPOOL\_BUCKET\_SIZE}}
+\index{MEMPOOL\_BUCKET\_SIZE@{MEMPOOL\_BUCKET\_SIZE}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{MEMPOOL\_BUCKET\_SIZE}{MEMPOOL\_BUCKET\_SIZE}}
+{\footnotesize\ttfamily \#define M\+E\+M\+P\+O\+O\+L\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+S\+I\+ZE~8}
+
+\mbox{\Hypertarget{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}\label{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}} 
+\index{rmem.h@{rmem.h}!RMEMAPI@{RMEMAPI}}
+\index{RMEMAPI@{RMEMAPI}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{RMEMAPI}{RMEMAPI}}
+{\footnotesize\ttfamily \#define R\+M\+E\+M\+A\+PI}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{rmem_8h_a5be068afeab468bfddffec0f8b5d71db}\label{rmem_8h_a5be068afeab468bfddffec0f8b5d71db}} 
+\index{rmem.h@{rmem.h}!AllocList@{AllocList}}
+\index{AllocList@{AllocList}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{AllocList}{AllocList}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_alloc_list}{Alloc\+List}} \mbox{\hyperlink{struct_alloc_list}{Alloc\+List}}}
+
+\mbox{\Hypertarget{rmem_8h_a0609ef0688090bca79a76499191d35e4}\label{rmem_8h_a0609ef0688090bca79a76499191d35e4}} 
+\index{rmem.h@{rmem.h}!BiStack@{BiStack}}
+\index{BiStack@{BiStack}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{BiStack}{BiStack}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} \mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}}}
+
+\mbox{\Hypertarget{rmem_8h_a9602ec481b1f794ab5645c4d697e80db}\label{rmem_8h_a9602ec481b1f794ab5645c4d697e80db}} 
+\index{rmem.h@{rmem.h}!MemNode@{MemNode}}
+\index{MemNode@{MemNode}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{MemNode}{MemNode}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_mem_node}{Mem\+Node}} \mbox{\hyperlink{struct_mem_node}{Mem\+Node}}}
+
+\mbox{\Hypertarget{rmem_8h_ad5db06a1517234bdc45c4b9dae4af28a}\label{rmem_8h_ad5db06a1517234bdc45c4b9dae4af28a}} 
+\index{rmem.h@{rmem.h}!MemPool@{MemPool}}
+\index{MemPool@{MemPool}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{MemPool}{MemPool}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} \mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}}}
+
+\mbox{\Hypertarget{rmem_8h_a48b7ab21b9b6f7e73ed6990850e47e44}\label{rmem_8h_a48b7ab21b9b6f7e73ed6990850e47e44}} 
+\index{rmem.h@{rmem.h}!ObjPool@{ObjPool}}
+\index{ObjPool@{ObjPool}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{ObjPool}{ObjPool}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} \mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}}}
+
+\mbox{\Hypertarget{rmem_8h_acccdaeb94a63f3757825012007215c0d}\label{rmem_8h_acccdaeb94a63f3757825012007215c0d}} 
+\index{rmem.h@{rmem.h}!Stack@{Stack}}
+\index{Stack@{Stack}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{Stack}{Stack}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_stack}{Stack}} \mbox{\hyperlink{struct_stack}{Stack}}}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{rmem_8h_a895f812f27f5d19678617b273f6a7528}\label{rmem_8h_a895f812f27f5d19678617b273f6a7528}} 
+\index{rmem.h@{rmem.h}!BiStackAllocBack@{BiStackAllocBack}}
+\index{BiStackAllocBack@{BiStackAllocBack}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{BiStackAllocBack()}{BiStackAllocBack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}$\ast$ Bi\+Stack\+Alloc\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$}]{destack,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a4998526f8b2de29e306507be7ec7fbda}\label{rmem_8h_a4998526f8b2de29e306507be7ec7fbda}} 
+\index{rmem.h@{rmem.h}!BiStackAllocFront@{BiStackAllocFront}}
+\index{BiStackAllocFront@{BiStackAllocFront}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{BiStackAllocFront()}{BiStackAllocFront()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}$\ast$ Bi\+Stack\+Alloc\+Front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$}]{destack,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a6098b4f8c34f0a67ee79f3102b16f657}\label{rmem_8h_a6098b4f8c34f0a67ee79f3102b16f657}} 
+\index{rmem.h@{rmem.h}!BiStackMargins@{BiStackMargins}}
+\index{BiStackMargins@{BiStackMargins}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{BiStackMargins()}{BiStackMargins()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{stdint_8h_abd3131a20f4053d808d4277db3e39a23}{intptr\+\_\+t}} Bi\+Stack\+Margins (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}}}]{destack }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_ae7861d19d0a5bff05c382d44a2c17f72}\label{rmem_8h_ae7861d19d0a5bff05c382d44a2c17f72}} 
+\index{rmem.h@{rmem.h}!BiStackResetAll@{BiStackResetAll}}
+\index{BiStackResetAll@{BiStackResetAll}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{BiStackResetAll()}{BiStackResetAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Bi\+Stack\+Reset\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$}]{destack }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a873264b46e5c2591488ad1189b3fba49}\label{rmem_8h_a873264b46e5c2591488ad1189b3fba49}} 
+\index{rmem.h@{rmem.h}!BiStackResetBack@{BiStackResetBack}}
+\index{BiStackResetBack@{BiStackResetBack}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{BiStackResetBack()}{BiStackResetBack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Bi\+Stack\+Reset\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$}]{destack }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_acb462ea9db1343a547ed4e33ee101d76}\label{rmem_8h_acb462ea9db1343a547ed4e33ee101d76}} 
+\index{rmem.h@{rmem.h}!BiStackResetFront@{BiStackResetFront}}
+\index{BiStackResetFront@{BiStackResetFront}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{BiStackResetFront()}{BiStackResetFront()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Bi\+Stack\+Reset\+Front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$}]{destack }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a31ecfc6c3a1ad97744971b9ffb39968b}\label{rmem_8h_a31ecfc6c3a1ad97744971b9ffb39968b}} 
+\index{rmem.h@{rmem.h}!CreateBiStack@{CreateBiStack}}
+\index{CreateBiStack@{CreateBiStack}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{CreateBiStack()}{CreateBiStack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} Create\+Bi\+Stack (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a0ae0bd4f39b0f0b8ff894f79c1a59291}\label{rmem_8h_a0ae0bd4f39b0f0b8ff894f79c1a59291}} 
+\index{rmem.h@{rmem.h}!CreateBiStackFromBuffer@{CreateBiStackFromBuffer}}
+\index{CreateBiStackFromBuffer@{CreateBiStackFromBuffer}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{CreateBiStackFromBuffer()}{CreateBiStackFromBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} Create\+Bi\+Stack\+From\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{buf,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a324b26e5d1e3289a2b039856b079d808}\label{rmem_8h_a324b26e5d1e3289a2b039856b079d808}} 
+\index{rmem.h@{rmem.h}!CreateMemPool@{CreateMemPool}}
+\index{CreateMemPool@{CreateMemPool}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{CreateMemPool()}{CreateMemPool()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} Create\+Mem\+Pool (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{bytes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_abde4665ff2148c2527e6fca20cf61dc7}\label{rmem_8h_abde4665ff2148c2527e6fca20cf61dc7}} 
+\index{rmem.h@{rmem.h}!CreateMemPoolFromBuffer@{CreateMemPoolFromBuffer}}
+\index{CreateMemPoolFromBuffer@{CreateMemPoolFromBuffer}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{CreateMemPoolFromBuffer()}{CreateMemPoolFromBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} Create\+Mem\+Pool\+From\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{buf,  }\item[{size\+\_\+t}]{bytes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a3e07898887cd718d7cdc8a0d5d89c267}\label{rmem_8h_a3e07898887cd718d7cdc8a0d5d89c267}} 
+\index{rmem.h@{rmem.h}!CreateObjPool@{CreateObjPool}}
+\index{CreateObjPool@{CreateObjPool}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{CreateObjPool()}{CreateObjPool()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} Create\+Obj\+Pool (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{objsize,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a591b70e2297ae3827682d8d7fc9d8c1a}\label{rmem_8h_a591b70e2297ae3827682d8d7fc9d8c1a}} 
+\index{rmem.h@{rmem.h}!CreateObjPoolFromBuffer@{CreateObjPoolFromBuffer}}
+\index{CreateObjPoolFromBuffer@{CreateObjPoolFromBuffer}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{CreateObjPoolFromBuffer()}{CreateObjPoolFromBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} Create\+Obj\+Pool\+From\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{buf,  }\item[{size\+\_\+t}]{objsize,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_ab61cff476c902bf9a8ad11aca5fa4d77}\label{rmem_8h_ab61cff476c902bf9a8ad11aca5fa4d77}} 
+\index{rmem.h@{rmem.h}!DestroyBiStack@{DestroyBiStack}}
+\index{DestroyBiStack@{DestroyBiStack}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{DestroyBiStack()}{DestroyBiStack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Destroy\+Bi\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bi_stack}{Bi\+Stack}} $\ast$}]{destack }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_aaf98a4c250b5e6670ba2533cb28e6ae9}\label{rmem_8h_aaf98a4c250b5e6670ba2533cb28e6ae9}} 
+\index{rmem.h@{rmem.h}!DestroyMemPool@{DestroyMemPool}}
+\index{DestroyMemPool@{DestroyMemPool}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{DestroyMemPool()}{DestroyMemPool()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Destroy\+Mem\+Pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$}]{mempool }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a0d17353a55b91c5b1c12a21f497b7c12}\label{rmem_8h_a0d17353a55b91c5b1c12a21f497b7c12}} 
+\index{rmem.h@{rmem.h}!DestroyObjPool@{DestroyObjPool}}
+\index{DestroyObjPool@{DestroyObjPool}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{DestroyObjPool()}{DestroyObjPool()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Destroy\+Obj\+Pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} $\ast$}]{objpool }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a0b2cd24960bb44ff0e90372304eeffa1}\label{rmem_8h_a0b2cd24960bb44ff0e90372304eeffa1}} 
+\index{rmem.h@{rmem.h}!GetMemPoolFreeMemory@{GetMemPoolFreeMemory}}
+\index{GetMemPoolFreeMemory@{GetMemPoolFreeMemory}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{GetMemPoolFreeMemory()}{GetMemPoolFreeMemory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} size\+\_\+t Get\+Mem\+Pool\+Free\+Memory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}}}]{mempool }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_afd18ef8a54ef84c4680028a31f88498d}\label{rmem_8h_afd18ef8a54ef84c4680028a31f88498d}} 
+\index{rmem.h@{rmem.h}!MemPoolAlloc@{MemPoolAlloc}}
+\index{MemPoolAlloc@{MemPoolAlloc}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{MemPoolAlloc()}{MemPoolAlloc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}$\ast$ Mem\+Pool\+Alloc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$}]{mempool,  }\item[{size\+\_\+t}]{bytes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_aadd725ed659a3b20dd7ce4b7f9915d2d}\label{rmem_8h_aadd725ed659a3b20dd7ce4b7f9915d2d}} 
+\index{rmem.h@{rmem.h}!MemPoolCleanUp@{MemPoolCleanUp}}
+\index{MemPoolCleanUp@{MemPoolCleanUp}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{MemPoolCleanUp()}{MemPoolCleanUp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Mem\+Pool\+Clean\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$}]{mempool,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$}]{ptrref }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a841e392000d4a990ad7a66abfd9724c2}\label{rmem_8h_a841e392000d4a990ad7a66abfd9724c2}} 
+\index{rmem.h@{rmem.h}!MemPoolDefrag@{MemPoolDefrag}}
+\index{MemPoolDefrag@{MemPoolDefrag}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{MemPoolDefrag()}{MemPoolDefrag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Mem\+Pool\+Defrag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$}]{mempool }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a71180071c9f54be796b3e131db0815e0}\label{rmem_8h_a71180071c9f54be796b3e131db0815e0}} 
+\index{rmem.h@{rmem.h}!MemPoolFree@{MemPoolFree}}
+\index{MemPoolFree@{MemPoolFree}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{MemPoolFree()}{MemPoolFree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Mem\+Pool\+Free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$}]{mempool,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a32fe2bc197a5f3db5ac48a89a44e4ea1}\label{rmem_8h_a32fe2bc197a5f3db5ac48a89a44e4ea1}} 
+\index{rmem.h@{rmem.h}!MemPoolRealloc@{MemPoolRealloc}}
+\index{MemPoolRealloc@{MemPoolRealloc}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{MemPoolRealloc()}{MemPoolRealloc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}$\ast$ Mem\+Pool\+Realloc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$}]{mempool,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{ptr,  }\item[{size\+\_\+t}]{bytes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a79edd190fa353cc1857fa5c221485be7}\label{rmem_8h_a79edd190fa353cc1857fa5c221485be7}} 
+\index{rmem.h@{rmem.h}!MemPoolReset@{MemPoolReset}}
+\index{MemPoolReset@{MemPoolReset}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{MemPoolReset()}{MemPoolReset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Mem\+Pool\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$}]{mempool }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_ac078ac0f57a0f4c4a3e45dafd6655ff6}\label{rmem_8h_ac078ac0f57a0f4c4a3e45dafd6655ff6}} 
+\index{rmem.h@{rmem.h}!ObjPoolAlloc@{ObjPoolAlloc}}
+\index{ObjPoolAlloc@{ObjPoolAlloc}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{ObjPoolAlloc()}{ObjPoolAlloc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}$\ast$ Obj\+Pool\+Alloc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} $\ast$}]{objpool }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a4c37937548eb1e7ca5b36e68eb0de7ec}\label{rmem_8h_a4c37937548eb1e7ca5b36e68eb0de7ec}} 
+\index{rmem.h@{rmem.h}!ObjPoolCleanUp@{ObjPoolCleanUp}}
+\index{ObjPoolCleanUp@{ObjPoolCleanUp}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{ObjPoolCleanUp()}{ObjPoolCleanUp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Obj\+Pool\+Clean\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} $\ast$}]{objpool,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$$\ast$}]{ptrref }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_a432354a4baead199c655c0be494b356d}\label{rmem_8h_a432354a4baead199c655c0be494b356d}} 
+\index{rmem.h@{rmem.h}!ObjPoolFree@{ObjPoolFree}}
+\index{ObjPoolFree@{ObjPoolFree}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{ObjPoolFree()}{ObjPoolFree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Obj\+Pool\+Free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_obj_pool}{Obj\+Pool}} $\ast$}]{objpool,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rmem_8h_aee00c374febd8615b41c8c76eb503712}\label{rmem_8h_aee00c374febd8615b41c8c76eb503712}} 
+\index{rmem.h@{rmem.h}!ToggleMemPoolAutoDefrag@{ToggleMemPoolAutoDefrag}}
+\index{ToggleMemPoolAutoDefrag@{ToggleMemPoolAutoDefrag}!rmem.h@{rmem.h}}
+\doxysubsubsection{\texorpdfstring{ToggleMemPoolAutoDefrag()}{ToggleMemPoolAutoDefrag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rmem_8h_a58cad46c7f1b7a4ddda8346b3795c561}{R\+M\+E\+M\+A\+PI}} \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Toggle\+Mem\+Pool\+Auto\+Defrag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mem_pool}{Mem\+Pool}} $\ast$}]{mempool }\end{DoxyParamCaption})}
+

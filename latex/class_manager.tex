@@ -1,0 +1,91 @@
+\hypertarget{class_manager}{}\doxysection{Referencia de la Clase Manager}
+\label{class_manager}\index{Manager@{Manager}}
+
+
+{\ttfamily \#include $<$Manager.\+h$>$}
+
+Diagrama de herencias de Manager\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_manager_a1a50c7e78100aa1241df3b9bcb565df0}{Manager}} (\mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2_c_make_lists_8txt_aaaf3ef0becc31ed9324a17d496212d22}{std\+::string}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14d7642df08c5cb68e4fb90cc8a73509}{name}})
+\item 
+virtual \mbox{\hyperlink{class_manager_a322cad25d7007438b3a043ad02253d29}{$\sim$\+Manager}} ()
+\item 
+virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_manager_a11f0d68638b8718e8557fbbe3322eaaa}{Menu}} (\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$singleton)
+\item 
+virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_manager_aa0e34d6a9d04ce535070989b0756066f}{Game}} (\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$singleton)
+\item 
+virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_manager_a121ae079b7e92378f4639d242ddc3e65}{End}} (\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$singleton)
+\item 
+virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_manager_a712921eb550bc62ad425c5a395fbaf19}{Update}} (\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$singleton)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_manager_a1a50c7e78100aa1241df3b9bcb565df0}\label{class_manager_a1a50c7e78100aa1241df3b9bcb565df0}} 
+\index{Manager@{Manager}!Manager@{Manager}}
+\index{Manager@{Manager}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{Manager()}{Manager()}}
+{\footnotesize\ttfamily Manager\+::\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2_c_make_lists_8txt_aaaf3ef0becc31ed9324a17d496212d22}{std\+::string}}}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manager_a322cad25d7007438b3a043ad02253d29}\label{class_manager_a322cad25d7007438b3a043ad02253d29}} 
+\index{Manager@{Manager}!````~Manager@{$\sim$Manager}}
+\index{````~Manager@{$\sim$Manager}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$Manager()}{~Manager()}}
+{\footnotesize\ttfamily Manager\+::$\sim$\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_manager_a121ae079b7e92378f4639d242ddc3e65}\label{class_manager_a121ae079b7e92378f4639d242ddc3e65}} 
+\index{Manager@{Manager}!End@{End}}
+\index{End@{End}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Manager\+::\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$}]{singleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado en \mbox{\hyperlink{class_game_state_a55417b1f7a2527dae1ef814fa76726f4}{Game\+State}} y \mbox{\hyperlink{class_menu_state_abc002e27f134bd96ad262339bb7f1691}{Menu\+State}}.
+
+\mbox{\Hypertarget{class_manager_aa0e34d6a9d04ce535070989b0756066f}\label{class_manager_aa0e34d6a9d04ce535070989b0756066f}} 
+\index{Manager@{Manager}!Game@{Game}}
+\index{Game@{Game}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Manager\+::\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$}]{singleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado en \mbox{\hyperlink{class_end_state_ab7c7c33ebb44e7b1b3b3b2c29f5206ad}{End\+State}} y \mbox{\hyperlink{class_menu_state_aa4b42f41921b23db2fdc999d7768775f}{Menu\+State}}.
+
+\mbox{\Hypertarget{class_manager_a11f0d68638b8718e8557fbbe3322eaaa}\label{class_manager_a11f0d68638b8718e8557fbbe3322eaaa}} 
+\index{Manager@{Manager}!Menu@{Menu}}
+\index{Menu@{Menu}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Manager\+::\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$}]{singleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado en \mbox{\hyperlink{class_game_state_a82ccea70921513d8c09e63b6d517043b}{Game\+State}} y \mbox{\hyperlink{class_end_state_af1a17c9af1837d3dd13a63474e7fef61}{End\+State}}.
+
+\mbox{\Hypertarget{class_manager_a712921eb550bc62ad425c5a395fbaf19}\label{class_manager_a712921eb550bc62ad425c5a395fbaf19}} 
+\index{Manager@{Manager}!Update@{Update}}
+\index{Update@{Update}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Manager\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$}]{singleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado en \mbox{\hyperlink{class_game_state_ae5e40325fdff6bcaf1a03d8c666f567c}{Game\+State}}, \mbox{\hyperlink{class_end_state_a6ea688b7572b208b963b12ef79a858ff}{End\+State}} y \mbox{\hyperlink{class_menu_state_ae1ee5fa9ee9e1297a220d6c6d993e791}{Menu\+State}}.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+clases/\mbox{\hyperlink{_manager_8h}{Manager.\+h}}\item 
+clases/\mbox{\hyperlink{_manager_8cpp}{Manager.\+cpp}}\end{DoxyCompactItemize}

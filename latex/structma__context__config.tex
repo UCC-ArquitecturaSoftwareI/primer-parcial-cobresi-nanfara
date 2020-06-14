@@ -1,0 +1,119 @@
+\hypertarget{structma__context__config}{}\doxysection{Referencia de la Estructura ma\+\_\+context\+\_\+config}
+\label{structma__context__config}\index{ma\_context\_config@{ma\_context\_config}}
+
+
+{\ttfamily \#include $<$miniaudio.\+h$>$}
+
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{miniaudio_8h_af6d1abf0afc4d860186f9700a94ea67e}{ma\+\_\+log\+\_\+proc}} \mbox{\hyperlink{structma__context__config_a76c224ef9e290d3544afb4d8026dbda8}{log\+Callback}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_a5b6285121d082017c1e2c7452f95afec}{ma\+\_\+thread\+\_\+priority}} \mbox{\hyperlink{structma__context__config_a1b67f2fb03513395e3dc537e8781a7ae}{thread\+Priority}}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{structma__context__config_a3bac4950716c85e19c28516137eeaca0}{p\+User\+Data}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\_bool32}} \mbox{\hyperlink{structma__context__config_aec7b00b8a724660dc13a9d09c39b8ab9}{useVerboseDeviceEnumeration}}\\
+\} \mbox{\hyperlink{structma__context__config_afe5b5e2f13337e47dddb7db1e5930e1c}{alsa}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{structma__context__config_a5dfd8fe95c5c8909bd35519660f52dfd}{pApplicationName}}\\
+\>const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{structma__context__config_a7fda3b69210f2bea17711a95070c8209}{pServerName}}\\
+\>\mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\_bool32}} \mbox{\hyperlink{structma__context__config_a6fbeaccc6b038ed672bd1e6df4f4317c}{tryAutoSpawn}}\\
+\} \mbox{\hyperlink{structma__context__config_a56d1198ea93fca7fd9b6b17bef40069e}{pulse}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{structma__context__config_a358bfaea469bf50cf58bc2ff99094cd5}{pClientName}}\\
+\>\mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\_bool32}} \mbox{\hyperlink{structma__context__config_a73d11fabc0aa171961aa9aa157474c4d}{tryStartServer}}\\
+\} \mbox{\hyperlink{structma__context__config_a5b1b70ddee21ac38e688403ab8b1995b}{jack}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{structma__context__config_afe5b5e2f13337e47dddb7db1e5930e1c}\label{structma__context__config_afe5b5e2f13337e47dddb7db1e5930e1c}} 
+\index{ma\_context\_config@{ma\_context\_config}!alsa@{alsa}}
+\index{alsa@{alsa}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{alsa}{alsa}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+context\+\_\+config\+::alsa}
+
+\mbox{\Hypertarget{structma__context__config_a5b1b70ddee21ac38e688403ab8b1995b}\label{structma__context__config_a5b1b70ddee21ac38e688403ab8b1995b}} 
+\index{ma\_context\_config@{ma\_context\_config}!jack@{jack}}
+\index{jack@{jack}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{jack}{jack}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+context\+\_\+config\+::jack}
+
+\mbox{\Hypertarget{structma__context__config_a76c224ef9e290d3544afb4d8026dbda8}\label{structma__context__config_a76c224ef9e290d3544afb4d8026dbda8}} 
+\index{ma\_context\_config@{ma\_context\_config}!logCallback@{logCallback}}
+\index{logCallback@{logCallback}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{logCallback}{logCallback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_af6d1abf0afc4d860186f9700a94ea67e}{ma\+\_\+log\+\_\+proc}} ma\+\_\+context\+\_\+config\+::log\+Callback}
+
+\mbox{\Hypertarget{structma__context__config_a5dfd8fe95c5c8909bd35519660f52dfd}\label{structma__context__config_a5dfd8fe95c5c8909bd35519660f52dfd}} 
+\index{ma\_context\_config@{ma\_context\_config}!pApplicationName@{pApplicationName}}
+\index{pApplicationName@{pApplicationName}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{pApplicationName}{pApplicationName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ ma\+\_\+context\+\_\+config\+::p\+Application\+Name}
+
+\mbox{\Hypertarget{structma__context__config_a358bfaea469bf50cf58bc2ff99094cd5}\label{structma__context__config_a358bfaea469bf50cf58bc2ff99094cd5}} 
+\index{ma\_context\_config@{ma\_context\_config}!pClientName@{pClientName}}
+\index{pClientName@{pClientName}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{pClientName}{pClientName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ ma\+\_\+context\+\_\+config\+::p\+Client\+Name}
+
+\mbox{\Hypertarget{structma__context__config_a7fda3b69210f2bea17711a95070c8209}\label{structma__context__config_a7fda3b69210f2bea17711a95070c8209}} 
+\index{ma\_context\_config@{ma\_context\_config}!pServerName@{pServerName}}
+\index{pServerName@{pServerName}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{pServerName}{pServerName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ ma\+\_\+context\+\_\+config\+::p\+Server\+Name}
+
+\mbox{\Hypertarget{structma__context__config_a56d1198ea93fca7fd9b6b17bef40069e}\label{structma__context__config_a56d1198ea93fca7fd9b6b17bef40069e}} 
+\index{ma\_context\_config@{ma\_context\_config}!pulse@{pulse}}
+\index{pulse@{pulse}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{pulse}{pulse}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+context\+\_\+config\+::pulse}
+
+\mbox{\Hypertarget{structma__context__config_a3bac4950716c85e19c28516137eeaca0}\label{structma__context__config_a3bac4950716c85e19c28516137eeaca0}} 
+\index{ma\_context\_config@{ma\_context\_config}!pUserData@{pUserData}}
+\index{pUserData@{pUserData}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{pUserData}{pUserData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}$\ast$ ma\+\_\+context\+\_\+config\+::p\+User\+Data}
+
+\mbox{\Hypertarget{structma__context__config_a1b67f2fb03513395e3dc537e8781a7ae}\label{structma__context__config_a1b67f2fb03513395e3dc537e8781a7ae}} 
+\index{ma\_context\_config@{ma\_context\_config}!threadPriority@{threadPriority}}
+\index{threadPriority@{threadPriority}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{threadPriority}{threadPriority}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a5b6285121d082017c1e2c7452f95afec}{ma\+\_\+thread\+\_\+priority}} ma\+\_\+context\+\_\+config\+::thread\+Priority}
+
+\mbox{\Hypertarget{structma__context__config_a6fbeaccc6b038ed672bd1e6df4f4317c}\label{structma__context__config_a6fbeaccc6b038ed672bd1e6df4f4317c}} 
+\index{ma\_context\_config@{ma\_context\_config}!tryAutoSpawn@{tryAutoSpawn}}
+\index{tryAutoSpawn@{tryAutoSpawn}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{tryAutoSpawn}{tryAutoSpawn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} ma\+\_\+context\+\_\+config\+::try\+Auto\+Spawn}
+
+\mbox{\Hypertarget{structma__context__config_a73d11fabc0aa171961aa9aa157474c4d}\label{structma__context__config_a73d11fabc0aa171961aa9aa157474c4d}} 
+\index{ma\_context\_config@{ma\_context\_config}!tryStartServer@{tryStartServer}}
+\index{tryStartServer@{tryStartServer}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{tryStartServer}{tryStartServer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} ma\+\_\+context\+\_\+config\+::try\+Start\+Server}
+
+\mbox{\Hypertarget{structma__context__config_aec7b00b8a724660dc13a9d09c39b8ab9}\label{structma__context__config_aec7b00b8a724660dc13a9d09c39b8ab9}} 
+\index{ma\_context\_config@{ma\_context\_config}!useVerboseDeviceEnumeration@{useVerboseDeviceEnumeration}}
+\index{useVerboseDeviceEnumeration@{useVerboseDeviceEnumeration}!ma\_context\_config@{ma\_context\_config}}
+\doxysubsubsection{\texorpdfstring{useVerboseDeviceEnumeration}{useVerboseDeviceEnumeration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} ma\+\_\+context\+\_\+config\+::use\+Verbose\+Device\+Enumeration}
+
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/\mbox{\hyperlink{miniaudio_8h}{miniaudio.\+h}}\end{DoxyCompactItemize}

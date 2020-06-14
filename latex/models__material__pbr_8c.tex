@@ -1,0 +1,66 @@
+\hypertarget{models__material__pbr_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/examples/models/models\+\_\+material\+\_\+pbr.c}
+\label{models__material__pbr_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/models/models\_material\_pbr.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/models/models\_material\_pbr.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}raymath.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rlights.\+h\char`\"{}}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{models__material__pbr_8c_a2b623fe0eac7d5119008fb456fdc49f8}{R\+L\+I\+G\+H\+T\+S\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\item 
+\#define \mbox{\hyperlink{models__material__pbr_8c_ac132b982e3c3e8f9e1881b1651ed24fa}{C\+U\+B\+E\+M\+A\+P\+\_\+\+S\+I\+ZE}}~512
+\item 
+\#define \mbox{\hyperlink{models__material__pbr_8c_aa31d1e795993ff64c8c8761e6f203d4e}{I\+R\+R\+A\+D\+I\+A\+N\+C\+E\+\_\+\+S\+I\+ZE}}~32
+\item 
+\#define \mbox{\hyperlink{models__material__pbr_8c_a038e804eb85274a65268dcce659625af}{P\+R\+E\+F\+I\+L\+T\+E\+R\+E\+D\+\_\+\+S\+I\+ZE}}~256
+\item 
+\#define \mbox{\hyperlink{models__material__pbr_8c_a2b06db98556fb728059aba87b907d8e8}{B\+R\+D\+F\+\_\+\+S\+I\+ZE}}~512
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{models__material__pbr_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{models__material__pbr_8c_a2b06db98556fb728059aba87b907d8e8}\label{models__material__pbr_8c_a2b06db98556fb728059aba87b907d8e8}} 
+\index{models\_material\_pbr.c@{models\_material\_pbr.c}!BRDF\_SIZE@{BRDF\_SIZE}}
+\index{BRDF\_SIZE@{BRDF\_SIZE}!models\_material\_pbr.c@{models\_material\_pbr.c}}
+\doxysubsubsection{\texorpdfstring{BRDF\_SIZE}{BRDF\_SIZE}}
+{\footnotesize\ttfamily \#define B\+R\+D\+F\+\_\+\+S\+I\+ZE~512}
+
+\mbox{\Hypertarget{models__material__pbr_8c_ac132b982e3c3e8f9e1881b1651ed24fa}\label{models__material__pbr_8c_ac132b982e3c3e8f9e1881b1651ed24fa}} 
+\index{models\_material\_pbr.c@{models\_material\_pbr.c}!CUBEMAP\_SIZE@{CUBEMAP\_SIZE}}
+\index{CUBEMAP\_SIZE@{CUBEMAP\_SIZE}!models\_material\_pbr.c@{models\_material\_pbr.c}}
+\doxysubsubsection{\texorpdfstring{CUBEMAP\_SIZE}{CUBEMAP\_SIZE}}
+{\footnotesize\ttfamily \#define C\+U\+B\+E\+M\+A\+P\+\_\+\+S\+I\+ZE~512}
+
+\mbox{\Hypertarget{models__material__pbr_8c_aa31d1e795993ff64c8c8761e6f203d4e}\label{models__material__pbr_8c_aa31d1e795993ff64c8c8761e6f203d4e}} 
+\index{models\_material\_pbr.c@{models\_material\_pbr.c}!IRRADIANCE\_SIZE@{IRRADIANCE\_SIZE}}
+\index{IRRADIANCE\_SIZE@{IRRADIANCE\_SIZE}!models\_material\_pbr.c@{models\_material\_pbr.c}}
+\doxysubsubsection{\texorpdfstring{IRRADIANCE\_SIZE}{IRRADIANCE\_SIZE}}
+{\footnotesize\ttfamily \#define I\+R\+R\+A\+D\+I\+A\+N\+C\+E\+\_\+\+S\+I\+ZE~32}
+
+\mbox{\Hypertarget{models__material__pbr_8c_a038e804eb85274a65268dcce659625af}\label{models__material__pbr_8c_a038e804eb85274a65268dcce659625af}} 
+\index{models\_material\_pbr.c@{models\_material\_pbr.c}!PREFILTERED\_SIZE@{PREFILTERED\_SIZE}}
+\index{PREFILTERED\_SIZE@{PREFILTERED\_SIZE}!models\_material\_pbr.c@{models\_material\_pbr.c}}
+\doxysubsubsection{\texorpdfstring{PREFILTERED\_SIZE}{PREFILTERED\_SIZE}}
+{\footnotesize\ttfamily \#define P\+R\+E\+F\+I\+L\+T\+E\+R\+E\+D\+\_\+\+S\+I\+ZE~256}
+
+\mbox{\Hypertarget{models__material__pbr_8c_a2b623fe0eac7d5119008fb456fdc49f8}\label{models__material__pbr_8c_a2b623fe0eac7d5119008fb456fdc49f8}} 
+\index{models\_material\_pbr.c@{models\_material\_pbr.c}!RLIGHTS\_IMPLEMENTATION@{RLIGHTS\_IMPLEMENTATION}}
+\index{RLIGHTS\_IMPLEMENTATION@{RLIGHTS\_IMPLEMENTATION}!models\_material\_pbr.c@{models\_material\_pbr.c}}
+\doxysubsubsection{\texorpdfstring{RLIGHTS\_IMPLEMENTATION}{RLIGHTS\_IMPLEMENTATION}}
+{\footnotesize\ttfamily \#define R\+L\+I\+G\+H\+T\+S\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{models__material__pbr_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{models__material__pbr_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{models\_material\_pbr.c@{models\_material\_pbr.c}!main@{main}}
+\index{main@{main}!models\_material\_pbr.c@{models\_material\_pbr.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+

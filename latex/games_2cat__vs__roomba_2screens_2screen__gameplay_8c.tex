@@ -1,0 +1,163 @@
+\hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/cat\+\_\+vs\+\_\+roomba/screens/screen\+\_\+gameplay.c}
+\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/cat\_vs\_roomba/screens/screen\_gameplay.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/cat\_vs\_roomba/screens/screen\_gameplay.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}screens.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}raymath.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_dirtile}{Dirtile}}
+\item 
+struct \mbox{\hyperlink{struct_score_popup}{Score\+Popup}}
+\item 
+struct \mbox{\hyperlink{struct_fur_set}{Fur\+Set}}
+\item 
+struct \mbox{\hyperlink{struct_furniture}{Furniture}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a747cbfeaf26fcd7391ee41569cb4abd8}{T\+I\+L\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+C\+L\+E\+A\+N\+\_\+\+T\+I\+ME}}~2
+\item 
+\#define \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a4bf5edcd16a1f0a1ee1e3ff63db71465}{T\+I\+L\+E\+\_\+\+S\+C\+O\+R\+E\+\_\+\+B\+Y\+\_\+\+C\+L\+E\+A\+N\+E\+D\+\_\+\+L\+E\+V\+EL}}~100
+\item 
+\#define \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a9d6c0d22bbbff9f3581f1e7d6495b4b3}{T\+I\+L\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+C\+L\+E\+A\+N\+\_\+\+A\+R\+EA}}~28$\ast$28
+\item 
+\#define \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a62ecd70800687eb2d625af180c4210d7}{T\+I\+L\+E\+\_\+\+S\+I\+ZE}}~36
+\item 
+\#define \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a2c37da8fbcb0d743a822e9251fa9a6d9}{M\+A\+X\+\_\+\+T\+I\+L\+E\+S\+\_\+X}}~32
+\item 
+\#define \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a0ea54262e3a9fb969959344bb11f20f6}{M\+A\+X\+\_\+\+T\+I\+L\+E\+S\+\_\+Y}}~17
+\item 
+\#define \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a36e04d166cdddc615228ec517f2421c9}{C\+A\+T\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+R\+A\+D\+I\+US}}~3
+\item 
+\#define \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_afa2214d53d89e7ddebef46c66e069d03}{C\+A\+T\+\_\+\+D\+I\+R\+T\+\_\+\+C\+E\+L\+L\+\_\+\+R\+A\+D\+I\+US}}~2
+\item 
+\#define \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_adbf5d2cb9adef8b520279c11c11816be}{T\+I\+M\+E\+\_\+\+L\+I\+M\+I\+T\+\_\+\+S\+E\+C\+O\+N\+DS}}~180
+\item 
+\#define \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_ae6435d2c7e6a1c0fdb1402d391770cfd}{M\+A\+X\+\_\+\+S\+C\+O\+R\+E\+\_\+\+P\+O\+P\+U\+PS}}~60
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a76918e73a46306124299f0ecdded70ac}{Init\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_ae375af3a5eb93543369403b716cbc0a8}{Update\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a8b8fc25f26ad73f9c08497af8b074ccf}{Draw\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_ac96945d9b745690aa8ff1c909c816188}{Unload\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_abe4d51d9e25770ad24c45f83837211be}{Finish\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a8a11d4c1d25fc2637a03fda222122728}{room\+Offset}} = \{ 70, 70 \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_afa2214d53d89e7ddebef46c66e069d03}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_afa2214d53d89e7ddebef46c66e069d03}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!CAT\_DIRT\_CELL\_RADIUS@{CAT\_DIRT\_CELL\_RADIUS}}
+\index{CAT\_DIRT\_CELL\_RADIUS@{CAT\_DIRT\_CELL\_RADIUS}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{CAT\_DIRT\_CELL\_RADIUS}{CAT\_DIRT\_CELL\_RADIUS}}
+{\footnotesize\ttfamily \#define C\+A\+T\+\_\+\+D\+I\+R\+T\+\_\+\+C\+E\+L\+L\+\_\+\+R\+A\+D\+I\+US~2}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a36e04d166cdddc615228ec517f2421c9}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a36e04d166cdddc615228ec517f2421c9}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!CAT\_TARGET\_RADIUS@{CAT\_TARGET\_RADIUS}}
+\index{CAT\_TARGET\_RADIUS@{CAT\_TARGET\_RADIUS}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{CAT\_TARGET\_RADIUS}{CAT\_TARGET\_RADIUS}}
+{\footnotesize\ttfamily \#define C\+A\+T\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+R\+A\+D\+I\+US~3}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_ae6435d2c7e6a1c0fdb1402d391770cfd}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_ae6435d2c7e6a1c0fdb1402d391770cfd}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_SCORE\_POPUPS@{MAX\_SCORE\_POPUPS}}
+\index{MAX\_SCORE\_POPUPS@{MAX\_SCORE\_POPUPS}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_SCORE\_POPUPS}{MAX\_SCORE\_POPUPS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+S\+C\+O\+R\+E\+\_\+\+P\+O\+P\+U\+PS~60}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a2c37da8fbcb0d743a822e9251fa9a6d9}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a2c37da8fbcb0d743a822e9251fa9a6d9}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_TILES\_X@{MAX\_TILES\_X}}
+\index{MAX\_TILES\_X@{MAX\_TILES\_X}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_TILES\_X}{MAX\_TILES\_X}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+T\+I\+L\+E\+S\+\_\+X~32}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a0ea54262e3a9fb969959344bb11f20f6}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a0ea54262e3a9fb969959344bb11f20f6}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_TILES\_Y@{MAX\_TILES\_Y}}
+\index{MAX\_TILES\_Y@{MAX\_TILES\_Y}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_TILES\_Y}{MAX\_TILES\_Y}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+T\+I\+L\+E\+S\+\_\+Y~17}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a9d6c0d22bbbff9f3581f1e7d6495b4b3}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a9d6c0d22bbbff9f3581f1e7d6495b4b3}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!TILE\_REQUIRED\_CLEAN\_AREA@{TILE\_REQUIRED\_CLEAN\_AREA}}
+\index{TILE\_REQUIRED\_CLEAN\_AREA@{TILE\_REQUIRED\_CLEAN\_AREA}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{TILE\_REQUIRED\_CLEAN\_AREA}{TILE\_REQUIRED\_CLEAN\_AREA}}
+{\footnotesize\ttfamily \#define T\+I\+L\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+C\+L\+E\+A\+N\+\_\+\+A\+R\+EA~28$\ast$28}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a747cbfeaf26fcd7391ee41569cb4abd8}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a747cbfeaf26fcd7391ee41569cb4abd8}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!TILE\_REQUIRED\_CLEAN\_TIME@{TILE\_REQUIRED\_CLEAN\_TIME}}
+\index{TILE\_REQUIRED\_CLEAN\_TIME@{TILE\_REQUIRED\_CLEAN\_TIME}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{TILE\_REQUIRED\_CLEAN\_TIME}{TILE\_REQUIRED\_CLEAN\_TIME}}
+{\footnotesize\ttfamily \#define T\+I\+L\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+C\+L\+E\+A\+N\+\_\+\+T\+I\+ME~2}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a4bf5edcd16a1f0a1ee1e3ff63db71465}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a4bf5edcd16a1f0a1ee1e3ff63db71465}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!TILE\_SCORE\_BY\_CLEANED\_LEVEL@{TILE\_SCORE\_BY\_CLEANED\_LEVEL}}
+\index{TILE\_SCORE\_BY\_CLEANED\_LEVEL@{TILE\_SCORE\_BY\_CLEANED\_LEVEL}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{TILE\_SCORE\_BY\_CLEANED\_LEVEL}{TILE\_SCORE\_BY\_CLEANED\_LEVEL}}
+{\footnotesize\ttfamily \#define T\+I\+L\+E\+\_\+\+S\+C\+O\+R\+E\+\_\+\+B\+Y\+\_\+\+C\+L\+E\+A\+N\+E\+D\+\_\+\+L\+E\+V\+EL~100}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a62ecd70800687eb2d625af180c4210d7}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a62ecd70800687eb2d625af180c4210d7}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!TILE\_SIZE@{TILE\_SIZE}}
+\index{TILE\_SIZE@{TILE\_SIZE}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{TILE\_SIZE}{TILE\_SIZE}}
+{\footnotesize\ttfamily \#define T\+I\+L\+E\+\_\+\+S\+I\+ZE~36}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_adbf5d2cb9adef8b520279c11c11816be}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_adbf5d2cb9adef8b520279c11c11816be}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!TIME\_LIMIT\_SECONDS@{TIME\_LIMIT\_SECONDS}}
+\index{TIME\_LIMIT\_SECONDS@{TIME\_LIMIT\_SECONDS}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{TIME\_LIMIT\_SECONDS}{TIME\_LIMIT\_SECONDS}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+\_\+\+L\+I\+M\+I\+T\+\_\+\+S\+E\+C\+O\+N\+DS~180}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a8b8fc25f26ad73f9c08497af8b074ccf}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a8b8fc25f26ad73f9c08497af8b074ccf}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!DrawGameplayScreen@{DrawGameplayScreen}}
+\index{DrawGameplayScreen@{DrawGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{DrawGameplayScreen()}{DrawGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_abe4d51d9e25770ad24c45f83837211be}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_abe4d51d9e25770ad24c45f83837211be}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!FinishGameplayScreen@{FinishGameplayScreen}}
+\index{FinishGameplayScreen@{FinishGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{FinishGameplayScreen()}{FinishGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Finish\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a76918e73a46306124299f0ecdded70ac}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a76918e73a46306124299f0ecdded70ac}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!InitGameplayScreen@{InitGameplayScreen}}
+\index{InitGameplayScreen@{InitGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{InitGameplayScreen()}{InitGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Init\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_ac96945d9b745690aa8ff1c909c816188}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_ac96945d9b745690aa8ff1c909c816188}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!UnloadGameplayScreen@{UnloadGameplayScreen}}
+\index{UnloadGameplayScreen@{UnloadGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{UnloadGameplayScreen()}{UnloadGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_ae375af3a5eb93543369403b716cbc0a8}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_ae375af3a5eb93543369403b716cbc0a8}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!UpdateGameplayScreen@{UpdateGameplayScreen}}
+\index{UpdateGameplayScreen@{UpdateGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{UpdateGameplayScreen()}{UpdateGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a8a11d4c1d25fc2637a03fda222122728}\label{games_2cat__vs__roomba_2screens_2screen__gameplay_8c_a8a11d4c1d25fc2637a03fda222122728}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!roomOffset@{roomOffset}}
+\index{roomOffset@{roomOffset}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{roomOffset}{roomOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_vector2}{Vector2}} room\+Offset = \{ 70, 70 \}}
+

@@ -1,0 +1,1271 @@
+\hypertarget{rnet_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/rnet.h}
+\label{rnet_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/rnet.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/rnet.h}}
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$net/if.\+h$>$}\newline
+{\ttfamily \#include $<$netdb.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/tcp.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_i_p_address}{I\+P\+Address}}
+\item 
+struct \mbox{\hyperlink{struct_socket_opt}{Socket\+Opt}}
+\item 
+struct \mbox{\hyperlink{struct_u_d_p_channel}{U\+D\+P\+Channel}}
+\item 
+struct \mbox{\hyperlink{struct_socket}{Socket}}
+\item 
+struct \mbox{\hyperlink{struct_socket_set}{Socket\+Set}}
+\item 
+struct \mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}}
+\item 
+struct \mbox{\hyperlink{struct_socket_config}{Socket\+Config}}
+\item 
+struct \mbox{\hyperlink{struct_socket_result}{Socket\+Result}}
+\item 
+struct \mbox{\hyperlink{struct_packet}{Packet}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a8effd0655f96cc25e57c0b348669df7b}{N\+O\+G\+D\+I\+C\+A\+P\+M\+A\+S\+KS}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_ac5ff788cb8638ce5daf99e586083eef2}{N\+O\+V\+I\+R\+T\+U\+A\+L\+K\+E\+Y\+C\+O\+D\+ES}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a90d30d395de13a4f31a42b4066cfbb68}{N\+O\+W\+I\+N\+M\+E\+S\+S\+A\+G\+ES}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a22c56a31990574a86b40f60b6073cdba}{N\+O\+W\+I\+N\+S\+T\+Y\+L\+ES}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_aea709a8ba0a7d510cefcf625fdb3b4b1}{N\+O\+S\+Y\+S\+M\+E\+T\+R\+I\+CS}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a15dd7444df67d292b83dc869d6e4b417}{N\+O\+M\+E\+N\+US}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a8b8c544b2e9e3359de25f7d89f4f5de9}{N\+O\+I\+C\+O\+NS}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a6f4a8b3fe02f55fd022b91b3a965e15c}{N\+O\+K\+E\+Y\+S\+T\+A\+T\+ES}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a271ce221dc9c5c8887d443008b3d718c}{N\+O\+S\+Y\+S\+C\+O\+M\+M\+A\+N\+DS}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a0293d1b2742d9c9ef401d75a55b81859}{N\+O\+R\+A\+S\+T\+E\+R\+O\+PS}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_ab2dcc39e73a373330467f5f503c779d3}{N\+O\+S\+H\+O\+W\+W\+I\+N\+D\+OW}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a3a75770af38d05856eb2e9d1867b471c}{O\+E\+M\+R\+E\+S\+O\+U\+R\+CE}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_aa59dc3d2c7dc2ec85638761aeb2d50f7}{N\+O\+A\+T\+OM}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a2e4c78354db40d44bea894e472550c11}{N\+O\+C\+L\+I\+P\+B\+O\+A\+RD}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_ad99d89815bdc61acfe8744c41c96e637}{N\+O\+C\+O\+L\+OR}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a679a4dcdfeb97910576cff8452efb28e}{N\+O\+C\+T\+L\+M\+GR}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a5ceb8b3e84824f87cae315091546e67f}{N\+O\+D\+R\+A\+W\+T\+E\+XT}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a2bedaca1c6ca66de2397772910fbe140}{N\+O\+G\+DI}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a1381fe81f9874aa4a669b6bd556f87fa}{N\+O\+K\+E\+R\+N\+EL}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a73886ff6a915a4a92e3ade13eba71f6d}{N\+O\+U\+S\+ER}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a52be9abe7ca69b513aa7e975284d4f67}{N\+O\+N\+LS}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a8bd3112472ae1e33be8faf5294230948}{N\+O\+MB}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a8b2f514658ba28ae0ea3b8b96edf520e}{N\+O\+M\+E\+M\+M\+GR}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a37618c72c08b2464576612b2ac595b30}{N\+O\+M\+E\+T\+A\+F\+I\+LE}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a9f918755b601cf4bffca775992e6fb90}{N\+O\+M\+I\+N\+M\+AX}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a1f4e51b89381cd3aecebd55bd4d700b6}{N\+O\+M\+SG}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a2d7186e4a6dfcc0011461ce1e8b70a05}{N\+O\+O\+P\+E\+N\+F\+I\+LE}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a06f62f70cab65b4c19972202f784e12d}{N\+O\+S\+C\+R\+O\+LL}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a14ac98af6281e748377693d824e41ca9}{N\+O\+S\+E\+R\+V\+I\+CE}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_af40cddcc88a6ebeed4f75d4bbbed195e}{N\+O\+S\+O\+U\+ND}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a7d6ea5ce712ed1d05533cf8ebf38d880}{N\+O\+T\+E\+X\+T\+M\+E\+T\+R\+IC}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_aac388bb1bd11a9a15b594321658ae233}{N\+O\+WH}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a964a6e23899e4f0b1886d86b1981545d}{N\+O\+W\+I\+N\+O\+F\+F\+S\+E\+TS}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a2ee511fa2fd29a9a1f0efbcb2c364b8f}{N\+O\+C\+O\+MM}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a0958eca070bb77eddff0a604acda46f2}{N\+O\+K\+A\+N\+JI}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a34c6896a3b5f4079b3539fb8118be1d5}{N\+O\+H\+E\+LP}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_af883320ccbc88fe5ff2d8733ec0a034f}{N\+O\+P\+R\+O\+F\+I\+L\+ER}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a348ad07df4aceda9097d9497b78bccd9}{N\+O\+D\+E\+F\+E\+R\+W\+I\+N\+D\+O\+W\+P\+OS}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a256fe1caeb996b1142c3eb51097fef0e}{N\+O\+M\+CX}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_afebe6b61833b60d222fe59db1b3da819}{M\+M\+N\+O\+S\+O\+U\+ND}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a6087bff342a6ee0522d115e0abca6126}{R\+N\+E\+T\+\_\+\+M\+A\+L\+L\+OC}}(sz)~malloc(sz)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_af5dac568c5ed0cdfeea1c2322e7174d1}{R\+N\+E\+T\+\_\+\+C\+A\+L\+L\+OC}}(n,  sz)~calloc(n,sz)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a73bf53ba681dd57ba5a0b677f89f42c7}{R\+N\+E\+T\+\_\+\+F\+R\+EE}}(p)~free(p)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a7cc1753a05a0821f6c70dd2bccfbab5c}{R\+E\+S\+U\+L\+T\+\_\+\+S\+U\+C\+C\+E\+SS}}~0
+\item 
+\#define \mbox{\hyperlink{rnet_8h_aea87ce97f86effb2c4df6274d4aac567}{R\+E\+S\+U\+L\+T\+\_\+\+F\+A\+I\+L\+U\+RE}}~1
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a9f4bf0773c45ad9a9753a1b784a13fbb}{htonll}}(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}})~((((uint64) htonl(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}})) $<$$<$ 32) + htonl(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}} $>$$>$ 32))
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a3cfcf123d4ead264289232f91f2c9ca5}{ntohll}}(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}})~((((uint64) ntohl(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}})) $<$$<$ 32) + ntohl(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}} $>$$>$ 32))
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a26769957ec1a2beaf223f33b66ee64ab}{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET}}~$\sim$(0)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_afdbb9d84bd17efd2ae7290e664992c48}{closesocket}}~close
+\item 
+\#define \mbox{\hyperlink{rnet_8h_aff55fe551a9992a54ec54621c524d0a4}{S\+O\+C\+K\+ET}}~\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a26769957ec1a2beaf223f33b66ee64ab}{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET}}~-\/1
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a633b0396ff93d336a088412a190a5072}{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR}}~-\/1
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a5183bec49074d6f7913c340140dc71c9}{S\+O\+C\+K\+E\+T\+\_\+\+M\+A\+X\+\_\+\+S\+E\+T\+\_\+\+S\+I\+ZE}}~(32)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a9b1432dd7e336816eda674c15d960405}{S\+O\+C\+K\+E\+T\+\_\+\+M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE}}~(16)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a5633ef3dc32baf96a9f8723a628f7db6}{S\+O\+C\+K\+E\+T\+\_\+\+M\+A\+X\+\_\+\+S\+O\+C\+K\+\_\+\+O\+P\+TS}}~(4)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a3b984adc1aad0cbec4c6d9b45e5ba6d5}{S\+O\+C\+K\+E\+T\+\_\+\+M\+A\+X\+\_\+\+U\+D\+P\+C\+H\+A\+N\+N\+E\+LS}}~(32)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a706cefcd61f57a478a950ca8d29e89b8}{S\+O\+C\+K\+E\+T\+\_\+\+M\+A\+X\+\_\+\+U\+D\+P\+A\+D\+D\+R\+E\+S\+S\+ES}}~(4)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a0897a9ddcb87fef281b6db285dd518ff}{A\+D\+D\+R\+E\+S\+S\+\_\+\+I\+P\+V4\+\_\+\+A\+D\+D\+R\+S\+T\+R\+L\+EN}}~(22)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a52380179def66864a4331443701d2a53}{A\+D\+D\+R\+E\+S\+S\+\_\+\+I\+P\+V6\+\_\+\+A\+D\+D\+R\+S\+T\+R\+L\+EN}}~(65)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a1a5067a9f4b7e1110e128061a6d7eb22}{A\+D\+D\+R\+E\+S\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+NY}}~(0)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_afa9e1489e662a088aeb71cf104cb2b46}{A\+D\+D\+R\+E\+S\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+P\+V4}}~(2)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a5239d13385c80bfa59c5ceccedba950f}{A\+D\+D\+R\+E\+S\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+P\+V6}}~(23)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a6d824e6a2a12531eb44677f758a44b8b}{A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+A\+X\+H\+O\+ST}}~(1025)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_af5b0b8bd3f1c8813805ec39e68da1bdc}{A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+A\+X\+S\+E\+RV}}~(32)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a5724661db04e2417b36ba8d8c945b5a2}{A\+D\+D\+R\+E\+S\+S\+\_\+\+A\+NY}}~((unsigned long) 0x00000000)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a7b82209e3401aa0acd9bd8f76f8420b6}{A\+D\+D\+R\+E\+S\+S\+\_\+\+L\+O\+O\+P\+B\+A\+CK}}~(0x7f000001)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a5030fc6c74e6785dff533f3daa27bd61}{A\+D\+D\+R\+E\+S\+S\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST}}~((unsigned long) 0xffffffff)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_af408ec330550ae21b35edf5caffe1b8c}{A\+D\+D\+R\+E\+S\+S\+\_\+\+N\+O\+NE}}~(0xffffffff)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a9d456d4aa192a635dd10476ee2800884}{N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+D\+E\+F\+A\+U\+LT}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_a3975287d8e8af934f7c1265851e7e3f8}{N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+N\+O\+F\+Q\+DN}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_ac5a943f092c054e74fe871f7c9243985}{N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+N\+U\+M\+E\+R\+I\+C\+H\+O\+ST}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_aeb8b58dc308403906112c1b01739c6cf}{N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+N\+A\+M\+E\+R\+E\+QD}}~(0x04)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_aca9470a670e4aa283db04f24d5bff0ac}{N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+N\+U\+M\+E\+R\+I\+C\+S\+E\+RV}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{rnet_8h_afb36201409bf3d38bebd80a83c56dffd}{N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+D\+G\+R\+AM}}~(0x10)
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} \mbox{\hyperlink{rnet_8h_a5d8af9067194dce781973e2cac697d63}{Socket\+Channel}}
+\item 
+typedef struct \+\_\+\+Address\+Information $\ast$ \mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}}
+\item 
+typedef struct \+\_\+\+Socket\+Address $\ast$ \mbox{\hyperlink{rnet_8h_ad208bfd0dd46ff2d9168ff0e58733c46}{Socket\+Address}}
+\item 
+typedef struct \+\_\+\+Socket\+Address\+I\+Pv4 $\ast$ \mbox{\hyperlink{rnet_8h_a0315342f59e125e44dd4bae552102466}{Socket\+Address\+I\+Pv4}}
+\item 
+typedef struct \+\_\+\+Socket\+Address\+I\+Pv6 $\ast$ \mbox{\hyperlink{rnet_8h_ad7a31420ceecb2fabc3b6bec5557a451}{Socket\+Address\+I\+Pv6}}
+\item 
+typedef struct \+\_\+\+Socket\+Address\+Storage $\ast$ \mbox{\hyperlink{rnet_8h_a7a22c34741344764c4027d92e3935a20}{Socket\+Address\+Storage}}
+\item 
+typedef struct \mbox{\hyperlink{struct_i_p_address}{I\+P\+Address}} \mbox{\hyperlink{rnet_8h_a024fa5fb50879de3cba5985b06ab636c}{I\+P\+Address}}
+\item 
+typedef struct \mbox{\hyperlink{struct_socket_opt}{Socket\+Opt}} \mbox{\hyperlink{rnet_8h_ad1a79d064b634c9473fa9c812ef7bc8d}{Socket\+Opt}}
+\item 
+typedef struct \mbox{\hyperlink{struct_u_d_p_channel}{U\+D\+P\+Channel}} \mbox{\hyperlink{rnet_8h_a4a3bd31fe991858e0c7e49fb587f6b1b}{U\+D\+P\+Channel}}
+\item 
+typedef struct \mbox{\hyperlink{struct_socket}{Socket}} \mbox{\hyperlink{rnet_8h_a9ca40401240ec743ac7c45f6da062750}{Socket}}
+\item 
+typedef struct \mbox{\hyperlink{struct_socket_set}{Socket\+Set}} \mbox{\hyperlink{rnet_8h_aed2c8d8dff3512e21fdfa2848c7ddefd}{Socket\+Set}}
+\item 
+typedef struct \mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}} \mbox{\hyperlink{rnet_8h_a4a53adb8eb057c745e8f9e491ee42b24}{Socket\+Data\+Packet}}
+\item 
+typedef struct \mbox{\hyperlink{struct_socket_config}{Socket\+Config}} \mbox{\hyperlink{rnet_8h_a61bedba3415c9c0fc76cad8cbc0a411b}{Socket\+Config}}
+\item 
+typedef struct \mbox{\hyperlink{struct_socket_result}{Socket\+Result}} \mbox{\hyperlink{rnet_8h_aeef54e179ab8f367a053e5e4bd07596a}{Socket\+Result}}
+\item 
+typedef struct \mbox{\hyperlink{struct_packet}{Packet}} \mbox{\hyperlink{rnet_8h_a9351530394464c1d1892ddeca8a6aea1}{Packet}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \{ \newline
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}, 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}}, 
+\mbox{\hyperlink{raylib-build_2src_2raylib_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}, 
+\mbox{\hyperlink{raylib-build_2src_2raylib_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}}, 
+\newline
+\mbox{\hyperlink{raylib-src_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}, 
+\mbox{\hyperlink{raylib-src_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}}, 
+\mbox{\hyperlink{raylib-src_2src_2raylib_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}, 
+\mbox{\hyperlink{raylib-src_2src_2raylib_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}}, 
+\newline
+\mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}, 
+\mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}}
+ \}
+\item 
+enum \mbox{\hyperlink{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97}{Socket\+Type}} \{ \mbox{\hyperlink{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97a2843397fd39bd96681bca78a8aa03096}{S\+O\+C\+K\+E\+T\+\_\+\+T\+CP}} = 0, 
+\mbox{\hyperlink{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97a180747545a72ff6d0fd0569e781aefd5}{S\+O\+C\+K\+E\+T\+\_\+\+U\+DP}} = 1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{rnet_8h_a2d30ff7011d03c494b761afd01a063fc}{Init\+Network}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_a9b41cc6afd8c747b00cde5ae23849aec}{Close\+Network}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_aecf982e4f2c0754b601b83891d4c5cbd}{Resolve\+IP}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ip, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$service, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d4f56e54693280c6d9b1177c12c867d}{flags}}, \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$outhost, \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$outserv)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{rnet_8h_a55f9fc49dda7d2e6ba334837a92a408f}{Resolve\+Host}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$address, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$service, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} address\+Type, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d4f56e54693280c6d9b1177c12c867d}{flags}}, \mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} $\ast$out\+Addr)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{rnet_8h_a635dd34c43b71fecfcc7520ea09352a4}{Get\+Address\+Family}} (\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} address)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{rnet_8h_a1b3484a52be7986604e1cc1e4db773be}{Get\+Address\+Socket\+Type}} (\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} address)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{rnet_8h_aa473777697288b6043bccfc7305b3635}{Get\+Address\+Protocol}} (\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} address)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{rnet_8h_a449e98297705ecde22eb2873336f1243}{Get\+Address\+Canon\+Name}} (\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} address)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{rnet_8h_ac9963874ffa0959c90eec85ed32d7033}{Get\+Address\+Host\+And\+Port}} (\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} address, \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$outhost, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$outport)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_a8b9b1e19a9f438ee63e99daf75302279}{Print\+Address\+Info}} (\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} address)
+\item 
+\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} \mbox{\hyperlink{rnet_8h_aa5cbdfb653d7e74c97a1b0ae3debc59b}{Alloc\+Address}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_a938a2fa69ee20a74c22f277d24ea4446}{Free\+Address}} (\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} $\ast$address\+Info)
+\item 
+\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} $\ast$ \mbox{\hyperlink{rnet_8h_a012fa1f10193918c8377ce952824ed6a}{Alloc\+Address\+List}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{rnet_8h_a522dc88d16849e1959bec2daaa6a1762}{Socket\+Create}} (\mbox{\hyperlink{struct_socket_config}{Socket\+Config}} $\ast$\mbox{\hyperlink{eglext_8h_a13b3686016f6a1889a75cd91a854514a}{config}}, \mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$\mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screens_8h_a8b2e13c78efca330f06b6ddcd7464b41}{result}})
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{rnet_8h_acf37e109a222380e783c1a34abee2abe}{Socket\+Bind}} (\mbox{\hyperlink{struct_socket_config}{Socket\+Config}} $\ast$\mbox{\hyperlink{eglext_8h_a13b3686016f6a1889a75cd91a854514a}{config}}, \mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$\mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screens_8h_a8b2e13c78efca330f06b6ddcd7464b41}{result}})
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{rnet_8h_a8ad0ec061568a3118a945e83ab38ae36}{Socket\+Listen}} (\mbox{\hyperlink{struct_socket_config}{Socket\+Config}} $\ast$\mbox{\hyperlink{eglext_8h_a13b3686016f6a1889a75cd91a854514a}{config}}, \mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$\mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screens_8h_a8b2e13c78efca330f06b6ddcd7464b41}{result}})
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{rnet_8h_aba11a54a2556ea0d8f93af8b538850f6}{Socket\+Connect}} (\mbox{\hyperlink{struct_socket_config}{Socket\+Config}} $\ast$\mbox{\hyperlink{eglext_8h_a13b3686016f6a1889a75cd91a854514a}{config}}, \mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$\mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screens_8h_a8b2e13c78efca330f06b6ddcd7464b41}{result}})
+\item 
+\mbox{\hyperlink{struct_socket}{Socket}} $\ast$ \mbox{\hyperlink{rnet_8h_a97d0a7c363f578b23c3eb2809cba3944}{Socket\+Accept}} (\mbox{\hyperlink{struct_socket}{Socket}} $\ast$server, \mbox{\hyperlink{struct_socket_config}{Socket\+Config}} $\ast$\mbox{\hyperlink{eglext_8h_a13b3686016f6a1889a75cd91a854514a}{config}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{rnet_8h_acbeb0d91b33a764d5da90f10ed925de1}{Socket\+Set\+Channel}} (\mbox{\hyperlink{struct_socket}{Socket}} $\ast$socket, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structchannel}{channel}}, const \mbox{\hyperlink{struct_i_p_address}{I\+P\+Address}} $\ast$address)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_a02411b2ff61874d3b2d9d8b435a79f91}{Socket\+Unset\+Channel}} (\mbox{\hyperlink{struct_socket}{Socket}} $\ast$socket, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structchannel}{channel}})
+\item 
+\mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}} $\ast$ \mbox{\hyperlink{rnet_8h_a64222e11b29f5c23095297fe2bf8acdc}{Alloc\+Packet}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{rnet_8h_a9e60e3a2fdfc965dbcb9bb1da63315ec}{Resize\+Packet}} (\mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}} $\ast$packet, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} newsize)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_abc4db040e1d2c72b1d0b1f9f3edbccf5}{Free\+Packet}} (\mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}} $\ast$packet)
+\item 
+\mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}} $\ast$$\ast$ \mbox{\hyperlink{rnet_8h_a7fa418a35af0e3cea83e210d81ae5cba}{Alloc\+Packet\+List}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a22486c0c8d9f7d79a07bf22ecffeeb2f}{count}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_ae38e93f37b95449bc5fcb7e408671b82}{Free\+Packet\+List}} (\mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}} $\ast$$\ast$packets)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{rnet_8h_a75bab715e75916550bd46024525797f2}{Socket\+Send}} (\mbox{\hyperlink{struct_socket}{Socket}} $\ast$sock, const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$datap, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a30ee67aa502329a88f4a203775adfa1a}{len}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{rnet_8h_add10df2d75939fec326dfdb98a4ba4b6}{Socket\+Receive}} (\mbox{\hyperlink{struct_socket}{Socket}} $\ast$sock, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} maxlen)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_adb4e419587d33d420dfda94f506e23e8}{Socket\+Close}} (\mbox{\hyperlink{struct_socket}{Socket}} $\ast$sock)
+\item 
+\mbox{\hyperlink{rnet_8h_a7a22c34741344764c4027d92e3935a20}{Socket\+Address\+Storage}} \mbox{\hyperlink{rnet_8h_ad52f97449470b062d1074a1cd7e4b497}{Socket\+Get\+Peer\+Address}} (\mbox{\hyperlink{struct_socket}{Socket}} $\ast$sock)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{rnet_8h_a5c9dfe040d9f0aec77360336cc51bd43}{Get\+Socket\+Address\+Host}} (\mbox{\hyperlink{rnet_8h_a7a22c34741344764c4027d92e3935a20}{Socket\+Address\+Storage}} storage)
+\item 
+short \mbox{\hyperlink{rnet_8h_ae627dbc8fefd201251bb8e5924e28dcf}{Get\+Socket\+Address\+Port}} (\mbox{\hyperlink{rnet_8h_a7a22c34741344764c4027d92e3935a20}{Socket\+Address\+Storage}} storage)
+\item 
+\mbox{\hyperlink{struct_socket}{Socket}} $\ast$ \mbox{\hyperlink{rnet_8h_a8fbee6752a53af9cc3aa29a8f5f8c040}{Alloc\+Socket}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_a58bba8a66a2767a439312158f8994c16}{Free\+Socket}} (\mbox{\hyperlink{struct_socket}{Socket}} $\ast$$\ast$sock)
+\item 
+\mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$ \mbox{\hyperlink{rnet_8h_a1ff01ef8c539c1bccda6697fb8726531}{Alloc\+Socket\+Result}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_a46c1da3b4cab3cfd39ed4ea6e75af524}{Free\+Socket\+Result}} (\mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$$\ast$\mbox{\hyperlink{games_2cat__vs__roomba_2screens_2screens_8h_a8b2e13c78efca330f06b6ddcd7464b41}{result}})
+\item 
+\mbox{\hyperlink{struct_socket_set}{Socket\+Set}} $\ast$ \mbox{\hyperlink{rnet_8h_a396248f078681c205746a8763d8d8ede}{Alloc\+Socket\+Set}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{core__window__letterbox_8c_affe776513b24d84b39af8ab0930fef7f}{max}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_aaef3839745b11d16e547ec6f7a390dfa}{Free\+Socket\+Set}} (\mbox{\hyperlink{struct_socket_set}{Socket\+Set}} $\ast$sockset)
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{rnet_8h_a558a93f8b6938c62f9227a1dd2eb6798}{Is\+Socket\+Ready}} (\mbox{\hyperlink{struct_socket}{Socket}} $\ast$sock)
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{rnet_8h_a2d4cd08dd2c37e8d5733f8b68ac19489}{Is\+Socket\+Connected}} (\mbox{\hyperlink{struct_socket}{Socket}} $\ast$sock)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{rnet_8h_adfedffc78ad3f1fceeb2e0dc277a0e73}{Add\+Socket}} (\mbox{\hyperlink{struct_socket_set}{Socket\+Set}} $\ast$\mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}}, \mbox{\hyperlink{struct_socket}{Socket}} $\ast$sock)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{rnet_8h_a495bc9c4544f725a88eee4a97b16aef8}{Remove\+Socket}} (\mbox{\hyperlink{struct_socket_set}{Socket\+Set}} $\ast$\mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}}, \mbox{\hyperlink{struct_socket}{Socket}} $\ast$sock)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{rnet_8h_abb554d0ca8efb5b1268b419b0102520b}{Check\+Sockets}} (\mbox{\hyperlink{struct_socket_set}{Socket\+Set}} $\ast$\mbox{\hyperlink{eglext_8h_aeff0e04220766bdd67e3a38ffa302e1c}{set}}, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ad29bb0d8468b264a4e3d9204366cfaab}{timeout}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_a1abe34162b80e7a71e127353f55f4c95}{Packet\+Send}} (\mbox{\hyperlink{struct_packet}{Packet}} $\ast$packet)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_a399d94d0d0388eda67d18ad1aca22840}{Packet\+Receive}} (\mbox{\hyperlink{struct_packet}{Packet}} $\ast$packet)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_ae9121c1cb1e1038910c33cf8a242cae8}{Packet\+Write8}} (\mbox{\hyperlink{struct_packet}{Packet}} $\ast$packet, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6a4f8a1a444e9080b297963b3db29fe0}{value}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_a16236af8cbe6a610c71d54bbf687e231}{Packet\+Write16}} (\mbox{\hyperlink{struct_packet}{Packet}} $\ast$packet, \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6a4f8a1a444e9080b297963b3db29fe0}{value}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_af19e701801e3ad5abc627a8066b8a05d}{Packet\+Write32}} (\mbox{\hyperlink{struct_packet}{Packet}} $\ast$packet, \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6a4f8a1a444e9080b297963b3db29fe0}{value}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{rnet_8h_a80ea7b1788991d155a9a5e5a631774d4}{Packet\+Write64}} (\mbox{\hyperlink{struct_packet}{Packet}} $\ast$packet, \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6a4f8a1a444e9080b297963b3db29fe0}{value}})
+\item 
+\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{rnet_8h_a9509bda61cffb7e6e334f0b16bb1f9d1}{Packet\+Read8}} (\mbox{\hyperlink{struct_packet}{Packet}} $\ast$packet)
+\item 
+\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} \mbox{\hyperlink{rnet_8h_ab1c061c9443cacbacf92be74c348cf68}{Packet\+Read16}} (\mbox{\hyperlink{struct_packet}{Packet}} $\ast$packet)
+\item 
+\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} \mbox{\hyperlink{rnet_8h_a844639e4c0c9bf1a9236c77592f6af08}{Packet\+Read32}} (\mbox{\hyperlink{struct_packet}{Packet}} $\ast$packet)
+\item 
+\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{rnet_8h_a2025285e8fc45f29b998a3704e3f60a3}{Packet\+Read64}} (\mbox{\hyperlink{struct_packet}{Packet}} $\ast$packet)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{rnet_8h_a5724661db04e2417b36ba8d8c945b5a2}\label{rnet_8h_a5724661db04e2417b36ba8d8c945b5a2}} 
+\index{rnet.h@{rnet.h}!ADDRESS\_ANY@{ADDRESS\_ANY}}
+\index{ADDRESS\_ANY@{ADDRESS\_ANY}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_ANY}{ADDRESS\_ANY}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+S\+S\+\_\+\+A\+NY~((unsigned long) 0x00000000)}
+
+\mbox{\Hypertarget{rnet_8h_a5030fc6c74e6785dff533f3daa27bd61}\label{rnet_8h_a5030fc6c74e6785dff533f3daa27bd61}} 
+\index{rnet.h@{rnet.h}!ADDRESS\_BROADCAST@{ADDRESS\_BROADCAST}}
+\index{ADDRESS\_BROADCAST@{ADDRESS\_BROADCAST}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_BROADCAST}{ADDRESS\_BROADCAST}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+S\+S\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST~((unsigned long) 0xffffffff)}
+
+\mbox{\Hypertarget{rnet_8h_a0897a9ddcb87fef281b6db285dd518ff}\label{rnet_8h_a0897a9ddcb87fef281b6db285dd518ff}} 
+\index{rnet.h@{rnet.h}!ADDRESS\_IPV4\_ADDRSTRLEN@{ADDRESS\_IPV4\_ADDRSTRLEN}}
+\index{ADDRESS\_IPV4\_ADDRSTRLEN@{ADDRESS\_IPV4\_ADDRSTRLEN}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_IPV4\_ADDRSTRLEN}{ADDRESS\_IPV4\_ADDRSTRLEN}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+S\+S\+\_\+\+I\+P\+V4\+\_\+\+A\+D\+D\+R\+S\+T\+R\+L\+EN~(22)}
+
+\mbox{\Hypertarget{rnet_8h_a52380179def66864a4331443701d2a53}\label{rnet_8h_a52380179def66864a4331443701d2a53}} 
+\index{rnet.h@{rnet.h}!ADDRESS\_IPV6\_ADDRSTRLEN@{ADDRESS\_IPV6\_ADDRSTRLEN}}
+\index{ADDRESS\_IPV6\_ADDRSTRLEN@{ADDRESS\_IPV6\_ADDRSTRLEN}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_IPV6\_ADDRSTRLEN}{ADDRESS\_IPV6\_ADDRSTRLEN}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+S\+S\+\_\+\+I\+P\+V6\+\_\+\+A\+D\+D\+R\+S\+T\+R\+L\+EN~(65)}
+
+\mbox{\Hypertarget{rnet_8h_a7b82209e3401aa0acd9bd8f76f8420b6}\label{rnet_8h_a7b82209e3401aa0acd9bd8f76f8420b6}} 
+\index{rnet.h@{rnet.h}!ADDRESS\_LOOPBACK@{ADDRESS\_LOOPBACK}}
+\index{ADDRESS\_LOOPBACK@{ADDRESS\_LOOPBACK}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_LOOPBACK}{ADDRESS\_LOOPBACK}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+S\+S\+\_\+\+L\+O\+O\+P\+B\+A\+CK~(0x7f000001)}
+
+\mbox{\Hypertarget{rnet_8h_a6d824e6a2a12531eb44677f758a44b8b}\label{rnet_8h_a6d824e6a2a12531eb44677f758a44b8b}} 
+\index{rnet.h@{rnet.h}!ADDRESS\_MAXHOST@{ADDRESS\_MAXHOST}}
+\index{ADDRESS\_MAXHOST@{ADDRESS\_MAXHOST}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_MAXHOST}{ADDRESS\_MAXHOST}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+A\+X\+H\+O\+ST~(1025)}
+
+\mbox{\Hypertarget{rnet_8h_af5b0b8bd3f1c8813805ec39e68da1bdc}\label{rnet_8h_af5b0b8bd3f1c8813805ec39e68da1bdc}} 
+\index{rnet.h@{rnet.h}!ADDRESS\_MAXSERV@{ADDRESS\_MAXSERV}}
+\index{ADDRESS\_MAXSERV@{ADDRESS\_MAXSERV}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_MAXSERV}{ADDRESS\_MAXSERV}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+A\+X\+S\+E\+RV~(32)}
+
+\mbox{\Hypertarget{rnet_8h_af408ec330550ae21b35edf5caffe1b8c}\label{rnet_8h_af408ec330550ae21b35edf5caffe1b8c}} 
+\index{rnet.h@{rnet.h}!ADDRESS\_NONE@{ADDRESS\_NONE}}
+\index{ADDRESS\_NONE@{ADDRESS\_NONE}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_NONE}{ADDRESS\_NONE}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+S\+S\+\_\+\+N\+O\+NE~(0xffffffff)}
+
+\mbox{\Hypertarget{rnet_8h_a1a5067a9f4b7e1110e128061a6d7eb22}\label{rnet_8h_a1a5067a9f4b7e1110e128061a6d7eb22}} 
+\index{rnet.h@{rnet.h}!ADDRESS\_TYPE\_ANY@{ADDRESS\_TYPE\_ANY}}
+\index{ADDRESS\_TYPE\_ANY@{ADDRESS\_TYPE\_ANY}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_TYPE\_ANY}{ADDRESS\_TYPE\_ANY}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+S\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+NY~(0)}
+
+\mbox{\Hypertarget{rnet_8h_afa9e1489e662a088aeb71cf104cb2b46}\label{rnet_8h_afa9e1489e662a088aeb71cf104cb2b46}} 
+\index{rnet.h@{rnet.h}!ADDRESS\_TYPE\_IPV4@{ADDRESS\_TYPE\_IPV4}}
+\index{ADDRESS\_TYPE\_IPV4@{ADDRESS\_TYPE\_IPV4}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_TYPE\_IPV4}{ADDRESS\_TYPE\_IPV4}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+S\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+P\+V4~(2)}
+
+\mbox{\Hypertarget{rnet_8h_a5239d13385c80bfa59c5ceccedba950f}\label{rnet_8h_a5239d13385c80bfa59c5ceccedba950f}} 
+\index{rnet.h@{rnet.h}!ADDRESS\_TYPE\_IPV6@{ADDRESS\_TYPE\_IPV6}}
+\index{ADDRESS\_TYPE\_IPV6@{ADDRESS\_TYPE\_IPV6}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_TYPE\_IPV6}{ADDRESS\_TYPE\_IPV6}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+S\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+P\+V6~(23)}
+
+\mbox{\Hypertarget{rnet_8h_afdbb9d84bd17efd2ae7290e664992c48}\label{rnet_8h_afdbb9d84bd17efd2ae7290e664992c48}} 
+\index{rnet.h@{rnet.h}!closesocket@{closesocket}}
+\index{closesocket@{closesocket}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{closesocket}{closesocket}}
+{\footnotesize\ttfamily \#define closesocket~close}
+
+\mbox{\Hypertarget{rnet_8h_a9f4bf0773c45ad9a9753a1b784a13fbb}\label{rnet_8h_a9f4bf0773c45ad9a9753a1b784a13fbb}} 
+\index{rnet.h@{rnet.h}!htonll@{htonll}}
+\index{htonll@{htonll}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{htonll}{htonll}}
+{\footnotesize\ttfamily \#define htonll(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}} }\end{DoxyParamCaption})~((((uint64) htonl(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}})) $<$$<$ 32) + htonl(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}} $>$$>$ 32))}
+
+\mbox{\Hypertarget{rnet_8h_a26769957ec1a2beaf223f33b66ee64ab}\label{rnet_8h_a26769957ec1a2beaf223f33b66ee64ab}} 
+\index{rnet.h@{rnet.h}!INVALID\_SOCKET@{INVALID\_SOCKET}}
+\index{INVALID\_SOCKET@{INVALID\_SOCKET}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{INVALID\_SOCKET}{INVALID\_SOCKET}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET~$\sim$(0)}
+
+\mbox{\Hypertarget{rnet_8h_a26769957ec1a2beaf223f33b66ee64ab}\label{rnet_8h_a26769957ec1a2beaf223f33b66ee64ab}} 
+\index{rnet.h@{rnet.h}!INVALID\_SOCKET@{INVALID\_SOCKET}}
+\index{INVALID\_SOCKET@{INVALID\_SOCKET}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{INVALID\_SOCKET}{INVALID\_SOCKET}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET~-\/1}
+
+\mbox{\Hypertarget{rnet_8h_afebe6b61833b60d222fe59db1b3da819}\label{rnet_8h_afebe6b61833b60d222fe59db1b3da819}} 
+\index{rnet.h@{rnet.h}!MMNOSOUND@{MMNOSOUND}}
+\index{MMNOSOUND@{MMNOSOUND}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{MMNOSOUND}{MMNOSOUND}}
+{\footnotesize\ttfamily \#define M\+M\+N\+O\+S\+O\+U\+ND}
+
+\mbox{\Hypertarget{rnet_8h_a9d456d4aa192a635dd10476ee2800884}\label{rnet_8h_a9d456d4aa192a635dd10476ee2800884}} 
+\index{rnet.h@{rnet.h}!NAME\_INFO\_DEFAULT@{NAME\_INFO\_DEFAULT}}
+\index{NAME\_INFO\_DEFAULT@{NAME\_INFO\_DEFAULT}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NAME\_INFO\_DEFAULT}{NAME\_INFO\_DEFAULT}}
+{\footnotesize\ttfamily \#define N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+D\+E\+F\+A\+U\+LT~(0x00)}
+
+\mbox{\Hypertarget{rnet_8h_afb36201409bf3d38bebd80a83c56dffd}\label{rnet_8h_afb36201409bf3d38bebd80a83c56dffd}} 
+\index{rnet.h@{rnet.h}!NAME\_INFO\_DGRAM@{NAME\_INFO\_DGRAM}}
+\index{NAME\_INFO\_DGRAM@{NAME\_INFO\_DGRAM}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NAME\_INFO\_DGRAM}{NAME\_INFO\_DGRAM}}
+{\footnotesize\ttfamily \#define N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+D\+G\+R\+AM~(0x10)}
+
+\mbox{\Hypertarget{rnet_8h_aeb8b58dc308403906112c1b01739c6cf}\label{rnet_8h_aeb8b58dc308403906112c1b01739c6cf}} 
+\index{rnet.h@{rnet.h}!NAME\_INFO\_NAMEREQD@{NAME\_INFO\_NAMEREQD}}
+\index{NAME\_INFO\_NAMEREQD@{NAME\_INFO\_NAMEREQD}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NAME\_INFO\_NAMEREQD}{NAME\_INFO\_NAMEREQD}}
+{\footnotesize\ttfamily \#define N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+N\+A\+M\+E\+R\+E\+QD~(0x04)}
+
+\mbox{\Hypertarget{rnet_8h_a3975287d8e8af934f7c1265851e7e3f8}\label{rnet_8h_a3975287d8e8af934f7c1265851e7e3f8}} 
+\index{rnet.h@{rnet.h}!NAME\_INFO\_NOFQDN@{NAME\_INFO\_NOFQDN}}
+\index{NAME\_INFO\_NOFQDN@{NAME\_INFO\_NOFQDN}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NAME\_INFO\_NOFQDN}{NAME\_INFO\_NOFQDN}}
+{\footnotesize\ttfamily \#define N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+N\+O\+F\+Q\+DN~(0x01)}
+
+\mbox{\Hypertarget{rnet_8h_ac5a943f092c054e74fe871f7c9243985}\label{rnet_8h_ac5a943f092c054e74fe871f7c9243985}} 
+\index{rnet.h@{rnet.h}!NAME\_INFO\_NUMERICHOST@{NAME\_INFO\_NUMERICHOST}}
+\index{NAME\_INFO\_NUMERICHOST@{NAME\_INFO\_NUMERICHOST}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NAME\_INFO\_NUMERICHOST}{NAME\_INFO\_NUMERICHOST}}
+{\footnotesize\ttfamily \#define N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+N\+U\+M\+E\+R\+I\+C\+H\+O\+ST~(0x02)}
+
+\mbox{\Hypertarget{rnet_8h_aca9470a670e4aa283db04f24d5bff0ac}\label{rnet_8h_aca9470a670e4aa283db04f24d5bff0ac}} 
+\index{rnet.h@{rnet.h}!NAME\_INFO\_NUMERICSERV@{NAME\_INFO\_NUMERICSERV}}
+\index{NAME\_INFO\_NUMERICSERV@{NAME\_INFO\_NUMERICSERV}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NAME\_INFO\_NUMERICSERV}{NAME\_INFO\_NUMERICSERV}}
+{\footnotesize\ttfamily \#define N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+\+N\+U\+M\+E\+R\+I\+C\+S\+E\+RV~(0x08)}
+
+\mbox{\Hypertarget{rnet_8h_aa59dc3d2c7dc2ec85638761aeb2d50f7}\label{rnet_8h_aa59dc3d2c7dc2ec85638761aeb2d50f7}} 
+\index{rnet.h@{rnet.h}!NOATOM@{NOATOM}}
+\index{NOATOM@{NOATOM}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOATOM}{NOATOM}}
+{\footnotesize\ttfamily \#define N\+O\+A\+T\+OM}
+
+\mbox{\Hypertarget{rnet_8h_a2e4c78354db40d44bea894e472550c11}\label{rnet_8h_a2e4c78354db40d44bea894e472550c11}} 
+\index{rnet.h@{rnet.h}!NOCLIPBOARD@{NOCLIPBOARD}}
+\index{NOCLIPBOARD@{NOCLIPBOARD}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOCLIPBOARD}{NOCLIPBOARD}}
+{\footnotesize\ttfamily \#define N\+O\+C\+L\+I\+P\+B\+O\+A\+RD}
+
+\mbox{\Hypertarget{rnet_8h_ad99d89815bdc61acfe8744c41c96e637}\label{rnet_8h_ad99d89815bdc61acfe8744c41c96e637}} 
+\index{rnet.h@{rnet.h}!NOCOLOR@{NOCOLOR}}
+\index{NOCOLOR@{NOCOLOR}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOCOLOR}{NOCOLOR}}
+{\footnotesize\ttfamily \#define N\+O\+C\+O\+L\+OR}
+
+\mbox{\Hypertarget{rnet_8h_a2ee511fa2fd29a9a1f0efbcb2c364b8f}\label{rnet_8h_a2ee511fa2fd29a9a1f0efbcb2c364b8f}} 
+\index{rnet.h@{rnet.h}!NOCOMM@{NOCOMM}}
+\index{NOCOMM@{NOCOMM}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOCOMM}{NOCOMM}}
+{\footnotesize\ttfamily \#define N\+O\+C\+O\+MM}
+
+\mbox{\Hypertarget{rnet_8h_a679a4dcdfeb97910576cff8452efb28e}\label{rnet_8h_a679a4dcdfeb97910576cff8452efb28e}} 
+\index{rnet.h@{rnet.h}!NOCTLMGR@{NOCTLMGR}}
+\index{NOCTLMGR@{NOCTLMGR}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOCTLMGR}{NOCTLMGR}}
+{\footnotesize\ttfamily \#define N\+O\+C\+T\+L\+M\+GR}
+
+\mbox{\Hypertarget{rnet_8h_a348ad07df4aceda9097d9497b78bccd9}\label{rnet_8h_a348ad07df4aceda9097d9497b78bccd9}} 
+\index{rnet.h@{rnet.h}!NODEFERWINDOWPOS@{NODEFERWINDOWPOS}}
+\index{NODEFERWINDOWPOS@{NODEFERWINDOWPOS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NODEFERWINDOWPOS}{NODEFERWINDOWPOS}}
+{\footnotesize\ttfamily \#define N\+O\+D\+E\+F\+E\+R\+W\+I\+N\+D\+O\+W\+P\+OS}
+
+\mbox{\Hypertarget{rnet_8h_a5ceb8b3e84824f87cae315091546e67f}\label{rnet_8h_a5ceb8b3e84824f87cae315091546e67f}} 
+\index{rnet.h@{rnet.h}!NODRAWTEXT@{NODRAWTEXT}}
+\index{NODRAWTEXT@{NODRAWTEXT}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NODRAWTEXT}{NODRAWTEXT}}
+{\footnotesize\ttfamily \#define N\+O\+D\+R\+A\+W\+T\+E\+XT}
+
+\mbox{\Hypertarget{rnet_8h_a2bedaca1c6ca66de2397772910fbe140}\label{rnet_8h_a2bedaca1c6ca66de2397772910fbe140}} 
+\index{rnet.h@{rnet.h}!NOGDI@{NOGDI}}
+\index{NOGDI@{NOGDI}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOGDI}{NOGDI}}
+{\footnotesize\ttfamily \#define N\+O\+G\+DI}
+
+\mbox{\Hypertarget{rnet_8h_a8effd0655f96cc25e57c0b348669df7b}\label{rnet_8h_a8effd0655f96cc25e57c0b348669df7b}} 
+\index{rnet.h@{rnet.h}!NOGDICAPMASKS@{NOGDICAPMASKS}}
+\index{NOGDICAPMASKS@{NOGDICAPMASKS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOGDICAPMASKS}{NOGDICAPMASKS}}
+{\footnotesize\ttfamily \#define N\+O\+G\+D\+I\+C\+A\+P\+M\+A\+S\+KS}
+
+\mbox{\Hypertarget{rnet_8h_a34c6896a3b5f4079b3539fb8118be1d5}\label{rnet_8h_a34c6896a3b5f4079b3539fb8118be1d5}} 
+\index{rnet.h@{rnet.h}!NOHELP@{NOHELP}}
+\index{NOHELP@{NOHELP}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOHELP}{NOHELP}}
+{\footnotesize\ttfamily \#define N\+O\+H\+E\+LP}
+
+\mbox{\Hypertarget{rnet_8h_a8b8c544b2e9e3359de25f7d89f4f5de9}\label{rnet_8h_a8b8c544b2e9e3359de25f7d89f4f5de9}} 
+\index{rnet.h@{rnet.h}!NOICONS@{NOICONS}}
+\index{NOICONS@{NOICONS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOICONS}{NOICONS}}
+{\footnotesize\ttfamily \#define N\+O\+I\+C\+O\+NS}
+
+\mbox{\Hypertarget{rnet_8h_a0958eca070bb77eddff0a604acda46f2}\label{rnet_8h_a0958eca070bb77eddff0a604acda46f2}} 
+\index{rnet.h@{rnet.h}!NOKANJI@{NOKANJI}}
+\index{NOKANJI@{NOKANJI}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOKANJI}{NOKANJI}}
+{\footnotesize\ttfamily \#define N\+O\+K\+A\+N\+JI}
+
+\mbox{\Hypertarget{rnet_8h_a1381fe81f9874aa4a669b6bd556f87fa}\label{rnet_8h_a1381fe81f9874aa4a669b6bd556f87fa}} 
+\index{rnet.h@{rnet.h}!NOKERNEL@{NOKERNEL}}
+\index{NOKERNEL@{NOKERNEL}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOKERNEL}{NOKERNEL}}
+{\footnotesize\ttfamily \#define N\+O\+K\+E\+R\+N\+EL}
+
+\mbox{\Hypertarget{rnet_8h_a6f4a8b3fe02f55fd022b91b3a965e15c}\label{rnet_8h_a6f4a8b3fe02f55fd022b91b3a965e15c}} 
+\index{rnet.h@{rnet.h}!NOKEYSTATES@{NOKEYSTATES}}
+\index{NOKEYSTATES@{NOKEYSTATES}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOKEYSTATES}{NOKEYSTATES}}
+{\footnotesize\ttfamily \#define N\+O\+K\+E\+Y\+S\+T\+A\+T\+ES}
+
+\mbox{\Hypertarget{rnet_8h_a8bd3112472ae1e33be8faf5294230948}\label{rnet_8h_a8bd3112472ae1e33be8faf5294230948}} 
+\index{rnet.h@{rnet.h}!NOMB@{NOMB}}
+\index{NOMB@{NOMB}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOMB}{NOMB}}
+{\footnotesize\ttfamily \#define N\+O\+MB}
+
+\mbox{\Hypertarget{rnet_8h_a256fe1caeb996b1142c3eb51097fef0e}\label{rnet_8h_a256fe1caeb996b1142c3eb51097fef0e}} 
+\index{rnet.h@{rnet.h}!NOMCX@{NOMCX}}
+\index{NOMCX@{NOMCX}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOMCX}{NOMCX}}
+{\footnotesize\ttfamily \#define N\+O\+M\+CX}
+
+\mbox{\Hypertarget{rnet_8h_a8b2f514658ba28ae0ea3b8b96edf520e}\label{rnet_8h_a8b2f514658ba28ae0ea3b8b96edf520e}} 
+\index{rnet.h@{rnet.h}!NOMEMMGR@{NOMEMMGR}}
+\index{NOMEMMGR@{NOMEMMGR}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOMEMMGR}{NOMEMMGR}}
+{\footnotesize\ttfamily \#define N\+O\+M\+E\+M\+M\+GR}
+
+\mbox{\Hypertarget{rnet_8h_a15dd7444df67d292b83dc869d6e4b417}\label{rnet_8h_a15dd7444df67d292b83dc869d6e4b417}} 
+\index{rnet.h@{rnet.h}!NOMENUS@{NOMENUS}}
+\index{NOMENUS@{NOMENUS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOMENUS}{NOMENUS}}
+{\footnotesize\ttfamily \#define N\+O\+M\+E\+N\+US}
+
+\mbox{\Hypertarget{rnet_8h_a37618c72c08b2464576612b2ac595b30}\label{rnet_8h_a37618c72c08b2464576612b2ac595b30}} 
+\index{rnet.h@{rnet.h}!NOMETAFILE@{NOMETAFILE}}
+\index{NOMETAFILE@{NOMETAFILE}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOMETAFILE}{NOMETAFILE}}
+{\footnotesize\ttfamily \#define N\+O\+M\+E\+T\+A\+F\+I\+LE}
+
+\mbox{\Hypertarget{rnet_8h_a9f918755b601cf4bffca775992e6fb90}\label{rnet_8h_a9f918755b601cf4bffca775992e6fb90}} 
+\index{rnet.h@{rnet.h}!NOMINMAX@{NOMINMAX}}
+\index{NOMINMAX@{NOMINMAX}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOMINMAX}{NOMINMAX}}
+{\footnotesize\ttfamily \#define N\+O\+M\+I\+N\+M\+AX}
+
+\mbox{\Hypertarget{rnet_8h_a1f4e51b89381cd3aecebd55bd4d700b6}\label{rnet_8h_a1f4e51b89381cd3aecebd55bd4d700b6}} 
+\index{rnet.h@{rnet.h}!NOMSG@{NOMSG}}
+\index{NOMSG@{NOMSG}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOMSG}{NOMSG}}
+{\footnotesize\ttfamily \#define N\+O\+M\+SG}
+
+\mbox{\Hypertarget{rnet_8h_a52be9abe7ca69b513aa7e975284d4f67}\label{rnet_8h_a52be9abe7ca69b513aa7e975284d4f67}} 
+\index{rnet.h@{rnet.h}!NONLS@{NONLS}}
+\index{NONLS@{NONLS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NONLS}{NONLS}}
+{\footnotesize\ttfamily \#define N\+O\+N\+LS}
+
+\mbox{\Hypertarget{rnet_8h_a2d7186e4a6dfcc0011461ce1e8b70a05}\label{rnet_8h_a2d7186e4a6dfcc0011461ce1e8b70a05}} 
+\index{rnet.h@{rnet.h}!NOOPENFILE@{NOOPENFILE}}
+\index{NOOPENFILE@{NOOPENFILE}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOOPENFILE}{NOOPENFILE}}
+{\footnotesize\ttfamily \#define N\+O\+O\+P\+E\+N\+F\+I\+LE}
+
+\mbox{\Hypertarget{rnet_8h_af883320ccbc88fe5ff2d8733ec0a034f}\label{rnet_8h_af883320ccbc88fe5ff2d8733ec0a034f}} 
+\index{rnet.h@{rnet.h}!NOPROFILER@{NOPROFILER}}
+\index{NOPROFILER@{NOPROFILER}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOPROFILER}{NOPROFILER}}
+{\footnotesize\ttfamily \#define N\+O\+P\+R\+O\+F\+I\+L\+ER}
+
+\mbox{\Hypertarget{rnet_8h_a0293d1b2742d9c9ef401d75a55b81859}\label{rnet_8h_a0293d1b2742d9c9ef401d75a55b81859}} 
+\index{rnet.h@{rnet.h}!NORASTEROPS@{NORASTEROPS}}
+\index{NORASTEROPS@{NORASTEROPS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NORASTEROPS}{NORASTEROPS}}
+{\footnotesize\ttfamily \#define N\+O\+R\+A\+S\+T\+E\+R\+O\+PS}
+
+\mbox{\Hypertarget{rnet_8h_a06f62f70cab65b4c19972202f784e12d}\label{rnet_8h_a06f62f70cab65b4c19972202f784e12d}} 
+\index{rnet.h@{rnet.h}!NOSCROLL@{NOSCROLL}}
+\index{NOSCROLL@{NOSCROLL}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOSCROLL}{NOSCROLL}}
+{\footnotesize\ttfamily \#define N\+O\+S\+C\+R\+O\+LL}
+
+\mbox{\Hypertarget{rnet_8h_a14ac98af6281e748377693d824e41ca9}\label{rnet_8h_a14ac98af6281e748377693d824e41ca9}} 
+\index{rnet.h@{rnet.h}!NOSERVICE@{NOSERVICE}}
+\index{NOSERVICE@{NOSERVICE}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOSERVICE}{NOSERVICE}}
+{\footnotesize\ttfamily \#define N\+O\+S\+E\+R\+V\+I\+CE}
+
+\mbox{\Hypertarget{rnet_8h_ab2dcc39e73a373330467f5f503c779d3}\label{rnet_8h_ab2dcc39e73a373330467f5f503c779d3}} 
+\index{rnet.h@{rnet.h}!NOSHOWWINDOW@{NOSHOWWINDOW}}
+\index{NOSHOWWINDOW@{NOSHOWWINDOW}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOSHOWWINDOW}{NOSHOWWINDOW}}
+{\footnotesize\ttfamily \#define N\+O\+S\+H\+O\+W\+W\+I\+N\+D\+OW}
+
+\mbox{\Hypertarget{rnet_8h_af40cddcc88a6ebeed4f75d4bbbed195e}\label{rnet_8h_af40cddcc88a6ebeed4f75d4bbbed195e}} 
+\index{rnet.h@{rnet.h}!NOSOUND@{NOSOUND}}
+\index{NOSOUND@{NOSOUND}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOSOUND}{NOSOUND}}
+{\footnotesize\ttfamily \#define N\+O\+S\+O\+U\+ND}
+
+\mbox{\Hypertarget{rnet_8h_a271ce221dc9c5c8887d443008b3d718c}\label{rnet_8h_a271ce221dc9c5c8887d443008b3d718c}} 
+\index{rnet.h@{rnet.h}!NOSYSCOMMANDS@{NOSYSCOMMANDS}}
+\index{NOSYSCOMMANDS@{NOSYSCOMMANDS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOSYSCOMMANDS}{NOSYSCOMMANDS}}
+{\footnotesize\ttfamily \#define N\+O\+S\+Y\+S\+C\+O\+M\+M\+A\+N\+DS}
+
+\mbox{\Hypertarget{rnet_8h_aea709a8ba0a7d510cefcf625fdb3b4b1}\label{rnet_8h_aea709a8ba0a7d510cefcf625fdb3b4b1}} 
+\index{rnet.h@{rnet.h}!NOSYSMETRICS@{NOSYSMETRICS}}
+\index{NOSYSMETRICS@{NOSYSMETRICS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOSYSMETRICS}{NOSYSMETRICS}}
+{\footnotesize\ttfamily \#define N\+O\+S\+Y\+S\+M\+E\+T\+R\+I\+CS}
+
+\mbox{\Hypertarget{rnet_8h_a7d6ea5ce712ed1d05533cf8ebf38d880}\label{rnet_8h_a7d6ea5ce712ed1d05533cf8ebf38d880}} 
+\index{rnet.h@{rnet.h}!NOTEXTMETRIC@{NOTEXTMETRIC}}
+\index{NOTEXTMETRIC@{NOTEXTMETRIC}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOTEXTMETRIC}{NOTEXTMETRIC}}
+{\footnotesize\ttfamily \#define N\+O\+T\+E\+X\+T\+M\+E\+T\+R\+IC}
+
+\mbox{\Hypertarget{rnet_8h_a73886ff6a915a4a92e3ade13eba71f6d}\label{rnet_8h_a73886ff6a915a4a92e3ade13eba71f6d}} 
+\index{rnet.h@{rnet.h}!NOUSER@{NOUSER}}
+\index{NOUSER@{NOUSER}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOUSER}{NOUSER}}
+{\footnotesize\ttfamily \#define N\+O\+U\+S\+ER}
+
+\mbox{\Hypertarget{rnet_8h_ac5ff788cb8638ce5daf99e586083eef2}\label{rnet_8h_ac5ff788cb8638ce5daf99e586083eef2}} 
+\index{rnet.h@{rnet.h}!NOVIRTUALKEYCODES@{NOVIRTUALKEYCODES}}
+\index{NOVIRTUALKEYCODES@{NOVIRTUALKEYCODES}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOVIRTUALKEYCODES}{NOVIRTUALKEYCODES}}
+{\footnotesize\ttfamily \#define N\+O\+V\+I\+R\+T\+U\+A\+L\+K\+E\+Y\+C\+O\+D\+ES}
+
+\mbox{\Hypertarget{rnet_8h_aac388bb1bd11a9a15b594321658ae233}\label{rnet_8h_aac388bb1bd11a9a15b594321658ae233}} 
+\index{rnet.h@{rnet.h}!NOWH@{NOWH}}
+\index{NOWH@{NOWH}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOWH}{NOWH}}
+{\footnotesize\ttfamily \#define N\+O\+WH}
+
+\mbox{\Hypertarget{rnet_8h_a90d30d395de13a4f31a42b4066cfbb68}\label{rnet_8h_a90d30d395de13a4f31a42b4066cfbb68}} 
+\index{rnet.h@{rnet.h}!NOWINMESSAGES@{NOWINMESSAGES}}
+\index{NOWINMESSAGES@{NOWINMESSAGES}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOWINMESSAGES}{NOWINMESSAGES}}
+{\footnotesize\ttfamily \#define N\+O\+W\+I\+N\+M\+E\+S\+S\+A\+G\+ES}
+
+\mbox{\Hypertarget{rnet_8h_a964a6e23899e4f0b1886d86b1981545d}\label{rnet_8h_a964a6e23899e4f0b1886d86b1981545d}} 
+\index{rnet.h@{rnet.h}!NOWINOFFSETS@{NOWINOFFSETS}}
+\index{NOWINOFFSETS@{NOWINOFFSETS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOWINOFFSETS}{NOWINOFFSETS}}
+{\footnotesize\ttfamily \#define N\+O\+W\+I\+N\+O\+F\+F\+S\+E\+TS}
+
+\mbox{\Hypertarget{rnet_8h_a22c56a31990574a86b40f60b6073cdba}\label{rnet_8h_a22c56a31990574a86b40f60b6073cdba}} 
+\index{rnet.h@{rnet.h}!NOWINSTYLES@{NOWINSTYLES}}
+\index{NOWINSTYLES@{NOWINSTYLES}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{NOWINSTYLES}{NOWINSTYLES}}
+{\footnotesize\ttfamily \#define N\+O\+W\+I\+N\+S\+T\+Y\+L\+ES}
+
+\mbox{\Hypertarget{rnet_8h_a3cfcf123d4ead264289232f91f2c9ca5}\label{rnet_8h_a3cfcf123d4ead264289232f91f2c9ca5}} 
+\index{rnet.h@{rnet.h}!ntohll@{ntohll}}
+\index{ntohll@{ntohll}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ntohll}{ntohll}}
+{\footnotesize\ttfamily \#define ntohll(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}} }\end{DoxyParamCaption})~((((uint64) ntohl(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}})) $<$$<$ 32) + ntohl(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}} $>$$>$ 32))}
+
+\mbox{\Hypertarget{rnet_8h_a3a75770af38d05856eb2e9d1867b471c}\label{rnet_8h_a3a75770af38d05856eb2e9d1867b471c}} 
+\index{rnet.h@{rnet.h}!OEMRESOURCE@{OEMRESOURCE}}
+\index{OEMRESOURCE@{OEMRESOURCE}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{OEMRESOURCE}{OEMRESOURCE}}
+{\footnotesize\ttfamily \#define O\+E\+M\+R\+E\+S\+O\+U\+R\+CE}
+
+\mbox{\Hypertarget{rnet_8h_aea87ce97f86effb2c4df6274d4aac567}\label{rnet_8h_aea87ce97f86effb2c4df6274d4aac567}} 
+\index{rnet.h@{rnet.h}!RESULT\_FAILURE@{RESULT\_FAILURE}}
+\index{RESULT\_FAILURE@{RESULT\_FAILURE}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{RESULT\_FAILURE}{RESULT\_FAILURE}}
+{\footnotesize\ttfamily \#define R\+E\+S\+U\+L\+T\+\_\+\+F\+A\+I\+L\+U\+RE~1}
+
+\mbox{\Hypertarget{rnet_8h_a7cc1753a05a0821f6c70dd2bccfbab5c}\label{rnet_8h_a7cc1753a05a0821f6c70dd2bccfbab5c}} 
+\index{rnet.h@{rnet.h}!RESULT\_SUCCESS@{RESULT\_SUCCESS}}
+\index{RESULT\_SUCCESS@{RESULT\_SUCCESS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{RESULT\_SUCCESS}{RESULT\_SUCCESS}}
+{\footnotesize\ttfamily \#define R\+E\+S\+U\+L\+T\+\_\+\+S\+U\+C\+C\+E\+SS~0}
+
+\mbox{\Hypertarget{rnet_8h_af5dac568c5ed0cdfeea1c2322e7174d1}\label{rnet_8h_af5dac568c5ed0cdfeea1c2322e7174d1}} 
+\index{rnet.h@{rnet.h}!RNET\_CALLOC@{RNET\_CALLOC}}
+\index{RNET\_CALLOC@{RNET\_CALLOC}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{RNET\_CALLOC}{RNET\_CALLOC}}
+{\footnotesize\ttfamily \#define R\+N\+E\+T\+\_\+\+C\+A\+L\+L\+OC(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{sz }\end{DoxyParamCaption})~calloc(n,sz)}
+
+\mbox{\Hypertarget{rnet_8h_a73bf53ba681dd57ba5a0b677f89f42c7}\label{rnet_8h_a73bf53ba681dd57ba5a0b677f89f42c7}} 
+\index{rnet.h@{rnet.h}!RNET\_FREE@{RNET\_FREE}}
+\index{RNET\_FREE@{RNET\_FREE}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{RNET\_FREE}{RNET\_FREE}}
+{\footnotesize\ttfamily \#define R\+N\+E\+T\+\_\+\+F\+R\+EE(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~free(p)}
+
+\mbox{\Hypertarget{rnet_8h_a6087bff342a6ee0522d115e0abca6126}\label{rnet_8h_a6087bff342a6ee0522d115e0abca6126}} 
+\index{rnet.h@{rnet.h}!RNET\_MALLOC@{RNET\_MALLOC}}
+\index{RNET\_MALLOC@{RNET\_MALLOC}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{RNET\_MALLOC}{RNET\_MALLOC}}
+{\footnotesize\ttfamily \#define R\+N\+E\+T\+\_\+\+M\+A\+L\+L\+OC(\begin{DoxyParamCaption}\item[{}]{sz }\end{DoxyParamCaption})~malloc(sz)}
+
+\mbox{\Hypertarget{rnet_8h_aff55fe551a9992a54ec54621c524d0a4}\label{rnet_8h_aff55fe551a9992a54ec54621c524d0a4}} 
+\index{rnet.h@{rnet.h}!SOCKET@{SOCKET}}
+\index{SOCKET@{SOCKET}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET}{SOCKET}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+ET~\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}
+
+\mbox{\Hypertarget{rnet_8h_a633b0396ff93d336a088412a190a5072}\label{rnet_8h_a633b0396ff93d336a088412a190a5072}} 
+\index{rnet.h@{rnet.h}!SOCKET\_ERROR@{SOCKET\_ERROR}}
+\index{SOCKET\_ERROR@{SOCKET\_ERROR}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ERROR}{SOCKET\_ERROR}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR~-\/1}
+
+\mbox{\Hypertarget{rnet_8h_a9b1432dd7e336816eda674c15d960405}\label{rnet_8h_a9b1432dd7e336816eda674c15d960405}} 
+\index{rnet.h@{rnet.h}!SOCKET\_MAX\_QUEUE\_SIZE@{SOCKET\_MAX\_QUEUE\_SIZE}}
+\index{SOCKET\_MAX\_QUEUE\_SIZE@{SOCKET\_MAX\_QUEUE\_SIZE}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_MAX\_QUEUE\_SIZE}{SOCKET\_MAX\_QUEUE\_SIZE}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE~(16)}
+
+\mbox{\Hypertarget{rnet_8h_a5183bec49074d6f7913c340140dc71c9}\label{rnet_8h_a5183bec49074d6f7913c340140dc71c9}} 
+\index{rnet.h@{rnet.h}!SOCKET\_MAX\_SET\_SIZE@{SOCKET\_MAX\_SET\_SIZE}}
+\index{SOCKET\_MAX\_SET\_SIZE@{SOCKET\_MAX\_SET\_SIZE}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_MAX\_SET\_SIZE}{SOCKET\_MAX\_SET\_SIZE}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+M\+A\+X\+\_\+\+S\+E\+T\+\_\+\+S\+I\+ZE~(32)}
+
+\mbox{\Hypertarget{rnet_8h_a5633ef3dc32baf96a9f8723a628f7db6}\label{rnet_8h_a5633ef3dc32baf96a9f8723a628f7db6}} 
+\index{rnet.h@{rnet.h}!SOCKET\_MAX\_SOCK\_OPTS@{SOCKET\_MAX\_SOCK\_OPTS}}
+\index{SOCKET\_MAX\_SOCK\_OPTS@{SOCKET\_MAX\_SOCK\_OPTS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_MAX\_SOCK\_OPTS}{SOCKET\_MAX\_SOCK\_OPTS}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+M\+A\+X\+\_\+\+S\+O\+C\+K\+\_\+\+O\+P\+TS~(4)}
+
+\mbox{\Hypertarget{rnet_8h_a706cefcd61f57a478a950ca8d29e89b8}\label{rnet_8h_a706cefcd61f57a478a950ca8d29e89b8}} 
+\index{rnet.h@{rnet.h}!SOCKET\_MAX\_UDPADDRESSES@{SOCKET\_MAX\_UDPADDRESSES}}
+\index{SOCKET\_MAX\_UDPADDRESSES@{SOCKET\_MAX\_UDPADDRESSES}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_MAX\_UDPADDRESSES}{SOCKET\_MAX\_UDPADDRESSES}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+M\+A\+X\+\_\+\+U\+D\+P\+A\+D\+D\+R\+E\+S\+S\+ES~(4)}
+
+\mbox{\Hypertarget{rnet_8h_a3b984adc1aad0cbec4c6d9b45e5ba6d5}\label{rnet_8h_a3b984adc1aad0cbec4c6d9b45e5ba6d5}} 
+\index{rnet.h@{rnet.h}!SOCKET\_MAX\_UDPCHANNELS@{SOCKET\_MAX\_UDPCHANNELS}}
+\index{SOCKET\_MAX\_UDPCHANNELS@{SOCKET\_MAX\_UDPCHANNELS}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_MAX\_UDPCHANNELS}{SOCKET\_MAX\_UDPCHANNELS}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+M\+A\+X\+\_\+\+U\+D\+P\+C\+H\+A\+N\+N\+E\+LS~(32)}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}\label{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}} 
+\index{rnet.h@{rnet.h}!AddressInformation@{AddressInformation}}
+\index{AddressInformation@{AddressInformation}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{AddressInformation}{AddressInformation}}
+{\footnotesize\ttfamily typedef struct \+\_\+\+Address\+Information$\ast$ \mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}}}
+
+\mbox{\Hypertarget{rnet_8h_a024fa5fb50879de3cba5985b06ab636c}\label{rnet_8h_a024fa5fb50879de3cba5985b06ab636c}} 
+\index{rnet.h@{rnet.h}!IPAddress@{IPAddress}}
+\index{IPAddress@{IPAddress}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{IPAddress}{IPAddress}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_i_p_address}{I\+P\+Address}} \mbox{\hyperlink{struct_i_p_address}{I\+P\+Address}}}
+
+\mbox{\Hypertarget{rnet_8h_a9351530394464c1d1892ddeca8a6aea1}\label{rnet_8h_a9351530394464c1d1892ddeca8a6aea1}} 
+\index{rnet.h@{rnet.h}!Packet@{Packet}}
+\index{Packet@{Packet}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{Packet}{Packet}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_packet}{Packet}} \mbox{\hyperlink{struct_packet}{Packet}}}
+
+\mbox{\Hypertarget{rnet_8h_a9ca40401240ec743ac7c45f6da062750}\label{rnet_8h_a9ca40401240ec743ac7c45f6da062750}} 
+\index{rnet.h@{rnet.h}!Socket@{Socket}}
+\index{Socket@{Socket}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{Socket}{Socket}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_socket}{Socket}} \mbox{\hyperlink{struct_socket}{Socket}}}
+
+\mbox{\Hypertarget{rnet_8h_ad208bfd0dd46ff2d9168ff0e58733c46}\label{rnet_8h_ad208bfd0dd46ff2d9168ff0e58733c46}} 
+\index{rnet.h@{rnet.h}!SocketAddress@{SocketAddress}}
+\index{SocketAddress@{SocketAddress}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketAddress}{SocketAddress}}
+{\footnotesize\ttfamily typedef struct \+\_\+\+Socket\+Address$\ast$ \mbox{\hyperlink{rnet_8h_ad208bfd0dd46ff2d9168ff0e58733c46}{Socket\+Address}}}
+
+\mbox{\Hypertarget{rnet_8h_a0315342f59e125e44dd4bae552102466}\label{rnet_8h_a0315342f59e125e44dd4bae552102466}} 
+\index{rnet.h@{rnet.h}!SocketAddressIPv4@{SocketAddressIPv4}}
+\index{SocketAddressIPv4@{SocketAddressIPv4}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketAddressIPv4}{SocketAddressIPv4}}
+{\footnotesize\ttfamily typedef struct \+\_\+\+Socket\+Address\+I\+Pv4$\ast$ \mbox{\hyperlink{rnet_8h_a0315342f59e125e44dd4bae552102466}{Socket\+Address\+I\+Pv4}}}
+
+\mbox{\Hypertarget{rnet_8h_ad7a31420ceecb2fabc3b6bec5557a451}\label{rnet_8h_ad7a31420ceecb2fabc3b6bec5557a451}} 
+\index{rnet.h@{rnet.h}!SocketAddressIPv6@{SocketAddressIPv6}}
+\index{SocketAddressIPv6@{SocketAddressIPv6}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketAddressIPv6}{SocketAddressIPv6}}
+{\footnotesize\ttfamily typedef struct \+\_\+\+Socket\+Address\+I\+Pv6$\ast$ \mbox{\hyperlink{rnet_8h_ad7a31420ceecb2fabc3b6bec5557a451}{Socket\+Address\+I\+Pv6}}}
+
+\mbox{\Hypertarget{rnet_8h_a7a22c34741344764c4027d92e3935a20}\label{rnet_8h_a7a22c34741344764c4027d92e3935a20}} 
+\index{rnet.h@{rnet.h}!SocketAddressStorage@{SocketAddressStorage}}
+\index{SocketAddressStorage@{SocketAddressStorage}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketAddressStorage}{SocketAddressStorage}}
+{\footnotesize\ttfamily typedef struct \+\_\+\+Socket\+Address\+Storage$\ast$ \mbox{\hyperlink{rnet_8h_a7a22c34741344764c4027d92e3935a20}{Socket\+Address\+Storage}}}
+
+\mbox{\Hypertarget{rnet_8h_a5d8af9067194dce781973e2cac697d63}\label{rnet_8h_a5d8af9067194dce781973e2cac697d63}} 
+\index{rnet.h@{rnet.h}!SocketChannel@{SocketChannel}}
+\index{SocketChannel@{SocketChannel}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketChannel}{SocketChannel}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} \mbox{\hyperlink{rnet_8h_a5d8af9067194dce781973e2cac697d63}{Socket\+Channel}}}
+
+\mbox{\Hypertarget{rnet_8h_a61bedba3415c9c0fc76cad8cbc0a411b}\label{rnet_8h_a61bedba3415c9c0fc76cad8cbc0a411b}} 
+\index{rnet.h@{rnet.h}!SocketConfig@{SocketConfig}}
+\index{SocketConfig@{SocketConfig}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketConfig}{SocketConfig}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_socket_config}{Socket\+Config}} \mbox{\hyperlink{struct_socket_config}{Socket\+Config}}}
+
+\mbox{\Hypertarget{rnet_8h_a4a53adb8eb057c745e8f9e491ee42b24}\label{rnet_8h_a4a53adb8eb057c745e8f9e491ee42b24}} 
+\index{rnet.h@{rnet.h}!SocketDataPacket@{SocketDataPacket}}
+\index{SocketDataPacket@{SocketDataPacket}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketDataPacket}{SocketDataPacket}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}} \mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}}}
+
+\mbox{\Hypertarget{rnet_8h_ad1a79d064b634c9473fa9c812ef7bc8d}\label{rnet_8h_ad1a79d064b634c9473fa9c812ef7bc8d}} 
+\index{rnet.h@{rnet.h}!SocketOpt@{SocketOpt}}
+\index{SocketOpt@{SocketOpt}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketOpt}{SocketOpt}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_socket_opt}{Socket\+Opt}} \mbox{\hyperlink{struct_socket_opt}{Socket\+Opt}}}
+
+\mbox{\Hypertarget{rnet_8h_aeef54e179ab8f367a053e5e4bd07596a}\label{rnet_8h_aeef54e179ab8f367a053e5e4bd07596a}} 
+\index{rnet.h@{rnet.h}!SocketResult@{SocketResult}}
+\index{SocketResult@{SocketResult}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketResult}{SocketResult}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_socket_result}{Socket\+Result}} \mbox{\hyperlink{struct_socket_result}{Socket\+Result}}}
+
+\mbox{\Hypertarget{rnet_8h_aed2c8d8dff3512e21fdfa2848c7ddefd}\label{rnet_8h_aed2c8d8dff3512e21fdfa2848c7ddefd}} 
+\index{rnet.h@{rnet.h}!SocketSet@{SocketSet}}
+\index{SocketSet@{SocketSet}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketSet}{SocketSet}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_socket_set}{Socket\+Set}} \mbox{\hyperlink{struct_socket_set}{Socket\+Set}}}
+
+\mbox{\Hypertarget{rnet_8h_a4a3bd31fe991858e0c7e49fb587f6b1b}\label{rnet_8h_a4a3bd31fe991858e0c7e49fb587f6b1b}} 
+\index{rnet.h@{rnet.h}!UDPChannel@{UDPChannel}}
+\index{UDPChannel@{UDPChannel}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{UDPChannel}{UDPChannel}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_u_d_p_channel}{U\+D\+P\+Channel}} \mbox{\hyperlink{struct_u_d_p_channel}{U\+D\+P\+Channel}}}
+
+
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{rnet_8h_af6a258d8f3ee5206d682d799316314b1}\label{rnet_8h_af6a258d8f3ee5206d682d799316314b1}} 
+\index{rnet.h@{rnet.h}!bool@{bool}}
+\index{bool@{bool}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{bool}{bool}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{false@{false}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!false@{false}}}\mbox{\Hypertarget{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}\label{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}} 
+false&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{true@{true}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!true@{true}}}\mbox{\Hypertarget{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}\label{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}} 
+true&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{false@{false}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!false@{false}}}\mbox{\Hypertarget{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}\label{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}} 
+false&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{true@{true}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!true@{true}}}\mbox{\Hypertarget{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}\label{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}} 
+true&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{false@{false}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!false@{false}}}\mbox{\Hypertarget{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}\label{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}} 
+false&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{true@{true}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!true@{true}}}\mbox{\Hypertarget{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}\label{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}} 
+true&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{false@{false}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!false@{false}}}\mbox{\Hypertarget{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}\label{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}} 
+false&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{true@{true}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!true@{true}}}\mbox{\Hypertarget{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}\label{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}} 
+true&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{false@{false}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!false@{false}}}\mbox{\Hypertarget{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}\label{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}} 
+false&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{true@{true}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!true@{true}}}\mbox{\Hypertarget{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}\label{rnet_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}} 
+true&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97}\label{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97}} 
+\index{rnet.h@{rnet.h}!SocketType@{SocketType}}
+\index{SocketType@{SocketType}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketType}{SocketType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97}{Socket\+Type}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SOCKET\_TCP@{SOCKET\_TCP}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!SOCKET\_TCP@{SOCKET\_TCP}}}\mbox{\Hypertarget{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97a2843397fd39bd96681bca78a8aa03096}\label{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97a2843397fd39bd96681bca78a8aa03096}} 
+S\+O\+C\+K\+E\+T\+\_\+\+T\+CP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SOCKET\_UDP@{SOCKET\_UDP}!rnet.h@{rnet.h}}\index{rnet.h@{rnet.h}!SOCKET\_UDP@{SOCKET\_UDP}}}\mbox{\Hypertarget{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97a180747545a72ff6d0fd0569e781aefd5}\label{rnet_8h_aa78c7398fa81f7f62aa233159d4d8d97a180747545a72ff6d0fd0569e781aefd5}} 
+S\+O\+C\+K\+E\+T\+\_\+\+U\+DP&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{rnet_8h_adfedffc78ad3f1fceeb2e0dc277a0e73}\label{rnet_8h_adfedffc78ad3f1fceeb2e0dc277a0e73}} 
+\index{rnet.h@{rnet.h}!AddSocket@{AddSocket}}
+\index{AddSocket@{AddSocket}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{AddSocket()}{AddSocket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Add\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_set}{Socket\+Set}} $\ast$}]{set,  }\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$}]{sock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_aa5cbdfb653d7e74c97a1b0ae3debc59b}\label{rnet_8h_aa5cbdfb653d7e74c97a1b0ae3debc59b}} 
+\index{rnet.h@{rnet.h}!AllocAddress@{AllocAddress}}
+\index{AllocAddress@{AllocAddress}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{AllocAddress()}{AllocAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} Alloc\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a012fa1f10193918c8377ce952824ed6a}\label{rnet_8h_a012fa1f10193918c8377ce952824ed6a}} 
+\index{rnet.h@{rnet.h}!AllocAddressList@{AllocAddressList}}
+\index{AllocAddressList@{AllocAddressList}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{AllocAddressList()}{AllocAddressList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}}$\ast$ Alloc\+Address\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a64222e11b29f5c23095297fe2bf8acdc}\label{rnet_8h_a64222e11b29f5c23095297fe2bf8acdc}} 
+\index{rnet.h@{rnet.h}!AllocPacket@{AllocPacket}}
+\index{AllocPacket@{AllocPacket}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{AllocPacket()}{AllocPacket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}}$\ast$ Alloc\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a7fa418a35af0e3cea83e210d81ae5cba}\label{rnet_8h_a7fa418a35af0e3cea83e210d81ae5cba}} 
+\index{rnet.h@{rnet.h}!AllocPacketList@{AllocPacketList}}
+\index{AllocPacketList@{AllocPacketList}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{AllocPacketList()}{AllocPacketList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}}$\ast$$\ast$ Alloc\+Packet\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{count,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a8fbee6752a53af9cc3aa29a8f5f8c040}\label{rnet_8h_a8fbee6752a53af9cc3aa29a8f5f8c040}} 
+\index{rnet.h@{rnet.h}!AllocSocket@{AllocSocket}}
+\index{AllocSocket@{AllocSocket}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{AllocSocket()}{AllocSocket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_socket}{Socket}}$\ast$ Alloc\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a1ff01ef8c539c1bccda6697fb8726531}\label{rnet_8h_a1ff01ef8c539c1bccda6697fb8726531}} 
+\index{rnet.h@{rnet.h}!AllocSocketResult@{AllocSocketResult}}
+\index{AllocSocketResult@{AllocSocketResult}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{AllocSocketResult()}{AllocSocketResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_socket_result}{Socket\+Result}}$\ast$ Alloc\+Socket\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a396248f078681c205746a8763d8d8ede}\label{rnet_8h_a396248f078681c205746a8763d8d8ede}} 
+\index{rnet.h@{rnet.h}!AllocSocketSet@{AllocSocketSet}}
+\index{AllocSocketSet@{AllocSocketSet}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{AllocSocketSet()}{AllocSocketSet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_socket_set}{Socket\+Set}}$\ast$ Alloc\+Socket\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_abb554d0ca8efb5b1268b419b0102520b}\label{rnet_8h_abb554d0ca8efb5b1268b419b0102520b}} 
+\index{rnet.h@{rnet.h}!CheckSockets@{CheckSockets}}
+\index{CheckSockets@{CheckSockets}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{CheckSockets()}{CheckSockets()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Check\+Sockets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_set}{Socket\+Set}} $\ast$}]{set,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{timeout }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a9b41cc6afd8c747b00cde5ae23849aec}\label{rnet_8h_a9b41cc6afd8c747b00cde5ae23849aec}} 
+\index{rnet.h@{rnet.h}!CloseNetwork@{CloseNetwork}}
+\index{CloseNetwork@{CloseNetwork}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{CloseNetwork()}{CloseNetwork()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Close\+Network (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a938a2fa69ee20a74c22f277d24ea4446}\label{rnet_8h_a938a2fa69ee20a74c22f277d24ea4446}} 
+\index{rnet.h@{rnet.h}!FreeAddress@{FreeAddress}}
+\index{FreeAddress@{FreeAddress}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{FreeAddress()}{FreeAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Free\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} $\ast$}]{address\+Info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_abc4db040e1d2c72b1d0b1f9f3edbccf5}\label{rnet_8h_abc4db040e1d2c72b1d0b1f9f3edbccf5}} 
+\index{rnet.h@{rnet.h}!FreePacket@{FreePacket}}
+\index{FreePacket@{FreePacket}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{FreePacket()}{FreePacket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Free\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}} $\ast$}]{packet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_ae38e93f37b95449bc5fcb7e408671b82}\label{rnet_8h_ae38e93f37b95449bc5fcb7e408671b82}} 
+\index{rnet.h@{rnet.h}!FreePacketList@{FreePacketList}}
+\index{FreePacketList@{FreePacketList}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{FreePacketList()}{FreePacketList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Free\+Packet\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}} $\ast$$\ast$}]{packets }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a58bba8a66a2767a439312158f8994c16}\label{rnet_8h_a58bba8a66a2767a439312158f8994c16}} 
+\index{rnet.h@{rnet.h}!FreeSocket@{FreeSocket}}
+\index{FreeSocket@{FreeSocket}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{FreeSocket()}{FreeSocket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Free\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$$\ast$}]{sock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a46c1da3b4cab3cfd39ed4ea6e75af524}\label{rnet_8h_a46c1da3b4cab3cfd39ed4ea6e75af524}} 
+\index{rnet.h@{rnet.h}!FreeSocketResult@{FreeSocketResult}}
+\index{FreeSocketResult@{FreeSocketResult}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{FreeSocketResult()}{FreeSocketResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Free\+Socket\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$$\ast$}]{result }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_aaef3839745b11d16e547ec6f7a390dfa}\label{rnet_8h_aaef3839745b11d16e547ec6f7a390dfa}} 
+\index{rnet.h@{rnet.h}!FreeSocketSet@{FreeSocketSet}}
+\index{FreeSocketSet@{FreeSocketSet}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{FreeSocketSet()}{FreeSocketSet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Free\+Socket\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_set}{Socket\+Set}} $\ast$}]{sockset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a449e98297705ecde22eb2873336f1243}\label{rnet_8h_a449e98297705ecde22eb2873336f1243}} 
+\index{rnet.h@{rnet.h}!GetAddressCanonName@{GetAddressCanonName}}
+\index{GetAddressCanonName@{GetAddressCanonName}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{GetAddressCanonName()}{GetAddressCanonName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ Get\+Address\+Canon\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}}}]{address }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a635dd34c43b71fecfcc7520ea09352a4}\label{rnet_8h_a635dd34c43b71fecfcc7520ea09352a4}} 
+\index{rnet.h@{rnet.h}!GetAddressFamily@{GetAddressFamily}}
+\index{GetAddressFamily@{GetAddressFamily}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{GetAddressFamily()}{GetAddressFamily()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Get\+Address\+Family (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}}}]{address }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_ac9963874ffa0959c90eec85ed32d7033}\label{rnet_8h_ac9963874ffa0959c90eec85ed32d7033}} 
+\index{rnet.h@{rnet.h}!GetAddressHostAndPort@{GetAddressHostAndPort}}
+\index{GetAddressHostAndPort@{GetAddressHostAndPort}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{GetAddressHostAndPort()}{GetAddressHostAndPort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ Get\+Address\+Host\+And\+Port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}}}]{address,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{outhost,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{outport }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_aa473777697288b6043bccfc7305b3635}\label{rnet_8h_aa473777697288b6043bccfc7305b3635}} 
+\index{rnet.h@{rnet.h}!GetAddressProtocol@{GetAddressProtocol}}
+\index{GetAddressProtocol@{GetAddressProtocol}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{GetAddressProtocol()}{GetAddressProtocol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Get\+Address\+Protocol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}}}]{address }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a1b3484a52be7986604e1cc1e4db773be}\label{rnet_8h_a1b3484a52be7986604e1cc1e4db773be}} 
+\index{rnet.h@{rnet.h}!GetAddressSocketType@{GetAddressSocketType}}
+\index{GetAddressSocketType@{GetAddressSocketType}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{GetAddressSocketType()}{GetAddressSocketType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Get\+Address\+Socket\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}}}]{address }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a5c9dfe040d9f0aec77360336cc51bd43}\label{rnet_8h_a5c9dfe040d9f0aec77360336cc51bd43}} 
+\index{rnet.h@{rnet.h}!GetSocketAddressHost@{GetSocketAddressHost}}
+\index{GetSocketAddressHost@{GetSocketAddressHost}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{GetSocketAddressHost()}{GetSocketAddressHost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ Get\+Socket\+Address\+Host (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rnet_8h_a7a22c34741344764c4027d92e3935a20}{Socket\+Address\+Storage}}}]{storage }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_ae627dbc8fefd201251bb8e5924e28dcf}\label{rnet_8h_ae627dbc8fefd201251bb8e5924e28dcf}} 
+\index{rnet.h@{rnet.h}!GetSocketAddressPort@{GetSocketAddressPort}}
+\index{GetSocketAddressPort@{GetSocketAddressPort}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{GetSocketAddressPort()}{GetSocketAddressPort()}}
+{\footnotesize\ttfamily short Get\+Socket\+Address\+Port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rnet_8h_a7a22c34741344764c4027d92e3935a20}{Socket\+Address\+Storage}}}]{storage }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a2d30ff7011d03c494b761afd01a063fc}\label{rnet_8h_a2d30ff7011d03c494b761afd01a063fc}} 
+\index{rnet.h@{rnet.h}!InitNetwork@{InitNetwork}}
+\index{InitNetwork@{InitNetwork}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{InitNetwork()}{InitNetwork()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Init\+Network (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a2d4cd08dd2c37e8d5733f8b68ac19489}\label{rnet_8h_a2d4cd08dd2c37e8d5733f8b68ac19489}} 
+\index{rnet.h@{rnet.h}!IsSocketConnected@{IsSocketConnected}}
+\index{IsSocketConnected@{IsSocketConnected}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{IsSocketConnected()}{IsSocketConnected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Is\+Socket\+Connected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$}]{sock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a558a93f8b6938c62f9227a1dd2eb6798}\label{rnet_8h_a558a93f8b6938c62f9227a1dd2eb6798}} 
+\index{rnet.h@{rnet.h}!IsSocketReady@{IsSocketReady}}
+\index{IsSocketReady@{IsSocketReady}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{IsSocketReady()}{IsSocketReady()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Is\+Socket\+Ready (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$}]{sock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_ab1c061c9443cacbacf92be74c348cf68}\label{rnet_8h_ab1c061c9443cacbacf92be74c348cf68}} 
+\index{rnet.h@{rnet.h}!PacketRead16@{PacketRead16}}
+\index{PacketRead16@{PacketRead16}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{PacketRead16()}{PacketRead16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} Packet\+Read16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_packet}{Packet}} $\ast$}]{packet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a844639e4c0c9bf1a9236c77592f6af08}\label{rnet_8h_a844639e4c0c9bf1a9236c77592f6af08}} 
+\index{rnet.h@{rnet.h}!PacketRead32@{PacketRead32}}
+\index{PacketRead32@{PacketRead32}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{PacketRead32()}{PacketRead32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} Packet\+Read32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_packet}{Packet}} $\ast$}]{packet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a2025285e8fc45f29b998a3704e3f60a3}\label{rnet_8h_a2025285e8fc45f29b998a3704e3f60a3}} 
+\index{rnet.h@{rnet.h}!PacketRead64@{PacketRead64}}
+\index{PacketRead64@{PacketRead64}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{PacketRead64()}{PacketRead64()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} Packet\+Read64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_packet}{Packet}} $\ast$}]{packet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a9509bda61cffb7e6e334f0b16bb1f9d1}\label{rnet_8h_a9509bda61cffb7e6e334f0b16bb1f9d1}} 
+\index{rnet.h@{rnet.h}!PacketRead8@{PacketRead8}}
+\index{PacketRead8@{PacketRead8}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{PacketRead8()}{PacketRead8()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}} Packet\+Read8 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_packet}{Packet}} $\ast$}]{packet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a399d94d0d0388eda67d18ad1aca22840}\label{rnet_8h_a399d94d0d0388eda67d18ad1aca22840}} 
+\index{rnet.h@{rnet.h}!PacketReceive@{PacketReceive}}
+\index{PacketReceive@{PacketReceive}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{PacketReceive()}{PacketReceive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Packet\+Receive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_packet}{Packet}} $\ast$}]{packet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a1abe34162b80e7a71e127353f55f4c95}\label{rnet_8h_a1abe34162b80e7a71e127353f55f4c95}} 
+\index{rnet.h@{rnet.h}!PacketSend@{PacketSend}}
+\index{PacketSend@{PacketSend}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{PacketSend()}{PacketSend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Packet\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_packet}{Packet}} $\ast$}]{packet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a16236af8cbe6a610c71d54bbf687e231}\label{rnet_8h_a16236af8cbe6a610c71d54bbf687e231}} 
+\index{rnet.h@{rnet.h}!PacketWrite16@{PacketWrite16}}
+\index{PacketWrite16@{PacketWrite16}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{PacketWrite16()}{PacketWrite16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Packet\+Write16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_packet}{Packet}} $\ast$}]{packet,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_af19e701801e3ad5abc627a8066b8a05d}\label{rnet_8h_af19e701801e3ad5abc627a8066b8a05d}} 
+\index{rnet.h@{rnet.h}!PacketWrite32@{PacketWrite32}}
+\index{PacketWrite32@{PacketWrite32}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{PacketWrite32()}{PacketWrite32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Packet\+Write32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_packet}{Packet}} $\ast$}]{packet,  }\item[{\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a80ea7b1788991d155a9a5e5a631774d4}\label{rnet_8h_a80ea7b1788991d155a9a5e5a631774d4}} 
+\index{rnet.h@{rnet.h}!PacketWrite64@{PacketWrite64}}
+\index{PacketWrite64@{PacketWrite64}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{PacketWrite64()}{PacketWrite64()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Packet\+Write64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_packet}{Packet}} $\ast$}]{packet,  }\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_ae9121c1cb1e1038910c33cf8a242cae8}\label{rnet_8h_ae9121c1cb1e1038910c33cf8a242cae8}} 
+\index{rnet.h@{rnet.h}!PacketWrite8@{PacketWrite8}}
+\index{PacketWrite8@{PacketWrite8}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{PacketWrite8()}{PacketWrite8()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Packet\+Write8 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_packet}{Packet}} $\ast$}]{packet,  }\item[{\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a8b9b1e19a9f438ee63e99daf75302279}\label{rnet_8h_a8b9b1e19a9f438ee63e99daf75302279}} 
+\index{rnet.h@{rnet.h}!PrintAddressInfo@{PrintAddressInfo}}
+\index{PrintAddressInfo@{PrintAddressInfo}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{PrintAddressInfo()}{PrintAddressInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Print\+Address\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}}}]{address }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a495bc9c4544f725a88eee4a97b16aef8}\label{rnet_8h_a495bc9c4544f725a88eee4a97b16aef8}} 
+\index{rnet.h@{rnet.h}!RemoveSocket@{RemoveSocket}}
+\index{RemoveSocket@{RemoveSocket}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{RemoveSocket()}{RemoveSocket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Remove\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_set}{Socket\+Set}} $\ast$}]{set,  }\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$}]{sock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a9e60e3a2fdfc965dbcb9bb1da63315ec}\label{rnet_8h_a9e60e3a2fdfc965dbcb9bb1da63315ec}} 
+\index{rnet.h@{rnet.h}!ResizePacket@{ResizePacket}}
+\index{ResizePacket@{ResizePacket}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ResizePacket()}{ResizePacket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Resize\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_data_packet}{Socket\+Data\+Packet}} $\ast$}]{packet,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{newsize }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a55f9fc49dda7d2e6ba334837a92a408f}\label{rnet_8h_a55f9fc49dda7d2e6ba334837a92a408f}} 
+\index{rnet.h@{rnet.h}!ResolveHost@{ResolveHost}}
+\index{ResolveHost@{ResolveHost}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ResolveHost()}{ResolveHost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Resolve\+Host (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{address,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{service,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{address\+Type,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{flags,  }\item[{\mbox{\hyperlink{rnet_8h_a8b0f11465f1f7747917d48ce8369cec0}{Address\+Information}} $\ast$}]{out\+Addr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_aecf982e4f2c0754b601b83891d4c5cbd}\label{rnet_8h_aecf982e4f2c0754b601b83891d4c5cbd}} 
+\index{rnet.h@{rnet.h}!ResolveIP@{ResolveIP}}
+\index{ResolveIP@{ResolveIP}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{ResolveIP()}{ResolveIP()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Resolve\+IP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{ip,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{service,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{flags,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{outhost,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{outserv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a97d0a7c363f578b23c3eb2809cba3944}\label{rnet_8h_a97d0a7c363f578b23c3eb2809cba3944}} 
+\index{rnet.h@{rnet.h}!SocketAccept@{SocketAccept}}
+\index{SocketAccept@{SocketAccept}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketAccept()}{SocketAccept()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_socket}{Socket}}$\ast$ Socket\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$}]{server,  }\item[{\mbox{\hyperlink{struct_socket_config}{Socket\+Config}} $\ast$}]{config }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_acf37e109a222380e783c1a34abee2abe}\label{rnet_8h_acf37e109a222380e783c1a34abee2abe}} 
+\index{rnet.h@{rnet.h}!SocketBind@{SocketBind}}
+\index{SocketBind@{SocketBind}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketBind()}{SocketBind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Socket\+Bind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_config}{Socket\+Config}} $\ast$}]{config,  }\item[{\mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$}]{result }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_adb4e419587d33d420dfda94f506e23e8}\label{rnet_8h_adb4e419587d33d420dfda94f506e23e8}} 
+\index{rnet.h@{rnet.h}!SocketClose@{SocketClose}}
+\index{SocketClose@{SocketClose}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketClose()}{SocketClose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Socket\+Close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$}]{sock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_aba11a54a2556ea0d8f93af8b538850f6}\label{rnet_8h_aba11a54a2556ea0d8f93af8b538850f6}} 
+\index{rnet.h@{rnet.h}!SocketConnect@{SocketConnect}}
+\index{SocketConnect@{SocketConnect}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketConnect()}{SocketConnect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Socket\+Connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_config}{Socket\+Config}} $\ast$}]{config,  }\item[{\mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$}]{result }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a522dc88d16849e1959bec2daaa6a1762}\label{rnet_8h_a522dc88d16849e1959bec2daaa6a1762}} 
+\index{rnet.h@{rnet.h}!SocketCreate@{SocketCreate}}
+\index{SocketCreate@{SocketCreate}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketCreate()}{SocketCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Socket\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_config}{Socket\+Config}} $\ast$}]{config,  }\item[{\mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$}]{result }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_ad52f97449470b062d1074a1cd7e4b497}\label{rnet_8h_ad52f97449470b062d1074a1cd7e4b497}} 
+\index{rnet.h@{rnet.h}!SocketGetPeerAddress@{SocketGetPeerAddress}}
+\index{SocketGetPeerAddress@{SocketGetPeerAddress}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketGetPeerAddress()}{SocketGetPeerAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rnet_8h_a7a22c34741344764c4027d92e3935a20}{Socket\+Address\+Storage}} Socket\+Get\+Peer\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$}]{sock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a8ad0ec061568a3118a945e83ab38ae36}\label{rnet_8h_a8ad0ec061568a3118a945e83ab38ae36}} 
+\index{rnet.h@{rnet.h}!SocketListen@{SocketListen}}
+\index{SocketListen@{SocketListen}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketListen()}{SocketListen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Socket\+Listen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket_config}{Socket\+Config}} $\ast$}]{config,  }\item[{\mbox{\hyperlink{struct_socket_result}{Socket\+Result}} $\ast$}]{result }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_add10df2d75939fec326dfdb98a4ba4b6}\label{rnet_8h_add10df2d75939fec326dfdb98a4ba4b6}} 
+\index{rnet.h@{rnet.h}!SocketReceive@{SocketReceive}}
+\index{SocketReceive@{SocketReceive}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketReceive()}{SocketReceive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Socket\+Receive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$}]{sock,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{maxlen }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a75bab715e75916550bd46024525797f2}\label{rnet_8h_a75bab715e75916550bd46024525797f2}} 
+\index{rnet.h@{rnet.h}!SocketSend@{SocketSend}}
+\index{SocketSend@{SocketSend}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketSend()}{SocketSend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Socket\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$}]{sock,  }\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{datap,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_acbeb0d91b33a764d5da90f10ed925de1}\label{rnet_8h_acbeb0d91b33a764d5da90f10ed925de1}} 
+\index{rnet.h@{rnet.h}!SocketSetChannel@{SocketSetChannel}}
+\index{SocketSetChannel@{SocketSetChannel}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketSetChannel()}{SocketSetChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Socket\+Set\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$}]{socket,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{channel,  }\item[{const \mbox{\hyperlink{struct_i_p_address}{I\+P\+Address}} $\ast$}]{address }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rnet_8h_a02411b2ff61874d3b2d9d8b435a79f91}\label{rnet_8h_a02411b2ff61874d3b2d9d8b435a79f91}} 
+\index{rnet.h@{rnet.h}!SocketUnsetChannel@{SocketUnsetChannel}}
+\index{SocketUnsetChannel@{SocketUnsetChannel}!rnet.h@{rnet.h}}
+\doxysubsubsection{\texorpdfstring{SocketUnsetChannel()}{SocketUnsetChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Socket\+Unset\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_socket}{Socket}} $\ast$}]{socket,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{channel }\end{DoxyParamCaption})}
+

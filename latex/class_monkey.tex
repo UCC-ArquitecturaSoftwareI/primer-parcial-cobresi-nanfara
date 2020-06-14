@@ -1,0 +1,133 @@
+\hypertarget{class_monkey}{}\doxysection{Referencia de la Clase Monkey}
+\label{class_monkey}\index{Monkey@{Monkey}}
+
+
+{\ttfamily \#include $<$Monkey.\+h$>$}
+
+Diagrama de herencias de Monkey\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_monkey}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monkey_a157a26fb6ca19971f118d7ac7b27d732}{Monkey}} ()
+\item 
+virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_monkey_ac400fcebf746c122415dfe8cbe101abe}{Draw}} ()=0
+\item 
+virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_monkey_a276633672619ced7b0d1e4e3c10b9601}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&)=0
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_monkey_a6124f7bdcaeaf4680c2ee5c0cd8f4873}{move\+\_\+right}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_monkey_a08a532bbe4d4160688fdf9c1053634de}{move\+\_\+left}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_monkey_a7c5b4494b55a310f1647f9d38b774396}{newlado}} ()
+\item 
+\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_monkey_a5c0bb05df6c26e0d03f5e11a8733abe2}{get\+Rectangle}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{class_monkey_a5429f152679a8823285871aaba478618}{monkey\+\_\+position}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_monkey_a549d1e08546fdecf1c1bfd0565472e81}{lado}}
+\item 
+\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_monkey_a4a78e66783b37e6b723cfa96a20b5121}{rect}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_monkey_ae415a2829c515847f1dd312d2940b42e}{mov}} =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_monkey_a157a26fb6ca19971f118d7ac7b27d732}\label{class_monkey_a157a26fb6ca19971f118d7ac7b27d732}} 
+\index{Monkey@{Monkey}!Monkey@{Monkey}}
+\index{Monkey@{Monkey}!Monkey@{Monkey}}
+\doxysubsubsection{\texorpdfstring{Monkey()}{Monkey()}}
+{\footnotesize\ttfamily Monkey\+::\+Monkey (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_monkey_a276633672619ced7b0d1e4e3c10b9601}\label{class_monkey_a276633672619ced7b0d1e4e3c10b9601}} 
+\index{Monkey@{Monkey}!Accept@{Accept}}
+\index{Accept@{Accept}!Monkey@{Monkey}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Monkey\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implementa \mbox{\hyperlink{class_visitable_a9db999616998fc36f82a31f4d7d9254d}{Visitable}}.
+
+
+
+Implementado en \mbox{\hyperlink{class_light_monkey_aba5ff12281990b7451f229e1c4fcd4d8}{Light\+Monkey}} y \mbox{\hyperlink{class_night_monkey_a1611dab334d4919c1a1b8ef345fe3669}{Night\+Monkey}}.
+
+\mbox{\Hypertarget{class_monkey_ac400fcebf746c122415dfe8cbe101abe}\label{class_monkey_ac400fcebf746c122415dfe8cbe101abe}} 
+\index{Monkey@{Monkey}!Draw@{Draw}}
+\index{Draw@{Draw}!Monkey@{Monkey}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Monkey\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implementado en \mbox{\hyperlink{class_light_monkey_a4aa87d36433656c2d112dba9d1d76d60}{Light\+Monkey}} y \mbox{\hyperlink{class_night_monkey_aa5c3957213fe120fb5cf86194eec9d55}{Night\+Monkey}}.
+
+\mbox{\Hypertarget{class_monkey_a5c0bb05df6c26e0d03f5e11a8733abe2}\label{class_monkey_a5c0bb05df6c26e0d03f5e11a8733abe2}} 
+\index{Monkey@{Monkey}!getRectangle@{getRectangle}}
+\index{getRectangle@{getRectangle}!Monkey@{Monkey}}
+\doxysubsubsection{\texorpdfstring{getRectangle()}{getRectangle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Monkey\+::get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_monkey_a08a532bbe4d4160688fdf9c1053634de}\label{class_monkey_a08a532bbe4d4160688fdf9c1053634de}} 
+\index{Monkey@{Monkey}!move\_left@{move\_left}}
+\index{move\_left@{move\_left}!Monkey@{Monkey}}
+\doxysubsubsection{\texorpdfstring{move\_left()}{move\_left()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Monkey\+::move\+\_\+left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_monkey_a6124f7bdcaeaf4680c2ee5c0cd8f4873}\label{class_monkey_a6124f7bdcaeaf4680c2ee5c0cd8f4873}} 
+\index{Monkey@{Monkey}!move\_right@{move\_right}}
+\index{move\_right@{move\_right}!Monkey@{Monkey}}
+\doxysubsubsection{\texorpdfstring{move\_right()}{move\_right()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Monkey\+::move\+\_\+right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_monkey_a7c5b4494b55a310f1647f9d38b774396}\label{class_monkey_a7c5b4494b55a310f1647f9d38b774396}} 
+\index{Monkey@{Monkey}!newlado@{newlado}}
+\index{newlado@{newlado}!Monkey@{Monkey}}
+\doxysubsubsection{\texorpdfstring{newlado()}{newlado()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Monkey\+::newlado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_monkey_a549d1e08546fdecf1c1bfd0565472e81}\label{class_monkey_a549d1e08546fdecf1c1bfd0565472e81}} 
+\index{Monkey@{Monkey}!lado@{lado}}
+\index{lado@{lado}!Monkey@{Monkey}}
+\doxysubsubsection{\texorpdfstring{lado}{lado}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Monkey\+::lado}
+
+\mbox{\Hypertarget{class_monkey_a5429f152679a8823285871aaba478618}\label{class_monkey_a5429f152679a8823285871aaba478618}} 
+\index{Monkey@{Monkey}!monkey\_position@{monkey\_position}}
+\index{monkey\_position@{monkey\_position}!Monkey@{Monkey}}
+\doxysubsubsection{\texorpdfstring{monkey\_position}{monkey\_position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} Monkey\+::monkey\+\_\+position}
+
+\mbox{\Hypertarget{class_monkey_ae415a2829c515847f1dd312d2940b42e}\label{class_monkey_ae415a2829c515847f1dd312d2940b42e}} 
+\index{Monkey@{Monkey}!mov@{mov}}
+\index{mov@{mov}!Monkey@{Monkey}}
+\doxysubsubsection{\texorpdfstring{mov}{mov}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Monkey\+::mov =0}
+
+\mbox{\Hypertarget{class_monkey_a4a78e66783b37e6b723cfa96a20b5121}\label{class_monkey_a4a78e66783b37e6b723cfa96a20b5121}} 
+\index{Monkey@{Monkey}!rect@{rect}}
+\index{rect@{rect}!Monkey@{Monkey}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Monkey\+::rect}
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+clases/\mbox{\hyperlink{_monkey_8h}{Monkey.\+h}}\item 
+clases/\mbox{\hyperlink{_monkey_8cpp}{Monkey.\+cpp}}\end{DoxyCompactItemize}

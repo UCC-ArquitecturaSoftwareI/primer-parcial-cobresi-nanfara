@@ -1,0 +1,57 @@
+\hypertarget{structma__mutex}{}\doxysection{Referencia de la Estructura ma\+\_\+mutex}
+\label{structma__mutex}\index{ma\_mutex@{ma\_mutex}}
+
+
+{\ttfamily \#include $<$miniaudio.\+h$>$}
+
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$ \mbox{\hyperlink{structma__mutex_a66066ed5e8ff9f5a00c420e149c54cfc}{p\+Context}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>pthread\_mutex\_t \mbox{\hyperlink{structma__mutex_a462cca3ef28b8c26bdc1c67d47c35db5}{mutex}}\\
+\>\} \mbox{\hyperlink{structma__mutex_a34edd29e1f3d0236f5dd557e00d899c6}{posix}}\\
+\>\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structma__mutex_a77f1e5cefbd76de747c1193787dd29aa}{\_unused}}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{structma__mutex_a77fb43c1dc5ca7bc46055882f359c709}\label{structma__mutex_a77fb43c1dc5ca7bc46055882f359c709}} 
+\doxysubsubsection{\texorpdfstring{"@62}{@62}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{structma__mutex_a77f1e5cefbd76de747c1193787dd29aa}\label{structma__mutex_a77f1e5cefbd76de747c1193787dd29aa}} 
+\index{ma\_mutex@{ma\_mutex}!\_unused@{\_unused}}
+\index{\_unused@{\_unused}!ma\_mutex@{ma\_mutex}}
+\doxysubsubsection{\texorpdfstring{\_unused}{\_unused}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} ma\+\_\+mutex\+::\+\_\+unused}
+
+\mbox{\Hypertarget{structma__mutex_a462cca3ef28b8c26bdc1c67d47c35db5}\label{structma__mutex_a462cca3ef28b8c26bdc1c67d47c35db5}} 
+\index{ma\_mutex@{ma\_mutex}!mutex@{mutex}}
+\index{mutex@{mutex}!ma\_mutex@{ma\_mutex}}
+\doxysubsubsection{\texorpdfstring{mutex}{mutex}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t ma\+\_\+mutex\+::mutex}
+
+\mbox{\Hypertarget{structma__mutex_a66066ed5e8ff9f5a00c420e149c54cfc}\label{structma__mutex_a66066ed5e8ff9f5a00c420e149c54cfc}} 
+\index{ma\_mutex@{ma\_mutex}!pContext@{pContext}}
+\index{pContext@{pContext}!ma\_mutex@{ma\_mutex}}
+\doxysubsubsection{\texorpdfstring{pContext}{pContext}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structma__context}{ma\+\_\+context}}$\ast$ ma\+\_\+mutex\+::p\+Context}
+
+\mbox{\Hypertarget{structma__mutex_a34edd29e1f3d0236f5dd557e00d899c6}\label{structma__mutex_a34edd29e1f3d0236f5dd557e00d899c6}} 
+\index{ma\_mutex@{ma\_mutex}!posix@{posix}}
+\index{posix@{posix}!ma\_mutex@{ma\_mutex}}
+\doxysubsubsection{\texorpdfstring{posix}{posix}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+mutex\+::posix}
+
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/\mbox{\hyperlink{miniaudio_8h}{miniaudio.\+h}}\end{DoxyCompactItemize}

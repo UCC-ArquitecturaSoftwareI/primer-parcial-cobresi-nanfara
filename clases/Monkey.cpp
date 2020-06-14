@@ -1,16 +1,6 @@
-//
-// Created by Abril on 13/4/2020.
-//
-#include <string>
+
 #include "Monkey.h"
 #include "raylib.h"
-/*
-Monkey::Monkey() {
-    char left;
-    mov = 0
-    Draw();
-}
-*/
 
 void Monkey::move_right() {
     if (lado == 1)
@@ -21,7 +11,6 @@ void Monkey::move_right() {
     }
     else
         newlado();
-    //Bajar arbol
 }
 
 void Monkey::move_left() {
@@ -33,7 +22,6 @@ void Monkey::move_left() {
     }
     else
         newlado();
-    //Bajar arbol
 }
 
 void Monkey::newlado()

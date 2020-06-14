@@ -1,0 +1,128 @@
+\hypertarget{just__do_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/just\+\_\+do/just\+\_\+do.c}
+\label{just__do_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/just\_do/just\_do.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/just\_do/just\_do.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}screens/screens.\+h\char`\"{}}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{just__do_8c_a77f7a16d51ed85cbe31b19b85335d5f6}{Transition\+To\+Screen}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} screen)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{just__do_8c_ad2cdba7d76fd33b38dc478d84fac76e8}{Update\+Transition}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{just__do_8c_a09bffd74bd65d11f1544f3b5f847096c}{Draw\+Transition}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{just__do_8c_a5cf2c5a446b66f83cbeb6885fc64bfb0}{Update\+Draw\+Frame}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{just__do_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{just__do_8c_a7242fea9327c0747b47801c13f4e05c9}{screen\+Width}} = 1280
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{just__do_8c_a8897ff6127a397a8ee4ea76976f8534d}{screen\+Height}} = 720
+\item 
+float \mbox{\hyperlink{just__do_8c_a01cc73be154dfd41292aa40b2a02924a}{trans\+Alpha}} = 0
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{just__do_8c_aa0752f175e6efad2c51e995f735ab445}{on\+Transition}} = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{just__do_8c_a6fcccbcee61ee5c09856d1dab463a439}{trans\+Fade\+Out}} = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{just__do_8c_ada40daf232547a56448a044700201194}{trans\+From\+Screen}} = -\/1
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{just__do_8c_aae570020b16ebb5b9749d51f2796b666}{trans\+To\+Screen}} = -\/1
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{just__do_8c_a6afe27aa95c0b40803f2f049f1ee7b1f}{frames\+Counter}} = 0
+\item 
+\mbox{\hyperlink{struct_music}{Music}} \mbox{\hyperlink{just__do_8c_a8e4a12cb358091be4a5f7447b57e2014}{music}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{just__do_8c_a09bffd74bd65d11f1544f3b5f847096c}\label{just__do_8c_a09bffd74bd65d11f1544f3b5f847096c}} 
+\index{just\_do.c@{just\_do.c}!DrawTransition@{DrawTransition}}
+\index{DrawTransition@{DrawTransition}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{DrawTransition()}{DrawTransition()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{just__do_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{just__do_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{just\_do.c@{just\_do.c}!main@{main}}
+\index{main@{main}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{just__do_8c_a77f7a16d51ed85cbe31b19b85335d5f6}\label{just__do_8c_a77f7a16d51ed85cbe31b19b85335d5f6}} 
+\index{just\_do.c@{just\_do.c}!TransitionToScreen@{TransitionToScreen}}
+\index{TransitionToScreen@{TransitionToScreen}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{TransitionToScreen()}{TransitionToScreen()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Transition\+To\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{screen }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{just__do_8c_a5cf2c5a446b66f83cbeb6885fc64bfb0}\label{just__do_8c_a5cf2c5a446b66f83cbeb6885fc64bfb0}} 
+\index{just\_do.c@{just\_do.c}!UpdateDrawFrame@{UpdateDrawFrame}}
+\index{UpdateDrawFrame@{UpdateDrawFrame}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{UpdateDrawFrame()}{UpdateDrawFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Draw\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{just__do_8c_ad2cdba7d76fd33b38dc478d84fac76e8}\label{just__do_8c_ad2cdba7d76fd33b38dc478d84fac76e8}} 
+\index{just\_do.c@{just\_do.c}!UpdateTransition@{UpdateTransition}}
+\index{UpdateTransition@{UpdateTransition}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{UpdateTransition()}{UpdateTransition()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{just__do_8c_a6afe27aa95c0b40803f2f049f1ee7b1f}\label{just__do_8c_a6afe27aa95c0b40803f2f049f1ee7b1f}} 
+\index{just\_do.c@{just\_do.c}!framesCounter@{framesCounter}}
+\index{framesCounter@{framesCounter}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{framesCounter}{framesCounter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} frames\+Counter = 0}
+
+\mbox{\Hypertarget{just__do_8c_a8e4a12cb358091be4a5f7447b57e2014}\label{just__do_8c_a8e4a12cb358091be4a5f7447b57e2014}} 
+\index{just\_do.c@{just\_do.c}!music@{music}}
+\index{music@{music}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{music}{music}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_music}{Music}} music}
+
+\mbox{\Hypertarget{just__do_8c_aa0752f175e6efad2c51e995f735ab445}\label{just__do_8c_aa0752f175e6efad2c51e995f735ab445}} 
+\index{just\_do.c@{just\_do.c}!onTransition@{onTransition}}
+\index{onTransition@{onTransition}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{onTransition}{onTransition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} on\+Transition = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}}
+
+\mbox{\Hypertarget{just__do_8c_a8897ff6127a397a8ee4ea76976f8534d}\label{just__do_8c_a8897ff6127a397a8ee4ea76976f8534d}} 
+\index{just\_do.c@{just\_do.c}!screenHeight@{screenHeight}}
+\index{screenHeight@{screenHeight}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{screenHeight}{screenHeight}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} screen\+Height = 720}
+
+\mbox{\Hypertarget{just__do_8c_a7242fea9327c0747b47801c13f4e05c9}\label{just__do_8c_a7242fea9327c0747b47801c13f4e05c9}} 
+\index{just\_do.c@{just\_do.c}!screenWidth@{screenWidth}}
+\index{screenWidth@{screenWidth}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{screenWidth}{screenWidth}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} screen\+Width = 1280}
+
+\mbox{\Hypertarget{just__do_8c_a01cc73be154dfd41292aa40b2a02924a}\label{just__do_8c_a01cc73be154dfd41292aa40b2a02924a}} 
+\index{just\_do.c@{just\_do.c}!transAlpha@{transAlpha}}
+\index{transAlpha@{transAlpha}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{transAlpha}{transAlpha}}
+{\footnotesize\ttfamily float trans\+Alpha = 0}
+
+\mbox{\Hypertarget{just__do_8c_a6fcccbcee61ee5c09856d1dab463a439}\label{just__do_8c_a6fcccbcee61ee5c09856d1dab463a439}} 
+\index{just\_do.c@{just\_do.c}!transFadeOut@{transFadeOut}}
+\index{transFadeOut@{transFadeOut}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{transFadeOut}{transFadeOut}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} trans\+Fade\+Out = \mbox{\hyperlink{rnet_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}}
+
+\mbox{\Hypertarget{just__do_8c_ada40daf232547a56448a044700201194}\label{just__do_8c_ada40daf232547a56448a044700201194}} 
+\index{just\_do.c@{just\_do.c}!transFromScreen@{transFromScreen}}
+\index{transFromScreen@{transFromScreen}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{transFromScreen}{transFromScreen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} trans\+From\+Screen = -\/1}
+
+\mbox{\Hypertarget{just__do_8c_aae570020b16ebb5b9749d51f2796b666}\label{just__do_8c_aae570020b16ebb5b9749d51f2796b666}} 
+\index{just\_do.c@{just\_do.c}!transToScreen@{transToScreen}}
+\index{transToScreen@{transToScreen}!just\_do.c@{just\_do.c}}
+\doxysubsubsection{\texorpdfstring{transToScreen}{transToScreen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} trans\+To\+Screen = -\/1}
+

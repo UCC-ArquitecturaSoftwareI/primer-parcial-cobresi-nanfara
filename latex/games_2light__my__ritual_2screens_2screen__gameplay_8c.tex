@@ -1,0 +1,196 @@
+\hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/light\+\_\+my\+\_\+ritual/screens/screen\+\_\+gameplay.c}
+\label{games_2light__my__ritual_2screens_2screen__gameplay_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/light\_my\_ritual/screens/screen\_gameplay.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/light\_my\_ritual/screens/screen\_gameplay.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}screens.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_player}{Player}}
+\item 
+struct \mbox{\hyperlink{struct_enemy}{Enemy}}
+\item 
+struct \mbox{\hyperlink{struct_light_spot}{Light\+Spot}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a4bbc8172a9e5fc1cd420562fe5fb0531}{M\+A\+X\+\_\+\+L\+I\+G\+H\+T\+S\+\_\+I}}~8
+\item 
+\#define \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_adc28f4fc91fe20321be0fe2eb5852d16}{M\+A\+X\+\_\+\+L\+I\+G\+H\+T\+S\+\_\+\+II}}~12
+\item 
+\#define \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a53ad577582b9ef17a287b9053a827dc0}{M\+A\+X\+\_\+\+L\+I\+G\+H\+T\+S\+\_\+\+I\+II}}~20
+\item 
+\#define \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a544651f3405cff79c40d898a8e54f507}{M\+A\+X\+\_\+\+E\+N\+E\+M\+I\+ES}}~8
+\item 
+\#define \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a976762ed1273c35c6ef8fe0252198568}{M\+A\+X\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+E\+N\+E\+R\+GY}}~40.\+0f
+\item 
+\#define \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a91fc85e402f35d06261b89c23da705b8}{E\+N\+E\+R\+G\+Y\+\_\+\+R\+E\+F\+I\+L\+L\+\_\+\+R\+A\+T\+IO}}~0.\+2\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}
+\item 
+\#define \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a364f3481500be94b8fa439a1ddbf9f79}{G\+A\+M\+E\+P\+A\+D\+\_\+\+S\+E\+N\+S\+I\+T\+I\+V\+I\+TY}}~4.\+0f
+\item 
+\#define \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a9c81da5d9b7a22bad2a3277c2b1dcc9a}{L\+I\+G\+H\+T\+\_\+\+A\+N\+I\+M\+\_\+\+F\+R\+A\+M\+ES}}~7
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a480a040facb94f90060562cd65274385}{Player}}
+\item 
+typedef struct \mbox{\hyperlink{struct_enemy}{Enemy}} \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_af975ad1eb2a131dcfa7620809ae9bf92}{Enemy}}
+\item 
+typedef struct \mbox{\hyperlink{struct_light_spot}{Light\+Spot}} \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_afad55f94c0bd6e5afae8819e0d31adc3}{Light\+Spot}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864}{Lighted\+Level}} \{ \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864a370282cb59127cee55e40d84be06de84}{L\+E\+V\+E\+L\+\_\+I}}, 
+\mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864ac4c86782f6faa4167855fd5492e449e8}{L\+E\+V\+E\+L\+\_\+\+II}}, 
+\mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864a7edacdefb8aa60277e4170b2fd200d43}{L\+E\+V\+E\+L\+\_\+\+I\+II}}, 
+\mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864ad6e2e47908889d66c6e03900b02af317}{L\+E\+V\+E\+L\+\_\+\+F\+I\+N\+I\+S\+H\+ED}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a76918e73a46306124299f0ecdded70ac}{Init\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_ae375af3a5eb93543369403b716cbc0a8}{Update\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a8b8fc25f26ad73f9c08497af8b074ccf}{Draw\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_ac96945d9b745690aa8ff1c909c816188}{Unload\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_abe4d51d9e25770ad24c45f83837211be}{Finish\+Gameplay\+Screen}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a91fc85e402f35d06261b89c23da705b8}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a91fc85e402f35d06261b89c23da705b8}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!ENERGY\_REFILL\_RATIO@{ENERGY\_REFILL\_RATIO}}
+\index{ENERGY\_REFILL\_RATIO@{ENERGY\_REFILL\_RATIO}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{ENERGY\_REFILL\_RATIO}{ENERGY\_REFILL\_RATIO}}
+{\footnotesize\ttfamily \#define E\+N\+E\+R\+G\+Y\+\_\+\+R\+E\+F\+I\+L\+L\+\_\+\+R\+A\+T\+IO~0.\+2\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a0fdda94b8b7e64884690244028f455ba}{f}}}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a364f3481500be94b8fa439a1ddbf9f79}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a364f3481500be94b8fa439a1ddbf9f79}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!GAMEPAD\_SENSITIVITY@{GAMEPAD\_SENSITIVITY}}
+\index{GAMEPAD\_SENSITIVITY@{GAMEPAD\_SENSITIVITY}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{GAMEPAD\_SENSITIVITY}{GAMEPAD\_SENSITIVITY}}
+{\footnotesize\ttfamily \#define G\+A\+M\+E\+P\+A\+D\+\_\+\+S\+E\+N\+S\+I\+T\+I\+V\+I\+TY~4.\+0f}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a9c81da5d9b7a22bad2a3277c2b1dcc9a}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a9c81da5d9b7a22bad2a3277c2b1dcc9a}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!LIGHT\_ANIM\_FRAMES@{LIGHT\_ANIM\_FRAMES}}
+\index{LIGHT\_ANIM\_FRAMES@{LIGHT\_ANIM\_FRAMES}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{LIGHT\_ANIM\_FRAMES}{LIGHT\_ANIM\_FRAMES}}
+{\footnotesize\ttfamily \#define L\+I\+G\+H\+T\+\_\+\+A\+N\+I\+M\+\_\+\+F\+R\+A\+M\+ES~7}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a544651f3405cff79c40d898a8e54f507}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a544651f3405cff79c40d898a8e54f507}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_ENEMIES@{MAX\_ENEMIES}}
+\index{MAX\_ENEMIES@{MAX\_ENEMIES}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_ENEMIES}{MAX\_ENEMIES}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+E\+N\+E\+M\+I\+ES~8}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a4bbc8172a9e5fc1cd420562fe5fb0531}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a4bbc8172a9e5fc1cd420562fe5fb0531}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_LIGHTS\_I@{MAX\_LIGHTS\_I}}
+\index{MAX\_LIGHTS\_I@{MAX\_LIGHTS\_I}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_LIGHTS\_I}{MAX\_LIGHTS\_I}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+L\+I\+G\+H\+T\+S\+\_\+I~8}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_adc28f4fc91fe20321be0fe2eb5852d16}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_adc28f4fc91fe20321be0fe2eb5852d16}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_LIGHTS\_II@{MAX\_LIGHTS\_II}}
+\index{MAX\_LIGHTS\_II@{MAX\_LIGHTS\_II}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_LIGHTS\_II}{MAX\_LIGHTS\_II}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+L\+I\+G\+H\+T\+S\+\_\+\+II~12}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a53ad577582b9ef17a287b9053a827dc0}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a53ad577582b9ef17a287b9053a827dc0}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_LIGHTS\_III@{MAX\_LIGHTS\_III}}
+\index{MAX\_LIGHTS\_III@{MAX\_LIGHTS\_III}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_LIGHTS\_III}{MAX\_LIGHTS\_III}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+L\+I\+G\+H\+T\+S\+\_\+\+I\+II~20}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a976762ed1273c35c6ef8fe0252198568}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a976762ed1273c35c6ef8fe0252198568}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!MAX\_PLAYER\_ENERGY@{MAX\_PLAYER\_ENERGY}}
+\index{MAX\_PLAYER\_ENERGY@{MAX\_PLAYER\_ENERGY}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_PLAYER\_ENERGY}{MAX\_PLAYER\_ENERGY}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+E\+N\+E\+R\+GY~40.\+0f}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_af975ad1eb2a131dcfa7620809ae9bf92}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_af975ad1eb2a131dcfa7620809ae9bf92}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{Enemy}{Enemy}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_enemy}{Enemy}} \mbox{\hyperlink{struct_enemy}{Enemy}}}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_afad55f94c0bd6e5afae8819e0d31adc3}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_afad55f94c0bd6e5afae8819e0d31adc3}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!LightSpot@{LightSpot}}
+\index{LightSpot@{LightSpot}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{LightSpot}{LightSpot}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_light_spot}{Light\+Spot}} \mbox{\hyperlink{struct_light_spot}{Light\+Spot}}}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a480a040facb94f90060562cd65274385}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a480a040facb94f90060562cd65274385}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!Player@{Player}}
+\index{Player@{Player}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{struct_player}{Player}}}
+
+
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!LightedLevel@{LightedLevel}}
+\index{LightedLevel@{LightedLevel}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{LightedLevel}{LightedLevel}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864}{Lighted\+Level}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL\_I@{LEVEL\_I}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!LEVEL\_I@{LEVEL\_I}}}\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864a370282cb59127cee55e40d84be06de84}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864a370282cb59127cee55e40d84be06de84}} 
+L\+E\+V\+E\+L\+\_\+I&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL\_II@{LEVEL\_II}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!LEVEL\_II@{LEVEL\_II}}}\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864ac4c86782f6faa4167855fd5492e449e8}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864ac4c86782f6faa4167855fd5492e449e8}} 
+L\+E\+V\+E\+L\+\_\+\+II&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL\_III@{LEVEL\_III}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!LEVEL\_III@{LEVEL\_III}}}\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864a7edacdefb8aa60277e4170b2fd200d43}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864a7edacdefb8aa60277e4170b2fd200d43}} 
+L\+E\+V\+E\+L\+\_\+\+I\+II&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEVEL\_FINISHED@{LEVEL\_FINISHED}!screen\_gameplay.c@{screen\_gameplay.c}}\index{screen\_gameplay.c@{screen\_gameplay.c}!LEVEL\_FINISHED@{LEVEL\_FINISHED}}}\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864ad6e2e47908889d66c6e03900b02af317}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a924748ed0b47752f92312fbab5e80864ad6e2e47908889d66c6e03900b02af317}} 
+L\+E\+V\+E\+L\+\_\+\+F\+I\+N\+I\+S\+H\+ED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a8b8fc25f26ad73f9c08497af8b074ccf}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a8b8fc25f26ad73f9c08497af8b074ccf}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!DrawGameplayScreen@{DrawGameplayScreen}}
+\index{DrawGameplayScreen@{DrawGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{DrawGameplayScreen()}{DrawGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_abe4d51d9e25770ad24c45f83837211be}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_abe4d51d9e25770ad24c45f83837211be}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!FinishGameplayScreen@{FinishGameplayScreen}}
+\index{FinishGameplayScreen@{FinishGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{FinishGameplayScreen()}{FinishGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Finish\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_a76918e73a46306124299f0ecdded70ac}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_a76918e73a46306124299f0ecdded70ac}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!InitGameplayScreen@{InitGameplayScreen}}
+\index{InitGameplayScreen@{InitGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{InitGameplayScreen()}{InitGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Init\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_ac96945d9b745690aa8ff1c909c816188}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_ac96945d9b745690aa8ff1c909c816188}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!UnloadGameplayScreen@{UnloadGameplayScreen}}
+\index{UnloadGameplayScreen@{UnloadGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{UnloadGameplayScreen()}{UnloadGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{games_2light__my__ritual_2screens_2screen__gameplay_8c_ae375af3a5eb93543369403b716cbc0a8}\label{games_2light__my__ritual_2screens_2screen__gameplay_8c_ae375af3a5eb93543369403b716cbc0a8}} 
+\index{screen\_gameplay.c@{screen\_gameplay.c}!UpdateGameplayScreen@{UpdateGameplayScreen}}
+\index{UpdateGameplayScreen@{UpdateGameplayScreen}!screen\_gameplay.c@{screen\_gameplay.c}}
+\doxysubsubsection{\texorpdfstring{UpdateGameplayScreen()}{UpdateGameplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Gameplay\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+

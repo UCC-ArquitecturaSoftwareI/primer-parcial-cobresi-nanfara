@@ -1,0 +1,240 @@
+\hypertarget{structma__device__config}{}\doxysection{Referencia de la Estructura ma\+\_\+device\+\_\+config}
+\label{structma__device__config}\index{ma\_device\_config@{ma\_device\_config}}
+
+
+{\ttfamily \#include $<$miniaudio.\+h$>$}
+
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{miniaudio_8h_a47643cf7ad53bfbc605a23a5a9545cc1}{ma\+\_\+device\+\_\+type}} \mbox{\hyperlink{structma__device__config_a176ed17b7a55d2df5bd4fc034332c204}{device\+Type}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} \mbox{\hyperlink{structma__device__config_a6aa474f1db915567f81c0151acdc3c6c}{sample\+Rate}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} \mbox{\hyperlink{structma__device__config_ada4d57bafcf150c3fed9285628efb366}{buffer\+Size\+In\+Frames}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} \mbox{\hyperlink{structma__device__config_a4ac4b547e03170ce5d785f1e55a7bb09}{buffer\+Size\+In\+Milliseconds}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} \mbox{\hyperlink{structma__device__config_aca9f945e436eceae921aef035e982ab7}{periods}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_a3b2b5abd9eebbc795a19bc08d379a417}{ma\+\_\+performance\+\_\+profile}} \mbox{\hyperlink{structma__device__config_a3e194444c1d0600e32a80956c975dda5}{performance\+Profile}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} \mbox{\hyperlink{structma__device__config_af998b66d159c1d2d357a9450eee47c34}{no\+Pre\+Zeroed\+Output\+Buffer}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} \mbox{\hyperlink{structma__device__config_af3d34ec045d53ad320c61b09e6d0a7bb}{no\+Clip}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_aee091a66f524118a980bbbcd01edba47}{ma\+\_\+device\+\_\+callback\+\_\+proc}} \mbox{\hyperlink{structma__device__config_a597c796c7dd59a40de250adb0fd5ed47}{data\+Callback}}
+\item 
+\mbox{\hyperlink{miniaudio_8h_ae4d7c985593000f6e60b2f35843f6875}{ma\+\_\+stop\+\_\+proc}} \mbox{\hyperlink{structma__device__config_aa63a1fad8d16b162a01c502d0e755488}{stop\+Callback}}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$ \mbox{\hyperlink{structma__device__config_a4c8e35691e3c777e6033c8d9e0dc8ed7}{p\+User\+Data}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{unionma__device__id}{ma\_device\_id}} $\ast$ \mbox{\hyperlink{structma__device__config_ab1b23e81a14f8ae22bf52f300e17be3a}{pDeviceID}}\\
+\>\mbox{\hyperlink{miniaudio_8h_ad79b60b511fdbc0c98a63ac23ac12bd9}{ma\_format}} \mbox{\hyperlink{structma__device__config_ae497313d7b84e44d486a9f1877864289}{format}}\\
+\>\mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\_uint32}} \mbox{\hyperlink{structma__device__config_ae095852d208190c0c87d562862334987}{channels}}\\
+\>\mbox{\hyperlink{miniaudio_8h_a1fc95b50a97f37464c83ba348861e808}{ma\_channel}} \mbox{\hyperlink{structma__device__config_a11a50117f78797e7af5fb39e0d65207d}{channelMap}} \mbox{[}\mbox{\hyperlink{miniaudio_8h_ac910830c60d9771f26633b338675d7a7}{MA\_MAX\_CHANNELS}}\mbox{]}\\
+\>\mbox{\hyperlink{miniaudio_8h_a7205e795ceb914cbf97f19487627f3a9}{ma\_share\_mode}} \mbox{\hyperlink{structma__device__config_a0884ca0b50b20c5d3d9579dd43b93814}{shareMode}}\\
+\} \mbox{\hyperlink{structma__device__config_a63f0a2ed11b1d96789610fbbbbb553a5}{playback}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{unionma__device__id}{ma\_device\_id}} $\ast$ \mbox{\hyperlink{structma__device__config_ab1b23e81a14f8ae22bf52f300e17be3a}{pDeviceID}}\\
+\>\mbox{\hyperlink{miniaudio_8h_ad79b60b511fdbc0c98a63ac23ac12bd9}{ma\_format}} \mbox{\hyperlink{structma__device__config_ae497313d7b84e44d486a9f1877864289}{format}}\\
+\>\mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\_uint32}} \mbox{\hyperlink{structma__device__config_ae095852d208190c0c87d562862334987}{channels}}\\
+\>\mbox{\hyperlink{miniaudio_8h_a1fc95b50a97f37464c83ba348861e808}{ma\_channel}} \mbox{\hyperlink{structma__device__config_a11a50117f78797e7af5fb39e0d65207d}{channelMap}} \mbox{[}\mbox{\hyperlink{miniaudio_8h_ac910830c60d9771f26633b338675d7a7}{MA\_MAX\_CHANNELS}}\mbox{]}\\
+\>\mbox{\hyperlink{miniaudio_8h_a7205e795ceb914cbf97f19487627f3a9}{ma\_share\_mode}} \mbox{\hyperlink{structma__device__config_a0884ca0b50b20c5d3d9579dd43b93814}{shareMode}}\\
+\} \mbox{\hyperlink{structma__device__config_a92a4df9ab02e6b5312e61fcd3515fe4d}{capture}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\_bool32}} \mbox{\hyperlink{structma__device__config_a88f319207d8f162ca4f8080fe8e8e604}{noAutoConvertSRC}}\\
+\>\mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\_bool32}} \mbox{\hyperlink{structma__device__config_a397b4cde28d1750404e96b43513c8815}{noDefaultQualitySRC}}\\
+\} \mbox{\hyperlink{structma__device__config_ae6b1bb446f3c5c2fa8c1b9724430fd22}{wasapi}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\_bool32}} \mbox{\hyperlink{structma__device__config_aacd393c0a0197c4fd7b3384ba0a8c4a4}{noMMap}}\\
+\} \mbox{\hyperlink{structma__device__config_a6c46ec7445f62632b91dcb2b5e00efcb}{alsa}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{structma__device__config_ae22c24639fe29fc6096230c169c69cb0}{pStreamNamePlayback}}\\
+\>const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{structma__device__config_a69a53a3a8975b81cede4ad0d53d8f99a}{pStreamNameCapture}}\\
+\} \mbox{\hyperlink{structma__device__config_a49547cb2b1fb8e5e54f066fcc5dbc867}{pulse}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{structma__device__config_a6c46ec7445f62632b91dcb2b5e00efcb}\label{structma__device__config_a6c46ec7445f62632b91dcb2b5e00efcb}} 
+\index{ma\_device\_config@{ma\_device\_config}!alsa@{alsa}}
+\index{alsa@{alsa}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{alsa}{alsa}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+device\+\_\+config\+::alsa}
+
+\mbox{\Hypertarget{structma__device__config_ada4d57bafcf150c3fed9285628efb366}\label{structma__device__config_ada4d57bafcf150c3fed9285628efb366}} 
+\index{ma\_device\_config@{ma\_device\_config}!bufferSizeInFrames@{bufferSizeInFrames}}
+\index{bufferSizeInFrames@{bufferSizeInFrames}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{bufferSizeInFrames}{bufferSizeInFrames}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} ma\+\_\+device\+\_\+config\+::buffer\+Size\+In\+Frames}
+
+\mbox{\Hypertarget{structma__device__config_a4ac4b547e03170ce5d785f1e55a7bb09}\label{structma__device__config_a4ac4b547e03170ce5d785f1e55a7bb09}} 
+\index{ma\_device\_config@{ma\_device\_config}!bufferSizeInMilliseconds@{bufferSizeInMilliseconds}}
+\index{bufferSizeInMilliseconds@{bufferSizeInMilliseconds}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{bufferSizeInMilliseconds}{bufferSizeInMilliseconds}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} ma\+\_\+device\+\_\+config\+::buffer\+Size\+In\+Milliseconds}
+
+\mbox{\Hypertarget{structma__device__config_a92a4df9ab02e6b5312e61fcd3515fe4d}\label{structma__device__config_a92a4df9ab02e6b5312e61fcd3515fe4d}} 
+\index{ma\_device\_config@{ma\_device\_config}!capture@{capture}}
+\index{capture@{capture}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{capture}{capture}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+device\+\_\+config\+::capture}
+
+\mbox{\Hypertarget{structma__device__config_a11a50117f78797e7af5fb39e0d65207d}\label{structma__device__config_a11a50117f78797e7af5fb39e0d65207d}} 
+\index{ma\_device\_config@{ma\_device\_config}!channelMap@{channelMap}}
+\index{channelMap@{channelMap}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{channelMap}{channelMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a1fc95b50a97f37464c83ba348861e808}{ma\+\_\+channel}} ma\+\_\+device\+\_\+config\+::channel\+Map\mbox{[}\mbox{\hyperlink{miniaudio_8h_ac910830c60d9771f26633b338675d7a7}{M\+A\+\_\+\+M\+A\+X\+\_\+\+C\+H\+A\+N\+N\+E\+LS}}\mbox{]}}
+
+\mbox{\Hypertarget{structma__device__config_ae095852d208190c0c87d562862334987}\label{structma__device__config_ae095852d208190c0c87d562862334987}} 
+\index{ma\_device\_config@{ma\_device\_config}!channels@{channels}}
+\index{channels@{channels}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{channels}{channels}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} ma\+\_\+device\+\_\+config\+::channels}
+
+\mbox{\Hypertarget{structma__device__config_a597c796c7dd59a40de250adb0fd5ed47}\label{structma__device__config_a597c796c7dd59a40de250adb0fd5ed47}} 
+\index{ma\_device\_config@{ma\_device\_config}!dataCallback@{dataCallback}}
+\index{dataCallback@{dataCallback}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{dataCallback}{dataCallback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_aee091a66f524118a980bbbcd01edba47}{ma\+\_\+device\+\_\+callback\+\_\+proc}} ma\+\_\+device\+\_\+config\+::data\+Callback}
+
+\mbox{\Hypertarget{structma__device__config_a176ed17b7a55d2df5bd4fc034332c204}\label{structma__device__config_a176ed17b7a55d2df5bd4fc034332c204}} 
+\index{ma\_device\_config@{ma\_device\_config}!deviceType@{deviceType}}
+\index{deviceType@{deviceType}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{deviceType}{deviceType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a47643cf7ad53bfbc605a23a5a9545cc1}{ma\+\_\+device\+\_\+type}} ma\+\_\+device\+\_\+config\+::device\+Type}
+
+\mbox{\Hypertarget{structma__device__config_ae497313d7b84e44d486a9f1877864289}\label{structma__device__config_ae497313d7b84e44d486a9f1877864289}} 
+\index{ma\_device\_config@{ma\_device\_config}!format@{format}}
+\index{format@{format}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ad79b60b511fdbc0c98a63ac23ac12bd9}{ma\+\_\+format}} ma\+\_\+device\+\_\+config\+::format}
+
+\mbox{\Hypertarget{structma__device__config_a88f319207d8f162ca4f8080fe8e8e604}\label{structma__device__config_a88f319207d8f162ca4f8080fe8e8e604}} 
+\index{ma\_device\_config@{ma\_device\_config}!noAutoConvertSRC@{noAutoConvertSRC}}
+\index{noAutoConvertSRC@{noAutoConvertSRC}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{noAutoConvertSRC}{noAutoConvertSRC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} ma\+\_\+device\+\_\+config\+::no\+Auto\+Convert\+S\+RC}
+
+\mbox{\Hypertarget{structma__device__config_af3d34ec045d53ad320c61b09e6d0a7bb}\label{structma__device__config_af3d34ec045d53ad320c61b09e6d0a7bb}} 
+\index{ma\_device\_config@{ma\_device\_config}!noClip@{noClip}}
+\index{noClip@{noClip}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{noClip}{noClip}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} ma\+\_\+device\+\_\+config\+::no\+Clip}
+
+\mbox{\Hypertarget{structma__device__config_a397b4cde28d1750404e96b43513c8815}\label{structma__device__config_a397b4cde28d1750404e96b43513c8815}} 
+\index{ma\_device\_config@{ma\_device\_config}!noDefaultQualitySRC@{noDefaultQualitySRC}}
+\index{noDefaultQualitySRC@{noDefaultQualitySRC}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{noDefaultQualitySRC}{noDefaultQualitySRC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} ma\+\_\+device\+\_\+config\+::no\+Default\+Quality\+S\+RC}
+
+\mbox{\Hypertarget{structma__device__config_aacd393c0a0197c4fd7b3384ba0a8c4a4}\label{structma__device__config_aacd393c0a0197c4fd7b3384ba0a8c4a4}} 
+\index{ma\_device\_config@{ma\_device\_config}!noMMap@{noMMap}}
+\index{noMMap@{noMMap}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{noMMap}{noMMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} ma\+\_\+device\+\_\+config\+::no\+M\+Map}
+
+\mbox{\Hypertarget{structma__device__config_af998b66d159c1d2d357a9450eee47c34}\label{structma__device__config_af998b66d159c1d2d357a9450eee47c34}} 
+\index{ma\_device\_config@{ma\_device\_config}!noPreZeroedOutputBuffer@{noPreZeroedOutputBuffer}}
+\index{noPreZeroedOutputBuffer@{noPreZeroedOutputBuffer}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{noPreZeroedOutputBuffer}{noPreZeroedOutputBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a547261c6f1890548f4990f0cbbd39859}{ma\+\_\+bool32}} ma\+\_\+device\+\_\+config\+::no\+Pre\+Zeroed\+Output\+Buffer}
+
+\mbox{\Hypertarget{structma__device__config_ab1b23e81a14f8ae22bf52f300e17be3a}\label{structma__device__config_ab1b23e81a14f8ae22bf52f300e17be3a}} 
+\index{ma\_device\_config@{ma\_device\_config}!pDeviceID@{pDeviceID}}
+\index{pDeviceID@{pDeviceID}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{pDeviceID}{pDeviceID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionma__device__id}{ma\+\_\+device\+\_\+id}}$\ast$ ma\+\_\+device\+\_\+config\+::p\+Device\+ID}
+
+\mbox{\Hypertarget{structma__device__config_a3e194444c1d0600e32a80956c975dda5}\label{structma__device__config_a3e194444c1d0600e32a80956c975dda5}} 
+\index{ma\_device\_config@{ma\_device\_config}!performanceProfile@{performanceProfile}}
+\index{performanceProfile@{performanceProfile}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{performanceProfile}{performanceProfile}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a3b2b5abd9eebbc795a19bc08d379a417}{ma\+\_\+performance\+\_\+profile}} ma\+\_\+device\+\_\+config\+::performance\+Profile}
+
+\mbox{\Hypertarget{structma__device__config_aca9f945e436eceae921aef035e982ab7}\label{structma__device__config_aca9f945e436eceae921aef035e982ab7}} 
+\index{ma\_device\_config@{ma\_device\_config}!periods@{periods}}
+\index{periods@{periods}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{periods}{periods}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} ma\+\_\+device\+\_\+config\+::periods}
+
+\mbox{\Hypertarget{structma__device__config_a63f0a2ed11b1d96789610fbbbbb553a5}\label{structma__device__config_a63f0a2ed11b1d96789610fbbbbb553a5}} 
+\index{ma\_device\_config@{ma\_device\_config}!playback@{playback}}
+\index{playback@{playback}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{playback}{playback}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+device\+\_\+config\+::playback}
+
+\mbox{\Hypertarget{structma__device__config_a69a53a3a8975b81cede4ad0d53d8f99a}\label{structma__device__config_a69a53a3a8975b81cede4ad0d53d8f99a}} 
+\index{ma\_device\_config@{ma\_device\_config}!pStreamNameCapture@{pStreamNameCapture}}
+\index{pStreamNameCapture@{pStreamNameCapture}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{pStreamNameCapture}{pStreamNameCapture}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ ma\+\_\+device\+\_\+config\+::p\+Stream\+Name\+Capture}
+
+\mbox{\Hypertarget{structma__device__config_ae22c24639fe29fc6096230c169c69cb0}\label{structma__device__config_ae22c24639fe29fc6096230c169c69cb0}} 
+\index{ma\_device\_config@{ma\_device\_config}!pStreamNamePlayback@{pStreamNamePlayback}}
+\index{pStreamNamePlayback@{pStreamNamePlayback}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{pStreamNamePlayback}{pStreamNamePlayback}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ ma\+\_\+device\+\_\+config\+::p\+Stream\+Name\+Playback}
+
+\mbox{\Hypertarget{structma__device__config_a49547cb2b1fb8e5e54f066fcc5dbc867}\label{structma__device__config_a49547cb2b1fb8e5e54f066fcc5dbc867}} 
+\index{ma\_device\_config@{ma\_device\_config}!pulse@{pulse}}
+\index{pulse@{pulse}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{pulse}{pulse}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+device\+\_\+config\+::pulse}
+
+\mbox{\Hypertarget{structma__device__config_a4c8e35691e3c777e6033c8d9e0dc8ed7}\label{structma__device__config_a4c8e35691e3c777e6033c8d9e0dc8ed7}} 
+\index{ma\_device\_config@{ma\_device\_config}!pUserData@{pUserData}}
+\index{pUserData@{pUserData}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{pUserData}{pUserData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}$\ast$ ma\+\_\+device\+\_\+config\+::p\+User\+Data}
+
+\mbox{\Hypertarget{structma__device__config_a6aa474f1db915567f81c0151acdc3c6c}\label{structma__device__config_a6aa474f1db915567f81c0151acdc3c6c}} 
+\index{ma\_device\_config@{ma\_device\_config}!sampleRate@{sampleRate}}
+\index{sampleRate@{sampleRate}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{sampleRate}{sampleRate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} ma\+\_\+device\+\_\+config\+::sample\+Rate}
+
+\mbox{\Hypertarget{structma__device__config_a0884ca0b50b20c5d3d9579dd43b93814}\label{structma__device__config_a0884ca0b50b20c5d3d9579dd43b93814}} 
+\index{ma\_device\_config@{ma\_device\_config}!shareMode@{shareMode}}
+\index{shareMode@{shareMode}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{shareMode}{shareMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_a7205e795ceb914cbf97f19487627f3a9}{ma\+\_\+share\+\_\+mode}} ma\+\_\+device\+\_\+config\+::share\+Mode}
+
+\mbox{\Hypertarget{structma__device__config_aa63a1fad8d16b162a01c502d0e755488}\label{structma__device__config_aa63a1fad8d16b162a01c502d0e755488}} 
+\index{ma\_device\_config@{ma\_device\_config}!stopCallback@{stopCallback}}
+\index{stopCallback@{stopCallback}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{stopCallback}{stopCallback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_ae4d7c985593000f6e60b2f35843f6875}{ma\+\_\+stop\+\_\+proc}} ma\+\_\+device\+\_\+config\+::stop\+Callback}
+
+\mbox{\Hypertarget{structma__device__config_ae6b1bb446f3c5c2fa8c1b9724430fd22}\label{structma__device__config_ae6b1bb446f3c5c2fa8c1b9724430fd22}} 
+\index{ma\_device\_config@{ma\_device\_config}!wasapi@{wasapi}}
+\index{wasapi@{wasapi}!ma\_device\_config@{ma\_device\_config}}
+\doxysubsubsection{\texorpdfstring{wasapi}{wasapi}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+device\+\_\+config\+::wasapi}
+
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/\mbox{\hyperlink{miniaudio_8h}{miniaudio.\+h}}\end{DoxyCompactItemize}

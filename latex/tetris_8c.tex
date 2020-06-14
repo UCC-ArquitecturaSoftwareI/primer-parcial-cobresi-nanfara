@@ -1,0 +1,140 @@
+\hypertarget{tetris_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/tetris.c}
+\label{tetris_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/tetris.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/tetris.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tetris_8c_aa465c0206c08c9cde6075c2afb1c8bc8}{S\+Q\+U\+A\+R\+E\+\_\+\+S\+I\+ZE}}~20
+\item 
+\#define \mbox{\hyperlink{tetris_8c_a2b4d370f48bd4206504449478807b74b}{G\+R\+I\+D\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L\+\_\+\+S\+I\+ZE}}~12
+\item 
+\#define \mbox{\hyperlink{tetris_8c_a218d8977420cfb838887aec7401491bc}{G\+R\+I\+D\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L\+\_\+\+S\+I\+ZE}}~20
+\item 
+\#define \mbox{\hyperlink{tetris_8c_a4b8b61000bb5a16218db11e2ee74ab7a}{L\+A\+T\+E\+R\+A\+L\+\_\+\+S\+P\+E\+ED}}~10
+\item 
+\#define \mbox{\hyperlink{tetris_8c_acd9fde4a610d1277a238b134c9ca22db}{T\+U\+R\+N\+I\+N\+G\+\_\+\+S\+P\+E\+ED}}~12
+\item 
+\#define \mbox{\hyperlink{tetris_8c_a2262bf4334c06517a3939f9ef31db18d}{F\+A\+S\+T\+\_\+\+F\+A\+L\+L\+\_\+\+A\+W\+A\+I\+T\+\_\+\+C\+O\+U\+N\+T\+ER}}~30
+\item 
+\#define \mbox{\hyperlink{tetris_8c_a43cb9dcb314c4ca9fa4a92e26f949e9e}{F\+A\+D\+I\+N\+G\+\_\+\+T\+I\+ME}}~33
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3}{Grid\+Square}} \mbox{\hyperlink{tetris_8c_a1fd9283a004bcb5193318605935f6d7f}{Grid\+Square}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3}{Grid\+Square}} \{ \newline
+\mbox{\hyperlink{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3a2f0d18fc0d0fa4a6cd92dc328501874d}{E\+M\+P\+TY}}, 
+\mbox{\hyperlink{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3a16ebdcb23eb5337fd5bc598fa8d6035d}{M\+O\+V\+I\+NG}}, 
+\mbox{\hyperlink{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3ad08f8ac0aa8dfb59589824359772459e}{F\+U\+LL}}, 
+\mbox{\hyperlink{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3a02fc27068fe9a3c151ffcc08ec5bb65d}{B\+L\+O\+CK}}, 
+\newline
+\mbox{\hyperlink{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3ad72e81dcc4a8670355bdeb507942fd89}{F\+A\+D\+I\+NG}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{tetris_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{tetris_8c_a43cb9dcb314c4ca9fa4a92e26f949e9e}\label{tetris_8c_a43cb9dcb314c4ca9fa4a92e26f949e9e}} 
+\index{tetris.c@{tetris.c}!FADING\_TIME@{FADING\_TIME}}
+\index{FADING\_TIME@{FADING\_TIME}!tetris.c@{tetris.c}}
+\doxysubsubsection{\texorpdfstring{FADING\_TIME}{FADING\_TIME}}
+{\footnotesize\ttfamily \#define F\+A\+D\+I\+N\+G\+\_\+\+T\+I\+ME~33}
+
+\mbox{\Hypertarget{tetris_8c_a2262bf4334c06517a3939f9ef31db18d}\label{tetris_8c_a2262bf4334c06517a3939f9ef31db18d}} 
+\index{tetris.c@{tetris.c}!FAST\_FALL\_AWAIT\_COUNTER@{FAST\_FALL\_AWAIT\_COUNTER}}
+\index{FAST\_FALL\_AWAIT\_COUNTER@{FAST\_FALL\_AWAIT\_COUNTER}!tetris.c@{tetris.c}}
+\doxysubsubsection{\texorpdfstring{FAST\_FALL\_AWAIT\_COUNTER}{FAST\_FALL\_AWAIT\_COUNTER}}
+{\footnotesize\ttfamily \#define F\+A\+S\+T\+\_\+\+F\+A\+L\+L\+\_\+\+A\+W\+A\+I\+T\+\_\+\+C\+O\+U\+N\+T\+ER~30}
+
+\mbox{\Hypertarget{tetris_8c_a2b4d370f48bd4206504449478807b74b}\label{tetris_8c_a2b4d370f48bd4206504449478807b74b}} 
+\index{tetris.c@{tetris.c}!GRID\_HORIZONTAL\_SIZE@{GRID\_HORIZONTAL\_SIZE}}
+\index{GRID\_HORIZONTAL\_SIZE@{GRID\_HORIZONTAL\_SIZE}!tetris.c@{tetris.c}}
+\doxysubsubsection{\texorpdfstring{GRID\_HORIZONTAL\_SIZE}{GRID\_HORIZONTAL\_SIZE}}
+{\footnotesize\ttfamily \#define G\+R\+I\+D\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L\+\_\+\+S\+I\+ZE~12}
+
+\mbox{\Hypertarget{tetris_8c_a218d8977420cfb838887aec7401491bc}\label{tetris_8c_a218d8977420cfb838887aec7401491bc}} 
+\index{tetris.c@{tetris.c}!GRID\_VERTICAL\_SIZE@{GRID\_VERTICAL\_SIZE}}
+\index{GRID\_VERTICAL\_SIZE@{GRID\_VERTICAL\_SIZE}!tetris.c@{tetris.c}}
+\doxysubsubsection{\texorpdfstring{GRID\_VERTICAL\_SIZE}{GRID\_VERTICAL\_SIZE}}
+{\footnotesize\ttfamily \#define G\+R\+I\+D\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L\+\_\+\+S\+I\+ZE~20}
+
+\mbox{\Hypertarget{tetris_8c_a4b8b61000bb5a16218db11e2ee74ab7a}\label{tetris_8c_a4b8b61000bb5a16218db11e2ee74ab7a}} 
+\index{tetris.c@{tetris.c}!LATERAL\_SPEED@{LATERAL\_SPEED}}
+\index{LATERAL\_SPEED@{LATERAL\_SPEED}!tetris.c@{tetris.c}}
+\doxysubsubsection{\texorpdfstring{LATERAL\_SPEED}{LATERAL\_SPEED}}
+{\footnotesize\ttfamily \#define L\+A\+T\+E\+R\+A\+L\+\_\+\+S\+P\+E\+ED~10}
+
+\mbox{\Hypertarget{tetris_8c_aa465c0206c08c9cde6075c2afb1c8bc8}\label{tetris_8c_aa465c0206c08c9cde6075c2afb1c8bc8}} 
+\index{tetris.c@{tetris.c}!SQUARE\_SIZE@{SQUARE\_SIZE}}
+\index{SQUARE\_SIZE@{SQUARE\_SIZE}!tetris.c@{tetris.c}}
+\doxysubsubsection{\texorpdfstring{SQUARE\_SIZE}{SQUARE\_SIZE}}
+{\footnotesize\ttfamily \#define S\+Q\+U\+A\+R\+E\+\_\+\+S\+I\+ZE~20}
+
+\mbox{\Hypertarget{tetris_8c_acd9fde4a610d1277a238b134c9ca22db}\label{tetris_8c_acd9fde4a610d1277a238b134c9ca22db}} 
+\index{tetris.c@{tetris.c}!TURNING\_SPEED@{TURNING\_SPEED}}
+\index{TURNING\_SPEED@{TURNING\_SPEED}!tetris.c@{tetris.c}}
+\doxysubsubsection{\texorpdfstring{TURNING\_SPEED}{TURNING\_SPEED}}
+{\footnotesize\ttfamily \#define T\+U\+R\+N\+I\+N\+G\+\_\+\+S\+P\+E\+ED~12}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{tetris_8c_a1fd9283a004bcb5193318605935f6d7f}\label{tetris_8c_a1fd9283a004bcb5193318605935f6d7f}} 
+\index{tetris.c@{tetris.c}!GridSquare@{GridSquare}}
+\index{GridSquare@{GridSquare}!tetris.c@{tetris.c}}
+\doxysubsubsection{\texorpdfstring{GridSquare}{GridSquare}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3}{Grid\+Square}} \mbox{\hyperlink{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3}{Grid\+Square}}}
+
+
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3}\label{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3}} 
+\index{tetris.c@{tetris.c}!GridSquare@{GridSquare}}
+\index{GridSquare@{GridSquare}!tetris.c@{tetris.c}}
+\doxysubsubsection{\texorpdfstring{GridSquare}{GridSquare}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3}{Grid\+Square}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EMPTY@{EMPTY}!tetris.c@{tetris.c}}\index{tetris.c@{tetris.c}!EMPTY@{EMPTY}}}\mbox{\Hypertarget{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3a2f0d18fc0d0fa4a6cd92dc328501874d}\label{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3a2f0d18fc0d0fa4a6cd92dc328501874d}} 
+E\+M\+P\+TY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVING@{MOVING}!tetris.c@{tetris.c}}\index{tetris.c@{tetris.c}!MOVING@{MOVING}}}\mbox{\Hypertarget{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3a16ebdcb23eb5337fd5bc598fa8d6035d}\label{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3a16ebdcb23eb5337fd5bc598fa8d6035d}} 
+M\+O\+V\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FULL@{FULL}!tetris.c@{tetris.c}}\index{tetris.c@{tetris.c}!FULL@{FULL}}}\mbox{\Hypertarget{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3ad08f8ac0aa8dfb59589824359772459e}\label{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3ad08f8ac0aa8dfb59589824359772459e}} 
+F\+U\+LL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLOCK@{BLOCK}!tetris.c@{tetris.c}}\index{tetris.c@{tetris.c}!BLOCK@{BLOCK}}}\mbox{\Hypertarget{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3a02fc27068fe9a3c151ffcc08ec5bb65d}\label{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3a02fc27068fe9a3c151ffcc08ec5bb65d}} 
+B\+L\+O\+CK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FADING@{FADING}!tetris.c@{tetris.c}}\index{tetris.c@{tetris.c}!FADING@{FADING}}}\mbox{\Hypertarget{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3ad72e81dcc4a8670355bdeb507942fd89}\label{tetris_8c_a8c12cae1970ec145f42c8a8cb40696d3ad72e81dcc4a8670355bdeb507942fd89}} 
+F\+A\+D\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{tetris_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{tetris_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{tetris.c@{tetris.c}!main@{main}}
+\index{main@{main}!tetris.c@{tetris.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+

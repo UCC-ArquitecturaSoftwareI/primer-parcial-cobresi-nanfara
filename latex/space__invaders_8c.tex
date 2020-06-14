@@ -1,0 +1,133 @@
+\hypertarget{space__invaders_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/games/space\+\_\+invaders.c}
+\label{space__invaders_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/games/space\_invaders.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/games/space\_invaders.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_player}{Player}}
+\item 
+struct \mbox{\hyperlink{struct_enemy}{Enemy}}
+\item 
+struct \mbox{\hyperlink{struct_shoot}{Shoot}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{space__invaders_8c_aa0a95159550ceb77a2aa8e380d876b40}{N\+U\+M\+\_\+\+S\+H\+O\+O\+TS}}~50
+\item 
+\#define \mbox{\hyperlink{space__invaders_8c_a0b5d16a6245abd95ac67b58f9b1d5f18}{N\+U\+M\+\_\+\+M\+A\+X\+\_\+\+E\+N\+E\+M\+I\+ES}}~50
+\item 
+\#define \mbox{\hyperlink{space__invaders_8c_a251460acc9d07c98b891b4c1aca2ff1d}{F\+I\+R\+S\+T\+\_\+\+W\+A\+VE}}~10
+\item 
+\#define \mbox{\hyperlink{space__invaders_8c_abdf21871fb4f4c523bbdb951fb393174}{S\+E\+C\+O\+N\+D\+\_\+\+W\+A\+VE}}~20
+\item 
+\#define \mbox{\hyperlink{space__invaders_8c_a79da725b1ef7c8f664c103f937b5e81e}{T\+H\+I\+R\+D\+\_\+\+W\+A\+VE}}~50
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{space__invaders_8c_a480a040facb94f90060562cd65274385}{Player}}
+\item 
+typedef struct \mbox{\hyperlink{struct_enemy}{Enemy}} \mbox{\hyperlink{space__invaders_8c_af975ad1eb2a131dcfa7620809ae9bf92}{Enemy}}
+\item 
+typedef struct \mbox{\hyperlink{struct_shoot}{Shoot}} \mbox{\hyperlink{space__invaders_8c_ae6fe4fb3e7b38f97762b613838612381}{Shoot}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2a}{Enemy\+Wave}} \{ \mbox{\hyperlink{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2aa6a7856cca1833641e731676636b193f1}{F\+I\+R\+ST}} = 0, 
+\mbox{\hyperlink{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2aa7cb36ff0a80f238d5b987d9250d369e3}{S\+E\+C\+O\+ND}}, 
+\mbox{\hyperlink{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2aac88bc782686ee422ba7a5cb3bb3bf320}{T\+H\+I\+RD}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{space__invaders_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{space__invaders_8c_a251460acc9d07c98b891b4c1aca2ff1d}\label{space__invaders_8c_a251460acc9d07c98b891b4c1aca2ff1d}} 
+\index{space\_invaders.c@{space\_invaders.c}!FIRST\_WAVE@{FIRST\_WAVE}}
+\index{FIRST\_WAVE@{FIRST\_WAVE}!space\_invaders.c@{space\_invaders.c}}
+\doxysubsubsection{\texorpdfstring{FIRST\_WAVE}{FIRST\_WAVE}}
+{\footnotesize\ttfamily \#define F\+I\+R\+S\+T\+\_\+\+W\+A\+VE~10}
+
+\mbox{\Hypertarget{space__invaders_8c_a0b5d16a6245abd95ac67b58f9b1d5f18}\label{space__invaders_8c_a0b5d16a6245abd95ac67b58f9b1d5f18}} 
+\index{space\_invaders.c@{space\_invaders.c}!NUM\_MAX\_ENEMIES@{NUM\_MAX\_ENEMIES}}
+\index{NUM\_MAX\_ENEMIES@{NUM\_MAX\_ENEMIES}!space\_invaders.c@{space\_invaders.c}}
+\doxysubsubsection{\texorpdfstring{NUM\_MAX\_ENEMIES}{NUM\_MAX\_ENEMIES}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+M\+A\+X\+\_\+\+E\+N\+E\+M\+I\+ES~50}
+
+\mbox{\Hypertarget{space__invaders_8c_aa0a95159550ceb77a2aa8e380d876b40}\label{space__invaders_8c_aa0a95159550ceb77a2aa8e380d876b40}} 
+\index{space\_invaders.c@{space\_invaders.c}!NUM\_SHOOTS@{NUM\_SHOOTS}}
+\index{NUM\_SHOOTS@{NUM\_SHOOTS}!space\_invaders.c@{space\_invaders.c}}
+\doxysubsubsection{\texorpdfstring{NUM\_SHOOTS}{NUM\_SHOOTS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+S\+H\+O\+O\+TS~50}
+
+\mbox{\Hypertarget{space__invaders_8c_abdf21871fb4f4c523bbdb951fb393174}\label{space__invaders_8c_abdf21871fb4f4c523bbdb951fb393174}} 
+\index{space\_invaders.c@{space\_invaders.c}!SECOND\_WAVE@{SECOND\_WAVE}}
+\index{SECOND\_WAVE@{SECOND\_WAVE}!space\_invaders.c@{space\_invaders.c}}
+\doxysubsubsection{\texorpdfstring{SECOND\_WAVE}{SECOND\_WAVE}}
+{\footnotesize\ttfamily \#define S\+E\+C\+O\+N\+D\+\_\+\+W\+A\+VE~20}
+
+\mbox{\Hypertarget{space__invaders_8c_a79da725b1ef7c8f664c103f937b5e81e}\label{space__invaders_8c_a79da725b1ef7c8f664c103f937b5e81e}} 
+\index{space\_invaders.c@{space\_invaders.c}!THIRD\_WAVE@{THIRD\_WAVE}}
+\index{THIRD\_WAVE@{THIRD\_WAVE}!space\_invaders.c@{space\_invaders.c}}
+\doxysubsubsection{\texorpdfstring{THIRD\_WAVE}{THIRD\_WAVE}}
+{\footnotesize\ttfamily \#define T\+H\+I\+R\+D\+\_\+\+W\+A\+VE~50}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{space__invaders_8c_af975ad1eb2a131dcfa7620809ae9bf92}\label{space__invaders_8c_af975ad1eb2a131dcfa7620809ae9bf92}} 
+\index{space\_invaders.c@{space\_invaders.c}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!space\_invaders.c@{space\_invaders.c}}
+\doxysubsubsection{\texorpdfstring{Enemy}{Enemy}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_enemy}{Enemy}} \mbox{\hyperlink{struct_enemy}{Enemy}}}
+
+\mbox{\Hypertarget{space__invaders_8c_a480a040facb94f90060562cd65274385}\label{space__invaders_8c_a480a040facb94f90060562cd65274385}} 
+\index{space\_invaders.c@{space\_invaders.c}!Player@{Player}}
+\index{Player@{Player}!space\_invaders.c@{space\_invaders.c}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{struct_player}{Player}}}
+
+\mbox{\Hypertarget{space__invaders_8c_ae6fe4fb3e7b38f97762b613838612381}\label{space__invaders_8c_ae6fe4fb3e7b38f97762b613838612381}} 
+\index{space\_invaders.c@{space\_invaders.c}!Shoot@{Shoot}}
+\index{Shoot@{Shoot}!space\_invaders.c@{space\_invaders.c}}
+\doxysubsubsection{\texorpdfstring{Shoot}{Shoot}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_shoot}{Shoot}} \mbox{\hyperlink{struct_shoot}{Shoot}}}
+
+
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2a}\label{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2a}} 
+\index{space\_invaders.c@{space\_invaders.c}!EnemyWave@{EnemyWave}}
+\index{EnemyWave@{EnemyWave}!space\_invaders.c@{space\_invaders.c}}
+\doxysubsubsection{\texorpdfstring{EnemyWave}{EnemyWave}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2a}{Enemy\+Wave}}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FIRST@{FIRST}!space\_invaders.c@{space\_invaders.c}}\index{space\_invaders.c@{space\_invaders.c}!FIRST@{FIRST}}}\mbox{\Hypertarget{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2aa6a7856cca1833641e731676636b193f1}\label{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2aa6a7856cca1833641e731676636b193f1}} 
+F\+I\+R\+ST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECOND@{SECOND}!space\_invaders.c@{space\_invaders.c}}\index{space\_invaders.c@{space\_invaders.c}!SECOND@{SECOND}}}\mbox{\Hypertarget{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2aa7cb36ff0a80f238d5b987d9250d369e3}\label{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2aa7cb36ff0a80f238d5b987d9250d369e3}} 
+S\+E\+C\+O\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{THIRD@{THIRD}!space\_invaders.c@{space\_invaders.c}}\index{space\_invaders.c@{space\_invaders.c}!THIRD@{THIRD}}}\mbox{\Hypertarget{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2aac88bc782686ee422ba7a5cb3bb3bf320}\label{space__invaders_8c_a5dfad99d10ef0e8d6981e717b89c1a2aac88bc782686ee422ba7a5cb3bb3bf320}} 
+T\+H\+I\+RD&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{space__invaders_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{space__invaders_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{space\_invaders.c@{space\_invaders.c}!main@{main}}
+\index{main@{main}!space\_invaders.c@{space\_invaders.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+

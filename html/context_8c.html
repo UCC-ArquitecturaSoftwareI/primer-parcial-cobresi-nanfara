@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/src/external/glfw/src/context.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_522cffce0e7f7aeeda0715820aff089e.html">src</a></li><li class="navelem"><a class="el" href="dir_740e7e63c4fd631fa936466e993aeac5.html">external</a></li><li class="navelem"><a class="el" href="dir_fc592c499cb06c0baaba446292b5ff4d.html">glfw</a></li><li class="navelem"><a class="el" href="dir_43d03d9358785fa949ceb51da348f374.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo context.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="internal_8h_source.html">internal.h</a>&quot;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a659c5d5b0cd359304004700d16a76954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="internal_8h.html#ac5743c31bece872e24528b5a45e354c5">GLFWbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8c.html#a659c5d5b0cd359304004700d16a76954">_glfwIsValidContextConfig</a> (const <a class="el" href="struct___g_l_f_wctxconfig.html">_GLFWctxconfig</a> *ctxconfig)</td></tr>
+<tr class="separator:a659c5d5b0cd359304004700d16a76954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276a94e57c3120e6a79651acb1b8f535"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct___g_l_f_wfbconfig.html">_GLFWfbconfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8c.html#a276a94e57c3120e6a79651acb1b8f535">_glfwChooseFBConfig</a> (const <a class="el" href="struct___g_l_f_wfbconfig.html">_GLFWfbconfig</a> *desired, const <a class="el" href="struct___g_l_f_wfbconfig.html">_GLFWfbconfig</a> *alternatives, unsigned <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a22486c0c8d9f7d79a07bf22ecffeeb2f">count</a>)</td></tr>
+<tr class="separator:a276a94e57c3120e6a79651acb1b8f535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31e31c6a588d6770188033eed87305b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="internal_8h.html#ac5743c31bece872e24528b5a45e354c5">GLFWbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8c.html#ad31e31c6a588d6770188033eed87305b">_glfwRefreshContextAttribs</a> (<a class="el" href="struct___g_l_f_wwindow.html">_GLFWwindow</a> *<a class="el" href="eglext_8h.html#a92dbce8e3247f6a78126c99877caacb6">window</a>, const <a class="el" href="struct___g_l_f_wctxconfig.html">_GLFWctxconfig</a> *ctxconfig)</td></tr>
+<tr class="separator:ad31e31c6a588d6770188033eed87305b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb78d968ce928112060770a16dca695"><td class="memItemLeft" align="right" valign="top"><a class="el" href="internal_8h.html#ac5743c31bece872e24528b5a45e354c5">GLFWbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8c.html#a6fb78d968ce928112060770a16dca695">_glfwStringInExtensionString</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a5ef8ce60531c971745798ebb9f61a5d8">string</a>, const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *extensions)</td></tr>
+<tr class="separator:a6fb78d968ce928112060770a16dca695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd76c93e15ec8b0b90506a9936a46185"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__context.html#gafd76c93e15ec8b0b90506a9936a46185">glfwMakeContextCurrent</a> (<a class="el" href="group__window.html#ga3c96d80d363e67d13a41b5d1821f3242">GLFWwindow</a> *<a class="el" href="eglext_8h.html#a48fc485a2a8834589d1f1afeec65193c">handle</a>)</td></tr>
+<tr class="memdesc:gafd76c93e15ec8b0b90506a9936a46185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the context of the specified window current for the calling thread.  <a href="group__context.html#gafd76c93e15ec8b0b90506a9936a46185">Más...</a><br /></td></tr>
+<tr class="separator:gafd76c93e15ec8b0b90506a9936a46185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5fde1ef6238bfb82c7a2293f86172de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="group__window.html#ga3c96d80d363e67d13a41b5d1821f3242">GLFWwindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__context.html#gab5fde1ef6238bfb82c7a2293f86172de">glfwGetCurrentContext</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="memdesc:gab5fde1ef6238bfb82c7a2293f86172de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window whose context is current on the calling thread.  <a href="group__context.html#gab5fde1ef6238bfb82c7a2293f86172de">Más...</a><br /></td></tr>
+<tr class="separator:gab5fde1ef6238bfb82c7a2293f86172de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb827800eedbfcbc97b1e5408df668d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__window.html#gafb827800eedbfcbc97b1e5408df668d7">glfwSwapBuffers</a> (<a class="el" href="group__window.html#ga3c96d80d363e67d13a41b5d1821f3242">GLFWwindow</a> *<a class="el" href="eglext_8h.html#a48fc485a2a8834589d1f1afeec65193c">handle</a>)</td></tr>
+<tr class="memdesc:gafb827800eedbfcbc97b1e5408df668d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the front and back buffers of the specified window.  <a href="group__window.html#gafb827800eedbfcbc97b1e5408df668d7">Más...</a><br /></td></tr>
+<tr class="separator:gafb827800eedbfcbc97b1e5408df668d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12a595c06947cec4967c6e1f14210a8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__context.html#ga12a595c06947cec4967c6e1f14210a8a">glfwSwapInterval</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> interval)</td></tr>
+<tr class="memdesc:ga12a595c06947cec4967c6e1f14210a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the swap interval for the current context.  <a href="group__context.html#ga12a595c06947cec4967c6e1f14210a8a">Más...</a><br /></td></tr>
+<tr class="separator:ga12a595c06947cec4967c6e1f14210a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a28c712d35f9e43534e1d03b051c04c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__context.html#ga9a28c712d35f9e43534e1d03b051c04c">glfwExtensionSupported</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *extension)</td></tr>
+<tr class="memdesc:ga9a28c712d35f9e43534e1d03b051c04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the specified extension is available.  <a href="group__context.html#ga9a28c712d35f9e43534e1d03b051c04c">Más...</a><br /></td></tr>
+<tr class="separator:ga9a28c712d35f9e43534e1d03b051c04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e8af175218929615c16e74938c10f2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html#a56da5036b2cc259351ae22fd6439bb47">GLFWAPI</a> <a class="el" href="group__context.html#ga3d47c2d2fbe0be9c505d0e04e91a133c">GLFWglproc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__context.html#ga0e8af175218929615c16e74938c10f2a">glfwGetProcAddress</a> (const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *procname)</td></tr>
+<tr class="memdesc:ga0e8af175218929615c16e74938c10f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address of the specified function for the current context.  <a href="group__context.html#ga0e8af175218929615c16e74938c10f2a">Más...</a><br /></td></tr>
+<tr class="separator:ga0e8af175218929615c16e74938c10f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a276a94e57c3120e6a79651acb1b8f535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276a94e57c3120e6a79651acb1b8f535">&#9670;&nbsp;</a></span>_glfwChooseFBConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct___g_l_f_wfbconfig.html">_GLFWfbconfig</a>* _glfwChooseFBConfig </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct___g_l_f_wfbconfig.html">_GLFWfbconfig</a> *&#160;</td>
+          <td class="paramname"><em>desired</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct___g_l_f_wfbconfig.html">_GLFWfbconfig</a> *&#160;</td>
+          <td class="paramname"><em>alternatives</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a659c5d5b0cd359304004700d16a76954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a659c5d5b0cd359304004700d16a76954">&#9670;&nbsp;</a></span>_glfwIsValidContextConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="internal_8h.html#ac5743c31bece872e24528b5a45e354c5">GLFWbool</a> _glfwIsValidContextConfig </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct___g_l_f_wctxconfig.html">_GLFWctxconfig</a> *&#160;</td>
+          <td class="paramname"><em>ctxconfig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad31e31c6a588d6770188033eed87305b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad31e31c6a588d6770188033eed87305b">&#9670;&nbsp;</a></span>_glfwRefreshContextAttribs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="internal_8h.html#ac5743c31bece872e24528b5a45e354c5">GLFWbool</a> _glfwRefreshContextAttribs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct___g_l_f_wwindow.html">_GLFWwindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct___g_l_f_wctxconfig.html">_GLFWctxconfig</a> *&#160;</td>
+          <td class="paramname"><em>ctxconfig</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fb78d968ce928112060770a16dca695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fb78d968ce928112060770a16dca695">&#9670;&nbsp;</a></span>_glfwStringInExtensionString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="internal_8h.html#ac5743c31bece872e24528b5a45e354c5">GLFWbool</a> _glfwStringInExtensionString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> *&#160;</td>
+          <td class="paramname"><em>extensions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

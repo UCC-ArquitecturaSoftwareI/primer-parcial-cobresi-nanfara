@@ -1,0 +1,967 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/games/drturtle/drturtle_final_web.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_7aebff1416c495ebb69e3cc957d2473c.html">games</a></li><li class="navelem"><a class="el" href="dir_6c2560a6fdc51d67cc75034f0566549f.html">drturtle</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo drturtle_final_web.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;raylib.h&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a544651f3405cff79c40d898a8e54f507"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a544651f3405cff79c40d898a8e54f507">MAX_ENEMIES</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a544651f3405cff79c40d898a8e54f507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a74fa4be11c0eaf0601894bed6ed01402"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a74fa4be11c0eaf0601894bed6ed01402">GameScreen</a> { <br />
+&#160;&#160;<a class="el" href="arkanoid_8c.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a>, 
+<a class="el" href="arkanoid_8c.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="arkanoid_8c.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<a class="el" href="arkanoid_8c.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a> = 0, 
+<a class="el" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d">OPTIONS</a>, 
+<a class="el" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2cat__vs__roomba_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<a class="el" href="00__drturtle__screens_8c.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="00__drturtle__screens_8c.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<a class="el" href="00__drturtle__screens_8c.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<br />
+&#160;&#160;<a class="el" href="01__drturtle__scrolling_8c.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="01__drturtle__scrolling_8c.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<a class="el" href="01__drturtle__scrolling_8c.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<a class="el" href="02__drturtle__player_8c.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<br />
+&#160;&#160;<a class="el" href="02__drturtle__player_8c.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<a class="el" href="02__drturtle__player_8c.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<a class="el" href="03__drturtle__enemies_8c.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="03__drturtle__enemies_8c.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="03__drturtle__enemies_8c.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<a class="el" href="04__drturtle__gui_8c.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="04__drturtle__gui_8c.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<a class="el" href="04__drturtle__gui_8c.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<br />
+&#160;&#160;<a class="el" href="05__drturtle__audio_8c.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="05__drturtle__audio_8c.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<a class="el" href="05__drturtle__audio_8c.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<a class="el" href="06__drturtle__final_8c.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<br />
+&#160;&#160;<a class="el" href="06__drturtle__final_8c.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<a class="el" href="06__drturtle__final_8c.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<a class="el" href="drturtle__final__web_8c.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a> = 0, 
+<a class="el" href="drturtle__final__web_8c.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="drturtle__final__web_8c.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<a class="el" href="games_2just__do_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a>, 
+<a class="el" href="games_2just__do_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a347c0681989a203acc9c2752de9c970e">LEVEL00</a>, 
+<a class="el" href="games_2just__do_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402ada477cdcf4c5138fda497cf1f2b06d29">LEVEL01</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2just__do_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402afc8b17e3a7eb9a6a4cbb2dbd849e9ed7">LEVEL02</a>, 
+<a class="el" href="games_2just__do_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6f3005a7294141705952887ea16a6183">LEVEL03</a>, 
+<a class="el" href="games_2just__do_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a9456d02b0ee079cbd7f83b01abe2d573">LEVEL04</a>, 
+<a class="el" href="games_2just__do_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6ca1034976146ed59880abedf065e018">LEVEL05</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2just__do_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402acc6e4dd9a3526c140d14605e776e2cb7">LEVEL06</a>, 
+<a class="el" href="games_2just__do_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a5391e639aa32c47c501f8941e27ccbc7">LEVEL07</a>, 
+<a class="el" href="games_2just__do_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402ae55dc3164403d6d014f8f6c9789c653f">LEVEL08</a>, 
+<a class="el" href="games_2just__do_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402ae685f5f4dbaefc441e0c74166a4f03da">LEVEL09</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a>, 
+<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d">OPTIONS</a>, 
+<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2koala__seasons_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<a class="el" href="games_2light__my__ritual_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a89d85877dc492cbbc24e133cde4c0ee1">LOGO_RL</a> = 0, 
+<a class="el" href="games_2light__my__ritual_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="games_2light__my__ritual_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2skully__escape_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a> = 0, 
+<a class="el" href="games_2skully__escape_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a89d85877dc492cbbc24e133cde4c0ee1">LOGO_RL</a>, 
+<a class="el" href="games_2skully__escape_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="games_2skully__escape_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402af873278d3989e825a52a60659b3e94da">ATTIC</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2skully__escape_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402afa1a6eed7296c8e79032b47b24b6439a">AISLE01</a>, 
+<a class="el" href="games_2skully__escape_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402aea6f5ca662b07f36a04c548500d474b8">AISLE02</a>, 
+<a class="el" href="games_2skully__escape_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a895d33fddde8c1b84d5d9cb427b02863">BATHROOM</a>, 
+<a class="el" href="games_2skully__escape_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a671f2b54c9978637db75a3b3631c8185">LIVINGROOM</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2skully__escape_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a4ee84499c713a291f1748ca7207f19ca">KITCHEN</a>, 
+<a class="el" href="games_2skully__escape_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a7c9c5d0e0a1ad8e25b740f51359e8853">ARMORY</a>, 
+<a class="el" href="games_2skully__escape_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<a class="el" href="games_2transmission_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="games_2transmission_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="games_2transmission_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402ae92f6a2bb46918da226bb46c591605c8">MISSION</a>, 
+<a class="el" href="games_2transmission_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<a class="el" href="games_2transmission_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<br />
+&#160;&#160;<a class="el" href="games_2wave__collector_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a> = 0, 
+<a class="el" href="games_2wave__collector_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="games_2wave__collector_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<a class="el" href="games_2wave__collector_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<br />
+&#160;&#160;<a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a> = 0, 
+<a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d">OPTIONS</a>, 
+<a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="templates_2advance__game_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<a class="el" href="simple__game_8c.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a> = 0, 
+<a class="el" href="simple__game_8c.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="simple__game_8c.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="simple__game_8c.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>, 
+<a class="el" href="templates_2standard__game_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2">LOGO</a> = 0, 
+<a class="el" href="templates_2standard__game_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05">TITLE</a>, 
+<a class="el" href="templates_2standard__game_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d">OPTIONS</a>, 
+<br />
+&#160;&#160;<a class="el" href="templates_2standard__game_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be">GAMEPLAY</a>, 
+<a class="el" href="templates_2standard__game_2screens_2screens_8h.html#a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75">ENDING</a>
+<br />
+ }</td></tr>
+<tr class="separator:a74fa4be11c0eaf0601894bed6ed01402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a5cf2c5a446b66f83cbeb6885fc64bfb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a5cf2c5a446b66f83cbeb6885fc64bfb0">UpdateDrawFrame</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a5cf2c5a446b66f83cbeb6885fc64bfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a7242fea9327c0747b47801c13f4e05c9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a7242fea9327c0747b47801c13f4e05c9">screenWidth</a> = 1280</td></tr>
+<tr class="separator:a7242fea9327c0747b47801c13f4e05c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8897ff6127a397a8ee4ea76976f8534d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a8897ff6127a397a8ee4ea76976f8534d">screenHeight</a> = 720</td></tr>
+<tr class="separator:a8897ff6127a397a8ee4ea76976f8534d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9d13cbbfb0bc823f776fec70b890c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a7c9d13cbbfb0bc823f776fec70b890c5">sky</a></td></tr>
+<tr class="separator:a7c9d13cbbfb0bc823f776fec70b890c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc92a67ed3087562c27c6567ca8fb796"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#adc92a67ed3087562c27c6567ca8fb796">mountains</a></td></tr>
+<tr class="separator:adc92a67ed3087562c27c6567ca8fb796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5f9e81d9a475767a3a0bed9d52476d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#abc5f9e81d9a475767a3a0bed9d52476d">sea</a></td></tr>
+<tr class="separator:abc5f9e81d9a475767a3a0bed9d52476d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db8579265145436e112b6c8863158b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a6db8579265145436e112b6c8863158b1">title</a></td></tr>
+<tr class="separator:a6db8579265145436e112b6c8863158b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c09b585c886de5802bb0691615e8d96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a5c09b585c886de5802bb0691615e8d96">turtle</a></td></tr>
+<tr class="separator:a5c09b585c886de5802bb0691615e8d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee0bfe5bb338ed7cc5efeb93c76aa96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#aeee0bfe5bb338ed7cc5efeb93c76aa96">gamera</a></td></tr>
+<tr class="separator:aeee0bfe5bb338ed7cc5efeb93c76aa96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d67a113d19115e141e26d01e360b650"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a4d67a113d19115e141e26d01e360b650">shark</a></td></tr>
+<tr class="separator:a4d67a113d19115e141e26d01e360b650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dedd9f960f3d5996b5c85c7d8d8d7b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a5dedd9f960f3d5996b5c85c7d8d8d7b5">orca</a></td></tr>
+<tr class="separator:a5dedd9f960f3d5996b5c85c7d8d8d7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57bb44d3812b419cf8a58218ce9afef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#ae57bb44d3812b419cf8a58218ce9afef">swhale</a></td></tr>
+<tr class="separator:ae57bb44d3812b419cf8a58218ce9afef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294ca9b5721570f951d22b9b204e31a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a294ca9b5721570f951d22b9b204e31a0">fish</a></td></tr>
+<tr class="separator:a294ca9b5721570f951d22b9b204e31a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ff3bf0dd3a62355f70fd394cbac5de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a10ff3bf0dd3a62355f70fd394cbac5de">gframe</a></td></tr>
+<tr class="separator:a10ff3bf0dd3a62355f70fd394cbac5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e52b0778d1df763fc5b497c26ead7a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a1e52b0778d1df763fc5b497c26ead7a9">font</a></td></tr>
+<tr class="separator:a1e52b0778d1df763fc5b497c26ead7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437a9ed7853b76b71335f396fe834896"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sound.html">Sound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a437a9ed7853b76b71335f396fe834896">eat</a></td></tr>
+<tr class="separator:a437a9ed7853b76b71335f396fe834896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7293e72419f49d7863b901bff1c6441"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sound.html">Sound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#ab7293e72419f49d7863b901bff1c6441">die</a></td></tr>
+<tr class="separator:ab7293e72419f49d7863b901bff1c6441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51660f54107893d6c726c6840533a7ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sound.html">Sound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a51660f54107893d6c726c6840533a7ea">growl</a></td></tr>
+<tr class="separator:a51660f54107893d6c726c6840533a7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4a12cb358091be4a5f7447b57e2014"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_music.html">Music</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a8e4a12cb358091be4a5f7447b57e2014">music</a></td></tr>
+<tr class="separator:a8e4a12cb358091be4a5f7447b57e2014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b875de6778e92268e2d5ea6cb6db0a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a3b875de6778e92268e2d5ea6cb6db0a7">backScrolling</a> = 0</td></tr>
+<tr class="separator:a3b875de6778e92268e2d5ea6cb6db0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26756a2a4744481c20a5f8f5a3e437ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a26756a2a4744481c20a5f8f5a3e437ab">seaScrolling</a> = 0</td></tr>
+<tr class="separator:a26756a2a4744481c20a5f8f5a3e437ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095d002ae1c7d161bc2a08f2b3d5a1b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="arkanoid_8c.html#a74fa4be11c0eaf0601894bed6ed01402">GameScreen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a095d002ae1c7d161bc2a08f2b3d5a1b6">currentScreen</a> = 0</td></tr>
+<tr class="separator:a095d002ae1c7d161bc2a08f2b3d5a1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71821903ce30b7d9fa2d4d899215a27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#ad71821903ce30b7d9fa2d4d899215a27">playerRail</a> = 1</td></tr>
+<tr class="separator:ad71821903ce30b7d9fa2d4d899215a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b979c623e5c8f34deefc0b26a68c284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a9b979c623e5c8f34deefc0b26a68c284">playerBounds</a></td></tr>
+<tr class="separator:a9b979c623e5c8f34deefc0b26a68c284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6aaadbb353c45858e8cd7e4f444801"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#adc6aaadbb353c45858e8cd7e4f444801">gameraMode</a> = <a class="el" href="rnet_8h.html#af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
+<tr class="separator:adc6aaadbb353c45858e8cd7e4f444801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c8194095c5af01883cccdbd94c98c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a67c8194095c5af01883cccdbd94c98c6">enemyBounds</a> [<a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a544651f3405cff79c40d898a8e54f507">MAX_ENEMIES</a>]</td></tr>
+<tr class="separator:a67c8194095c5af01883cccdbd94c98c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3eb3b2379646fac4a992b8bf189066"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#adc3eb3b2379646fac4a992b8bf189066">enemyRail</a> [<a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a544651f3405cff79c40d898a8e54f507">MAX_ENEMIES</a>]</td></tr>
+<tr class="separator:adc3eb3b2379646fac4a992b8bf189066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56f236011ecb20072564e367930ec3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#ab56f236011ecb20072564e367930ec3c">enemyType</a> [<a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a544651f3405cff79c40d898a8e54f507">MAX_ENEMIES</a>]</td></tr>
+<tr class="separator:ab56f236011ecb20072564e367930ec3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90150ff401281b6ab13a4484e10006f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a90150ff401281b6ab13a4484e10006f0">enemyActive</a> [<a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a544651f3405cff79c40d898a8e54f507">MAX_ENEMIES</a>]</td></tr>
+<tr class="separator:a90150ff401281b6ab13a4484e10006f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9172659a041ca313506e810101ca792"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#aa9172659a041ca313506e810101ca792">enemySpeed</a> = 10</td></tr>
+<tr class="separator:aa9172659a041ca313506e810101ca792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef160b7437d94056f1dc59646cd5b87d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#aef160b7437d94056f1dc59646cd5b87d">score</a> = 0</td></tr>
+<tr class="separator:aef160b7437d94056f1dc59646cd5b87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f14a9abd47b91465f895d5259cdc1b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a06f14a9abd47b91465f895d5259cdc1b">distance</a> = 0.0f</td></tr>
+<tr class="separator:a06f14a9abd47b91465f895d5259cdc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d7be5a5d398b620ed7c192ac41e9ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a38d7be5a5d398b620ed7c192ac41e9ee">hiscore</a> = 0</td></tr>
+<tr class="separator:a38d7be5a5d398b620ed7c192ac41e9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21fbdae6be15e161f42134f659e1e887"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a21fbdae6be15e161f42134f659e1e887">hidistance</a> = 0.0f</td></tr>
+<tr class="separator:a21fbdae6be15e161f42134f659e1e887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01cc20719789a900d823b4fc785d31bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a01cc20719789a900d823b4fc785d31bb">foodBar</a> = 0</td></tr>
+<tr class="separator:a01cc20719789a900d823b4fc785d31bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6afe27aa95c0b40803f2f049f1ee7b1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a6afe27aa95c0b40803f2f049f1ee7b1f">framesCounter</a> = 0</td></tr>
+<tr class="separator:a6afe27aa95c0b40803f2f049f1ee7b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53125a3aec56167e405e8e5296862ef8"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a53125a3aec56167e405e8e5296862ef8">blue</a> = 200</td></tr>
+<tr class="separator:a53125a3aec56167e405e8e5296862ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702a61323092b4ef77dd4f824affaa53"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drturtle__final__web_8c.html#a702a61323092b4ef77dd4f824affaa53">timeCounter</a> = 0</td></tr>
+<tr class="separator:a702a61323092b4ef77dd4f824affaa53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a544651f3405cff79c40d898a8e54f507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544651f3405cff79c40d898a8e54f507">&#9670;&nbsp;</a></span>MAX_ENEMIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_ENEMIES&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="a74fa4be11c0eaf0601894bed6ed01402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74fa4be11c0eaf0601894bed6ed01402">&#9670;&nbsp;</a></span>GameScreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="arkanoid_8c.html#a74fa4be11c0eaf0601894bed6ed01402">GameScreen</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2"></a>LOGO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2"></a>LOGO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d"></a>OPTIONS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2"></a>LOGO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a347c0681989a203acc9c2752de9c970e"></a>LEVEL00&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402ada477cdcf4c5138fda497cf1f2b06d29"></a>LEVEL01&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402afc8b17e3a7eb9a6a4cbb2dbd849e9ed7"></a>LEVEL02&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6f3005a7294141705952887ea16a6183"></a>LEVEL03&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a9456d02b0ee079cbd7f83b01abe2d573"></a>LEVEL04&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6ca1034976146ed59880abedf065e018"></a>LEVEL05&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402acc6e4dd9a3526c140d14605e776e2cb7"></a>LEVEL06&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a5391e639aa32c47c501f8941e27ccbc7"></a>LEVEL07&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402ae55dc3164403d6d014f8f6c9789c653f"></a>LEVEL08&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402ae685f5f4dbaefc441e0c74166a4f03da"></a>LEVEL09&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2"></a>LOGO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d"></a>OPTIONS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a89d85877dc492cbbc24e133cde4c0ee1"></a>LOGO_RL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2"></a>LOGO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a89d85877dc492cbbc24e133cde4c0ee1"></a>LOGO_RL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402af873278d3989e825a52a60659b3e94da"></a>ATTIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402afa1a6eed7296c8e79032b47b24b6439a"></a>AISLE01&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aea6f5ca662b07f36a04c548500d474b8"></a>AISLE02&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a895d33fddde8c1b84d5d9cb427b02863"></a>BATHROOM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a671f2b54c9978637db75a3b3631c8185"></a>LIVINGROOM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a4ee84499c713a291f1748ca7207f19ca"></a>KITCHEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a7c9c5d0e0a1ad8e25b740f51359e8853"></a>ARMORY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2"></a>LOGO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402ae92f6a2bb46918da226bb46c591605c8"></a>MISSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2"></a>LOGO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2"></a>LOGO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d"></a>OPTIONS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2"></a>LOGO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a6e4b9c5c284396f62320cecaf983e1e2"></a>LOGO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a0a041e18d712f7b239eac5375daf4a05"></a>TITLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a1b20f1b4adb6ff9778b284fb46f6f99d"></a>OPTIONS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402a651a3f73e693ca8b6f97bf6cfdc8d5be"></a>GAMEPLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74fa4be11c0eaf0601894bed6ed01402aca114391980a4b8e57873b25c0e16b75"></a>ENDING&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cf2c5a446b66f83cbeb6885fc64bfb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf2c5a446b66f83cbeb6885fc64bfb0">&#9670;&nbsp;</a></span>UpdateDrawFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> UpdateDrawFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a3b875de6778e92268e2d5ea6cb6db0a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b875de6778e92268e2d5ea6cb6db0a7">&#9670;&nbsp;</a></span>backScrolling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> backScrolling = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53125a3aec56167e405e8e5296862ef8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53125a3aec56167e405e8e5296862ef8">&#9670;&nbsp;</a></span>blue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="_c_make_cache_8txt.html#afe71f11dacb15682cdc012f7208e6e09">char</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#ab4fcc6ff520ae4d9de259c8468a5cd93">blue</a> = 200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a095d002ae1c7d161bc2a08f2b3d5a1b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a095d002ae1c7d161bc2a08f2b3d5a1b6">&#9670;&nbsp;</a></span>currentScreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="arkanoid_8c.html#a74fa4be11c0eaf0601894bed6ed01402">GameScreen</a> currentScreen = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7293e72419f49d7863b901bff1c6441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7293e72419f49d7863b901bff1c6441">&#9670;&nbsp;</a></span>die</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_sound.html">Sound</a> die</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06f14a9abd47b91465f895d5259cdc1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f14a9abd47b91465f895d5259cdc1b">&#9670;&nbsp;</a></span>distance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float distance = 0.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a437a9ed7853b76b71335f396fe834896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437a9ed7853b76b71335f396fe834896">&#9670;&nbsp;</a></span>eat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_sound.html">Sound</a> eat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90150ff401281b6ab13a4484e10006f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90150ff401281b6ab13a4484e10006f0">&#9670;&nbsp;</a></span>enemyActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> enemyActive[<a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a544651f3405cff79c40d898a8e54f507">MAX_ENEMIES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67c8194095c5af01883cccdbd94c98c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c8194095c5af01883cccdbd94c98c6">&#9670;&nbsp;</a></span>enemyBounds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rectangle.html">Rectangle</a> enemyBounds[<a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a544651f3405cff79c40d898a8e54f507">MAX_ENEMIES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc3eb3b2379646fac4a992b8bf189066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3eb3b2379646fac4a992b8bf189066">&#9670;&nbsp;</a></span>enemyRail</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> enemyRail[<a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a544651f3405cff79c40d898a8e54f507">MAX_ENEMIES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9172659a041ca313506e810101ca792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9172659a041ca313506e810101ca792">&#9670;&nbsp;</a></span>enemySpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float enemySpeed = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab56f236011ecb20072564e367930ec3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56f236011ecb20072564e367930ec3c">&#9670;&nbsp;</a></span>enemyType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> enemyType[<a class="el" href="games_2light__my__ritual_2screens_2screen__gameplay_8c.html#a544651f3405cff79c40d898a8e54f507">MAX_ENEMIES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a294ca9b5721570f951d22b9b204e31a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a294ca9b5721570f951d22b9b204e31a0">&#9670;&nbsp;</a></span>fish</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture2_d.html">Texture2D</a> fish</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e52b0778d1df763fc5b497c26ead7a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e52b0778d1df763fc5b497c26ead7a9">&#9670;&nbsp;</a></span>font</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_font.html">Font</a> font</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01cc20719789a900d823b4fc785d31bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01cc20719789a900d823b4fc785d31bb">&#9670;&nbsp;</a></span>foodBar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> foodBar = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6afe27aa95c0b40803f2f049f1ee7b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6afe27aa95c0b40803f2f049f1ee7b1f">&#9670;&nbsp;</a></span>framesCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> framesCounter = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeee0bfe5bb338ed7cc5efeb93c76aa96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee0bfe5bb338ed7cc5efeb93c76aa96">&#9670;&nbsp;</a></span>gamera</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture2_d.html">Texture2D</a> gamera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc6aaadbb353c45858e8cd7e4f444801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6aaadbb353c45858e8cd7e4f444801">&#9670;&nbsp;</a></span>gameraMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> gameraMode = <a class="el" href="rnet_8h.html#af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c">false</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10ff3bf0dd3a62355f70fd394cbac5de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ff3bf0dd3a62355f70fd394cbac5de">&#9670;&nbsp;</a></span>gframe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture2_d.html">Texture2D</a> gframe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51660f54107893d6c726c6840533a7ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51660f54107893d6c726c6840533a7ea">&#9670;&nbsp;</a></span>growl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_sound.html">Sound</a> growl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21fbdae6be15e161f42134f659e1e887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21fbdae6be15e161f42134f659e1e887">&#9670;&nbsp;</a></span>hidistance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hidistance = 0.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38d7be5a5d398b620ed7c192ac41e9ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d7be5a5d398b620ed7c192ac41e9ee">&#9670;&nbsp;</a></span>hiscore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> hiscore = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc92a67ed3087562c27c6567ca8fb796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc92a67ed3087562c27c6567ca8fb796">&#9670;&nbsp;</a></span>mountains</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture2_d.html">Texture2D</a> mountains</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e4a12cb358091be4a5f7447b57e2014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e4a12cb358091be4a5f7447b57e2014">&#9670;&nbsp;</a></span>music</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_music.html">Music</a> music</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dedd9f960f3d5996b5c85c7d8d8d7b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dedd9f960f3d5996b5c85c7d8d8d7b5">&#9670;&nbsp;</a></span>orca</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture2_d.html">Texture2D</a> orca</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b979c623e5c8f34deefc0b26a68c284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b979c623e5c8f34deefc0b26a68c284">&#9670;&nbsp;</a></span>playerBounds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rectangle.html">Rectangle</a> playerBounds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad71821903ce30b7d9fa2d4d899215a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71821903ce30b7d9fa2d4d899215a27">&#9670;&nbsp;</a></span>playerRail</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> playerRail = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef160b7437d94056f1dc59646cd5b87d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef160b7437d94056f1dc59646cd5b87d">&#9670;&nbsp;</a></span>score</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> score = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8897ff6127a397a8ee4ea76976f8534d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8897ff6127a397a8ee4ea76976f8534d">&#9670;&nbsp;</a></span>screenHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> screenHeight = 720</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7242fea9327c0747b47801c13f4e05c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7242fea9327c0747b47801c13f4e05c9">&#9670;&nbsp;</a></span>screenWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> screenWidth = 1280</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc5f9e81d9a475767a3a0bed9d52476d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5f9e81d9a475767a3a0bed9d52476d">&#9670;&nbsp;</a></span>sea</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture2_d.html">Texture2D</a> sea</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26756a2a4744481c20a5f8f5a3e437ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26756a2a4744481c20a5f8f5a3e437ab">&#9670;&nbsp;</a></span>seaScrolling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> seaScrolling = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d67a113d19115e141e26d01e360b650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d67a113d19115e141e26d01e360b650">&#9670;&nbsp;</a></span>shark</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture2_d.html">Texture2D</a> shark</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c9d13cbbfb0bc823f776fec70b890c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c9d13cbbfb0bc823f776fec70b890c5">&#9670;&nbsp;</a></span>sky</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture2_d.html">Texture2D</a> sky</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae57bb44d3812b419cf8a58218ce9afef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57bb44d3812b419cf8a58218ce9afef">&#9670;&nbsp;</a></span>swhale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture2_d.html">Texture2D</a> swhale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a702a61323092b4ef77dd4f824affaa53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702a61323092b4ef77dd4f824affaa53">&#9670;&nbsp;</a></span>timeCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float timeCounter = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6db8579265145436e112b6c8863158b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db8579265145436e112b6c8863158b1">&#9670;&nbsp;</a></span>title</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture2_d.html">Texture2D</a> title</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c09b585c886de5802bb0691615e8d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c09b585c886de5802bb0691615e8d96">&#9670;&nbsp;</a></span>turtle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture2_d.html">Texture2D</a> turtle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

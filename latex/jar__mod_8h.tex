@@ -1,0 +1,211 @@
+\hypertarget{jar__mod_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/jar\+\_\+mod.h}
+\label{jar__mod_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/jar\_mod.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/jar\_mod.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsample}{sample}}
+\item 
+struct \mbox{\hyperlink{structnote}{note}}
+\item 
+struct \mbox{\hyperlink{structmodule}{module}}
+\item 
+struct \mbox{\hyperlink{structchannel}{channel}}
+\item 
+struct \mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structtrack__state__}{track\+\_\+state\+\_\+}}
+\item 
+struct \mbox{\hyperlink{structtracker__state__}{tracker\+\_\+state\+\_\+}}
+\item 
+struct \mbox{\hyperlink{structtracker__state__instrument__}{tracker\+\_\+state\+\_\+instrument\+\_\+}}
+\item 
+struct \mbox{\hyperlink{structjar__mod__tracker__buffer__state__}{jar\+\_\+mod\+\_\+tracker\+\_\+buffer\+\_\+state\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{jar__mod_8h_ad6da9a854c03953e8d94dd0bf1e590c6}{J\+A\+R\+M\+O\+D\+\_\+\+M\+A\+L\+L\+OC}}(sz)~malloc(sz)
+\item 
+\#define \mbox{\hyperlink{jar__mod_8h_a31ecb8aa8089c7adc8e9b22305093938}{J\+A\+R\+M\+O\+D\+\_\+\+F\+R\+EE}}(p)~free(p)
+\item 
+\#define \mbox{\hyperlink{jar__mod_8h_ac394b8495618ac8fd3e47056b225923f}{N\+U\+M\+M\+A\+X\+C\+H\+A\+N\+N\+E\+LS}}~32
+\item 
+\#define \mbox{\hyperlink{jar__mod_8h_a13b3cbb582faebb90f9c2de9d9c8f160}{M\+A\+X\+N\+O\+T\+ES}}~12$\ast$12
+\item 
+\#define \mbox{\hyperlink{jar__mod_8h_abe9b1c28165a7071e354bd9d7823ca1a}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+R\+A\+TE}}~48000
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{jar__mod_8h_a6b0f9d3fd3ce921260a1a1761c58ab33}{muchar}}
+\item 
+typedef unsigned short \mbox{\hyperlink{jar__mod_8h_ac65797e6b7c843c39f37b454310f8dca}{muint}}
+\item 
+typedef short \mbox{\hyperlink{jar__mod_8h_a02793280ab49e7dc7c9c2072ba0c5808}{mint}}
+\item 
+typedef unsigned long \mbox{\hyperlink{jar__mod_8h_a6f79620052cd3b12a89cf6a4207f5077}{mulong}}
+\item 
+typedef struct \mbox{\hyperlink{structtrack__state__}{track\+\_\+state\+\_\+}} \mbox{\hyperlink{jar__mod_8h_a827fac717d5e9679c0350c22416905cf}{track\+\_\+state}}
+\item 
+typedef struct \mbox{\hyperlink{structtracker__state__}{tracker\+\_\+state\+\_\+}} \mbox{\hyperlink{jar__mod_8h_ac6a5096e6dec44fd23ef90e8c085b16f}{tracker\+\_\+state}}
+\item 
+typedef struct \mbox{\hyperlink{structtracker__state__instrument__}{tracker\+\_\+state\+\_\+instrument\+\_\+}} \mbox{\hyperlink{jar__mod_8h_ae951ff20f85616be437bc39b8497f57d}{tracker\+\_\+state\+\_\+instrument}}
+\item 
+typedef struct \mbox{\hyperlink{structjar__mod__tracker__buffer__state__}{jar\+\_\+mod\+\_\+tracker\+\_\+buffer\+\_\+state\+\_\+}} \mbox{\hyperlink{jar__mod_8h_a0c9957d1ecc126b528fba48f8271beab}{jar\+\_\+mod\+\_\+tracker\+\_\+buffer\+\_\+state}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{jar__mod_8h_ac8ea6269835488646d99516fd173b4b6}{jar\+\_\+mod\+\_\+init}} (\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$modctx)
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{jar__mod_8h_aa26fc11908f56ac9c4c5457516d95749}{jar\+\_\+mod\+\_\+setcfg}} (\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$modctx, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} samplerate, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} bits, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stereo, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stereo\+\_\+separation, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8bed50656d87c3eeed9d8f5e539c6b3e}{filter}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{jar__mod_8h_aaae0576db604b379a412b7db94aaa8c1}{jar\+\_\+mod\+\_\+fillbuffer}} (\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$modctx, short $\ast$outbuffer, unsigned long nbsample, \mbox{\hyperlink{jar__mod_8h_a0c9957d1ecc126b528fba48f8271beab}{jar\+\_\+mod\+\_\+tracker\+\_\+buffer\+\_\+state}} $\ast$trkbuf)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{jar__mod_8h_a7e06edfed0f65450c6ddee22b21b99f5}{jar\+\_\+mod\+\_\+unload}} (\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$modctx)
+\item 
+\mbox{\hyperlink{jar__mod_8h_a6f79620052cd3b12a89cf6a4207f5077}{mulong}} \mbox{\hyperlink{jar__mod_8h_ab95228f347043bb1ecf90e23f8622d12}{jar\+\_\+mod\+\_\+load\+\_\+file}} (\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$modctx, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename)
+\item 
+\mbox{\hyperlink{jar__mod_8h_a6f79620052cd3b12a89cf6a4207f5077}{mulong}} \mbox{\hyperlink{jar__mod_8h_ac426a140ab622462e1b797eecee4b768}{jar\+\_\+mod\+\_\+current\+\_\+samples}} (\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$modctx)
+\item 
+\mbox{\hyperlink{jar__mod_8h_a6f79620052cd3b12a89cf6a4207f5077}{mulong}} \mbox{\hyperlink{jar__mod_8h_aa604bba6c299ab762f4d790a265b614a}{jar\+\_\+mod\+\_\+max\+\_\+samples}} (\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$modctx)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{jar__mod_8h_ac4b3582d5b65e2365b6f54eaacdbf173}{jar\+\_\+mod\+\_\+seek\+\_\+start}} (\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$\mbox{\hyperlink{eglext_8h_a209c8e51e11ce41075280eea53ad018c}{ctx}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{jar__mod_8h_abe9b1c28165a7071e354bd9d7823ca1a}\label{jar__mod_8h_abe9b1c28165a7071e354bd9d7823ca1a}} 
+\index{jar\_mod.h@{jar\_mod.h}!DEFAULT\_SAMPLE\_RATE@{DEFAULT\_SAMPLE\_RATE}}
+\index{DEFAULT\_SAMPLE\_RATE@{DEFAULT\_SAMPLE\_RATE}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SAMPLE\_RATE}{DEFAULT\_SAMPLE\_RATE}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+R\+A\+TE~48000}
+
+\mbox{\Hypertarget{jar__mod_8h_a31ecb8aa8089c7adc8e9b22305093938}\label{jar__mod_8h_a31ecb8aa8089c7adc8e9b22305093938}} 
+\index{jar\_mod.h@{jar\_mod.h}!JARMOD\_FREE@{JARMOD\_FREE}}
+\index{JARMOD\_FREE@{JARMOD\_FREE}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{JARMOD\_FREE}{JARMOD\_FREE}}
+{\footnotesize\ttfamily \#define J\+A\+R\+M\+O\+D\+\_\+\+F\+R\+EE(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~free(p)}
+
+\mbox{\Hypertarget{jar__mod_8h_ad6da9a854c03953e8d94dd0bf1e590c6}\label{jar__mod_8h_ad6da9a854c03953e8d94dd0bf1e590c6}} 
+\index{jar\_mod.h@{jar\_mod.h}!JARMOD\_MALLOC@{JARMOD\_MALLOC}}
+\index{JARMOD\_MALLOC@{JARMOD\_MALLOC}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{JARMOD\_MALLOC}{JARMOD\_MALLOC}}
+{\footnotesize\ttfamily \#define J\+A\+R\+M\+O\+D\+\_\+\+M\+A\+L\+L\+OC(\begin{DoxyParamCaption}\item[{}]{sz }\end{DoxyParamCaption})~malloc(sz)}
+
+\mbox{\Hypertarget{jar__mod_8h_a13b3cbb582faebb90f9c2de9d9c8f160}\label{jar__mod_8h_a13b3cbb582faebb90f9c2de9d9c8f160}} 
+\index{jar\_mod.h@{jar\_mod.h}!MAXNOTES@{MAXNOTES}}
+\index{MAXNOTES@{MAXNOTES}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{MAXNOTES}{MAXNOTES}}
+{\footnotesize\ttfamily \#define M\+A\+X\+N\+O\+T\+ES~12$\ast$12}
+
+\mbox{\Hypertarget{jar__mod_8h_ac394b8495618ac8fd3e47056b225923f}\label{jar__mod_8h_ac394b8495618ac8fd3e47056b225923f}} 
+\index{jar\_mod.h@{jar\_mod.h}!NUMMAXCHANNELS@{NUMMAXCHANNELS}}
+\index{NUMMAXCHANNELS@{NUMMAXCHANNELS}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{NUMMAXCHANNELS}{NUMMAXCHANNELS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+M\+A\+X\+C\+H\+A\+N\+N\+E\+LS~32}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{jar__mod_8h_a0c9957d1ecc126b528fba48f8271beab}\label{jar__mod_8h_a0c9957d1ecc126b528fba48f8271beab}} 
+\index{jar\_mod.h@{jar\_mod.h}!jar\_mod\_tracker\_buffer\_state@{jar\_mod\_tracker\_buffer\_state}}
+\index{jar\_mod\_tracker\_buffer\_state@{jar\_mod\_tracker\_buffer\_state}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{jar\_mod\_tracker\_buffer\_state}{jar\_mod\_tracker\_buffer\_state}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structjar__mod__tracker__buffer__state__}{jar\+\_\+mod\+\_\+tracker\+\_\+buffer\+\_\+state\+\_\+}} \mbox{\hyperlink{jar__mod_8h_a0c9957d1ecc126b528fba48f8271beab}{jar\+\_\+mod\+\_\+tracker\+\_\+buffer\+\_\+state}}}
+
+\mbox{\Hypertarget{jar__mod_8h_a02793280ab49e7dc7c9c2072ba0c5808}\label{jar__mod_8h_a02793280ab49e7dc7c9c2072ba0c5808}} 
+\index{jar\_mod.h@{jar\_mod.h}!mint@{mint}}
+\index{mint@{mint}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{mint}{mint}}
+{\footnotesize\ttfamily typedef short \mbox{\hyperlink{jar__mod_8h_a02793280ab49e7dc7c9c2072ba0c5808}{mint}}}
+
+\mbox{\Hypertarget{jar__mod_8h_a6b0f9d3fd3ce921260a1a1761c58ab33}\label{jar__mod_8h_a6b0f9d3fd3ce921260a1a1761c58ab33}} 
+\index{jar\_mod.h@{jar\_mod.h}!muchar@{muchar}}
+\index{muchar@{muchar}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{muchar}{muchar}}
+{\footnotesize\ttfamily typedef unsigned \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} \mbox{\hyperlink{jar__mod_8h_a6b0f9d3fd3ce921260a1a1761c58ab33}{muchar}}}
+
+\mbox{\Hypertarget{jar__mod_8h_ac65797e6b7c843c39f37b454310f8dca}\label{jar__mod_8h_ac65797e6b7c843c39f37b454310f8dca}} 
+\index{jar\_mod.h@{jar\_mod.h}!muint@{muint}}
+\index{muint@{muint}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{muint}{muint}}
+{\footnotesize\ttfamily typedef unsigned short \mbox{\hyperlink{jar__mod_8h_ac65797e6b7c843c39f37b454310f8dca}{muint}}}
+
+\mbox{\Hypertarget{jar__mod_8h_a6f79620052cd3b12a89cf6a4207f5077}\label{jar__mod_8h_a6f79620052cd3b12a89cf6a4207f5077}} 
+\index{jar\_mod.h@{jar\_mod.h}!mulong@{mulong}}
+\index{mulong@{mulong}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{mulong}{mulong}}
+{\footnotesize\ttfamily typedef unsigned long \mbox{\hyperlink{jar__mod_8h_a6f79620052cd3b12a89cf6a4207f5077}{mulong}}}
+
+\mbox{\Hypertarget{jar__mod_8h_a827fac717d5e9679c0350c22416905cf}\label{jar__mod_8h_a827fac717d5e9679c0350c22416905cf}} 
+\index{jar\_mod.h@{jar\_mod.h}!track\_state@{track\_state}}
+\index{track\_state@{track\_state}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{track\_state}{track\_state}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structtrack__state__}{track\+\_\+state\+\_\+}} \mbox{\hyperlink{jar__mod_8h_a827fac717d5e9679c0350c22416905cf}{track\+\_\+state}}}
+
+\mbox{\Hypertarget{jar__mod_8h_ac6a5096e6dec44fd23ef90e8c085b16f}\label{jar__mod_8h_ac6a5096e6dec44fd23ef90e8c085b16f}} 
+\index{jar\_mod.h@{jar\_mod.h}!tracker\_state@{tracker\_state}}
+\index{tracker\_state@{tracker\_state}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{tracker\_state}{tracker\_state}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structtracker__state__}{tracker\+\_\+state\+\_\+}} \mbox{\hyperlink{jar__mod_8h_ac6a5096e6dec44fd23ef90e8c085b16f}{tracker\+\_\+state}}}
+
+\mbox{\Hypertarget{jar__mod_8h_ae951ff20f85616be437bc39b8497f57d}\label{jar__mod_8h_ae951ff20f85616be437bc39b8497f57d}} 
+\index{jar\_mod.h@{jar\_mod.h}!tracker\_state\_instrument@{tracker\_state\_instrument}}
+\index{tracker\_state\_instrument@{tracker\_state\_instrument}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{tracker\_state\_instrument}{tracker\_state\_instrument}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structtracker__state__instrument__}{tracker\+\_\+state\+\_\+instrument\+\_\+}} \mbox{\hyperlink{jar__mod_8h_ae951ff20f85616be437bc39b8497f57d}{tracker\+\_\+state\+\_\+instrument}}}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{jar__mod_8h_ac426a140ab622462e1b797eecee4b768}\label{jar__mod_8h_ac426a140ab622462e1b797eecee4b768}} 
+\index{jar\_mod.h@{jar\_mod.h}!jar\_mod\_current\_samples@{jar\_mod\_current\_samples}}
+\index{jar\_mod\_current\_samples@{jar\_mod\_current\_samples}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{jar\_mod\_current\_samples()}{jar\_mod\_current\_samples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{jar__mod_8h_a6f79620052cd3b12a89cf6a4207f5077}{mulong}} jar\+\_\+mod\+\_\+current\+\_\+samples (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$}]{modctx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{jar__mod_8h_aaae0576db604b379a412b7db94aaa8c1}\label{jar__mod_8h_aaae0576db604b379a412b7db94aaa8c1}} 
+\index{jar\_mod.h@{jar\_mod.h}!jar\_mod\_fillbuffer@{jar\_mod\_fillbuffer}}
+\index{jar\_mod\_fillbuffer@{jar\_mod\_fillbuffer}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{jar\_mod\_fillbuffer()}{jar\_mod\_fillbuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} jar\+\_\+mod\+\_\+fillbuffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$}]{modctx,  }\item[{short $\ast$}]{outbuffer,  }\item[{unsigned long}]{nbsample,  }\item[{\mbox{\hyperlink{jar__mod_8h_a0c9957d1ecc126b528fba48f8271beab}{jar\+\_\+mod\+\_\+tracker\+\_\+buffer\+\_\+state}} $\ast$}]{trkbuf }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{jar__mod_8h_ac8ea6269835488646d99516fd173b4b6}\label{jar__mod_8h_ac8ea6269835488646d99516fd173b4b6}} 
+\index{jar\_mod.h@{jar\_mod.h}!jar\_mod\_init@{jar\_mod\_init}}
+\index{jar\_mod\_init@{jar\_mod\_init}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{jar\_mod\_init()}{jar\_mod\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} jar\+\_\+mod\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$}]{modctx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{jar__mod_8h_ab95228f347043bb1ecf90e23f8622d12}\label{jar__mod_8h_ab95228f347043bb1ecf90e23f8622d12}} 
+\index{jar\_mod.h@{jar\_mod.h}!jar\_mod\_load\_file@{jar\_mod\_load\_file}}
+\index{jar\_mod\_load\_file@{jar\_mod\_load\_file}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{jar\_mod\_load\_file()}{jar\_mod\_load\_file()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{jar__mod_8h_a6f79620052cd3b12a89cf6a4207f5077}{mulong}} jar\+\_\+mod\+\_\+load\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$}]{modctx,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{jar__mod_8h_aa604bba6c299ab762f4d790a265b614a}\label{jar__mod_8h_aa604bba6c299ab762f4d790a265b614a}} 
+\index{jar\_mod.h@{jar\_mod.h}!jar\_mod\_max\_samples@{jar\_mod\_max\_samples}}
+\index{jar\_mod\_max\_samples@{jar\_mod\_max\_samples}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{jar\_mod\_max\_samples()}{jar\_mod\_max\_samples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{jar__mod_8h_a6f79620052cd3b12a89cf6a4207f5077}{mulong}} jar\+\_\+mod\+\_\+max\+\_\+samples (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$}]{modctx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{jar__mod_8h_ac4b3582d5b65e2365b6f54eaacdbf173}\label{jar__mod_8h_ac4b3582d5b65e2365b6f54eaacdbf173}} 
+\index{jar\_mod.h@{jar\_mod.h}!jar\_mod\_seek\_start@{jar\_mod\_seek\_start}}
+\index{jar\_mod\_seek\_start@{jar\_mod\_seek\_start}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{jar\_mod\_seek\_start()}{jar\_mod\_seek\_start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} jar\+\_\+mod\+\_\+seek\+\_\+start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{jar__mod_8h_aa26fc11908f56ac9c4c5457516d95749}\label{jar__mod_8h_aa26fc11908f56ac9c4c5457516d95749}} 
+\index{jar\_mod.h@{jar\_mod.h}!jar\_mod\_setcfg@{jar\_mod\_setcfg}}
+\index{jar\_mod\_setcfg@{jar\_mod\_setcfg}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{jar\_mod\_setcfg()}{jar\_mod\_setcfg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} jar\+\_\+mod\+\_\+setcfg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$}]{modctx,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{samplerate,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{bits,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{stereo,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{stereo\+\_\+separation,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{filter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{jar__mod_8h_a7e06edfed0f65450c6ddee22b21b99f5}\label{jar__mod_8h_a7e06edfed0f65450c6ddee22b21b99f5}} 
+\index{jar\_mod.h@{jar\_mod.h}!jar\_mod\_unload@{jar\_mod\_unload}}
+\index{jar\_mod\_unload@{jar\_mod\_unload}!jar\_mod.h@{jar\_mod.h}}
+\doxysubsubsection{\texorpdfstring{jar\_mod\_unload()}{jar\_mod\_unload()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} jar\+\_\+mod\+\_\+unload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjar__mod__context__t}{jar\+\_\+mod\+\_\+context\+\_\+t}} $\ast$}]{modctx }\end{DoxyParamCaption})}
+

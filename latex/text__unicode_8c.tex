@@ -1,0 +1,149 @@
+\hypertarget{text__unicode_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/examples/text/text\+\_\+unicode.c}
+\label{text__unicode_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/text/text\_unicode.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/examples/text/text\_unicode.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{text__unicode_8c_a14e62998722aab82b0c087e7fc4e77f8}{S\+I\+Z\+E\+OF}}(A)~(sizeof(A)/sizeof(A\mbox{[}0\mbox{]}))
+\item 
+\#define \mbox{\hyperlink{text__unicode_8c_a4fe1859138b9131e8665915aaa1f72d5}{E\+M\+O\+J\+I\+\_\+\+P\+E\+R\+\_\+\+W\+I\+D\+TH}}~8
+\item 
+\#define \mbox{\hyperlink{text__unicode_8c_a15e89fd26b7812357b3a017fdccb23dc}{E\+M\+O\+J\+I\+\_\+\+P\+E\+R\+\_\+\+H\+E\+I\+G\+HT}}~4
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{text__unicode_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} argc, \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$const \mbox{\hyperlink{text__unicode_8c_a8a40dbb2e685ed167df945f7ebe6074f}{emoji\+Codepoints}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}\\
+\>\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$ \mbox{\hyperlink{text__unicode_8c_a8ae4b47621b125e915cee8ccdaa2095c}{language}}\\
+\} \mbox{\hyperlink{text__unicode_8c_a4398ba2bea22c3b73e09652bef2e29d1}{messages}} \mbox{[}$\,$\mbox{]}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{text__unicode_8c_a750b5d744c39a06bfb13e6eb010e35d0}{index}}\\
+\>\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{text__unicode_8c_a0e1ef1063ca062691e512dafa6713b7c}{message}}\\
+\>\mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{text__unicode_8c_aa5f4d1eda21c196bd8401ff73f105073}{color}}\\
+\} \mbox{\hyperlink{text__unicode_8c_a64cfed48fd2ffcc7e0e38052e7f5b389}{emoji}} \mbox{[}\mbox{\hyperlink{text__unicode_8c_a4fe1859138b9131e8665915aaa1f72d5}{EMOJI\_PER\_WIDTH}} $\ast$\mbox{\hyperlink{text__unicode_8c_a15e89fd26b7812357b3a017fdccb23dc}{EMOJI\_PER\_HEIGHT}}\mbox{]} = \{ 0 \}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{text__unicode_8c_a15e89fd26b7812357b3a017fdccb23dc}\label{text__unicode_8c_a15e89fd26b7812357b3a017fdccb23dc}} 
+\index{text\_unicode.c@{text\_unicode.c}!EMOJI\_PER\_HEIGHT@{EMOJI\_PER\_HEIGHT}}
+\index{EMOJI\_PER\_HEIGHT@{EMOJI\_PER\_HEIGHT}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{EMOJI\_PER\_HEIGHT}{EMOJI\_PER\_HEIGHT}}
+{\footnotesize\ttfamily \#define E\+M\+O\+J\+I\+\_\+\+P\+E\+R\+\_\+\+H\+E\+I\+G\+HT~4}
+
+\mbox{\Hypertarget{text__unicode_8c_a4fe1859138b9131e8665915aaa1f72d5}\label{text__unicode_8c_a4fe1859138b9131e8665915aaa1f72d5}} 
+\index{text\_unicode.c@{text\_unicode.c}!EMOJI\_PER\_WIDTH@{EMOJI\_PER\_WIDTH}}
+\index{EMOJI\_PER\_WIDTH@{EMOJI\_PER\_WIDTH}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{EMOJI\_PER\_WIDTH}{EMOJI\_PER\_WIDTH}}
+{\footnotesize\ttfamily \#define E\+M\+O\+J\+I\+\_\+\+P\+E\+R\+\_\+\+W\+I\+D\+TH~8}
+
+\mbox{\Hypertarget{text__unicode_8c_a14e62998722aab82b0c087e7fc4e77f8}\label{text__unicode_8c_a14e62998722aab82b0c087e7fc4e77f8}} 
+\index{text\_unicode.c@{text\_unicode.c}!SIZEOF@{SIZEOF}}
+\index{SIZEOF@{SIZEOF}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{SIZEOF}{SIZEOF}}
+{\footnotesize\ttfamily \#define S\+I\+Z\+E\+OF(\begin{DoxyParamCaption}\item[{}]{A }\end{DoxyParamCaption})~(sizeof(A)/sizeof(A\mbox{[}0\mbox{]}))}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{text__unicode_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{text__unicode_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{text\_unicode.c@{text\_unicode.c}!main@{main}}
+\index{main@{main}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{argc,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{text__unicode_8c_aa5f4d1eda21c196bd8401ff73f105073}\label{text__unicode_8c_aa5f4d1eda21c196bd8401ff73f105073}} 
+\index{text\_unicode.c@{text\_unicode.c}!color@{color}}
+\index{color@{color}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}}}
+
+\mbox{\Hypertarget{text__unicode_8c_a64cfed48fd2ffcc7e0e38052e7f5b389}\label{text__unicode_8c_a64cfed48fd2ffcc7e0e38052e7f5b389}} 
+\index{text\_unicode.c@{text\_unicode.c}!emoji@{emoji}}
+\index{emoji@{emoji}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{emoji}{emoji}}
+{\footnotesize\ttfamily struct \{ ... \}  emoji\mbox{[}\mbox{\hyperlink{text__unicode_8c_a4fe1859138b9131e8665915aaa1f72d5}{E\+M\+O\+J\+I\+\_\+\+P\+E\+R\+\_\+\+W\+I\+D\+TH}}$\ast$\mbox{\hyperlink{text__unicode_8c_a15e89fd26b7812357b3a017fdccb23dc}{E\+M\+O\+J\+I\+\_\+\+P\+E\+R\+\_\+\+H\+E\+I\+G\+HT}}\mbox{]}}
+
+\mbox{\Hypertarget{text__unicode_8c_a8a40dbb2e685ed167df945f7ebe6074f}\label{text__unicode_8c_a8a40dbb2e685ed167df945f7ebe6074f}} 
+\index{text\_unicode.c@{text\_unicode.c}!emojiCodepoints@{emojiCodepoints}}
+\index{emojiCodepoints@{emojiCodepoints}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{emojiCodepoints}{emojiCodepoints}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ const emoji\+Codepoints}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8C\(\backslash\)x80\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x80\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x82\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xA3\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x83\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x86\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x89\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x8B\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x8E\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x8D\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x98\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x97\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x99\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x9A\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x99\(\backslash\)x82\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)x97\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xA9\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)x94\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xA8\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x90\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x91\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xB6\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x99\(\backslash\)x84\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x8F\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xA3\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xA5\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xAE\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)x90\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xAF\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xAA\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xAB\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xB4\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x8C\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x9B\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x9D\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xA4\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x92\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x95\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x99\(\backslash\)x83\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)x91\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xB2\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x99\(\backslash\)x81\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x96\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x9E\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x9F\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xA4\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xA2\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xAD\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xA6\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xA9\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xAF\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xAC\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xB0\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xB1\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xB3\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xAA\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xB5\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xA1\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xA0\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xAC\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xB7\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)x92\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)x95\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xA2\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xAE\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xA7\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x87\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xA0\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xAB\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)xAD\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA7\(\backslash\)x90\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)x93\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)x88\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x91\(\backslash\)xBF\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x91\(\backslash\)xB9\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x91\(\backslash\)xBA\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)x80\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x91\(\backslash\)xBB\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x91\(\backslash\)xBD\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x91\(\backslash\)xBE\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA4\(\backslash\)x96\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)xA9\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xBA\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xB8\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xB9\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xBB\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xBD\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x99\(\backslash\)x80\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x98\(\backslash\)xBF\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8C\(\backslash\)xBE\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8C\(\backslash\)xBF\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x80\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x83\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x87\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x93\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x9D\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x85\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)xA5\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x91\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x86\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x94\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x95\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8C\(\backslash\)xBD\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8C\(\backslash\)xB6\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x92\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)xA6\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x84\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x9C\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8C\(\backslash\)xB0\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x9E\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x90\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x96\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)xA8\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x9E\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA7\(\backslash\)x80\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x96\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x97\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)xA9\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x93\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x94\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x9F\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x95\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8C\(\backslash\)xAD\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)xAA\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8C\(\backslash\)xAE\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8C\(\backslash\)xAF\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x99\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x9A\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xB3\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x98\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xB2\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)xA3\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x97\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xBF\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)xAB\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xB1\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x98\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)x9D\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xA0\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xA2\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xA5\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xA1\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x9F\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)xA1\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xA6\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xAA\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8E\(\backslash\)x82\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xB0\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)xA7\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xAB\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xAF\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xBC\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x9B\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xB5\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xB6\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xBE\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xB7\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x8D\(\backslash\)xBB\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x82\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)x83\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)xA4\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA5\(\backslash\)xA2\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x91\(\backslash\)x81\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x91\(\backslash\)x85\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x91\(\backslash\)x84\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)x8B\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)x98\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)x93\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)x97\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)x99\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)x9B\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)xA7\(\backslash\)xA1\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)x9C\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x96\(\backslash\)xA4\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)x9D\(\backslash\)x00"}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)x9F\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)x8C\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)xA4\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)xA2\(\backslash\)x00\(\backslash\)xF0\(\backslash\)x9F\(\backslash\)x92\(\backslash\)xA3\(\backslash\)x00"}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{text__unicode_8c_a750b5d744c39a06bfb13e6eb010e35d0}\label{text__unicode_8c_a750b5d744c39a06bfb13e6eb010e35d0}} 
+\index{text\_unicode.c@{text\_unicode.c}!index@{index}}
+\index{index@{index}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}}}
+
+\mbox{\Hypertarget{text__unicode_8c_a8ae4b47621b125e915cee8ccdaa2095c}\label{text__unicode_8c_a8ae4b47621b125e915cee8ccdaa2095c}} 
+\index{text\_unicode.c@{text\_unicode.c}!language@{language}}
+\index{language@{language}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{language}{language}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ language}
+
+\mbox{\Hypertarget{text__unicode_8c_a0e1ef1063ca062691e512dafa6713b7c}\label{text__unicode_8c_a0e1ef1063ca062691e512dafa6713b7c}} 
+\index{text\_unicode.c@{text\_unicode.c}!message@{message}}
+\index{message@{message}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ab5d4c2bfcb78f279c688575297d42f74}{message}}}
+
+\mbox{\Hypertarget{text__unicode_8c_a4398ba2bea22c3b73e09652bef2e29d1}\label{text__unicode_8c_a4398ba2bea22c3b73e09652bef2e29d1}} 
+\index{text\_unicode.c@{text\_unicode.c}!messages@{messages}}
+\index{messages@{messages}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{messages}{messages}}
+{\footnotesize\ttfamily struct \{ ... \}  messages\mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}\label{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}} 
+\index{text\_unicode.c@{text\_unicode.c}!text@{text}}
+\index{text@{text}!text\_unicode.c@{text\_unicode.c}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}}$\ast$ text}
+

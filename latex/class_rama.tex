@@ -1,0 +1,137 @@
+\hypertarget{class_rama}{}\doxysection{Referencia de la Clase Rama}
+\label{class_rama}\index{Rama@{Rama}}
+
+
+{\ttfamily \#include $<$Rama.\+h$>$}
+
+Diagrama de herencias de Rama\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_rama}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rama_ae8a128e0db1f86107661e31fb748c452}{Rama}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} lado1, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sector1)
+\item 
+\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_rama_a40d6b01c7d580591a81d6e37165243c5}{get\+Rectangle}} ()
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_rama_a490ef04b688125473f8c7c08dd4ae45e}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}})
+\item 
+virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_rama_a9293b79c33561e77a5ba11948641808d}{Move}} ()=0
+\item 
+virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_rama_a0a98b0912035466f017e56886f13e21a}{Get\+Rectangle}} ()=0
+\item 
+virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_rama_a363b1f0dc70cea532a365105d57806cd}{Draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_rama_aa142882351348840f782073f0e106ba8}{rama\+\_\+sector}}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_rama_a92826b5fc34c451de23574312e26dc30}{lado}}
+\item 
+\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{class_rama_aee7c162cffa94a90eb9d8446cd1d30ff}{rama\+\_\+position}}
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{class_rama_ae915c5972de8d84aa4086810b6488051}{animal}}
+\item 
+\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_rama_af982a1bf139232fb585c24cd75890f62}{rect}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_rama_ae8a128e0db1f86107661e31fb748c452}\label{class_rama_ae8a128e0db1f86107661e31fb748c452}} 
+\index{Rama@{Rama}!Rama@{Rama}}
+\index{Rama@{Rama}!Rama@{Rama}}
+\doxysubsubsection{\texorpdfstring{Rama()}{Rama()}}
+{\footnotesize\ttfamily Rama\+::\+Rama (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{lado1,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sector1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_rama_a490ef04b688125473f8c7c08dd4ae45e}\label{class_rama_a490ef04b688125473f8c7c08dd4ae45e}} 
+\index{Rama@{Rama}!Accept@{Accept}}
+\index{Accept@{Accept}!Rama@{Rama}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Rama\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implementa \mbox{\hyperlink{class_visitable_a9db999616998fc36f82a31f4d7d9254d}{Visitable}}.
+
+\mbox{\Hypertarget{class_rama_a363b1f0dc70cea532a365105d57806cd}\label{class_rama_a363b1f0dc70cea532a365105d57806cd}} 
+\index{Rama@{Rama}!Draw@{Draw}}
+\index{Draw@{Draw}!Rama@{Rama}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Rama\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado en \mbox{\hyperlink{class_night_rama_aa08013f841dcb5f0f4b7098784521701}{Night\+Rama}} y \mbox{\hyperlink{class_light_rama_ad1cf2f215a9b77806c74ab482bad424e}{Light\+Rama}}.
+
+\mbox{\Hypertarget{class_rama_a40d6b01c7d580591a81d6e37165243c5}\label{class_rama_a40d6b01c7d580591a81d6e37165243c5}} 
+\index{Rama@{Rama}!getRectangle@{getRectangle}}
+\index{getRectangle@{getRectangle}!Rama@{Rama}}
+\doxysubsubsection{\texorpdfstring{getRectangle()}{getRectangle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Rama\+::get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rama_a0a98b0912035466f017e56886f13e21a}\label{class_rama_a0a98b0912035466f017e56886f13e21a}} 
+\index{Rama@{Rama}!GetRectangle@{GetRectangle}}
+\index{GetRectangle@{GetRectangle}!Rama@{Rama}}
+\doxysubsubsection{\texorpdfstring{GetRectangle()}{GetRectangle()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Rama\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implementado en \mbox{\hyperlink{class_light_rama_a1382248ce7d57faf41e2b70adaacd648}{Light\+Rama}} y \mbox{\hyperlink{class_night_rama_a6de57210a74e7c2160000e22366c2571}{Night\+Rama}}.
+
+\mbox{\Hypertarget{class_rama_a9293b79c33561e77a5ba11948641808d}\label{class_rama_a9293b79c33561e77a5ba11948641808d}} 
+\index{Rama@{Rama}!Move@{Move}}
+\index{Move@{Move}!Rama@{Rama}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Rama\+::\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implementado en \mbox{\hyperlink{class_light_rama_a466a2945e37a61b8162ffd7a809636a3}{Light\+Rama}} y \mbox{\hyperlink{class_night_rama_ae5e2c9faf3da8a6df2675bb175bdc5ec}{Night\+Rama}}.
+
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_rama_ae915c5972de8d84aa4086810b6488051}\label{class_rama_ae915c5972de8d84aa4086810b6488051}} 
+\index{Rama@{Rama}!animal@{animal}}
+\index{animal@{animal}!Rama@{Rama}}
+\doxysubsubsection{\texorpdfstring{animal}{animal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Rama\+::animal}
+
+\mbox{\Hypertarget{class_rama_a92826b5fc34c451de23574312e26dc30}\label{class_rama_a92826b5fc34c451de23574312e26dc30}} 
+\index{Rama@{Rama}!lado@{lado}}
+\index{lado@{lado}!Rama@{Rama}}
+\doxysubsubsection{\texorpdfstring{lado}{lado}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Rama\+::lado}
+
+\mbox{\Hypertarget{class_rama_aee7c162cffa94a90eb9d8446cd1d30ff}\label{class_rama_aee7c162cffa94a90eb9d8446cd1d30ff}} 
+\index{Rama@{Rama}!rama\_position@{rama\_position}}
+\index{rama\_position@{rama\_position}!Rama@{Rama}}
+\doxysubsubsection{\texorpdfstring{rama\_position}{rama\_position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} Rama\+::rama\+\_\+position}
+
+\mbox{\Hypertarget{class_rama_aa142882351348840f782073f0e106ba8}\label{class_rama_aa142882351348840f782073f0e106ba8}} 
+\index{Rama@{Rama}!rama\_sector@{rama\_sector}}
+\index{rama\_sector@{rama\_sector}!Rama@{Rama}}
+\doxysubsubsection{\texorpdfstring{rama\_sector}{rama\_sector}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Rama\+::rama\+\_\+sector}
+
+\mbox{\Hypertarget{class_rama_af982a1bf139232fb585c24cd75890f62}\label{class_rama_af982a1bf139232fb585c24cd75890f62}} 
+\index{Rama@{Rama}!rect@{rect}}
+\index{rect@{rect}!Rama@{Rama}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Rama\+::rect}
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+clases/\mbox{\hyperlink{_rama_8h}{Rama.\+h}}\item 
+clases/\mbox{\hyperlink{_rama_8cpp}{Rama.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{structma__event}{}\doxysection{Referencia de la Estructura ma\+\_\+event}
+\label{structma__event}\index{ma\_event@{ma\_event}}
+
+
+{\ttfamily \#include $<$miniaudio.\+h$>$}
+
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structma__context}{ma\+\_\+context}} $\ast$ \mbox{\hyperlink{structma__event_a7d7e575d92772f175f5e089e4134a3e8}{p\+Context}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>pthread\_mutex\_t \mbox{\hyperlink{structma__event_a08b1f6e2e282802f56400c2833f5a75c}{mutex}}\\
+\>\>pthread\_cond\_t \mbox{\hyperlink{structma__event_a188151481628432df6a1a19fd23eb16a}{condition}}\\
+\>\>\mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\_uint32}} \mbox{\hyperlink{structma__event_adf18d480e9057ab10100cb89a10af24a}{value}}\\
+\>\} \mbox{\hyperlink{structma__event_a522a5a5b094c801b8f247a6d89678462}{posix}}\\
+\>\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{structma__event_a9b48720b4e5d66908fc8f5c0c6a7c14a}{\_unused}}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{structma__event_a7993cc3d8f682b52423e4739807260ba}\label{structma__event_a7993cc3d8f682b52423e4739807260ba}} 
+\doxysubsubsection{\texorpdfstring{"@65}{@65}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{structma__event_a9b48720b4e5d66908fc8f5c0c6a7c14a}\label{structma__event_a9b48720b4e5d66908fc8f5c0c6a7c14a}} 
+\index{ma\_event@{ma\_event}!\_unused@{\_unused}}
+\index{\_unused@{\_unused}!ma\_event@{ma\_event}}
+\doxysubsubsection{\texorpdfstring{\_unused}{\_unused}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} ma\+\_\+event\+::\+\_\+unused}
+
+\mbox{\Hypertarget{structma__event_a188151481628432df6a1a19fd23eb16a}\label{structma__event_a188151481628432df6a1a19fd23eb16a}} 
+\index{ma\_event@{ma\_event}!condition@{condition}}
+\index{condition@{condition}!ma\_event@{ma\_event}}
+\doxysubsubsection{\texorpdfstring{condition}{condition}}
+{\footnotesize\ttfamily pthread\+\_\+cond\+\_\+t ma\+\_\+event\+::condition}
+
+\mbox{\Hypertarget{structma__event_a08b1f6e2e282802f56400c2833f5a75c}\label{structma__event_a08b1f6e2e282802f56400c2833f5a75c}} 
+\index{ma\_event@{ma\_event}!mutex@{mutex}}
+\index{mutex@{mutex}!ma\_event@{ma\_event}}
+\doxysubsubsection{\texorpdfstring{mutex}{mutex}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t ma\+\_\+event\+::mutex}
+
+\mbox{\Hypertarget{structma__event_a7d7e575d92772f175f5e089e4134a3e8}\label{structma__event_a7d7e575d92772f175f5e089e4134a3e8}} 
+\index{ma\_event@{ma\_event}!pContext@{pContext}}
+\index{pContext@{pContext}!ma\_event@{ma\_event}}
+\doxysubsubsection{\texorpdfstring{pContext}{pContext}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structma__context}{ma\+\_\+context}}$\ast$ ma\+\_\+event\+::p\+Context}
+
+\mbox{\Hypertarget{structma__event_a522a5a5b094c801b8f247a6d89678462}\label{structma__event_a522a5a5b094c801b8f247a6d89678462}} 
+\index{ma\_event@{ma\_event}!posix@{posix}}
+\index{posix@{posix}!ma\_event@{ma\_event}}
+\doxysubsubsection{\texorpdfstring{posix}{posix}}
+{\footnotesize\ttfamily struct \{ ... \}  ma\+\_\+event\+::posix}
+
+\mbox{\Hypertarget{structma__event_adf18d480e9057ab10100cb89a10af24a}\label{structma__event_adf18d480e9057ab10100cb89a10af24a}} 
+\index{ma\_event@{ma\_event}!value@{value}}
+\index{value@{value}!ma\_event@{ma\_event}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \mbox{\hyperlink{miniaudio_8h_af43e50f791fcd241fc78ff7829b0dbde}{ma\+\_\+uint32}} ma\+\_\+event\+::value}
+
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/\mbox{\hyperlink{miniaudio_8h}{miniaudio.\+h}}\end{DoxyCompactItemize}

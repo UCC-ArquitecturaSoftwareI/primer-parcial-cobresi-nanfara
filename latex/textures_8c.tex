@@ -1,0 +1,761 @@
+\hypertarget{textures_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/textures.c}
+\label{textures_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/textures.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/textures.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rlgl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/stb\+\_\+image.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/stb\+\_\+image\+\_\+write.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/stb\+\_\+image\+\_\+resize.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/stb\+\_\+perlin.\+h\char`\"{}}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{textures_8c_a8c1e5134ba87b88cfcea152a628f3577}{S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+B\+MP}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_a90f4b678f23bbfa565d18eee40074d64}{S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+T\+GA}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_a13d1dc7599cf7372403fed9aca5eb53f}{S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+J\+P\+EG}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_af59a8a253ea647864c910ebd7ea7ed65}{S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+P\+SD}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_a5e76f68e1c2f6762f36287090e83e1ef}{S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+P\+IC}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_a5e76f68e1c2f6762f36287090e83e1ef}{S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+P\+IC}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_afaa171549c75c368baa419a1024d72a2}{S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+P\+NM}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_a0cdb9c42c21645876b3977da46360aeb}{S\+T\+B\+I\+\_\+\+M\+A\+L\+L\+OC}}~\mbox{\hyperlink{raylib-src_2src_2raylib_8h_a8b0977bdc30a0c9f1f7412cbfa473ccf}{R\+L\+\_\+\+M\+A\+L\+L\+OC}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_aa2cc2cce48ec90c087c78c1f1d0ecf36}{S\+T\+B\+I\+\_\+\+F\+R\+EE}}~\mbox{\hyperlink{raylib-src_2src_2raylib_8h_a33143be307a241891782d1a84a720200}{R\+L\+\_\+\+F\+R\+EE}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_af262c72041603843d1a626953a2d0823}{S\+T\+B\+I\+\_\+\+R\+E\+A\+L\+L\+OC}}~\mbox{\hyperlink{raylib-src_2src_2raylib_8h_a2846feb0c0ca0f3deb96e3efff3bc4c8}{R\+L\+\_\+\+R\+E\+A\+L\+L\+OC}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_a18372412ad2fc3ce1e3240b3cf0efe78}{S\+T\+B\+\_\+\+I\+M\+A\+G\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_aefe397a94e8feddc652f92ef40ce9597}{S\+T\+B\+\_\+\+I\+M\+A\+G\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_aa6a7b41350a14f718b619164bc2b8fdf}{S\+T\+B\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+E\+S\+I\+Z\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_ad63bc7e124b44adf37ea9e97fa1bf581}{S\+T\+B\+\_\+\+P\+E\+R\+L\+I\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_a5ace8246bb9d345b39c8acd202be8455}{S\+T\+B\+I\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}}
+\item 
+\#define \mbox{\hyperlink{textures_8c_abc9c7e6796d1c5b8b5051ae0ca7124ae}{B\+Y\+T\+E\+S\+\_\+\+T\+E\+X\+T\+\_\+\+P\+E\+R\+\_\+\+L\+I\+NE}}~20
+\item 
+\#define \mbox{\hyperlink{textures_8c_ad02417a2035a3697df739dcad7a4e1b3}{A\+L\+P\+H\+A\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}}~50
+\item 
+\#define \mbox{\hyperlink{textures_8c_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+IN}}(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}},  \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}})~(((\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}})$<$(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}}))?(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}})\+:(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}}))
+\item 
+\#define \mbox{\hyperlink{textures_8c_a5b769e391cd935d795ce1cf44c2315d4}{C\+O\+L\+O\+R\+\_\+\+E\+Q\+U\+AL}}(col1,  col2)~((\mbox{\hyperlink{src_2external_2glad_8h_abe08814c2f72843fde4d8df41440d5a0}{col1.\+r}} == \mbox{\hyperlink{src_2external_2glad_8h_abe08814c2f72843fde4d8df41440d5a0}{col2.\+r}})\&\&(\mbox{\hyperlink{src_2external_2glad_8h_a9cd653b1648845554169fbc3a3f6d37a}{col1.\+g}} == \mbox{\hyperlink{src_2external_2glad_8h_a9cd653b1648845554169fbc3a3f6d37a}{col2.\+g}})\&\&(\mbox{\hyperlink{src_2external_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{col1.\+b}} == \mbox{\hyperlink{src_2external_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{col2.\+b}})\&\&(\mbox{\hyperlink{src_2external_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{col1.\+a}} == \mbox{\hyperlink{src_2external_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{col2.\+a}}))
+\item 
+\#define \mbox{\hyperlink{textures_8c_a468857dac4f79c2eb726895c76a86edb}{F\+O\+U\+R\+C\+C\+\_\+\+D\+X\+T1}}~0x31545844
+\item 
+\#define \mbox{\hyperlink{textures_8c_aff8dbd1cbf63d33501078e742401d01a}{F\+O\+U\+R\+C\+C\+\_\+\+D\+X\+T3}}~0x33545844
+\item 
+\#define \mbox{\hyperlink{textures_8c_a2608b4713fde494b66329c624975a613}{F\+O\+U\+R\+C\+C\+\_\+\+D\+X\+T5}}~0x35545844
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_ab178b17d656b24ba7fe2bd9fe4ece044}{Load\+Image}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$file\+Name)
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a292b8083ab08ee15aadfa5bd3d7d4160}{Load\+Image\+Ex}} (\mbox{\hyperlink{struct_color}{Color}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a620525fb1b4102cd9522c24b0e7d3e40}{pixels}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}})
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a034186e3452bcb285f57498eb6fda4ee}{Load\+Image\+Pro}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a89ce72163394e6aef63b551a8806e93f}{data}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3f8f226b5004bbc9a172e2bbf28ed102}{format}})
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_aa276d2e8c67133221163587c8597482f}{Load\+Image\+Raw}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$file\+Name, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3f8f226b5004bbc9a172e2bbf28ed102}{format}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} header\+Size)
+\item 
+\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{textures_8c_a088824ea1b009f6ec002cdba66ea9826}{Load\+Texture}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$file\+Name)
+\item 
+\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{textures_8c_a6c76a65158f6565f0d3e231b5d98131e}{Load\+Texture\+From\+Image}} (\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{struct_render_texture2_d}{Render\+Texture2D}} \mbox{\hyperlink{textures_8c_a4a36599a7f9ee6e9074c6c100cfa797b}{Load\+Render\+Texture}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a5d8cbdba9e93010d7a4344482fd01d2a}{Unload\+Image}} (\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a3cf28ef459e7ddd2d3e37ac067089321}{Unload\+Texture}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a2188203219d55190c9cec2e83e6d8903}{Unload\+Render\+Texture}} (\mbox{\hyperlink{struct_render_texture2_d}{Render\+Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_af9d0cbbbeb7414e786c41899e5a856d7}{target}})
+\item 
+\mbox{\hyperlink{struct_color}{Color}} $\ast$ \mbox{\hyperlink{textures_8c_a3ebb0e474fafe6baedd28a7950a919d3}{Get\+Image\+Data}} (\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{struct_vector4}{Vector4}} $\ast$ \mbox{\hyperlink{textures_8c_a6628b91eb0a87d00e3e214a18209a15a}{Get\+Image\+Data\+Normalized}} (\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{textures_8c_a982f0b74c8e13de3b3e1dd36ebc59530}{Get\+Image\+Alpha\+Border}} (\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, float threshold)
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{textures_8c_a15e73d306b425330ecdd9a338d609b17}{Get\+Pixel\+Data\+Size}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3f8f226b5004bbc9a172e2bbf28ed102}{format}})
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a804797dc1ad427a663c43acecb9269fb}{Get\+Texture\+Data}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}})
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_ab41c0fd048fd3bd05561ef5c24b55cac}{Get\+Screen\+Data}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a700df99bb2bc9ec1d42e3311d9c318cb}{Update\+Texture}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a620525fb1b4102cd9522c24b0e7d3e40}{pixels}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ae8f55634905adb747e032297ecfe9bdb}{Export\+Image}} (\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$file\+Name)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a8d1aae2e3dc5d896b4c739318e56a340}{Export\+Image\+As\+Code}} (\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$file\+Name)
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a5c63f11b6a2844767c0a65d86dd37d41}{Image\+Copy}} (\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_ae623f21e0ce4a95b7684555a7b064895}{Image\+From\+Image}} (\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{struct_rectangle}{Rectangle}} rec)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_aa2d15d992a000232da7f3e90938afc4e}{Image\+To\+P\+OT}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{struct_color}{Color}} fill\+Color)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_af1fcaa94648d56c197d773b140c3235f}{Image\+Format}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} new\+Format)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a8b473e10987b7ed4af34038059786b85}{Image\+Alpha\+Mask}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{struct_image}{Image}} alpha\+Mask)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ac189762d782f7e359a648fa8ff6a3338}{Image\+Alpha\+Clear}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}}, float threshold)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_aecf050cc1cddcaf8c1f28bcb73d50e0a}{Image\+Alpha\+Premultiply}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raylib_8h_a24f7d6fb3226c48a6f0ad86426b4e32d}{Texture\+Cubemap}} \mbox{\hyperlink{textures_8c_a78174ca1bc6f6ec2243903335775773f}{Load\+Texture\+Cubemap}} (\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} layout\+Type)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ab2fb3bf8fd2f3e28f79fa01fafab6805}{Image\+Crop}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{struct_rectangle}{Rectangle}} crop)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ae722602e34349230ad44874a56759b5e}{Image\+Alpha\+Crop}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, float threshold)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a8c3562e70fc7a85b202f19ff241d15b5}{Image\+Resize}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} new\+Width, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} new\+Height)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ab47ece09cc35f84e1c714894144b7915}{Image\+Resize\+NN}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} new\+Width, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} new\+Height)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a9d3254a7fc26d67bab44313d3d2f727a}{Image\+Resize\+Canvas}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} new\+Width, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} new\+Height, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} offsetX, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} offsetY, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a87978fcbd01a52de116c546a857c3c80}{Image\+Mipmaps}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a43d40550a4c8cf403c2be44c91268952}{Image\+Dither}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} r\+Bpp, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} g\+Bpp, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} b\+Bpp, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} a\+Bpp)
+\item 
+\mbox{\hyperlink{struct_color}{Color}} $\ast$ \mbox{\hyperlink{textures_8c_ac4eedb1a348b2ffee42498c9bb37ac12}{Image\+Extract\+Palette}} (\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} max\+Palette\+Size, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$extract\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ac0388542cc773b0a71b222dca80b09e5}{Image\+Draw}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{struct_rectangle}{Rectangle}} src\+Rec, \mbox{\hyperlink{struct_rectangle}{Rectangle}} dst\+Rec, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a0fbcbcad7adc4dfa7ca94aba69a64f67}{Image\+Text}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} font\+Size, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_aaa472c3a8288b6056e1b01a1f49a921d}{Image\+Text\+Ex}} (\mbox{\hyperlink{struct_font}{Font}} \mbox{\hyperlink{templates_2advance__game_2screens_2screens_8h_a1e52b0778d1df763fc5b497c26ead7a9}{font}}, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, float font\+Size, float spacing, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_abfd040995775b1f31926281e408d1890}{Image\+Draw\+Rectangle}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{struct_rectangle}{Rectangle}} rec, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a219b73e0192471e98dffea6bfa003c84}{Image\+Draw\+Rectangle\+Lines}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{struct_rectangle}{Rectangle}} rec, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} thick, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a2028e982f4dfdc4a3ba5adeffe893b9f}{Image\+Draw\+Text}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{struct_vector2}{Vector2}} position, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} font\+Size, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a03cd8d21fb4f3ce8bf8f50b32c0bb5b5}{Image\+Draw\+Text\+Ex}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{struct_vector2}{Vector2}} position, \mbox{\hyperlink{struct_font}{Font}} \mbox{\hyperlink{templates_2advance__game_2screens_2screens_8h_a1e52b0778d1df763fc5b497c26ead7a9}{font}}, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{text__unicode_8c_a5633b1433389cec21ade3811bbe9ca5b}{text}}, float font\+Size, float spacing, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ae03f0eace31d50edc2a6334068346f37}{Image\+Flip\+Vertical}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ad56c25828f492e07b50d73815c284a61}{Image\+Flip\+Horizontal}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ad5ba4c2aae0c59c41cfe9eba3306accc}{Image\+Rotate\+CW}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ae7d373a856ac3b60f64213d31c2d023a}{Image\+Rotate\+C\+CW}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a473885b1d8e228a8d784f287ed866b26}{Image\+Color\+Tint}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ab1e8f3a278b3b0ef73db4d187923bcff}{Image\+Color\+Invert}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a33a285a34d24b04de3232a4a03718955}{Image\+Color\+Grayscale}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ae2e08a89a5fa2d8016379befa3dff1ab}{Image\+Color\+Contrast}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, float contrast)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_abe62980cc5bc52d98931f3b44b0f2a5e}{Image\+Color\+Brightness}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} brightness)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_aa3a51b0cd0a0abb146158844cfafe1f5}{Image\+Color\+Replace}} (\mbox{\hyperlink{struct_image}{Image}} $\ast$\mbox{\hyperlink{eglext_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}}, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}}, \mbox{\hyperlink{struct_color}{Color}} replace)
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_aa0b6c28cc82d00249c9b394a23e48199}{Gen\+Image\+Color}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a2205936d15fe90656d7d4b8aa23657eb}{Gen\+Image\+GradientV}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{struct_color}{Color}} top, \mbox{\hyperlink{struct_color}{Color}} bottom)
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a15247bfcf99496f28e2260f5d9831a7c}{Gen\+Image\+GradientH}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{struct_color}{Color}} left, \mbox{\hyperlink{struct_color}{Color}} right)
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a1cfd6921334eae38ef0c6739de44bab4}{Gen\+Image\+Gradient\+Radial}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, float density, \mbox{\hyperlink{struct_color}{Color}} inner, \mbox{\hyperlink{struct_color}{Color}} outer)
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a19672e9d6e280693d4d96a1f8aa38517}{Gen\+Image\+Checked}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} checksX, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} checksY, \mbox{\hyperlink{struct_color}{Color}} col1, \mbox{\hyperlink{struct_color}{Color}} col2)
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a3dfc64cb45a6ccc24f58955c801a4f74}{Gen\+Image\+White\+Noise}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, float factor)
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a219b3da4def0cde0161a587776275803}{Gen\+Image\+Perlin\+Noise}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} offsetX, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} offsetY, float scale)
+\item 
+\mbox{\hyperlink{struct_image}{Image}} \mbox{\hyperlink{textures_8c_a8f790af13aaf234d59c51e1713604cbe}{Gen\+Image\+Cellular}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} tile\+Size)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ad42a894afeb15cfa9158bee0b5c96962}{Gen\+Texture\+Mipmaps}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_ac0df03f83a65df8d3e25a3edfa975f9e}{Set\+Texture\+Filter}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} filter\+Mode)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a1de657db60ac61d644bb70947845c1ec}{Set\+Texture\+Wrap}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} wrap\+Mode)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a80e5f0e9b716c8b62a3cb06cf00cf774}{Draw\+Texture}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} posX, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} posY, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a92e151403bd507d28bff274fd3fc0df3}{Draw\+TextureV}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{struct_vector2}{Vector2}} position, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_aebe319b7046e3814380a13b5b620b664}{Draw\+Texture\+Ex}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{struct_vector2}{Vector2}} position, float rotation, float scale, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a063eb4c99c204ad6c8b4c84ce43eaaf7}{Draw\+Texture\+Rec}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{struct_rectangle}{Rectangle}} source\+Rec, \mbox{\hyperlink{struct_vector2}{Vector2}} position, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a06f4749955229a4f3e4cbe9edef204d9}{Draw\+Texture\+Quad}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{struct_vector2}{Vector2}} tiling, \mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ae60229696c2ec17c9e00af4899bf738e}{offset}}, \mbox{\hyperlink{struct_rectangle}{Rectangle}} quad, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a6676d9d2240afee2f7dc9db4956c7435}{Draw\+Texture\+Pro}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{struct_rectangle}{Rectangle}} source\+Rec, \mbox{\hyperlink{struct_rectangle}{Rectangle}} dest\+Rec, \mbox{\hyperlink{struct_vector2}{Vector2}} origin, float rotation, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{textures_8c_a03894e1e40f390a5a45efe66f99dc926}{Draw\+Texture\+N\+Patch}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{struct_n_patch_info}{N\+Patch\+Info}} n\+Patch\+Info, \mbox{\hyperlink{struct_rectangle}{Rectangle}} dest\+Rec, \mbox{\hyperlink{struct_vector2}{Vector2}} origin, float rotation, \mbox{\hyperlink{struct_color}{Color}} tint)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{textures_8c_ad02417a2035a3697df739dcad7a4e1b3}\label{textures_8c_ad02417a2035a3697df739dcad7a4e1b3}} 
+\index{textures.c@{textures.c}!ALPHA\_THRESHOLD@{ALPHA\_THRESHOLD}}
+\index{ALPHA\_THRESHOLD@{ALPHA\_THRESHOLD}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ALPHA\_THRESHOLD}{ALPHA\_THRESHOLD}}
+{\footnotesize\ttfamily \#define A\+L\+P\+H\+A\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD~50}
+
+\mbox{\Hypertarget{textures_8c_abc9c7e6796d1c5b8b5051ae0ca7124ae}\label{textures_8c_abc9c7e6796d1c5b8b5051ae0ca7124ae}} 
+\index{textures.c@{textures.c}!BYTES\_TEXT\_PER\_LINE@{BYTES\_TEXT\_PER\_LINE}}
+\index{BYTES\_TEXT\_PER\_LINE@{BYTES\_TEXT\_PER\_LINE}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{BYTES\_TEXT\_PER\_LINE}{BYTES\_TEXT\_PER\_LINE}}
+{\footnotesize\ttfamily \#define B\+Y\+T\+E\+S\+\_\+\+T\+E\+X\+T\+\_\+\+P\+E\+R\+\_\+\+L\+I\+NE~20}
+
+\mbox{\Hypertarget{textures_8c_a5b769e391cd935d795ce1cf44c2315d4}\label{textures_8c_a5b769e391cd935d795ce1cf44c2315d4}} 
+\index{textures.c@{textures.c}!COLOR\_EQUAL@{COLOR\_EQUAL}}
+\index{COLOR\_EQUAL@{COLOR\_EQUAL}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{COLOR\_EQUAL}{COLOR\_EQUAL}}
+{\footnotesize\ttfamily \#define C\+O\+L\+O\+R\+\_\+\+E\+Q\+U\+AL(\begin{DoxyParamCaption}\item[{}]{col1,  }\item[{}]{col2 }\end{DoxyParamCaption})~((\mbox{\hyperlink{src_2external_2glad_8h_abe08814c2f72843fde4d8df41440d5a0}{col1.\+r}} == \mbox{\hyperlink{src_2external_2glad_8h_abe08814c2f72843fde4d8df41440d5a0}{col2.\+r}})\&\&(\mbox{\hyperlink{src_2external_2glad_8h_a9cd653b1648845554169fbc3a3f6d37a}{col1.\+g}} == \mbox{\hyperlink{src_2external_2glad_8h_a9cd653b1648845554169fbc3a3f6d37a}{col2.\+g}})\&\&(\mbox{\hyperlink{src_2external_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{col1.\+b}} == \mbox{\hyperlink{src_2external_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{col2.\+b}})\&\&(\mbox{\hyperlink{src_2external_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{col1.\+a}} == \mbox{\hyperlink{src_2external_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{col2.\+a}}))}
+
+\mbox{\Hypertarget{textures_8c_a468857dac4f79c2eb726895c76a86edb}\label{textures_8c_a468857dac4f79c2eb726895c76a86edb}} 
+\index{textures.c@{textures.c}!FOURCC\_DXT1@{FOURCC\_DXT1}}
+\index{FOURCC\_DXT1@{FOURCC\_DXT1}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{FOURCC\_DXT1}{FOURCC\_DXT1}}
+{\footnotesize\ttfamily \#define F\+O\+U\+R\+C\+C\+\_\+\+D\+X\+T1~0x31545844}
+
+\mbox{\Hypertarget{textures_8c_aff8dbd1cbf63d33501078e742401d01a}\label{textures_8c_aff8dbd1cbf63d33501078e742401d01a}} 
+\index{textures.c@{textures.c}!FOURCC\_DXT3@{FOURCC\_DXT3}}
+\index{FOURCC\_DXT3@{FOURCC\_DXT3}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{FOURCC\_DXT3}{FOURCC\_DXT3}}
+{\footnotesize\ttfamily \#define F\+O\+U\+R\+C\+C\+\_\+\+D\+X\+T3~0x33545844}
+
+\mbox{\Hypertarget{textures_8c_a2608b4713fde494b66329c624975a613}\label{textures_8c_a2608b4713fde494b66329c624975a613}} 
+\index{textures.c@{textures.c}!FOURCC\_DXT5@{FOURCC\_DXT5}}
+\index{FOURCC\_DXT5@{FOURCC\_DXT5}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{FOURCC\_DXT5}{FOURCC\_DXT5}}
+{\footnotesize\ttfamily \#define F\+O\+U\+R\+C\+C\+\_\+\+D\+X\+T5~0x35545844}
+
+\mbox{\Hypertarget{textures_8c_a3acffbd305ee72dcd4593c0d8af64a4f}\label{textures_8c_a3acffbd305ee72dcd4593c0d8af64a4f}} 
+\index{textures.c@{textures.c}!MIN@{MIN}}
+\index{MIN@{MIN}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \#define M\+IN(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}},  }\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}})$<$(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}}))?(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}})\+:(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}}))}
+
+\mbox{\Hypertarget{textures_8c_a18372412ad2fc3ce1e3240b3cf0efe78}\label{textures_8c_a18372412ad2fc3ce1e3240b3cf0efe78}} 
+\index{textures.c@{textures.c}!STB\_IMAGE\_IMPLEMENTATION@{STB\_IMAGE\_IMPLEMENTATION}}
+\index{STB\_IMAGE\_IMPLEMENTATION@{STB\_IMAGE\_IMPLEMENTATION}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STB\_IMAGE\_IMPLEMENTATION}{STB\_IMAGE\_IMPLEMENTATION}}
+{\footnotesize\ttfamily \#define S\+T\+B\+\_\+\+I\+M\+A\+G\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+
+\mbox{\Hypertarget{textures_8c_aa6a7b41350a14f718b619164bc2b8fdf}\label{textures_8c_aa6a7b41350a14f718b619164bc2b8fdf}} 
+\index{textures.c@{textures.c}!STB\_IMAGE\_RESIZE\_IMPLEMENTATION@{STB\_IMAGE\_RESIZE\_IMPLEMENTATION}}
+\index{STB\_IMAGE\_RESIZE\_IMPLEMENTATION@{STB\_IMAGE\_RESIZE\_IMPLEMENTATION}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STB\_IMAGE\_RESIZE\_IMPLEMENTATION}{STB\_IMAGE\_RESIZE\_IMPLEMENTATION}}
+{\footnotesize\ttfamily \#define S\+T\+B\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+E\+S\+I\+Z\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+
+\mbox{\Hypertarget{textures_8c_aefe397a94e8feddc652f92ef40ce9597}\label{textures_8c_aefe397a94e8feddc652f92ef40ce9597}} 
+\index{textures.c@{textures.c}!STB\_IMAGE\_WRITE\_IMPLEMENTATION@{STB\_IMAGE\_WRITE\_IMPLEMENTATION}}
+\index{STB\_IMAGE\_WRITE\_IMPLEMENTATION@{STB\_IMAGE\_WRITE\_IMPLEMENTATION}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STB\_IMAGE\_WRITE\_IMPLEMENTATION}{STB\_IMAGE\_WRITE\_IMPLEMENTATION}}
+{\footnotesize\ttfamily \#define S\+T\+B\+\_\+\+I\+M\+A\+G\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+
+\mbox{\Hypertarget{textures_8c_ad63bc7e124b44adf37ea9e97fa1bf581}\label{textures_8c_ad63bc7e124b44adf37ea9e97fa1bf581}} 
+\index{textures.c@{textures.c}!STB\_PERLIN\_IMPLEMENTATION@{STB\_PERLIN\_IMPLEMENTATION}}
+\index{STB\_PERLIN\_IMPLEMENTATION@{STB\_PERLIN\_IMPLEMENTATION}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STB\_PERLIN\_IMPLEMENTATION}{STB\_PERLIN\_IMPLEMENTATION}}
+{\footnotesize\ttfamily \#define S\+T\+B\+\_\+\+P\+E\+R\+L\+I\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+
+\mbox{\Hypertarget{textures_8c_aa2cc2cce48ec90c087c78c1f1d0ecf36}\label{textures_8c_aa2cc2cce48ec90c087c78c1f1d0ecf36}} 
+\index{textures.c@{textures.c}!STBI\_FREE@{STBI\_FREE}}
+\index{STBI\_FREE@{STBI\_FREE}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STBI\_FREE}{STBI\_FREE}}
+{\footnotesize\ttfamily \#define S\+T\+B\+I\+\_\+\+F\+R\+EE~\mbox{\hyperlink{raylib-src_2src_2raylib_8h_a33143be307a241891782d1a84a720200}{R\+L\+\_\+\+F\+R\+EE}}}
+
+\mbox{\Hypertarget{textures_8c_a0cdb9c42c21645876b3977da46360aeb}\label{textures_8c_a0cdb9c42c21645876b3977da46360aeb}} 
+\index{textures.c@{textures.c}!STBI\_MALLOC@{STBI\_MALLOC}}
+\index{STBI\_MALLOC@{STBI\_MALLOC}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STBI\_MALLOC}{STBI\_MALLOC}}
+{\footnotesize\ttfamily \#define S\+T\+B\+I\+\_\+\+M\+A\+L\+L\+OC~\mbox{\hyperlink{raylib-src_2src_2raylib_8h_a8b0977bdc30a0c9f1f7412cbfa473ccf}{R\+L\+\_\+\+M\+A\+L\+L\+OC}}}
+
+\mbox{\Hypertarget{textures_8c_a8c1e5134ba87b88cfcea152a628f3577}\label{textures_8c_a8c1e5134ba87b88cfcea152a628f3577}} 
+\index{textures.c@{textures.c}!STBI\_NO\_BMP@{STBI\_NO\_BMP}}
+\index{STBI\_NO\_BMP@{STBI\_NO\_BMP}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STBI\_NO\_BMP}{STBI\_NO\_BMP}}
+{\footnotesize\ttfamily \#define S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+B\+MP}
+
+\mbox{\Hypertarget{textures_8c_a13d1dc7599cf7372403fed9aca5eb53f}\label{textures_8c_a13d1dc7599cf7372403fed9aca5eb53f}} 
+\index{textures.c@{textures.c}!STBI\_NO\_JPEG@{STBI\_NO\_JPEG}}
+\index{STBI\_NO\_JPEG@{STBI\_NO\_JPEG}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STBI\_NO\_JPEG}{STBI\_NO\_JPEG}}
+{\footnotesize\ttfamily \#define S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+J\+P\+EG}
+
+\mbox{\Hypertarget{textures_8c_a5e76f68e1c2f6762f36287090e83e1ef}\label{textures_8c_a5e76f68e1c2f6762f36287090e83e1ef}} 
+\index{textures.c@{textures.c}!STBI\_NO\_PIC@{STBI\_NO\_PIC}}
+\index{STBI\_NO\_PIC@{STBI\_NO\_PIC}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STBI\_NO\_PIC}{STBI\_NO\_PIC}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+P\+IC}
+
+\mbox{\Hypertarget{textures_8c_a5e76f68e1c2f6762f36287090e83e1ef}\label{textures_8c_a5e76f68e1c2f6762f36287090e83e1ef}} 
+\index{textures.c@{textures.c}!STBI\_NO\_PIC@{STBI\_NO\_PIC}}
+\index{STBI\_NO\_PIC@{STBI\_NO\_PIC}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STBI\_NO\_PIC}{STBI\_NO\_PIC}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+P\+IC}
+
+\mbox{\Hypertarget{textures_8c_afaa171549c75c368baa419a1024d72a2}\label{textures_8c_afaa171549c75c368baa419a1024d72a2}} 
+\index{textures.c@{textures.c}!STBI\_NO\_PNM@{STBI\_NO\_PNM}}
+\index{STBI\_NO\_PNM@{STBI\_NO\_PNM}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STBI\_NO\_PNM}{STBI\_NO\_PNM}}
+{\footnotesize\ttfamily \#define S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+P\+NM}
+
+\mbox{\Hypertarget{textures_8c_af59a8a253ea647864c910ebd7ea7ed65}\label{textures_8c_af59a8a253ea647864c910ebd7ea7ed65}} 
+\index{textures.c@{textures.c}!STBI\_NO\_PSD@{STBI\_NO\_PSD}}
+\index{STBI\_NO\_PSD@{STBI\_NO\_PSD}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STBI\_NO\_PSD}{STBI\_NO\_PSD}}
+{\footnotesize\ttfamily \#define S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+P\+SD}
+
+\mbox{\Hypertarget{textures_8c_a90f4b678f23bbfa565d18eee40074d64}\label{textures_8c_a90f4b678f23bbfa565d18eee40074d64}} 
+\index{textures.c@{textures.c}!STBI\_NO\_TGA@{STBI\_NO\_TGA}}
+\index{STBI\_NO\_TGA@{STBI\_NO\_TGA}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STBI\_NO\_TGA}{STBI\_NO\_TGA}}
+{\footnotesize\ttfamily \#define S\+T\+B\+I\+\_\+\+N\+O\+\_\+\+T\+GA}
+
+\mbox{\Hypertarget{textures_8c_af262c72041603843d1a626953a2d0823}\label{textures_8c_af262c72041603843d1a626953a2d0823}} 
+\index{textures.c@{textures.c}!STBI\_REALLOC@{STBI\_REALLOC}}
+\index{STBI\_REALLOC@{STBI\_REALLOC}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STBI\_REALLOC}{STBI\_REALLOC}}
+{\footnotesize\ttfamily \#define S\+T\+B\+I\+\_\+\+R\+E\+A\+L\+L\+OC~\mbox{\hyperlink{raylib-src_2src_2raylib_8h_a2846feb0c0ca0f3deb96e3efff3bc4c8}{R\+L\+\_\+\+R\+E\+A\+L\+L\+OC}}}
+
+\mbox{\Hypertarget{textures_8c_a5ace8246bb9d345b39c8acd202be8455}\label{textures_8c_a5ace8246bb9d345b39c8acd202be8455}} 
+\index{textures.c@{textures.c}!STBI\_REQUIRED@{STBI\_REQUIRED}}
+\index{STBI\_REQUIRED@{STBI\_REQUIRED}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{STBI\_REQUIRED}{STBI\_REQUIRED}}
+{\footnotesize\ttfamily \#define S\+T\+B\+I\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{textures_8c_a80e5f0e9b716c8b62a3cb06cf00cf774}\label{textures_8c_a80e5f0e9b716c8b62a3cb06cf00cf774}} 
+\index{textures.c@{textures.c}!DrawTexture@{DrawTexture}}
+\index{DrawTexture@{DrawTexture}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{DrawTexture()}{DrawTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{posX,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{posY,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_aebe319b7046e3814380a13b5b620b664}\label{textures_8c_aebe319b7046e3814380a13b5b620b664}} 
+\index{textures.c@{textures.c}!DrawTextureEx@{DrawTextureEx}}
+\index{DrawTextureEx@{DrawTextureEx}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{DrawTextureEx()}{DrawTextureEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Texture\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{position,  }\item[{float}]{rotation,  }\item[{float}]{scale,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a03894e1e40f390a5a45efe66f99dc926}\label{textures_8c_a03894e1e40f390a5a45efe66f99dc926}} 
+\index{textures.c@{textures.c}!DrawTextureNPatch@{DrawTextureNPatch}}
+\index{DrawTextureNPatch@{DrawTextureNPatch}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{DrawTextureNPatch()}{DrawTextureNPatch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Texture\+N\+Patch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{struct_n_patch_info}{N\+Patch\+Info}}}]{n\+Patch\+Info,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{dest\+Rec,  }\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{origin,  }\item[{float}]{rotation,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a6676d9d2240afee2f7dc9db4956c7435}\label{textures_8c_a6676d9d2240afee2f7dc9db4956c7435}} 
+\index{textures.c@{textures.c}!DrawTexturePro@{DrawTexturePro}}
+\index{DrawTexturePro@{DrawTexturePro}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{DrawTexturePro()}{DrawTexturePro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Texture\+Pro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{source\+Rec,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{dest\+Rec,  }\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{origin,  }\item[{float}]{rotation,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a06f4749955229a4f3e4cbe9edef204d9}\label{textures_8c_a06f4749955229a4f3e4cbe9edef204d9}} 
+\index{textures.c@{textures.c}!DrawTextureQuad@{DrawTextureQuad}}
+\index{DrawTextureQuad@{DrawTextureQuad}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{DrawTextureQuad()}{DrawTextureQuad()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Texture\+Quad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{tiling,  }\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{offset,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{quad,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a063eb4c99c204ad6c8b4c84ce43eaaf7}\label{textures_8c_a063eb4c99c204ad6c8b4c84ce43eaaf7}} 
+\index{textures.c@{textures.c}!DrawTextureRec@{DrawTextureRec}}
+\index{DrawTextureRec@{DrawTextureRec}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{DrawTextureRec()}{DrawTextureRec()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Texture\+Rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{source\+Rec,  }\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{position,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a92e151403bd507d28bff274fd3fc0df3}\label{textures_8c_a92e151403bd507d28bff274fd3fc0df3}} 
+\index{textures.c@{textures.c}!DrawTextureV@{DrawTextureV}}
+\index{DrawTextureV@{DrawTextureV}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{DrawTextureV()}{DrawTextureV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+TextureV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{position,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ae8f55634905adb747e032297ecfe9bdb}\label{textures_8c_ae8f55634905adb747e032297ecfe9bdb}} 
+\index{textures.c@{textures.c}!ExportImage@{ExportImage}}
+\index{ExportImage@{ExportImage}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ExportImage()}{ExportImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Export\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{image,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a8d1aae2e3dc5d896b4c739318e56a340}\label{textures_8c_a8d1aae2e3dc5d896b4c739318e56a340}} 
+\index{textures.c@{textures.c}!ExportImageAsCode@{ExportImageAsCode}}
+\index{ExportImageAsCode@{ExportImageAsCode}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ExportImageAsCode()}{ExportImageAsCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Export\+Image\+As\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{image,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a8f790af13aaf234d59c51e1713604cbe}\label{textures_8c_a8f790af13aaf234d59c51e1713604cbe}} 
+\index{textures.c@{textures.c}!GenImageCellular@{GenImageCellular}}
+\index{GenImageCellular@{GenImageCellular}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GenImageCellular()}{GenImageCellular()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Gen\+Image\+Cellular (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{tile\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a19672e9d6e280693d4d96a1f8aa38517}\label{textures_8c_a19672e9d6e280693d4d96a1f8aa38517}} 
+\index{textures.c@{textures.c}!GenImageChecked@{GenImageChecked}}
+\index{GenImageChecked@{GenImageChecked}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GenImageChecked()}{GenImageChecked()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Gen\+Image\+Checked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{checksX,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{checksY,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{col1,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{col2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_aa0b6c28cc82d00249c9b394a23e48199}\label{textures_8c_aa0b6c28cc82d00249c9b394a23e48199}} 
+\index{textures.c@{textures.c}!GenImageColor@{GenImageColor}}
+\index{GenImageColor@{GenImageColor}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GenImageColor()}{GenImageColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Gen\+Image\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a15247bfcf99496f28e2260f5d9831a7c}\label{textures_8c_a15247bfcf99496f28e2260f5d9831a7c}} 
+\index{textures.c@{textures.c}!GenImageGradientH@{GenImageGradientH}}
+\index{GenImageGradientH@{GenImageGradientH}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GenImageGradientH()}{GenImageGradientH()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Gen\+Image\+GradientH (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{left,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{right }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a1cfd6921334eae38ef0c6739de44bab4}\label{textures_8c_a1cfd6921334eae38ef0c6739de44bab4}} 
+\index{textures.c@{textures.c}!GenImageGradientRadial@{GenImageGradientRadial}}
+\index{GenImageGradientRadial@{GenImageGradientRadial}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GenImageGradientRadial()}{GenImageGradientRadial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Gen\+Image\+Gradient\+Radial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height,  }\item[{float}]{density,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{inner,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{outer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a2205936d15fe90656d7d4b8aa23657eb}\label{textures_8c_a2205936d15fe90656d7d4b8aa23657eb}} 
+\index{textures.c@{textures.c}!GenImageGradientV@{GenImageGradientV}}
+\index{GenImageGradientV@{GenImageGradientV}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GenImageGradientV()}{GenImageGradientV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Gen\+Image\+GradientV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{top,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{bottom }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a219b3da4def0cde0161a587776275803}\label{textures_8c_a219b3da4def0cde0161a587776275803}} 
+\index{textures.c@{textures.c}!GenImagePerlinNoise@{GenImagePerlinNoise}}
+\index{GenImagePerlinNoise@{GenImagePerlinNoise}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GenImagePerlinNoise()}{GenImagePerlinNoise()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Gen\+Image\+Perlin\+Noise (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{offsetX,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{offsetY,  }\item[{float}]{scale }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a3dfc64cb45a6ccc24f58955c801a4f74}\label{textures_8c_a3dfc64cb45a6ccc24f58955c801a4f74}} 
+\index{textures.c@{textures.c}!GenImageWhiteNoise@{GenImageWhiteNoise}}
+\index{GenImageWhiteNoise@{GenImageWhiteNoise}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GenImageWhiteNoise()}{GenImageWhiteNoise()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Gen\+Image\+White\+Noise (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height,  }\item[{float}]{factor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ad42a894afeb15cfa9158bee0b5c96962}\label{textures_8c_ad42a894afeb15cfa9158bee0b5c96962}} 
+\index{textures.c@{textures.c}!GenTextureMipmaps@{GenTextureMipmaps}}
+\index{GenTextureMipmaps@{GenTextureMipmaps}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GenTextureMipmaps()}{GenTextureMipmaps()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Gen\+Texture\+Mipmaps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}} $\ast$}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a982f0b74c8e13de3b3e1dd36ebc59530}\label{textures_8c_a982f0b74c8e13de3b3e1dd36ebc59530}} 
+\index{textures.c@{textures.c}!GetImageAlphaBorder@{GetImageAlphaBorder}}
+\index{GetImageAlphaBorder@{GetImageAlphaBorder}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GetImageAlphaBorder()}{GetImageAlphaBorder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Get\+Image\+Alpha\+Border (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{image,  }\item[{float}]{threshold }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a3ebb0e474fafe6baedd28a7950a919d3}\label{textures_8c_a3ebb0e474fafe6baedd28a7950a919d3}} 
+\index{textures.c@{textures.c}!GetImageData@{GetImageData}}
+\index{GetImageData@{GetImageData}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GetImageData()}{GetImageData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_color}{Color}}$\ast$ Get\+Image\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a6628b91eb0a87d00e3e214a18209a15a}\label{textures_8c_a6628b91eb0a87d00e3e214a18209a15a}} 
+\index{textures.c@{textures.c}!GetImageDataNormalized@{GetImageDataNormalized}}
+\index{GetImageDataNormalized@{GetImageDataNormalized}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GetImageDataNormalized()}{GetImageDataNormalized()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector4}{Vector4}}$\ast$ Get\+Image\+Data\+Normalized (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a15e73d306b425330ecdd9a338d609b17}\label{textures_8c_a15e73d306b425330ecdd9a338d609b17}} 
+\index{textures.c@{textures.c}!GetPixelDataSize@{GetPixelDataSize}}
+\index{GetPixelDataSize@{GetPixelDataSize}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GetPixelDataSize()}{GetPixelDataSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Get\+Pixel\+Data\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ab41c0fd048fd3bd05561ef5c24b55cac}\label{textures_8c_ab41c0fd048fd3bd05561ef5c24b55cac}} 
+\index{textures.c@{textures.c}!GetScreenData@{GetScreenData}}
+\index{GetScreenData@{GetScreenData}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GetScreenData()}{GetScreenData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Get\+Screen\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a804797dc1ad427a663c43acecb9269fb}\label{textures_8c_a804797dc1ad427a663c43acecb9269fb}} 
+\index{textures.c@{textures.c}!GetTextureData@{GetTextureData}}
+\index{GetTextureData@{GetTextureData}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{GetTextureData()}{GetTextureData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Get\+Texture\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ac189762d782f7e359a648fa8ff6a3338}\label{textures_8c_ac189762d782f7e359a648fa8ff6a3338}} 
+\index{textures.c@{textures.c}!ImageAlphaClear@{ImageAlphaClear}}
+\index{ImageAlphaClear@{ImageAlphaClear}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageAlphaClear()}{ImageAlphaClear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Alpha\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color,  }\item[{float}]{threshold }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ae722602e34349230ad44874a56759b5e}\label{textures_8c_ae722602e34349230ad44874a56759b5e}} 
+\index{textures.c@{textures.c}!ImageAlphaCrop@{ImageAlphaCrop}}
+\index{ImageAlphaCrop@{ImageAlphaCrop}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageAlphaCrop()}{ImageAlphaCrop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Alpha\+Crop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{float}]{threshold }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a8b473e10987b7ed4af34038059786b85}\label{textures_8c_a8b473e10987b7ed4af34038059786b85}} 
+\index{textures.c@{textures.c}!ImageAlphaMask@{ImageAlphaMask}}
+\index{ImageAlphaMask@{ImageAlphaMask}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageAlphaMask()}{ImageAlphaMask()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Alpha\+Mask (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{struct_image}{Image}}}]{alpha\+Mask }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_aecf050cc1cddcaf8c1f28bcb73d50e0a}\label{textures_8c_aecf050cc1cddcaf8c1f28bcb73d50e0a}} 
+\index{textures.c@{textures.c}!ImageAlphaPremultiply@{ImageAlphaPremultiply}}
+\index{ImageAlphaPremultiply@{ImageAlphaPremultiply}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageAlphaPremultiply()}{ImageAlphaPremultiply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Alpha\+Premultiply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_abe62980cc5bc52d98931f3b44b0f2a5e}\label{textures_8c_abe62980cc5bc52d98931f3b44b0f2a5e}} 
+\index{textures.c@{textures.c}!ImageColorBrightness@{ImageColorBrightness}}
+\index{ImageColorBrightness@{ImageColorBrightness}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageColorBrightness()}{ImageColorBrightness()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Color\+Brightness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{brightness }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ae2e08a89a5fa2d8016379befa3dff1ab}\label{textures_8c_ae2e08a89a5fa2d8016379befa3dff1ab}} 
+\index{textures.c@{textures.c}!ImageColorContrast@{ImageColorContrast}}
+\index{ImageColorContrast@{ImageColorContrast}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageColorContrast()}{ImageColorContrast()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Color\+Contrast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{float}]{contrast }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a33a285a34d24b04de3232a4a03718955}\label{textures_8c_a33a285a34d24b04de3232a4a03718955}} 
+\index{textures.c@{textures.c}!ImageColorGrayscale@{ImageColorGrayscale}}
+\index{ImageColorGrayscale@{ImageColorGrayscale}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageColorGrayscale()}{ImageColorGrayscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Color\+Grayscale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ab1e8f3a278b3b0ef73db4d187923bcff}\label{textures_8c_ab1e8f3a278b3b0ef73db4d187923bcff}} 
+\index{textures.c@{textures.c}!ImageColorInvert@{ImageColorInvert}}
+\index{ImageColorInvert@{ImageColorInvert}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageColorInvert()}{ImageColorInvert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Color\+Invert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_aa3a51b0cd0a0abb146158844cfafe1f5}\label{textures_8c_aa3a51b0cd0a0abb146158844cfafe1f5}} 
+\index{textures.c@{textures.c}!ImageColorReplace@{ImageColorReplace}}
+\index{ImageColorReplace@{ImageColorReplace}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageColorReplace()}{ImageColorReplace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Color\+Replace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{replace }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a473885b1d8e228a8d784f287ed866b26}\label{textures_8c_a473885b1d8e228a8d784f287ed866b26}} 
+\index{textures.c@{textures.c}!ImageColorTint@{ImageColorTint}}
+\index{ImageColorTint@{ImageColorTint}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageColorTint()}{ImageColorTint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Color\+Tint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a5c63f11b6a2844767c0a65d86dd37d41}\label{textures_8c_a5c63f11b6a2844767c0a65d86dd37d41}} 
+\index{textures.c@{textures.c}!ImageCopy@{ImageCopy}}
+\index{ImageCopy@{ImageCopy}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageCopy()}{ImageCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Image\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ab2fb3bf8fd2f3e28f79fa01fafab6805}\label{textures_8c_ab2fb3bf8fd2f3e28f79fa01fafab6805}} 
+\index{textures.c@{textures.c}!ImageCrop@{ImageCrop}}
+\index{ImageCrop@{ImageCrop}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageCrop()}{ImageCrop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Crop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{crop }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a43d40550a4c8cf403c2be44c91268952}\label{textures_8c_a43d40550a4c8cf403c2be44c91268952}} 
+\index{textures.c@{textures.c}!ImageDither@{ImageDither}}
+\index{ImageDither@{ImageDither}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageDither()}{ImageDither()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Dither (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{r\+Bpp,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{g\+Bpp,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{b\+Bpp,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{a\+Bpp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ac0388542cc773b0a71b222dca80b09e5}\label{textures_8c_ac0388542cc773b0a71b222dca80b09e5}} 
+\index{textures.c@{textures.c}!ImageDraw@{ImageDraw}}
+\index{ImageDraw@{ImageDraw}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageDraw()}{ImageDraw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{struct_image}{Image}}}]{src,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{src\+Rec,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{dst\+Rec,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_abfd040995775b1f31926281e408d1890}\label{textures_8c_abfd040995775b1f31926281e408d1890}} 
+\index{textures.c@{textures.c}!ImageDrawRectangle@{ImageDrawRectangle}}
+\index{ImageDrawRectangle@{ImageDrawRectangle}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageDrawRectangle()}{ImageDrawRectangle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Draw\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{rec,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a219b73e0192471e98dffea6bfa003c84}\label{textures_8c_a219b73e0192471e98dffea6bfa003c84}} 
+\index{textures.c@{textures.c}!ImageDrawRectangleLines@{ImageDrawRectangleLines}}
+\index{ImageDrawRectangleLines@{ImageDrawRectangleLines}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageDrawRectangleLines()}{ImageDrawRectangleLines()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Draw\+Rectangle\+Lines (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{rec,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{thick,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a2028e982f4dfdc4a3ba5adeffe893b9f}\label{textures_8c_a2028e982f4dfdc4a3ba5adeffe893b9f}} 
+\index{textures.c@{textures.c}!ImageDrawText@{ImageDrawText}}
+\index{ImageDrawText@{ImageDrawText}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageDrawText()}{ImageDrawText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Draw\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{position,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{font\+Size,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a03cd8d21fb4f3ce8bf8f50b32c0bb5b5}\label{textures_8c_a03cd8d21fb4f3ce8bf8f50b32c0bb5b5}} 
+\index{textures.c@{textures.c}!ImageDrawTextEx@{ImageDrawTextEx}}
+\index{ImageDrawTextEx@{ImageDrawTextEx}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageDrawTextEx()}{ImageDrawTextEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Draw\+Text\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{position,  }\item[{\mbox{\hyperlink{struct_font}{Font}}}]{font,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{float}]{font\+Size,  }\item[{float}]{spacing,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ac4eedb1a348b2ffee42498c9bb37ac12}\label{textures_8c_ac4eedb1a348b2ffee42498c9bb37ac12}} 
+\index{textures.c@{textures.c}!ImageExtractPalette@{ImageExtractPalette}}
+\index{ImageExtractPalette@{ImageExtractPalette}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageExtractPalette()}{ImageExtractPalette()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_color}{Color}}$\ast$ Image\+Extract\+Palette (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{image,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{max\+Palette\+Size,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{extract\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ad56c25828f492e07b50d73815c284a61}\label{textures_8c_ad56c25828f492e07b50d73815c284a61}} 
+\index{textures.c@{textures.c}!ImageFlipHorizontal@{ImageFlipHorizontal}}
+\index{ImageFlipHorizontal@{ImageFlipHorizontal}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageFlipHorizontal()}{ImageFlipHorizontal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Flip\+Horizontal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ae03f0eace31d50edc2a6334068346f37}\label{textures_8c_ae03f0eace31d50edc2a6334068346f37}} 
+\index{textures.c@{textures.c}!ImageFlipVertical@{ImageFlipVertical}}
+\index{ImageFlipVertical@{ImageFlipVertical}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageFlipVertical()}{ImageFlipVertical()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Flip\+Vertical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_af1fcaa94648d56c197d773b140c3235f}\label{textures_8c_af1fcaa94648d56c197d773b140c3235f}} 
+\index{textures.c@{textures.c}!ImageFormat@{ImageFormat}}
+\index{ImageFormat@{ImageFormat}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageFormat()}{ImageFormat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Format (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{new\+Format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ae623f21e0ce4a95b7684555a7b064895}\label{textures_8c_ae623f21e0ce4a95b7684555a7b064895}} 
+\index{textures.c@{textures.c}!ImageFromImage@{ImageFromImage}}
+\index{ImageFromImage@{ImageFromImage}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageFromImage()}{ImageFromImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Image\+From\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{image,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{rec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a87978fcbd01a52de116c546a857c3c80}\label{textures_8c_a87978fcbd01a52de116c546a857c3c80}} 
+\index{textures.c@{textures.c}!ImageMipmaps@{ImageMipmaps}}
+\index{ImageMipmaps@{ImageMipmaps}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageMipmaps()}{ImageMipmaps()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Mipmaps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a8c3562e70fc7a85b202f19ff241d15b5}\label{textures_8c_a8c3562e70fc7a85b202f19ff241d15b5}} 
+\index{textures.c@{textures.c}!ImageResize@{ImageResize}}
+\index{ImageResize@{ImageResize}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageResize()}{ImageResize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{new\+Width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{new\+Height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a9d3254a7fc26d67bab44313d3d2f727a}\label{textures_8c_a9d3254a7fc26d67bab44313d3d2f727a}} 
+\index{textures.c@{textures.c}!ImageResizeCanvas@{ImageResizeCanvas}}
+\index{ImageResizeCanvas@{ImageResizeCanvas}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageResizeCanvas()}{ImageResizeCanvas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Resize\+Canvas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{new\+Width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{new\+Height,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{offsetX,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{offsetY,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ab47ece09cc35f84e1c714894144b7915}\label{textures_8c_ab47ece09cc35f84e1c714894144b7915}} 
+\index{textures.c@{textures.c}!ImageResizeNN@{ImageResizeNN}}
+\index{ImageResizeNN@{ImageResizeNN}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageResizeNN()}{ImageResizeNN()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Resize\+NN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{new\+Width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{new\+Height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ae7d373a856ac3b60f64213d31c2d023a}\label{textures_8c_ae7d373a856ac3b60f64213d31c2d023a}} 
+\index{textures.c@{textures.c}!ImageRotateCCW@{ImageRotateCCW}}
+\index{ImageRotateCCW@{ImageRotateCCW}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageRotateCCW()}{ImageRotateCCW()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Rotate\+C\+CW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ad5ba4c2aae0c59c41cfe9eba3306accc}\label{textures_8c_ad5ba4c2aae0c59c41cfe9eba3306accc}} 
+\index{textures.c@{textures.c}!ImageRotateCW@{ImageRotateCW}}
+\index{ImageRotateCW@{ImageRotateCW}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageRotateCW()}{ImageRotateCW()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+Rotate\+CW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a0fbcbcad7adc4dfa7ca94aba69a64f67}\label{textures_8c_a0fbcbcad7adc4dfa7ca94aba69a64f67}} 
+\index{textures.c@{textures.c}!ImageText@{ImageText}}
+\index{ImageText@{ImageText}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageText()}{ImageText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Image\+Text (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{font\+Size,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_aaa472c3a8288b6056e1b01a1f49a921d}\label{textures_8c_aaa472c3a8288b6056e1b01a1f49a921d}} 
+\index{textures.c@{textures.c}!ImageTextEx@{ImageTextEx}}
+\index{ImageTextEx@{ImageTextEx}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageTextEx()}{ImageTextEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Image\+Text\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_font}{Font}}}]{font,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{text,  }\item[{float}]{font\+Size,  }\item[{float}]{spacing,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_aa2d15d992a000232da7f3e90938afc4e}\label{textures_8c_aa2d15d992a000232da7f3e90938afc4e}} 
+\index{textures.c@{textures.c}!ImageToPOT@{ImageToPOT}}
+\index{ImageToPOT@{ImageToPOT}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{ImageToPOT()}{ImageToPOT()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Image\+To\+P\+OT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}} $\ast$}]{image,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{fill\+Color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ab178b17d656b24ba7fe2bd9fe4ece044}\label{textures_8c_ab178b17d656b24ba7fe2bd9fe4ece044}} 
+\index{textures.c@{textures.c}!LoadImage@{LoadImage}}
+\index{LoadImage@{LoadImage}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{LoadImage()}{LoadImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Load\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a292b8083ab08ee15aadfa5bd3d7d4160}\label{textures_8c_a292b8083ab08ee15aadfa5bd3d7d4160}} 
+\index{textures.c@{textures.c}!LoadImageEx@{LoadImageEx}}
+\index{LoadImageEx@{LoadImageEx}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{LoadImageEx()}{LoadImageEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Load\+Image\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_color}{Color}} $\ast$}]{pixels,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a034186e3452bcb285f57498eb6fda4ee}\label{textures_8c_a034186e3452bcb285f57498eb6fda4ee}} 
+\index{textures.c@{textures.c}!LoadImagePro@{LoadImagePro}}
+\index{LoadImagePro@{LoadImagePro}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{LoadImagePro()}{LoadImagePro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Load\+Image\+Pro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{data,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_aa276d2e8c67133221163587c8597482f}\label{textures_8c_aa276d2e8c67133221163587c8597482f}} 
+\index{textures.c@{textures.c}!LoadImageRaw@{LoadImageRaw}}
+\index{LoadImageRaw@{LoadImageRaw}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{LoadImageRaw()}{LoadImageRaw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_image}{Image}} Load\+Image\+Raw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{file\+Name,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{format,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{header\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a4a36599a7f9ee6e9074c6c100cfa797b}\label{textures_8c_a4a36599a7f9ee6e9074c6c100cfa797b}} 
+\index{textures.c@{textures.c}!LoadRenderTexture@{LoadRenderTexture}}
+\index{LoadRenderTexture@{LoadRenderTexture}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{LoadRenderTexture()}{LoadRenderTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_render_texture2_d}{Render\+Texture2D}} Load\+Render\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{width,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a088824ea1b009f6ec002cdba66ea9826}\label{textures_8c_a088824ea1b009f6ec002cdba66ea9826}} 
+\index{textures.c@{textures.c}!LoadTexture@{LoadTexture}}
+\index{LoadTexture@{LoadTexture}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{LoadTexture()}{LoadTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_texture2_d}{Texture2D}} Load\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a78174ca1bc6f6ec2243903335775773f}\label{textures_8c_a78174ca1bc6f6ec2243903335775773f}} 
+\index{textures.c@{textures.c}!LoadTextureCubemap@{LoadTextureCubemap}}
+\index{LoadTextureCubemap@{LoadTextureCubemap}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{LoadTextureCubemap()}{LoadTextureCubemap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raylib_8h_a24f7d6fb3226c48a6f0ad86426b4e32d}{Texture\+Cubemap}} Load\+Texture\+Cubemap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{image,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{layout\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a6c76a65158f6565f0d3e231b5d98131e}\label{textures_8c_a6c76a65158f6565f0d3e231b5d98131e}} 
+\index{textures.c@{textures.c}!LoadTextureFromImage@{LoadTextureFromImage}}
+\index{LoadTextureFromImage@{LoadTextureFromImage}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{LoadTextureFromImage()}{LoadTextureFromImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_texture2_d}{Texture2D}} Load\+Texture\+From\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_ac0df03f83a65df8d3e25a3edfa975f9e}\label{textures_8c_ac0df03f83a65df8d3e25a3edfa975f9e}} 
+\index{textures.c@{textures.c}!SetTextureFilter@{SetTextureFilter}}
+\index{SetTextureFilter@{SetTextureFilter}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{SetTextureFilter()}{SetTextureFilter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Set\+Texture\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{filter\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a1de657db60ac61d644bb70947845c1ec}\label{textures_8c_a1de657db60ac61d644bb70947845c1ec}} 
+\index{textures.c@{textures.c}!SetTextureWrap@{SetTextureWrap}}
+\index{SetTextureWrap@{SetTextureWrap}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{SetTextureWrap()}{SetTextureWrap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Set\+Texture\+Wrap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{wrap\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a5d8cbdba9e93010d7a4344482fd01d2a}\label{textures_8c_a5d8cbdba9e93010d7a4344482fd01d2a}} 
+\index{textures.c@{textures.c}!UnloadImage@{UnloadImage}}
+\index{UnloadImage@{UnloadImage}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{UnloadImage()}{UnloadImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a2188203219d55190c9cec2e83e6d8903}\label{textures_8c_a2188203219d55190c9cec2e83e6d8903}} 
+\index{textures.c@{textures.c}!UnloadRenderTexture@{UnloadRenderTexture}}
+\index{UnloadRenderTexture@{UnloadRenderTexture}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{UnloadRenderTexture()}{UnloadRenderTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Render\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_render_texture2_d}{Render\+Texture2D}}}]{target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a3cf28ef459e7ddd2d3e37ac067089321}\label{textures_8c_a3cf28ef459e7ddd2d3e37ac067089321}} 
+\index{textures.c@{textures.c}!UnloadTexture@{UnloadTexture}}
+\index{UnloadTexture@{UnloadTexture}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{UnloadTexture()}{UnloadTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{textures_8c_a700df99bb2bc9ec1d42e3311d9c318cb}\label{textures_8c_a700df99bb2bc9ec1d42e3311d9c318cb}} 
+\index{textures.c@{textures.c}!UpdateTexture@{UpdateTexture}}
+\index{UpdateTexture@{UpdateTexture}!textures.c@{textures.c}}
+\doxysubsubsection{\texorpdfstring{UpdateTexture()}{UpdateTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{const \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{pixels }\end{DoxyParamCaption})}
+

@@ -1,0 +1,393 @@
+\hypertarget{par__shapes_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/par\+\_\+shapes.h}
+\label{par__shapes_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/par\_shapes.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/par\_shapes.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpar__shapes__mesh__s}{par\+\_\+shapes\+\_\+mesh\+\_\+s}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{par__shapes_8h_ad3973fabd0f7fcd3c490af355b42fcfb}{P\+A\+R\+\_\+\+S\+H\+A\+P\+E\+S\+\_\+T}}~\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}
+\item 
+\#define \mbox{\hyperlink{par__shapes_8h_a802c18171b702b48178b53cfe2879f99}{P\+A\+R\+\_\+\+PI}}~(3.\+14159265359)
+\item 
+\#define \mbox{\hyperlink{par__shapes_8h_adfa37c6750dd32b374503ea0ba2cfc2d}{P\+A\+R\+\_\+\+M\+IN}}(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}},  \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}})~(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}} $>$ \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}} ? \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}} \+: \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}})
+\item 
+\#define \mbox{\hyperlink{par__shapes_8h_aabe346c3bc88b025172fad3fd3a14e7d}{P\+A\+R\+\_\+\+M\+AX}}(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}},  \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}})~(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}} $>$ \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}} ? \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}} \+: \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}})
+\item 
+\#define \mbox{\hyperlink{par__shapes_8h_a0795160ec6272e014300d31bc2b4e15e}{P\+A\+R\+\_\+\+C\+L\+A\+MP}}(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}},  lo,  hi)~\mbox{\hyperlink{par__shapes_8h_aabe346c3bc88b025172fad3fd3a14e7d}{P\+A\+R\+\_\+\+M\+AX}}(lo, \mbox{\hyperlink{par__shapes_8h_adfa37c6750dd32b374503ea0ba2cfc2d}{P\+A\+R\+\_\+\+M\+IN}}(hi, \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}}))
+\item 
+\#define \mbox{\hyperlink{par__shapes_8h_ad4b6b412063373f17c24f4d781618eef}{P\+A\+R\+\_\+\+S\+W\+AP}}(T,  A,  B)~\{ T tmp = B; B = A; A = tmp; \}
+\item 
+\#define \mbox{\hyperlink{par__shapes_8h_ac30a46e3c5ffe428fe24b78cb26bf3d0}{P\+A\+R\+\_\+\+S\+QR}}(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}})~((\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}}) $\ast$ (\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}}))
+\item 
+\#define \mbox{\hyperlink{par__shapes_8h_ab2e414834f4a0aacf610e78597add117}{P\+A\+R\+\_\+\+M\+A\+L\+L\+OC}}(T,  N)~((T$\ast$) malloc(N $\ast$ sizeof(T)))
+\item 
+\#define \mbox{\hyperlink{par__shapes_8h_af0d62e4354f2c1d2da52ef7fca0c6779}{P\+A\+R\+\_\+\+C\+A\+L\+L\+OC}}(T,  N)~((T$\ast$) calloc(N $\ast$ sizeof(T), 1))
+\item 
+\#define \mbox{\hyperlink{par__shapes_8h_a7fd716b31539e421acabff8afa3f4e4b}{P\+A\+R\+\_\+\+R\+E\+A\+L\+L\+OC}}(T,  B\+UF,  N)~((T$\ast$) realloc(B\+UF, sizeof(T) $\ast$ (N)))
+\item 
+\#define \mbox{\hyperlink{par__shapes_8h_a4d956be1eef5d46c440df0e506b7abac}{P\+A\+R\+\_\+\+F\+R\+EE}}(B\+UF)~free(B\+UF)
+\end{DoxyCompactItemize}
+\doxysubsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structpar__shapes__mesh__s}{par\+\_\+shapes\+\_\+mesh\+\_\+s}} \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}
+\item 
+typedef \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}($\ast$ \mbox{\hyperlink{par__shapes_8h_aedfff632a88d677831bdf409c3347748}{par\+\_\+shapes\+\_\+fn}}) (float const $\ast$, float $\ast$, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_a57178a1c46a1958990d2451176e9b4cc}{par\+\_\+shapes\+\_\+free\+\_\+mesh}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_a351c96a062a5359719bf3c74bb20e4af}{par\+\_\+shapes\+\_\+create\+\_\+cylinder}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stacks)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_a64a7219343ccbbb79d1b4b850b73e182}{par\+\_\+shapes\+\_\+create\+\_\+torus}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stacks, float radius)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_ad2ae2210f85a755dea10d5817c4ee6df}{par\+\_\+shapes\+\_\+create\+\_\+parametric\+\_\+sphere}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stacks)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_aa2f1833e73733b8fe494d566b880178b}{par\+\_\+shapes\+\_\+create\+\_\+subdivided\+\_\+sphere}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} nsubdivisions)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_a0e2cc5b3ac7fc4974a913f608d6cca76}{par\+\_\+shapes\+\_\+create\+\_\+klein\+\_\+bottle}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stacks)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_a59f4a742809a22645287937f976cb49f}{par\+\_\+shapes\+\_\+create\+\_\+trefoil\+\_\+knot}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stacks, float radius)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_a41ddbb11585a31cf7ac6573f4ab2a74e}{par\+\_\+shapes\+\_\+create\+\_\+hemisphere}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stacks)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_ae3cdd8ede4864c98e6241c843f7550b1}{par\+\_\+shapes\+\_\+create\+\_\+plane}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stacks)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_add98313780b2a49bbdfc54e19945b253}{par\+\_\+shapes\+\_\+create\+\_\+parametric}} (\mbox{\hyperlink{par__shapes_8h_aedfff632a88d677831bdf409c3347748}{par\+\_\+shapes\+\_\+fn}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} stacks, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$userdata)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_abfa57b4b0f585f681deee37870d02802}{par\+\_\+shapes\+\_\+create\+\_\+icosahedron}} ()
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_a36e71048ea2386de69d2863880cdca39}{par\+\_\+shapes\+\_\+create\+\_\+dodecahedron}} ()
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_a0746f84cb0dea37bbade096e94c0ccd9}{par\+\_\+shapes\+\_\+create\+\_\+octahedron}} ()
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_ad675f18844db138addb196a860fd1550}{par\+\_\+shapes\+\_\+create\+\_\+tetrahedron}} ()
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_ab99ca6b6e57119cc0b9a6a517d1250b4}{par\+\_\+shapes\+\_\+create\+\_\+cube}} ()
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_a882e885e4c5e4bb6c02d3315dc5bfa22}{par\+\_\+shapes\+\_\+create\+\_\+disk}} (float radius, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, float const $\ast$center, float const $\ast$normal)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_a534814c09bcad92b47100b992957aa3c}{par\+\_\+shapes\+\_\+create\+\_\+empty}} ()
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_a7f0cdc79b2780214a66e0bc6f858cdcc}{par\+\_\+shapes\+\_\+create\+\_\+rock}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} seed, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} nsubdivisions)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_ad9c9f6b096bb2a1137bbe6850eb36895}{par\+\_\+shapes\+\_\+create\+\_\+lsystem}} (\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} const $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a5d503ac2e8a859fe5ec03de21c8b6a3b}{program}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} maxdepth)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_a9af0cb4d63d5aaf9a17e97d3ddc1e9e7}{par\+\_\+shapes\+\_\+export}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} const $\ast$, \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} const $\ast$objfile)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_a0497d200389267aaf166bfd055700a79}{par\+\_\+shapes\+\_\+compute\+\_\+aabb}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} const $\ast$mesh, float $\ast$aabb)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_adc942382add37d2fb6cd93f58dc31c38}{par\+\_\+shapes\+\_\+clone}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} const $\ast$mesh, \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_af9d0cbbbeb7414e786c41899e5a856d7}{target}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_ad4877bfc5f14394106858bd1d98b036f}{par\+\_\+shapes\+\_\+merge}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} const $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_aae7b9b829015d798dd838983174f26e9}{par\+\_\+shapes\+\_\+translate}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a4f27f1eebce8c31db01bb39fab9ef561}{y}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ab26e6a0e7d142ed28ac773f12a73f458}{z}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_af2c70a8ffa2e19fa9dbc9638a35196f2}{par\+\_\+shapes\+\_\+rotate}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$, float radians, float const $\ast$axis)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_a561a10d333656f0f08be18061766ecd8}{par\+\_\+shapes\+\_\+scale}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac916c0825494ac3acd4457effd2823d2}{x}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a4f27f1eebce8c31db01bb39fab9ef561}{y}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ab26e6a0e7d142ed28ac773f12a73f458}{z}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_a186ba254ca5c992051d148161ef424d5}{par\+\_\+shapes\+\_\+merge\+\_\+and\+\_\+free}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_a222c3567f00ed93bfded1a12bb706a49}{par\+\_\+shapes\+\_\+invert}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} startface, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} nfaces)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_a53d2048149c3461eac71cc35132bc5a4}{par\+\_\+shapes\+\_\+remove\+\_\+degenerate}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$, float minarea)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_a8a5660e0536358166f5c0fe3029c619c}{par\+\_\+shapes\+\_\+unweld}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$mesh, \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} create\+\_\+indices)
+\item 
+\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$ \mbox{\hyperlink{par__shapes_8h_a03f8c677df91de2c38ece22ee04e04b7}{par\+\_\+shapes\+\_\+weld}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} const $\ast$, float epsilon, \mbox{\hyperlink{par__shapes_8h_ad3973fabd0f7fcd3c490af355b42fcfb}{P\+A\+R\+\_\+\+S\+H\+A\+P\+E\+S\+\_\+T}} $\ast$mapping)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{par__shapes_8h_a9e8efd72a504265b5c3019d1fc5fcf3f}{par\+\_\+shapes\+\_\+compute\+\_\+normals}} (\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$m)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{par__shapes_8h_af0d62e4354f2c1d2da52ef7fca0c6779}\label{par__shapes_8h_af0d62e4354f2c1d2da52ef7fca0c6779}} 
+\index{par\_shapes.h@{par\_shapes.h}!PAR\_CALLOC@{PAR\_CALLOC}}
+\index{PAR\_CALLOC@{PAR\_CALLOC}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{PAR\_CALLOC}{PAR\_CALLOC}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+C\+A\+L\+L\+OC(\begin{DoxyParamCaption}\item[{}]{T,  }\item[{}]{N }\end{DoxyParamCaption})~((T$\ast$) calloc(N $\ast$ sizeof(T), 1))}
+
+\mbox{\Hypertarget{par__shapes_8h_a0795160ec6272e014300d31bc2b4e15e}\label{par__shapes_8h_a0795160ec6272e014300d31bc2b4e15e}} 
+\index{par\_shapes.h@{par\_shapes.h}!PAR\_CLAMP@{PAR\_CLAMP}}
+\index{PAR\_CLAMP@{PAR\_CLAMP}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{PAR\_CLAMP}{PAR\_CLAMP}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+C\+L\+A\+MP(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}},  }\item[{}]{lo,  }\item[{}]{hi }\end{DoxyParamCaption})~\mbox{\hyperlink{par__shapes_8h_aabe346c3bc88b025172fad3fd3a14e7d}{P\+A\+R\+\_\+\+M\+AX}}(lo, \mbox{\hyperlink{par__shapes_8h_adfa37c6750dd32b374503ea0ba2cfc2d}{P\+A\+R\+\_\+\+M\+IN}}(hi, \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}}))}
+
+\mbox{\Hypertarget{par__shapes_8h_a4d956be1eef5d46c440df0e506b7abac}\label{par__shapes_8h_a4d956be1eef5d46c440df0e506b7abac}} 
+\index{par\_shapes.h@{par\_shapes.h}!PAR\_FREE@{PAR\_FREE}}
+\index{PAR\_FREE@{PAR\_FREE}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{PAR\_FREE}{PAR\_FREE}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+F\+R\+EE(\begin{DoxyParamCaption}\item[{}]{B\+UF }\end{DoxyParamCaption})~free(B\+UF)}
+
+\mbox{\Hypertarget{par__shapes_8h_ab2e414834f4a0aacf610e78597add117}\label{par__shapes_8h_ab2e414834f4a0aacf610e78597add117}} 
+\index{par\_shapes.h@{par\_shapes.h}!PAR\_MALLOC@{PAR\_MALLOC}}
+\index{PAR\_MALLOC@{PAR\_MALLOC}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{PAR\_MALLOC}{PAR\_MALLOC}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+M\+A\+L\+L\+OC(\begin{DoxyParamCaption}\item[{}]{T,  }\item[{}]{N }\end{DoxyParamCaption})~((T$\ast$) malloc(N $\ast$ sizeof(T)))}
+
+\mbox{\Hypertarget{par__shapes_8h_aabe346c3bc88b025172fad3fd3a14e7d}\label{par__shapes_8h_aabe346c3bc88b025172fad3fd3a14e7d}} 
+\index{par\_shapes.h@{par\_shapes.h}!PAR\_MAX@{PAR\_MAX}}
+\index{PAR\_MAX@{PAR\_MAX}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{PAR\_MAX}{PAR\_MAX}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+M\+AX(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}},  }\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}} }\end{DoxyParamCaption})~(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}} $>$ \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}} ? \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}} \+: \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}})}
+
+\mbox{\Hypertarget{par__shapes_8h_adfa37c6750dd32b374503ea0ba2cfc2d}\label{par__shapes_8h_adfa37c6750dd32b374503ea0ba2cfc2d}} 
+\index{par\_shapes.h@{par\_shapes.h}!PAR\_MIN@{PAR\_MIN}}
+\index{PAR\_MIN@{PAR\_MIN}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{PAR\_MIN}{PAR\_MIN}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+M\+IN(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}},  }\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}} }\end{DoxyParamCaption})~(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}} $>$ \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}} ? \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{b}} \+: \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}})}
+
+\mbox{\Hypertarget{par__shapes_8h_a802c18171b702b48178b53cfe2879f99}\label{par__shapes_8h_a802c18171b702b48178b53cfe2879f99}} 
+\index{par\_shapes.h@{par\_shapes.h}!PAR\_PI@{PAR\_PI}}
+\index{PAR\_PI@{PAR\_PI}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{PAR\_PI}{PAR\_PI}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+PI~(3.\+14159265359)}
+
+\mbox{\Hypertarget{par__shapes_8h_a7fd716b31539e421acabff8afa3f4e4b}\label{par__shapes_8h_a7fd716b31539e421acabff8afa3f4e4b}} 
+\index{par\_shapes.h@{par\_shapes.h}!PAR\_REALLOC@{PAR\_REALLOC}}
+\index{PAR\_REALLOC@{PAR\_REALLOC}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{PAR\_REALLOC}{PAR\_REALLOC}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+R\+E\+A\+L\+L\+OC(\begin{DoxyParamCaption}\item[{}]{T,  }\item[{}]{B\+UF,  }\item[{}]{N }\end{DoxyParamCaption})~((T$\ast$) realloc(B\+UF, sizeof(T) $\ast$ (N)))}
+
+\mbox{\Hypertarget{par__shapes_8h_ad3973fabd0f7fcd3c490af355b42fcfb}\label{par__shapes_8h_ad3973fabd0f7fcd3c490af355b42fcfb}} 
+\index{par\_shapes.h@{par\_shapes.h}!PAR\_SHAPES\_T@{PAR\_SHAPES\_T}}
+\index{PAR\_SHAPES\_T@{PAR\_SHAPES\_T}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{PAR\_SHAPES\_T}{PAR\_SHAPES\_T}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+S\+H\+A\+P\+E\+S\+\_\+T~\mbox{\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}}
+
+\mbox{\Hypertarget{par__shapes_8h_ac30a46e3c5ffe428fe24b78cb26bf3d0}\label{par__shapes_8h_ac30a46e3c5ffe428fe24b78cb26bf3d0}} 
+\index{par\_shapes.h@{par\_shapes.h}!PAR\_SQR@{PAR\_SQR}}
+\index{PAR\_SQR@{PAR\_SQR}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{PAR\_SQR}{PAR\_SQR}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+S\+QR(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}} }\end{DoxyParamCaption})~((\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}}) $\ast$ (\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ac8729153468b5dcf13f971b21d84d4e5}{a}}))}
+
+\mbox{\Hypertarget{par__shapes_8h_ad4b6b412063373f17c24f4d781618eef}\label{par__shapes_8h_ad4b6b412063373f17c24f4d781618eef}} 
+\index{par\_shapes.h@{par\_shapes.h}!PAR\_SWAP@{PAR\_SWAP}}
+\index{PAR\_SWAP@{PAR\_SWAP}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{PAR\_SWAP}{PAR\_SWAP}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+S\+W\+AP(\begin{DoxyParamCaption}\item[{}]{T,  }\item[{}]{A,  }\item[{}]{B }\end{DoxyParamCaption})~\{ T tmp = B; B = A; A = tmp; \}}
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{par__shapes_8h_aedfff632a88d677831bdf409c3347748}\label{par__shapes_8h_aedfff632a88d677831bdf409c3347748}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_fn@{par\_shapes\_fn}}
+\index{par\_shapes\_fn@{par\_shapes\_fn}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_fn}{par\_shapes\_fn}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}($\ast$ par\+\_\+shapes\+\_\+fn) (float const  $\ast$, float $\ast$, \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$)}
+
+\mbox{\Hypertarget{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}\label{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_mesh@{par\_shapes\_mesh}}
+\index{par\_shapes\_mesh@{par\_shapes\_mesh}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_mesh}{par\_shapes\_mesh}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpar__shapes__mesh__s}{par\+\_\+shapes\+\_\+mesh\+\_\+s}} \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{par__shapes_8h_adc942382add37d2fb6cd93f58dc31c38}\label{par__shapes_8h_adc942382add37d2fb6cd93f58dc31c38}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_clone@{par\_shapes\_clone}}
+\index{par\_shapes\_clone@{par\_shapes\_clone}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_clone()}{par\_shapes\_clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} const $\ast$}]{mesh,  }\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a0497d200389267aaf166bfd055700a79}\label{par__shapes_8h_a0497d200389267aaf166bfd055700a79}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_compute\_aabb@{par\_shapes\_compute\_aabb}}
+\index{par\_shapes\_compute\_aabb@{par\_shapes\_compute\_aabb}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_compute\_aabb()}{par\_shapes\_compute\_aabb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+compute\+\_\+aabb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} const $\ast$}]{mesh,  }\item[{float $\ast$}]{aabb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a9e8efd72a504265b5c3019d1fc5fcf3f}\label{par__shapes_8h_a9e8efd72a504265b5c3019d1fc5fcf3f}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_compute\_normals@{par\_shapes\_compute\_normals}}
+\index{par\_shapes\_compute\_normals@{par\_shapes\_compute\_normals}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_compute\_normals()}{par\_shapes\_compute\_normals()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+compute\+\_\+normals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_ab99ca6b6e57119cc0b9a6a517d1250b4}\label{par__shapes_8h_ab99ca6b6e57119cc0b9a6a517d1250b4}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_cube@{par\_shapes\_create\_cube}}
+\index{par\_shapes\_create\_cube@{par\_shapes\_create\_cube}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_cube()}{par\_shapes\_create\_cube()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+cube (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a351c96a062a5359719bf3c74bb20e4af}\label{par__shapes_8h_a351c96a062a5359719bf3c74bb20e4af}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_cylinder@{par\_shapes\_create\_cylinder}}
+\index{par\_shapes\_create\_cylinder@{par\_shapes\_create\_cylinder}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_cylinder()}{par\_shapes\_create\_cylinder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+cylinder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{stacks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a882e885e4c5e4bb6c02d3315dc5bfa22}\label{par__shapes_8h_a882e885e4c5e4bb6c02d3315dc5bfa22}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_disk@{par\_shapes\_create\_disk}}
+\index{par\_shapes\_create\_disk@{par\_shapes\_create\_disk}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_disk()}{par\_shapes\_create\_disk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+disk (\begin{DoxyParamCaption}\item[{float}]{radius,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{float const $\ast$}]{center,  }\item[{float const $\ast$}]{normal }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a36e71048ea2386de69d2863880cdca39}\label{par__shapes_8h_a36e71048ea2386de69d2863880cdca39}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_dodecahedron@{par\_shapes\_create\_dodecahedron}}
+\index{par\_shapes\_create\_dodecahedron@{par\_shapes\_create\_dodecahedron}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_dodecahedron()}{par\_shapes\_create\_dodecahedron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+dodecahedron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a534814c09bcad92b47100b992957aa3c}\label{par__shapes_8h_a534814c09bcad92b47100b992957aa3c}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_empty@{par\_shapes\_create\_empty}}
+\index{par\_shapes\_create\_empty@{par\_shapes\_create\_empty}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_empty()}{par\_shapes\_create\_empty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a41ddbb11585a31cf7ac6573f4ab2a74e}\label{par__shapes_8h_a41ddbb11585a31cf7ac6573f4ab2a74e}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_hemisphere@{par\_shapes\_create\_hemisphere}}
+\index{par\_shapes\_create\_hemisphere@{par\_shapes\_create\_hemisphere}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_hemisphere()}{par\_shapes\_create\_hemisphere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+hemisphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{stacks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_abfa57b4b0f585f681deee37870d02802}\label{par__shapes_8h_abfa57b4b0f585f681deee37870d02802}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_icosahedron@{par\_shapes\_create\_icosahedron}}
+\index{par\_shapes\_create\_icosahedron@{par\_shapes\_create\_icosahedron}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_icosahedron()}{par\_shapes\_create\_icosahedron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+icosahedron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a0e2cc5b3ac7fc4974a913f608d6cca76}\label{par__shapes_8h_a0e2cc5b3ac7fc4974a913f608d6cca76}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_klein\_bottle@{par\_shapes\_create\_klein\_bottle}}
+\index{par\_shapes\_create\_klein\_bottle@{par\_shapes\_create\_klein\_bottle}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_klein\_bottle()}{par\_shapes\_create\_klein\_bottle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+klein\+\_\+bottle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{stacks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_ad9c9f6b096bb2a1137bbe6850eb36895}\label{par__shapes_8h_ad9c9f6b096bb2a1137bbe6850eb36895}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_lsystem@{par\_shapes\_create\_lsystem}}
+\index{par\_shapes\_create\_lsystem@{par\_shapes\_create\_lsystem}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_lsystem()}{par\_shapes\_create\_lsystem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+lsystem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} const $\ast$}]{program,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{maxdepth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a0746f84cb0dea37bbade096e94c0ccd9}\label{par__shapes_8h_a0746f84cb0dea37bbade096e94c0ccd9}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_octahedron@{par\_shapes\_create\_octahedron}}
+\index{par\_shapes\_create\_octahedron@{par\_shapes\_create\_octahedron}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_octahedron()}{par\_shapes\_create\_octahedron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+octahedron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_add98313780b2a49bbdfc54e19945b253}\label{par__shapes_8h_add98313780b2a49bbdfc54e19945b253}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_parametric@{par\_shapes\_create\_parametric}}
+\index{par\_shapes\_create\_parametric@{par\_shapes\_create\_parametric}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_parametric()}{par\_shapes\_create\_parametric()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+parametric (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_aedfff632a88d677831bdf409c3347748}{par\+\_\+shapes\+\_\+fn}}}]{,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{stacks,  }\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} $\ast$}]{userdata }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_ad2ae2210f85a755dea10d5817c4ee6df}\label{par__shapes_8h_ad2ae2210f85a755dea10d5817c4ee6df}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_parametric\_sphere@{par\_shapes\_create\_parametric\_sphere}}
+\index{par\_shapes\_create\_parametric\_sphere@{par\_shapes\_create\_parametric\_sphere}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_parametric\_sphere()}{par\_shapes\_create\_parametric\_sphere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+parametric\+\_\+sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{stacks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_ae3cdd8ede4864c98e6241c843f7550b1}\label{par__shapes_8h_ae3cdd8ede4864c98e6241c843f7550b1}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_plane@{par\_shapes\_create\_plane}}
+\index{par\_shapes\_create\_plane@{par\_shapes\_create\_plane}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_plane()}{par\_shapes\_create\_plane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{stacks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a7f0cdc79b2780214a66e0bc6f858cdcc}\label{par__shapes_8h_a7f0cdc79b2780214a66e0bc6f858cdcc}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_rock@{par\_shapes\_create\_rock}}
+\index{par\_shapes\_create\_rock@{par\_shapes\_create\_rock}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_rock()}{par\_shapes\_create\_rock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+rock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{seed,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{nsubdivisions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_aa2f1833e73733b8fe494d566b880178b}\label{par__shapes_8h_aa2f1833e73733b8fe494d566b880178b}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_subdivided\_sphere@{par\_shapes\_create\_subdivided\_sphere}}
+\index{par\_shapes\_create\_subdivided\_sphere@{par\_shapes\_create\_subdivided\_sphere}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_subdivided\_sphere()}{par\_shapes\_create\_subdivided\_sphere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+subdivided\+\_\+sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{nsubdivisions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_ad675f18844db138addb196a860fd1550}\label{par__shapes_8h_ad675f18844db138addb196a860fd1550}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_tetrahedron@{par\_shapes\_create\_tetrahedron}}
+\index{par\_shapes\_create\_tetrahedron@{par\_shapes\_create\_tetrahedron}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_tetrahedron()}{par\_shapes\_create\_tetrahedron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+tetrahedron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a64a7219343ccbbb79d1b4b850b73e182}\label{par__shapes_8h_a64a7219343ccbbb79d1b4b850b73e182}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_torus@{par\_shapes\_create\_torus}}
+\index{par\_shapes\_create\_torus@{par\_shapes\_create\_torus}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_torus()}{par\_shapes\_create\_torus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+torus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{stacks,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a59f4a742809a22645287937f976cb49f}\label{par__shapes_8h_a59f4a742809a22645287937f976cb49f}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_create\_trefoil\_knot@{par\_shapes\_create\_trefoil\_knot}}
+\index{par\_shapes\_create\_trefoil\_knot@{par\_shapes\_create\_trefoil\_knot}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_create\_trefoil\_knot()}{par\_shapes\_create\_trefoil\_knot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+create\+\_\+trefoil\+\_\+knot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{stacks,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a9af0cb4d63d5aaf9a17e97d3ddc1e9e7}\label{par__shapes_8h_a9af0cb4d63d5aaf9a17e97d3ddc1e9e7}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_export@{par\_shapes\_export}}
+\index{par\_shapes\_export@{par\_shapes\_export}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_export()}{par\_shapes\_export()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+export (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} const $\ast$}]{,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} const $\ast$}]{objfile }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a57178a1c46a1958990d2451176e9b4cc}\label{par__shapes_8h_a57178a1c46a1958990d2451176e9b4cc}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_free\_mesh@{par\_shapes\_free\_mesh}}
+\index{par\_shapes\_free\_mesh@{par\_shapes\_free\_mesh}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_free\_mesh()}{par\_shapes\_free\_mesh()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+free\+\_\+mesh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a222c3567f00ed93bfded1a12bb706a49}\label{par__shapes_8h_a222c3567f00ed93bfded1a12bb706a49}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_invert@{par\_shapes\_invert}}
+\index{par\_shapes\_invert@{par\_shapes\_invert}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_invert()}{par\_shapes\_invert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+invert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{startface,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{nfaces }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_ad4877bfc5f14394106858bd1d98b036f}\label{par__shapes_8h_ad4877bfc5f14394106858bd1d98b036f}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_merge@{par\_shapes\_merge}}
+\index{par\_shapes\_merge@{par\_shapes\_merge}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_merge()}{par\_shapes\_merge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+merge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} const $\ast$}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a186ba254ca5c992051d148161ef424d5}\label{par__shapes_8h_a186ba254ca5c992051d148161ef424d5}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_merge\_and\_free@{par\_shapes\_merge\_and\_free}}
+\index{par\_shapes\_merge\_and\_free@{par\_shapes\_merge\_and\_free}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_merge\_and\_free()}{par\_shapes\_merge\_and\_free()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+merge\+\_\+and\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a53d2048149c3461eac71cc35132bc5a4}\label{par__shapes_8h_a53d2048149c3461eac71cc35132bc5a4}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_remove\_degenerate@{par\_shapes\_remove\_degenerate}}
+\index{par\_shapes\_remove\_degenerate@{par\_shapes\_remove\_degenerate}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_remove\_degenerate()}{par\_shapes\_remove\_degenerate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+remove\+\_\+degenerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{,  }\item[{float}]{minarea }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_af2c70a8ffa2e19fa9dbc9638a35196f2}\label{par__shapes_8h_af2c70a8ffa2e19fa9dbc9638a35196f2}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_rotate@{par\_shapes\_rotate}}
+\index{par\_shapes\_rotate@{par\_shapes\_rotate}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_rotate()}{par\_shapes\_rotate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{,  }\item[{float}]{radians,  }\item[{float const $\ast$}]{axis }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a561a10d333656f0f08be18061766ecd8}\label{par__shapes_8h_a561a10d333656f0f08be18061766ecd8}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_scale@{par\_shapes\_scale}}
+\index{par\_shapes\_scale@{par\_shapes\_scale}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_scale()}{par\_shapes\_scale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_aae7b9b829015d798dd838983174f26e9}\label{par__shapes_8h_aae7b9b829015d798dd838983174f26e9}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_translate@{par\_shapes\_translate}}
+\index{par\_shapes\_translate@{par\_shapes\_translate}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_translate()}{par\_shapes\_translate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+translate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a8a5660e0536358166f5c0fe3029c619c}\label{par__shapes_8h_a8a5660e0536358166f5c0fe3029c619c}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_unweld@{par\_shapes\_unweld}}
+\index{par\_shapes\_unweld@{par\_shapes\_unweld}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_unweld()}{par\_shapes\_unweld()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} par\+\_\+shapes\+\_\+unweld (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} $\ast$}]{mesh,  }\item[{\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{create\+\_\+indices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{par__shapes_8h_a03f8c677df91de2c38ece22ee04e04b7}\label{par__shapes_8h_a03f8c677df91de2c38ece22ee04e04b7}} 
+\index{par\_shapes.h@{par\_shapes.h}!par\_shapes\_weld@{par\_shapes\_weld}}
+\index{par\_shapes\_weld@{par\_shapes\_weld}!par\_shapes.h@{par\_shapes.h}}
+\doxysubsubsection{\texorpdfstring{par\_shapes\_weld()}{par\_shapes\_weld()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}}$\ast$ par\+\_\+shapes\+\_\+weld (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{par__shapes_8h_ad2c6d18dca38c137c48f9132c5f683c6}{par\+\_\+shapes\+\_\+mesh}} const $\ast$}]{,  }\item[{float}]{epsilon,  }\item[{\mbox{\hyperlink{par__shapes_8h_ad3973fabd0f7fcd3c490af355b42fcfb}{P\+A\+R\+\_\+\+S\+H\+A\+P\+E\+S\+\_\+T}} $\ast$}]{mapping }\end{DoxyParamCaption})}
+

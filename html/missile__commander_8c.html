@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/games/missile_commander.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_7aebff1416c495ebb69e3cc957d2473c.html">games</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#define-members">defines</a> &#124;
+<a href="#typedef-members">typedefs</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo missile_commander.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;raylib.h&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_missile.html">Missile</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_interceptor.html">Interceptor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_explosion.html">Explosion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_launcher.html">Launcher</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_building.html">Building</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:aed68af5c2c961342d874f4e559deac70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#aed68af5c2c961342d874f4e559deac70">MAX_MISSILES</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:aed68af5c2c961342d874f4e559deac70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8f0c1af97019e9eff199c956355523"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a7a8f0c1af97019e9eff199c956355523">MAX_INTERCEPTORS</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a7a8f0c1af97019e9eff199c956355523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c82cf7ac9ed0c4e5551f7722e87bc99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a6c82cf7ac9ed0c4e5551f7722e87bc99">MAX_EXPLOSIONS</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:a6c82cf7ac9ed0c4e5551f7722e87bc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e8225395c8337e7a98ab8be3c7f17e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#ad4e8225395c8337e7a98ab8be3c7f17e">LAUNCHERS_AMOUNT</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ad4e8225395c8337e7a98ab8be3c7f17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3121132997ac303b0f5f936de663b1d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a3121132997ac303b0f5f936de663b1d5">BUILDINGS_AMOUNT</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a3121132997ac303b0f5f936de663b1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424e5403be7450cbafec878a8567093b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a424e5403be7450cbafec878a8567093b">LAUNCHER_SIZE</a>&#160;&#160;&#160;80</td></tr>
+<tr class="separator:a424e5403be7450cbafec878a8567093b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6778273ea3f0f9e18d4eb0fa8986b89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#ad6778273ea3f0f9e18d4eb0fa8986b89">BUILDING_SIZE</a>&#160;&#160;&#160;60</td></tr>
+<tr class="separator:ad6778273ea3f0f9e18d4eb0fa8986b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c992f76521ac05122ed2ee4b447cb3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a4c992f76521ac05122ed2ee4b447cb3e">EXPLOSION_RADIUS</a>&#160;&#160;&#160;40</td></tr>
+<tr class="separator:a4c992f76521ac05122ed2ee4b447cb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad732a73881fc4402a1309791ae339341"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#ad732a73881fc4402a1309791ae339341">MISSILE_SPEED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ad732a73881fc4402a1309791ae339341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf30be6d3754cfa8fa8694eb24b1d729"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#acf30be6d3754cfa8fa8694eb24b1d729">MISSILE_LAUNCH_FRAMES</a>&#160;&#160;&#160;80</td></tr>
+<tr class="separator:acf30be6d3754cfa8fa8694eb24b1d729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3635d1d57855288bee5526e0520741b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a3635d1d57855288bee5526e0520741b7">INTERCEPTOR_SPEED</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a3635d1d57855288bee5526e0520741b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538d773d3d73f58f7ae08cae623c1fd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a538d773d3d73f58f7ae08cae623c1fd9">EXPLOSION_INCREASE_TIME</a>&#160;&#160;&#160;90</td></tr>
+<tr class="separator:a538d773d3d73f58f7ae08cae623c1fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa8e8f2939d65bf47a9a07edf3088cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#abfa8e8f2939d65bf47a9a07edf3088cf">EXPLOSION_TOTAL_TIME</a>&#160;&#160;&#160;210</td></tr>
+<tr class="separator:abfa8e8f2939d65bf47a9a07edf3088cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d533ad47b827e7d7cb7e251171ba951"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a9d533ad47b827e7d7cb7e251171ba951">EXPLOSION_COLOR</a>&#160;&#160;&#160;(<a class="el" href="struct_color.html">Color</a>){ 125, 125, 125, 125 }</td></tr>
+<tr class="separator:a9d533ad47b827e7d7cb7e251171ba951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+typedefs</h2></td></tr>
+<tr class="memitem:a1c1d76156b05b483481e7526cc65483b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_missile.html">Missile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a1c1d76156b05b483481e7526cc65483b">Missile</a></td></tr>
+<tr class="separator:a1c1d76156b05b483481e7526cc65483b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7df7e8066321edbeb001316c4be2fd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_interceptor.html">Interceptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a4f7df7e8066321edbeb001316c4be2fd">Interceptor</a></td></tr>
+<tr class="separator:a4f7df7e8066321edbeb001316c4be2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff80083c53a0a02feb5f838fb7cdc28"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_explosion.html">Explosion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a0ff80083c53a0a02feb5f838fb7cdc28">Explosion</a></td></tr>
+<tr class="separator:a0ff80083c53a0a02feb5f838fb7cdc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43b3ec5b8922e3fdef99afb3960f474"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_launcher.html">Launcher</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#ad43b3ec5b8922e3fdef99afb3960f474">Launcher</a></td></tr>
+<tr class="separator:ad43b3ec5b8922e3fdef99afb3960f474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797091de93a20f8a889f12b18ab1b443"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_building.html">Building</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a797091de93a20f8a889f12b18ab1b443">Building</a></td></tr>
+<tr class="separator:a797091de93a20f8a889f12b18ab1b443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="missile__commander_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="ad6778273ea3f0f9e18d4eb0fa8986b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6778273ea3f0f9e18d4eb0fa8986b89">&#9670;&nbsp;</a></span>BUILDING_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILDING_SIZE&#160;&#160;&#160;60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3121132997ac303b0f5f936de663b1d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3121132997ac303b0f5f936de663b1d5">&#9670;&nbsp;</a></span>BUILDINGS_AMOUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILDINGS_AMOUNT&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d533ad47b827e7d7cb7e251171ba951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d533ad47b827e7d7cb7e251171ba951">&#9670;&nbsp;</a></span>EXPLOSION_COLOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPLOSION_COLOR&#160;&#160;&#160;(<a class="el" href="struct_color.html">Color</a>){ 125, 125, 125, 125 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a538d773d3d73f58f7ae08cae623c1fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538d773d3d73f58f7ae08cae623c1fd9">&#9670;&nbsp;</a></span>EXPLOSION_INCREASE_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPLOSION_INCREASE_TIME&#160;&#160;&#160;90</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c992f76521ac05122ed2ee4b447cb3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c992f76521ac05122ed2ee4b447cb3e">&#9670;&nbsp;</a></span>EXPLOSION_RADIUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPLOSION_RADIUS&#160;&#160;&#160;40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfa8e8f2939d65bf47a9a07edf3088cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa8e8f2939d65bf47a9a07edf3088cf">&#9670;&nbsp;</a></span>EXPLOSION_TOTAL_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPLOSION_TOTAL_TIME&#160;&#160;&#160;210</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3635d1d57855288bee5526e0520741b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3635d1d57855288bee5526e0520741b7">&#9670;&nbsp;</a></span>INTERCEPTOR_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INTERCEPTOR_SPEED&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a424e5403be7450cbafec878a8567093b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a424e5403be7450cbafec878a8567093b">&#9670;&nbsp;</a></span>LAUNCHER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAUNCHER_SIZE&#160;&#160;&#160;80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4e8225395c8337e7a98ab8be3c7f17e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e8225395c8337e7a98ab8be3c7f17e">&#9670;&nbsp;</a></span>LAUNCHERS_AMOUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAUNCHERS_AMOUNT&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c82cf7ac9ed0c4e5551f7722e87bc99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c82cf7ac9ed0c4e5551f7722e87bc99">&#9670;&nbsp;</a></span>MAX_EXPLOSIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_EXPLOSIONS&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a8f0c1af97019e9eff199c956355523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a8f0c1af97019e9eff199c956355523">&#9670;&nbsp;</a></span>MAX_INTERCEPTORS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_INTERCEPTORS&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed68af5c2c961342d874f4e559deac70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed68af5c2c961342d874f4e559deac70">&#9670;&nbsp;</a></span>MAX_MISSILES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_MISSILES&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf30be6d3754cfa8fa8694eb24b1d729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf30be6d3754cfa8fa8694eb24b1d729">&#9670;&nbsp;</a></span>MISSILE_LAUNCH_FRAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MISSILE_LAUNCH_FRAMES&#160;&#160;&#160;80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad732a73881fc4402a1309791ae339341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad732a73881fc4402a1309791ae339341">&#9670;&nbsp;</a></span>MISSILE_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MISSILE_SPEED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los 'typedefs'</h2>
+<a id="a797091de93a20f8a889f12b18ab1b443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797091de93a20f8a889f12b18ab1b443">&#9670;&nbsp;</a></span>Building</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_building.html">Building</a> <a class="el" href="struct_building.html">Building</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ff80083c53a0a02feb5f838fb7cdc28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff80083c53a0a02feb5f838fb7cdc28">&#9670;&nbsp;</a></span>Explosion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_explosion.html">Explosion</a> <a class="el" href="struct_explosion.html">Explosion</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f7df7e8066321edbeb001316c4be2fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f7df7e8066321edbeb001316c4be2fd">&#9670;&nbsp;</a></span>Interceptor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_interceptor.html">Interceptor</a> <a class="el" href="struct_interceptor.html">Interceptor</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad43b3ec5b8922e3fdef99afb3960f474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad43b3ec5b8922e3fdef99afb3960f474">&#9670;&nbsp;</a></span>Launcher</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_launcher.html">Launcher</a> <a class="el" href="struct_launcher.html">Launcher</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c1d76156b05b483481e7526cc65483b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c1d76156b05b483481e7526cc65483b">&#9670;&nbsp;</a></span>Missile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_missile.html">Missile</a> <a class="el" href="struct_missile.html">Missile</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

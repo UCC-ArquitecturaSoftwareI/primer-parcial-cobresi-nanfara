@@ -1,25 +1,43 @@
-//
-// Created by Abril on 3/5/2020.
-//
 
+/**
+ * @title       Clase LightMonkey
+ * @file        LightMonkey.h
+ * @version     1.0
+ * @date        3/5/2020
+ * @author      Ticiana Cobresi Serravalle
+ * @author      Nara Abril Nanfara
+ */
 #ifndef RAYLIBTEMPLATE_NIGHTTHEMEFACTORY_H
+#define RAYLIBTEMPLATE_NIGHTTHEMEFACTORY_H
+
 #include "ThemeFactory.h"
 #include "Monkey.h"
 #include "NightMonkey.h"
 #include "NightRama.h"
 
-#define RAYLIBTEMPLATE_NIGHTTHEMEFACTORY_H
-
-
-class NightThemeFactory: public ThemeFactory{
+/**
+ * @class NightThemeFactory
+ * @brief Clase que crea objetos en tema "Night"
+ */
+class NightThemeFactory : public ThemeFactory {
 public:
-    Monkey *createMonkey() override {
-    return new NightMonkey;
-    }
-    //Color de fondo
 
-    Rama *createRama(int lado, int sector) override {
-        return new NightRama(lado, sector);
+    /**
+     * @brief crea un NightMonkey
+     * @return NightMonkey creado
+     */
+    Monkey *createMonkey( ) override {
+        return new NightMonkey;
+    }
+
+    /**
+     * @brief crea una NightRama
+     * @param lado
+     * @param sector
+     * @return NightRama creada
+     */
+    Rama *createRama( int lado , int sector ) override {
+        return new NightRama( lado , sector );
     }
 };
 

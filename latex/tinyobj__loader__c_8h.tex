@@ -1,0 +1,126 @@
+\hypertarget{tinyobj__loader__c_8h}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/external/tinyobj\+\_\+loader\+\_\+c.h}
+\label{tinyobj__loader__c_8h}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/tinyobj\_loader\_c.h@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/external/tinyobj\_loader\_c.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtinyobj__material__t}{tinyobj\+\_\+material\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structtinyobj__shape__t}{tinyobj\+\_\+shape\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structtinyobj__vertex__index__t}{tinyobj\+\_\+vertex\+\_\+index\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structtinyobj__attrib__t}{tinyobj\+\_\+attrib\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tinyobj__loader__c_8h_a9f9c5d965da9c5e5da7a569e132b65bc}{T\+I\+N\+Y\+O\+B\+J\+\_\+\+F\+L\+A\+G\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+TE}}~(1 $<$$<$ 0)
+\item 
+\#define \mbox{\hyperlink{tinyobj__loader__c_8h_ad165d7af066e226d189b9def54196005}{T\+I\+N\+Y\+O\+B\+J\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+D\+EX}}~(0x80000000)
+\item 
+\#define \mbox{\hyperlink{tinyobj__loader__c_8h_a53a030dcd2b97fe2c58613e2ee991e4e}{T\+I\+N\+Y\+O\+B\+J\+\_\+\+S\+U\+C\+C\+E\+SS}}~(0)
+\item 
+\#define \mbox{\hyperlink{tinyobj__loader__c_8h_a9b55ac6beb00debc9f2fa528f997e797}{T\+I\+N\+Y\+O\+B\+J\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+M\+P\+TY}}~(-\/1)
+\item 
+\#define \mbox{\hyperlink{tinyobj__loader__c_8h_a41fbea9d4d17475e5f679ab25513b1d9}{T\+I\+N\+Y\+O\+B\+J\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER}}~(-\/2)
+\item 
+\#define \mbox{\hyperlink{tinyobj__loader__c_8h_ac5c6849c1d0f6ae634566d7cfb5262ad}{T\+I\+N\+Y\+O\+B\+J\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON}}~(-\/3)
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{tinyobj__loader__c_8h_a02754adee35155e9c1c7c30521d50236}{tinyobj\+\_\+parse\+\_\+obj}} (\mbox{\hyperlink{structtinyobj__attrib__t}{tinyobj\+\_\+attrib\+\_\+t}} $\ast$attrib, \mbox{\hyperlink{structtinyobj__shape__t}{tinyobj\+\_\+shape\+\_\+t}} $\ast$$\ast$shapes, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$num\+\_\+shapes, \mbox{\hyperlink{structtinyobj__material__t}{tinyobj\+\_\+material\+\_\+t}} $\ast$$\ast$materials, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$num\+\_\+materials, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ad8a8baf08bc0399738960c9259571911}{buf}}, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a30ee67aa502329a88f4a203775adfa1a}{len}}, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d4f56e54693280c6d9b1177c12c867d}{flags}})
+\item 
+\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{tinyobj__loader__c_8h_a0e123c2815260c55b713330372186e90}{tinyobj\+\_\+parse\+\_\+mtl\+\_\+file}} (\mbox{\hyperlink{structtinyobj__material__t}{tinyobj\+\_\+material\+\_\+t}} $\ast$$\ast$materials\+\_\+out, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$num\+\_\+materials\+\_\+out, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{tinyobj__loader__c_8h_aba2a90f2297d1db1561b9352a8a432bf}{tinyobj\+\_\+attrib\+\_\+init}} (\mbox{\hyperlink{structtinyobj__attrib__t}{tinyobj\+\_\+attrib\+\_\+t}} $\ast$attrib)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{tinyobj__loader__c_8h_a3050df1d9712ca30d38e97204b11095b}{tinyobj\+\_\+attrib\+\_\+free}} (\mbox{\hyperlink{structtinyobj__attrib__t}{tinyobj\+\_\+attrib\+\_\+t}} $\ast$attrib)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{tinyobj__loader__c_8h_ace2ac9b9dc2459375d9ee5b5cf4a4101}{tinyobj\+\_\+shapes\+\_\+free}} (\mbox{\hyperlink{structtinyobj__shape__t}{tinyobj\+\_\+shape\+\_\+t}} $\ast$shapes, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} num\+\_\+shapes)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{tinyobj__loader__c_8h_acec0cf6431160a1ad3f305e8cb4b3781}{tinyobj\+\_\+materials\+\_\+free}} (\mbox{\hyperlink{structtinyobj__material__t}{tinyobj\+\_\+material\+\_\+t}} $\ast$materials, unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} num\+\_\+materials)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{tinyobj__loader__c_8h_a9b55ac6beb00debc9f2fa528f997e797}\label{tinyobj__loader__c_8h_a9b55ac6beb00debc9f2fa528f997e797}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!TINYOBJ\_ERROR\_EMPTY@{TINYOBJ\_ERROR\_EMPTY}}
+\index{TINYOBJ\_ERROR\_EMPTY@{TINYOBJ\_ERROR\_EMPTY}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{TINYOBJ\_ERROR\_EMPTY}{TINYOBJ\_ERROR\_EMPTY}}
+{\footnotesize\ttfamily \#define T\+I\+N\+Y\+O\+B\+J\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+M\+P\+TY~(-\/1)}
+
+\mbox{\Hypertarget{tinyobj__loader__c_8h_ac5c6849c1d0f6ae634566d7cfb5262ad}\label{tinyobj__loader__c_8h_ac5c6849c1d0f6ae634566d7cfb5262ad}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!TINYOBJ\_ERROR\_FILE\_OPERATION@{TINYOBJ\_ERROR\_FILE\_OPERATION}}
+\index{TINYOBJ\_ERROR\_FILE\_OPERATION@{TINYOBJ\_ERROR\_FILE\_OPERATION}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{TINYOBJ\_ERROR\_FILE\_OPERATION}{TINYOBJ\_ERROR\_FILE\_OPERATION}}
+{\footnotesize\ttfamily \#define T\+I\+N\+Y\+O\+B\+J\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON~(-\/3)}
+
+\mbox{\Hypertarget{tinyobj__loader__c_8h_a41fbea9d4d17475e5f679ab25513b1d9}\label{tinyobj__loader__c_8h_a41fbea9d4d17475e5f679ab25513b1d9}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!TINYOBJ\_ERROR\_INVALID\_PARAMETER@{TINYOBJ\_ERROR\_INVALID\_PARAMETER}}
+\index{TINYOBJ\_ERROR\_INVALID\_PARAMETER@{TINYOBJ\_ERROR\_INVALID\_PARAMETER}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{TINYOBJ\_ERROR\_INVALID\_PARAMETER}{TINYOBJ\_ERROR\_INVALID\_PARAMETER}}
+{\footnotesize\ttfamily \#define T\+I\+N\+Y\+O\+B\+J\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER~(-\/2)}
+
+\mbox{\Hypertarget{tinyobj__loader__c_8h_a9f9c5d965da9c5e5da7a569e132b65bc}\label{tinyobj__loader__c_8h_a9f9c5d965da9c5e5da7a569e132b65bc}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!TINYOBJ\_FLAG\_TRIANGULATE@{TINYOBJ\_FLAG\_TRIANGULATE}}
+\index{TINYOBJ\_FLAG\_TRIANGULATE@{TINYOBJ\_FLAG\_TRIANGULATE}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{TINYOBJ\_FLAG\_TRIANGULATE}{TINYOBJ\_FLAG\_TRIANGULATE}}
+{\footnotesize\ttfamily \#define T\+I\+N\+Y\+O\+B\+J\+\_\+\+F\+L\+A\+G\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+TE~(1 $<$$<$ 0)}
+
+\mbox{\Hypertarget{tinyobj__loader__c_8h_ad165d7af066e226d189b9def54196005}\label{tinyobj__loader__c_8h_ad165d7af066e226d189b9def54196005}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!TINYOBJ\_INVALID\_INDEX@{TINYOBJ\_INVALID\_INDEX}}
+\index{TINYOBJ\_INVALID\_INDEX@{TINYOBJ\_INVALID\_INDEX}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{TINYOBJ\_INVALID\_INDEX}{TINYOBJ\_INVALID\_INDEX}}
+{\footnotesize\ttfamily \#define T\+I\+N\+Y\+O\+B\+J\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+D\+EX~(0x80000000)}
+
+\mbox{\Hypertarget{tinyobj__loader__c_8h_a53a030dcd2b97fe2c58613e2ee991e4e}\label{tinyobj__loader__c_8h_a53a030dcd2b97fe2c58613e2ee991e4e}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!TINYOBJ\_SUCCESS@{TINYOBJ\_SUCCESS}}
+\index{TINYOBJ\_SUCCESS@{TINYOBJ\_SUCCESS}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{TINYOBJ\_SUCCESS}{TINYOBJ\_SUCCESS}}
+{\footnotesize\ttfamily \#define T\+I\+N\+Y\+O\+B\+J\+\_\+\+S\+U\+C\+C\+E\+SS~(0)}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{tinyobj__loader__c_8h_a3050df1d9712ca30d38e97204b11095b}\label{tinyobj__loader__c_8h_a3050df1d9712ca30d38e97204b11095b}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!tinyobj\_attrib\_free@{tinyobj\_attrib\_free}}
+\index{tinyobj\_attrib\_free@{tinyobj\_attrib\_free}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{tinyobj\_attrib\_free()}{tinyobj\_attrib\_free()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} tinyobj\+\_\+attrib\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtinyobj__attrib__t}{tinyobj\+\_\+attrib\+\_\+t}} $\ast$}]{attrib }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tinyobj__loader__c_8h_aba2a90f2297d1db1561b9352a8a432bf}\label{tinyobj__loader__c_8h_aba2a90f2297d1db1561b9352a8a432bf}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!tinyobj\_attrib\_init@{tinyobj\_attrib\_init}}
+\index{tinyobj\_attrib\_init@{tinyobj\_attrib\_init}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{tinyobj\_attrib\_init()}{tinyobj\_attrib\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} tinyobj\+\_\+attrib\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtinyobj__attrib__t}{tinyobj\+\_\+attrib\+\_\+t}} $\ast$}]{attrib }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tinyobj__loader__c_8h_acec0cf6431160a1ad3f305e8cb4b3781}\label{tinyobj__loader__c_8h_acec0cf6431160a1ad3f305e8cb4b3781}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!tinyobj\_materials\_free@{tinyobj\_materials\_free}}
+\index{tinyobj\_materials\_free@{tinyobj\_materials\_free}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{tinyobj\_materials\_free()}{tinyobj\_materials\_free()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} tinyobj\+\_\+materials\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtinyobj__material__t}{tinyobj\+\_\+material\+\_\+t}} $\ast$}]{materials,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{num\+\_\+materials }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tinyobj__loader__c_8h_a0e123c2815260c55b713330372186e90}\label{tinyobj__loader__c_8h_a0e123c2815260c55b713330372186e90}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!tinyobj\_parse\_mtl\_file@{tinyobj\_parse\_mtl\_file}}
+\index{tinyobj\_parse\_mtl\_file@{tinyobj\_parse\_mtl\_file}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{tinyobj\_parse\_mtl\_file()}{tinyobj\_parse\_mtl\_file()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} tinyobj\+\_\+parse\+\_\+mtl\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtinyobj__material__t}{tinyobj\+\_\+material\+\_\+t}} $\ast$$\ast$}]{materials\+\_\+out,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{num\+\_\+materials\+\_\+out,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tinyobj__loader__c_8h_a02754adee35155e9c1c7c30521d50236}\label{tinyobj__loader__c_8h_a02754adee35155e9c1c7c30521d50236}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!tinyobj\_parse\_obj@{tinyobj\_parse\_obj}}
+\index{tinyobj\_parse\_obj@{tinyobj\_parse\_obj}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{tinyobj\_parse\_obj()}{tinyobj\_parse\_obj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} tinyobj\+\_\+parse\+\_\+obj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtinyobj__attrib__t}{tinyobj\+\_\+attrib\+\_\+t}} $\ast$}]{attrib,  }\item[{\mbox{\hyperlink{structtinyobj__shape__t}{tinyobj\+\_\+shape\+\_\+t}} $\ast$$\ast$}]{shapes,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{num\+\_\+shapes,  }\item[{\mbox{\hyperlink{structtinyobj__material__t}{tinyobj\+\_\+material\+\_\+t}} $\ast$$\ast$}]{materials,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{num\+\_\+materials,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{buf,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{len,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tinyobj__loader__c_8h_ace2ac9b9dc2459375d9ee5b5cf4a4101}\label{tinyobj__loader__c_8h_ace2ac9b9dc2459375d9ee5b5cf4a4101}} 
+\index{tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}!tinyobj\_shapes\_free@{tinyobj\_shapes\_free}}
+\index{tinyobj\_shapes\_free@{tinyobj\_shapes\_free}!tinyobj\_loader\_c.h@{tinyobj\_loader\_c.h}}
+\doxysubsubsection{\texorpdfstring{tinyobj\_shapes\_free()}{tinyobj\_shapes\_free()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} tinyobj\+\_\+shapes\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtinyobj__shape__t}{tinyobj\+\_\+shape\+\_\+t}} $\ast$}]{shapes,  }\item[{unsigned \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{num\+\_\+shapes }\end{DoxyParamCaption})}
+

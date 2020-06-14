@@ -1,13 +1,12 @@
-//
-// Created by Abril on 6/6/2020.
-//
+
 #include "Manager.h"
-#include <iostream>
+#include <utility>
 
-Manager::Manager(std::string name):m_name(name){}
+Manager::Manager(std::string name) : m_name(std::move(name)) {
 
-Manager::~Manager() {
 }
+
+Manager::~Manager() = default;
 
 void Manager::Menu(SingletonGame *singleton) {
 

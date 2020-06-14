@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/games/pang.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_7aebff1416c495ebb69e3cc957d2473c.html">games</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#define-members">defines</a> &#124;
+<a href="#typedef-members">typedefs</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo pang.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;raylib.h&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html">Player</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_shoot.html">Shoot</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball.html">Ball</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_points.html">Points</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a1cef014f74bf89aa00a5b3a6d446d925"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pang_8c.html#a1cef014f74bf89aa00a5b3a6d446d925">PLAYER_BASE_SIZE</a>&#160;&#160;&#160;20.0f</td></tr>
+<tr class="separator:a1cef014f74bf89aa00a5b3a6d446d925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49bad41acef45feb40939c0cf9d5d35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pang_8c.html#af49bad41acef45feb40939c0cf9d5d35">PLAYER_SPEED</a>&#160;&#160;&#160;5.0f</td></tr>
+<tr class="separator:af49bad41acef45feb40939c0cf9d5d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6486f468df05c37b35e20d8b443a12b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pang_8c.html#a6486f468df05c37b35e20d8b443a12b3">PLAYER_MAX_SHOOTS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a6486f468df05c37b35e20d8b443a12b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9667bd273f97f59108089176dab3aa6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pang_8c.html#a9667bd273f97f59108089176dab3aa6f">MAX_BIG_BALLS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a9667bd273f97f59108089176dab3aa6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028da5be6b5f0ad299fa97bf62724e84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pang_8c.html#a028da5be6b5f0ad299fa97bf62724e84">BALLS_SPEED</a>&#160;&#160;&#160;2.0f</td></tr>
+<tr class="separator:a028da5be6b5f0ad299fa97bf62724e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+typedefs</h2></td></tr>
+<tr class="memitem:a480a040facb94f90060562cd65274385"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pang_8c.html#a480a040facb94f90060562cd65274385">Player</a></td></tr>
+<tr class="separator:a480a040facb94f90060562cd65274385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6fe4fb3e7b38f97762b613838612381"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_shoot.html">Shoot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pang_8c.html#ae6fe4fb3e7b38f97762b613838612381">Shoot</a></td></tr>
+<tr class="separator:ae6fe4fb3e7b38f97762b613838612381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0cce33331cd6a83a38bc5cf07702394"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_ball.html">Ball</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pang_8c.html#af0cce33331cd6a83a38bc5cf07702394">Ball</a></td></tr>
+<tr class="separator:af0cce33331cd6a83a38bc5cf07702394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9a172680ec12199963a8eea1c8ee3d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_points.html">Points</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pang_8c.html#a1f9a172680ec12199963a8eea1c8ee3d">Points</a></td></tr>
+<tr class="separator:a1f9a172680ec12199963a8eea1c8ee3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pang_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a028da5be6b5f0ad299fa97bf62724e84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028da5be6b5f0ad299fa97bf62724e84">&#9670;&nbsp;</a></span>BALLS_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BALLS_SPEED&#160;&#160;&#160;2.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9667bd273f97f59108089176dab3aa6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9667bd273f97f59108089176dab3aa6f">&#9670;&nbsp;</a></span>MAX_BIG_BALLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_BIG_BALLS&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cef014f74bf89aa00a5b3a6d446d925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cef014f74bf89aa00a5b3a6d446d925">&#9670;&nbsp;</a></span>PLAYER_BASE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLAYER_BASE_SIZE&#160;&#160;&#160;20.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6486f468df05c37b35e20d8b443a12b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6486f468df05c37b35e20d8b443a12b3">&#9670;&nbsp;</a></span>PLAYER_MAX_SHOOTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLAYER_MAX_SHOOTS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af49bad41acef45feb40939c0cf9d5d35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49bad41acef45feb40939c0cf9d5d35">&#9670;&nbsp;</a></span>PLAYER_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLAYER_SPEED&#160;&#160;&#160;5.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los 'typedefs'</h2>
+<a id="af0cce33331cd6a83a38bc5cf07702394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0cce33331cd6a83a38bc5cf07702394">&#9670;&nbsp;</a></span>Ball</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_ball.html">Ball</a> <a class="el" href="struct_ball.html">Ball</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a480a040facb94f90060562cd65274385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480a040facb94f90060562cd65274385">&#9670;&nbsp;</a></span>Player</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_player.html">Player</a> <a class="el" href="struct_player.html">Player</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f9a172680ec12199963a8eea1c8ee3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f9a172680ec12199963a8eea1c8ee3d">&#9670;&nbsp;</a></span>Points</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_points.html">Points</a> <a class="el" href="struct_points.html">Points</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6fe4fb3e7b38f97762b613838612381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fe4fb3e7b38f97762b613838612381">&#9670;&nbsp;</a></span>Shoot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_shoot.html">Shoot</a> <a class="el" href="struct_shoot.html">Shoot</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

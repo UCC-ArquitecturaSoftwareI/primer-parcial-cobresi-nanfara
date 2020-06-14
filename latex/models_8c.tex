@@ -1,0 +1,656 @@
+\hypertarget{models_8c}{}\doxysection{Referencia del Archivo cmake-\/build-\/debug/\+\_\+deps/raylib-\/src/src/models.c}
+\label{models_8c}\index{cmake-\/build-\/debug/\_deps/raylib-\/src/src/models.c@{cmake-\/build-\/debug/\_deps/raylib-\/src/src/models.c}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rlgl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/tinyobj\+\_\+loader\+\_\+c.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/cgltf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/stb\+\_\+image.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/par\+\_\+shapes.\+h\char`\"{}}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{models_8c_add9ede05d59867df589a008fb7ef6132}{T\+I\+N\+Y\+O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+C\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\item 
+\#define \mbox{\hyperlink{models_8c_ae3362d91f343c043590b549b3835037d}{C\+G\+L\+T\+F\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\item 
+\#define \mbox{\hyperlink{models_8c_a7b85b2e85e0e3b551768a3e68b009642}{P\+A\+R\+\_\+\+S\+H\+A\+P\+E\+S\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\item 
+\#define \mbox{\hyperlink{models_8c_ac51fb0f0adeba1573602ee12b8d7daa8}{M\+A\+X\+\_\+\+M\+E\+S\+H\+\_\+\+V\+BO}}~7
+\item 
+\#define \mbox{\hyperlink{models_8c_a0b0836c91f2dfc4642a61ae4c325c67f}{I\+Q\+M\+\_\+\+M\+A\+G\+IC}}~\char`\"{}I\+N\+T\+E\+R\+Q\+U\+A\+K\+E\+M\+O\+D\+EL\char`\"{}
+\item 
+\#define \mbox{\hyperlink{models_8c_aaef4450e9573ff110b6ebfecbc8bd43c}{I\+Q\+M\+\_\+\+V\+E\+R\+S\+I\+ON}}~2
+\item 
+\#define \mbox{\hyperlink{models_8c_a25d9d37fb540af8f15da3439f08d98b7}{C\+U\+S\+T\+O\+M\+\_\+\+M\+E\+S\+H\+\_\+\+G\+E\+N\+\_\+\+P\+L\+A\+NE}}
+\item 
+\#define \mbox{\hyperlink{models_8c_a5cd42b2186114ee9549519b8c45c8d3c}{C\+U\+S\+T\+O\+M\+\_\+\+M\+E\+S\+H\+\_\+\+G\+E\+N\+\_\+\+C\+U\+BE}}
+\item 
+\#define \mbox{\hyperlink{models_8c_a2c0b8dbb310352c00f34d3f63b090513}{G\+R\+A\+Y\+\_\+\+V\+A\+L\+UE}}(c)~((\mbox{\hyperlink{src_2external_2glad_8h_abe08814c2f72843fde4d8df41440d5a0}{c.\+r}}+\mbox{\hyperlink{src_2external_2glad_8h_a9cd653b1648845554169fbc3a3f6d37a}{c.\+g}}+\mbox{\hyperlink{src_2external_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{c.\+b}})/3)
+\item 
+\#define \mbox{\hyperlink{models_8c_a002b2f4894492820fe708b1b7e7c5e70}{E\+P\+S\+I\+L\+ON}}~0.\+000001
+\item 
+\#define \mbox{\hyperlink{models_8c_a002b2f4894492820fe708b1b7e7c5e70}{E\+P\+S\+I\+L\+ON}}~0.\+000001
+\item 
+\#define \mbox{\hyperlink{models_8c_a0b0836c91f2dfc4642a61ae4c325c67f}{I\+Q\+M\+\_\+\+M\+A\+G\+IC}}~\char`\"{}I\+N\+T\+E\+R\+Q\+U\+A\+K\+E\+M\+O\+D\+EL\char`\"{}
+\item 
+\#define \mbox{\hyperlink{models_8c_aaef4450e9573ff110b6ebfecbc8bd43c}{I\+Q\+M\+\_\+\+V\+E\+R\+S\+I\+ON}}~2
+\item 
+\#define \mbox{\hyperlink{models_8c_abaa295ae69eb635626b5ff54ab120b7b}{B\+O\+N\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}}~32
+\item 
+\#define \mbox{\hyperlink{models_8c_a08a5384994abc209ca4099b75ec55f87}{M\+E\+S\+H\+\_\+\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}}~32
+\item 
+\#define \mbox{\hyperlink{models_8c_aeab643525a3864b9e63902e5bfdb121d}{L\+O\+A\+D\+\_\+\+A\+C\+C\+E\+S\+S\+OR}}(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a890efa53b3d7deeeced6f3a0d6653ed3}{type}},  nbcomp,  acc,  \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a92034251bfd455d524a9b5610cddba00}{dst}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a861da2c1889967010f788d7b97a680ce}{Draw\+Line3D}} (\mbox{\hyperlink{struct_vector3}{Vector3}} start\+Pos, \mbox{\hyperlink{struct_vector3}{Vector3}} end\+Pos, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_ad1b4e35ebc1d0a490d4fe00664a2282e}{Draw\+Point3D}} (\mbox{\hyperlink{struct_vector3}{Vector3}} position, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a4ff38a9809bd7f3fbcfb39dc44072573}{Draw\+Circle3D}} (\mbox{\hyperlink{struct_vector3}{Vector3}} center, float radius, \mbox{\hyperlink{struct_vector3}{Vector3}} rotation\+Axis, float rotation\+Angle, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a938b3c329698e5858a7ea565a109c748}{Draw\+Cube}} (\mbox{\hyperlink{struct_vector3}{Vector3}} position, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3c8469415bbc83dd1341af15c67f1cef}{length}}, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_ae7800328c77cd6de0924a6b15314821f}{Draw\+CubeV}} (\mbox{\hyperlink{struct_vector3}{Vector3}} position, \mbox{\hyperlink{struct_vector3}{Vector3}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a15e5e1c7d93b4ae3e85eabee496c424e}{Draw\+Cube\+Wires}} (\mbox{\hyperlink{struct_vector3}{Vector3}} position, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3c8469415bbc83dd1341af15c67f1cef}{length}}, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a91c9984b1f878631d1f7964d886f53a8}{Draw\+Cube\+WiresV}} (\mbox{\hyperlink{struct_vector3}{Vector3}} position, \mbox{\hyperlink{struct_vector3}{Vector3}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a9e9625f8fb06bd2aee9216dd427dcbf3}{Draw\+Cube\+Texture}} (\mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{struct_vector3}{Vector3}} position, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3c8469415bbc83dd1341af15c67f1cef}{length}}, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_ac8b43a327b3b51aedcf25b0d3c61c969}{Draw\+Sphere}} (\mbox{\hyperlink{struct_vector3}{Vector3}} center\+Pos, float radius, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_abe00f7a23cc63e7664a82450e9a5abf1}{Draw\+Sphere\+Ex}} (\mbox{\hyperlink{struct_vector3}{Vector3}} center\+Pos, float radius, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} rings, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_ad5e5b18acdb515aa462423ce77530e70}{Draw\+Sphere\+Wires}} (\mbox{\hyperlink{struct_vector3}{Vector3}} center\+Pos, float radius, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} rings, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_ae684111b3bc77a7dd669b385c07498fa}{Draw\+Cylinder}} (\mbox{\hyperlink{struct_vector3}{Vector3}} position, float radius\+Top, float radius\+Bottom, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sides, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a1aa5e7ec7d2761a80ca8704e233869fa}{Draw\+Cylinder\+Wires}} (\mbox{\hyperlink{struct_vector3}{Vector3}} position, float radius\+Top, float radius\+Bottom, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sides, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a390560b59deac4cbbcd5bdbe5924ae00}{Draw\+Plane}} (\mbox{\hyperlink{struct_vector3}{Vector3}} center\+Pos, \mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a35bd002cb5d809ff387c5d50fb32cd09}{Draw\+Ray}} (\mbox{\hyperlink{struct_ray}{Ray}} ray, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_aeb00ea59124d308173bcf914ec5d502f}{Draw\+Grid}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices, float spacing)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a6193c27c4a04b1e2f35a32aa13fe7e94}{Draw\+Gizmo}} (\mbox{\hyperlink{struct_vector3}{Vector3}} position)
+\item 
+\mbox{\hyperlink{struct_model}{Model}} \mbox{\hyperlink{models_8c_a9d1cf218d3ae6d1f50e442d5fde88cf3}{Load\+Model}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$file\+Name)
+\item 
+\mbox{\hyperlink{struct_model}{Model}} \mbox{\hyperlink{models_8c_a55cfdb656716d71b091aa6502fbf176f}{Load\+Model\+From\+Mesh}} (\mbox{\hyperlink{struct_mesh}{Mesh}} mesh)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a0f8aa72af1d84a273923a6c780c77be2}{Unload\+Model}} (\mbox{\hyperlink{struct_model}{Model}} model)
+\item 
+\mbox{\hyperlink{struct_mesh}{Mesh}} $\ast$ \mbox{\hyperlink{models_8c_a6252b8cba67e8526213b47723ddf2204}{Load\+Meshes}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$file\+Name, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$mesh\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a28be1face57298424e3ba825d8df902f}{Unload\+Mesh}} (\mbox{\hyperlink{struct_mesh}{Mesh}} mesh)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_af07c7d942c7c8a2db4d2d4f9d8666792}{Export\+Mesh}} (\mbox{\hyperlink{struct_mesh}{Mesh}} mesh, const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$file\+Name)
+\item 
+\mbox{\hyperlink{struct_material}{Material}} $\ast$ \mbox{\hyperlink{models_8c_a4cf362d99c3df1b337e36d4b02449532}{Load\+Materials}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$file\+Name, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$material\+Count)
+\item 
+\mbox{\hyperlink{struct_material}{Material}} \mbox{\hyperlink{models_8c_ab6cf1d88c94c870a45e7e5a74cfa2036}{Load\+Material\+Default}} (\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_ad0b92e5ccd513d907eba7a111c047b9a}{Unload\+Material}} (\mbox{\hyperlink{struct_material}{Material}} material)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_af03448756f06714a1effa9e16b796ebe}{Set\+Material\+Texture}} (\mbox{\hyperlink{struct_material}{Material}} $\ast$material, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} map\+Type, \mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}})
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a3954baa09cfb21fdfbc9ae9f6407732b}{Set\+Model\+Mesh\+Material}} (\mbox{\hyperlink{struct_model}{Model}} $\ast$model, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} mesh\+Id, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} material\+Id)
+\item 
+\mbox{\hyperlink{struct_model_animation}{Model\+Animation}} $\ast$ \mbox{\hyperlink{models_8c_a57f9a125bee3fe981ed6f6460673bfcd}{Load\+Model\+Animations}} (const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$filename, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$anim\+Count)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a86007358cd5f566bf55d4649a6b078d2}{Update\+Model\+Animation}} (\mbox{\hyperlink{struct_model}{Model}} model, \mbox{\hyperlink{struct_model_animation}{Model\+Animation}} anim, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} frame)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_aabb90ac690498d10f29890b615fa5277}{Unload\+Model\+Animation}} (\mbox{\hyperlink{struct_model_animation}{Model\+Animation}} anim)
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{models_8c_a7907fe408a92060da05832c17da54a04}{Is\+Model\+Animation\+Valid}} (\mbox{\hyperlink{struct_model}{Model}} model, \mbox{\hyperlink{struct_model_animation}{Model\+Animation}} anim)
+\item 
+\mbox{\hyperlink{struct_mesh}{Mesh}} \mbox{\hyperlink{models_8c_a35be1f7b4ac2e0268222ea49db63ae11}{Gen\+Mesh\+Poly}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sides, float radius)
+\item 
+\mbox{\hyperlink{struct_mesh}{Mesh}} \mbox{\hyperlink{models_8c_a7ec9d543ed43e97ae569b40d638914c8}{Gen\+Mesh\+Plane}} (float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3c8469415bbc83dd1341af15c67f1cef}{length}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} resX, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} resZ)
+\item 
+\mbox{\hyperlink{struct_mesh}{Mesh}} \mbox{\hyperlink{models_8c_aa948230effe1de2c30a5188ebe32d9c1}{Gen\+Mesh\+Cube}} (float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3ce386e55bbeb900c1b23e064b89bd04}{width}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3c8469415bbc83dd1341af15c67f1cef}{length}})
+\item 
+\mbox{\hyperlink{raylib-src_2src_2raylib_8h_a9e7a90ce1dc00f769afb0be0a6c7ade7}{R\+L\+A\+PI}} \mbox{\hyperlink{struct_mesh}{Mesh}} \mbox{\hyperlink{models_8c_ae311a286dc20901eb8f3ef71a6a7ad88}{Gen\+Mesh\+Sphere}} (float radius, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} rings, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices)
+\item 
+\mbox{\hyperlink{raylib-src_2src_2raylib_8h_a9e7a90ce1dc00f769afb0be0a6c7ade7}{R\+L\+A\+PI}} \mbox{\hyperlink{struct_mesh}{Mesh}} \mbox{\hyperlink{models_8c_a639909990ddbd50a37d46f6d9ddf01b1}{Gen\+Mesh\+Hemi\+Sphere}} (float radius, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} rings, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices)
+\item 
+\mbox{\hyperlink{struct_mesh}{Mesh}} \mbox{\hyperlink{models_8c_a8dc1dcaf0840e543a652c12bf0ebb72e}{Gen\+Mesh\+Cylinder}} (float radius, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_aedd0ea77029b98ce91e47c19addcb68f}{height}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} slices)
+\item 
+\mbox{\hyperlink{struct_mesh}{Mesh}} \mbox{\hyperlink{models_8c_a861eb30f6afe5e2c14ee4446637b04ed}{Gen\+Mesh\+Torus}} (float radius, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} rad\+Seg, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sides)
+\item 
+\mbox{\hyperlink{struct_mesh}{Mesh}} \mbox{\hyperlink{models_8c_a65318d4c336a73bd2e474e86e72d5240}{Gen\+Mesh\+Knot}} (float radius, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} rad\+Seg, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sides)
+\item 
+\mbox{\hyperlink{struct_mesh}{Mesh}} \mbox{\hyperlink{models_8c_ac8b870f6e41a7696348194ecf9935f56}{Gen\+Mesh\+Heightmap}} (\mbox{\hyperlink{struct_image}{Image}} heightmap, \mbox{\hyperlink{struct_vector3}{Vector3}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})
+\item 
+\mbox{\hyperlink{struct_mesh}{Mesh}} \mbox{\hyperlink{models_8c_a6067fc98c45102450de11f47d46204e3}{Gen\+Mesh\+Cubicmap}} (\mbox{\hyperlink{struct_image}{Image}} cubicmap, \mbox{\hyperlink{struct_vector3}{Vector3}} cube\+Size)
+\item 
+\mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}} \mbox{\hyperlink{models_8c_a211d42b24c70533eca117d839f3a6d0b}{Mesh\+Bounding\+Box}} (\mbox{\hyperlink{struct_mesh}{Mesh}} mesh)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_ace770445afacef9785621c28d9d11790}{Mesh\+Tangents}} (\mbox{\hyperlink{struct_mesh}{Mesh}} $\ast$mesh)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a2e45bdccae70531cfa1c24f675859df7}{Mesh\+Binormals}} (\mbox{\hyperlink{struct_mesh}{Mesh}} $\ast$mesh)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_aff56ce663ea66788261c4954eb3c9583}{Draw\+Model}} (\mbox{\hyperlink{struct_model}{Model}} model, \mbox{\hyperlink{struct_vector3}{Vector3}} position, float scale, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a91f093c4c681657743c56e5c15bc71bc}{Draw\+Model\+Ex}} (\mbox{\hyperlink{struct_model}{Model}} model, \mbox{\hyperlink{struct_vector3}{Vector3}} position, \mbox{\hyperlink{struct_vector3}{Vector3}} rotation\+Axis, float rotation\+Angle, \mbox{\hyperlink{struct_vector3}{Vector3}} scale, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_aa5e4e92e0ab9711ee44a5c3bfb17c5a3}{Draw\+Model\+Wires}} (\mbox{\hyperlink{struct_model}{Model}} model, \mbox{\hyperlink{struct_vector3}{Vector3}} position, float scale, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_ae150eaf62f6011c5aebcd6c11094ca50}{Draw\+Model\+Wires\+Ex}} (\mbox{\hyperlink{struct_model}{Model}} model, \mbox{\hyperlink{struct_vector3}{Vector3}} position, \mbox{\hyperlink{struct_vector3}{Vector3}} rotation\+Axis, float rotation\+Angle, \mbox{\hyperlink{struct_vector3}{Vector3}} scale, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_ae7037e4628c218a129ef41818ba824a5}{Draw\+Billboard}} (\mbox{\hyperlink{raylib-build_2src_2raylib_8h_a3c09d25578723b8a82da7808fc461c11}{Camera}} camera, \mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{struct_vector3}{Vector3}} center, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_a74498df5d7e379ecfe9d9515d210783f}{Draw\+Billboard\+Rec}} (\mbox{\hyperlink{raylib-build_2src_2raylib_8h_a3c09d25578723b8a82da7808fc461c11}{Camera}} camera, \mbox{\hyperlink{struct_texture2_d}{Texture2D}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}}, \mbox{\hyperlink{struct_rectangle}{Rectangle}} source\+Rec, \mbox{\hyperlink{struct_vector3}{Vector3}} center, float \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, \mbox{\hyperlink{struct_color}{Color}} tint)
+\item 
+\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{models_8c_aa2f62f2a90dd23748027d14a890c034f}{Draw\+Bounding\+Box}} (\mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}} box, \mbox{\hyperlink{struct_color}{Color}} \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a69995a929d818b8b467d4593c24d98bc}{color}})
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{models_8c_a6e4bf6322202c0ac59d680d49b2354f5}{Check\+Collision\+Spheres}} (\mbox{\hyperlink{struct_vector3}{Vector3}} centerA, float radiusA, \mbox{\hyperlink{struct_vector3}{Vector3}} centerB, float radiusB)
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{models_8c_a113b3c8540cec7291bd8aaa2d304d23f}{Check\+Collision\+Boxes}} (\mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}} box1, \mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}} box2)
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{models_8c_a76357fda19112063291b344bd7eafb05}{Check\+Collision\+Box\+Sphere}} (\mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}} box, \mbox{\hyperlink{struct_vector3}{Vector3}} center, float radius)
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{models_8c_a3f3ec1819f7ea93462eed1be3c3d4f98}{Check\+Collision\+Ray\+Sphere}} (\mbox{\hyperlink{struct_ray}{Ray}} ray, \mbox{\hyperlink{struct_vector3}{Vector3}} center, float radius)
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{models_8c_ab7ab4f7377ecc2818b41ab570d498feb}{Check\+Collision\+Ray\+Sphere\+Ex}} (\mbox{\hyperlink{struct_ray}{Ray}} ray, \mbox{\hyperlink{struct_vector3}{Vector3}} center, float radius, \mbox{\hyperlink{struct_vector3}{Vector3}} $\ast$collision\+Point)
+\item 
+\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{models_8c_a094a4aeb4e8c23d7d1617da9a3c414b5}{Check\+Collision\+Ray\+Box}} (\mbox{\hyperlink{struct_ray}{Ray}} ray, \mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}} box)
+\item 
+\mbox{\hyperlink{struct_ray_hit_info}{Ray\+Hit\+Info}} \mbox{\hyperlink{models_8c_acbfd8b5e130b84ce9c498201c6b88094}{Get\+Collision\+Ray\+Model}} (\mbox{\hyperlink{struct_ray}{Ray}} ray, \mbox{\hyperlink{struct_model}{Model}} model)
+\item 
+\mbox{\hyperlink{struct_ray_hit_info}{Ray\+Hit\+Info}} \mbox{\hyperlink{models_8c_a7b6562f9ba9d8305d21f7c4d25890686}{Get\+Collision\+Ray\+Triangle}} (\mbox{\hyperlink{struct_ray}{Ray}} ray, \mbox{\hyperlink{struct_vector3}{Vector3}} p1, \mbox{\hyperlink{struct_vector3}{Vector3}} p2, \mbox{\hyperlink{struct_vector3}{Vector3}} p3)
+\item 
+\mbox{\hyperlink{struct_ray_hit_info}{Ray\+Hit\+Info}} \mbox{\hyperlink{models_8c_aa89f076d3db8b0d3b55089f43791ec83}{Get\+Collision\+Ray\+Ground}} (\mbox{\hyperlink{struct_ray}{Ray}} ray, float ground\+Height)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{models_8c_abaa295ae69eb635626b5ff54ab120b7b}\label{models_8c_abaa295ae69eb635626b5ff54ab120b7b}} 
+\index{models.c@{models.c}!BONE\_NAME\_LENGTH@{BONE\_NAME\_LENGTH}}
+\index{BONE\_NAME\_LENGTH@{BONE\_NAME\_LENGTH}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{BONE\_NAME\_LENGTH}{BONE\_NAME\_LENGTH}}
+{\footnotesize\ttfamily \#define B\+O\+N\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH~32}
+
+\mbox{\Hypertarget{models_8c_ae3362d91f343c043590b549b3835037d}\label{models_8c_ae3362d91f343c043590b549b3835037d}} 
+\index{models.c@{models.c}!CGLTF\_IMPLEMENTATION@{CGLTF\_IMPLEMENTATION}}
+\index{CGLTF\_IMPLEMENTATION@{CGLTF\_IMPLEMENTATION}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{CGLTF\_IMPLEMENTATION}{CGLTF\_IMPLEMENTATION}}
+{\footnotesize\ttfamily \#define C\+G\+L\+T\+F\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+
+\mbox{\Hypertarget{models_8c_a5cd42b2186114ee9549519b8c45c8d3c}\label{models_8c_a5cd42b2186114ee9549519b8c45c8d3c}} 
+\index{models.c@{models.c}!CUSTOM\_MESH\_GEN\_CUBE@{CUSTOM\_MESH\_GEN\_CUBE}}
+\index{CUSTOM\_MESH\_GEN\_CUBE@{CUSTOM\_MESH\_GEN\_CUBE}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{CUSTOM\_MESH\_GEN\_CUBE}{CUSTOM\_MESH\_GEN\_CUBE}}
+{\footnotesize\ttfamily \#define C\+U\+S\+T\+O\+M\+\_\+\+M\+E\+S\+H\+\_\+\+G\+E\+N\+\_\+\+C\+U\+BE}
+
+\mbox{\Hypertarget{models_8c_a25d9d37fb540af8f15da3439f08d98b7}\label{models_8c_a25d9d37fb540af8f15da3439f08d98b7}} 
+\index{models.c@{models.c}!CUSTOM\_MESH\_GEN\_PLANE@{CUSTOM\_MESH\_GEN\_PLANE}}
+\index{CUSTOM\_MESH\_GEN\_PLANE@{CUSTOM\_MESH\_GEN\_PLANE}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{CUSTOM\_MESH\_GEN\_PLANE}{CUSTOM\_MESH\_GEN\_PLANE}}
+{\footnotesize\ttfamily \#define C\+U\+S\+T\+O\+M\+\_\+\+M\+E\+S\+H\+\_\+\+G\+E\+N\+\_\+\+P\+L\+A\+NE}
+
+\mbox{\Hypertarget{models_8c_a002b2f4894492820fe708b1b7e7c5e70}\label{models_8c_a002b2f4894492820fe708b1b7e7c5e70}} 
+\index{models.c@{models.c}!EPSILON@{EPSILON}}
+\index{EPSILON@{EPSILON}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{EPSILON}{EPSILON}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define E\+P\+S\+I\+L\+ON~0.\+000001}
+
+\mbox{\Hypertarget{models_8c_a002b2f4894492820fe708b1b7e7c5e70}\label{models_8c_a002b2f4894492820fe708b1b7e7c5e70}} 
+\index{models.c@{models.c}!EPSILON@{EPSILON}}
+\index{EPSILON@{EPSILON}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{EPSILON}{EPSILON}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define E\+P\+S\+I\+L\+ON~0.\+000001}
+
+\mbox{\Hypertarget{models_8c_a2c0b8dbb310352c00f34d3f63b090513}\label{models_8c_a2c0b8dbb310352c00f34d3f63b090513}} 
+\index{models.c@{models.c}!GRAY\_VALUE@{GRAY\_VALUE}}
+\index{GRAY\_VALUE@{GRAY\_VALUE}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GRAY\_VALUE}{GRAY\_VALUE}}
+{\footnotesize\ttfamily \#define G\+R\+A\+Y\+\_\+\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~((\mbox{\hyperlink{src_2external_2glad_8h_abe08814c2f72843fde4d8df41440d5a0}{c.\+r}}+\mbox{\hyperlink{src_2external_2glad_8h_a9cd653b1648845554169fbc3a3f6d37a}{c.\+g}}+\mbox{\hyperlink{src_2external_2glad_8h_a6eba317e3cf44d6d26c04a5a8f197dcb}{c.\+b}})/3)}
+
+\mbox{\Hypertarget{models_8c_a0b0836c91f2dfc4642a61ae4c325c67f}\label{models_8c_a0b0836c91f2dfc4642a61ae4c325c67f}} 
+\index{models.c@{models.c}!IQM\_MAGIC@{IQM\_MAGIC}}
+\index{IQM\_MAGIC@{IQM\_MAGIC}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{IQM\_MAGIC}{IQM\_MAGIC}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define I\+Q\+M\+\_\+\+M\+A\+G\+IC~\char`\"{}I\+N\+T\+E\+R\+Q\+U\+A\+K\+E\+M\+O\+D\+EL\char`\"{}}
+
+\mbox{\Hypertarget{models_8c_a0b0836c91f2dfc4642a61ae4c325c67f}\label{models_8c_a0b0836c91f2dfc4642a61ae4c325c67f}} 
+\index{models.c@{models.c}!IQM\_MAGIC@{IQM\_MAGIC}}
+\index{IQM\_MAGIC@{IQM\_MAGIC}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{IQM\_MAGIC}{IQM\_MAGIC}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define I\+Q\+M\+\_\+\+M\+A\+G\+IC~\char`\"{}I\+N\+T\+E\+R\+Q\+U\+A\+K\+E\+M\+O\+D\+EL\char`\"{}}
+
+\mbox{\Hypertarget{models_8c_aaef4450e9573ff110b6ebfecbc8bd43c}\label{models_8c_aaef4450e9573ff110b6ebfecbc8bd43c}} 
+\index{models.c@{models.c}!IQM\_VERSION@{IQM\_VERSION}}
+\index{IQM\_VERSION@{IQM\_VERSION}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{IQM\_VERSION}{IQM\_VERSION}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define I\+Q\+M\+\_\+\+V\+E\+R\+S\+I\+ON~2}
+
+\mbox{\Hypertarget{models_8c_aaef4450e9573ff110b6ebfecbc8bd43c}\label{models_8c_aaef4450e9573ff110b6ebfecbc8bd43c}} 
+\index{models.c@{models.c}!IQM\_VERSION@{IQM\_VERSION}}
+\index{IQM\_VERSION@{IQM\_VERSION}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{IQM\_VERSION}{IQM\_VERSION}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define I\+Q\+M\+\_\+\+V\+E\+R\+S\+I\+ON~2}
+
+\mbox{\Hypertarget{models_8c_aeab643525a3864b9e63902e5bfdb121d}\label{models_8c_aeab643525a3864b9e63902e5bfdb121d}} 
+\index{models.c@{models.c}!LOAD\_ACCESSOR@{LOAD\_ACCESSOR}}
+\index{LOAD\_ACCESSOR@{LOAD\_ACCESSOR}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{LOAD\_ACCESSOR}{LOAD\_ACCESSOR}}
+{\footnotesize\ttfamily \#define L\+O\+A\+D\+\_\+\+A\+C\+C\+E\+S\+S\+OR(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a890efa53b3d7deeeced6f3a0d6653ed3}{type}},  }\item[{}]{nbcomp,  }\item[{}]{acc,  }\item[{}]{\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a92034251bfd455d524a9b5610cddba00}{dst}} }\end{DoxyParamCaption})}
+
+{\bfseries Valor\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{        int n = 0; \(\backslash\)}
+\DoxyCodeLine{        type* \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ad8a8baf08bc0399738960c9259571911}{buf}} = (\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a890efa53b3d7deeeced6f3a0d6653ed3}{type}}*)acc-\/>buffer\_view-\/>buffer-\/>data+acc-\/>buffer\_view-\/>offset/\textcolor{keyword}{sizeof}(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a890efa53b3d7deeeced6f3a0d6653ed3}{type}})+acc-\/>offset/\textcolor{keyword}{sizeof}(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a890efa53b3d7deeeced6f3a0d6653ed3}{type}}); \(\backslash\)}
+\DoxyCodeLine{        for (\textcolor{keywordtype}{int} k = 0; k < acc-\/>count; k++) \{\(\backslash\)}
+\DoxyCodeLine{            for (\textcolor{keywordtype}{int} l = 0; l < nbcomp; l++) \{\(\backslash\)}
+\DoxyCodeLine{                dst[nbcomp*k+l] = \mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_ad8a8baf08bc0399738960c9259571911}{buf}}[n+l];\(\backslash\)}
+\DoxyCodeLine{            \}\(\backslash\)}
+\DoxyCodeLine{            n += acc-\/>stride/\textcolor{keyword}{sizeof}(\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a890efa53b3d7deeeced6f3a0d6653ed3}{type}});\(\backslash\)}
+\DoxyCodeLine{        \}\(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{models_8c_ac51fb0f0adeba1573602ee12b8d7daa8}\label{models_8c_ac51fb0f0adeba1573602ee12b8d7daa8}} 
+\index{models.c@{models.c}!MAX\_MESH\_VBO@{MAX\_MESH\_VBO}}
+\index{MAX\_MESH\_VBO@{MAX\_MESH\_VBO}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_MESH\_VBO}{MAX\_MESH\_VBO}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+M\+E\+S\+H\+\_\+\+V\+BO~7}
+
+\mbox{\Hypertarget{models_8c_a08a5384994abc209ca4099b75ec55f87}\label{models_8c_a08a5384994abc209ca4099b75ec55f87}} 
+\index{models.c@{models.c}!MESH\_NAME\_LENGTH@{MESH\_NAME\_LENGTH}}
+\index{MESH\_NAME\_LENGTH@{MESH\_NAME\_LENGTH}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{MESH\_NAME\_LENGTH}{MESH\_NAME\_LENGTH}}
+{\footnotesize\ttfamily \#define M\+E\+S\+H\+\_\+\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH~32}
+
+\mbox{\Hypertarget{models_8c_a7b85b2e85e0e3b551768a3e68b009642}\label{models_8c_a7b85b2e85e0e3b551768a3e68b009642}} 
+\index{models.c@{models.c}!PAR\_SHAPES\_IMPLEMENTATION@{PAR\_SHAPES\_IMPLEMENTATION}}
+\index{PAR\_SHAPES\_IMPLEMENTATION@{PAR\_SHAPES\_IMPLEMENTATION}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{PAR\_SHAPES\_IMPLEMENTATION}{PAR\_SHAPES\_IMPLEMENTATION}}
+{\footnotesize\ttfamily \#define P\+A\+R\+\_\+\+S\+H\+A\+P\+E\+S\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+
+\mbox{\Hypertarget{models_8c_add9ede05d59867df589a008fb7ef6132}\label{models_8c_add9ede05d59867df589a008fb7ef6132}} 
+\index{models.c@{models.c}!TINYOBJ\_LOADER\_C\_IMPLEMENTATION@{TINYOBJ\_LOADER\_C\_IMPLEMENTATION}}
+\index{TINYOBJ\_LOADER\_C\_IMPLEMENTATION@{TINYOBJ\_LOADER\_C\_IMPLEMENTATION}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{TINYOBJ\_LOADER\_C\_IMPLEMENTATION}{TINYOBJ\_LOADER\_C\_IMPLEMENTATION}}
+{\footnotesize\ttfamily \#define T\+I\+N\+Y\+O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+C\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{models_8c_a113b3c8540cec7291bd8aaa2d304d23f}\label{models_8c_a113b3c8540cec7291bd8aaa2d304d23f}} 
+\index{models.c@{models.c}!CheckCollisionBoxes@{CheckCollisionBoxes}}
+\index{CheckCollisionBoxes@{CheckCollisionBoxes}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{CheckCollisionBoxes()}{CheckCollisionBoxes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Check\+Collision\+Boxes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}}}]{box1,  }\item[{\mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}}}]{box2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a76357fda19112063291b344bd7eafb05}\label{models_8c_a76357fda19112063291b344bd7eafb05}} 
+\index{models.c@{models.c}!CheckCollisionBoxSphere@{CheckCollisionBoxSphere}}
+\index{CheckCollisionBoxSphere@{CheckCollisionBoxSphere}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{CheckCollisionBoxSphere()}{CheckCollisionBoxSphere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Check\+Collision\+Box\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}}}]{box,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{center,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a094a4aeb4e8c23d7d1617da9a3c414b5}\label{models_8c_a094a4aeb4e8c23d7d1617da9a3c414b5}} 
+\index{models.c@{models.c}!CheckCollisionRayBox@{CheckCollisionRayBox}}
+\index{CheckCollisionRayBox@{CheckCollisionRayBox}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{CheckCollisionRayBox()}{CheckCollisionRayBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Check\+Collision\+Ray\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ray}{Ray}}}]{ray,  }\item[{\mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}}}]{box }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a3f3ec1819f7ea93462eed1be3c3d4f98}\label{models_8c_a3f3ec1819f7ea93462eed1be3c3d4f98}} 
+\index{models.c@{models.c}!CheckCollisionRaySphere@{CheckCollisionRaySphere}}
+\index{CheckCollisionRaySphere@{CheckCollisionRaySphere}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{CheckCollisionRaySphere()}{CheckCollisionRaySphere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Check\+Collision\+Ray\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ray}{Ray}}}]{ray,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{center,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ab7ab4f7377ecc2818b41ab570d498feb}\label{models_8c_ab7ab4f7377ecc2818b41ab570d498feb}} 
+\index{models.c@{models.c}!CheckCollisionRaySphereEx@{CheckCollisionRaySphereEx}}
+\index{CheckCollisionRaySphereEx@{CheckCollisionRaySphereEx}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{CheckCollisionRaySphereEx()}{CheckCollisionRaySphereEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Check\+Collision\+Ray\+Sphere\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ray}{Ray}}}]{ray,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{center,  }\item[{float}]{radius,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}} $\ast$}]{collision\+Point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a6e4bf6322202c0ac59d680d49b2354f5}\label{models_8c_a6e4bf6322202c0ac59d680d49b2354f5}} 
+\index{models.c@{models.c}!CheckCollisionSpheres@{CheckCollisionSpheres}}
+\index{CheckCollisionSpheres@{CheckCollisionSpheres}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{CheckCollisionSpheres()}{CheckCollisionSpheres()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Check\+Collision\+Spheres (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{centerA,  }\item[{float}]{radiusA,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{centerB,  }\item[{float}]{radiusB }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ae7037e4628c218a129ef41818ba824a5}\label{models_8c_ae7037e4628c218a129ef41818ba824a5}} 
+\index{models.c@{models.c}!DrawBillboard@{DrawBillboard}}
+\index{DrawBillboard@{DrawBillboard}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawBillboard()}{DrawBillboard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Billboard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{raylib-build_2src_2raylib_8h_a3c09d25578723b8a82da7808fc461c11}{Camera}}}]{camera,  }\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{center,  }\item[{float}]{size,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a74498df5d7e379ecfe9d9515d210783f}\label{models_8c_a74498df5d7e379ecfe9d9515d210783f}} 
+\index{models.c@{models.c}!DrawBillboardRec@{DrawBillboardRec}}
+\index{DrawBillboardRec@{DrawBillboardRec}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawBillboardRec()}{DrawBillboardRec()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Billboard\+Rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{raylib-build_2src_2raylib_8h_a3c09d25578723b8a82da7808fc461c11}{Camera}}}]{camera,  }\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{struct_rectangle}{Rectangle}}}]{source\+Rec,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{center,  }\item[{float}]{size,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_aa2f62f2a90dd23748027d14a890c034f}\label{models_8c_aa2f62f2a90dd23748027d14a890c034f}} 
+\index{models.c@{models.c}!DrawBoundingBox@{DrawBoundingBox}}
+\index{DrawBoundingBox@{DrawBoundingBox}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawBoundingBox()}{DrawBoundingBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Bounding\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}}}]{box,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a4ff38a9809bd7f3fbcfb39dc44072573}\label{models_8c_a4ff38a9809bd7f3fbcfb39dc44072573}} 
+\index{models.c@{models.c}!DrawCircle3D@{DrawCircle3D}}
+\index{DrawCircle3D@{DrawCircle3D}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawCircle3D()}{DrawCircle3D()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Circle3D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{center,  }\item[{float}]{radius,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{rotation\+Axis,  }\item[{float}]{rotation\+Angle,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a938b3c329698e5858a7ea565a109c748}\label{models_8c_a938b3c329698e5858a7ea565a109c748}} 
+\index{models.c@{models.c}!DrawCube@{DrawCube}}
+\index{DrawCube@{DrawCube}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawCube()}{DrawCube()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Cube (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{length,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a9e9625f8fb06bd2aee9216dd427dcbf3}\label{models_8c_a9e9625f8fb06bd2aee9216dd427dcbf3}} 
+\index{models.c@{models.c}!DrawCubeTexture@{DrawCubeTexture}}
+\index{DrawCubeTexture@{DrawCubeTexture}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawCubeTexture()}{DrawCubeTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Cube\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{length,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ae7800328c77cd6de0924a6b15314821f}\label{models_8c_ae7800328c77cd6de0924a6b15314821f}} 
+\index{models.c@{models.c}!DrawCubeV@{DrawCubeV}}
+\index{DrawCubeV@{DrawCubeV}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawCubeV()}{DrawCubeV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+CubeV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{size,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a15e5e1c7d93b4ae3e85eabee496c424e}\label{models_8c_a15e5e1c7d93b4ae3e85eabee496c424e}} 
+\index{models.c@{models.c}!DrawCubeWires@{DrawCubeWires}}
+\index{DrawCubeWires@{DrawCubeWires}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawCubeWires()}{DrawCubeWires()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Cube\+Wires (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{length,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a91c9984b1f878631d1f7964d886f53a8}\label{models_8c_a91c9984b1f878631d1f7964d886f53a8}} 
+\index{models.c@{models.c}!DrawCubeWiresV@{DrawCubeWiresV}}
+\index{DrawCubeWiresV@{DrawCubeWiresV}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawCubeWiresV()}{DrawCubeWiresV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Cube\+WiresV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{size,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ae684111b3bc77a7dd669b385c07498fa}\label{models_8c_ae684111b3bc77a7dd669b385c07498fa}} 
+\index{models.c@{models.c}!DrawCylinder@{DrawCylinder}}
+\index{DrawCylinder@{DrawCylinder}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawCylinder()}{DrawCylinder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Cylinder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{float}]{radius\+Top,  }\item[{float}]{radius\+Bottom,  }\item[{float}]{height,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sides,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a1aa5e7ec7d2761a80ca8704e233869fa}\label{models_8c_a1aa5e7ec7d2761a80ca8704e233869fa}} 
+\index{models.c@{models.c}!DrawCylinderWires@{DrawCylinderWires}}
+\index{DrawCylinderWires@{DrawCylinderWires}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawCylinderWires()}{DrawCylinderWires()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Cylinder\+Wires (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{float}]{radius\+Top,  }\item[{float}]{radius\+Bottom,  }\item[{float}]{height,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sides,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a6193c27c4a04b1e2f35a32aa13fe7e94}\label{models_8c_a6193c27c4a04b1e2f35a32aa13fe7e94}} 
+\index{models.c@{models.c}!DrawGizmo@{DrawGizmo}}
+\index{DrawGizmo@{DrawGizmo}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawGizmo()}{DrawGizmo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Gizmo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_aeb00ea59124d308173bcf914ec5d502f}\label{models_8c_aeb00ea59124d308173bcf914ec5d502f}} 
+\index{models.c@{models.c}!DrawGrid@{DrawGrid}}
+\index{DrawGrid@{DrawGrid}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawGrid()}{DrawGrid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Grid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{float}]{spacing }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a861da2c1889967010f788d7b97a680ce}\label{models_8c_a861da2c1889967010f788d7b97a680ce}} 
+\index{models.c@{models.c}!DrawLine3D@{DrawLine3D}}
+\index{DrawLine3D@{DrawLine3D}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawLine3D()}{DrawLine3D()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Line3D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{start\+Pos,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{end\+Pos,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_aff56ce663ea66788261c4954eb3c9583}\label{models_8c_aff56ce663ea66788261c4954eb3c9583}} 
+\index{models.c@{models.c}!DrawModel@{DrawModel}}
+\index{DrawModel@{DrawModel}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawModel()}{DrawModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_model}{Model}}}]{model,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{float}]{scale,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a91f093c4c681657743c56e5c15bc71bc}\label{models_8c_a91f093c4c681657743c56e5c15bc71bc}} 
+\index{models.c@{models.c}!DrawModelEx@{DrawModelEx}}
+\index{DrawModelEx@{DrawModelEx}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawModelEx()}{DrawModelEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Model\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_model}{Model}}}]{model,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{rotation\+Axis,  }\item[{float}]{rotation\+Angle,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{scale,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_aa5e4e92e0ab9711ee44a5c3bfb17c5a3}\label{models_8c_aa5e4e92e0ab9711ee44a5c3bfb17c5a3}} 
+\index{models.c@{models.c}!DrawModelWires@{DrawModelWires}}
+\index{DrawModelWires@{DrawModelWires}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawModelWires()}{DrawModelWires()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Model\+Wires (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_model}{Model}}}]{model,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{float}]{scale,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ae150eaf62f6011c5aebcd6c11094ca50}\label{models_8c_ae150eaf62f6011c5aebcd6c11094ca50}} 
+\index{models.c@{models.c}!DrawModelWiresEx@{DrawModelWiresEx}}
+\index{DrawModelWiresEx@{DrawModelWiresEx}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawModelWiresEx()}{DrawModelWiresEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Model\+Wires\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_model}{Model}}}]{model,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{rotation\+Axis,  }\item[{float}]{rotation\+Angle,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{scale,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a390560b59deac4cbbcd5bdbe5924ae00}\label{models_8c_a390560b59deac4cbbcd5bdbe5924ae00}} 
+\index{models.c@{models.c}!DrawPlane@{DrawPlane}}
+\index{DrawPlane@{DrawPlane}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawPlane()}{DrawPlane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{center\+Pos,  }\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{size,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ad1b4e35ebc1d0a490d4fe00664a2282e}\label{models_8c_ad1b4e35ebc1d0a490d4fe00664a2282e}} 
+\index{models.c@{models.c}!DrawPoint3D@{DrawPoint3D}}
+\index{DrawPoint3D@{DrawPoint3D}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawPoint3D()}{DrawPoint3D()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Point3D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{position,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a35bd002cb5d809ff387c5d50fb32cd09}\label{models_8c_a35bd002cb5d809ff387c5d50fb32cd09}} 
+\index{models.c@{models.c}!DrawRay@{DrawRay}}
+\index{DrawRay@{DrawRay}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawRay()}{DrawRay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Ray (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ray}{Ray}}}]{ray,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ac8b43a327b3b51aedcf25b0d3c61c969}\label{models_8c_ac8b43a327b3b51aedcf25b0d3c61c969}} 
+\index{models.c@{models.c}!DrawSphere@{DrawSphere}}
+\index{DrawSphere@{DrawSphere}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawSphere()}{DrawSphere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{center\+Pos,  }\item[{float}]{radius,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_abe00f7a23cc63e7664a82450e9a5abf1}\label{models_8c_abe00f7a23cc63e7664a82450e9a5abf1}} 
+\index{models.c@{models.c}!DrawSphereEx@{DrawSphereEx}}
+\index{DrawSphereEx@{DrawSphereEx}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawSphereEx()}{DrawSphereEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Sphere\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{center\+Pos,  }\item[{float}]{radius,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{rings,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ad5e5b18acdb515aa462423ce77530e70}\label{models_8c_ad5e5b18acdb515aa462423ce77530e70}} 
+\index{models.c@{models.c}!DrawSphereWires@{DrawSphereWires}}
+\index{DrawSphereWires@{DrawSphereWires}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{DrawSphereWires()}{DrawSphereWires()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Draw\+Sphere\+Wires (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{center\+Pos,  }\item[{float}]{radius,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{rings,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices,  }\item[{\mbox{\hyperlink{struct_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_af07c7d942c7c8a2db4d2d4f9d8666792}\label{models_8c_af07c7d942c7c8a2db4d2d4f9d8666792}} 
+\index{models.c@{models.c}!ExportMesh@{ExportMesh}}
+\index{ExportMesh@{ExportMesh}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{ExportMesh()}{ExportMesh()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Export\+Mesh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mesh}{Mesh}}}]{mesh,  }\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_aa948230effe1de2c30a5188ebe32d9c1}\label{models_8c_aa948230effe1de2c30a5188ebe32d9c1}} 
+\index{models.c@{models.c}!GenMeshCube@{GenMeshCube}}
+\index{GenMeshCube@{GenMeshCube}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GenMeshCube()}{GenMeshCube()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mesh}{Mesh}} Gen\+Mesh\+Cube (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a6067fc98c45102450de11f47d46204e3}\label{models_8c_a6067fc98c45102450de11f47d46204e3}} 
+\index{models.c@{models.c}!GenMeshCubicmap@{GenMeshCubicmap}}
+\index{GenMeshCubicmap@{GenMeshCubicmap}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GenMeshCubicmap()}{GenMeshCubicmap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mesh}{Mesh}} Gen\+Mesh\+Cubicmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{cubicmap,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{cube\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a8dc1dcaf0840e543a652c12bf0ebb72e}\label{models_8c_a8dc1dcaf0840e543a652c12bf0ebb72e}} 
+\index{models.c@{models.c}!GenMeshCylinder@{GenMeshCylinder}}
+\index{GenMeshCylinder@{GenMeshCylinder}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GenMeshCylinder()}{GenMeshCylinder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mesh}{Mesh}} Gen\+Mesh\+Cylinder (\begin{DoxyParamCaption}\item[{float}]{radius,  }\item[{float}]{height,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ac8b870f6e41a7696348194ecf9935f56}\label{models_8c_ac8b870f6e41a7696348194ecf9935f56}} 
+\index{models.c@{models.c}!GenMeshHeightmap@{GenMeshHeightmap}}
+\index{GenMeshHeightmap@{GenMeshHeightmap}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GenMeshHeightmap()}{GenMeshHeightmap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mesh}{Mesh}} Gen\+Mesh\+Heightmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_image}{Image}}}]{heightmap,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a639909990ddbd50a37d46f6d9ddf01b1}\label{models_8c_a639909990ddbd50a37d46f6d9ddf01b1}} 
+\index{models.c@{models.c}!GenMeshHemiSphere@{GenMeshHemiSphere}}
+\index{GenMeshHemiSphere@{GenMeshHemiSphere}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GenMeshHemiSphere()}{GenMeshHemiSphere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-src_2src_2raylib_8h_a9e7a90ce1dc00f769afb0be0a6c7ade7}{R\+L\+A\+PI}} \mbox{\hyperlink{struct_mesh}{Mesh}} Gen\+Mesh\+Hemi\+Sphere (\begin{DoxyParamCaption}\item[{float}]{radius,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{rings,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a65318d4c336a73bd2e474e86e72d5240}\label{models_8c_a65318d4c336a73bd2e474e86e72d5240}} 
+\index{models.c@{models.c}!GenMeshKnot@{GenMeshKnot}}
+\index{GenMeshKnot@{GenMeshKnot}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GenMeshKnot()}{GenMeshKnot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mesh}{Mesh}} Gen\+Mesh\+Knot (\begin{DoxyParamCaption}\item[{float}]{radius,  }\item[{float}]{size,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{rad\+Seg,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sides }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a7ec9d543ed43e97ae569b40d638914c8}\label{models_8c_a7ec9d543ed43e97ae569b40d638914c8}} 
+\index{models.c@{models.c}!GenMeshPlane@{GenMeshPlane}}
+\index{GenMeshPlane@{GenMeshPlane}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GenMeshPlane()}{GenMeshPlane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mesh}{Mesh}} Gen\+Mesh\+Plane (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{length,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{resX,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{resZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a35be1f7b4ac2e0268222ea49db63ae11}\label{models_8c_a35be1f7b4ac2e0268222ea49db63ae11}} 
+\index{models.c@{models.c}!GenMeshPoly@{GenMeshPoly}}
+\index{GenMeshPoly@{GenMeshPoly}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GenMeshPoly()}{GenMeshPoly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mesh}{Mesh}} Gen\+Mesh\+Poly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sides,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ae311a286dc20901eb8f3ef71a6a7ad88}\label{models_8c_ae311a286dc20901eb8f3ef71a6a7ad88}} 
+\index{models.c@{models.c}!GenMeshSphere@{GenMeshSphere}}
+\index{GenMeshSphere@{GenMeshSphere}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GenMeshSphere()}{GenMeshSphere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-src_2src_2raylib_8h_a9e7a90ce1dc00f769afb0be0a6c7ade7}{R\+L\+A\+PI}} \mbox{\hyperlink{struct_mesh}{Mesh}} Gen\+Mesh\+Sphere (\begin{DoxyParamCaption}\item[{float}]{radius,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{rings,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{slices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a861eb30f6afe5e2c14ee4446637b04ed}\label{models_8c_a861eb30f6afe5e2c14ee4446637b04ed}} 
+\index{models.c@{models.c}!GenMeshTorus@{GenMeshTorus}}
+\index{GenMeshTorus@{GenMeshTorus}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GenMeshTorus()}{GenMeshTorus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mesh}{Mesh}} Gen\+Mesh\+Torus (\begin{DoxyParamCaption}\item[{float}]{radius,  }\item[{float}]{size,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{rad\+Seg,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sides }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_aa89f076d3db8b0d3b55089f43791ec83}\label{models_8c_aa89f076d3db8b0d3b55089f43791ec83}} 
+\index{models.c@{models.c}!GetCollisionRayGround@{GetCollisionRayGround}}
+\index{GetCollisionRayGround@{GetCollisionRayGround}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GetCollisionRayGround()}{GetCollisionRayGround()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ray_hit_info}{Ray\+Hit\+Info}} Get\+Collision\+Ray\+Ground (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ray}{Ray}}}]{ray,  }\item[{float}]{ground\+Height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_acbfd8b5e130b84ce9c498201c6b88094}\label{models_8c_acbfd8b5e130b84ce9c498201c6b88094}} 
+\index{models.c@{models.c}!GetCollisionRayModel@{GetCollisionRayModel}}
+\index{GetCollisionRayModel@{GetCollisionRayModel}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GetCollisionRayModel()}{GetCollisionRayModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ray_hit_info}{Ray\+Hit\+Info}} Get\+Collision\+Ray\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ray}{Ray}}}]{ray,  }\item[{\mbox{\hyperlink{struct_model}{Model}}}]{model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a7b6562f9ba9d8305d21f7c4d25890686}\label{models_8c_a7b6562f9ba9d8305d21f7c4d25890686}} 
+\index{models.c@{models.c}!GetCollisionRayTriangle@{GetCollisionRayTriangle}}
+\index{GetCollisionRayTriangle@{GetCollisionRayTriangle}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{GetCollisionRayTriangle()}{GetCollisionRayTriangle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ray_hit_info}{Ray\+Hit\+Info}} Get\+Collision\+Ray\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ray}{Ray}}}]{ray,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{p1,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{p2,  }\item[{\mbox{\hyperlink{struct_vector3}{Vector3}}}]{p3 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a7907fe408a92060da05832c17da54a04}\label{models_8c_a7907fe408a92060da05832c17da54a04}} 
+\index{models.c@{models.c}!IsModelAnimationValid@{IsModelAnimationValid}}
+\index{IsModelAnimationValid@{IsModelAnimationValid}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{IsModelAnimationValid()}{IsModelAnimationValid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Is\+Model\+Animation\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_model}{Model}}}]{model,  }\item[{\mbox{\hyperlink{struct_model_animation}{Model\+Animation}}}]{anim }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ab6cf1d88c94c870a45e7e5a74cfa2036}\label{models_8c_ab6cf1d88c94c870a45e7e5a74cfa2036}} 
+\index{models.c@{models.c}!LoadMaterialDefault@{LoadMaterialDefault}}
+\index{LoadMaterialDefault@{LoadMaterialDefault}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{LoadMaterialDefault()}{LoadMaterialDefault()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_material}{Material}} Load\+Material\+Default (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a4cf362d99c3df1b337e36d4b02449532}\label{models_8c_a4cf362d99c3df1b337e36d4b02449532}} 
+\index{models.c@{models.c}!LoadMaterials@{LoadMaterials}}
+\index{LoadMaterials@{LoadMaterials}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{LoadMaterials()}{LoadMaterials()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_material}{Material}}$\ast$ Load\+Materials (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{file\+Name,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{material\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a6252b8cba67e8526213b47723ddf2204}\label{models_8c_a6252b8cba67e8526213b47723ddf2204}} 
+\index{models.c@{models.c}!LoadMeshes@{LoadMeshes}}
+\index{LoadMeshes@{LoadMeshes}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{LoadMeshes()}{LoadMeshes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mesh}{Mesh}}$\ast$ Load\+Meshes (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{file\+Name,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{mesh\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a9d1cf218d3ae6d1f50e442d5fde88cf3}\label{models_8c_a9d1cf218d3ae6d1f50e442d5fde88cf3}} 
+\index{models.c@{models.c}!LoadModel@{LoadModel}}
+\index{LoadModel@{LoadModel}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{LoadModel()}{LoadModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_model}{Model}} Load\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a57f9a125bee3fe981ed6f6460673bfcd}\label{models_8c_a57f9a125bee3fe981ed6f6460673bfcd}} 
+\index{models.c@{models.c}!LoadModelAnimations@{LoadModelAnimations}}
+\index{LoadModelAnimations@{LoadModelAnimations}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{LoadModelAnimations()}{LoadModelAnimations()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_model_animation}{Model\+Animation}}$\ast$ Load\+Model\+Animations (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_c_make_cache_8txt_afe71f11dacb15682cdc012f7208e6e09}{char}} $\ast$}]{filename,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} $\ast$}]{anim\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a55cfdb656716d71b091aa6502fbf176f}\label{models_8c_a55cfdb656716d71b091aa6502fbf176f}} 
+\index{models.c@{models.c}!LoadModelFromMesh@{LoadModelFromMesh}}
+\index{LoadModelFromMesh@{LoadModelFromMesh}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{LoadModelFromMesh()}{LoadModelFromMesh()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_model}{Model}} Load\+Model\+From\+Mesh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mesh}{Mesh}}}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a2e45bdccae70531cfa1c24f675859df7}\label{models_8c_a2e45bdccae70531cfa1c24f675859df7}} 
+\index{models.c@{models.c}!MeshBinormals@{MeshBinormals}}
+\index{MeshBinormals@{MeshBinormals}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{MeshBinormals()}{MeshBinormals()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Mesh\+Binormals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mesh}{Mesh}} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a211d42b24c70533eca117d839f3a6d0b}\label{models_8c_a211d42b24c70533eca117d839f3a6d0b}} 
+\index{models.c@{models.c}!MeshBoundingBox@{MeshBoundingBox}}
+\index{MeshBoundingBox@{MeshBoundingBox}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{MeshBoundingBox()}{MeshBoundingBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bounding_box}{Bounding\+Box}} Mesh\+Bounding\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mesh}{Mesh}}}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ace770445afacef9785621c28d9d11790}\label{models_8c_ace770445afacef9785621c28d9d11790}} 
+\index{models.c@{models.c}!MeshTangents@{MeshTangents}}
+\index{MeshTangents@{MeshTangents}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{MeshTangents()}{MeshTangents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Mesh\+Tangents (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mesh}{Mesh}} $\ast$}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_af03448756f06714a1effa9e16b796ebe}\label{models_8c_af03448756f06714a1effa9e16b796ebe}} 
+\index{models.c@{models.c}!SetMaterialTexture@{SetMaterialTexture}}
+\index{SetMaterialTexture@{SetMaterialTexture}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{SetMaterialTexture()}{SetMaterialTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Set\+Material\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_material}{Material}} $\ast$}]{material,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{map\+Type,  }\item[{\mbox{\hyperlink{struct_texture2_d}{Texture2D}}}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a3954baa09cfb21fdfbc9ae9f6407732b}\label{models_8c_a3954baa09cfb21fdfbc9ae9f6407732b}} 
+\index{models.c@{models.c}!SetModelMeshMaterial@{SetModelMeshMaterial}}
+\index{SetModelMeshMaterial@{SetModelMeshMaterial}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{SetModelMeshMaterial()}{SetModelMeshMaterial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Set\+Model\+Mesh\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_model}{Model}} $\ast$}]{model,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{mesh\+Id,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{material\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_ad0b92e5ccd513d907eba7a111c047b9a}\label{models_8c_ad0b92e5ccd513d907eba7a111c047b9a}} 
+\index{models.c@{models.c}!UnloadMaterial@{UnloadMaterial}}
+\index{UnloadMaterial@{UnloadMaterial}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{UnloadMaterial()}{UnloadMaterial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_material}{Material}}}]{material }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a28be1face57298424e3ba825d8df902f}\label{models_8c_a28be1face57298424e3ba825d8df902f}} 
+\index{models.c@{models.c}!UnloadMesh@{UnloadMesh}}
+\index{UnloadMesh@{UnloadMesh}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{UnloadMesh()}{UnloadMesh()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Mesh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mesh}{Mesh}}}]{mesh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a0f8aa72af1d84a273923a6c780c77be2}\label{models_8c_a0f8aa72af1d84a273923a6c780c77be2}} 
+\index{models.c@{models.c}!UnloadModel@{UnloadModel}}
+\index{UnloadModel@{UnloadModel}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{UnloadModel()}{UnloadModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_model}{Model}}}]{model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_aabb90ac690498d10f29890b615fa5277}\label{models_8c_aabb90ac690498d10f29890b615fa5277}} 
+\index{models.c@{models.c}!UnloadModelAnimation@{UnloadModelAnimation}}
+\index{UnloadModelAnimation@{UnloadModelAnimation}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{UnloadModelAnimation()}{UnloadModelAnimation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Unload\+Model\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_model_animation}{Model\+Animation}}}]{anim }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{models_8c_a86007358cd5f566bf55d4649a6b078d2}\label{models_8c_a86007358cd5f566bf55d4649a6b078d2}} 
+\index{models.c@{models.c}!UpdateModelAnimation@{UpdateModelAnimation}}
+\index{UpdateModelAnimation@{UpdateModelAnimation}!models.c@{models.c}}
+\doxysubsubsection{\texorpdfstring{UpdateModelAnimation()}{UpdateModelAnimation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Update\+Model\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_model}{Model}}}]{model,  }\item[{\mbox{\hyperlink{struct_model_animation}{Model\+Animation}}}]{anim,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{frame }\end{DoxyParamCaption})}
+

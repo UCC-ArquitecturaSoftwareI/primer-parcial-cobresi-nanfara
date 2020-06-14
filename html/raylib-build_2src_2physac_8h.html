@@ -1,0 +1,1001 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-build/src/physac.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_bd3f0616a631f7f0e6b186d0f8e4aed6.html">raylib-build</a></li><li class="navelem"><a class="el" href="dir_327f6bc1d0d99327a417a562b8bbf8a7.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#define-members">defines</a> &#124;
+<a href="#typedef-members">typedefs</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo physac.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="raylib-build_2src_2physac_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_matrix2x2.html">Matrix2x2</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_polygon_data.html">PolygonData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_physics_shape.html">PhysicsShape</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_physics_body_data.html">PhysicsBodyData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_physics_manifold_data.html">PhysicsManifoldData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:acb430bc2ef791e01039efcadb25ed06b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a>&#160;&#160;&#160;extern</td></tr>
+<tr class="separator:acb430bc2ef791e01039efcadb25ed06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190bf80c86ef94ae2f242c31a5913a51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a190bf80c86ef94ae2f242c31a5913a51">PHYSAC_MAX_BODIES</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:a190bf80c86ef94ae2f242c31a5913a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9754046a1da8366360c5520c90355ecc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a9754046a1da8366360c5520c90355ecc">PHYSAC_MAX_MANIFOLDS</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="separator:a9754046a1da8366360c5520c90355ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f9c500644a5a839a258a16b9638254"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#aa0f9c500644a5a839a258a16b9638254">PHYSAC_MAX_VERTICES</a>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:aa0f9c500644a5a839a258a16b9638254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b800789914ceecc7ce970a7010decd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a16b800789914ceecc7ce970a7010decd">PHYSAC_CIRCLE_VERTICES</a>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:a16b800789914ceecc7ce970a7010decd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b6744573dc6b9e718021d1a76f4908"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a01b6744573dc6b9e718021d1a76f4908">PHYSAC_COLLISION_ITERATIONS</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:a01b6744573dc6b9e718021d1a76f4908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce95ef7210c45d7e5ac83aa79a90aae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#adce95ef7210c45d7e5ac83aa79a90aae">PHYSAC_PENETRATION_ALLOWANCE</a>&#160;&#160;&#160;0.05<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0fdda94b8b7e64884690244028f455ba">f</a></td></tr>
+<tr class="separator:adce95ef7210c45d7e5ac83aa79a90aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c14194e05a23397ee079f8a073e9fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#ab3c14194e05a23397ee079f8a073e9fd">PHYSAC_PENETRATION_CORRECTION</a>&#160;&#160;&#160;0.4<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0fdda94b8b7e64884690244028f455ba">f</a></td></tr>
+<tr class="separator:ab3c14194e05a23397ee079f8a073e9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97a3e73a339146ec90a2010f8bab11e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#ae97a3e73a339146ec90a2010f8bab11e">PHYSAC_PI</a>&#160;&#160;&#160;3.14159265358979323846</td></tr>
+<tr class="separator:ae97a3e73a339146ec90a2010f8bab11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8792b5f51510aae57ffa0ecd7a2fedd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#aa8792b5f51510aae57ffa0ecd7a2fedd">PHYSAC_DEG2RAD</a>&#160;&#160;&#160;(<a class="el" href="raylib-src_2src_2physac_8h.html#ae97a3e73a339146ec90a2010f8bab11e">PHYSAC_PI</a>/180.0f)</td></tr>
+<tr class="separator:aa8792b5f51510aae57ffa0ecd7a2fedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49145d4b9c373799e48cb64ab30a2d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#ad49145d4b9c373799e48cb64ab30a2d7">PHYSAC_MALLOC</a>(<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a3d1e3edfcf61ca2d831883e1afbad89e">size</a>)&#160;&#160;&#160;malloc(<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a3d1e3edfcf61ca2d831883e1afbad89e">size</a>)</td></tr>
+<tr class="separator:ad49145d4b9c373799e48cb64ab30a2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f69733849e8d3adde0aa6e36f1e43a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a44f69733849e8d3adde0aa6e36f1e43a">PHYSAC_FREE</a>(ptr)&#160;&#160;&#160;free(ptr)</td></tr>
+<tr class="separator:a44f69733849e8d3adde0aa6e36f1e43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+typedefs</h2></td></tr>
+<tr class="memitem:ab0cdf00b05bc3ab15c142ec5c3c3e3ae"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="raylib-build_2src_2physac_8h.html#ae097debaf896c6a47e63ce5fc0e59dc2">PhysicsShapeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#ab0cdf00b05bc3ab15c142ec5c3c3e3ae">PhysicsShapeType</a></td></tr>
+<tr class="separator:ab0cdf00b05bc3ab15c142ec5c3c3e3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a45f6cce4f2030b210e81ea55c78dab"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_physics_body_data.html">PhysicsBodyData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a></td></tr>
+<tr class="separator:a2a45f6cce4f2030b210e81ea55c78dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f660481b3b856f89a850a307ca975e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_matrix2x2.html">Matrix2x2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a71f660481b3b856f89a850a307ca975e">Matrix2x2</a></td></tr>
+<tr class="separator:a71f660481b3b856f89a850a307ca975e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e9bf74e8315a7b67c0e7a1a890567e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_polygon_data.html">PolygonData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a99e9bf74e8315a7b67c0e7a1a890567e">PolygonData</a></td></tr>
+<tr class="separator:a99e9bf74e8315a7b67c0e7a1a890567e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8e5b0c5954f054355c10b16ad6e1c3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_physics_shape.html">PhysicsShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#aac8e5b0c5954f054355c10b16ad6e1c3">PhysicsShape</a></td></tr>
+<tr class="separator:aac8e5b0c5954f054355c10b16ad6e1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6afa1cea3d581587ba539399514d27bd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_physics_body_data.html">PhysicsBodyData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a6afa1cea3d581587ba539399514d27bd">PhysicsBodyData</a></td></tr>
+<tr class="separator:a6afa1cea3d581587ba539399514d27bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3652cd49b7a59a62e71b384cfd870d9a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_physics_manifold_data.html">PhysicsManifoldData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a3652cd49b7a59a62e71b384cfd870d9a">PhysicsManifoldData</a></td></tr>
+<tr class="separator:a3652cd49b7a59a62e71b384cfd870d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45534223cc09952d5c76ba08c92be905"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_physics_manifold_data.html">PhysicsManifoldData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a45534223cc09952d5c76ba08c92be905">PhysicsManifold</a></td></tr>
+<tr class="separator:a45534223cc09952d5c76ba08c92be905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:ae097debaf896c6a47e63ce5fc0e59dc2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#ae097debaf896c6a47e63ce5fc0e59dc2">PhysicsShapeType</a> { <a class="el" href="raylib-build_2src_2physac_8h.html#ae097debaf896c6a47e63ce5fc0e59dc2ac52f184ec2784685ad9925ce25926302">PHYSICS_CIRCLE</a>, 
+<a class="el" href="raylib-build_2src_2physac_8h.html#ae097debaf896c6a47e63ce5fc0e59dc2a6dab24ff22e643494d178d1b1d451ee8">PHYSICS_POLYGON</a>, 
+<a class="el" href="raylib-src_2src_2physac_8h.html#ae097debaf896c6a47e63ce5fc0e59dc2ac52f184ec2784685ad9925ce25926302">PHYSICS_CIRCLE</a>, 
+<a class="el" href="raylib-src_2src_2physac_8h.html#ae097debaf896c6a47e63ce5fc0e59dc2a6dab24ff22e643494d178d1b1d451ee8">PHYSICS_POLYGON</a>
+ }</td></tr>
+<tr class="separator:ae097debaf896c6a47e63ce5fc0e59dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a4b48895042876145a30c869cd2aa1df2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a4b48895042876145a30c869cd2aa1df2">InitPhysics</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a4b48895042876145a30c869cd2aa1df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a0234eb3c8368e483873d6420afdfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a69a0234eb3c8368e483873d6420afdfe">RunPhysicsStep</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a69a0234eb3c8368e483873d6420afdfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b0f1673f0c9f4f11681c44175e11b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a16b0f1673f0c9f4f11681c44175e11b0">SetPhysicsTimeStep</a> (double delta)</td></tr>
+<tr class="separator:a16b0f1673f0c9f4f11681c44175e11b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da3fe5f97b3b40f0d974564574209c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a6da3fe5f97b3b40f0d974564574209c4">IsPhysicsEnabled</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a6da3fe5f97b3b40f0d974564574209c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0f5721619a7cfa149ea888390391cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a3b0f5721619a7cfa149ea888390391cc">SetPhysicsGravity</a> (float <a class="el" href="examples_2others_2external_2include_2glad_8h.html#ac916c0825494ac3acd4457effd2823d2">x</a>, float <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a4f27f1eebce8c31db01bb39fab9ef561">y</a>)</td></tr>
+<tr class="separator:a3b0f5721619a7cfa149ea888390391cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2489c2a6b38f3d131718d34bcd4d4fb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a2489c2a6b38f3d131718d34bcd4d4fb3">CreatePhysicsBodyCircle</a> (<a class="el" href="struct_vector2.html">Vector2</a> pos, float radius, float density)</td></tr>
+<tr class="separator:a2489c2a6b38f3d131718d34bcd4d4fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa929b2dced0384b1d7481e12cb2441cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#aa929b2dced0384b1d7481e12cb2441cd">CreatePhysicsBodyRectangle</a> (<a class="el" href="struct_vector2.html">Vector2</a> pos, float <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a3ce386e55bbeb900c1b23e064b89bd04">width</a>, float <a class="el" href="examples_2others_2external_2include_2glad_8h.html#aedd0ea77029b98ce91e47c19addcb68f">height</a>, float density)</td></tr>
+<tr class="separator:aa929b2dced0384b1d7481e12cb2441cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6030edbadf59a3282c4efc6ab788af4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#ad6030edbadf59a3282c4efc6ab788af4">CreatePhysicsBodyPolygon</a> (<a class="el" href="struct_vector2.html">Vector2</a> pos, float radius, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> sides, float density)</td></tr>
+<tr class="separator:ad6030edbadf59a3282c4efc6ab788af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91260890a4d393daabd7ccbaa68bd88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#af91260890a4d393daabd7ccbaa68bd88">PhysicsAddForce</a> (<a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a> body, <a class="el" href="struct_vector2.html">Vector2</a> force)</td></tr>
+<tr class="separator:af91260890a4d393daabd7ccbaa68bd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96cbe2da7806bca2613bd631d67b77f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a96cbe2da7806bca2613bd631d67b77f9">PhysicsAddTorque</a> (<a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a> body, float amount)</td></tr>
+<tr class="separator:a96cbe2da7806bca2613bd631d67b77f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889825c97ad126f2214138b292228ebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a889825c97ad126f2214138b292228ebc">PhysicsShatter</a> (<a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a> body, <a class="el" href="struct_vector2.html">Vector2</a> position, float force)</td></tr>
+<tr class="separator:a889825c97ad126f2214138b292228ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350c0d591ad19010d4418959aa0dc4d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a350c0d591ad19010d4418959aa0dc4d4">GetPhysicsBodiesCount</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a350c0d591ad19010d4418959aa0dc4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac418df155457262a4a4b417b561ad62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#aac418df155457262a4a4b417b561ad62">GetPhysicsBody</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a57f14e05b1900f16a2da82ade47d0c6d">index</a>)</td></tr>
+<tr class="separator:aac418df155457262a4a4b417b561ad62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb7f9bbc5251fa1d4de67161a50a309"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#addb7f9bbc5251fa1d4de67161a50a309">GetPhysicsShapeType</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a57f14e05b1900f16a2da82ade47d0c6d">index</a>)</td></tr>
+<tr class="separator:addb7f9bbc5251fa1d4de67161a50a309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46765a67364a90a4e09780379e5879f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a46765a67364a90a4e09780379e5879f2">GetPhysicsShapeVerticesCount</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a57f14e05b1900f16a2da82ade47d0c6d">index</a>)</td></tr>
+<tr class="separator:a46765a67364a90a4e09780379e5879f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58b21f32cf71ab4ee6aaca5d0eeade7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#ab58b21f32cf71ab4ee6aaca5d0eeade7">GetPhysicsShapeVertex</a> (<a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a> body, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> vertex)</td></tr>
+<tr class="separator:ab58b21f32cf71ab4ee6aaca5d0eeade7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a58adbf676a4eb0e42cb38f5318a50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a66a58adbf676a4eb0e42cb38f5318a50">SetPhysicsBodyRotation</a> (<a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a> body, float radians)</td></tr>
+<tr class="separator:a66a58adbf676a4eb0e42cb38f5318a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a911864d07aaed6b720d53e8356a59b42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a911864d07aaed6b720d53e8356a59b42">DestroyPhysicsBody</a> (<a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a> body)</td></tr>
+<tr class="separator:a911864d07aaed6b720d53e8356a59b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55a522461ae0a871d5ad0a29242d9f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#ac55a522461ae0a871d5ad0a29242d9f2">ResetPhysics</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:ac55a522461ae0a871d5ad0a29242d9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a74b70f4d601fc52b58d3219d97f4de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raylib-build_2src_2physac_8h.html#a9a74b70f4d601fc52b58d3219d97f4de">ClosePhysics</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a9a74b70f4d601fc52b58d3219d97f4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a16b800789914ceecc7ce970a7010decd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b800789914ceecc7ce970a7010decd">&#9670;&nbsp;</a></span>PHYSAC_CIRCLE_VERTICES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSAC_CIRCLE_VERTICES&#160;&#160;&#160;24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01b6744573dc6b9e718021d1a76f4908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b6744573dc6b9e718021d1a76f4908">&#9670;&nbsp;</a></span>PHYSAC_COLLISION_ITERATIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSAC_COLLISION_ITERATIONS&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8792b5f51510aae57ffa0ecd7a2fedd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8792b5f51510aae57ffa0ecd7a2fedd">&#9670;&nbsp;</a></span>PHYSAC_DEG2RAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSAC_DEG2RAD&#160;&#160;&#160;(<a class="el" href="raylib-src_2src_2physac_8h.html#ae97a3e73a339146ec90a2010f8bab11e">PHYSAC_PI</a>/180.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44f69733849e8d3adde0aa6e36f1e43a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44f69733849e8d3adde0aa6e36f1e43a">&#9670;&nbsp;</a></span>PHYSAC_FREE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSAC_FREE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr</td><td>)</td>
+          <td>&#160;&#160;&#160;free(ptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad49145d4b9c373799e48cb64ab30a2d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad49145d4b9c373799e48cb64ab30a2d7">&#9670;&nbsp;</a></span>PHYSAC_MALLOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSAC_MALLOC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="examples_2others_2external_2include_2glad_8h.html#a3d1e3edfcf61ca2d831883e1afbad89e">size</a></td><td>)</td>
+          <td>&#160;&#160;&#160;malloc(<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a3d1e3edfcf61ca2d831883e1afbad89e">size</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a190bf80c86ef94ae2f242c31a5913a51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190bf80c86ef94ae2f242c31a5913a51">&#9670;&nbsp;</a></span>PHYSAC_MAX_BODIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSAC_MAX_BODIES&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9754046a1da8366360c5520c90355ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9754046a1da8366360c5520c90355ecc">&#9670;&nbsp;</a></span>PHYSAC_MAX_MANIFOLDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSAC_MAX_MANIFOLDS&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0f9c500644a5a839a258a16b9638254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0f9c500644a5a839a258a16b9638254">&#9670;&nbsp;</a></span>PHYSAC_MAX_VERTICES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSAC_MAX_VERTICES&#160;&#160;&#160;24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adce95ef7210c45d7e5ac83aa79a90aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adce95ef7210c45d7e5ac83aa79a90aae">&#9670;&nbsp;</a></span>PHYSAC_PENETRATION_ALLOWANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSAC_PENETRATION_ALLOWANCE&#160;&#160;&#160;0.05<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0fdda94b8b7e64884690244028f455ba">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3c14194e05a23397ee079f8a073e9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c14194e05a23397ee079f8a073e9fd">&#9670;&nbsp;</a></span>PHYSAC_PENETRATION_CORRECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSAC_PENETRATION_CORRECTION&#160;&#160;&#160;0.4<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0fdda94b8b7e64884690244028f455ba">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae97a3e73a339146ec90a2010f8bab11e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97a3e73a339146ec90a2010f8bab11e">&#9670;&nbsp;</a></span>PHYSAC_PI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSAC_PI&#160;&#160;&#160;3.14159265358979323846</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb430bc2ef791e01039efcadb25ed06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb430bc2ef791e01039efcadb25ed06b">&#9670;&nbsp;</a></span>PHYSACDEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHYSACDEF&#160;&#160;&#160;extern</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los 'typedefs'</h2>
+<a id="a71f660481b3b856f89a850a307ca975e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f660481b3b856f89a850a307ca975e">&#9670;&nbsp;</a></span>Matrix2x2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_matrix2x2.html">Matrix2x2</a> <a class="el" href="struct_matrix2x2.html">Matrix2x2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a45f6cce4f2030b210e81ea55c78dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a45f6cce4f2030b210e81ea55c78dab">&#9670;&nbsp;</a></span>PhysicsBody</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_physics_body_data.html">PhysicsBodyData</a>* <a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6afa1cea3d581587ba539399514d27bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6afa1cea3d581587ba539399514d27bd">&#9670;&nbsp;</a></span>PhysicsBodyData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_physics_body_data.html">PhysicsBodyData</a> <a class="el" href="struct_physics_body_data.html">PhysicsBodyData</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45534223cc09952d5c76ba08c92be905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45534223cc09952d5c76ba08c92be905">&#9670;&nbsp;</a></span>PhysicsManifold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_physics_manifold_data.html">PhysicsManifoldData</a> * <a class="el" href="raylib-build_2src_2physac_8h.html#a45534223cc09952d5c76ba08c92be905">PhysicsManifold</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3652cd49b7a59a62e71b384cfd870d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3652cd49b7a59a62e71b384cfd870d9a">&#9670;&nbsp;</a></span>PhysicsManifoldData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_physics_manifold_data.html">PhysicsManifoldData</a> <a class="el" href="struct_physics_manifold_data.html">PhysicsManifoldData</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac8e5b0c5954f054355c10b16ad6e1c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac8e5b0c5954f054355c10b16ad6e1c3">&#9670;&nbsp;</a></span>PhysicsShape</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_physics_shape.html">PhysicsShape</a> <a class="el" href="struct_physics_shape.html">PhysicsShape</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0cdf00b05bc3ab15c142ec5c3c3e3ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0cdf00b05bc3ab15c142ec5c3c3e3ae">&#9670;&nbsp;</a></span>PhysicsShapeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="raylib-build_2src_2physac_8h.html#ae097debaf896c6a47e63ce5fc0e59dc2">PhysicsShapeType</a> <a class="el" href="raylib-build_2src_2physac_8h.html#ae097debaf896c6a47e63ce5fc0e59dc2">PhysicsShapeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99e9bf74e8315a7b67c0e7a1a890567e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e9bf74e8315a7b67c0e7a1a890567e">&#9670;&nbsp;</a></span>PolygonData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_polygon_data.html">PolygonData</a> <a class="el" href="struct_polygon_data.html">PolygonData</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="ae097debaf896c6a47e63ce5fc0e59dc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae097debaf896c6a47e63ce5fc0e59dc2">&#9670;&nbsp;</a></span>PhysicsShapeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="raylib-build_2src_2physac_8h.html#ae097debaf896c6a47e63ce5fc0e59dc2">PhysicsShapeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="ae097debaf896c6a47e63ce5fc0e59dc2ac52f184ec2784685ad9925ce25926302"></a>PHYSICS_CIRCLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae097debaf896c6a47e63ce5fc0e59dc2a6dab24ff22e643494d178d1b1d451ee8"></a>PHYSICS_POLYGON&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae097debaf896c6a47e63ce5fc0e59dc2ac52f184ec2784685ad9925ce25926302"></a>PHYSICS_CIRCLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae097debaf896c6a47e63ce5fc0e59dc2a6dab24ff22e643494d178d1b1d451ee8"></a>PHYSICS_POLYGON&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a9a74b70f4d601fc52b58d3219d97f4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a74b70f4d601fc52b58d3219d97f4de">&#9670;&nbsp;</a></span>ClosePhysics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> ClosePhysics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2489c2a6b38f3d131718d34bcd4d4fb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2489c2a6b38f3d131718d34bcd4d4fb3">&#9670;&nbsp;</a></span>CreatePhysicsBodyCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a> CreatePhysicsBodyCircle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>density</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6030edbadf59a3282c4efc6ab788af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6030edbadf59a3282c4efc6ab788af4">&#9670;&nbsp;</a></span>CreatePhysicsBodyPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a> CreatePhysicsBodyPolygon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>sides</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>density</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa929b2dced0384b1d7481e12cb2441cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa929b2dced0384b1d7481e12cb2441cd">&#9670;&nbsp;</a></span>CreatePhysicsBodyRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a> CreatePhysicsBodyRectangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>density</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a911864d07aaed6b720d53e8356a59b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a911864d07aaed6b720d53e8356a59b42">&#9670;&nbsp;</a></span>DestroyPhysicsBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> DestroyPhysicsBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a>&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a350c0d591ad19010d4418959aa0dc4d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350c0d591ad19010d4418959aa0dc4d4">&#9670;&nbsp;</a></span>GetPhysicsBodiesCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> GetPhysicsBodiesCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac418df155457262a4a4b417b561ad62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac418df155457262a4a4b417b561ad62">&#9670;&nbsp;</a></span>GetPhysicsBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a> GetPhysicsBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addb7f9bbc5251fa1d4de67161a50a309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb7f9bbc5251fa1d4de67161a50a309">&#9670;&nbsp;</a></span>GetPhysicsShapeType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> GetPhysicsShapeType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab58b21f32cf71ab4ee6aaca5d0eeade7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58b21f32cf71ab4ee6aaca5d0eeade7">&#9670;&nbsp;</a></span>GetPhysicsShapeVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="struct_vector2.html">Vector2</a> GetPhysicsShapeVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a>&#160;</td>
+          <td class="paramname"><em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>vertex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46765a67364a90a4e09780379e5879f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46765a67364a90a4e09780379e5879f2">&#9670;&nbsp;</a></span>GetPhysicsShapeVerticesCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> GetPhysicsShapeVerticesCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b48895042876145a30c869cd2aa1df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b48895042876145a30c869cd2aa1df2">&#9670;&nbsp;</a></span>InitPhysics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> InitPhysics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6da3fe5f97b3b40f0d974564574209c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da3fe5f97b3b40f0d974564574209c4">&#9670;&nbsp;</a></span>IsPhysicsEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> IsPhysicsEnabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af91260890a4d393daabd7ccbaa68bd88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af91260890a4d393daabd7ccbaa68bd88">&#9670;&nbsp;</a></span>PhysicsAddForce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> PhysicsAddForce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a>&#160;</td>
+          <td class="paramname"><em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td>
+          <td class="paramname"><em>force</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96cbe2da7806bca2613bd631d67b77f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96cbe2da7806bca2613bd631d67b77f9">&#9670;&nbsp;</a></span>PhysicsAddTorque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> PhysicsAddTorque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a>&#160;</td>
+          <td class="paramname"><em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>amount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a889825c97ad126f2214138b292228ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889825c97ad126f2214138b292228ebc">&#9670;&nbsp;</a></span>PhysicsShatter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> PhysicsShatter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a>&#160;</td>
+          <td class="paramname"><em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>force</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac55a522461ae0a871d5ad0a29242d9f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55a522461ae0a871d5ad0a29242d9f2">&#9670;&nbsp;</a></span>ResetPhysics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> ResetPhysics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69a0234eb3c8368e483873d6420afdfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69a0234eb3c8368e483873d6420afdfe">&#9670;&nbsp;</a></span>RunPhysicsStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> RunPhysicsStep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66a58adbf676a4eb0e42cb38f5318a50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66a58adbf676a4eb0e42cb38f5318a50">&#9670;&nbsp;</a></span>SetPhysicsBodyRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> SetPhysicsBodyRotation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="raylib-build_2src_2physac_8h.html#a2a45f6cce4f2030b210e81ea55c78dab">PhysicsBody</a>&#160;</td>
+          <td class="paramname"><em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radians</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b0f5721619a7cfa149ea888390391cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b0f5721619a7cfa149ea888390391cc">&#9670;&nbsp;</a></span>SetPhysicsGravity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> SetPhysicsGravity </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16b0f1673f0c9f4f11681c44175e11b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b0f1673f0c9f4f11681c44175e11b0">&#9670;&nbsp;</a></span>SetPhysicsTimeStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib-src_2src_2physac_8h.html#acb430bc2ef791e01039efcadb25ed06b">PHYSACDEF</a> <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> SetPhysicsTimeStep </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

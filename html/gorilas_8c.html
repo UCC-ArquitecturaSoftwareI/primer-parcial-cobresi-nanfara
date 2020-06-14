@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tankey Game: Referencia del Archivo cmake-build-debug/_deps/raylib-src/games/gorilas.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tankey Game
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95e29a8b8ee7c54052c171a88bb95675.html">cmake-build-debug</a></li><li class="navelem"><a class="el" href="dir_5ed36b38ab1e0b9b742fc01309e4e757.html">_deps</a></li><li class="navelem"><a class="el" href="dir_82c232fefe0db394f499890008ce70e1.html">raylib-src</a></li><li class="navelem"><a class="el" href="dir_7aebff1416c495ebb69e3cc957d2473c.html">games</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#define-members">defines</a> &#124;
+<a href="#typedef-members">typedefs</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo gorilas.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;raylib.h&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html">Player</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_building.html">Building</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_explosion.html">Explosion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball.html">Ball</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:ac2327f413e91c174014375bd8349f6b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#ac2327f413e91c174014375bd8349f6b8">MAX_BUILDINGS</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:ac2327f413e91c174014375bd8349f6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c82cf7ac9ed0c4e5551f7722e87bc99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a6c82cf7ac9ed0c4e5551f7722e87bc99">MAX_EXPLOSIONS</a>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a6c82cf7ac9ed0c4e5551f7722e87bc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c346c944e8204fd06dc057393c7c96d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a1c346c944e8204fd06dc057393c7c96d">MAX_PLAYERS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a1c346c944e8204fd06dc057393c7c96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f00126a16c1e92637461ece9f51d579"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a2f00126a16c1e92637461ece9f51d579">BUILDING_RELATIVE_ERROR</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a2f00126a16c1e92637461ece9f51d579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d32deae2a8227b92c3f3d10ea711fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#ab0d32deae2a8227b92c3f3d10ea711fa">BUILDING_MIN_RELATIVE_HEIGHT</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:ab0d32deae2a8227b92c3f3d10ea711fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b484f164e2704fd4bfa35dc6a53fd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#ac6b484f164e2704fd4bfa35dc6a53fd1">BUILDING_MAX_RELATIVE_HEIGHT</a>&#160;&#160;&#160;60</td></tr>
+<tr class="separator:ac6b484f164e2704fd4bfa35dc6a53fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7293c689a0379a18a76f724e7d4cacde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a7293c689a0379a18a76f724e7d4cacde">BUILDING_MIN_GRAYSCALE_COLOR</a>&#160;&#160;&#160;120</td></tr>
+<tr class="separator:a7293c689a0379a18a76f724e7d4cacde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d041e5170e122d9da632457530ce9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a38d041e5170e122d9da632457530ce9b">BUILDING_MAX_GRAYSCALE_COLOR</a>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a38d041e5170e122d9da632457530ce9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2533f0fe0cf8eea33e79839b896c7d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#ae2533f0fe0cf8eea33e79839b896c7d6">MIN_PLAYER_POSITION</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ae2533f0fe0cf8eea33e79839b896c7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f05e67bd23a0500d456071e460a3344"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a4f05e67bd23a0500d456071e460a3344">MAX_PLAYER_POSITION</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:a4f05e67bd23a0500d456071e460a3344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6801baa546c6112d19eb095111d24720"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a6801baa546c6112d19eb095111d24720">GRAVITY</a>&#160;&#160;&#160;9.81<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0fdda94b8b7e64884690244028f455ba">f</a></td></tr>
+<tr class="separator:a6801baa546c6112d19eb095111d24720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6879e00320ac37d4cf3d24ecc5535f11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a6879e00320ac37d4cf3d24ecc5535f11">DELTA_FPS</a>&#160;&#160;&#160;60</td></tr>
+<tr class="separator:a6879e00320ac37d4cf3d24ecc5535f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+typedefs</h2></td></tr>
+<tr class="memitem:a480a040facb94f90060562cd65274385"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a480a040facb94f90060562cd65274385">Player</a></td></tr>
+<tr class="separator:a480a040facb94f90060562cd65274385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797091de93a20f8a889f12b18ab1b443"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_building.html">Building</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a797091de93a20f8a889f12b18ab1b443">Building</a></td></tr>
+<tr class="separator:a797091de93a20f8a889f12b18ab1b443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff80083c53a0a02feb5f838fb7cdc28"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_explosion.html">Explosion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a0ff80083c53a0a02feb5f838fb7cdc28">Explosion</a></td></tr>
+<tr class="separator:a0ff80083c53a0a02feb5f838fb7cdc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0cce33331cd6a83a38bc5cf07702394"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_ball.html">Ball</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#af0cce33331cd6a83a38bc5cf07702394">Ball</a></td></tr>
+<tr class="separator:af0cce33331cd6a83a38bc5cf07702394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gorilas_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (<a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>)</td></tr>
+<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a38d041e5170e122d9da632457530ce9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d041e5170e122d9da632457530ce9b">&#9670;&nbsp;</a></span>BUILDING_MAX_GRAYSCALE_COLOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILDING_MAX_GRAYSCALE_COLOR&#160;&#160;&#160;200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6b484f164e2704fd4bfa35dc6a53fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b484f164e2704fd4bfa35dc6a53fd1">&#9670;&nbsp;</a></span>BUILDING_MAX_RELATIVE_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILDING_MAX_RELATIVE_HEIGHT&#160;&#160;&#160;60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7293c689a0379a18a76f724e7d4cacde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7293c689a0379a18a76f724e7d4cacde">&#9670;&nbsp;</a></span>BUILDING_MIN_GRAYSCALE_COLOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILDING_MIN_GRAYSCALE_COLOR&#160;&#160;&#160;120</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0d32deae2a8227b92c3f3d10ea711fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d32deae2a8227b92c3f3d10ea711fa">&#9670;&nbsp;</a></span>BUILDING_MIN_RELATIVE_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILDING_MIN_RELATIVE_HEIGHT&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f00126a16c1e92637461ece9f51d579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f00126a16c1e92637461ece9f51d579">&#9670;&nbsp;</a></span>BUILDING_RELATIVE_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILDING_RELATIVE_ERROR&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6879e00320ac37d4cf3d24ecc5535f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6879e00320ac37d4cf3d24ecc5535f11">&#9670;&nbsp;</a></span>DELTA_FPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DELTA_FPS&#160;&#160;&#160;60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6801baa546c6112d19eb095111d24720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6801baa546c6112d19eb095111d24720">&#9670;&nbsp;</a></span>GRAVITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRAVITY&#160;&#160;&#160;9.81<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a0fdda94b8b7e64884690244028f455ba">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2327f413e91c174014375bd8349f6b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2327f413e91c174014375bd8349f6b8">&#9670;&nbsp;</a></span>MAX_BUILDINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_BUILDINGS&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c82cf7ac9ed0c4e5551f7722e87bc99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c82cf7ac9ed0c4e5551f7722e87bc99">&#9670;&nbsp;</a></span>MAX_EXPLOSIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_EXPLOSIONS&#160;&#160;&#160;200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f05e67bd23a0500d456071e460a3344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f05e67bd23a0500d456071e460a3344">&#9670;&nbsp;</a></span>MAX_PLAYER_POSITION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_PLAYER_POSITION&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c346c944e8204fd06dc057393c7c96d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c346c944e8204fd06dc057393c7c96d">&#9670;&nbsp;</a></span>MAX_PLAYERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_PLAYERS&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2533f0fe0cf8eea33e79839b896c7d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2533f0fe0cf8eea33e79839b896c7d6">&#9670;&nbsp;</a></span>MIN_PLAYER_POSITION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_PLAYER_POSITION&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los 'typedefs'</h2>
+<a id="af0cce33331cd6a83a38bc5cf07702394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0cce33331cd6a83a38bc5cf07702394">&#9670;&nbsp;</a></span>Ball</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_ball.html">Ball</a> <a class="el" href="struct_ball.html">Ball</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a797091de93a20f8a889f12b18ab1b443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797091de93a20f8a889f12b18ab1b443">&#9670;&nbsp;</a></span>Building</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_building.html">Building</a> <a class="el" href="struct_building.html">Building</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ff80083c53a0a02feb5f838fb7cdc28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff80083c53a0a02feb5f838fb7cdc28">&#9670;&nbsp;</a></span>Explosion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_explosion.html">Explosion</a> <a class="el" href="struct_explosion.html">Explosion</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a480a040facb94f90060562cd65274385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480a040facb94f90060562cd65274385">&#9670;&nbsp;</a></span>Player</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_player.html">Player</a> <a class="el" href="struct_player.html">Player</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>
