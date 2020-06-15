@@ -1,6 +1,11 @@
-//
-// Created by ticiana cobresi serravalle on 01/06/2020.
-//
+/**
+ * @title       Clase TreeVetas
+ * @file        TreeVetas.h
+ * @version     1.0
+ * @date        21/4/2020
+ * @author      Ticiana Cobresi Serravalle
+ * @author      Nara Abril Nanfara
+ */
 
 #ifndef RAYLIBTEMPLATE_TREEVETAS_H
 #define RAYLIBTEMPLATE_TREEVETAS_H
@@ -10,10 +15,21 @@
 #include "Visitor.h"
 #include "Visitable.h"
 
+/**
+ * @class TreeVetas
+ * @brief Clase que representa al arbol con trama de vetas
+ */
 class TreeVetas: public Decorator{
 public:
-    TreeVetas(SuperTree* const dcrator): Decorator (dcrator){}
+    /**
+     * @brief constructor de TreeVetas
+     * @param dcrator
+     */
+    explicit TreeVetas(SuperTree* const dcrator): Decorator (dcrator){}
 
+     /**
+     * @brief función que indica cómo graficar al arbol en pantalla
+     */
     void DrawTree() override{
         position.x = 300;
         position.y = -150;
@@ -28,10 +44,17 @@ public:
         }
     }
 
+    /**
+    * Funcion de aceptacion a un visitante
+    * @param v
+    */
     void Accept(Visitor& v) override {
         v.Visit(*this);
     }
 
+    /**
+     * @brief grafica al arbol en pantalla
+     */
     void Draw() override;
 };
 

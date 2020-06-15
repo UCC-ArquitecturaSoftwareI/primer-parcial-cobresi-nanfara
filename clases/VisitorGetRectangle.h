@@ -1,6 +1,11 @@
-//
-// Created by Abril on 1/6/2020.
-//
+/**
+ * @title       Clase VisitorGetRectangle
+ * @file        VisitorGetRectangle.h
+ * @version     1.0
+ * @date        21/4/2020
+ * @author      Ticiana Cobresi Serravalle
+ * @author      Nara Abril Nanfara
+ */
 
 #ifndef RAYLIBTEMPLATE_VISITORGETRECTANGLE_H
 #define RAYLIBTEMPLATE_VISITORGETRECTANGLE_H
@@ -19,30 +24,77 @@
 
 #include "raylib.h"
 
+/**
+ * @class VisitorGetRectangle
+ * @brief Clase que devuelve las coordenadas de la textura de lo que necesito/visito
+ */
 class VisitorGetRectangle: public Visitor
 {
 public:
+
+    /**
+     * @brief constructor de VisitorGetRectangle
+     */
     VisitorGetRectangle():Visitor(){
     }
+    /**
+     * Funcion de visita a una textura
+     * @param NightMonkey
+     */
     void Visit(NightMonkey &o) override {}
 
+    /**
+     * Funcion de visita a una textura
+     * @param LightMonkey
+     */
     void Visit(LightMonkey &o) override {}
 
+    /**
+     * Funcion de visita a una textura
+     * @param Tree
+     */
     void Visit(Tree &o) override {}
 
+    /**
+     * Funcion de visita a una textura
+     * @param TreeVetas
+     */
     void Visit(TreeVetas &o) override {}
 
+    /**
+     * Funcion de visita a una textura
+     * @param Rama
+     */
     void Visit(Rama &o) override {}
 
+    /**
+     * Funcion de visita a una textura
+     * @param Skin
+     */
     void Visit(Skin &o) override {}
 
+    /**
+     * Funcion de visita a una textura
+     * @param StartButton
+     */
     void Visit(StartButton &o) override {}
 
+    /**
+     * Funcion de visita a una textura
+     * @param LightButton
+     */
     void Visit(LightButton &o) override {}
 
+    /**
+     * Funcion de visita a una textura
+     * @param NightButton
+     */
     void Visit(NightButton &o) override {}
 
-
+    /**
+     * Funcion de visita a una textura
+     * @param LightRama
+     */
     void Visit(LightRama &rama) override
     {
         if (rama.animal)
@@ -52,6 +104,10 @@ public:
         rama.rect = rect;
     }
 
+    /**
+     * Funcion de visita a una textura
+     * @param NightRama
+     */
     void Visit(NightRama &rama) override{
         if (rama.animal)
             rect = GetRamaNightAnimalRectangle(rama.lado);
@@ -60,11 +116,15 @@ public:
         rama.rect = rect;
     }
 
+    /**
+     * Funcion de retorno de la textura de una NightRama con animal
+     * @param lado Lado determina si es una rama a la izq (-1) o a la derecha (1)
+     */
     Rectangle GetRamaNightAnimalRectangle(int lado){
         int animal = GetRandomValue(0, 3);
         if (lado == -1)
         {
-            switch (animal)
+            switch(animal)
             {
                 case 0:
                     rect.y = 2100;
@@ -85,7 +145,7 @@ public:
         }
         else
         {
-            switch (animal)
+            switch(animal)
             {
                 case 0:
                     rect.y = 2100;
@@ -106,6 +166,11 @@ public:
         }
         return rect;
     }
+
+    /**
+     * Funcion de retorno de la textura de una LightRama con animal
+     * @param lado Lado determina si es una rama a la izq (-1) o a la derecha (1)
+     */
     Rectangle GetRamaDayAnimalRectangle(int lado){
         {
             int animal = GetRandomValue(0, 3);
@@ -154,6 +219,11 @@ public:
             return rect;
         }
     }
+
+    /**
+     * Funcion de retorno de la textura de una Rama vacia
+     * @param lado Lado determina si es una rama a la izq (-1) o a la derecha (1)
+     */
     Rectangle GetRamaVaciaRectangle(int lado){
         int color = GetRandomValue(0, 1);
         rect.y = 900;

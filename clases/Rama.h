@@ -14,13 +14,16 @@
 #include "Visitor.h"
 #include "Visitable.h"
 
-
+/**
+ * @class Rama
+ * @brief Clase que representa la rama
+ */
 class Rama : public Visitable {
 public:
-    int rama_sector;            /** int value. Especifica el sector de la rama (existen 4 posiciones posibles, comenzando desde la 1)*/
-    int lado;                   /** int value. Especifica de que lado del árbol se encuentra la rama (-1 = izquierdo / 1 = derecho)*/
+    int rama_sector;             /** int value. Especifica el sector de la rama (existen 4 posiciones posibles, comenzando desde la 1)*/
+    int lado;                    /** int value. Especifica de que lado del árbol se encuentra la rama (-1 = izquierdo / 1 = derecho)*/
     Vector2 rama_position{ };    /** Vector2 value. Especifica la posicion de la rama */
-    bool animal;                /** bool value. Especifica si la rama tiene algún animal (verdadero) o no (falso)*/
+    bool animal;                 /** bool value. Especifica si la rama tiene algún animal (verdadero) o no (falso)*/
     Rectangle rect{ };           /** Rectangle value. Especifica las cordenadas de la textura que se corresponden a la rama */
 
 
