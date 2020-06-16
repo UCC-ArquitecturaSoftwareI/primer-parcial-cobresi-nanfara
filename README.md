@@ -8,6 +8,7 @@ Moviéndose de un lado al otro...
 ¿Podrá lograrlo?
 
 Se puede ver desde: [Github Pages][gh-pages]
+
 Video: [Video-demo]
 
 [gh-pages]:https://ucc-arquitecturasoftwarei.github.io/primer-parcial-cobresi-nanfara/
