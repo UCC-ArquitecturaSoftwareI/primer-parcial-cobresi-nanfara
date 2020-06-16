@@ -2,6 +2,11 @@
 \label{class_tree_vetas}\index{TreeVetas@{TreeVetas}}
 
 
+Clase que representa al arbol con trama de vetas.  
+
+
+
+
 {\ttfamily \#include $<$Tree\+Vetas.\+h$>$}
 
 Diagrama de herencias de Tree\+Vetas\begin{figure}[H]
@@ -14,23 +19,37 @@ Diagrama de herencias de Tree\+Vetas\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_tree_vetas_ab9545b12129b32d3e0c5628b18b720c3}{Tree\+Vetas}} (\mbox{\hyperlink{class_super_tree}{Super\+Tree}} $\ast$const dcrator)
+\begin{DoxyCompactList}\small\item\em constructor de \mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tree_vetas_afa344c78f4e98365a1dde47a55157319}\label{class_tree_vetas_afa344c78f4e98365a1dde47a55157319}} 
+void \mbox{\hyperlink{class_tree_vetas_afa344c78f4e98365a1dde47a55157319}{Draw\+Tree}} () override
+\begin{DoxyCompactList}\small\item\em función que indica cómo graficar al arbol en pantalla \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tree_vetas_ace6f63b5c1853740dd66dea72ab5b52d}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&v) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_tree_vetas_afa344c78f4e98365a1dde47a55157319}{Draw\+Tree}} () override
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_tree_vetas_ace6f63b5c1853740dd66dea72ab5b52d}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}}) override
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_tree_vetas_a29eed2432866e39a8e51774e9c0b7dbb}{Draw}} () override
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{class_tree_vetas_a29eed2432866e39a8e51774e9c0b7dbb}\label{class_tree_vetas_a29eed2432866e39a8e51774e9c0b7dbb}} 
+void \mbox{\hyperlink{class_tree_vetas_a29eed2432866e39a8e51774e9c0b7dbb}{Draw}} () override
+\begin{DoxyCompactList}\small\item\em grafica al arbol en pantalla \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Otros miembros heredados}
 
+
+\doxysubsection{Descripción detallada}
+Clase que representa al arbol con trama de vetas. 
 
 \doxysubsection{Documentación del constructor y destructor}
 \mbox{\Hypertarget{class_tree_vetas_ab9545b12129b32d3e0c5628b18b720c3}\label{class_tree_vetas_ab9545b12129b32d3e0c5628b18b720c3}} 
 \index{TreeVetas@{TreeVetas}!TreeVetas@{TreeVetas}}
 \index{TreeVetas@{TreeVetas}!TreeVetas@{TreeVetas}}
 \doxysubsubsection{\texorpdfstring{TreeVetas()}{TreeVetas()}}
-{\footnotesize\ttfamily Tree\+Vetas\+::\+Tree\+Vetas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_super_tree}{Super\+Tree}} $\ast$const}]{dcrator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Tree\+Vetas\+::\+Tree\+Vetas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_super_tree}{Super\+Tree}} $\ast$const}]{dcrator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
 
+
+
+constructor de \mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}} 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em dcrator} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Documentación de las funciones miembro}
@@ -38,35 +57,20 @@ Diagrama de herencias de Tree\+Vetas\begin{figure}[H]
 \index{TreeVetas@{TreeVetas}!Accept@{Accept}}
 \index{Accept@{Accept}!TreeVetas@{TreeVetas}}
 \doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Tree\+Vetas\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Tree\+Vetas\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funcion de aceptacion a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em v} & \\
+\hline
+\end{DoxyParams}
 
 
-
-Implementa \mbox{\hyperlink{class_super_tree_aa6bebc1f80e93250a62bd0d5c59575b8}{Super\+Tree}}.
-
-\mbox{\Hypertarget{class_tree_vetas_a29eed2432866e39a8e51774e9c0b7dbb}\label{class_tree_vetas_a29eed2432866e39a8e51774e9c0b7dbb}} 
-\index{TreeVetas@{TreeVetas}!Draw@{Draw}}
-\index{Draw@{Draw}!TreeVetas@{TreeVetas}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Tree\+Vetas\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Implementa \mbox{\hyperlink{class_super_tree_a04e1815437d4c42c76434524a4ad9a38}{Super\+Tree}}.
-
-\mbox{\Hypertarget{class_tree_vetas_afa344c78f4e98365a1dde47a55157319}\label{class_tree_vetas_afa344c78f4e98365a1dde47a55157319}} 
-\index{TreeVetas@{TreeVetas}!DrawTree@{DrawTree}}
-\index{DrawTree@{DrawTree}!TreeVetas@{TreeVetas}}
-\doxysubsubsection{\texorpdfstring{DrawTree()}{DrawTree()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Tree\+Vetas\+::\+Draw\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Reimplementado de \mbox{\hyperlink{class_decorator_a221737d127d62905c522961c52f1cb66}{Decorator}}.
+Implementa \mbox{\hyperlink{class_super_tree_a97212ae5e59b9522a5033372195e6146}{Super\+Tree}}.
 
 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_tree_vetas_8h}{Tree\+Vetas.\+h}}\item 
-clases/\mbox{\hyperlink{_tree_vetas_8cpp}{Tree\+Vetas.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_tree_vetas_8h}{Tree\+Vetas.\+h}}\item 
+Tree\+Vetas.\+cpp\end{DoxyCompactItemize}

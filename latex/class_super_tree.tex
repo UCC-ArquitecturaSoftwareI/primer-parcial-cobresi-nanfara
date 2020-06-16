@@ -2,6 +2,11 @@
 \label{class_super_tree}\index{SuperTree@{SuperTree}}
 
 
+Clase que representa el arbol.  
+
+
+
+
 {\ttfamily \#include $<$Super\+Tree.\+h$>$}
 
 Diagrama de herencias de Super\+Tree\begin{figure}[H]
@@ -13,73 +18,71 @@ Diagrama de herencias de Super\+Tree\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_super_tree_af75b1b8439d525e30270e0a06ad94a54}{Draw\+Tree}} ()=0
+virtual void \mbox{\hyperlink{class_super_tree_af75b1b8439d525e30270e0a06ad94a54}{Draw\+Tree}} ()=0
+\begin{DoxyCompactList}\small\item\em función virtual que indica cómo graficar al arbol en pantalla \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tree_a97212ae5e59b9522a5033372195e6146}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&v) override=0
 \item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_super_tree_aa6bebc1f80e93250a62bd0d5c59575b8}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}})=0
-\item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_super_tree_a04e1815437d4c42c76434524a4ad9a38}{Draw}} ()=0
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{class_super_tree_a04e1815437d4c42c76434524a4ad9a38}\label{class_super_tree_a04e1815437d4c42c76434524a4ad9a38}} 
+virtual void \mbox{\hyperlink{class_super_tree_a04e1815437d4c42c76434524a4ad9a38}{Draw}} ()=0
+\begin{DoxyCompactList}\small\item\em grafica al arbol en pantalla \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_super_tree_a6c6cc12d5619fdb7002d8cddc6e4839c}{lado}}
+\mbox{\Hypertarget{class_super_tree_a6c6cc12d5619fdb7002d8cddc6e4839c}\label{class_super_tree_a6c6cc12d5619fdb7002d8cddc6e4839c}} 
+int {\bfseries lado} \{\}
 \item 
-\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{class_super_tree_af0d7621aab3605c0b81a41ea4187b835}{position}}
+Vector2 \mbox{\hyperlink{class_super_tree_af0d7621aab3605c0b81a41ea4187b835}{position}} \{\}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Descripción detallada}
+Clase que representa el arbol. 
+
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_super_tree_aa6bebc1f80e93250a62bd0d5c59575b8}\label{class_super_tree_aa6bebc1f80e93250a62bd0d5c59575b8}} 
+\mbox{\Hypertarget{class_super_tree_a97212ae5e59b9522a5033372195e6146}\label{class_super_tree_a97212ae5e59b9522a5033372195e6146}} 
 \index{SuperTree@{SuperTree}!Accept@{Accept}}
 \index{Accept@{Accept}!SuperTree@{SuperTree}}
 \doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Super\+Tree\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily void Super\+Tree\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
 
+Funcion de aceptacion a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em v} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitable_a9db999616998fc36f82a31f4d7d9254d}{Visitable}}.
 
 
 
-Implementado en \mbox{\hyperlink{class_tree_a198d6c782a220e093900e091da4cf294}{Tree}} y \mbox{\hyperlink{class_tree_vetas_ace6f63b5c1853740dd66dea72ab5b52d}{Tree\+Vetas}}.
-
-\mbox{\Hypertarget{class_super_tree_a04e1815437d4c42c76434524a4ad9a38}\label{class_super_tree_a04e1815437d4c42c76434524a4ad9a38}} 
-\index{SuperTree@{SuperTree}!Draw@{Draw}}
-\index{Draw@{Draw}!SuperTree@{SuperTree}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Super\+Tree\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Implementado en \mbox{\hyperlink{class_tree_a677ad8301bbdd2eba28945a8ee83fedf}{Tree}} y \mbox{\hyperlink{class_tree_vetas_a29eed2432866e39a8e51774e9c0b7dbb}{Tree\+Vetas}}.
+Implementado en \mbox{\hyperlink{class_tree_vetas_ace6f63b5c1853740dd66dea72ab5b52d}{Tree\+Vetas}} y \mbox{\hyperlink{class_tree_a198d6c782a220e093900e091da4cf294}{Tree}}.
 
 \mbox{\Hypertarget{class_super_tree_af75b1b8439d525e30270e0a06ad94a54}\label{class_super_tree_af75b1b8439d525e30270e0a06ad94a54}} 
 \index{SuperTree@{SuperTree}!DrawTree@{DrawTree}}
 \index{DrawTree@{DrawTree}!SuperTree@{SuperTree}}
 \doxysubsubsection{\texorpdfstring{DrawTree()}{DrawTree()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Super\+Tree\+::\+Draw\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Super\+Tree\+::\+Draw\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Implementado en \mbox{\hyperlink{class_tree_a07cc63d001e3e7b9f9223735789ca648}{Tree}}, \mbox{\hyperlink{class_tree_vetas_afa344c78f4e98365a1dde47a55157319}{Tree\+Vetas}} y \mbox{\hyperlink{class_decorator_a221737d127d62905c522961c52f1cb66}{Decorator}}.
+función virtual que indica cómo graficar al arbol en pantalla 
+
+Vector2 value. Especifica la posicion del arbol 
+
+Implementado en \mbox{\hyperlink{class_tree_vetas_afa344c78f4e98365a1dde47a55157319}{Tree\+Vetas}}, \mbox{\hyperlink{class_tree_a07cc63d001e3e7b9f9223735789ca648}{Tree}} y \mbox{\hyperlink{class_decorator_a221737d127d62905c522961c52f1cb66}{Decorator}}.
 
 
 
 \doxysubsection{Documentación de los datos miembro}
-\mbox{\Hypertarget{class_super_tree_a6c6cc12d5619fdb7002d8cddc6e4839c}\label{class_super_tree_a6c6cc12d5619fdb7002d8cddc6e4839c}} 
-\index{SuperTree@{SuperTree}!lado@{lado}}
-\index{lado@{lado}!SuperTree@{SuperTree}}
-\doxysubsubsection{\texorpdfstring{lado}{lado}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Super\+Tree\+::lado}
-
 \mbox{\Hypertarget{class_super_tree_af0d7621aab3605c0b81a41ea4187b835}\label{class_super_tree_af0d7621aab3605c0b81a41ea4187b835}} 
 \index{SuperTree@{SuperTree}!position@{position}}
 \index{position@{position}!SuperTree@{SuperTree}}
 \doxysubsubsection{\texorpdfstring{position}{position}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} Super\+Tree\+::position}
+{\footnotesize\ttfamily Vector2 Super\+Tree\+::position \{\}}
 
-
+int value. Especifica de que lado del árbol se encuentra la rama (-\/1 = izquierdo / 1 = derecho) 
 
 La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_super_tree_8h}{Super\+Tree.\+h}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_super_tree_8h}{Super\+Tree.\+h}}\end{DoxyCompactItemize}

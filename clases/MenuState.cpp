@@ -11,7 +11,7 @@
 #include "SuperTree.h"
 
 
-void MenuState::Update( SingletonGame *singleton ) {
+void MenuState::Update( ) {
     SingletonGame & game = SingletonGame::get( );
     BeginDrawing( );
     ClearBackground( game.colorBackground );

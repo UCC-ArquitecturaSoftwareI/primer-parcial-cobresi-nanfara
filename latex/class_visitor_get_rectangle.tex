@@ -2,6 +2,11 @@
 \label{class_visitor_get_rectangle}\index{VisitorGetRectangle@{VisitorGetRectangle}}
 
 
+Clase que devuelve las coordenadas de la textura de lo que necesito/visito.  
+
+
+
+
 {\ttfamily \#include $<$Visitor\+Get\+Rectangle.\+h$>$}
 
 Diagrama de herencias de Visitor\+Get\+Rectangle\begin{figure}[H]
@@ -13,73 +18,88 @@ Diagrama de herencias de Visitor\+Get\+Rectangle\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_visitor_get_rectangle_a86eabddbdcf882a997526f4675b03dea}\label{class_visitor_get_rectangle_a86eabddbdcf882a997526f4675b03dea}} 
 \mbox{\hyperlink{class_visitor_get_rectangle_a86eabddbdcf882a997526f4675b03dea}{Visitor\+Get\+Rectangle}} ()
+\begin{DoxyCompactList}\small\item\em constructor de \mbox{\hyperlink{class_visitor_get_rectangle}{Visitor\+Get\+Rectangle}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_visitor_get_rectangle_ab09e03cfd97d08e238a50dc321b55ee4}{Visit}} (\mbox{\hyperlink{class_night_monkey}{Night\+Monkey}} \&o) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_get_rectangle_ab09e03cfd97d08e238a50dc321b55ee4}{Visit}} (\mbox{\hyperlink{class_night_monkey}{Night\+Monkey}} \&o) override
+void \mbox{\hyperlink{class_visitor_get_rectangle_ab8129fcfc32ee28e29422a027bcd2476}{Visit}} (\mbox{\hyperlink{class_light_monkey}{Light\+Monkey}} \&o) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_get_rectangle_ab8129fcfc32ee28e29422a027bcd2476}{Visit}} (\mbox{\hyperlink{class_light_monkey}{Light\+Monkey}} \&o) override
+void \mbox{\hyperlink{class_visitor_get_rectangle_a1860cea2069becba7608762160bbda7e}{Visit}} (\mbox{\hyperlink{class_tree}{Tree}} \&o) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_get_rectangle_a1860cea2069becba7608762160bbda7e}{Visit}} (\mbox{\hyperlink{class_tree}{Tree}} \&o) override
+void \mbox{\hyperlink{class_visitor_get_rectangle_a2bf9483b57833cb717068fc8c32249a8}{Visit}} (\mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}} \&o) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_get_rectangle_a2bf9483b57833cb717068fc8c32249a8}{Visit}} (\mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}} \&o) override
+void \mbox{\hyperlink{class_visitor_get_rectangle_a74e04ad91ddc73b1bc5feff7d0a61c88}{Visit}} (\mbox{\hyperlink{class_rama}{Rama}} \&o) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_get_rectangle_a74e04ad91ddc73b1bc5feff7d0a61c88}{Visit}} (\mbox{\hyperlink{class_rama}{Rama}} \&o) override
+void \mbox{\hyperlink{class_visitor_get_rectangle_a6d6980109b304b1c2e7a565945182477}{Visit}} (\mbox{\hyperlink{class_skin}{Skin}} \&o) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_get_rectangle_a6d6980109b304b1c2e7a565945182477}{Visit}} (\mbox{\hyperlink{class_skin}{Skin}} \&o) override
+void \mbox{\hyperlink{class_visitor_get_rectangle_af04c2345cda9385089360968ff6722ae}{Visit}} (\mbox{\hyperlink{class_start_button}{Start\+Button}} \&o) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_get_rectangle_af04c2345cda9385089360968ff6722ae}{Visit}} (\mbox{\hyperlink{class_start_button}{Start\+Button}} \&o) override
+void \mbox{\hyperlink{class_visitor_get_rectangle_ab165a3efbbe1f3c67f58ad54a7618615}{Visit}} (\mbox{\hyperlink{class_light_button}{Light\+Button}} \&o) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_get_rectangle_ab165a3efbbe1f3c67f58ad54a7618615}{Visit}} (\mbox{\hyperlink{class_light_button}{Light\+Button}} \&o) override
+void \mbox{\hyperlink{class_visitor_get_rectangle_a14f939b3b305f3a8ec50de0c74365236}{Visit}} (\mbox{\hyperlink{class_night_button}{Night\+Button}} \&o) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_get_rectangle_a14f939b3b305f3a8ec50de0c74365236}{Visit}} (\mbox{\hyperlink{class_night_button}{Night\+Button}} \&o) override
+void \mbox{\hyperlink{class_visitor_get_rectangle_a6061141c30fda83d7fa0bbc7e46f4d32}{Visit}} (\mbox{\hyperlink{class_light_rama}{Light\+Rama}} \&rama) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_get_rectangle_a6061141c30fda83d7fa0bbc7e46f4d32}{Visit}} (\mbox{\hyperlink{class_light_rama}{Light\+Rama}} \&rama) override
+void \mbox{\hyperlink{class_visitor_get_rectangle_aa2fcfe7155a30e710bb287e1be321fc4}{Visit}} (\mbox{\hyperlink{class_night_rama}{Night\+Rama}} \&rama) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_get_rectangle_aa2fcfe7155a30e710bb287e1be321fc4}{Visit}} (\mbox{\hyperlink{class_night_rama}{Night\+Rama}} \&rama) override
+Rectangle \mbox{\hyperlink{class_visitor_get_rectangle_a57247eca578d7802023207004ab39617}{Get\+Rama\+Night\+Animal\+Rectangle}} (int lado)
 \item 
-\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_visitor_get_rectangle_a57247eca578d7802023207004ab39617}{Get\+Rama\+Night\+Animal\+Rectangle}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} lado)
+Rectangle \mbox{\hyperlink{class_visitor_get_rectangle_a3903762557f636869b4c125026dcb0b8}{Get\+Rama\+Day\+Animal\+Rectangle}} (int lado)
 \item 
-\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_visitor_get_rectangle_a3903762557f636869b4c125026dcb0b8}{Get\+Rama\+Day\+Animal\+Rectangle}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} lado)
-\item 
-\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_visitor_get_rectangle_af426c8c4216edd882266f2ae5cf2ff96}{Get\+Rama\+Vacia\+Rectangle}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} lado)
+Rectangle \mbox{\hyperlink{class_visitor_get_rectangle_af426c8c4216edd882266f2ae5cf2ff96}{Get\+Rama\+Vacia\+Rectangle}} (int lado)
 \end{DoxyCompactItemize}
 \doxysubsection*{Otros miembros heredados}
 
 
-\doxysubsection{Documentación del constructor y destructor}
-\mbox{\Hypertarget{class_visitor_get_rectangle_a86eabddbdcf882a997526f4675b03dea}\label{class_visitor_get_rectangle_a86eabddbdcf882a997526f4675b03dea}} 
-\index{VisitorGetRectangle@{VisitorGetRectangle}!VisitorGetRectangle@{VisitorGetRectangle}}
-\index{VisitorGetRectangle@{VisitorGetRectangle}!VisitorGetRectangle@{VisitorGetRectangle}}
-\doxysubsubsection{\texorpdfstring{VisitorGetRectangle()}{VisitorGetRectangle()}}
-{\footnotesize\ttfamily Visitor\+Get\+Rectangle\+::\+Visitor\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
+\doxysubsection{Descripción detallada}
+Clase que devuelve las coordenadas de la textura de lo que necesito/visito. 
 
 \doxysubsection{Documentación de las funciones miembro}
 \mbox{\Hypertarget{class_visitor_get_rectangle_a3903762557f636869b4c125026dcb0b8}\label{class_visitor_get_rectangle_a3903762557f636869b4c125026dcb0b8}} 
 \index{VisitorGetRectangle@{VisitorGetRectangle}!GetRamaDayAnimalRectangle@{GetRamaDayAnimalRectangle}}
 \index{GetRamaDayAnimalRectangle@{GetRamaDayAnimalRectangle}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{GetRamaDayAnimalRectangle()}{GetRamaDayAnimalRectangle()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Visitor\+Get\+Rectangle\+::\+Get\+Rama\+Day\+Animal\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{lado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Rectangle Visitor\+Get\+Rectangle\+::\+Get\+Rama\+Day\+Animal\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{lado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Funcion de retorno de la textura de una \mbox{\hyperlink{class_light_rama}{Light\+Rama}} con animal 
+\begin{DoxyParams}{Parámetros}
+{\em lado} & Lado determina si es una rama a la izq (-\/1) o a la derecha (1) \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_visitor_get_rectangle_a57247eca578d7802023207004ab39617}\label{class_visitor_get_rectangle_a57247eca578d7802023207004ab39617}} 
 \index{VisitorGetRectangle@{VisitorGetRectangle}!GetRamaNightAnimalRectangle@{GetRamaNightAnimalRectangle}}
 \index{GetRamaNightAnimalRectangle@{GetRamaNightAnimalRectangle}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{GetRamaNightAnimalRectangle()}{GetRamaNightAnimalRectangle()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Visitor\+Get\+Rectangle\+::\+Get\+Rama\+Night\+Animal\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{lado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Rectangle Visitor\+Get\+Rectangle\+::\+Get\+Rama\+Night\+Animal\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{lado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Funcion de retorno de la textura de una \mbox{\hyperlink{class_night_rama}{Night\+Rama}} con animal 
+\begin{DoxyParams}{Parámetros}
+{\em lado} & Lado determina si es una rama a la izq (-\/1) o a la derecha (1) \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_visitor_get_rectangle_af426c8c4216edd882266f2ae5cf2ff96}\label{class_visitor_get_rectangle_af426c8c4216edd882266f2ae5cf2ff96}} 
 \index{VisitorGetRectangle@{VisitorGetRectangle}!GetRamaVaciaRectangle@{GetRamaVaciaRectangle}}
 \index{GetRamaVaciaRectangle@{GetRamaVaciaRectangle}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{GetRamaVaciaRectangle()}{GetRamaVaciaRectangle()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Visitor\+Get\+Rectangle\+::\+Get\+Rama\+Vacia\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{lado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Rectangle Visitor\+Get\+Rectangle\+::\+Get\+Rama\+Vacia\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{lado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Funcion de retorno de la textura de una \mbox{\hyperlink{class_rama}{Rama}} vacia 
+\begin{DoxyParams}{Parámetros}
+{\em lado} & Lado determina si es una rama a la izq (-\/1) o a la derecha (1) \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_visitor_get_rectangle_ab165a3efbbe1f3c67f58ad54a7618615}\label{class_visitor_get_rectangle_ab165a3efbbe1f3c67f58ad54a7618615}} 
 \index{VisitorGetRectangle@{VisitorGetRectangle}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_button}{Light\+Button}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_button}{Light\+Button}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita a una textura 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_light_button}{Light\+Button}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_adaa16105ebf9e1a7351a726c2e2a972d}{Visitor}}.
@@ -88,8 +108,13 @@ Implementa \mbox{\hyperlink{class_visitor_adaa16105ebf9e1a7351a726c2e2a972d}{Vis
 \index{VisitorGetRectangle@{VisitorGetRectangle}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_monkey}{Light\+Monkey}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_monkey}{Light\+Monkey}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita a una textura 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_light_monkey}{Light\+Monkey}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a13460f1429ea78b0d4ef96b95e9bd0a2}{Visitor}}.
@@ -98,8 +123,13 @@ Implementa \mbox{\hyperlink{class_visitor_a13460f1429ea78b0d4ef96b95e9bd0a2}{Vis
 \index{VisitorGetRectangle@{VisitorGetRectangle}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_rama}{Light\+Rama}} \&}]{rama }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_rama}{Light\+Rama}} \&}]{rama }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita a una textura 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_light_rama}{Light\+Rama}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a61edba687579927a9915e89409176587}{Visitor}}.
@@ -108,8 +138,13 @@ Implementa \mbox{\hyperlink{class_visitor_a61edba687579927a9915e89409176587}{Vis
 \index{VisitorGetRectangle@{VisitorGetRectangle}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_button}{Night\+Button}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_button}{Night\+Button}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita a una textura 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_night_button}{Night\+Button}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a4759ac0f7c82998a186cc1b666409b8a}{Visitor}}.
@@ -118,8 +153,13 @@ Implementa \mbox{\hyperlink{class_visitor_a4759ac0f7c82998a186cc1b666409b8a}{Vis
 \index{VisitorGetRectangle@{VisitorGetRectangle}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_monkey}{Night\+Monkey}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_monkey}{Night\+Monkey}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita a una textura 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_night_monkey}{Night\+Monkey}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a3f6f6edfa83af5e343ce8983c45c9cfb}{Visitor}}.
@@ -128,8 +168,13 @@ Implementa \mbox{\hyperlink{class_visitor_a3f6f6edfa83af5e343ce8983c45c9cfb}{Vis
 \index{VisitorGetRectangle@{VisitorGetRectangle}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_rama}{Night\+Rama}} \&}]{rama }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_rama}{Night\+Rama}} \&}]{rama }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita a una textura 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_night_rama}{Night\+Rama}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a62ae0125873782bc72fe25664e8cdc61}{Visitor}}.
@@ -138,8 +183,13 @@ Implementa \mbox{\hyperlink{class_visitor_a62ae0125873782bc72fe25664e8cdc61}{Vis
 \index{VisitorGetRectangle@{VisitorGetRectangle}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rama}{Rama}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rama}{Rama}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita a una textura 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_rama}{Rama}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_aa9c99cf2288c98f2335e6b57ec3b3916}{Visitor}}.
@@ -148,8 +198,13 @@ Implementa \mbox{\hyperlink{class_visitor_aa9c99cf2288c98f2335e6b57ec3b3916}{Vis
 \index{VisitorGetRectangle@{VisitorGetRectangle}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_skin}{Skin}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_skin}{Skin}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita a una textura 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_skin}{Skin}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_af379dead2f78695b7c2938eaa0435551}{Visitor}}.
@@ -158,8 +213,13 @@ Implementa \mbox{\hyperlink{class_visitor_af379dead2f78695b7c2938eaa0435551}{Vis
 \index{VisitorGetRectangle@{VisitorGetRectangle}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_start_button}{Start\+Button}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_start_button}{Start\+Button}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita a una textura 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_start_button}{Start\+Button}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a2ae9e3f47932dac225533527d4733e96}{Visitor}}.
@@ -168,8 +228,13 @@ Implementa \mbox{\hyperlink{class_visitor_a2ae9e3f47932dac225533527d4733e96}{Vis
 \index{VisitorGetRectangle@{VisitorGetRectangle}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree}{Tree}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree}{Tree}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita a una textura 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_tree}{Tree}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_ad18a7287da98318080bc6c086d6c2f0a}{Visitor}}.
@@ -178,8 +243,13 @@ Implementa \mbox{\hyperlink{class_visitor_ad18a7287da98318080bc6c086d6c2f0a}{Vis
 \index{VisitorGetRectangle@{VisitorGetRectangle}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorGetRectangle@{VisitorGetRectangle}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Get\+Rectangle\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita a una textura 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a7101bb681a7fb137c940f5b209bc7763}{Visitor}}.
@@ -188,4 +258,4 @@ Implementa \mbox{\hyperlink{class_visitor_a7101bb681a7fb137c940f5b209bc7763}{Vis
 
 La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_visitor_get_rectangle_8h}{Visitor\+Get\+Rectangle.\+h}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_visitor_get_rectangle_8h}{Visitor\+Get\+Rectangle.\+h}}\end{DoxyCompactItemize}

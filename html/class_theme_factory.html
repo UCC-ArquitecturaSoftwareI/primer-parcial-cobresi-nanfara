@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tankey Game: Referencia de la Clase ThemeFactory</title>
+<title>Tankey: Referencia de la Clase ThemeFactory</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Tankey Game
+   <div id="projectname">Tankey
    &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
@@ -72,6 +72,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Clase que representa el tema del juego.  
+ <a href="class_theme_factory.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_theme_factory_8h_source.html">ThemeFactory.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de ThemeFactory</div>
@@ -79,46 +82,24 @@ Diagrama de herencias de ThemeFactory</div>
  <div class="center">
   <img src="class_theme_factory.png" usemap="#ThemeFactory_map" alt=""/>
   <map id="ThemeFactory_map" name="ThemeFactory_map">
-<area href="class_light_theme_factory.html" alt="LightThemeFactory" shape="rect" coords="0,56,122,80"/>
-<area href="class_night_theme_factory.html" alt="NightThemeFactory" shape="rect" coords="132,56,254,80"/>
+<area href="class_light_theme_factory.html" title="Clase que crea objetos en tema &quot;Light&quot;." alt="LightThemeFactory" shape="rect" coords="0,56,122,80"/>
+<area href="class_night_theme_factory.html" title="Clase que crea objetos en tema &quot;Night&quot;." alt="NightThemeFactory" shape="rect" coords="132,56,254,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
-<tr class="memitem:aada234158aa2c296219a753a8d881c31"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_monkey.html">Monkey</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_theme_factory.html#aada234158aa2c296219a753a8d881c31">createMonkey</a> ()=0</td></tr>
+<tr class="memitem:aada234158aa2c296219a753a8d881c31"><td class="memItemLeft" align="right" valign="top"><a id="aada234158aa2c296219a753a8d881c31"></a>
+virtual <a class="el" href="class_monkey.html">Monkey</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_theme_factory.html#aada234158aa2c296219a753a8d881c31">createMonkey</a> ()=0</td></tr>
+<tr class="memdesc:aada234158aa2c296219a753a8d881c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">función virtual que permite crear un mono de un tema (Light/Night) <br /></td></tr>
 <tr class="separator:aada234158aa2c296219a753a8d881c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab49783f320315d97fdf56e84a5abab5e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rama.html">Rama</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_theme_factory.html#ab49783f320315d97fdf56e84a5abab5e">createRama</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> lado, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> sector)=0</td></tr>
+<tr class="memitem:ab49783f320315d97fdf56e84a5abab5e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rama.html">Rama</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_theme_factory.html#ab49783f320315d97fdf56e84a5abab5e">createRama</a> (int lado, int sector)=0</td></tr>
+<tr class="memdesc:ab49783f320315d97fdf56e84a5abab5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">función virtual que permite crear una rama de un tema (Light/Night)  <a href="class_theme_factory.html#ab49783f320315d97fdf56e84a5abab5e">Más...</a><br /></td></tr>
 <tr class="separator:ab49783f320315d97fdf56e84a5abab5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentación de las funciones miembro</h2>
-<a id="aada234158aa2c296219a753a8d881c31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aada234158aa2c296219a753a8d881c31">&#9670;&nbsp;</a></span>createMonkey()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="class_monkey.html">Monkey</a>* ThemeFactory::createMonkey </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implementado en <a class="el" href="class_night_theme_factory.html#a9a03facf6fed0a72e258aa285abd00ea">NightThemeFactory</a> y <a class="el" href="class_light_theme_factory.html#ab9249e3061959bf7fd480c113e3966e8">LightThemeFactory</a>.</p>
-
-</div>
-</div>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase que representa el tema del juego. </p>
+</div><h2 class="groupheader">Documentación de las funciones miembro</h2>
 <a id="ab49783f320315d97fdf56e84a5abab5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab49783f320315d97fdf56e84a5abab5e">&#9670;&nbsp;</a></span>createRama()</h2>
 
@@ -131,13 +112,13 @@ Métodos públicos</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="class_rama.html">Rama</a>* ThemeFactory::createRama </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>lado</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sector</em>&#160;</td>
         </tr>
         <tr>
@@ -153,12 +134,21 @@ Métodos públicos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implementado en <a class="el" href="class_night_theme_factory.html#a993621b3348c6dd13e6852def3be26b6">NightThemeFactory</a> y <a class="el" href="class_light_theme_factory.html#a530631d62dae2f9678b86cb86145ca05">LightThemeFactory</a>.</p>
+<p>función virtual que permite crear una rama de un tema (Light/Night) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lado</td><td>Lado en que se crea la rama (-1 = izquierdo / 1 = derecho) </td></tr>
+    <tr><td class="paramname">sector</td><td>Sector de la pantalla (1,2,3,4) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="class_light_theme_factory.html#a530631d62dae2f9678b86cb86145ca05">LightThemeFactory</a> y <a class="el" href="class_night_theme_factory.html#a993621b3348c6dd13e6852def3be26b6">NightThemeFactory</a>.</p>
 
 </div>
 </div>
 <hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
-<li>clases/<a class="el" href="_theme_factory_8h_source.html">ThemeFactory.h</a></li>
+<li><a class="el" href="_theme_factory_8h_source.html">ThemeFactory.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

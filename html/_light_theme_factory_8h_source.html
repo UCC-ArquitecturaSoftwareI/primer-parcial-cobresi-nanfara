@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tankey Game: Fichero Fuente clases/LightThemeFactory.h</title>
+<title>Tankey: Fichero Fuente LightThemeFactory.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Tankey Game
+   <div id="projectname">Tankey
    &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
@@ -48,6 +48,7 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,56 +63,47 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_02fe6bb0d29b159db6747b11f409a1ef.html">clases</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">LightThemeFactory.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_light_theme_factory_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by Abril on 3/5/2020.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_LIGHTTHEMEFACTORY_H</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_LIGHTTHEMEFACTORY_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_theme_factory_8h.html">ThemeFactory.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_monkey_8h.html">Monkey.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_light_monkey_8h.html">LightMonkey.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_light_rama_8h.html">LightRama.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_LIGHTTHEMEFACTORY_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_LIGHTTHEMEFACTORY_H</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_light_theme_factory.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_light_theme_factory.html">LightThemeFactory</a>: <span class="keyword">public</span> <a class="code" href="class_theme_factory.html">ThemeFactory</a>{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_light_theme_factory.html#ab9249e3061959bf7fd480c113e3966e8">   15</a></span>&#160;    <a class="code" href="class_monkey.html">Monkey</a> *<a class="code" href="class_light_theme_factory.html#ab9249e3061959bf7fd480c113e3966e8">createMonkey</a>()<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_light_monkey.html">LightMonkey</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//Color de fondo</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_light_theme_factory.html#a530631d62dae2f9678b86cb86145ca05">   20</a></span>&#160;    <a class="code" href="class_rama.html">Rama</a> *<a class="code" href="class_light_theme_factory.html#a530631d62dae2f9678b86cb86145ca05">createRama</a>(<span class="keywordtype">int</span> lado, <span class="keywordtype">int</span> sector)<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_light_rama.html">LightRama</a>(lado, sector);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_LIGHTTHEMEFACTORY_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_theme_factory_8h.html">ThemeFactory.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_monkey_8h.html">Monkey.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_light_monkey_8h.html">LightMonkey.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;LightRama.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_light_theme_factory.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_light_theme_factory.html">LightThemeFactory</a> : <span class="keyword">public</span> <a class="code" href="class_theme_factory.html">ThemeFactory</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_light_theme_factory.html#ab9249e3061959bf7fd480c113e3966e8">   29</a></span>&#160;    <a class="code" href="class_monkey.html">Monkey</a> *<a class="code" href="class_light_theme_factory.html#ab9249e3061959bf7fd480c113e3966e8">createMonkey</a>( )<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_light_monkey.html">LightMonkey</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_light_theme_factory.html#a530631d62dae2f9678b86cb86145ca05">   39</a></span>&#160;    <a class="code" href="class_rama.html">Rama</a> *<a class="code" href="class_light_theme_factory.html#a530631d62dae2f9678b86cb86145ca05">createRama</a>( <span class="keywordtype">int</span> lado , <span class="keywordtype">int</span> sector )<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_light_rama.html">LightRama</a>( lado , sector );</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_LIGHTTHEMEFACTORY_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="a_light_monkey_8h_html"><div class="ttname"><a href="_light_monkey_8h.html">LightMonkey.h</a></div></div>
 <div class="ttc" id="a_theme_factory_8h_html"><div class="ttname"><a href="_theme_factory_8h.html">ThemeFactory.h</a></div></div>
 <div class="ttc" id="a_monkey_8h_html"><div class="ttname"><a href="_monkey_8h.html">Monkey.h</a></div></div>
-<div class="ttc" id="aclass_light_theme_factory_html_ab9249e3061959bf7fd480c113e3966e8"><div class="ttname"><a href="class_light_theme_factory.html#ab9249e3061959bf7fd480c113e3966e8">LightThemeFactory::createMonkey</a></div><div class="ttdeci">Monkey * createMonkey() override</div><div class="ttdef"><b>Definition:</b> LightThemeFactory.h:15</div></div>
-<div class="ttc" id="aclass_light_monkey_html"><div class="ttname"><a href="class_light_monkey.html">LightMonkey</a></div><div class="ttdef"><b>Definition:</b> LightMonkey.h:14</div></div>
-<div class="ttc" id="aclass_light_theme_factory_html"><div class="ttname"><a href="class_light_theme_factory.html">LightThemeFactory</a></div><div class="ttdef"><b>Definition:</b> LightThemeFactory.h:13</div></div>
-<div class="ttc" id="aclass_light_theme_factory_html_a530631d62dae2f9678b86cb86145ca05"><div class="ttname"><a href="class_light_theme_factory.html#a530631d62dae2f9678b86cb86145ca05">LightThemeFactory::createRama</a></div><div class="ttdeci">Rama * createRama(int lado, int sector) override</div><div class="ttdef"><b>Definition:</b> LightThemeFactory.h:20</div></div>
-<div class="ttc" id="aclass_rama_html"><div class="ttname"><a href="class_rama.html">Rama</a></div><div class="ttdef"><b>Definition:</b> Rama.h:12</div></div>
-<div class="ttc" id="a_light_rama_8h_html"><div class="ttname"><a href="_light_rama_8h.html">LightRama.h</a></div></div>
-<div class="ttc" id="aclass_light_rama_html"><div class="ttname"><a href="class_light_rama.html">LightRama</a></div><div class="ttdef"><b>Definition:</b> LightRama.h:12</div></div>
-<div class="ttc" id="aclass_monkey_html"><div class="ttname"><a href="class_monkey.html">Monkey</a></div><div class="ttdef"><b>Definition:</b> Monkey.h:17</div></div>
-<div class="ttc" id="aclass_theme_factory_html"><div class="ttname"><a href="class_theme_factory.html">ThemeFactory</a></div><div class="ttdef"><b>Definition:</b> ThemeFactory.h:12</div></div>
+<div class="ttc" id="aclass_light_theme_factory_html_ab9249e3061959bf7fd480c113e3966e8"><div class="ttname"><a href="class_light_theme_factory.html#ab9249e3061959bf7fd480c113e3966e8">LightThemeFactory::createMonkey</a></div><div class="ttdeci">Monkey * createMonkey() override</div><div class="ttdoc">crea un LightMonkey</div><div class="ttdef"><b>Definition:</b> LightThemeFactory.h:29</div></div>
+<div class="ttc" id="aclass_light_monkey_html"><div class="ttname"><a href="class_light_monkey.html">LightMonkey</a></div><div class="ttdoc">Clase que representa a Tankey con su tema &quot;light&quot;.</div><div class="ttdef"><b>Definition:</b> LightMonkey.h:23</div></div>
+<div class="ttc" id="aclass_light_theme_factory_html"><div class="ttname"><a href="class_light_theme_factory.html">LightThemeFactory</a></div><div class="ttdoc">Clase que crea objetos en tema &quot;Light&quot;.</div><div class="ttdef"><b>Definition:</b> LightThemeFactory.h:22</div></div>
+<div class="ttc" id="aclass_light_theme_factory_html_a530631d62dae2f9678b86cb86145ca05"><div class="ttname"><a href="class_light_theme_factory.html#a530631d62dae2f9678b86cb86145ca05">LightThemeFactory::createRama</a></div><div class="ttdeci">Rama * createRama(int lado, int sector) override</div><div class="ttdoc">crea una LightRama</div><div class="ttdef"><b>Definition:</b> LightThemeFactory.h:39</div></div>
+<div class="ttc" id="aclass_rama_html"><div class="ttname"><a href="class_rama.html">Rama</a></div><div class="ttdoc">Clase que representa la rama.</div><div class="ttdef"><b>Definition:</b> Rama.h:21</div></div>
+<div class="ttc" id="aclass_light_rama_html"><div class="ttname"><a href="class_light_rama.html">LightRama</a></div><div class="ttdoc">Clase que representa a las ramas en su tema &quot;light&quot;.</div><div class="ttdef"><b>Definition:</b> LightRama.h:22</div></div>
+<div class="ttc" id="aclass_monkey_html"><div class="ttname"><a href="class_monkey.html">Monkey</a></div><div class="ttdoc">Clase que representa a Tankey en el juego.</div><div class="ttdef"><b>Definition:</b> Monkey.h:22</div></div>
+<div class="ttc" id="aclass_theme_factory_html"><div class="ttname"><a href="class_theme_factory.html">ThemeFactory</a></div><div class="ttdoc">Clase que representa el tema del juego.</div><div class="ttdef"><b>Definition:</b> ThemeFactory.h:21</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generado por &#160;<a href="http://www.doxygen.org/index.html">

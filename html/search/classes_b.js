@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['launcher_17125',['Launcher',['../struct_launcher.html',1,'']]],
-  ['light_17126',['Light',['../struct_light.html',1,'']]],
-  ['lightbutton_17127',['LightButton',['../class_light_button.html',1,'']]],
-  ['lightmonkey_17128',['LightMonkey',['../class_light_monkey.html',1,'']]],
-  ['lightrama_17129',['LightRama',['../class_light_rama.html',1,'']]],
-  ['lightspot_17130',['LightSpot',['../struct_light_spot.html',1,'']]],
-  ['lightthemefactory_17131',['LightThemeFactory',['../class_light_theme_factory.html',1,'']]]
+  ['visitable_133',['Visitable',['../class_visitable.html',1,'']]],
+  ['visitor_134',['Visitor',['../class_visitor.html',1,'']]],
+  ['visitordraw_135',['VisitorDraw',['../class_visitor_draw.html',1,'']]],
+  ['visitorgetrectangle_136',['VisitorGetRectangle',['../class_visitor_get_rectangle.html',1,'']]]
 ];

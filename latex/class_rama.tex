@@ -2,6 +2,11 @@
 \label{class_rama}\index{Rama@{Rama}}
 
 
+Clase que representa la rama.  
+
+
+
+
 {\ttfamily \#include $<$Rama.\+h$>$}
 
 Diagrama de herencias de Rama\begin{figure}[H]
@@ -13,88 +18,93 @@ Diagrama de herencias de Rama\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_rama_ae8a128e0db1f86107661e31fb748c452}{Rama}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} lado1, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sector1)
+\mbox{\hyperlink{class_rama_ae8a128e0db1f86107661e31fb748c452}{Rama}} (int lado1, int sector1)
+\begin{DoxyCompactList}\small\item\em constructor de la clase \mbox{\hyperlink{class_rama}{Rama}} \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_rama_a40d6b01c7d580591a81d6e37165243c5}{get\+Rectangle}} ()
 \item 
-\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_rama_a40d6b01c7d580591a81d6e37165243c5}{get\+Rectangle}} ()
+void \mbox{\hyperlink{class_rama_a5e9441a121a3b8a1b1747c0c9437ea40}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&v) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_rama_a490ef04b688125473f8c7c08dd4ae45e}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}})
+\mbox{\Hypertarget{class_rama_a9293b79c33561e77a5ba11948641808d}\label{class_rama_a9293b79c33561e77a5ba11948641808d}} 
+virtual void \mbox{\hyperlink{class_rama_a9293b79c33561e77a5ba11948641808d}{Move}} ()=0
+\begin{DoxyCompactList}\small\item\em cambia a la \mbox{\hyperlink{class_rama}{Rama}} de posicion \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rama_a0a98b0912035466f017e56886f13e21a}{Get\+Rectangle}} ()=0
 \item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_rama_a9293b79c33561e77a5ba11948641808d}{Move}} ()=0
-\item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_rama_a0a98b0912035466f017e56886f13e21a}{Get\+Rectangle}} ()=0
-\item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_rama_a363b1f0dc70cea532a365105d57806cd}{Draw}} ()
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{class_rama_a363b1f0dc70cea532a365105d57806cd}\label{class_rama_a363b1f0dc70cea532a365105d57806cd}} 
+virtual void \mbox{\hyperlink{class_rama_a363b1f0dc70cea532a365105d57806cd}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em grafica la \mbox{\hyperlink{class_rama}{Rama}} en pantalla \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_rama_aa142882351348840f782073f0e106ba8}{rama\+\_\+sector}}
+\mbox{\Hypertarget{class_rama_aa142882351348840f782073f0e106ba8}\label{class_rama_aa142882351348840f782073f0e106ba8}} 
+int {\bfseries rama\+\_\+sector}
 \item 
-\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_rama_a92826b5fc34c451de23574312e26dc30}{lado}}
+int \mbox{\hyperlink{class_rama_a92826b5fc34c451de23574312e26dc30}{lado}}
 \item 
-\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{class_rama_aee7c162cffa94a90eb9d8446cd1d30ff}{rama\+\_\+position}}
+Vector2 \mbox{\hyperlink{class_rama_aee7c162cffa94a90eb9d8446cd1d30ff}{rama\+\_\+position}} \{ \}
 \item 
-\mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{class_rama_ae915c5972de8d84aa4086810b6488051}{animal}}
+bool \mbox{\hyperlink{class_rama_ae915c5972de8d84aa4086810b6488051}{animal}}
 \item 
-\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_rama_af982a1bf139232fb585c24cd75890f62}{rect}}
+Rectangle \mbox{\hyperlink{class_rama_af982a1bf139232fb585c24cd75890f62}{rect}} \{ \}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Descripción detallada}
+Clase que representa la rama. 
 
 \doxysubsection{Documentación del constructor y destructor}
 \mbox{\Hypertarget{class_rama_ae8a128e0db1f86107661e31fb748c452}\label{class_rama_ae8a128e0db1f86107661e31fb748c452}} 
 \index{Rama@{Rama}!Rama@{Rama}}
 \index{Rama@{Rama}!Rama@{Rama}}
 \doxysubsubsection{\texorpdfstring{Rama()}{Rama()}}
-{\footnotesize\ttfamily Rama\+::\+Rama (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{lado1,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sector1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Rama\+::\+Rama (\begin{DoxyParamCaption}\item[{int}]{lado1,  }\item[{int}]{sector1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+constructor de la clase \mbox{\hyperlink{class_rama}{Rama}} 
+
+Rectangle value. Especifica las cordenadas de la textura que se corresponden a la rama 
+\begin{DoxyParams}{Parámetros}
+{\em lado1} & Lado en el que se va a construir la rama \\
+\hline
+{\em sector1} & Sector en el que se va a construir la rama \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_rama_a490ef04b688125473f8c7c08dd4ae45e}\label{class_rama_a490ef04b688125473f8c7c08dd4ae45e}} 
+\mbox{\Hypertarget{class_rama_a5e9441a121a3b8a1b1747c0c9437ea40}\label{class_rama_a5e9441a121a3b8a1b1747c0c9437ea40}} 
 \index{Rama@{Rama}!Accept@{Accept}}
 \index{Accept@{Accept}!Rama@{Rama}}
 \doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Rama\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Rama\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de aceptacion a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em v} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitable_a9db999616998fc36f82a31f4d7d9254d}{Visitable}}.
-
-\mbox{\Hypertarget{class_rama_a363b1f0dc70cea532a365105d57806cd}\label{class_rama_a363b1f0dc70cea532a365105d57806cd}} 
-\index{Rama@{Rama}!Draw@{Draw}}
-\index{Draw@{Draw}!Rama@{Rama}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Rama\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Reimplementado en \mbox{\hyperlink{class_night_rama_aa08013f841dcb5f0f4b7098784521701}{Night\+Rama}} y \mbox{\hyperlink{class_light_rama_ad1cf2f215a9b77806c74ab482bad424e}{Light\+Rama}}.
 
 \mbox{\Hypertarget{class_rama_a40d6b01c7d580591a81d6e37165243c5}\label{class_rama_a40d6b01c7d580591a81d6e37165243c5}} 
 \index{Rama@{Rama}!getRectangle@{getRectangle}}
 \index{getRectangle@{getRectangle}!Rama@{Rama}}
 \doxysubsubsection{\texorpdfstring{getRectangle()}{getRectangle()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Rama\+::get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Rectangle Rama\+::get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Retorna el valor almacenado en el atributo rect \begin{DoxyReturn}{Devuelve}
+
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_rama_a0a98b0912035466f017e56886f13e21a}\label{class_rama_a0a98b0912035466f017e56886f13e21a}} 
 \index{Rama@{Rama}!GetRectangle@{GetRectangle}}
 \index{GetRectangle@{GetRectangle}!Rama@{Rama}}
 \doxysubsubsection{\texorpdfstring{GetRectangle()}{GetRectangle()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Rama\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Rama\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+dependiendo de los atributos de la rama, calcula las coordenadas del rectangulo de la textura correspondiente y las coloca como el nuevo valor del atributo rect de la rama, esto permite, por ejemplo, que la imagen de la rama cambie de vacia a con animales. 
 
-
-Implementado en \mbox{\hyperlink{class_light_rama_a1382248ce7d57faf41e2b70adaacd648}{Light\+Rama}} y \mbox{\hyperlink{class_night_rama_a6de57210a74e7c2160000e22366c2571}{Night\+Rama}}.
-
-\mbox{\Hypertarget{class_rama_a9293b79c33561e77a5ba11948641808d}\label{class_rama_a9293b79c33561e77a5ba11948641808d}} 
-\index{Rama@{Rama}!Move@{Move}}
-\index{Move@{Move}!Rama@{Rama}}
-\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Rama\+::\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Implementado en \mbox{\hyperlink{class_light_rama_a466a2945e37a61b8162ffd7a809636a3}{Light\+Rama}} y \mbox{\hyperlink{class_night_rama_ae5e2c9faf3da8a6df2675bb175bdc5ec}{Night\+Rama}}.
+Implementado en \mbox{\hyperlink{class_light_rama_a6a4c7ac9baa37304675435c015bed3a7}{Light\+Rama}} y \mbox{\hyperlink{class_night_rama_a80b6b7af57ebacd1f3e44a0f9b0273bb}{Night\+Rama}}.
 
 
 
@@ -103,35 +113,29 @@ Implementado en \mbox{\hyperlink{class_light_rama_a466a2945e37a61b8162ffd7a80963
 \index{Rama@{Rama}!animal@{animal}}
 \index{animal@{animal}!Rama@{Rama}}
 \doxysubsubsection{\texorpdfstring{animal}{animal}}
-{\footnotesize\ttfamily \mbox{\hyperlink{raylib-build_2src_2raudio_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Rama\+::animal}
+{\footnotesize\ttfamily bool Rama\+::animal}
 
-\mbox{\Hypertarget{class_rama_a92826b5fc34c451de23574312e26dc30}\label{class_rama_a92826b5fc34c451de23574312e26dc30}} 
+Vector2 value. Especifica la posicion de la rama \mbox{\Hypertarget{class_rama_a92826b5fc34c451de23574312e26dc30}\label{class_rama_a92826b5fc34c451de23574312e26dc30}} 
 \index{Rama@{Rama}!lado@{lado}}
 \index{lado@{lado}!Rama@{Rama}}
 \doxysubsubsection{\texorpdfstring{lado}{lado}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Rama\+::lado}
+{\footnotesize\ttfamily int Rama\+::lado}
 
-\mbox{\Hypertarget{class_rama_aee7c162cffa94a90eb9d8446cd1d30ff}\label{class_rama_aee7c162cffa94a90eb9d8446cd1d30ff}} 
+int value. Especifica el sector de la rama (existen 4 posiciones posibles, comenzando desde la 1) \mbox{\Hypertarget{class_rama_aee7c162cffa94a90eb9d8446cd1d30ff}\label{class_rama_aee7c162cffa94a90eb9d8446cd1d30ff}} 
 \index{Rama@{Rama}!rama\_position@{rama\_position}}
 \index{rama\_position@{rama\_position}!Rama@{Rama}}
 \doxysubsubsection{\texorpdfstring{rama\_position}{rama\_position}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} Rama\+::rama\+\_\+position}
+{\footnotesize\ttfamily Vector2 Rama\+::rama\+\_\+position \{ \}}
 
-\mbox{\Hypertarget{class_rama_aa142882351348840f782073f0e106ba8}\label{class_rama_aa142882351348840f782073f0e106ba8}} 
-\index{Rama@{Rama}!rama\_sector@{rama\_sector}}
-\index{rama\_sector@{rama\_sector}!Rama@{Rama}}
-\doxysubsubsection{\texorpdfstring{rama\_sector}{rama\_sector}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Rama\+::rama\+\_\+sector}
-
-\mbox{\Hypertarget{class_rama_af982a1bf139232fb585c24cd75890f62}\label{class_rama_af982a1bf139232fb585c24cd75890f62}} 
+int value. Especifica de que lado del árbol se encuentra la rama (-\/1 = izquierdo / 1 = derecho) \mbox{\Hypertarget{class_rama_af982a1bf139232fb585c24cd75890f62}\label{class_rama_af982a1bf139232fb585c24cd75890f62}} 
 \index{Rama@{Rama}!rect@{rect}}
 \index{rect@{rect}!Rama@{Rama}}
 \doxysubsubsection{\texorpdfstring{rect}{rect}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Rama\+::rect}
+{\footnotesize\ttfamily Rectangle Rama\+::rect \{ \}}
 
-
+bool value. Especifica si la rama tiene algún animal (verdadero) o no (falso) 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_rama_8h}{Rama.\+h}}\item 
-clases/\mbox{\hyperlink{_rama_8cpp}{Rama.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_rama_8h}{Rama.\+h}}\item 
+Rama.\+cpp\end{DoxyCompactItemize}

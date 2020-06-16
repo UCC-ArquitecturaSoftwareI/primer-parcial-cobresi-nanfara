@@ -162,7 +162,7 @@
 
 /**
 * @class StartButton
-* @brief Clase que representa a un StartButton
+* @brief Clase que representa al botón para iniciar
 */
     class StartButton: public Button
     {

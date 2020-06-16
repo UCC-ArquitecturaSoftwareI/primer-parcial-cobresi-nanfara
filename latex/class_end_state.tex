@@ -2,6 +2,11 @@
 \label{class_end_state}\index{EndState@{EndState}}
 
 
+Clase hijo de \mbox{\hyperlink{class_manager}{Manager}}, representa el estado de fin de juego.  
+
+
+
+
 {\ttfamily \#include $<$End\+State.\+h$>$}
 
 Diagrama de herencias de End\+State\begin{figure}[H]
@@ -13,67 +18,84 @@ Diagrama de herencias de End\+State\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_end_state_a32721e8759cd831ecbabc4f176a08507}{End\+State}} ()
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_end_state_a6ea688b7572b208b963b12ef79a858ff}{Update}} (\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$singleton)
-\item 
-virtual \mbox{\hyperlink{class_end_state_a77871658a40561481523012ee34f837d}{$\sim$\+End\+State}} ()
-\item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_end_state_af1a17c9af1837d3dd13a63474e7fef61}{Menu}} (\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$singleton)
-\item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_end_state_ab7c7c33ebb44e7b1b3b3b2c29f5206ad}{Game}} (\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$singleton)
-\end{DoxyCompactItemize}
-
-
-\doxysubsection{Documentación del constructor y destructor}
 \mbox{\Hypertarget{class_end_state_a32721e8759cd831ecbabc4f176a08507}\label{class_end_state_a32721e8759cd831ecbabc4f176a08507}} 
-\index{EndState@{EndState}!EndState@{EndState}}
-\index{EndState@{EndState}!EndState@{EndState}}
-\doxysubsubsection{\texorpdfstring{EndState()}{EndState()}}
-{\footnotesize\ttfamily End\+State\+::\+End\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\hyperlink{class_end_state_a32721e8759cd831ecbabc4f176a08507}{End\+State}} ()
+\begin{DoxyCompactList}\small\item\em constructor de la clase \mbox{\hyperlink{class_end_state}{End\+State}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_end_state_a7d888fd8dffbb74dbce17af0453b0a0f}{Update}} () override
+\begin{DoxyCompactList}\small\item\em actualiza los graficos para cada frame \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_end_state_a78d43a5d2e27dbd694995162633daf31}\label{class_end_state_a78d43a5d2e27dbd694995162633daf31}} 
+\mbox{\hyperlink{class_end_state_a78d43a5d2e27dbd694995162633daf31}{$\sim$\+End\+State}} () override=default
+\begin{DoxyCompactList}\small\item\em destructor de la clase \mbox{\hyperlink{class_end_state}{End\+State}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_end_state_a9d819acddd697bb0d31baa7d714ad242}{Menu}} (\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$singleton) override
+\begin{DoxyCompactList}\small\item\em cambia el estado del programa a Menu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_end_state_ae5d56987e699449f168cbd11b63067bc}{Game}} (\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$singleton) override
+\begin{DoxyCompactList}\small\item\em cambia el estado del programa a Game \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\mbox{\Hypertarget{class_end_state_a77871658a40561481523012ee34f837d}\label{class_end_state_a77871658a40561481523012ee34f837d}} 
-\index{EndState@{EndState}!````~EndState@{$\sim$EndState}}
-\index{````~EndState@{$\sim$EndState}!EndState@{EndState}}
-\doxysubsubsection{\texorpdfstring{$\sim$EndState()}{~EndState()}}
-{\footnotesize\ttfamily virtual End\+State\+::$\sim$\+End\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-
+\doxysubsection{Descripción detallada}
+Clase hijo de \mbox{\hyperlink{class_manager}{Manager}}, representa el estado de fin de juego. 
 
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_end_state_ab7c7c33ebb44e7b1b3b3b2c29f5206ad}\label{class_end_state_ab7c7c33ebb44e7b1b3b3b2c29f5206ad}} 
+\mbox{\Hypertarget{class_end_state_ae5d56987e699449f168cbd11b63067bc}\label{class_end_state_ae5d56987e699449f168cbd11b63067bc}} 
 \index{EndState@{EndState}!Game@{Game}}
 \index{Game@{Game}!EndState@{EndState}}
 \doxysubsubsection{\texorpdfstring{Game()}{Game()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} End\+State\+::\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$}]{singleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void End\+State\+::\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$}]{singleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+cambia el estado del programa a Game 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em singleton} & \\
+\hline
+\end{DoxyParams}
 
 
 Reimplementado de \mbox{\hyperlink{class_manager_aa0e34d6a9d04ce535070989b0756066f}{Manager}}.
 
-\mbox{\Hypertarget{class_end_state_af1a17c9af1837d3dd13a63474e7fef61}\label{class_end_state_af1a17c9af1837d3dd13a63474e7fef61}} 
+\mbox{\Hypertarget{class_end_state_a9d819acddd697bb0d31baa7d714ad242}\label{class_end_state_a9d819acddd697bb0d31baa7d714ad242}} 
 \index{EndState@{EndState}!Menu@{Menu}}
 \index{Menu@{Menu}!EndState@{EndState}}
 \doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} End\+State\+::\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$}]{singleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void End\+State\+::\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$}]{singleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+cambia el estado del programa a Menu 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em singleton} & \\
+\hline
+\end{DoxyParams}
 
 
 Reimplementado de \mbox{\hyperlink{class_manager_a11f0d68638b8718e8557fbbe3322eaaa}{Manager}}.
 
-\mbox{\Hypertarget{class_end_state_a6ea688b7572b208b963b12ef79a858ff}\label{class_end_state_a6ea688b7572b208b963b12ef79a858ff}} 
+\mbox{\Hypertarget{class_end_state_a7d888fd8dffbb74dbce17af0453b0a0f}\label{class_end_state_a7d888fd8dffbb74dbce17af0453b0a0f}} 
 \index{EndState@{EndState}!Update@{Update}}
 \index{Update@{Update}!EndState@{EndState}}
 \doxysubsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} End\+State\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_singleton_game}{Singleton\+Game}} $\ast$}]{singleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void End\+State\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Reimplementado de \mbox{\hyperlink{class_manager_a712921eb550bc62ad425c5a395fbaf19}{Manager}}.
+actualiza los graficos para cada frame 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em singleton} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementado de \mbox{\hyperlink{class_manager_a151953c44ccb959ebd1b2889b925f1b3}{Manager}}.
 
 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_end_state_8h}{End\+State.\+h}}\item 
-clases/\mbox{\hyperlink{_end_state_8cpp}{End\+State.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_end_state_8h}{End\+State.\+h}}\item 
+End\+State.\+cpp\end{DoxyCompactItemize}

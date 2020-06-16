@@ -1,7 +1,7 @@
 #include "EndState.h"
 #include "SingletonGame.h"
 
-void EndState::Update( SingletonGame *singleton ) {
+void EndState::Update(  ) {
     SingletonGame & game = SingletonGame::get( );
     BeginDrawing( );
     ClearBackground( game.colorBackground );

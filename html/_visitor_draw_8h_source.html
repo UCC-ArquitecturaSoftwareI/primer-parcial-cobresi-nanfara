@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tankey Game: Fichero Fuente clases/VisitorDraw.h</title>
+<title>Tankey: Fichero Fuente VisitorDraw.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Tankey Game
+   <div id="projectname">Tankey
    &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
@@ -48,6 +48,7 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,106 +63,94 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_02fe6bb0d29b159db6747b11f409a1ef.html">clases</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">VisitorDraw.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_visitor_draw_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by Abril on 1/6/2020.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_VISITORDRAW_H</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_VISITORDRAW_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_visitor_8h.html">Visitor.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_light_monkey_8h.html">LightMonkey.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_light_rama_8h.html">LightRama.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_night_rama_8h.html">NightRama.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_night_monkey_8h.html">NightMonkey.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tree_8h.html">Tree.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_button_8h.html">Button.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_rama_8h.html">Rama.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_monkey_8h.html">Monkey.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tree_vetas_8h.html">TreeVetas.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;raylib.h&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_visitor_draw.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_visitor_draw.html">VisitorDraw</a>: <span class="keyword">public</span> <a class="code" href="class_visitor.html">Visitor</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_visitor_draw.html#a00d1b58acb5945d1f83474ff3180ca3b">   26</a></span>&#160;    <a class="code" href="class_visitor_draw.html#a00d1b58acb5945d1f83474ff3180ca3b">VisitorDraw</a>():<a class="code" href="class_visitor.html">Visitor</a>(){</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_night_monkey.html">NightMonkey</a> &amp;monkey) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_light_monkey.html">LightMonkey</a> &amp;monkey) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_tree.html">Tree</a> &amp;tree) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_tree_vetas.html">TreeVetas</a> &amp;tree) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_rama.html">Rama</a> &amp;rama) <span class="keyword">override</span>;</div>
+<a href="_visitor_draw_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_VISITORDRAW_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_VISITORDRAW_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_visitor_8h.html">Visitor.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_light_monkey_8h.html">LightMonkey.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;LightRama.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;NightRama.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_night_monkey_8h.html">NightMonkey.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tree_8h.html">Tree.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_menu_elements_8h.html">MenuElements.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_rama_8h.html">Rama.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_monkey_8h.html">Monkey.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tree_vetas_8h.html">TreeVetas.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;raylib.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_visitor_draw.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_visitor_draw.html">VisitorDraw</a>: <span class="keyword">public</span> <a class="code" href="class_visitor.html">Visitor</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_visitor_draw.html#a00d1b58acb5945d1f83474ff3180ca3b">   37</a></span>&#160;    <a class="code" href="class_visitor_draw.html#a00d1b58acb5945d1f83474ff3180ca3b">VisitorDraw</a>():<a class="code" href="class_visitor.html">Visitor</a>(){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_night_button.html">NightButton</a> &amp;button) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_light_button.html">LightButton</a> &amp;button) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_start_button.html">StartButton</a> &amp;button) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_night_monkey.html">NightMonkey</a> &amp;monkey) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_visitor_draw.html#a5f7d99d3bedeaac1dbcd9c10763883fb">   46</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5f7d99d3bedeaac1dbcd9c10763883fb">Visit</a>(<a class="code" href="class_night_rama.html">NightRama</a> &amp;rama)<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_visitor_draw.html#a417d2ba79740c9ead9369bb38b7943ad">CallRama</a>(rama);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_visitor_draw.html#a89646f1bea4fed2b795467629cb2468c">   50</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a89646f1bea4fed2b795467629cb2468c">Visit</a>(<a class="code" href="class_light_rama.html">LightRama</a> &amp;rama)<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="class_visitor_draw.html#a417d2ba79740c9ead9369bb38b7943ad">CallRama</a>(rama);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_skin.html">Skin</a> &amp;skin) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a417d2ba79740c9ead9369bb38b7943ad">CallRama</a>(<a class="code" href="class_rama.html">Rama</a> &amp;rama);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_VISITORDRAW_H</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_light_monkey.html">LightMonkey</a> &amp;monkey) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_tree.html">Tree</a> &amp;tree) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_tree_vetas.html">TreeVetas</a> &amp;tree) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_rama.html">Rama</a> &amp;rama) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_night_button.html">NightButton</a> &amp;button) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_light_button.html">LightButton</a> &amp;button) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_start_button.html">StartButton</a> &amp;button) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_visitor_draw.html#a5f7d99d3bedeaac1dbcd9c10763883fb">   92</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5f7d99d3bedeaac1dbcd9c10763883fb">Visit</a>(<a class="code" href="class_night_rama.html">NightRama</a> &amp;rama)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="class_visitor_draw.html#a417d2ba79740c9ead9369bb38b7943ad">CallRama</a>(rama);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_visitor_draw.html#a89646f1bea4fed2b795467629cb2468c">  100</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a89646f1bea4fed2b795467629cb2468c">Visit</a>(<a class="code" href="class_light_rama.html">LightRama</a> &amp;rama)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="class_visitor_draw.html#a417d2ba79740c9ead9369bb38b7943ad">CallRama</a>(rama);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">Visit</a>(<a class="code" href="class_skin.html">Skin</a> &amp;skin) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visitor_draw.html#a417d2ba79740c9ead9369bb38b7943ad">CallRama</a>(<a class="code" href="class_rama.html">Rama</a> &amp;rama);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_VISITORDRAW_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_visitor_draw_html_a00d1b58acb5945d1f83474ff3180ca3b"><div class="ttname"><a href="class_visitor_draw.html#a00d1b58acb5945d1f83474ff3180ca3b">VisitorDraw::VisitorDraw</a></div><div class="ttdeci">VisitorDraw()</div><div class="ttdef"><b>Definition:</b> VisitorDraw.h:26</div></div>
-<div class="ttc" id="aclass_start_button_html"><div class="ttname"><a href="class_start_button.html">StartButton</a></div><div class="ttdef"><b>Definition:</b> Button.h:81</div></div>
+<div class="ttc" id="aclass_visitor_draw_html_a00d1b58acb5945d1f83474ff3180ca3b"><div class="ttname"><a href="class_visitor_draw.html#a00d1b58acb5945d1f83474ff3180ca3b">VisitorDraw::VisitorDraw</a></div><div class="ttdeci">VisitorDraw()</div><div class="ttdoc">constructor de VisitorDraw</div><div class="ttdef"><b>Definition:</b> VisitorDraw.h:37</div></div>
+<div class="ttc" id="aclass_start_button_html"><div class="ttname"><a href="class_start_button.html">StartButton</a></div><div class="ttdoc">Clase que representa al botón para iniciar.</div><div class="ttdef"><b>Definition:</b> MenuElements.h:168</div></div>
 <div class="ttc" id="a_light_monkey_8h_html"><div class="ttname"><a href="_light_monkey_8h.html">LightMonkey.h</a></div></div>
 <div class="ttc" id="a_night_monkey_8h_html"><div class="ttname"><a href="_night_monkey_8h.html">NightMonkey.h</a></div></div>
-<div class="ttc" id="a_night_rama_8h_html"><div class="ttname"><a href="_night_rama_8h.html">NightRama.h</a></div></div>
-<div class="ttc" id="a_button_8h_html"><div class="ttname"><a href="_button_8h.html">Button.h</a></div></div>
+<div class="ttc" id="a_menu_elements_8h_html"><div class="ttname"><a href="_menu_elements_8h.html">MenuElements.h</a></div></div>
 <div class="ttc" id="a_monkey_8h_html"><div class="ttname"><a href="_monkey_8h.html">Monkey.h</a></div></div>
-<div class="ttc" id="aclass_night_button_html"><div class="ttname"><a href="class_night_button.html">NightButton</a></div><div class="ttdef"><b>Definition:</b> Button.h:53</div></div>
-<div class="ttc" id="aclass_visitor_draw_html_a89646f1bea4fed2b795467629cb2468c"><div class="ttname"><a href="class_visitor_draw.html#a89646f1bea4fed2b795467629cb2468c">VisitorDraw::Visit</a></div><div class="ttdeci">void Visit(LightRama &amp;rama) override</div><div class="ttdef"><b>Definition:</b> VisitorDraw.h:50</div></div>
-<div class="ttc" id="aclass_light_button_html"><div class="ttname"><a href="class_light_button.html">LightButton</a></div><div class="ttdef"><b>Definition:</b> Button.h:25</div></div>
+<div class="ttc" id="aclass_night_button_html"><div class="ttname"><a href="class_night_button.html">NightButton</a></div><div class="ttdoc">Clase que representa a boton en su tema night.</div><div class="ttdef"><b>Definition:</b> MenuElements.h:113</div></div>
+<div class="ttc" id="aclass_visitor_draw_html_a89646f1bea4fed2b795467629cb2468c"><div class="ttname"><a href="class_visitor_draw.html#a89646f1bea4fed2b795467629cb2468c">VisitorDraw::Visit</a></div><div class="ttdeci">void Visit(LightRama &amp;rama) override</div><div class="ttdef"><b>Definition:</b> VisitorDraw.h:100</div></div>
+<div class="ttc" id="aclass_light_button_html"><div class="ttname"><a href="class_light_button.html">LightButton</a></div><div class="ttdoc">Clase que representa a un Boton en su tema Light.</div><div class="ttdef"><b>Definition:</b> MenuElements.h:60</div></div>
 <div class="ttc" id="a_rama_8h_html"><div class="ttname"><a href="_rama_8h.html">Rama.h</a></div></div>
 <div class="ttc" id="aclass_visitor_draw_html_a5aab657a3ec71f6ecc7ff5bd2f9e34e3"><div class="ttname"><a href="class_visitor_draw.html#a5aab657a3ec71f6ecc7ff5bd2f9e34e3">VisitorDraw::Visit</a></div><div class="ttdeci">void Visit(NightMonkey &amp;monkey) override</div><div class="ttdef"><b>Definition:</b> VisitorDraw.cpp:10</div></div>
-<div class="ttc" id="aclass_tree_vetas_html"><div class="ttname"><a href="class_tree_vetas.html">TreeVetas</a></div><div class="ttdef"><b>Definition:</b> TreeVetas.h:13</div></div>
-<div class="ttc" id="aclass_light_monkey_html"><div class="ttname"><a href="class_light_monkey.html">LightMonkey</a></div><div class="ttdef"><b>Definition:</b> LightMonkey.h:14</div></div>
+<div class="ttc" id="aclass_tree_vetas_html"><div class="ttname"><a href="class_tree_vetas.html">TreeVetas</a></div><div class="ttdoc">Clase que representa al arbol con trama de vetas.</div><div class="ttdef"><b>Definition:</b> TreeVetas.h:22</div></div>
+<div class="ttc" id="aclass_light_monkey_html"><div class="ttname"><a href="class_light_monkey.html">LightMonkey</a></div><div class="ttdoc">Clase que representa a Tankey con su tema &quot;light&quot;.</div><div class="ttdef"><b>Definition:</b> LightMonkey.h:23</div></div>
 <div class="ttc" id="aclass_visitor_draw_html_a417d2ba79740c9ead9369bb38b7943ad"><div class="ttname"><a href="class_visitor_draw.html#a417d2ba79740c9ead9369bb38b7943ad">VisitorDraw::CallRama</a></div><div class="ttdeci">void CallRama(Rama &amp;rama)</div><div class="ttdef"><b>Definition:</b> VisitorDraw.cpp:183</div></div>
-<div class="ttc" id="aclass_night_monkey_html"><div class="ttname"><a href="class_night_monkey.html">NightMonkey</a></div><div class="ttdef"><b>Definition:</b> NightMonkey.h:16</div></div>
-<div class="ttc" id="aclass_visitor_draw_html"><div class="ttname"><a href="class_visitor_draw.html">VisitorDraw</a></div><div class="ttdef"><b>Definition:</b> VisitorDraw.h:24</div></div>
-<div class="ttc" id="aclass_rama_html"><div class="ttname"><a href="class_rama.html">Rama</a></div><div class="ttdef"><b>Definition:</b> Rama.h:12</div></div>
-<div class="ttc" id="aclass_visitor_draw_html_a5f7d99d3bedeaac1dbcd9c10763883fb"><div class="ttname"><a href="class_visitor_draw.html#a5f7d99d3bedeaac1dbcd9c10763883fb">VisitorDraw::Visit</a></div><div class="ttdeci">void Visit(NightRama &amp;rama) override</div><div class="ttdef"><b>Definition:</b> VisitorDraw.h:46</div></div>
-<div class="ttc" id="aclass_visitor_html"><div class="ttname"><a href="class_visitor.html">Visitor</a></div><div class="ttdef"><b>Definition:</b> Visitor.h:39</div></div>
-<div class="ttc" id="aclass_skin_html"><div class="ttname"><a href="class_skin.html">Skin</a></div><div class="ttdef"><b>Definition:</b> Button.h:114</div></div>
+<div class="ttc" id="aclass_night_monkey_html"><div class="ttname"><a href="class_night_monkey.html">NightMonkey</a></div><div class="ttdoc">Clase que representa a Tankey con su tema &quot;Night&quot;.</div><div class="ttdef"><b>Definition:</b> NightMonkey.h:23</div></div>
+<div class="ttc" id="aclass_visitor_draw_html"><div class="ttname"><a href="class_visitor_draw.html">VisitorDraw</a></div><div class="ttdoc">Clase que dibuja lo que se visitó</div><div class="ttdef"><b>Definition:</b> VisitorDraw.h:32</div></div>
+<div class="ttc" id="aclass_rama_html"><div class="ttname"><a href="class_rama.html">Rama</a></div><div class="ttdoc">Clase que representa la rama.</div><div class="ttdef"><b>Definition:</b> Rama.h:21</div></div>
+<div class="ttc" id="aclass_visitor_draw_html_a5f7d99d3bedeaac1dbcd9c10763883fb"><div class="ttname"><a href="class_visitor_draw.html#a5f7d99d3bedeaac1dbcd9c10763883fb">VisitorDraw::Visit</a></div><div class="ttdeci">void Visit(NightRama &amp;rama) override</div><div class="ttdef"><b>Definition:</b> VisitorDraw.h:92</div></div>
+<div class="ttc" id="aclass_visitor_html"><div class="ttname"><a href="class_visitor.html">Visitor</a></div><div class="ttdoc">Clase que visita un objeto.</div><div class="ttdef"><b>Definition:</b> Visitor.h:48</div></div>
+<div class="ttc" id="aclass_skin_html"><div class="ttname"><a href="class_skin.html">Skin</a></div><div class="ttdoc">Clase que representa la textura del boton.</div><div class="ttdef"><b>Definition:</b> MenuElements.h:223</div></div>
 <div class="ttc" id="a_visitor_8h_html"><div class="ttname"><a href="_visitor_8h.html">Visitor.h</a></div></div>
-<div class="ttc" id="a_light_rama_8h_html"><div class="ttname"><a href="_light_rama_8h.html">LightRama.h</a></div></div>
 <div class="ttc" id="a_tree_8h_html"><div class="ttname"><a href="_tree_8h.html">Tree.h</a></div></div>
 <div class="ttc" id="a_tree_vetas_8h_html"><div class="ttname"><a href="_tree_vetas_8h.html">TreeVetas.h</a></div></div>
-<div class="ttc" id="aclass_light_rama_html"><div class="ttname"><a href="class_light_rama.html">LightRama</a></div><div class="ttdef"><b>Definition:</b> LightRama.h:12</div></div>
-<div class="ttc" id="aclass_night_rama_html"><div class="ttname"><a href="class_night_rama.html">NightRama</a></div><div class="ttdef"><b>Definition:</b> NightRama.h:12</div></div>
-<div class="ttc" id="aclass_tree_html"><div class="ttname"><a href="class_tree.html">Tree</a></div><div class="ttdef"><b>Definition:</b> Tree.h:16</div></div>
+<div class="ttc" id="aclass_light_rama_html"><div class="ttname"><a href="class_light_rama.html">LightRama</a></div><div class="ttdoc">Clase que representa a las ramas en su tema &quot;light&quot;.</div><div class="ttdef"><b>Definition:</b> LightRama.h:22</div></div>
+<div class="ttc" id="aclass_night_rama_html"><div class="ttname"><a href="class_night_rama.html">NightRama</a></div><div class="ttdoc">Clase que representa a las ramas en su tema &quot;Night&quot;.</div><div class="ttdef"><b>Definition:</b> NightRama.h:22</div></div>
+<div class="ttc" id="aclass_tree_html"><div class="ttname"><a href="class_tree.html">Tree</a></div><div class="ttdoc">Clase que representa al tronco.</div><div class="ttdef"><b>Definition:</b> Tree.h:22</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generado por &#160;<a href="http://www.doxygen.org/index.html">

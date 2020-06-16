@@ -44,7 +44,7 @@ class Monkey;
 class Skin;
 
 /**
- * @class NightRama
+ * @class SingletonGame
  * @brief Clase que instancia de manera unica la creacion de todos los objetos del programa
  */
 
@@ -59,22 +59,22 @@ private:
 
 
 public:
-    Texture2D sprite;               /** Crea Texture2D*/
+    Texture2D sprite{};               /** Crea Texture2D*/
     Window window;                  /** Crea Window*/
     Audio music;                    /** Crea Audio*/
-    Monkey *player;                 /** Crea puntero a un Monkey*/
-    SuperTree *tree;                /** Crea puntero a un SuperTree*/
-    bool GameOver;                  /** bool value GameOver. Especifica si ocurre una colision*/
+    Monkey *player{};                 /** Crea puntero a un Monkey*/
+    SuperTree *tree{};                /** Crea puntero a un SuperTree*/
+    bool GameOver{};                  /** bool value GameOver. Especifica si ocurre una colision*/
     int score;                      /** int value. Especifica el puntaje del juego*/
     barLife barL;                   /** Crea barLife*/
-    ThemeFactory *tf;               /** Crea puntero a un ThemeFactore*/
+    ThemeFactory *tf{};               /** Crea puntero a un ThemeFactore*/
     bool start;                     /** bool value start. Especifica si el juego dio inicio*/
-    Color colorBackground;          /** Crea colorBackground*/
-    Color colorText;                /** Crea colorText*/
+    Color colorBackground{};          /** Crea colorBackground*/
+    Color colorText{};                /** Crea colorText*/
     std::vector<Rama*> Ramas;       /** Crea un vector que va a conterner las 4 ramas que se muestran por pantalla*/
     std::vector<Button*> Botones;   /** Crea un vector que va a conterner los 3 tipos de botones utilizados en el juego*/
-    Vector2 mousePoint;             /** Especifica las coordenadas del mouse sobre la pantalla*/
-    Skin *TankeySkin;               /** Crea puntero a un TankeySkin*/
+    Vector2 mousePoint{};             /** Especifica las coordenadas del mouse sobre la pantalla*/
+    Skin *TankeySkin{};               /** Crea puntero a un TankeySkin*/
     int tema;                       /** int value. Especifica el tema del juego en 1 o 0 para lighttheme o nighttheme*/
     enum State                      /** enum value. Enumeramos un grupo de elementos comunes*/
     {

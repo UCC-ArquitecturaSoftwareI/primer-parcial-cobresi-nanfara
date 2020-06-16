@@ -2,7 +2,12 @@
 \label{class_skin}\index{Skin@{Skin}}
 
 
-{\ttfamily \#include $<$Button.\+h$>$}
+Clase que representa la textura del boton.  
+
+
+
+
+{\ttfamily \#include $<$Menu\+Elements.\+h$>$}
 
 Diagrama de herencias de Skin\begin{figure}[H]
 \begin{center}
@@ -14,19 +19,24 @@ Diagrama de herencias de Skin\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_skin_a01a28ac85e5dbc92467c959dd101e4a9}{Skin}} ()
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_skin_a60ee7314a9955dcac259e305be3b8c41}{Draw}} ()
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_skin_a85e1b2598606510ae871a878918b49c6}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}})
+\begin{DoxyCompactList}\small\item\em constructor de la clase \mbox{\hyperlink{class_skin}{Skin}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_skin_a60ee7314a9955dcac259e305be3b8c41}\label{class_skin_a60ee7314a9955dcac259e305be3b8c41}} 
+void \mbox{\hyperlink{class_skin_a60ee7314a9955dcac259e305be3b8c41}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em función que grafica un \mbox{\hyperlink{class_skin}{Skin}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_skin_a0c10c76405d313e64925c4035d19c762}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&v) override
 \end{DoxyCompactItemize}
 \doxysubsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_skin_a2e1d51a4ad51ea2f2c72f50471a96193}{tema}}
+\mbox{\Hypertarget{class_skin_a2e1d51a4ad51ea2f2c72f50471a96193}\label{class_skin_a2e1d51a4ad51ea2f2c72f50471a96193}} 
+int {\bfseries tema}
 \item 
-\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{class_skin_aefdd4b3ec8439146af68a251a38e9e4e}{position}}
+Vector2 \mbox{\hyperlink{class_skin_aefdd4b3ec8439146af68a251a38e9e4e}{position}} \{\}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Descripción detallada}
+Clase que representa la textura del boton. 
 
 \doxysubsection{Documentación del constructor y destructor}
 \mbox{\Hypertarget{class_skin_a01a28ac85e5dbc92467c959dd101e4a9}\label{class_skin_a01a28ac85e5dbc92467c959dd101e4a9}} 
@@ -37,22 +47,25 @@ Diagrama de herencias de Skin\begin{figure}[H]
 
 
 
+constructor de la clase \mbox{\hyperlink{class_skin}{Skin}} 
+
+Especifica la posicion en donde se situa el boton 
+
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_skin_a85e1b2598606510ae871a878918b49c6}\label{class_skin_a85e1b2598606510ae871a878918b49c6}} 
+\mbox{\Hypertarget{class_skin_a0c10c76405d313e64925c4035d19c762}\label{class_skin_a0c10c76405d313e64925c4035d19c762}} 
 \index{Skin@{Skin}!Accept@{Accept}}
 \index{Accept@{Accept}!Skin@{Skin}}
 \doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Skin\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Skin\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de aceptacion a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em v} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitable_a9db999616998fc36f82a31f4d7d9254d}{Visitable}}.
-
-\mbox{\Hypertarget{class_skin_a60ee7314a9955dcac259e305be3b8c41}\label{class_skin_a60ee7314a9955dcac259e305be3b8c41}} 
-\index{Skin@{Skin}!Draw@{Draw}}
-\index{Draw@{Draw}!Skin@{Skin}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Skin\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -61,17 +74,11 @@ Implementa \mbox{\hyperlink{class_visitable_a9db999616998fc36f82a31f4d7d9254d}{V
 \index{Skin@{Skin}!position@{position}}
 \index{position@{position}!Skin@{Skin}}
 \doxysubsubsection{\texorpdfstring{position}{position}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} Skin\+::position}
+{\footnotesize\ttfamily Vector2 Skin\+::position \{\}}
 
-\mbox{\Hypertarget{class_skin_a2e1d51a4ad51ea2f2c72f50471a96193}\label{class_skin_a2e1d51a4ad51ea2f2c72f50471a96193}} 
-\index{Skin@{Skin}!tema@{tema}}
-\index{tema@{tema}!Skin@{Skin}}
-\doxysubsubsection{\texorpdfstring{tema}{tema}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Skin\+::tema}
-
-
+int value. Especifica el tema del boton, puede tomar valores 0 o 1 para lighttheme o nighttheme 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_button_8h}{Button.\+h}}\item
-clases/\mbox{\hyperlink{_button_8cpp}{Button.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_menu_elements_8h}{Menu\+Elements.\+h}}\item 
+Menu\+Elements.\+cpp\end{DoxyCompactItemize}

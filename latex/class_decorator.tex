@@ -2,6 +2,11 @@
 \label{class_decorator}\index{Decorator@{Decorator}}
 
 
+Clase padre de las decoraciones concretas.  
+
+
+
+
 {\ttfamily \#include $<$Decorator.\+h$>$}
 
 Diagrama de herencias de Decorator\begin{figure}[H]
@@ -10,56 +15,38 @@ Diagrama de herencias de Decorator\begin{figure}[H]
 \includegraphics[height=4.000000cm]{class_decorator}
 \end{center}
 \end{figure}
-\doxysubsection*{Métodos públicos}
+\doxysubsection*{Métodos protegidos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_decorator_a14c00a1373f6c2632f8b1cbe5f119155}{Decorator}} (\mbox{\hyperlink{class_super_tree}{Super\+Tree}} $\ast$tree)
-\item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_decorator_a221737d127d62905c522961c52f1cb66}{Draw\+Tree}} ()
-\end{DoxyCompactItemize}
-\doxysubsection*{Atributos protegidos}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{class_super_tree}{Super\+Tree}} $\ast$ \mbox{\hyperlink{class_decorator_ac07179b251152ce09800f478f08cd076}{r\+\_\+\+Super\+Tree}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em constructor de \mbox{\hyperlink{class_decorator}{Decorator}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_decorator_a221737d127d62905c522961c52f1cb66}\label{class_decorator_a221737d127d62905c522961c52f1cb66}} 
+virtual void \mbox{\hyperlink{class_decorator_a221737d127d62905c522961c52f1cb66}{Draw\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em funcion virtual que dibuja el arbol en pantalla \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Otros miembros heredados}
 
+
+\doxysubsection{Descripción detallada}
+Clase padre de las decoraciones concretas. 
 
 \doxysubsection{Documentación del constructor y destructor}
 \mbox{\Hypertarget{class_decorator_a14c00a1373f6c2632f8b1cbe5f119155}\label{class_decorator_a14c00a1373f6c2632f8b1cbe5f119155}} 
 \index{Decorator@{Decorator}!Decorator@{Decorator}}
 \index{Decorator@{Decorator}!Decorator@{Decorator}}
 \doxysubsubsection{\texorpdfstring{Decorator()}{Decorator()}}
-{\footnotesize\ttfamily Decorator\+::\+Decorator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_super_tree}{Super\+Tree}} $\ast$}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Decorator\+::\+Decorator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_super_tree}{Super\+Tree}} $\ast$}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
 
 
 
-\doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_decorator_a221737d127d62905c522961c52f1cb66}\label{class_decorator_a221737d127d62905c522961c52f1cb66}} 
-\index{Decorator@{Decorator}!DrawTree@{DrawTree}}
-\index{DrawTree@{DrawTree}!Decorator@{Decorator}}
-\doxysubsubsection{\texorpdfstring{DrawTree()}{DrawTree()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Decorator\+::\+Draw\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+constructor de \mbox{\hyperlink{class_decorator}{Decorator}} 
 
 
-
-Implementa \mbox{\hyperlink{class_super_tree_af75b1b8439d525e30270e0a06ad94a54}{Super\+Tree}}.
-
-
-
-Reimplementado en \mbox{\hyperlink{class_tree_vetas_afa344c78f4e98365a1dde47a55157319}{Tree\+Vetas}}.
-
-
-
-\doxysubsection{Documentación de los datos miembro}
-\mbox{\Hypertarget{class_decorator_ac07179b251152ce09800f478f08cd076}\label{class_decorator_ac07179b251152ce09800f478f08cd076}} 
-\index{Decorator@{Decorator}!r\_SuperTree@{r\_SuperTree}}
-\index{r\_SuperTree@{r\_SuperTree}!Decorator@{Decorator}}
-\doxysubsubsection{\texorpdfstring{r\_SuperTree}{r\_SuperTree}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_super_tree}{Super\+Tree}}$\ast$ Decorator\+::r\+\_\+\+Super\+Tree\hspace{0.3cm}{\ttfamily [protected]}}
-
+\begin{DoxyParams}{Parámetros}
+{\em tree} & \\
+\hline
+\end{DoxyParams}
 
 
 La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_decorator_8h}{Decorator.\+h}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_decorator_8h}{Decorator.\+h}}\end{DoxyCompactItemize}

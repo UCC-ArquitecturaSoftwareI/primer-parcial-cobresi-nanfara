@@ -2,6 +2,11 @@
 \label{class_theme_factory}\index{ThemeFactory@{ThemeFactory}}
 
 
+Clase que representa el tema del juego.  
+
+
+
+
 {\ttfamily \#include $<$Theme\+Factory.\+h$>$}
 
 Diagrama de herencias de Theme\+Factory\begin{figure}[H]
@@ -13,35 +18,40 @@ Diagrama de herencias de Theme\+Factory\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_theme_factory_aada234158aa2c296219a753a8d881c31}\label{class_theme_factory_aada234158aa2c296219a753a8d881c31}} 
 virtual \mbox{\hyperlink{class_monkey}{Monkey}} $\ast$ \mbox{\hyperlink{class_theme_factory_aada234158aa2c296219a753a8d881c31}{create\+Monkey}} ()=0
-\item 
-virtual \mbox{\hyperlink{class_rama}{Rama}} $\ast$ \mbox{\hyperlink{class_theme_factory_ab49783f320315d97fdf56e84a5abab5e}{create\+Rama}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} lado, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sector)=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em función virtual que permite crear un mono de un tema (Light/\+Night) \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_rama}{Rama}} $\ast$ \mbox{\hyperlink{class_theme_factory_ab49783f320315d97fdf56e84a5abab5e}{create\+Rama}} (int lado, int sector)=0
+\begin{DoxyCompactList}\small\item\em función virtual que permite crear una rama de un tema (Light/\+Night) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Descripción detallada}
+Clase que representa el tema del juego. 
 
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_theme_factory_aada234158aa2c296219a753a8d881c31}\label{class_theme_factory_aada234158aa2c296219a753a8d881c31}} 
-\index{ThemeFactory@{ThemeFactory}!createMonkey@{createMonkey}}
-\index{createMonkey@{createMonkey}!ThemeFactory@{ThemeFactory}}
-\doxysubsubsection{\texorpdfstring{createMonkey()}{createMonkey()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_monkey}{Monkey}}$\ast$ Theme\+Factory\+::create\+Monkey (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Implementado en \mbox{\hyperlink{class_night_theme_factory_a9a03facf6fed0a72e258aa285abd00ea}{Night\+Theme\+Factory}} y \mbox{\hyperlink{class_light_theme_factory_ab9249e3061959bf7fd480c113e3966e8}{Light\+Theme\+Factory}}.
-
 \mbox{\Hypertarget{class_theme_factory_ab49783f320315d97fdf56e84a5abab5e}\label{class_theme_factory_ab49783f320315d97fdf56e84a5abab5e}} 
 \index{ThemeFactory@{ThemeFactory}!createRama@{createRama}}
 \index{createRama@{createRama}!ThemeFactory@{ThemeFactory}}
 \doxysubsubsection{\texorpdfstring{createRama()}{createRama()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_rama}{Rama}}$\ast$ Theme\+Factory\+::create\+Rama (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{lado,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_rama}{Rama}}$\ast$ Theme\+Factory\+::create\+Rama (\begin{DoxyParamCaption}\item[{int}]{lado,  }\item[{int}]{sector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Implementado en \mbox{\hyperlink{class_night_theme_factory_a993621b3348c6dd13e6852def3be26b6}{Night\+Theme\+Factory}} y \mbox{\hyperlink{class_light_theme_factory_a530631d62dae2f9678b86cb86145ca05}{Light\+Theme\+Factory}}.
+función virtual que permite crear una rama de un tema (Light/\+Night) 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em lado} & Lado en que se crea la rama (-\/1 = izquierdo / 1 = derecho) \\
+\hline
+{\em sector} & Sector de la pantalla (1,2,3,4) \\
+\hline
+\end{DoxyParams}
+
+
+Implementado en \mbox{\hyperlink{class_light_theme_factory_a530631d62dae2f9678b86cb86145ca05}{Light\+Theme\+Factory}} y \mbox{\hyperlink{class_night_theme_factory_a993621b3348c6dd13e6852def3be26b6}{Night\+Theme\+Factory}}.
 
 
 
 La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_theme_factory_8h}{Theme\+Factory.\+h}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_theme_factory_8h}{Theme\+Factory.\+h}}\end{DoxyCompactItemize}

@@ -33,7 +33,7 @@ public:
      * @brief actualiza los graficos para cada frame
      * @param singleton
      */
-    void Update( SingletonGame *singleton ) override;
+    void Update(  ) override;
 
     /**
      * @brief destructor de la clase GameState

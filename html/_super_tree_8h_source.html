@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tankey Game: Fichero Fuente clases/SuperTree.h</title>
+<title>Tankey: Fichero Fuente SuperTree.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Tankey Game
+   <div id="projectname">Tankey
    &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
@@ -48,6 +48,7 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,49 +63,39 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_02fe6bb0d29b159db6747b11f409a1ef.html">clases</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">SuperTree.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_super_tree_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by Abril on 2/6/2020.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_SUPERTREE_H</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_SUPERTREE_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_visitable_8h.html">Visitable.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_super_tree.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_super_tree.html">SuperTree</a>: <span class="keyword">public</span> <a class="code" href="class_visitable.html">Visitable</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_super_tree.html#a6c6cc12d5619fdb7002d8cddc6e4839c">   13</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_super_tree.html#a6c6cc12d5619fdb7002d8cddc6e4839c">lado</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_super_tree.html#af0d7621aab3605c0b81a41ea4187b835">   14</a></span>&#160;    <a class="code" href="struct_vector2.html">Vector2</a> <a class="code" href="class_super_tree.html#af0d7621aab3605c0b81a41ea4187b835">position</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   <span class="comment">// SuperTree(){}</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_super_tree.html#af75b1b8439d525e30270e0a06ad94a54">   16</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_super_tree.html#af75b1b8439d525e30270e0a06ad94a54">DrawTree</a>() = 0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_super_tree.html#aa6bebc1f80e93250a62bd0d5c59575b8">   17</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_super_tree.html#aa6bebc1f80e93250a62bd0d5c59575b8">Accept</a>(<a class="code" href="class_visitor.html">Visitor</a>&amp; <a class="code" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>) =0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_super_tree.html#a04e1815437d4c42c76434524a4ad9a38">   18</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_super_tree.html#a04e1815437d4c42c76434524a4ad9a38">Draw</a>() = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_SUPERTREE_H</span></div>
+<a href="_super_tree_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_SUPERTREE_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_SUPERTREE_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_visitable_8h.html">Visitable.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_super_tree.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_super_tree.html">SuperTree</a>: <span class="keyword">public</span> <a class="code" href="class_visitable.html">Visitable</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> lado{};                     </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_super_tree.html#af0d7621aab3605c0b81a41ea4187b835">   23</a></span>&#160;    Vector2 <a class="code" href="class_super_tree.html#af0d7621aab3605c0b81a41ea4187b835">position</a>{};             </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_super_tree.html#af75b1b8439d525e30270e0a06ad94a54">   28</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_super_tree.html#af75b1b8439d525e30270e0a06ad94a54">DrawTree</a>() = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_super_tree.html#a97212ae5e59b9522a5033372195e6146">   34</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_super_tree.html#a97212ae5e59b9522a5033372195e6146">Accept</a>(<a class="code" href="class_visitor.html">Visitor</a>&amp; v) <span class="keyword">override</span> =0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_super_tree.html#a04e1815437d4c42c76434524a4ad9a38">   39</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_super_tree.html#a04e1815437d4c42c76434524a4ad9a38">Draw</a>() = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_SUPERTREE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_super_tree_html_a6c6cc12d5619fdb7002d8cddc6e4839c"><div class="ttname"><a href="class_super_tree.html#a6c6cc12d5619fdb7002d8cddc6e4839c">SuperTree::lado</a></div><div class="ttdeci">int lado</div><div class="ttdef"><b>Definition:</b> SuperTree.h:13</div></div>
-<div class="ttc" id="aclass_super_tree_html_af0d7621aab3605c0b81a41ea4187b835"><div class="ttname"><a href="class_super_tree.html#af0d7621aab3605c0b81a41ea4187b835">SuperTree::position</a></div><div class="ttdeci">Vector2 position</div><div class="ttdef"><b>Definition:</b> SuperTree.h:14</div></div>
+<div class="ttc" id="aclass_super_tree_html_af0d7621aab3605c0b81a41ea4187b835"><div class="ttname"><a href="class_super_tree.html#af0d7621aab3605c0b81a41ea4187b835">SuperTree::position</a></div><div class="ttdeci">Vector2 position</div><div class="ttdef"><b>Definition:</b> SuperTree.h:23</div></div>
 <div class="ttc" id="a_visitable_8h_html"><div class="ttname"><a href="_visitable_8h.html">Visitable.h</a></div></div>
-<div class="ttc" id="aclass_super_tree_html_aa6bebc1f80e93250a62bd0d5c59575b8"><div class="ttname"><a href="class_super_tree.html#aa6bebc1f80e93250a62bd0d5c59575b8">SuperTree::Accept</a></div><div class="ttdeci">virtual void Accept(Visitor &amp;v)=0</div></div>
-<div class="ttc" id="aclass_super_tree_html_a04e1815437d4c42c76434524a4ad9a38"><div class="ttname"><a href="class_super_tree.html#a04e1815437d4c42c76434524a4ad9a38">SuperTree::Draw</a></div><div class="ttdeci">virtual void Draw()=0</div></div>
-<div class="ttc" id="astruct_vector2_html"><div class="ttname"><a href="struct_vector2.html">Vector2</a></div><div class="ttdef"><b>Definition:</b> raylib.h:171</div></div>
-<div class="ttc" id="aclass_visitable_html"><div class="ttname"><a href="class_visitable.html">Visitable</a></div><div class="ttdef"><b>Definition:</b> Visitable.h:26</div></div>
-<div class="ttc" id="aclass_visitor_html"><div class="ttname"><a href="class_visitor.html">Visitor</a></div><div class="ttdef"><b>Definition:</b> Visitor.h:39</div></div>
-<div class="ttc" id="aclass_super_tree_html"><div class="ttname"><a href="class_super_tree.html">SuperTree</a></div><div class="ttdef"><b>Definition:</b> SuperTree.h:11</div></div>
-<div class="ttc" id="aexamples_2others_2external_2include_2glad_8h_html_a14cfbe2fc2234f5504618905b69d1e06"><div class="ttname"><a href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a></div><div class="ttdeci">const GLdouble * v</div><div class="ttdef"><b>Definition:</b> glad.h:1487</div></div>
-<div class="ttc" id="aclass_super_tree_html_af75b1b8439d525e30270e0a06ad94a54"><div class="ttname"><a href="class_super_tree.html#af75b1b8439d525e30270e0a06ad94a54">SuperTree::DrawTree</a></div><div class="ttdeci">virtual void DrawTree()=0</div></div>
+<div class="ttc" id="aclass_super_tree_html_a97212ae5e59b9522a5033372195e6146"><div class="ttname"><a href="class_super_tree.html#a97212ae5e59b9522a5033372195e6146">SuperTree::Accept</a></div><div class="ttdeci">void Accept(Visitor &amp;v) override=0</div></div>
+<div class="ttc" id="aclass_super_tree_html_a04e1815437d4c42c76434524a4ad9a38"><div class="ttname"><a href="class_super_tree.html#a04e1815437d4c42c76434524a4ad9a38">SuperTree::Draw</a></div><div class="ttdeci">virtual void Draw()=0</div><div class="ttdoc">grafica al arbol en pantalla</div></div>
+<div class="ttc" id="aclass_visitable_html"><div class="ttname"><a href="class_visitable.html">Visitable</a></div><div class="ttdoc">Clase que determina a quien se esta visitando.</div><div class="ttdef"><b>Definition:</b> Visitable.h:45</div></div>
+<div class="ttc" id="aclass_visitor_html"><div class="ttname"><a href="class_visitor.html">Visitor</a></div><div class="ttdoc">Clase que visita un objeto.</div><div class="ttdef"><b>Definition:</b> Visitor.h:48</div></div>
+<div class="ttc" id="aclass_super_tree_html"><div class="ttname"><a href="class_super_tree.html">SuperTree</a></div><div class="ttdoc">Clase que representa el arbol.</div><div class="ttdef"><b>Definition:</b> SuperTree.h:20</div></div>
+<div class="ttc" id="aclass_super_tree_html_af75b1b8439d525e30270e0a06ad94a54"><div class="ttname"><a href="class_super_tree.html#af75b1b8439d525e30270e0a06ad94a54">SuperTree::DrawTree</a></div><div class="ttdeci">virtual void DrawTree()=0</div><div class="ttdoc">función virtual que indica cómo graficar al arbol en pantalla</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generado por &#160;<a href="http://www.doxygen.org/index.html">

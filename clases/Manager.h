@@ -36,21 +36,21 @@ public:
     virtual ~Manager( );
 
     /**
-     * @brief solo se accedera es esta definición de la función virtual en
+     * @brief solo se accederá es esta definición de la función virtual en
      * caso de que se solicite una transición de estado inválida
      * @param singleton
      */
     virtual void Menu( SingletonGame *singleton );
 
     /**
-     * @brief solo se accedera es esta definición de la función virtual en
+     * @brief solo se accederá es esta definición de la función virtual en
      * caso de que se solicite una transición de estado inválida
      * @param singleton
      */
     virtual void Game( SingletonGame *singleton );
 
     /**
-     * @brief solo se accedera es esta definición de la función virtual en
+     * @brief solo se accederá es esta definición de la función virtual en
      * caso de que se solicite una transición de estado inválida
      * @param singleton
      */
@@ -60,7 +60,7 @@ public:
      * @brief actualiza los graficos para cada frame
      * @param singleton
      */
-    virtual void Update( SingletonGame *singleton );
+    virtual void Update(  );
 
 };
 

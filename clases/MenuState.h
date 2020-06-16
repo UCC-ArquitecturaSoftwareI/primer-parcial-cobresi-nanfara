@@ -32,7 +32,7 @@ public:
      * @brief actualiza los graficos para cada frame
      * @param singleton
      */
-    void Update( SingletonGame *singleton ) override;
+    void Update( ) override;
 
     /**
      * @brief cambia el estado del programa a Game

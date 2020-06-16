@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tankey Game: Referencia de la Clase Button</title>
+<title>Tankey: Referencia de la Clase Button</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Tankey Game
+   <div id="projectname">Tankey
    &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
@@ -73,76 +73,58 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_button_8h_source.html">Button.h</a>&gt;</code></p>
+<p>Clase que representa a un botón.  
+ <a href="class_button.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_menu_elements_8h_source.html">MenuElements.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de Button</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_button.png" usemap="#Button_map" alt=""/>
   <map id="Button_map" name="Button_map">
-<area href="class_visitable.html" alt="Visitable" shape="rect" coords="86,0,162,24"/>
-<area href="class_light_button.html" alt="LightButton" shape="rect" coords="0,112,76,136"/>
-<area href="class_night_button.html" alt="NightButton" shape="rect" coords="86,112,162,136"/>
-<area href="class_start_button.html" alt="StartButton" shape="rect" coords="172,112,248,136"/>
+<area href="class_visitable.html" title="Clase que determina a quien se esta visitando." alt="Visitable" shape="rect" coords="86,0,162,24"/>
+<area href="class_light_button.html" title="Clase que representa a un Boton en su tema Light." alt="LightButton" shape="rect" coords="0,112,76,136"/>
+<area href="class_night_button.html" title="Clase que representa a boton en su tema night." alt="NightButton" shape="rect" coords="86,112,162,136"/>
+<area href="class_start_button.html" title="Clase que representa al botón para iniciar." alt="StartButton" shape="rect" coords="172,112,248,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
-<tr class="memitem:ae6123a2c0afa0768f49189983da0907e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ae6123a2c0afa0768f49189983da0907e">Draw</a> ()=0</td></tr>
+<tr class="memitem:ae6123a2c0afa0768f49189983da0907e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ae6123a2c0afa0768f49189983da0907e">Draw</a> ()=0</td></tr>
+<tr class="memdesc:ae6123a2c0afa0768f49189983da0907e"><td class="mdescLeft">&#160;</td><td class="mdescRight">función virtual pura que grafica un Boton  <a href="class_button.html#ae6123a2c0afa0768f49189983da0907e">Más...</a><br /></td></tr>
 <tr class="separator:ae6123a2c0afa0768f49189983da0907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e4158895f5c7c6b63355317cde596c0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a3e4158895f5c7c6b63355317cde596c0">Draw</a> (<a class="el" href="struct_vector2.html">Vector2</a> pos, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> est)=0</td></tr>
+<tr class="memitem:a3e4158895f5c7c6b63355317cde596c0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a3e4158895f5c7c6b63355317cde596c0">Draw</a> (Vector2 pos, int est)=0</td></tr>
+<tr class="memdesc:a3e4158895f5c7c6b63355317cde596c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">función virtual pura que indica cómo graficar al boton en pantalla dependiendo del boton  <a href="class_button.html#a3e4158895f5c7c6b63355317cde596c0">Más...</a><br /></td></tr>
 <tr class="separator:a3e4158895f5c7c6b63355317cde596c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5fb91984279f5dae6c590dac5b9267d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#af5fb91984279f5dae6c590dac5b9267d">GetRectangle</a> ()=0</td></tr>
+<tr class="memitem:af5fb91984279f5dae6c590dac5b9267d"><td class="memItemLeft" align="right" valign="top">virtual Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#af5fb91984279f5dae6c590dac5b9267d">GetRectangle</a> ()=0</td></tr>
 <tr class="separator:af5fb91984279f5dae6c590dac5b9267d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a928dfe00eea08dc1569aba627d4fcaa5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a928dfe00eea08dc1569aba627d4fcaa5">Accept</a> (<a class="el" href="class_visitor.html">Visitor</a> &amp;)=0</td></tr>
-<tr class="separator:a928dfe00eea08dc1569aba627d4fcaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cba548a635ed2fbd86f2bc9e35710d"><td class="memItemLeft" align="right" valign="top"><a id="a12cba548a635ed2fbd86f2bc9e35710d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a12cba548a635ed2fbd86f2bc9e35710d">Accept</a> (<a class="el" href="class_visitor.html">Visitor</a> &amp;) override=0</td></tr>
+<tr class="memdesc:a12cba548a635ed2fbd86f2bc9e35710d"><td class="mdescLeft">&#160;</td><td class="mdescRight">función de aceptación de un visitante <br /></td></tr>
+<tr class="separator:a12cba548a635ed2fbd86f2bc9e35710d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_visitable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_visitable')"><img src="closed.png" alt="-"/>&#160;Métodos públicos heredados desde <a class="el" href="class_visitable.html">Visitable</a></td></tr>
-<tr class="memitem:a7d9b9af4c6c2c12085e6fd065d21ba44 inherit pub_methods_class_visitable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visitable.html#a7d9b9af4c6c2c12085e6fd065d21ba44">Visitable</a> ()</td></tr>
-<tr class="separator:a7d9b9af4c6c2c12085e6fd065d21ba44 inherit pub_methods_class_visitable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972eff637ca2a8230330fe4b15dc8df4 inherit pub_methods_class_visitable"><td class="memItemLeft" align="right" valign="top"><a id="a972eff637ca2a8230330fe4b15dc8df4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visitable.html#a972eff637ca2a8230330fe4b15dc8df4">Visitable</a> ()=default</td></tr>
+<tr class="memdesc:a972eff637ca2a8230330fe4b15dc8df4 inherit pub_methods_class_visitable"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor de <a class="el" href="class_visitable.html" title="Clase que determina a quien se esta visitando.">Visitable</a> <br /></td></tr>
+<tr class="separator:a972eff637ca2a8230330fe4b15dc8df4 inherit pub_methods_class_visitable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Atributos públicos</h2></td></tr>
-<tr class="memitem:ab076ede42ff6b6f6428bb2f93bfcdb01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ab076ede42ff6b6f6428bb2f93bfcdb01">theme</a></td></tr>
+<tr class="memitem:ab076ede42ff6b6f6428bb2f93bfcdb01"><td class="memItemLeft" align="right" valign="top"><a id="ab076ede42ff6b6f6428bb2f93bfcdb01"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>theme</b> {}</td></tr>
 <tr class="separator:ab076ede42ff6b6f6428bb2f93bfcdb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a287023a3d03b547e9dda922953e1799a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a287023a3d03b547e9dda922953e1799a">estado</a></td></tr>
+<tr class="memitem:a287023a3d03b547e9dda922953e1799a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a287023a3d03b547e9dda922953e1799a">estado</a> {}</td></tr>
 <tr class="separator:a287023a3d03b547e9dda922953e1799a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa56a7269785e9753afea3cc0090e745"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a></td></tr>
+<tr class="memitem:afa56a7269785e9753afea3cc0090e745"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#afa56a7269785e9753afea3cc0090e745">position</a> {}</td></tr>
 <tr class="separator:afa56a7269785e9753afea3cc0090e745"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3598ffa4e13f3a252c6df4385798139c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a3598ffa4e13f3a252c6df4385798139c">rectangulo</a></td></tr>
+<tr class="memitem:a3598ffa4e13f3a252c6df4385798139c"><td class="memItemLeft" align="right" valign="top">Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a3598ffa4e13f3a252c6df4385798139c">rectangulo</a> {}</td></tr>
 <tr class="separator:a3598ffa4e13f3a252c6df4385798139c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentación de las funciones miembro</h2>
-<a id="a928dfe00eea08dc1569aba627d4fcaa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a928dfe00eea08dc1569aba627d4fcaa5">&#9670;&nbsp;</a></span>Accept()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> Button::Accept </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_visitor.html">Visitor</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implementa <a class="el" href="class_visitable.html#a9db999616998fc36f82a31f4d7d9254d">Visitable</a>.</p>
-
-<p>Implementado en <a class="el" href="class_start_button.html#ad3698892f3b35771f9b6ff6379911087">StartButton</a>, <a class="el" href="class_night_button.html#a727eb66063af6c62b61d777adecc9bee">NightButton</a> y <a class="el" href="class_light_button.html#aa359eac1ef029f80dedf33deedff5fc5">LightButton</a>.</p>
-
-</div>
-</div>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase que representa a un botón. </p>
+</div><h2 class="groupheader">Documentación de las funciones miembro</h2>
 <a id="ae6123a2c0afa0768f49189983da0907e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6123a2c0afa0768f49189983da0907e">&#9670;&nbsp;</a></span>Draw() <span class="overload">[1/2]</span></h2>
 
@@ -153,7 +135,7 @@ Atributos públicos</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> Button::Draw </td>
+          <td class="memname">virtual void Button::Draw </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -166,7 +148,10 @@ Atributos públicos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implementado en <a class="el" href="class_start_button.html#a073514a6af445a9dc7a057d79a0f054f">StartButton</a>, <a class="el" href="class_night_button.html#a9551baf7a9ccdc50000caa34ebad1050">NightButton</a> y <a class="el" href="class_light_button.html#aca2ba256bb61279cb8d51e3dbe1fb0c5">LightButton</a>.</p>
+<p>función virtual pura que grafica un Boton </p>
+<p>Rectangle value. Especifica los pixeles de la textura que pertenecen al boton </p>
+
+<p>Implementado en <a class="el" href="class_start_button.html#aaf824654af173b2a91af8337f8ab2f57">StartButton</a>, <a class="el" href="class_night_button.html#af85ab9712fc0492a9fa5afb61ac64691">NightButton</a> y <a class="el" href="class_light_button.html#a462f4347ea389da32043a6a60ba40a9c">LightButton</a>.</p>
 
 </div>
 </div>
@@ -180,15 +165,15 @@ Atributos públicos</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> Button::Draw </td>
+          <td class="memname">virtual void Button::Draw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td>
+          <td class="paramtype">Vector2&#160;</td>
           <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>est</em>&#160;</td>
         </tr>
         <tr>
@@ -204,7 +189,16 @@ Atributos públicos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implementado en <a class="el" href="class_start_button.html#a1939fe8d6b1dd4041fdd203ec2b0d01f">StartButton</a>, <a class="el" href="class_night_button.html#ad7d04ba53611a77f98636a156cfa0481">NightButton</a> y <a class="el" href="class_light_button.html#ad41ef66bc814580b705c15313e34533a">LightButton</a>.</p>
+<p>función virtual pura que indica cómo graficar al boton en pantalla dependiendo del boton </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>posicion en el que se va a dibujar el boton </td></tr>
+    <tr><td class="paramname">est</td><td>estado en el que se va a dibujarla el boton </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="class_start_button.html#a78d8db3560e070bee52f94ac58d5fff5">StartButton</a>, <a class="el" href="class_night_button.html#a71b9f99b64e3592a75aca12e33501ad2">NightButton</a> y <a class="el" href="class_light_button.html#adb0f9b9ed2f15ab9e9204a0cc6802da3">LightButton</a>.</p>
 
 </div>
 </div>
@@ -218,7 +212,7 @@ Atributos públicos</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="struct_rectangle.html">Rectangle</a> Button::GetRectangle </td>
+          <td class="memname">virtual Rectangle Button::GetRectangle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -230,8 +224,9 @@ Atributos públicos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>función virtual pura que dependiendo de los atributos del boton, calcula las coordenadas del rectangulo de la textura correspondiente y las coloca como el nuevo valor del atributo rect del boton </p>
 
-<p>Implementado en <a class="el" href="class_start_button.html#adf06b930a22f0ebba5017283267880af">StartButton</a>, <a class="el" href="class_night_button.html#a90761fa8050dfeed10ae857873699d20">NightButton</a> y <a class="el" href="class_light_button.html#adc78b10c0df1a600dcdec5ecc0227948">LightButton</a>.</p>
+<p>Implementado en <a class="el" href="class_start_button.html#ae4c6dd1572348dfd1b343624957ef8bf">StartButton</a>, <a class="el" href="class_night_button.html#a214fff31ba4c264f3a8b8dd18cfb7e0c">NightButton</a> y <a class="el" href="class_light_button.html#a0d1dec881c44e4067fecfc2daab905d7">LightButton</a>.</p>
 
 </div>
 </div>
@@ -243,10 +238,11 @@ Atributos públicos</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> Button::estado</td>
+          <td class="memname">int Button::estado {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>int value. Especifica el tema del boton, puede tomar valores 0 o 1 para lighttheme o nighttheme </p>
 
 </div>
 </div>
@@ -257,10 +253,11 @@ Atributos públicos</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_vector2.html">Vector2</a> Button::position</td>
+          <td class="memname">Vector2 Button::position {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>int value. Especifica el estado del boton, puede tomar valores 0 o 1 </p>
 
 </div>
 </div>
@@ -271,29 +268,16 @@ Atributos públicos</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_rectangle.html">Rectangle</a> Button::rectangulo</td>
+          <td class="memname">Rectangle Button::rectangulo {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab076ede42ff6b6f6428bb2f93bfcdb01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab076ede42ff6b6f6428bb2f93bfcdb01">&#9670;&nbsp;</a></span>theme</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> Button::theme</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Especifica la posicion en donde se situa el boton </p>
 
 </div>
 </div>
 <hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
-<li>clases/<a class="el" href="_button_8h_source.html">Button.h</a></li>
+<li><a class="el" href="_menu_elements_8h_source.html">MenuElements.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

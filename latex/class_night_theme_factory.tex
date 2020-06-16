@@ -2,6 +2,11 @@
 \label{class_night_theme_factory}\index{NightThemeFactory@{NightThemeFactory}}
 
 
+Clase que crea objetos en tema \char`\"{}\+Night\char`\"{}.  
+
+
+
+
 {\ttfamily \#include $<$Night\+Theme\+Factory.\+h$>$}
 
 Diagrama de herencias de Night\+Theme\+Factory\begin{figure}[H]
@@ -14,10 +19,13 @@ Diagrama de herencias de Night\+Theme\+Factory\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_monkey}{Monkey}} $\ast$ \mbox{\hyperlink{class_night_theme_factory_a9a03facf6fed0a72e258aa285abd00ea}{create\+Monkey}} () override
-\item 
-\mbox{\hyperlink{class_rama}{Rama}} $\ast$ \mbox{\hyperlink{class_night_theme_factory_a993621b3348c6dd13e6852def3be26b6}{create\+Rama}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} lado, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sector) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em crea un \mbox{\hyperlink{class_night_monkey}{Night\+Monkey}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rama}{Rama}} $\ast$ \mbox{\hyperlink{class_night_theme_factory_a993621b3348c6dd13e6852def3be26b6}{create\+Rama}} (int lado, int sector) override
+\begin{DoxyCompactList}\small\item\em crea una \mbox{\hyperlink{class_night_rama}{Night\+Rama}} \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Descripción detallada}
+Clase que crea objetos en tema \char`\"{}\+Night\char`\"{}. 
 
 \doxysubsection{Documentación de las funciones miembro}
 \mbox{\Hypertarget{class_night_theme_factory_a9a03facf6fed0a72e258aa285abd00ea}\label{class_night_theme_factory_a9a03facf6fed0a72e258aa285abd00ea}} 
@@ -28,14 +36,35 @@ Diagrama de herencias de Night\+Theme\+Factory\begin{figure}[H]
 
 
 
+crea un \mbox{\hyperlink{class_night_monkey}{Night\+Monkey}} 
+
+\begin{DoxyReturn}{Devuelve}
+\mbox{\hyperlink{class_night_monkey}{Night\+Monkey}} creado 
+\end{DoxyReturn}
+
+
 Implementa \mbox{\hyperlink{class_theme_factory_aada234158aa2c296219a753a8d881c31}{Theme\+Factory}}.
 
 \mbox{\Hypertarget{class_night_theme_factory_a993621b3348c6dd13e6852def3be26b6}\label{class_night_theme_factory_a993621b3348c6dd13e6852def3be26b6}} 
 \index{NightThemeFactory@{NightThemeFactory}!createRama@{createRama}}
 \index{createRama@{createRama}!NightThemeFactory@{NightThemeFactory}}
 \doxysubsubsection{\texorpdfstring{createRama()}{createRama()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_rama}{Rama}}$\ast$ Night\+Theme\+Factory\+::create\+Rama (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{lado,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rama}{Rama}}$\ast$ Night\+Theme\+Factory\+::create\+Rama (\begin{DoxyParamCaption}\item[{int}]{lado,  }\item[{int}]{sector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+crea una \mbox{\hyperlink{class_night_rama}{Night\+Rama}} 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em lado} & \\
+\hline
+{\em sector} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\mbox{\hyperlink{class_night_rama}{Night\+Rama}} creada 
+\end{DoxyReturn}
 
 
 Implementa \mbox{\hyperlink{class_theme_factory_ab49783f320315d97fdf56e84a5abab5e}{Theme\+Factory}}.
@@ -44,4 +73,4 @@ Implementa \mbox{\hyperlink{class_theme_factory_ab49783f320315d97fdf56e84a5abab5
 
 La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_night_theme_factory_8h}{Night\+Theme\+Factory.\+h}}\end{DoxyCompactItemize}
+Night\+Theme\+Factory.\+h\end{DoxyCompactItemize}

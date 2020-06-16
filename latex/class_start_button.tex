@@ -2,7 +2,12 @@
 \label{class_start_button}\index{StartButton@{StartButton}}
 
 
-{\ttfamily \#include $<$Button.\+h$>$}
+Clase que representa al botón para iniciar.  
+
+
+
+
+{\ttfamily \#include $<$Menu\+Elements.\+h$>$}
 
 Diagrama de herencias de Start\+Button\begin{figure}[H]
 \begin{center}
@@ -13,80 +18,77 @@ Diagrama de herencias de Start\+Button\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_start_button_a073514a6af445a9dc7a057d79a0f054f}{Draw}} ()
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_start_button_a1939fe8d6b1dd4041fdd203ec2b0d01f}{Draw}} (\mbox{\hyperlink{struct_vector2}{Vector2}} pos, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} est)
-\item 
+\mbox{\Hypertarget{class_start_button_a4e1d70591d520bdb32215f06c6b6c518}\label{class_start_button_a4e1d70591d520bdb32215f06c6b6c518}} 
 \mbox{\hyperlink{class_start_button_a4e1d70591d520bdb32215f06c6b6c518}{Start\+Button}} ()
+\begin{DoxyCompactList}\small\item\em constructor de la clase \mbox{\hyperlink{class_start_button}{Start\+Button}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_start_button_aaf824654af173b2a91af8337f8ab2f57}\label{class_start_button_aaf824654af173b2a91af8337f8ab2f57}} 
+void \mbox{\hyperlink{class_start_button_aaf824654af173b2a91af8337f8ab2f57}{Draw}} () override
+\begin{DoxyCompactList}\small\item\em función que grafica un \mbox{\hyperlink{class_start_button}{Start\+Button}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_start_button_a78d8db3560e070bee52f94ac58d5fff5}{Draw}} (Vector2 pos, int est) override
+\begin{DoxyCompactList}\small\item\em función que indica cómo graficar al boton en pantalla dependiendo del boton \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_start_button_ae4c6dd1572348dfd1b343624957ef8bf}{Get\+Rectangle}} () override
 \item 
-\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_start_button_adf06b930a22f0ebba5017283267880af}{Get\+Rectangle}} ()
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_start_button_ad806496e8f8053487a8663e7411190e4}{Set\+Theme}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} i)
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_start_button_ad3698892f3b35771f9b6ff6379911087}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}})
+void \mbox{\hyperlink{class_start_button_a963d1251f9d0975d4cd2b0676e2b28d0}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&v) override
 \end{DoxyCompactItemize}
 \doxysubsection*{Otros miembros heredados}
 
 
-\doxysubsection{Documentación del constructor y destructor}
-\mbox{\Hypertarget{class_start_button_a4e1d70591d520bdb32215f06c6b6c518}\label{class_start_button_a4e1d70591d520bdb32215f06c6b6c518}} 
-\index{StartButton@{StartButton}!StartButton@{StartButton}}
-\index{StartButton@{StartButton}!StartButton@{StartButton}}
-\doxysubsubsection{\texorpdfstring{StartButton()}{StartButton()}}
-{\footnotesize\ttfamily Start\+Button\+::\+Start\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
+\doxysubsection{Descripción detallada}
+Clase que representa al botón para iniciar. 
 
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_start_button_ad3698892f3b35771f9b6ff6379911087}\label{class_start_button_ad3698892f3b35771f9b6ff6379911087}} 
+\mbox{\Hypertarget{class_start_button_a963d1251f9d0975d4cd2b0676e2b28d0}\label{class_start_button_a963d1251f9d0975d4cd2b0676e2b28d0}} 
 \index{StartButton@{StartButton}!Accept@{Accept}}
 \index{Accept@{Accept}!StartButton@{StartButton}}
 \doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Start\+Button\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Start\+Button\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funcion de aceptacion a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em v} & \\
+\hline
+\end{DoxyParams}
 
 
+Implementa \mbox{\hyperlink{class_button_a12cba548a635ed2fbd86f2bc9e35710d}{Button}}.
 
-Implementa \mbox{\hyperlink{class_button_a928dfe00eea08dc1569aba627d4fcaa5}{Button}}.
-
-\mbox{\Hypertarget{class_start_button_a073514a6af445a9dc7a057d79a0f054f}\label{class_start_button_a073514a6af445a9dc7a057d79a0f054f}} 
+\mbox{\Hypertarget{class_start_button_a78d8db3560e070bee52f94ac58d5fff5}\label{class_start_button_a78d8db3560e070bee52f94ac58d5fff5}} 
 \index{StartButton@{StartButton}!Draw@{Draw}}
 \index{Draw@{Draw}!StartButton@{StartButton}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Start\+Button\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Start\+Button\+::\+Draw (\begin{DoxyParamCaption}\item[{Vector2}]{pos,  }\item[{int}]{est }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implementa \mbox{\hyperlink{class_button_ae6123a2c0afa0768f49189983da0907e}{Button}}.
+función que indica cómo graficar al boton en pantalla dependiendo del boton 
 
-\mbox{\Hypertarget{class_start_button_a1939fe8d6b1dd4041fdd203ec2b0d01f}\label{class_start_button_a1939fe8d6b1dd4041fdd203ec2b0d01f}} 
-\index{StartButton@{StartButton}!Draw@{Draw}}
-\index{Draw@{Draw}!StartButton@{StartButton}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Start\+Button\+::\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{pos,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{est }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+\begin{DoxyParams}{Parámetros}
+{\em pos} & posicion en el que se va a dibujar el boton \\
+\hline
+{\em est} & estado en el que se va a dibujarla el boton \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_button_a3e4158895f5c7c6b63355317cde596c0}{Button}}.
 
-\mbox{\Hypertarget{class_start_button_adf06b930a22f0ebba5017283267880af}\label{class_start_button_adf06b930a22f0ebba5017283267880af}} 
+\mbox{\Hypertarget{class_start_button_ae4c6dd1572348dfd1b343624957ef8bf}\label{class_start_button_ae4c6dd1572348dfd1b343624957ef8bf}} 
 \index{StartButton@{StartButton}!GetRectangle@{GetRectangle}}
 \index{GetRectangle@{GetRectangle}!StartButton@{StartButton}}
 \doxysubsubsection{\texorpdfstring{GetRectangle()}{GetRectangle()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Start\+Button\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily Rectangle Start\+Button\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Retorna el valor almacenado en el atributo rect \begin{DoxyReturn}{Devuelve}
+
+\end{DoxyReturn}
 
 
 Implementa \mbox{\hyperlink{class_button_af5fb91984279f5dae6c590dac5b9267d}{Button}}.
-
-\mbox{\Hypertarget{class_start_button_ad806496e8f8053487a8663e7411190e4}\label{class_start_button_ad806496e8f8053487a8663e7411190e4}} 
-\index{StartButton@{StartButton}!SetTheme@{SetTheme}}
-\index{SetTheme@{SetTheme}!StartButton@{StartButton}}
-\doxysubsubsection{\texorpdfstring{SetTheme()}{SetTheme()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Start\+Button\+::\+Set\+Theme (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_button_8h}{Button.\+h}}\item
-clases/\mbox{\hyperlink{_button_8cpp}{Button.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_menu_elements_8h}{Menu\+Elements.\+h}}\item 
+Menu\+Elements.\+cpp\end{DoxyCompactItemize}

@@ -43,11 +43,10 @@ void SingletonGame::Game() {
 }
 
 void SingletonGame::Update() {
-    m_pState->Update(this);
+    m_pState->Update( );
 }
 
 SingletonGame::SingletonGame(): m_pState(new MenuState()) {
-    bool GameOver;
     score = 0;
     GameOver = false;
     start = false;

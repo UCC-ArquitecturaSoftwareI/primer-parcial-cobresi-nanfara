@@ -2,6 +2,11 @@
 \label{class_light_monkey}\index{LightMonkey@{LightMonkey}}
 
 
+Clase que representa a Tankey con su tema \char`\"{}light\char`\"{}.  
+
+
+
+
 {\ttfamily \#include $<$Light\+Monkey.\+h$>$}
 
 Diagrama de herencias de Light\+Monkey\begin{figure}[H]
@@ -13,48 +18,39 @@ Diagrama de herencias de Light\+Monkey\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_light_monkey_a35f2888c21c374fb4db413a375b8bf0e}\label{class_light_monkey_a35f2888c21c374fb4db413a375b8bf0e}} 
 \mbox{\hyperlink{class_light_monkey_a35f2888c21c374fb4db413a375b8bf0e}{Light\+Monkey}} ()
+\begin{DoxyCompactList}\small\item\em constructor de la clase \mbox{\hyperlink{class_light_monkey}{Light\+Monkey}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_light_monkey_aba5ff12281990b7451f229e1c4fcd4d8}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&v) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_light_monkey_aba5ff12281990b7451f229e1c4fcd4d8}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}}) override
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_light_monkey_a4aa87d36433656c2d112dba9d1d76d60}{Draw}} () override
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{class_light_monkey_a4aa87d36433656c2d112dba9d1d76d60}\label{class_light_monkey_a4aa87d36433656c2d112dba9d1d76d60}} 
+void \mbox{\hyperlink{class_light_monkey_a4aa87d36433656c2d112dba9d1d76d60}{Draw}} () override
+\begin{DoxyCompactList}\small\item\em grafica el \mbox{\hyperlink{class_light_monkey}{Light\+Monkey}} en pantalla \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Otros miembros heredados}
 
 
-\doxysubsection{Documentación del constructor y destructor}
-\mbox{\Hypertarget{class_light_monkey_a35f2888c21c374fb4db413a375b8bf0e}\label{class_light_monkey_a35f2888c21c374fb4db413a375b8bf0e}} 
-\index{LightMonkey@{LightMonkey}!LightMonkey@{LightMonkey}}
-\index{LightMonkey@{LightMonkey}!LightMonkey@{LightMonkey}}
-\doxysubsubsection{\texorpdfstring{LightMonkey()}{LightMonkey()}}
-{\footnotesize\ttfamily Light\+Monkey\+::\+Light\+Monkey (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
+\doxysubsection{Descripción detallada}
+Clase que representa a Tankey con su tema \char`\"{}light\char`\"{}. 
 
 \doxysubsection{Documentación de las funciones miembro}
 \mbox{\Hypertarget{class_light_monkey_aba5ff12281990b7451f229e1c4fcd4d8}\label{class_light_monkey_aba5ff12281990b7451f229e1c4fcd4d8}} 
 \index{LightMonkey@{LightMonkey}!Accept@{Accept}}
 \index{Accept@{Accept}!LightMonkey@{LightMonkey}}
 \doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Light\+Monkey\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Light\+Monkey\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funcion de aceptacion a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em v} & \\
+\hline
+\end{DoxyParams}
 
 
-
-Implementa \mbox{\hyperlink{class_monkey_a276633672619ced7b0d1e4e3c10b9601}{Monkey}}.
-
-\mbox{\Hypertarget{class_light_monkey_a4aa87d36433656c2d112dba9d1d76d60}\label{class_light_monkey_a4aa87d36433656c2d112dba9d1d76d60}} 
-\index{LightMonkey@{LightMonkey}!Draw@{Draw}}
-\index{Draw@{Draw}!LightMonkey@{LightMonkey}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Light\+Monkey\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Implementa \mbox{\hyperlink{class_monkey_ac400fcebf746c122415dfe8cbe101abe}{Monkey}}.
+Implementa \mbox{\hyperlink{class_monkey_a4c97c87409df6774678ac09072f41e03}{Monkey}}.
 
 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_light_monkey_8h}{Light\+Monkey.\+h}}\item 
-clases/\mbox{\hyperlink{_light_monkey_8cpp}{Light\+Monkey.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_light_monkey_8h}{Light\+Monkey.\+h}}\item 
+Light\+Monkey.\+cpp\end{DoxyCompactItemize}

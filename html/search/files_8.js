@@ -1,25 +1,4 @@
 var searchData=
 [
-  ['gamestate_2ecpp_17559',['GameState.cpp',['../_game_state_8cpp.html',1,'']]],
-  ['gamestate_2eh_17560',['GameState.h',['../_game_state_8h.html',1,'']]],
-  ['gestures_2eh_17561',['gestures.h',['../gestures_8h.html',1,'']]],
-  ['getopt_2ec_17562',['getopt.c',['../getopt_8c.html',1,'']]],
-  ['getopt_2eh_17563',['getopt.h',['../getopt_8h.html',1,'']]],
-  ['gl_2eh_17564',['gl.h',['../gl_8h.html',1,'']]],
-  ['gl2_2eh_17565',['gl2.h',['../gl2_8h.html',1,'']]],
-  ['gl2ext_2eh_17566',['gl2ext.h',['../gl2ext_8h.html',1,'']]],
-  ['gl2platform_2eh_17567',['gl2platform.h',['../gl2platform_8h.html',1,'']]],
-  ['gl3_2eh_17568',['gl3.h',['../gl3_8h.html',1,'']]],
-  ['gl3ext_2eh_17569',['gl3ext.h',['../gl3ext_8h.html',1,'']]],
-  ['gl3platform_2eh_17570',['gl3platform.h',['../gl3platform_8h.html',1,'']]],
-  ['glad_2eh_17571',['glad.h',['../examples_2others_2external_2include_2glad_8h.html',1,'(Namespace global)'],['../src_2external_2glad_8h.html',1,'(Namespace global)']]],
-  ['glad_5fgl_2ec_17572',['glad_gl.c',['../glad__gl_8c.html',1,'']]],
-  ['glad_5fvulkan_2ec_17573',['glad_vulkan.c',['../glad__vulkan_8c.html',1,'']]],
-  ['glfw3_2eh_17574',['glfw3.h',['../examples_2others_2external_2include_2_g_l_f_w_2glfw3_8h.html',1,'(Namespace global)'],['../src_2external_2glfw_2include_2_g_l_f_w_2glfw3_8h.html',1,'(Namespace global)']]],
-  ['glfw3native_2eh_17575',['glfw3native.h',['../examples_2others_2external_2include_2_g_l_f_w_2glfw3native_8h.html',1,'(Namespace global)'],['../src_2external_2glfw_2include_2_g_l_f_w_2glfw3native_8h.html',1,'(Namespace global)']]],
-  ['glfw_5fconfig_2eh_17576',['glfw_config.h',['../glfw__config_8h.html',1,'']]],
-  ['glx_5fcontext_2ec_17577',['glx_context.c',['../glx__context_8c.html',1,'']]],
-  ['glx_5fcontext_2eh_17578',['glx_context.h',['../glx__context_8h.html',1,'']]],
-  ['gold_5ffever_2ec_17579',['gold_fever.c',['../gold__fever_8c.html',1,'']]],
-  ['gorilas_2ec_17580',['gorilas.c',['../gorilas_8c.html',1,'']]]
+  ['rama_2eh_147',['Rama.h',['../_rama_8h.html',1,'']]]
 ];

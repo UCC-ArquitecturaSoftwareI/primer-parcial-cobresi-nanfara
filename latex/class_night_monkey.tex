@@ -2,6 +2,11 @@
 \label{class_night_monkey}\index{NightMonkey@{NightMonkey}}
 
 
+Clase que representa a Tankey con su tema \char`\"{}\+Night\char`\"{}.  
+
+
+
+
 {\ttfamily \#include $<$Night\+Monkey.\+h$>$}
 
 Diagrama de herencias de Night\+Monkey\begin{figure}[H]
@@ -13,48 +18,39 @@ Diagrama de herencias de Night\+Monkey\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_night_monkey_aabef625185d7f5cdc0228f3479c3b88b}\label{class_night_monkey_aabef625185d7f5cdc0228f3479c3b88b}} 
 \mbox{\hyperlink{class_night_monkey_aabef625185d7f5cdc0228f3479c3b88b}{Night\+Monkey}} ()
+\begin{DoxyCompactList}\small\item\em constructor de la clase night\+Monkey \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_night_monkey_a3b52cc620fb0b5a333b9730740b6a034}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&v) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_night_monkey_a1611dab334d4919c1a1b8ef345fe3669}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}})
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_night_monkey_aa5c3957213fe120fb5cf86194eec9d55}{Draw}} ()
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{class_night_monkey_a481564efe56198227c4ee54f4bf26bf2}\label{class_night_monkey_a481564efe56198227c4ee54f4bf26bf2}} 
+void \mbox{\hyperlink{class_night_monkey_a481564efe56198227c4ee54f4bf26bf2}{Draw}} () override
+\begin{DoxyCompactList}\small\item\em grafica el \mbox{\hyperlink{class_light_monkey}{Light\+Monkey}} en pantalla \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Otros miembros heredados}
 
 
-\doxysubsection{Documentación del constructor y destructor}
-\mbox{\Hypertarget{class_night_monkey_aabef625185d7f5cdc0228f3479c3b88b}\label{class_night_monkey_aabef625185d7f5cdc0228f3479c3b88b}} 
-\index{NightMonkey@{NightMonkey}!NightMonkey@{NightMonkey}}
-\index{NightMonkey@{NightMonkey}!NightMonkey@{NightMonkey}}
-\doxysubsubsection{\texorpdfstring{NightMonkey()}{NightMonkey()}}
-{\footnotesize\ttfamily Night\+Monkey\+::\+Night\+Monkey (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
+\doxysubsection{Descripción detallada}
+Clase que representa a Tankey con su tema \char`\"{}\+Night\char`\"{}. 
 
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_night_monkey_a1611dab334d4919c1a1b8ef345fe3669}\label{class_night_monkey_a1611dab334d4919c1a1b8ef345fe3669}} 
+\mbox{\Hypertarget{class_night_monkey_a3b52cc620fb0b5a333b9730740b6a034}\label{class_night_monkey_a3b52cc620fb0b5a333b9730740b6a034}} 
 \index{NightMonkey@{NightMonkey}!Accept@{Accept}}
 \index{Accept@{Accept}!NightMonkey@{NightMonkey}}
 \doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Night\+Monkey\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Night\+Monkey\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funcion de aceptacion a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em v} & \\
+\hline
+\end{DoxyParams}
 
 
-
-Implementa \mbox{\hyperlink{class_monkey_a276633672619ced7b0d1e4e3c10b9601}{Monkey}}.
-
-\mbox{\Hypertarget{class_night_monkey_aa5c3957213fe120fb5cf86194eec9d55}\label{class_night_monkey_aa5c3957213fe120fb5cf86194eec9d55}} 
-\index{NightMonkey@{NightMonkey}!Draw@{Draw}}
-\index{Draw@{Draw}!NightMonkey@{NightMonkey}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Night\+Monkey\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Implementa \mbox{\hyperlink{class_monkey_ac400fcebf746c122415dfe8cbe101abe}{Monkey}}.
+Implementa \mbox{\hyperlink{class_monkey_a4c97c87409df6774678ac09072f41e03}{Monkey}}.
 
 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_night_monkey_8h}{Night\+Monkey.\+h}}\item 
-clases/\mbox{\hyperlink{_night_monkey_8cpp}{Night\+Monkey.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_night_monkey_8h}{Night\+Monkey.\+h}}\item 
+Night\+Monkey.\+cpp\end{DoxyCompactItemize}

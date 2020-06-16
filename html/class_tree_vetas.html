@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tankey Game: Referencia de la Clase TreeVetas</title>
+<title>Tankey: Referencia de la Clase TreeVetas</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Tankey Game
+   <div id="projectname">Tankey
    &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
@@ -72,6 +72,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Clase que representa al arbol con trama de vetas.  
+ <a href="class_tree_vetas.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_tree_vetas_8h_source.html">TreeVetas.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de TreeVetas</div>
@@ -79,41 +82,49 @@ Diagrama de herencias de TreeVetas</div>
  <div class="center">
   <img src="class_tree_vetas.png" usemap="#TreeVetas_map" alt=""/>
   <map id="TreeVetas_map" name="TreeVetas_map">
-<area href="class_decorator.html" alt="Decorator" shape="rect" coords="0,112,72,136"/>
-<area href="class_super_tree.html" alt="SuperTree" shape="rect" coords="0,56,72,80"/>
-<area href="class_visitable.html" alt="Visitable" shape="rect" coords="0,0,72,24"/>
+<area href="class_decorator.html" title="Clase padre de las decoraciones concretas." alt="Decorator" shape="rect" coords="0,112,72,136"/>
+<area href="class_super_tree.html" title="Clase que representa el arbol." alt="SuperTree" shape="rect" coords="0,56,72,80"/>
+<area href="class_visitable.html" title="Clase que determina a quien se esta visitando." alt="Visitable" shape="rect" coords="0,0,72,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:ab9545b12129b32d3e0c5628b18b720c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_vetas.html#ab9545b12129b32d3e0c5628b18b720c3">TreeVetas</a> (<a class="el" href="class_super_tree.html">SuperTree</a> *const dcrator)</td></tr>
+<tr class="memdesc:ab9545b12129b32d3e0c5628b18b720c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor de <a class="el" href="class_tree_vetas.html" title="Clase que representa al arbol con trama de vetas.">TreeVetas</a>  <a href="class_tree_vetas.html#ab9545b12129b32d3e0c5628b18b720c3">Más...</a><br /></td></tr>
 <tr class="separator:ab9545b12129b32d3e0c5628b18b720c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa344c78f4e98365a1dde47a55157319"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_vetas.html#afa344c78f4e98365a1dde47a55157319">DrawTree</a> () override</td></tr>
+<tr class="memitem:afa344c78f4e98365a1dde47a55157319"><td class="memItemLeft" align="right" valign="top"><a id="afa344c78f4e98365a1dde47a55157319"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_vetas.html#afa344c78f4e98365a1dde47a55157319">DrawTree</a> () override</td></tr>
+<tr class="memdesc:afa344c78f4e98365a1dde47a55157319"><td class="mdescLeft">&#160;</td><td class="mdescRight">función que indica cómo graficar al arbol en pantalla <br /></td></tr>
 <tr class="separator:afa344c78f4e98365a1dde47a55157319"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace6f63b5c1853740dd66dea72ab5b52d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_vetas.html#ace6f63b5c1853740dd66dea72ab5b52d">Accept</a> (<a class="el" href="class_visitor.html">Visitor</a> &amp;<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>) override</td></tr>
+<tr class="memitem:ace6f63b5c1853740dd66dea72ab5b52d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_vetas.html#ace6f63b5c1853740dd66dea72ab5b52d">Accept</a> (<a class="el" href="class_visitor.html">Visitor</a> &amp;v) override</td></tr>
 <tr class="separator:ace6f63b5c1853740dd66dea72ab5b52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29eed2432866e39a8e51774e9c0b7dbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_vetas.html#a29eed2432866e39a8e51774e9c0b7dbb">Draw</a> () override</td></tr>
+<tr class="memitem:a29eed2432866e39a8e51774e9c0b7dbb"><td class="memItemLeft" align="right" valign="top"><a id="a29eed2432866e39a8e51774e9c0b7dbb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_vetas.html#a29eed2432866e39a8e51774e9c0b7dbb">Draw</a> () override</td></tr>
+<tr class="memdesc:a29eed2432866e39a8e51774e9c0b7dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">grafica al arbol en pantalla <br /></td></tr>
 <tr class="separator:a29eed2432866e39a8e51774e9c0b7dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_decorator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_decorator')"><img src="closed.png" alt="-"/>&#160;Métodos públicos heredados desde <a class="el" href="class_decorator.html">Decorator</a></td></tr>
-<tr class="memitem:a14c00a1373f6c2632f8b1cbe5f119155 inherit pub_methods_class_decorator"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_decorator.html#a14c00a1373f6c2632f8b1cbe5f119155">Decorator</a> (<a class="el" href="class_super_tree.html">SuperTree</a> *tree)</td></tr>
-<tr class="separator:a14c00a1373f6c2632f8b1cbe5f119155 inherit pub_methods_class_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_visitable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_visitable')"><img src="closed.png" alt="-"/>&#160;Métodos públicos heredados desde <a class="el" href="class_visitable.html">Visitable</a></td></tr>
-<tr class="memitem:a7d9b9af4c6c2c12085e6fd065d21ba44 inherit pub_methods_class_visitable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visitable.html#a7d9b9af4c6c2c12085e6fd065d21ba44">Visitable</a> ()</td></tr>
-<tr class="separator:a7d9b9af4c6c2c12085e6fd065d21ba44 inherit pub_methods_class_visitable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972eff637ca2a8230330fe4b15dc8df4 inherit pub_methods_class_visitable"><td class="memItemLeft" align="right" valign="top"><a id="a972eff637ca2a8230330fe4b15dc8df4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visitable.html#a972eff637ca2a8230330fe4b15dc8df4">Visitable</a> ()=default</td></tr>
+<tr class="memdesc:a972eff637ca2a8230330fe4b15dc8df4 inherit pub_methods_class_visitable"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor de <a class="el" href="class_visitable.html" title="Clase que determina a quien se esta visitando.">Visitable</a> <br /></td></tr>
+<tr class="separator:a972eff637ca2a8230330fe4b15dc8df4 inherit pub_methods_class_visitable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Otros miembros heredados</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_super_tree"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_super_tree')"><img src="closed.png" alt="-"/>&#160;Atributos públicos heredados desde <a class="el" href="class_super_tree.html">SuperTree</a></td></tr>
-<tr class="memitem:a6c6cc12d5619fdb7002d8cddc6e4839c inherit pub_attribs_class_super_tree"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_super_tree.html#a6c6cc12d5619fdb7002d8cddc6e4839c">lado</a></td></tr>
+<tr class="memitem:a6c6cc12d5619fdb7002d8cddc6e4839c inherit pub_attribs_class_super_tree"><td class="memItemLeft" align="right" valign="top"><a id="a6c6cc12d5619fdb7002d8cddc6e4839c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>lado</b> {}</td></tr>
 <tr class="separator:a6c6cc12d5619fdb7002d8cddc6e4839c inherit pub_attribs_class_super_tree"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0d7621aab3605c0b81a41ea4187b835 inherit pub_attribs_class_super_tree"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_super_tree.html#af0d7621aab3605c0b81a41ea4187b835">position</a></td></tr>
+<tr class="memitem:af0d7621aab3605c0b81a41ea4187b835 inherit pub_attribs_class_super_tree"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_super_tree.html#af0d7621aab3605c0b81a41ea4187b835">position</a> {}</td></tr>
 <tr class="separator:af0d7621aab3605c0b81a41ea4187b835 inherit pub_attribs_class_super_tree"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_decorator"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_decorator')"><img src="closed.png" alt="-"/>&#160;Atributos protegidos heredados desde <a class="el" href="class_decorator.html">Decorator</a></td></tr>
-<tr class="memitem:ac07179b251152ce09800f478f08cd076 inherit pro_attribs_class_decorator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_super_tree.html">SuperTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_decorator.html#ac07179b251152ce09800f478f08cd076">r_SuperTree</a></td></tr>
-<tr class="separator:ac07179b251152ce09800f478f08cd076 inherit pro_attribs_class_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_decorator"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_decorator')"><img src="closed.png" alt="-"/>&#160;Métodos protegidos heredados desde <a class="el" href="class_decorator.html">Decorator</a></td></tr>
+<tr class="memitem:a14c00a1373f6c2632f8b1cbe5f119155 inherit pro_methods_class_decorator"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_decorator.html#a14c00a1373f6c2632f8b1cbe5f119155">Decorator</a> (<a class="el" href="class_super_tree.html">SuperTree</a> *tree)</td></tr>
+<tr class="memdesc:a14c00a1373f6c2632f8b1cbe5f119155 inherit pro_methods_class_decorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor de <a class="el" href="class_decorator.html" title="Clase padre de las decoraciones concretas.">Decorator</a>  <a href="class_decorator.html#a14c00a1373f6c2632f8b1cbe5f119155">Más...</a><br /></td></tr>
+<tr class="separator:a14c00a1373f6c2632f8b1cbe5f119155 inherit pro_methods_class_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase que representa al arbol con trama de vetas. </p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="ab9545b12129b32d3e0c5628b18b720c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9545b12129b32d3e0c5628b18b720c3">&#9670;&nbsp;</a></span>TreeVetas()</h2>
 
@@ -133,10 +144,18 @@ Otros miembros heredados</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>constructor de <a class="el" href="class_tree_vetas.html" title="Clase que representa al arbol con trama de vetas.">TreeVetas</a> </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dcrator</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -151,7 +170,7 @@ Otros miembros heredados</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> TreeVetas::Accept </td>
+          <td class="memname">void TreeVetas::Accept </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_visitor.html">Visitor</a> &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -164,68 +183,20 @@ Otros miembros heredados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Funcion de aceptacion a un visitante </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implementa <a class="el" href="class_super_tree.html#aa6bebc1f80e93250a62bd0d5c59575b8">SuperTree</a>.</p>
-
-</div>
-</div>
-<a id="a29eed2432866e39a8e51774e9c0b7dbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29eed2432866e39a8e51774e9c0b7dbb">&#9670;&nbsp;</a></span>Draw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> TreeVetas::Draw </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implementa <a class="el" href="class_super_tree.html#a04e1815437d4c42c76434524a4ad9a38">SuperTree</a>.</p>
-
-</div>
-</div>
-<a id="afa344c78f4e98365a1dde47a55157319"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa344c78f4e98365a1dde47a55157319">&#9670;&nbsp;</a></span>DrawTree()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> TreeVetas::DrawTree </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplementado de <a class="el" href="class_decorator.html#a221737d127d62905c522961c52f1cb66">Decorator</a>.</p>
+<p>Implementa <a class="el" href="class_super_tree.html#a97212ae5e59b9522a5033372195e6146">SuperTree</a>.</p>
 
 </div>
 </div>
 <hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
-<li>clases/<a class="el" href="_tree_vetas_8h_source.html">TreeVetas.h</a></li>
-<li>clases/<a class="el" href="_tree_vetas_8cpp.html">TreeVetas.cpp</a></li>
+<li><a class="el" href="_tree_vetas_8h_source.html">TreeVetas.h</a></li>
+<li>TreeVetas.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tankey Game: Fichero Fuente clases/GameState.h</title>
+<title>Tankey: Fichero Fuente GameState.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Tankey Game
+   <div id="projectname">Tankey
    &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
@@ -48,6 +48,7 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,51 +63,46 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_02fe6bb0d29b159db6747b11f409a1ef.html">clases</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">GameState.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_game_state_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by Abril on 6/6/2020.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_GAMESTATE_H</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_GAMESTATE_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_manager_8h.html">Manager.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_singleton_game.html">SingletonGame</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_game_state.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_game_state.html">GameState</a>: <span class="keyword">public</span> <a class="code" href="class_manager.html">Manager</a>{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_game_state.html#a4fa0a2bf50315c4a35a3890a0adcee5c">   15</a></span>&#160;    <a class="code" href="class_game_state.html#a4fa0a2bf50315c4a35a3890a0adcee5c">GameState</a>():<a class="code" href="class_manager.html">Manager</a>(std::<a class="code" href="examples_2others_2external_2include_2glad_8h.html#a5ef8ce60531c971745798ebb9f61a5d8">string</a>(<span class="stringliteral">&quot;Game&quot;</span>)){}</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_state.html#ae5e40325fdff6bcaf1a03d8c666f567c">Update</a>(<a class="code" href="class_singleton_game.html">SingletonGame</a> *singleton);</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_game_state.html#a517ef6eaba96896259fcefd0c66afc9e">   17</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_game_state.html#a517ef6eaba96896259fcefd0c66afc9e">~GameState</a>(){}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_game_state.html#a82ccea70921513d8c09e63b6d517043b">Menu</a>(<a class="code" href="class_singleton_game.html">SingletonGame</a> *singleton);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_game_state.html#a55417b1f7a2527dae1ef814fa76726f4">End</a>(<a class="code" href="class_singleton_game.html">SingletonGame</a> *singleton);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_GAMESTATE_H</span></div>
+<a href="_game_state_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_GAMESTATE_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_GAMESTATE_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Manager.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="class_singleton_game.html">SingletonGame</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_game_state.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_game_state.html">GameState</a> : <span class="keyword">public</span> <a class="code" href="class_manager.html">Manager</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_game_state.html#a4fa0a2bf50315c4a35a3890a0adcee5c">   30</a></span>&#160;    <a class="code" href="class_game_state.html#a4fa0a2bf50315c4a35a3890a0adcee5c">GameState</a>( ) : <a class="code" href="class_manager.html">Manager</a>( std::string( <span class="stringliteral">&quot;Game&quot;</span> )) { }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_state.html#a23eb0ece625bf4928adaee89fb1e617f">Update</a>(  ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_game_state.html#a5014d0b39cce7d6d9544c3b02568dc73">   41</a></span>&#160;    <a class="code" href="class_game_state.html#a5014d0b39cce7d6d9544c3b02568dc73">~GameState</a>( ) <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_state.html#a45d98b6ce1f00c8e3935b063708fd598">Menu</a>( <a class="code" href="class_singleton_game.html">SingletonGame</a> *singleton ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_state.html#a0610ee2a03e2fb11694130b300ff1b05">End</a>( <a class="code" href="class_singleton_game.html">SingletonGame</a> *singleton ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_GAMESTATE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_game_state_html_a82ccea70921513d8c09e63b6d517043b"><div class="ttname"><a href="class_game_state.html#a82ccea70921513d8c09e63b6d517043b">GameState::Menu</a></div><div class="ttdeci">virtual void Menu(SingletonGame *singleton)</div><div class="ttdef"><b>Definition:</b> GameState.cpp:81</div></div>
-<div class="ttc" id="aclass_singleton_game_html"><div class="ttname"><a href="class_singleton_game.html">SingletonGame</a></div><div class="ttdef"><b>Definition:</b> SingletonGame.h:38</div></div>
-<div class="ttc" id="aclass_manager_html"><div class="ttname"><a href="class_manager.html">Manager</a></div><div class="ttdef"><b>Definition:</b> Manager.h:12</div></div>
-<div class="ttc" id="aclass_game_state_html_a55417b1f7a2527dae1ef814fa76726f4"><div class="ttname"><a href="class_game_state.html#a55417b1f7a2527dae1ef814fa76726f4">GameState::End</a></div><div class="ttdeci">virtual void End(SingletonGame *singleton)</div><div class="ttdef"><b>Definition:</b> GameState.cpp:85</div></div>
-<div class="ttc" id="aclass_game_state_html_a4fa0a2bf50315c4a35a3890a0adcee5c"><div class="ttname"><a href="class_game_state.html#a4fa0a2bf50315c4a35a3890a0adcee5c">GameState::GameState</a></div><div class="ttdeci">GameState()</div><div class="ttdef"><b>Definition:</b> GameState.h:15</div></div>
-<div class="ttc" id="a_manager_8h_html"><div class="ttname"><a href="_manager_8h.html">Manager.h</a></div></div>
-<div class="ttc" id="aclass_game_state_html"><div class="ttname"><a href="class_game_state.html">GameState</a></div><div class="ttdef"><b>Definition:</b> GameState.h:13</div></div>
-<div class="ttc" id="aexamples_2others_2external_2include_2glad_8h_html_a5ef8ce60531c971745798ebb9f61a5d8"><div class="ttname"><a href="examples_2others_2external_2include_2glad_8h.html#a5ef8ce60531c971745798ebb9f61a5d8">string</a></div><div class="ttdeci">GLsizei const GLchar ** string</div><div class="ttdef"><b>Definition:</b> glad.h:1418</div></div>
-<div class="ttc" id="aclass_game_state_html_ae5e40325fdff6bcaf1a03d8c666f567c"><div class="ttname"><a href="class_game_state.html#ae5e40325fdff6bcaf1a03d8c666f567c">GameState::Update</a></div><div class="ttdeci">void Update(SingletonGame *singleton)</div><div class="ttdef"><b>Definition:</b> GameState.cpp:16</div></div>
-<div class="ttc" id="aclass_game_state_html_a517ef6eaba96896259fcefd0c66afc9e"><div class="ttname"><a href="class_game_state.html#a517ef6eaba96896259fcefd0c66afc9e">GameState::~GameState</a></div><div class="ttdeci">virtual ~GameState()</div><div class="ttdef"><b>Definition:</b> GameState.h:17</div></div>
+<div class="ttc" id="aclass_singleton_game_html"><div class="ttname"><a href="class_singleton_game.html">SingletonGame</a></div><div class="ttdoc">Clase que instancia de manera unica la creacion de todos los objetos del programa.</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:51</div></div>
+<div class="ttc" id="aclass_manager_html"><div class="ttname"><a href="class_manager.html">Manager</a></div><div class="ttdoc">clase padre de los estados del programa</div><div class="ttdef"><b>Definition:</b> Manager.h:23</div></div>
+<div class="ttc" id="aclass_game_state_html_a5014d0b39cce7d6d9544c3b02568dc73"><div class="ttname"><a href="class_game_state.html#a5014d0b39cce7d6d9544c3b02568dc73">GameState::~GameState</a></div><div class="ttdeci">~GameState() override=default</div><div class="ttdoc">destructor de la clase GameState</div></div>
+<div class="ttc" id="aclass_game_state_html_a45d98b6ce1f00c8e3935b063708fd598"><div class="ttname"><a href="class_game_state.html#a45d98b6ce1f00c8e3935b063708fd598">GameState::Menu</a></div><div class="ttdeci">void Menu(SingletonGame *singleton) override</div><div class="ttdoc">cambia el estado del programa a Menu</div><div class="ttdef"><b>Definition:</b> GameState.cpp:72</div></div>
+<div class="ttc" id="aclass_game_state_html_a4fa0a2bf50315c4a35a3890a0adcee5c"><div class="ttname"><a href="class_game_state.html#a4fa0a2bf50315c4a35a3890a0adcee5c">GameState::GameState</a></div><div class="ttdeci">GameState()</div><div class="ttdoc">constructor de la clase GameState</div><div class="ttdef"><b>Definition:</b> GameState.h:30</div></div>
+<div class="ttc" id="aclass_game_state_html"><div class="ttname"><a href="class_game_state.html">GameState</a></div><div class="ttdoc">Clase hijo de Manager, representa el estado del programa durante el juego.</div><div class="ttdef"><b>Definition:</b> GameState.h:24</div></div>
+<div class="ttc" id="aclass_game_state_html_a23eb0ece625bf4928adaee89fb1e617f"><div class="ttname"><a href="class_game_state.html#a23eb0ece625bf4928adaee89fb1e617f">GameState::Update</a></div><div class="ttdeci">void Update() override</div><div class="ttdoc">actualiza los graficos para cada frame</div><div class="ttdef"><b>Definition:</b> GameState.cpp:13</div></div>
+<div class="ttc" id="aclass_game_state_html_a0610ee2a03e2fb11694130b300ff1b05"><div class="ttname"><a href="class_game_state.html#a0610ee2a03e2fb11694130b300ff1b05">GameState::End</a></div><div class="ttdeci">void End(SingletonGame *singleton) override</div><div class="ttdoc">cambia el estado del programa a End</div><div class="ttdef"><b>Definition:</b> GameState.cpp:76</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generado por &#160;<a href="http://www.doxygen.org/index.html">

@@ -2,7 +2,12 @@
 \label{class_light_button}\index{LightButton@{LightButton}}
 
 
-{\ttfamily \#include $<$Button.\+h$>$}
+Clase que representa a un Boton en su tema Light.  
+
+
+
+
+{\ttfamily \#include $<$Menu\+Elements.\+h$>$}
 
 Diagrama de herencias de Light\+Button\begin{figure}[H]
 \begin{center}
@@ -13,65 +18,70 @@ Diagrama de herencias de Light\+Button\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_light_button_a81efdd5e5d81e15b9bda69e782d4e880}\label{class_light_button_a81efdd5e5d81e15b9bda69e782d4e880}} 
 \mbox{\hyperlink{class_light_button_a81efdd5e5d81e15b9bda69e782d4e880}{Light\+Button}} ()
+\begin{DoxyCompactList}\small\item\em constructor de la clase \mbox{\hyperlink{class_light_button}{Light\+Button}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_button_a462f4347ea389da32043a6a60ba40a9c}\label{class_light_button_a462f4347ea389da32043a6a60ba40a9c}} 
+void \mbox{\hyperlink{class_light_button_a462f4347ea389da32043a6a60ba40a9c}{Draw}} () override
+\begin{DoxyCompactList}\small\item\em función que grafica un \mbox{\hyperlink{class_light_button}{Light\+Button}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_light_button_adb0f9b9ed2f15ab9e9204a0cc6802da3}{Draw}} (Vector2 pos, int est) override
+\begin{DoxyCompactList}\small\item\em función que indica cómo graficar al boton en pantalla dependiendo del boton \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_light_button_a0d1dec881c44e4067fecfc2daab905d7}{Get\+Rectangle}} () override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_light_button_aca2ba256bb61279cb8d51e3dbe1fb0c5}{Draw}} ()
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_light_button_ad41ef66bc814580b705c15313e34533a}{Draw}} (\mbox{\hyperlink{struct_vector2}{Vector2}} pos, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} est)
-\item 
-\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_light_button_adc78b10c0df1a600dcdec5ecc0227948}{Get\+Rectangle}} ()
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_light_button_aa359eac1ef029f80dedf33deedff5fc5}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}})
+void \mbox{\hyperlink{class_light_button_a706d1d9a31e591e93e2494579dcf3d5c}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&v) override
 \end{DoxyCompactItemize}
 \doxysubsection*{Otros miembros heredados}
 
 
-\doxysubsection{Documentación del constructor y destructor}
-\mbox{\Hypertarget{class_light_button_a81efdd5e5d81e15b9bda69e782d4e880}\label{class_light_button_a81efdd5e5d81e15b9bda69e782d4e880}} 
-\index{LightButton@{LightButton}!LightButton@{LightButton}}
-\index{LightButton@{LightButton}!LightButton@{LightButton}}
-\doxysubsubsection{\texorpdfstring{LightButton()}{LightButton()}}
-{\footnotesize\ttfamily Light\+Button\+::\+Light\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
+\doxysubsection{Descripción detallada}
+Clase que representa a un Boton en su tema Light. 
 
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_light_button_aa359eac1ef029f80dedf33deedff5fc5}\label{class_light_button_aa359eac1ef029f80dedf33deedff5fc5}} 
+\mbox{\Hypertarget{class_light_button_a706d1d9a31e591e93e2494579dcf3d5c}\label{class_light_button_a706d1d9a31e591e93e2494579dcf3d5c}} 
 \index{LightButton@{LightButton}!Accept@{Accept}}
 \index{Accept@{Accept}!LightButton@{LightButton}}
 \doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Light\+Button\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Light\+Button\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funcion de aceptacion a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em v} & \\
+\hline
+\end{DoxyParams}
 
 
+Implementa \mbox{\hyperlink{class_button_a12cba548a635ed2fbd86f2bc9e35710d}{Button}}.
 
-Implementa \mbox{\hyperlink{class_button_a928dfe00eea08dc1569aba627d4fcaa5}{Button}}.
-
-\mbox{\Hypertarget{class_light_button_aca2ba256bb61279cb8d51e3dbe1fb0c5}\label{class_light_button_aca2ba256bb61279cb8d51e3dbe1fb0c5}} 
+\mbox{\Hypertarget{class_light_button_adb0f9b9ed2f15ab9e9204a0cc6802da3}\label{class_light_button_adb0f9b9ed2f15ab9e9204a0cc6802da3}} 
 \index{LightButton@{LightButton}!Draw@{Draw}}
 \index{Draw@{Draw}!LightButton@{LightButton}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Light\+Button\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Light\+Button\+::\+Draw (\begin{DoxyParamCaption}\item[{Vector2}]{pos,  }\item[{int}]{est }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implementa \mbox{\hyperlink{class_button_ae6123a2c0afa0768f49189983da0907e}{Button}}.
+función que indica cómo graficar al boton en pantalla dependiendo del boton 
 
-\mbox{\Hypertarget{class_light_button_ad41ef66bc814580b705c15313e34533a}\label{class_light_button_ad41ef66bc814580b705c15313e34533a}} 
-\index{LightButton@{LightButton}!Draw@{Draw}}
-\index{Draw@{Draw}!LightButton@{LightButton}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Light\+Button\+::\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{pos,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{est }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+\begin{DoxyParams}{Parámetros}
+{\em pos} & posicion en el que se va a dibujar el boton \\
+\hline
+{\em est} & estado en el que se va a dibujarla el boton \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_button_a3e4158895f5c7c6b63355317cde596c0}{Button}}.
 
-\mbox{\Hypertarget{class_light_button_adc78b10c0df1a600dcdec5ecc0227948}\label{class_light_button_adc78b10c0df1a600dcdec5ecc0227948}} 
+\mbox{\Hypertarget{class_light_button_a0d1dec881c44e4067fecfc2daab905d7}\label{class_light_button_a0d1dec881c44e4067fecfc2daab905d7}} 
 \index{LightButton@{LightButton}!GetRectangle@{GetRectangle}}
 \index{GetRectangle@{GetRectangle}!LightButton@{LightButton}}
 \doxysubsubsection{\texorpdfstring{GetRectangle()}{GetRectangle()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Light\+Button\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily Rectangle Light\+Button\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Retorna el valor almacenado en el atributo rect \begin{DoxyReturn}{Devuelve}
+
+\end{DoxyReturn}
 
 
 Implementa \mbox{\hyperlink{class_button_af5fb91984279f5dae6c590dac5b9267d}{Button}}.
@@ -80,5 +90,5 @@ Implementa \mbox{\hyperlink{class_button_af5fb91984279f5dae6c590dac5b9267d}{Butt
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_button_8h}{Button.\+h}}\item
-clases/\mbox{\hyperlink{_button_8cpp}{Button.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_menu_elements_8h}{Menu\+Elements.\+h}}\item 
+Menu\+Elements.\+cpp\end{DoxyCompactItemize}

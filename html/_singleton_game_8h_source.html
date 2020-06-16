@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tankey Game: Fichero Fuente clases/SingletonGame.h</title>
+<title>Tankey: Fichero Fuente SingletonGame.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Tankey Game
+   <div id="projectname">Tankey
    &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
@@ -48,6 +48,7 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,160 +63,139 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_02fe6bb0d29b159db6747b11f409a1ef.html">clases</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">SingletonGame.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_singleton_game_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by Abril on 10/5/2020.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_SINGLETONGAME_H</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bar___life_8h.html">Bar_Life.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_audio_8h.html">Audio.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_window_8h.html">Window.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_SINGLETONGAME_H</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_manager.html">Manager</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_super_tree.html">SuperTree</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="class_button.html">Button</a>;</div>
+<a href="_singleton_game_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef RAYLIBTEMPLATE_SINGLETONGAME_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bar___life_8h.html">Bar_Life.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_audio_8h.html">Audio.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_window_8h.html">Window.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define RAYLIBTEMPLATE_SINGLETONGAME_H</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="class_theme_factory.html">ThemeFactory</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span><a class="code" href="class_light_theme_factory.html">LightThemeFactory</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span><a class="code" href="class_night_theme_factory.html">NightThemeFactory</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//class NightButton;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//class LightButton;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="class_manager.html">Manager</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span><a class="code" href="class_super_tree.html">SuperTree</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span><a class="code" href="class_button.html">Button</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//class StartButton;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span><a class="code" href="class_rama.html">Rama</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span><a class="code" href="class_monkey.html">Monkey</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span><a class="code" href="class_theme_factory.html">ThemeFactory</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span><a class="code" href="class_light_theme_factory.html">LightThemeFactory</a>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span><a class="code" href="class_skin.html">Skin</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//class TreeVetas;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_singleton_game.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_singleton_game.html">SingletonGame</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_singleton_game.html">SingletonGame</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_manager.html">Manager</a> *m_pState;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span><a class="code" href="class_night_theme_factory.html">NightThemeFactory</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span><a class="code" href="class_rama.html">Rama</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span><a class="code" href="class_monkey.html">Monkey</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a9310918e3cab4c044228f5af1ada4aee">   45</a></span>&#160;    <a class="code" href="struct_texture2_d.html">Texture2D</a> <a class="code" href="class_singleton_game.html#a9310918e3cab4c044228f5af1ada4aee">sprite</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_singleton_game.html#ac643c875faac407e7264956372af5c54">   46</a></span>&#160;    <a class="code" href="class_window.html">Window</a> <a class="code" href="class_singleton_game.html#ac643c875faac407e7264956372af5c54">window</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a0165960a3cbc0037e5cac700f0205869">   47</a></span>&#160;    <a class="code" href="class_audio.html">Audio</a> <a class="code" href="class_singleton_game.html#a0165960a3cbc0037e5cac700f0205869">music</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a735b99bd6dae90c30732a1d30c0fbade">   48</a></span>&#160;    <a class="code" href="class_monkey.html">Monkey</a> *<a class="code" href="class_singleton_game.html#a735b99bd6dae90c30732a1d30c0fbade">player</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_singleton_game.html#abe09557bb7899c255511478039e72d08">   49</a></span>&#160;    <a class="code" href="class_super_tree.html">SuperTree</a> *<a class="code" href="class_singleton_game.html#abe09557bb7899c255511478039e72d08">tree</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_singleton_game.html#afda9187e6d6a4cd383b022c9903293db">   50</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_singleton_game.html#afda9187e6d6a4cd383b022c9903293db">GameOver</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a9b4af2960b5b078e43e9ae6f453c6e96">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_singleton_game.html#a9b4af2960b5b078e43e9ae6f453c6e96">score</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_singleton_game.html#ad9c7c8068ecdcef41d02bbeee2493a46">   52</a></span>&#160;    <a class="code" href="classbar_life.html">barLife</a> <a class="code" href="class_singleton_game.html#ad9c7c8068ecdcef41d02bbeee2493a46">barL</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a6606b653bf12d08c3f3ef75f9b1faf25">   53</a></span>&#160;    <a class="code" href="class_theme_factory.html">ThemeFactory</a> *<a class="code" href="class_singleton_game.html#a6606b653bf12d08c3f3ef75f9b1faf25">tf</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a7be1cf0af9361a65a2c36e30d4e140bb">   54</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_singleton_game.html#a7be1cf0af9361a65a2c36e30d4e140bb">start</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a1456542a36f6ba09f48450a21e1b0327">   55</a></span>&#160;    <a class="code" href="struct_color.html">Color</a> <a class="code" href="class_singleton_game.html#a1456542a36f6ba09f48450a21e1b0327">colorBackground</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a6a634c44141167ff4864944f05d29d40">   56</a></span>&#160;    <a class="code" href="struct_color.html">Color</a> <a class="code" href="class_singleton_game.html#a6a634c44141167ff4864944f05d29d40">colorText</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a936d8a34dbd41beb134432d733f315a8">   57</a></span>&#160;    std::vector&lt;Rama*&gt; <a class="code" href="class_singleton_game.html#a936d8a34dbd41beb134432d733f315a8">Ramas</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a396aba30bca1f69d2bdf62c8118796fe">   58</a></span>&#160;    std::vector&lt;Button*&gt; <a class="code" href="class_singleton_game.html#a396aba30bca1f69d2bdf62c8118796fe">Botones</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a6aae5eead6800824f68a050c39c134db">   59</a></span>&#160;    <a class="code" href="struct_vector2.html">Vector2</a> <a class="code" href="class_singleton_game.html#a6aae5eead6800824f68a050c39c134db">mousePoint</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a1fc2fd5eed115cfe7f8072c94b7cab78">   60</a></span>&#160;    <a class="code" href="class_skin.html">Skin</a> *<a class="code" href="class_singleton_game.html#a1fc2fd5eed115cfe7f8072c94b7cab78">TankeySkin</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//friend class Manager;</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a2d735435c259591d6df4e22dd3442bd8">   62</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_singleton_game.html#a2d735435c259591d6df4e22dd3442bd8">tema</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4">   63</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4">State</a></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4a7a05c573dc9d9c8939a8e9df96051500">   65</a></span>&#160;        <a class="code" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4a7a05c573dc9d9c8939a8e9df96051500">ST_MENU</a>,</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4a22cfde24e06572f2003e67422560bbb3">   66</a></span>&#160;        <a class="code" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4a22cfde24e06572f2003e67422560bbb3">ST_GAME</a>,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4a3d1cc7dad79a1454f1371c0c71cbaf6c">ST_END</a></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4a3d1cc7dad79a1454f1371c0c71cbaf6c">   68</a></span>&#160;    };</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a796d516da7a480a0f6612d8d1650e3f6">   71</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_singleton_game.html">SingletonGame</a> &amp;<a class="code" href="class_singleton_game.html#a796d516da7a480a0f6612d8d1650e3f6">get</a>(){</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_singleton_game.html">SingletonGame</a> game;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> game;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_singleton_game.html#aac225b62b182ae9d226728299e552821">   76</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#aac225b62b182ae9d226728299e552821">Descargar</a>(){</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="class_singleton_game.html#a0165960a3cbc0037e5cac700f0205869">music</a>.<a class="code" href="class_audio.html#af954f4262ae7178fa1795f4fc9c5b531">Descargar</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="eglext_8h.html#a92dbce8e3247f6a78126c99877caacb6">window</a>.Descargar();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#a977911af6a0cc213968009f3ce3c3ab6">SetState</a>(<a class="code" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4">State</a> <a class="code" href="furmap_8txt.html#aeb0c888342a76b499c20664b1c4c9aeb">state</a>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#a7ad0b969f9364d28b8f5c3fb9e576e96">Menu</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#aad61a5da16862f6a157dcb1102b658e7">Game</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#a421491a65798b14bf6f1de26b7529189">End</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#a27da3478454c9202abac65e67ce221f1">Update</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_singleton_game.html#a15c7a569d0b273645e6f9f3b56a0cdfa">~SingletonGame</a>();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_SINGLETONGAME_H</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">class </span><a class="code" href="class_skin.html">Skin</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_singleton_game.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_singleton_game.html">SingletonGame</a> {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_singleton_game.html">SingletonGame</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_manager.html">Manager</a> *m_pState;              </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a9310918e3cab4c044228f5af1ada4aee">   62</a></span>&#160;    Texture2D <a class="code" href="class_singleton_game.html#a9310918e3cab4c044228f5af1ada4aee">sprite</a>{};               </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_singleton_game.html#ac643c875faac407e7264956372af5c54">   63</a></span>&#160;    <a class="code" href="class_window.html">Window</a> <a class="code" href="class_singleton_game.html#ac643c875faac407e7264956372af5c54">window</a>;                  </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a0165960a3cbc0037e5cac700f0205869">   64</a></span>&#160;    <a class="code" href="class_audio.html">Audio</a> <a class="code" href="class_singleton_game.html#a0165960a3cbc0037e5cac700f0205869">music</a>;                    </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a735b99bd6dae90c30732a1d30c0fbade">   65</a></span>&#160;    <a class="code" href="class_monkey.html">Monkey</a> *<a class="code" href="class_singleton_game.html#a735b99bd6dae90c30732a1d30c0fbade">player</a>{};                 </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_singleton_game.html#abe09557bb7899c255511478039e72d08">   66</a></span>&#160;    <a class="code" href="class_super_tree.html">SuperTree</a> *<a class="code" href="class_singleton_game.html#abe09557bb7899c255511478039e72d08">tree</a>{};                </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_singleton_game.html#afda9187e6d6a4cd383b022c9903293db">   67</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_singleton_game.html#afda9187e6d6a4cd383b022c9903293db">GameOver</a>{};                  </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a9b4af2960b5b078e43e9ae6f453c6e96">   68</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_singleton_game.html#a9b4af2960b5b078e43e9ae6f453c6e96">score</a>;                      </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_singleton_game.html#ad9c7c8068ecdcef41d02bbeee2493a46">   69</a></span>&#160;    <a class="code" href="classbar_life.html">barLife</a> <a class="code" href="class_singleton_game.html#ad9c7c8068ecdcef41d02bbeee2493a46">barL</a>;                   </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a6606b653bf12d08c3f3ef75f9b1faf25">   70</a></span>&#160;    <a class="code" href="class_theme_factory.html">ThemeFactory</a> *<a class="code" href="class_singleton_game.html#a6606b653bf12d08c3f3ef75f9b1faf25">tf</a>{};               </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a7be1cf0af9361a65a2c36e30d4e140bb">   71</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_singleton_game.html#a7be1cf0af9361a65a2c36e30d4e140bb">start</a>;                     </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a1456542a36f6ba09f48450a21e1b0327">   72</a></span>&#160;    Color <a class="code" href="class_singleton_game.html#a1456542a36f6ba09f48450a21e1b0327">colorBackground</a>{};          </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a6a634c44141167ff4864944f05d29d40">   73</a></span>&#160;    Color <a class="code" href="class_singleton_game.html#a6a634c44141167ff4864944f05d29d40">colorText</a>{};                </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a936d8a34dbd41beb134432d733f315a8">   74</a></span>&#160;    std::vector&lt;Rama*&gt; <a class="code" href="class_singleton_game.html#a936d8a34dbd41beb134432d733f315a8">Ramas</a>;       </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a396aba30bca1f69d2bdf62c8118796fe">   75</a></span>&#160;    std::vector&lt;Button*&gt; <a class="code" href="class_singleton_game.html#a396aba30bca1f69d2bdf62c8118796fe">Botones</a>;   </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a6aae5eead6800824f68a050c39c134db">   76</a></span>&#160;    Vector2 <a class="code" href="class_singleton_game.html#a6aae5eead6800824f68a050c39c134db">mousePoint</a>{};             </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a1fc2fd5eed115cfe7f8072c94b7cab78">   77</a></span>&#160;    <a class="code" href="class_skin.html">Skin</a> *<a class="code" href="class_singleton_game.html#a1fc2fd5eed115cfe7f8072c94b7cab78">TankeySkin</a>{};               </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a2d735435c259591d6df4e22dd3442bd8">   78</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_singleton_game.html#a2d735435c259591d6df4e22dd3442bd8">tema</a>;                       </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4">   79</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4">State</a>                      </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        ST_MENU,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        ST_GAME,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        ST_END</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    };</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_singleton_game.html#a796d516da7a480a0f6612d8d1650e3f6">   89</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_singleton_game.html">SingletonGame</a> &amp;<a class="code" href="class_singleton_game.html#a796d516da7a480a0f6612d8d1650e3f6">get</a>(){</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_singleton_game.html">SingletonGame</a> game;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> game;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_singleton_game.html#aac225b62b182ae9d226728299e552821">   97</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#aac225b62b182ae9d226728299e552821">Descargar</a>(){</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="class_singleton_game.html#a0165960a3cbc0037e5cac700f0205869">music</a>.<a class="code" href="class_audio.html#af954f4262ae7178fa1795f4fc9c5b531">Descargar</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="class_window.html#a528dc82afd7dfa7a25094dc0016c0f08">Window::Descargar</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#a977911af6a0cc213968009f3ce3c3ab6">SetState</a>(<a class="code" href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4">State</a> state);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#a7ad0b969f9364d28b8f5c3fb9e576e96">Menu</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#aad61a5da16862f6a157dcb1102b658e7">Game</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#a421491a65798b14bf6f1de26b7529189">End</a>();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_singleton_game.html#a27da3478454c9202abac65e67ce221f1">Update</a>();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_singleton_game.html#a15c7a569d0b273645e6f9f3b56a0cdfa">~SingletonGame</a>();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif //RAYLIBTEMPLATE_SINGLETONGAME_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_singleton_game_html_a9b4af2960b5b078e43e9ae6f453c6e96"><div class="ttname"><a href="class_singleton_game.html#a9b4af2960b5b078e43e9ae6f453c6e96">SingletonGame::score</a></div><div class="ttdeci">int score</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:51</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a421491a65798b14bf6f1de26b7529189"><div class="ttname"><a href="class_singleton_game.html#a421491a65798b14bf6f1de26b7529189">SingletonGame::End</a></div><div class="ttdeci">void End()</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:37</div></div>
-<div class="ttc" id="aclass_singleton_game_html_aac225b62b182ae9d226728299e552821"><div class="ttname"><a href="class_singleton_game.html#aac225b62b182ae9d226728299e552821">SingletonGame::Descargar</a></div><div class="ttdeci">void Descargar()</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:76</div></div>
-<div class="ttc" id="aclass_singleton_game_html"><div class="ttname"><a href="class_singleton_game.html">SingletonGame</a></div><div class="ttdef"><b>Definition:</b> SingletonGame.h:38</div></div>
-<div class="ttc" id="aclass_manager_html"><div class="ttname"><a href="class_manager.html">Manager</a></div><div class="ttdef"><b>Definition:</b> Manager.h:12</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a15c7a569d0b273645e6f9f3b56a0cdfa"><div class="ttname"><a href="class_singleton_game.html#a15c7a569d0b273645e6f9f3b56a0cdfa">SingletonGame::~SingletonGame</a></div><div class="ttdeci">virtual ~SingletonGame()</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:29</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a1afa54848e39e11cfadb05370e5e1ee4a22cfde24e06572f2003e67422560bbb3"><div class="ttname"><a href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4a22cfde24e06572f2003e67422560bbb3">SingletonGame::ST_GAME</a></div><div class="ttdeci">@ ST_GAME</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:66</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a9b4af2960b5b078e43e9ae6f453c6e96"><div class="ttname"><a href="class_singleton_game.html#a9b4af2960b5b078e43e9ae6f453c6e96">SingletonGame::score</a></div><div class="ttdeci">int score</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:68</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a421491a65798b14bf6f1de26b7529189"><div class="ttname"><a href="class_singleton_game.html#a421491a65798b14bf6f1de26b7529189">SingletonGame::End</a></div><div class="ttdeci">void End()</div><div class="ttdoc">funcion que le pasa a Manager un SingletonGame</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:37</div></div>
+<div class="ttc" id="aclass_singleton_game_html_aac225b62b182ae9d226728299e552821"><div class="ttname"><a href="class_singleton_game.html#aac225b62b182ae9d226728299e552821">SingletonGame::Descargar</a></div><div class="ttdeci">void Descargar()</div><div class="ttdoc">funcion que realiza la descarga de música con la creacion de Audio y Window</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:97</div></div>
+<div class="ttc" id="aclass_singleton_game_html"><div class="ttname"><a href="class_singleton_game.html">SingletonGame</a></div><div class="ttdoc">Clase que instancia de manera unica la creacion de todos los objetos del programa.</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:51</div></div>
+<div class="ttc" id="aclass_manager_html"><div class="ttname"><a href="class_manager.html">Manager</a></div><div class="ttdoc">clase padre de los estados del programa</div><div class="ttdef"><b>Definition:</b> Manager.h:23</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a15c7a569d0b273645e6f9f3b56a0cdfa"><div class="ttname"><a href="class_singleton_game.html#a15c7a569d0b273645e6f9f3b56a0cdfa">SingletonGame::~SingletonGame</a></div><div class="ttdeci">virtual ~SingletonGame()</div><div class="ttdoc">funcion virtual que destruye un SingletonGame</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:29</div></div>
 <div class="ttc" id="a_bar___life_8h_html"><div class="ttname"><a href="_bar___life_8h.html">Bar_Life.h</a></div></div>
-<div class="ttc" id="aclass_singleton_game_html_aad61a5da16862f6a157dcb1102b658e7"><div class="ttname"><a href="class_singleton_game.html#aad61a5da16862f6a157dcb1102b658e7">SingletonGame::Game</a></div><div class="ttdeci">void Game()</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:41</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a977911af6a0cc213968009f3ce3c3ab6"><div class="ttname"><a href="class_singleton_game.html#a977911af6a0cc213968009f3ce3c3ab6">SingletonGame::SetState</a></div><div class="ttdeci">void SetState(State state)</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:12</div></div>
-<div class="ttc" id="aclass_singleton_game_html_ad9c7c8068ecdcef41d02bbeee2493a46"><div class="ttname"><a href="class_singleton_game.html#ad9c7c8068ecdcef41d02bbeee2493a46">SingletonGame::barL</a></div><div class="ttdeci">barLife barL</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:52</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a796d516da7a480a0f6612d8d1650e3f6"><div class="ttname"><a href="class_singleton_game.html#a796d516da7a480a0f6612d8d1650e3f6">SingletonGame::get</a></div><div class="ttdeci">static SingletonGame &amp; get()</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:71</div></div>
-<div class="ttc" id="aclass_night_theme_factory_html"><div class="ttname"><a href="class_night_theme_factory.html">NightThemeFactory</a></div><div class="ttdef"><b>Definition:</b> NightThemeFactory.h:14</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a7be1cf0af9361a65a2c36e30d4e140bb"><div class="ttname"><a href="class_singleton_game.html#a7be1cf0af9361a65a2c36e30d4e140bb">SingletonGame::start</a></div><div class="ttdeci">bool start</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:54</div></div>
-<div class="ttc" id="aclass_singleton_game_html_abe09557bb7899c255511478039e72d08"><div class="ttname"><a href="class_singleton_game.html#abe09557bb7899c255511478039e72d08">SingletonGame::tree</a></div><div class="ttdeci">SuperTree * tree</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:49</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a6606b653bf12d08c3f3ef75f9b1faf25"><div class="ttname"><a href="class_singleton_game.html#a6606b653bf12d08c3f3ef75f9b1faf25">SingletonGame::tf</a></div><div class="ttdeci">ThemeFactory * tf</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:53</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a1fc2fd5eed115cfe7f8072c94b7cab78"><div class="ttname"><a href="class_singleton_game.html#a1fc2fd5eed115cfe7f8072c94b7cab78">SingletonGame::TankeySkin</a></div><div class="ttdeci">Skin * TankeySkin</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:60</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a396aba30bca1f69d2bdf62c8118796fe"><div class="ttname"><a href="class_singleton_game.html#a396aba30bca1f69d2bdf62c8118796fe">SingletonGame::Botones</a></div><div class="ttdeci">std::vector&lt; Button * &gt; Botones</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:58</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a735b99bd6dae90c30732a1d30c0fbade"><div class="ttname"><a href="class_singleton_game.html#a735b99bd6dae90c30732a1d30c0fbade">SingletonGame::player</a></div><div class="ttdeci">Monkey * player</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:48</div></div>
-<div class="ttc" id="aeglext_8h_html_a92dbce8e3247f6a78126c99877caacb6"><div class="ttname"><a href="eglext_8h.html#a92dbce8e3247f6a78126c99877caacb6">window</a></div><div class="ttdeci">EGLSurface EGLNativeWindowType * window</div><div class="ttdef"><b>Definition:</b> eglext.h:697</div></div>
+<div class="ttc" id="aclass_singleton_game_html_aad61a5da16862f6a157dcb1102b658e7"><div class="ttname"><a href="class_singleton_game.html#aad61a5da16862f6a157dcb1102b658e7">SingletonGame::Game</a></div><div class="ttdeci">void Game()</div><div class="ttdoc">funcion que le pasa a Manager un SingletonGame</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:41</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a977911af6a0cc213968009f3ce3c3ab6"><div class="ttname"><a href="class_singleton_game.html#a977911af6a0cc213968009f3ce3c3ab6">SingletonGame::SetState</a></div><div class="ttdeci">void SetState(State state)</div><div class="ttdoc">funcion que setea el estado del SingletonGame (GameState, EndState o MenuState)</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:12</div></div>
+<div class="ttc" id="aclass_singleton_game_html_ad9c7c8068ecdcef41d02bbeee2493a46"><div class="ttname"><a href="class_singleton_game.html#ad9c7c8068ecdcef41d02bbeee2493a46">SingletonGame::barL</a></div><div class="ttdeci">barLife barL</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:69</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a796d516da7a480a0f6612d8d1650e3f6"><div class="ttname"><a href="class_singleton_game.html#a796d516da7a480a0f6612d8d1650e3f6">SingletonGame::get</a></div><div class="ttdeci">static SingletonGame &amp; get()</div><div class="ttdoc">funcion static utilizada para retornar un singletonGame con todos sus respectivos objetos creados</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:89</div></div>
+<div class="ttc" id="aclass_night_theme_factory_html"><div class="ttname"><a href="class_night_theme_factory.html">NightThemeFactory</a></div><div class="ttdoc">Clase que crea objetos en tema &quot;Night&quot;.</div><div class="ttdef"><b>Definition:</b> NightThemeFactory.h:22</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a7be1cf0af9361a65a2c36e30d4e140bb"><div class="ttname"><a href="class_singleton_game.html#a7be1cf0af9361a65a2c36e30d4e140bb">SingletonGame::start</a></div><div class="ttdeci">bool start</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:71</div></div>
+<div class="ttc" id="aclass_singleton_game_html_abe09557bb7899c255511478039e72d08"><div class="ttname"><a href="class_singleton_game.html#abe09557bb7899c255511478039e72d08">SingletonGame::tree</a></div><div class="ttdeci">SuperTree * tree</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:66</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a6606b653bf12d08c3f3ef75f9b1faf25"><div class="ttname"><a href="class_singleton_game.html#a6606b653bf12d08c3f3ef75f9b1faf25">SingletonGame::tf</a></div><div class="ttdeci">ThemeFactory * tf</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:70</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a1fc2fd5eed115cfe7f8072c94b7cab78"><div class="ttname"><a href="class_singleton_game.html#a1fc2fd5eed115cfe7f8072c94b7cab78">SingletonGame::TankeySkin</a></div><div class="ttdeci">Skin * TankeySkin</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:77</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a396aba30bca1f69d2bdf62c8118796fe"><div class="ttname"><a href="class_singleton_game.html#a396aba30bca1f69d2bdf62c8118796fe">SingletonGame::Botones</a></div><div class="ttdeci">std::vector&lt; Button * &gt; Botones</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:75</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a735b99bd6dae90c30732a1d30c0fbade"><div class="ttname"><a href="class_singleton_game.html#a735b99bd6dae90c30732a1d30c0fbade">SingletonGame::player</a></div><div class="ttdeci">Monkey * player</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:65</div></div>
 <div class="ttc" id="a_audio_8h_html"><div class="ttname"><a href="_audio_8h.html">Audio.h</a></div></div>
-<div class="ttc" id="afurmap_8txt_html_aeb0c888342a76b499c20664b1c4c9aeb"><div class="ttname"><a href="furmap_8txt.html#aeb0c888342a76b499c20664b1c4c9aeb">state</a></div><div class="ttdeci">furniture state</div><div class="ttdef"><b>Definition:</b> furmap.txt:2</div></div>
-<div class="ttc" id="aclass_singleton_game_html_ac643c875faac407e7264956372af5c54"><div class="ttname"><a href="class_singleton_game.html#ac643c875faac407e7264956372af5c54">SingletonGame::window</a></div><div class="ttdeci">Window window</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:46</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a1456542a36f6ba09f48450a21e1b0327"><div class="ttname"><a href="class_singleton_game.html#a1456542a36f6ba09f48450a21e1b0327">SingletonGame::colorBackground</a></div><div class="ttdeci">Color colorBackground</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:55</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a6a634c44141167ff4864944f05d29d40"><div class="ttname"><a href="class_singleton_game.html#a6a634c44141167ff4864944f05d29d40">SingletonGame::colorText</a></div><div class="ttdeci">Color colorText</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:56</div></div>
-<div class="ttc" id="aclass_singleton_game_html_afda9187e6d6a4cd383b022c9903293db"><div class="ttname"><a href="class_singleton_game.html#afda9187e6d6a4cd383b022c9903293db">SingletonGame::GameOver</a></div><div class="ttdeci">bool GameOver</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:50</div></div>
-<div class="ttc" id="aclass_button_html"><div class="ttname"><a href="class_button.html">Button</a></div><div class="ttdef"><b>Definition:</b> Button.h:12</div></div>
-<div class="ttc" id="aclass_light_theme_factory_html"><div class="ttname"><a href="class_light_theme_factory.html">LightThemeFactory</a></div><div class="ttdef"><b>Definition:</b> LightThemeFactory.h:13</div></div>
-<div class="ttc" id="aclass_window_html"><div class="ttname"><a href="class_window.html">Window</a></div><div class="ttdef"><b>Definition:</b> Window.h:10</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a7ad0b969f9364d28b8f5c3fb9e576e96"><div class="ttname"><a href="class_singleton_game.html#a7ad0b969f9364d28b8f5c3fb9e576e96">SingletonGame::Menu</a></div><div class="ttdeci">void Menu()</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:33</div></div>
-<div class="ttc" id="astruct_vector2_html"><div class="ttname"><a href="struct_vector2.html">Vector2</a></div><div class="ttdef"><b>Definition:</b> raylib.h:171</div></div>
-<div class="ttc" id="aclass_rama_html"><div class="ttname"><a href="class_rama.html">Rama</a></div><div class="ttdef"><b>Definition:</b> Rama.h:12</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a936d8a34dbd41beb134432d733f315a8"><div class="ttname"><a href="class_singleton_game.html#a936d8a34dbd41beb134432d733f315a8">SingletonGame::Ramas</a></div><div class="ttdeci">std::vector&lt; Rama * &gt; Ramas</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:57</div></div>
+<div class="ttc" id="aclass_singleton_game_html_ac643c875faac407e7264956372af5c54"><div class="ttname"><a href="class_singleton_game.html#ac643c875faac407e7264956372af5c54">SingletonGame::window</a></div><div class="ttdeci">Window window</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:63</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a1456542a36f6ba09f48450a21e1b0327"><div class="ttname"><a href="class_singleton_game.html#a1456542a36f6ba09f48450a21e1b0327">SingletonGame::colorBackground</a></div><div class="ttdeci">Color colorBackground</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:72</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a6a634c44141167ff4864944f05d29d40"><div class="ttname"><a href="class_singleton_game.html#a6a634c44141167ff4864944f05d29d40">SingletonGame::colorText</a></div><div class="ttdeci">Color colorText</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:73</div></div>
+<div class="ttc" id="aclass_singleton_game_html_afda9187e6d6a4cd383b022c9903293db"><div class="ttname"><a href="class_singleton_game.html#afda9187e6d6a4cd383b022c9903293db">SingletonGame::GameOver</a></div><div class="ttdeci">bool GameOver</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:67</div></div>
+<div class="ttc" id="aclass_button_html"><div class="ttname"><a href="class_button.html">Button</a></div><div class="ttdoc">Clase que representa a un botón.</div><div class="ttdef"><b>Definition:</b> MenuElements.h:22</div></div>
+<div class="ttc" id="aclass_window_html_a528dc82afd7dfa7a25094dc0016c0f08"><div class="ttname"><a href="class_window.html#a528dc82afd7dfa7a25094dc0016c0f08">Window::Descargar</a></div><div class="ttdeci">static void Descargar()</div><div class="ttdoc">Funcion de cierre de ventana.</div><div class="ttdef"><b>Definition:</b> Window.h:38</div></div>
+<div class="ttc" id="aclass_light_theme_factory_html"><div class="ttname"><a href="class_light_theme_factory.html">LightThemeFactory</a></div><div class="ttdoc">Clase que crea objetos en tema &quot;Light&quot;.</div><div class="ttdef"><b>Definition:</b> LightThemeFactory.h:22</div></div>
+<div class="ttc" id="aclass_window_html"><div class="ttname"><a href="class_window.html">Window</a></div><div class="ttdoc">Clase que instancia las propiedades de la ventana del juego.</div><div class="ttdef"><b>Definition:</b> Window.h:18</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a7ad0b969f9364d28b8f5c3fb9e576e96"><div class="ttname"><a href="class_singleton_game.html#a7ad0b969f9364d28b8f5c3fb9e576e96">SingletonGame::Menu</a></div><div class="ttdeci">void Menu()</div><div class="ttdoc">funcion que le pasa a Manager un SingletonGame</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:33</div></div>
+<div class="ttc" id="aclass_rama_html"><div class="ttname"><a href="class_rama.html">Rama</a></div><div class="ttdoc">Clase que representa la rama.</div><div class="ttdef"><b>Definition:</b> Rama.h:21</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a936d8a34dbd41beb134432d733f315a8"><div class="ttname"><a href="class_singleton_game.html#a936d8a34dbd41beb134432d733f315a8">SingletonGame::Ramas</a></div><div class="ttdeci">std::vector&lt; Rama * &gt; Ramas</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:74</div></div>
 <div class="ttc" id="a_window_8h_html"><div class="ttname"><a href="_window_8h.html">Window.h</a></div></div>
-<div class="ttc" id="aclass_singleton_game_html_a6aae5eead6800824f68a050c39c134db"><div class="ttname"><a href="class_singleton_game.html#a6aae5eead6800824f68a050c39c134db">SingletonGame::mousePoint</a></div><div class="ttdeci">Vector2 mousePoint</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:59</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a1afa54848e39e11cfadb05370e5e1ee4a7a05c573dc9d9c8939a8e9df96051500"><div class="ttname"><a href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4a7a05c573dc9d9c8939a8e9df96051500">SingletonGame::ST_MENU</a></div><div class="ttdeci">@ ST_MENU</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:65</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a1afa54848e39e11cfadb05370e5e1ee4a3d1cc7dad79a1454f1371c0c71cbaf6c"><div class="ttname"><a href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4a3d1cc7dad79a1454f1371c0c71cbaf6c">SingletonGame::ST_END</a></div><div class="ttdeci">@ ST_END</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:67</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a2d735435c259591d6df4e22dd3442bd8"><div class="ttname"><a href="class_singleton_game.html#a2d735435c259591d6df4e22dd3442bd8">SingletonGame::tema</a></div><div class="ttdeci">int tema</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:62</div></div>
-<div class="ttc" id="aclass_audio_html_af954f4262ae7178fa1795f4fc9c5b531"><div class="ttname"><a href="class_audio.html#af954f4262ae7178fa1795f4fc9c5b531">Audio::Descargar</a></div><div class="ttdeci">void Descargar()</div><div class="ttdoc">Descargar: Descarga la música de RAM.</div><div class="ttdef"><b>Definition:</b> Audio.h:42</div></div>
-<div class="ttc" id="astruct_color_html"><div class="ttname"><a href="struct_color.html">Color</a></div><div class="ttdef"><b>Definition:</b> raylib.h:203</div></div>
-<div class="ttc" id="aclass_skin_html"><div class="ttname"><a href="class_skin.html">Skin</a></div><div class="ttdef"><b>Definition:</b> Button.h:114</div></div>
-<div class="ttc" id="aclassbar_life_html"><div class="ttname"><a href="classbar_life.html">barLife</a></div><div class="ttdef"><b>Definition:</b> Bar_Life.h:11</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a27da3478454c9202abac65e67ce221f1"><div class="ttname"><a href="class_singleton_game.html#a27da3478454c9202abac65e67ce221f1">SingletonGame::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:45</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a9310918e3cab4c044228f5af1ada4aee"><div class="ttname"><a href="class_singleton_game.html#a9310918e3cab4c044228f5af1ada4aee">SingletonGame::sprite</a></div><div class="ttdeci">Texture2D sprite</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:45</div></div>
-<div class="ttc" id="aclass_super_tree_html"><div class="ttname"><a href="class_super_tree.html">SuperTree</a></div><div class="ttdef"><b>Definition:</b> SuperTree.h:11</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a0165960a3cbc0037e5cac700f0205869"><div class="ttname"><a href="class_singleton_game.html#a0165960a3cbc0037e5cac700f0205869">SingletonGame::music</a></div><div class="ttdeci">Audio music</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:47</div></div>
-<div class="ttc" id="aclass_singleton_game_html_a1afa54848e39e11cfadb05370e5e1ee4"><div class="ttname"><a href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4">SingletonGame::State</a></div><div class="ttdeci">State</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:64</div></div>
-<div class="ttc" id="aclass_monkey_html"><div class="ttname"><a href="class_monkey.html">Monkey</a></div><div class="ttdef"><b>Definition:</b> Monkey.h:17</div></div>
-<div class="ttc" id="astruct_texture2_d_html"><div class="ttname"><a href="struct_texture2_d.html">Texture2D</a></div><div class="ttdef"><b>Definition:</b> raylib.h:230</div></div>
-<div class="ttc" id="aclass_theme_factory_html"><div class="ttname"><a href="class_theme_factory.html">ThemeFactory</a></div><div class="ttdef"><b>Definition:</b> ThemeFactory.h:12</div></div>
-<div class="ttc" id="aclass_audio_html"><div class="ttname"><a href="class_audio.html">Audio</a></div><div class="ttdoc">Clase para la manipulacion del audio.</div><div class="ttdef"><b>Definition:</b> Audio.h:19</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a6aae5eead6800824f68a050c39c134db"><div class="ttname"><a href="class_singleton_game.html#a6aae5eead6800824f68a050c39c134db">SingletonGame::mousePoint</a></div><div class="ttdeci">Vector2 mousePoint</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:76</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a2d735435c259591d6df4e22dd3442bd8"><div class="ttname"><a href="class_singleton_game.html#a2d735435c259591d6df4e22dd3442bd8">SingletonGame::tema</a></div><div class="ttdeci">int tema</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:78</div></div>
+<div class="ttc" id="aclass_audio_html_af954f4262ae7178fa1795f4fc9c5b531"><div class="ttname"><a href="class_audio.html#af954f4262ae7178fa1795f4fc9c5b531">Audio::Descargar</a></div><div class="ttdeci">void Descargar()</div><div class="ttdoc">Descarga la música de RAM.</div><div class="ttdef"><b>Definition:</b> Audio.h:43</div></div>
+<div class="ttc" id="aclass_skin_html"><div class="ttname"><a href="class_skin.html">Skin</a></div><div class="ttdoc">Clase que representa la textura del boton.</div><div class="ttdef"><b>Definition:</b> MenuElements.h:223</div></div>
+<div class="ttc" id="aclassbar_life_html"><div class="ttname"><a href="classbar_life.html">barLife</a></div><div class="ttdoc">Clase que representa la barra de vida.</div><div class="ttdef"><b>Definition:</b> Bar_Life.h:20</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a27da3478454c9202abac65e67ce221f1"><div class="ttname"><a href="class_singleton_game.html#a27da3478454c9202abac65e67ce221f1">SingletonGame::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">funcion que le pasa a Manager un SingletonGame</div><div class="ttdef"><b>Definition:</b> SingletonGame.cpp:45</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a9310918e3cab4c044228f5af1ada4aee"><div class="ttname"><a href="class_singleton_game.html#a9310918e3cab4c044228f5af1ada4aee">SingletonGame::sprite</a></div><div class="ttdeci">Texture2D sprite</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:62</div></div>
+<div class="ttc" id="aclass_super_tree_html"><div class="ttname"><a href="class_super_tree.html">SuperTree</a></div><div class="ttdoc">Clase que representa el arbol.</div><div class="ttdef"><b>Definition:</b> SuperTree.h:20</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a0165960a3cbc0037e5cac700f0205869"><div class="ttname"><a href="class_singleton_game.html#a0165960a3cbc0037e5cac700f0205869">SingletonGame::music</a></div><div class="ttdeci">Audio music</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:64</div></div>
+<div class="ttc" id="aclass_singleton_game_html_a1afa54848e39e11cfadb05370e5e1ee4"><div class="ttname"><a href="class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4">SingletonGame::State</a></div><div class="ttdeci">State</div><div class="ttdef"><b>Definition:</b> SingletonGame.h:80</div></div>
+<div class="ttc" id="aclass_monkey_html"><div class="ttname"><a href="class_monkey.html">Monkey</a></div><div class="ttdoc">Clase que representa a Tankey en el juego.</div><div class="ttdef"><b>Definition:</b> Monkey.h:22</div></div>
+<div class="ttc" id="aclass_theme_factory_html"><div class="ttname"><a href="class_theme_factory.html">ThemeFactory</a></div><div class="ttdoc">Clase que representa el tema del juego.</div><div class="ttdef"><b>Definition:</b> ThemeFactory.h:21</div></div>
+<div class="ttc" id="aclass_audio_html"><div class="ttname"><a href="class_audio.html">Audio</a></div><div class="ttdoc">Clase para la manipulacion del audio.</div><div class="ttdef"><b>Definition:</b> Audio.h:20</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generado por &#160;<a href="http://www.doxygen.org/index.html">

@@ -2,6 +2,11 @@
 \label{class_visitor_draw}\index{VisitorDraw@{VisitorDraw}}
 
 
+Clase que dibuja lo que se visitó  
+
+
+
+
 {\ttfamily \#include $<$Visitor\+Draw.\+h$>$}
 
 Diagrama de herencias de Visitor\+Draw\begin{figure}[H]
@@ -13,57 +18,62 @@ Diagrama de herencias de Visitor\+Draw\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_visitor_draw_a00d1b58acb5945d1f83474ff3180ca3b}\label{class_visitor_draw_a00d1b58acb5945d1f83474ff3180ca3b}} 
 \mbox{\hyperlink{class_visitor_draw_a00d1b58acb5945d1f83474ff3180ca3b}{Visitor\+Draw}} ()
+\begin{DoxyCompactList}\small\item\em constructor de \mbox{\hyperlink{class_visitor_draw}{Visitor\+Draw}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_visitor_draw_a5aab657a3ec71f6ecc7ff5bd2f9e34e3}{Visit}} (\mbox{\hyperlink{class_night_monkey}{Night\+Monkey}} \&monkey) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_a5aab657a3ec71f6ecc7ff5bd2f9e34e3}{Visit}} (\mbox{\hyperlink{class_night_monkey}{Night\+Monkey}} \&monkey) override
+void \mbox{\hyperlink{class_visitor_draw_ac24131b80ba51b994fdbf107cdf080b4}{Visit}} (\mbox{\hyperlink{class_light_monkey}{Light\+Monkey}} \&monkey) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_ac24131b80ba51b994fdbf107cdf080b4}{Visit}} (\mbox{\hyperlink{class_light_monkey}{Light\+Monkey}} \&monkey) override
+void \mbox{\hyperlink{class_visitor_draw_a999540ee4eef39e1d31526c26f07808c}{Visit}} (\mbox{\hyperlink{class_tree}{Tree}} \&tree) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_a999540ee4eef39e1d31526c26f07808c}{Visit}} (\mbox{\hyperlink{class_tree}{Tree}} \&tree) override
+void \mbox{\hyperlink{class_visitor_draw_ab03f6bff4e4620b983f23d6bb76d5a82}{Visit}} (\mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}} \&tree) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_ab03f6bff4e4620b983f23d6bb76d5a82}{Visit}} (\mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}} \&tree) override
+void \mbox{\hyperlink{class_visitor_draw_a33522bb2efb30f9e913079adbf8d3865}{Visit}} (\mbox{\hyperlink{class_rama}{Rama}} \&rama) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_a33522bb2efb30f9e913079adbf8d3865}{Visit}} (\mbox{\hyperlink{class_rama}{Rama}} \&rama) override
+void \mbox{\hyperlink{class_visitor_draw_a89dbceb63e6065cbaade659301f03599}{Visit}} (\mbox{\hyperlink{class_night_button}{Night\+Button}} \&button) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_a89dbceb63e6065cbaade659301f03599}{Visit}} (\mbox{\hyperlink{class_night_button}{Night\+Button}} \&button) override
+void \mbox{\hyperlink{class_visitor_draw_a6517f81d9f13229befd867e744d2be0e}{Visit}} (\mbox{\hyperlink{class_light_button}{Light\+Button}} \&button) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_a6517f81d9f13229befd867e744d2be0e}{Visit}} (\mbox{\hyperlink{class_light_button}{Light\+Button}} \&button) override
+void \mbox{\hyperlink{class_visitor_draw_a0eeeb08aa90dcca1048eef36ae6d34fa}{Visit}} (\mbox{\hyperlink{class_start_button}{Start\+Button}} \&button) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_a0eeeb08aa90dcca1048eef36ae6d34fa}{Visit}} (\mbox{\hyperlink{class_start_button}{Start\+Button}} \&button) override
+void \mbox{\hyperlink{class_visitor_draw_a5f7d99d3bedeaac1dbcd9c10763883fb}{Visit}} (\mbox{\hyperlink{class_night_rama}{Night\+Rama}} \&rama) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_a5f7d99d3bedeaac1dbcd9c10763883fb}{Visit}} (\mbox{\hyperlink{class_night_rama}{Night\+Rama}} \&rama) override
+void \mbox{\hyperlink{class_visitor_draw_a89646f1bea4fed2b795467629cb2468c}{Visit}} (\mbox{\hyperlink{class_light_rama}{Light\+Rama}} \&rama) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_a89646f1bea4fed2b795467629cb2468c}{Visit}} (\mbox{\hyperlink{class_light_rama}{Light\+Rama}} \&rama) override
+void \mbox{\hyperlink{class_visitor_draw_af935bf3742f62c8f541936d9f170b2f1}{Visit}} (\mbox{\hyperlink{class_skin}{Skin}} \&skin) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_af935bf3742f62c8f541936d9f170b2f1}{Visit}} (\mbox{\hyperlink{class_skin}{Skin}} \&skin) override
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_visitor_draw_a417d2ba79740c9ead9369bb38b7943ad}{Call\+Rama}} (\mbox{\hyperlink{class_rama}{Rama}} \&rama)
+void \mbox{\hyperlink{class_visitor_draw_a417d2ba79740c9ead9369bb38b7943ad}{Call\+Rama}} (\mbox{\hyperlink{class_rama}{Rama}} \&rama)
 \end{DoxyCompactItemize}
 \doxysubsection*{Otros miembros heredados}
 
 
-\doxysubsection{Documentación del constructor y destructor}
-\mbox{\Hypertarget{class_visitor_draw_a00d1b58acb5945d1f83474ff3180ca3b}\label{class_visitor_draw_a00d1b58acb5945d1f83474ff3180ca3b}} 
-\index{VisitorDraw@{VisitorDraw}!VisitorDraw@{VisitorDraw}}
-\index{VisitorDraw@{VisitorDraw}!VisitorDraw@{VisitorDraw}}
-\doxysubsubsection{\texorpdfstring{VisitorDraw()}{VisitorDraw()}}
-{\footnotesize\ttfamily Visitor\+Draw\+::\+Visitor\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
+\doxysubsection{Descripción detallada}
+Clase que dibuja lo que se visitó 
 
 \doxysubsection{Documentación de las funciones miembro}
 \mbox{\Hypertarget{class_visitor_draw_a417d2ba79740c9ead9369bb38b7943ad}\label{class_visitor_draw_a417d2ba79740c9ead9369bb38b7943ad}} 
 \index{VisitorDraw@{VisitorDraw}!CallRama@{CallRama}}
 \index{CallRama@{CallRama}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{CallRama()}{CallRama()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Call\+Rama (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rama}{Rama}} \&}]{rama }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Call\+Rama (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rama}{Rama}} \&}]{rama }\end{DoxyParamCaption})}
 
+Funcion en donde se determina el lado(-\/1/1) y sector(1/2/3/4) de la rama a visitar y dibujar 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_rama}{Rama}}} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_visitor_draw_a6517f81d9f13229befd867e744d2be0e}\label{class_visitor_draw_a6517f81d9f13229befd867e744d2be0e}} 
 \index{VisitorDraw@{VisitorDraw}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_button}{Light\+Button}} \&}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_button}{Light\+Button}} \&}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita y dibujo a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_light_button}{Light\+Button}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_adaa16105ebf9e1a7351a726c2e2a972d}{Visitor}}.
@@ -72,8 +82,13 @@ Implementa \mbox{\hyperlink{class_visitor_adaa16105ebf9e1a7351a726c2e2a972d}{Vis
 \index{VisitorDraw@{VisitorDraw}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_monkey}{Light\+Monkey}} \&}]{monkey }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_monkey}{Light\+Monkey}} \&}]{monkey }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita y dibujo a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_light_monkey}{Light\+Monkey}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a13460f1429ea78b0d4ef96b95e9bd0a2}{Visitor}}.
@@ -82,8 +97,13 @@ Implementa \mbox{\hyperlink{class_visitor_a13460f1429ea78b0d4ef96b95e9bd0a2}{Vis
 \index{VisitorDraw@{VisitorDraw}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_rama}{Light\+Rama}} \&}]{rama }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_light_rama}{Light\+Rama}} \&}]{rama }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita y dibujo a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_light_rama}{Light\+Rama}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a61edba687579927a9915e89409176587}{Visitor}}.
@@ -92,8 +112,13 @@ Implementa \mbox{\hyperlink{class_visitor_a61edba687579927a9915e89409176587}{Vis
 \index{VisitorDraw@{VisitorDraw}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_button}{Night\+Button}} \&}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_button}{Night\+Button}} \&}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita y dibujo a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_night_button}{Night\+Button}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a4759ac0f7c82998a186cc1b666409b8a}{Visitor}}.
@@ -102,8 +127,13 @@ Implementa \mbox{\hyperlink{class_visitor_a4759ac0f7c82998a186cc1b666409b8a}{Vis
 \index{VisitorDraw@{VisitorDraw}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_monkey}{Night\+Monkey}} \&}]{monkey }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_monkey}{Night\+Monkey}} \&}]{monkey }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita y dibujo a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_night_monkey}{Night\+Monkey}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a3f6f6edfa83af5e343ce8983c45c9cfb}{Visitor}}.
@@ -112,8 +142,13 @@ Implementa \mbox{\hyperlink{class_visitor_a3f6f6edfa83af5e343ce8983c45c9cfb}{Vis
 \index{VisitorDraw@{VisitorDraw}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_rama}{Night\+Rama}} \&}]{rama }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_night_rama}{Night\+Rama}} \&}]{rama }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita y dibujo a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_night_rama}{Night\+Rama}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a62ae0125873782bc72fe25664e8cdc61}{Visitor}}.
@@ -122,8 +157,13 @@ Implementa \mbox{\hyperlink{class_visitor_a62ae0125873782bc72fe25664e8cdc61}{Vis
 \index{VisitorDraw@{VisitorDraw}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rama}{Rama}} \&}]{rama }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rama}{Rama}} \&}]{rama }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita y dibujo a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_rama}{Rama}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_aa9c99cf2288c98f2335e6b57ec3b3916}{Visitor}}.
@@ -132,8 +172,13 @@ Implementa \mbox{\hyperlink{class_visitor_aa9c99cf2288c98f2335e6b57ec3b3916}{Vis
 \index{VisitorDraw@{VisitorDraw}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_skin}{Skin}} \&}]{skin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_skin}{Skin}} \&}]{skin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita y dibujo a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_skin}{Skin}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_af379dead2f78695b7c2938eaa0435551}{Visitor}}.
@@ -142,8 +187,13 @@ Implementa \mbox{\hyperlink{class_visitor_af379dead2f78695b7c2938eaa0435551}{Vis
 \index{VisitorDraw@{VisitorDraw}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_start_button}{Start\+Button}} \&}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_start_button}{Start\+Button}} \&}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita y dibujo a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_start_button}{Start\+Button}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a2ae9e3f47932dac225533527d4733e96}{Visitor}}.
@@ -152,8 +202,13 @@ Implementa \mbox{\hyperlink{class_visitor_a2ae9e3f47932dac225533527d4733e96}{Vis
 \index{VisitorDraw@{VisitorDraw}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree}{Tree}} \&}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree}{Tree}} \&}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita y dibujo a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_tree}{Tree}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_ad18a7287da98318080bc6c086d6c2f0a}{Visitor}}.
@@ -162,8 +217,13 @@ Implementa \mbox{\hyperlink{class_visitor_ad18a7287da98318080bc6c086d6c2f0a}{Vis
 \index{VisitorDraw@{VisitorDraw}!Visit@{Visit}}
 \index{Visit@{Visit}!VisitorDraw@{VisitorDraw}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}} \&}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Visitor\+Draw\+::\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}} \&}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de visita y dibujo a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{class_tree_vetas}{Tree\+Vetas}}} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitor_a7101bb681a7fb137c940f5b209bc7763}{Visitor}}.
@@ -172,5 +232,5 @@ Implementa \mbox{\hyperlink{class_visitor_a7101bb681a7fb137c940f5b209bc7763}{Vis
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_visitor_draw_8h}{Visitor\+Draw.\+h}}\item 
-clases/\mbox{\hyperlink{_visitor_draw_8cpp}{Visitor\+Draw.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_visitor_draw_8h}{Visitor\+Draw.\+h}}\item 
+Visitor\+Draw.\+cpp\end{DoxyCompactItemize}

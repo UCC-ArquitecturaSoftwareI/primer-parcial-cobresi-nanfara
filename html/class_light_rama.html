@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tankey Game: Referencia de la Clase LightRama</title>
+<title>Tankey: Referencia de la Clase LightRama</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Tankey Game
+   <div id="projectname">Tankey
    &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
@@ -72,6 +72,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Clase que representa a las ramas en su tema "light".  
+ <a href="class_light_rama.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_light_rama_8h_source.html">LightRama.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de LightRama</div>
@@ -79,49 +82,60 @@ Diagrama de herencias de LightRama</div>
  <div class="center">
   <img src="class_light_rama.png" usemap="#LightRama_map" alt=""/>
   <map id="LightRama_map" name="LightRama_map">
-<area href="class_rama.html" alt="Rama" shape="rect" coords="0,56,70,80"/>
-<area href="class_visitable.html" alt="Visitable" shape="rect" coords="0,0,70,24"/>
+<area href="class_rama.html" title="Clase que representa la rama." alt="Rama" shape="rect" coords="0,56,70,80"/>
+<area href="class_visitable.html" title="Clase que determina a quien se esta visitando." alt="Visitable" shape="rect" coords="0,0,70,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
-<tr class="memitem:a105b31c8c2c8fcdf94684cae5c13a0ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_rama.html#a105b31c8c2c8fcdf94684cae5c13a0ae">LightRama</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> lado1, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> sector1)</td></tr>
+<tr class="memitem:a105b31c8c2c8fcdf94684cae5c13a0ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_rama.html#a105b31c8c2c8fcdf94684cae5c13a0ae">LightRama</a> (int lado1, int sector1)</td></tr>
+<tr class="memdesc:a105b31c8c2c8fcdf94684cae5c13a0ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor de la clase <a class="el" href="class_light_rama.html" title="Clase que representa a las ramas en su tema &quot;light&quot;.">LightRama</a>  <a href="class_light_rama.html#a105b31c8c2c8fcdf94684cae5c13a0ae">Más...</a><br /></td></tr>
 <tr class="separator:a105b31c8c2c8fcdf94684cae5c13a0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a466a2945e37a61b8162ffd7a809636a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_rama.html#a466a2945e37a61b8162ffd7a809636a3">Move</a> () override</td></tr>
+<tr class="memitem:a466a2945e37a61b8162ffd7a809636a3"><td class="memItemLeft" align="right" valign="top"><a id="a466a2945e37a61b8162ffd7a809636a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_rama.html#a466a2945e37a61b8162ffd7a809636a3">Move</a> () override</td></tr>
+<tr class="memdesc:a466a2945e37a61b8162ffd7a809636a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">cambia a la <a class="el" href="class_light_rama.html" title="Clase que representa a las ramas en su tema &quot;light&quot;.">LightRama</a> de posicion <br /></td></tr>
 <tr class="separator:a466a2945e37a61b8162ffd7a809636a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f8547762411b234de6e14171c6ba8f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_rama.html#a9f8547762411b234de6e14171c6ba8f1">Accept</a> (<a class="el" href="class_visitor.html">Visitor</a> &amp;<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>)</td></tr>
-<tr class="separator:a9f8547762411b234de6e14171c6ba8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1cf2f215a9b77806c74ab482bad424e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_rama.html#ad1cf2f215a9b77806c74ab482bad424e">Draw</a> ()</td></tr>
-<tr class="separator:ad1cf2f215a9b77806c74ab482bad424e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1382248ce7d57faf41e2b70adaacd648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_rama.html#a1382248ce7d57faf41e2b70adaacd648">GetRectangle</a> ()</td></tr>
-<tr class="separator:a1382248ce7d57faf41e2b70adaacd648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e43d40c1355991b13ce96d840a24b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_rama.html#a23e43d40c1355991b13ce96d840a24b9">Accept</a> (<a class="el" href="class_visitor.html">Visitor</a> &amp;v) override</td></tr>
+<tr class="separator:a23e43d40c1355991b13ce96d840a24b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04bad4e4479af2b5a0c7fa2a8cf6dc6"><td class="memItemLeft" align="right" valign="top"><a id="af04bad4e4479af2b5a0c7fa2a8cf6dc6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_rama.html#af04bad4e4479af2b5a0c7fa2a8cf6dc6">Draw</a> () override</td></tr>
+<tr class="memdesc:af04bad4e4479af2b5a0c7fa2a8cf6dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">grafica la <a class="el" href="class_light_rama.html" title="Clase que representa a las ramas en su tema &quot;light&quot;.">LightRama</a> en pantalla <br /></td></tr>
+<tr class="separator:af04bad4e4479af2b5a0c7fa2a8cf6dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4c7ac9baa37304675435c015bed3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_rama.html#a6a4c7ac9baa37304675435c015bed3a7">GetRectangle</a> () override</td></tr>
+<tr class="separator:a6a4c7ac9baa37304675435c015bed3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_rama"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_rama')"><img src="closed.png" alt="-"/>&#160;Métodos públicos heredados desde <a class="el" href="class_rama.html">Rama</a></td></tr>
-<tr class="memitem:ae8a128e0db1f86107661e31fb748c452 inherit pub_methods_class_rama"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#ae8a128e0db1f86107661e31fb748c452">Rama</a> (<a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> lado1, <a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a> sector1)</td></tr>
+<tr class="memitem:ae8a128e0db1f86107661e31fb748c452 inherit pub_methods_class_rama"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#ae8a128e0db1f86107661e31fb748c452">Rama</a> (int lado1, int sector1)</td></tr>
+<tr class="memdesc:ae8a128e0db1f86107661e31fb748c452 inherit pub_methods_class_rama"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor de la clase <a class="el" href="class_rama.html" title="Clase que representa la rama.">Rama</a>  <a href="class_rama.html#ae8a128e0db1f86107661e31fb748c452">Más...</a><br /></td></tr>
 <tr class="separator:ae8a128e0db1f86107661e31fb748c452 inherit pub_methods_class_rama"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40d6b01c7d580591a81d6e37165243c5 inherit pub_methods_class_rama"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#a40d6b01c7d580591a81d6e37165243c5">getRectangle</a> ()</td></tr>
+<tr class="memitem:a40d6b01c7d580591a81d6e37165243c5 inherit pub_methods_class_rama"><td class="memItemLeft" align="right" valign="top">Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#a40d6b01c7d580591a81d6e37165243c5">getRectangle</a> ()</td></tr>
 <tr class="separator:a40d6b01c7d580591a81d6e37165243c5 inherit pub_methods_class_rama"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a490ef04b688125473f8c7c08dd4ae45e inherit pub_methods_class_rama"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#a490ef04b688125473f8c7c08dd4ae45e">Accept</a> (<a class="el" href="class_visitor.html">Visitor</a> &amp;<a class="el" href="examples_2others_2external_2include_2glad_8h.html#a14cfbe2fc2234f5504618905b69d1e06">v</a>)</td></tr>
-<tr class="separator:a490ef04b688125473f8c7c08dd4ae45e inherit pub_methods_class_rama"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9441a121a3b8a1b1747c0c9437ea40 inherit pub_methods_class_rama"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#a5e9441a121a3b8a1b1747c0c9437ea40">Accept</a> (<a class="el" href="class_visitor.html">Visitor</a> &amp;v) override</td></tr>
+<tr class="separator:a5e9441a121a3b8a1b1747c0c9437ea40 inherit pub_methods_class_rama"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_visitable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_visitable')"><img src="closed.png" alt="-"/>&#160;Métodos públicos heredados desde <a class="el" href="class_visitable.html">Visitable</a></td></tr>
-<tr class="memitem:a7d9b9af4c6c2c12085e6fd065d21ba44 inherit pub_methods_class_visitable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visitable.html#a7d9b9af4c6c2c12085e6fd065d21ba44">Visitable</a> ()</td></tr>
-<tr class="separator:a7d9b9af4c6c2c12085e6fd065d21ba44 inherit pub_methods_class_visitable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972eff637ca2a8230330fe4b15dc8df4 inherit pub_methods_class_visitable"><td class="memItemLeft" align="right" valign="top"><a id="a972eff637ca2a8230330fe4b15dc8df4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visitable.html#a972eff637ca2a8230330fe4b15dc8df4">Visitable</a> ()=default</td></tr>
+<tr class="memdesc:a972eff637ca2a8230330fe4b15dc8df4 inherit pub_methods_class_visitable"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor de <a class="el" href="class_visitable.html" title="Clase que determina a quien se esta visitando.">Visitable</a> <br /></td></tr>
+<tr class="separator:a972eff637ca2a8230330fe4b15dc8df4 inherit pub_methods_class_visitable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Otros miembros heredados</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_rama"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_rama')"><img src="closed.png" alt="-"/>&#160;Atributos públicos heredados desde <a class="el" href="class_rama.html">Rama</a></td></tr>
-<tr class="memitem:aa142882351348840f782073f0e106ba8 inherit pub_attribs_class_rama"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#aa142882351348840f782073f0e106ba8">rama_sector</a></td></tr>
+<tr class="memitem:aa142882351348840f782073f0e106ba8 inherit pub_attribs_class_rama"><td class="memItemLeft" align="right" valign="top"><a id="aa142882351348840f782073f0e106ba8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rama_sector</b></td></tr>
 <tr class="separator:aa142882351348840f782073f0e106ba8 inherit pub_attribs_class_rama"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92826b5fc34c451de23574312e26dc30 inherit pub_attribs_class_rama"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#a92826b5fc34c451de23574312e26dc30">lado</a></td></tr>
+<tr class="memitem:a92826b5fc34c451de23574312e26dc30 inherit pub_attribs_class_rama"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#a92826b5fc34c451de23574312e26dc30">lado</a></td></tr>
 <tr class="separator:a92826b5fc34c451de23574312e26dc30 inherit pub_attribs_class_rama"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee7c162cffa94a90eb9d8446cd1d30ff inherit pub_attribs_class_rama"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#aee7c162cffa94a90eb9d8446cd1d30ff">rama_position</a></td></tr>
+<tr class="memitem:aee7c162cffa94a90eb9d8446cd1d30ff inherit pub_attribs_class_rama"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#aee7c162cffa94a90eb9d8446cd1d30ff">rama_position</a> { }</td></tr>
 <tr class="separator:aee7c162cffa94a90eb9d8446cd1d30ff inherit pub_attribs_class_rama"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae915c5972de8d84aa4086810b6488051 inherit pub_attribs_class_rama"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib-build_2src_2raudio_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#ae915c5972de8d84aa4086810b6488051">animal</a></td></tr>
+<tr class="memitem:ae915c5972de8d84aa4086810b6488051 inherit pub_attribs_class_rama"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#ae915c5972de8d84aa4086810b6488051">animal</a></td></tr>
 <tr class="separator:ae915c5972de8d84aa4086810b6488051 inherit pub_attribs_class_rama"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af982a1bf139232fb585c24cd75890f62 inherit pub_attribs_class_rama"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rectangle.html">Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#af982a1bf139232fb585c24cd75890f62">rect</a></td></tr>
+<tr class="memitem:af982a1bf139232fb585c24cd75890f62 inherit pub_attribs_class_rama"><td class="memItemLeft" align="right" valign="top">Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rama.html#af982a1bf139232fb585c24cd75890f62">rect</a> { }</td></tr>
 <tr class="separator:af982a1bf139232fb585c24cd75890f62 inherit pub_attribs_class_rama"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase que representa a las ramas en su tema "light". </p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="a105b31c8c2c8fcdf94684cae5c13a0ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a105b31c8c2c8fcdf94684cae5c13a0ae">&#9670;&nbsp;</a></span>LightRama()</h2>
 
@@ -134,13 +148,13 @@ Otros miembros heredados</h2></td></tr>
         <tr>
           <td class="memname">LightRama::LightRama </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>lado1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_c_make_cache_8txt.html#ae5ddf38bc47713b2bcad41253d69d372">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sector1</em>&#160;</td>
         </tr>
         <tr>
@@ -156,11 +170,20 @@ Otros miembros heredados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>constructor de la clase <a class="el" href="class_light_rama.html" title="Clase que representa a las ramas en su tema &quot;light&quot;.">LightRama</a> </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lado1</td><td>Lado en el que se va a construir la rama </td></tr>
+    <tr><td class="paramname">sector1</td><td>Sector en el que se va a construir la rama </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Documentación de las funciones miembro</h2>
-<a id="a9f8547762411b234de6e14171c6ba8f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f8547762411b234de6e14171c6ba8f1">&#9670;&nbsp;</a></span>Accept()</h2>
+<a id="a23e43d40c1355991b13ce96d840a24b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23e43d40c1355991b13ce96d840a24b9">&#9670;&nbsp;</a></span>Accept()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,91 +192,10 @@ Otros miembros heredados</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> LightRama::Accept </td>
+          <td class="memname">void LightRama::Accept </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_visitor.html">Visitor</a> &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implementa <a class="el" href="class_visitable.html#a9db999616998fc36f82a31f4d7d9254d">Visitable</a>.</p>
-
-</div>
-</div>
-<a id="ad1cf2f215a9b77806c74ab482bad424e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1cf2f215a9b77806c74ab482bad424e">&#9670;&nbsp;</a></span>Draw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> LightRama::Draw </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplementado de <a class="el" href="class_rama.html#a363b1f0dc70cea532a365105d57806cd">Rama</a>.</p>
-
-</div>
-</div>
-<a id="a1382248ce7d57faf41e2b70adaacd648"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1382248ce7d57faf41e2b70adaacd648">&#9670;&nbsp;</a></span>GetRectangle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> LightRama::GetRectangle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implementa <a class="el" href="class_rama.html#a0a98b0912035466f017e56886f13e21a">Rama</a>.</p>
-
-</div>
-</div>
-<a id="a466a2945e37a61b8162ffd7a809636a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a466a2945e37a61b8162ffd7a809636a3">&#9670;&nbsp;</a></span>Move()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> LightRama::Move </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -263,14 +205,48 @@ Otros miembros heredados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Funcion de aceptacion a un visitante </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implementa <a class="el" href="class_rama.html#a9293b79c33561e77a5ba11948641808d">Rama</a>.</p>
+<p>Implementa <a class="el" href="class_visitable.html#a9db999616998fc36f82a31f4d7d9254d">Visitable</a>.</p>
+
+</div>
+</div>
+<a id="a6a4c7ac9baa37304675435c015bed3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a4c7ac9baa37304675435c015bed3a7">&#9670;&nbsp;</a></span>GetRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightRama::GetRectangle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>dependiendo de los atributos de la rama, calcula las coordenadas del rectangulo de la textura correspondiente y las coloca como el nuevo valor del atributo rect de la rama, esto permite, por ejemplo, que la imagen de la rama cambie de vacia a con animales. </p>
+
+<p>Implementa <a class="el" href="class_rama.html#a0a98b0912035466f017e56886f13e21a">Rama</a>.</p>
 
 </div>
 </div>
 <hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
-<li>clases/<a class="el" href="_light_rama_8h_source.html">LightRama.h</a></li>
-<li>clases/<a class="el" href="_light_rama_8cpp.html">LightRama.cpp</a></li>
+<li><a class="el" href="_light_rama_8h_source.html">LightRama.h</a></li>
+<li>LightRama.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

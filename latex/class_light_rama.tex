@@ -2,6 +2,11 @@
 \label{class_light_rama}\index{LightRama@{LightRama}}
 
 
+Clase que representa a las ramas en su tema \char`\"{}light\char`\"{}.  
+
+
+
+
 {\ttfamily \#include $<$Light\+Rama.\+h$>$}
 
 Diagrama de herencias de Light\+Rama\begin{figure}[H]
@@ -13,72 +18,73 @@ Diagrama de herencias de Light\+Rama\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_light_rama_a105b31c8c2c8fcdf94684cae5c13a0ae}{Light\+Rama}} (\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} lado1, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} sector1)
+\mbox{\hyperlink{class_light_rama_a105b31c8c2c8fcdf94684cae5c13a0ae}{Light\+Rama}} (int lado1, int sector1)
+\begin{DoxyCompactList}\small\item\em constructor de la clase \mbox{\hyperlink{class_light_rama}{Light\+Rama}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_rama_a466a2945e37a61b8162ffd7a809636a3}\label{class_light_rama_a466a2945e37a61b8162ffd7a809636a3}} 
+void \mbox{\hyperlink{class_light_rama_a466a2945e37a61b8162ffd7a809636a3}{Move}} () override
+\begin{DoxyCompactList}\small\item\em cambia a la \mbox{\hyperlink{class_light_rama}{Light\+Rama}} de posicion \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_light_rama_a23e43d40c1355991b13ce96d840a24b9}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&v) override
 \item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_light_rama_a466a2945e37a61b8162ffd7a809636a3}{Move}} () override
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_light_rama_a9f8547762411b234de6e14171c6ba8f1}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&\mbox{\hyperlink{examples_2others_2external_2include_2glad_8h_a14cfbe2fc2234f5504618905b69d1e06}{v}})
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_light_rama_ad1cf2f215a9b77806c74ab482bad424e}{Draw}} ()
-\item 
-\mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_light_rama_a1382248ce7d57faf41e2b70adaacd648}{Get\+Rectangle}} ()
+\mbox{\Hypertarget{class_light_rama_af04bad4e4479af2b5a0c7fa2a8cf6dc6}\label{class_light_rama_af04bad4e4479af2b5a0c7fa2a8cf6dc6}} 
+void \mbox{\hyperlink{class_light_rama_af04bad4e4479af2b5a0c7fa2a8cf6dc6}{Draw}} () override
+\begin{DoxyCompactList}\small\item\em grafica la \mbox{\hyperlink{class_light_rama}{Light\+Rama}} en pantalla \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_light_rama_a6a4c7ac9baa37304675435c015bed3a7}{Get\+Rectangle}} () override
 \end{DoxyCompactItemize}
 \doxysubsection*{Otros miembros heredados}
 
+
+\doxysubsection{Descripción detallada}
+Clase que representa a las ramas en su tema \char`\"{}light\char`\"{}. 
 
 \doxysubsection{Documentación del constructor y destructor}
 \mbox{\Hypertarget{class_light_rama_a105b31c8c2c8fcdf94684cae5c13a0ae}\label{class_light_rama_a105b31c8c2c8fcdf94684cae5c13a0ae}} 
 \index{LightRama@{LightRama}!LightRama@{LightRama}}
 \index{LightRama@{LightRama}!LightRama@{LightRama}}
 \doxysubsubsection{\texorpdfstring{LightRama()}{LightRama()}}
-{\footnotesize\ttfamily Light\+Rama\+::\+Light\+Rama (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{lado1,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{sector1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Light\+Rama\+::\+Light\+Rama (\begin{DoxyParamCaption}\item[{int}]{lado1,  }\item[{int}]{sector1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+constructor de la clase \mbox{\hyperlink{class_light_rama}{Light\+Rama}} 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em lado1} & Lado en el que se va a construir la rama \\
+\hline
+{\em sector1} & Sector en el que se va a construir la rama \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_light_rama_a9f8547762411b234de6e14171c6ba8f1}\label{class_light_rama_a9f8547762411b234de6e14171c6ba8f1}} 
+\mbox{\Hypertarget{class_light_rama_a23e43d40c1355991b13ce96d840a24b9}\label{class_light_rama_a23e43d40c1355991b13ce96d840a24b9}} 
 \index{LightRama@{LightRama}!Accept@{Accept}}
 \index{Accept@{Accept}!LightRama@{LightRama}}
 \doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Light\+Rama\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Light\+Rama\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Funcion de aceptacion a un visitante 
+\begin{DoxyParams}{Parámetros}
+{\em v} & \\
+\hline
+\end{DoxyParams}
 
 
 Implementa \mbox{\hyperlink{class_visitable_a9db999616998fc36f82a31f4d7d9254d}{Visitable}}.
 
-\mbox{\Hypertarget{class_light_rama_ad1cf2f215a9b77806c74ab482bad424e}\label{class_light_rama_ad1cf2f215a9b77806c74ab482bad424e}} 
-\index{LightRama@{LightRama}!Draw@{Draw}}
-\index{Draw@{Draw}!LightRama@{LightRama}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Light\+Rama\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Reimplementado de \mbox{\hyperlink{class_rama_a363b1f0dc70cea532a365105d57806cd}{Rama}}.
-
-\mbox{\Hypertarget{class_light_rama_a1382248ce7d57faf41e2b70adaacd648}\label{class_light_rama_a1382248ce7d57faf41e2b70adaacd648}} 
+\mbox{\Hypertarget{class_light_rama_a6a4c7ac9baa37304675435c015bed3a7}\label{class_light_rama_a6a4c7ac9baa37304675435c015bed3a7}} 
 \index{LightRama@{LightRama}!GetRectangle@{GetRectangle}}
 \index{GetRectangle@{GetRectangle}!LightRama@{LightRama}}
 \doxysubsubsection{\texorpdfstring{GetRectangle()}{GetRectangle()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Light\+Rama\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Light\+Rama\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-
+dependiendo de los atributos de la rama, calcula las coordenadas del rectangulo de la textura correspondiente y las coloca como el nuevo valor del atributo rect de la rama, esto permite, por ejemplo, que la imagen de la rama cambie de vacia a con animales. 
 
 Implementa \mbox{\hyperlink{class_rama_a0a98b0912035466f017e56886f13e21a}{Rama}}.
-
-\mbox{\Hypertarget{class_light_rama_a466a2945e37a61b8162ffd7a809636a3}\label{class_light_rama_a466a2945e37a61b8162ffd7a809636a3}} 
-\index{LightRama@{LightRama}!Move@{Move}}
-\index{Move@{Move}!LightRama@{LightRama}}
-\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Light\+Rama\+::\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Implementa \mbox{\hyperlink{class_rama_a9293b79c33561e77a5ba11948641808d}{Rama}}.
 
 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_light_rama_8h}{Light\+Rama.\+h}}\item 
-clases/\mbox{\hyperlink{_light_rama_8cpp}{Light\+Rama.\+cpp}}\end{DoxyCompactItemize}
+Light\+Rama.\+h\item 
+Light\+Rama.\+cpp\end{DoxyCompactItemize}

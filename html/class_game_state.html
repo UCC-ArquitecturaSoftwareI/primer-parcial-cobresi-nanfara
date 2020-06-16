@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tankey Game: Referencia de la Clase GameState</title>
+<title>Tankey: Referencia de la Clase GameState</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Tankey Game
+   <div id="projectname">Tankey
    &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Tankey es un juego sobre un gorila. Este gorila trepa por un árbol infinito, pero a medida que sube se enfrenta a un problema: debe esquivar las ramas que se avecinan sobre él. Moviéndose de un lado al otro... ¿Podrá lograrlo?</div>
@@ -72,6 +72,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Clase hijo de <a class="el" href="class_manager.html" title="clase padre de los estados del programa">Manager</a>, representa el estado del programa durante el juego.  
+ <a href="class_game_state.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_game_state_8h_source.html">GameState.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de GameState</div>
@@ -79,33 +82,46 @@ Diagrama de herencias de GameState</div>
  <div class="center">
   <img src="class_game_state.png" usemap="#GameState_map" alt=""/>
   <map id="GameState_map" name="GameState_map">
-<area href="class_manager.html" alt="Manager" shape="rect" coords="0,0,72,24"/>
+<area href="class_manager.html" title="clase padre de los estados del programa" alt="Manager" shape="rect" coords="0,0,72,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
-<tr class="memitem:a4fa0a2bf50315c4a35a3890a0adcee5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_state.html#a4fa0a2bf50315c4a35a3890a0adcee5c">GameState</a> ()</td></tr>
+<tr class="memitem:a4fa0a2bf50315c4a35a3890a0adcee5c"><td class="memItemLeft" align="right" valign="top"><a id="a4fa0a2bf50315c4a35a3890a0adcee5c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_state.html#a4fa0a2bf50315c4a35a3890a0adcee5c">GameState</a> ()</td></tr>
+<tr class="memdesc:a4fa0a2bf50315c4a35a3890a0adcee5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor de la clase <a class="el" href="class_game_state.html" title="Clase hijo de Manager, representa el estado del programa durante el juego.">GameState</a> <br /></td></tr>
 <tr class="separator:a4fa0a2bf50315c4a35a3890a0adcee5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e40325fdff6bcaf1a03d8c666f567c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_state.html#ae5e40325fdff6bcaf1a03d8c666f567c">Update</a> (<a class="el" href="class_singleton_game.html">SingletonGame</a> *singleton)</td></tr>
-<tr class="separator:ae5e40325fdff6bcaf1a03d8c666f567c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a517ef6eaba96896259fcefd0c66afc9e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_state.html#a517ef6eaba96896259fcefd0c66afc9e">~GameState</a> ()</td></tr>
-<tr class="separator:a517ef6eaba96896259fcefd0c66afc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82ccea70921513d8c09e63b6d517043b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_state.html#a82ccea70921513d8c09e63b6d517043b">Menu</a> (<a class="el" href="class_singleton_game.html">SingletonGame</a> *singleton)</td></tr>
-<tr class="separator:a82ccea70921513d8c09e63b6d517043b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55417b1f7a2527dae1ef814fa76726f4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_state.html#a55417b1f7a2527dae1ef814fa76726f4">End</a> (<a class="el" href="class_singleton_game.html">SingletonGame</a> *singleton)</td></tr>
-<tr class="separator:a55417b1f7a2527dae1ef814fa76726f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23eb0ece625bf4928adaee89fb1e617f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_state.html#a23eb0ece625bf4928adaee89fb1e617f">Update</a> () override</td></tr>
+<tr class="memdesc:a23eb0ece625bf4928adaee89fb1e617f"><td class="mdescLeft">&#160;</td><td class="mdescRight">actualiza los graficos para cada frame  <a href="class_game_state.html#a23eb0ece625bf4928adaee89fb1e617f">Más...</a><br /></td></tr>
+<tr class="separator:a23eb0ece625bf4928adaee89fb1e617f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5014d0b39cce7d6d9544c3b02568dc73"><td class="memItemLeft" align="right" valign="top"><a id="a5014d0b39cce7d6d9544c3b02568dc73"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_state.html#a5014d0b39cce7d6d9544c3b02568dc73">~GameState</a> () override=default</td></tr>
+<tr class="memdesc:a5014d0b39cce7d6d9544c3b02568dc73"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor de la clase <a class="el" href="class_game_state.html" title="Clase hijo de Manager, representa el estado del programa durante el juego.">GameState</a> <br /></td></tr>
+<tr class="separator:a5014d0b39cce7d6d9544c3b02568dc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d98b6ce1f00c8e3935b063708fd598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_state.html#a45d98b6ce1f00c8e3935b063708fd598">Menu</a> (<a class="el" href="class_singleton_game.html">SingletonGame</a> *singleton) override</td></tr>
+<tr class="memdesc:a45d98b6ce1f00c8e3935b063708fd598"><td class="mdescLeft">&#160;</td><td class="mdescRight">cambia el estado del programa a Menu  <a href="class_game_state.html#a45d98b6ce1f00c8e3935b063708fd598">Más...</a><br /></td></tr>
+<tr class="separator:a45d98b6ce1f00c8e3935b063708fd598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0610ee2a03e2fb11694130b300ff1b05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_state.html#a0610ee2a03e2fb11694130b300ff1b05">End</a> (<a class="el" href="class_singleton_game.html">SingletonGame</a> *singleton) override</td></tr>
+<tr class="memdesc:a0610ee2a03e2fb11694130b300ff1b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">cambia el estado del programa a End  <a href="class_game_state.html#a0610ee2a03e2fb11694130b300ff1b05">Más...</a><br /></td></tr>
+<tr class="separator:a0610ee2a03e2fb11694130b300ff1b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_manager')"><img src="closed.png" alt="-"/>&#160;Métodos públicos heredados desde <a class="el" href="class_manager.html">Manager</a></td></tr>
-<tr class="memitem:a1a50c7e78100aa1241df3b9bcb565df0 inherit pub_methods_class_manager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manager.html#a1a50c7e78100aa1241df3b9bcb565df0">Manager</a> (<a class="el" href="cmake-build-debug_2__deps_2raylib-src_2src_2external_2glfw_2_c_make_lists_8txt.html#aaaf3ef0becc31ed9324a17d496212d22">std::string</a> <a class="el" href="examples_2others_2external_2include_2glad_8h.html#a14d7642df08c5cb68e4fb90cc8a73509">name</a>)</td></tr>
+<tr class="memitem:a1a50c7e78100aa1241df3b9bcb565df0 inherit pub_methods_class_manager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manager.html#a1a50c7e78100aa1241df3b9bcb565df0">Manager</a> (std::string name)</td></tr>
+<tr class="memdesc:a1a50c7e78100aa1241df3b9bcb565df0 inherit pub_methods_class_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor de la clase <a class="el" href="class_manager.html" title="clase padre de los estados del programa">Manager</a>  <a href="class_manager.html#a1a50c7e78100aa1241df3b9bcb565df0">Más...</a><br /></td></tr>
 <tr class="separator:a1a50c7e78100aa1241df3b9bcb565df0 inherit pub_methods_class_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a322cad25d7007438b3a043ad02253d29 inherit pub_methods_class_manager"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manager.html#a322cad25d7007438b3a043ad02253d29">~Manager</a> ()</td></tr>
+<tr class="memitem:a322cad25d7007438b3a043ad02253d29 inherit pub_methods_class_manager"><td class="memItemLeft" align="right" valign="top"><a id="a322cad25d7007438b3a043ad02253d29"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manager.html#a322cad25d7007438b3a043ad02253d29">~Manager</a> ()</td></tr>
+<tr class="memdesc:a322cad25d7007438b3a043ad02253d29 inherit pub_methods_class_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor de la clase <a class="el" href="class_manager.html" title="clase padre de los estados del programa">Manager</a> <br /></td></tr>
 <tr class="separator:a322cad25d7007438b3a043ad02253d29 inherit pub_methods_class_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0e34d6a9d04ce535070989b0756066f inherit pub_methods_class_manager"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manager.html#aa0e34d6a9d04ce535070989b0756066f">Game</a> (<a class="el" href="class_singleton_game.html">SingletonGame</a> *singleton)</td></tr>
+<tr class="memitem:aa0e34d6a9d04ce535070989b0756066f inherit pub_methods_class_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manager.html#aa0e34d6a9d04ce535070989b0756066f">Game</a> (<a class="el" href="class_singleton_game.html">SingletonGame</a> *singleton)</td></tr>
+<tr class="memdesc:aa0e34d6a9d04ce535070989b0756066f inherit pub_methods_class_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">solo se accederá es esta definición de la función virtual en caso de que se solicite una transición de estado inválida  <a href="class_manager.html#aa0e34d6a9d04ce535070989b0756066f">Más...</a><br /></td></tr>
 <tr class="separator:aa0e34d6a9d04ce535070989b0756066f inherit pub_methods_class_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentación del constructor y destructor</h2>
-<a id="a4fa0a2bf50315c4a35a3890a0adcee5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fa0a2bf50315c4a35a3890a0adcee5c">&#9670;&nbsp;</a></span>GameState()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase hijo de <a class="el" href="class_manager.html" title="clase padre de los estados del programa">Manager</a>, representa el estado del programa durante el juego. </p>
+</div><h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a id="a0610ee2a03e2fb11694130b300ff1b05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0610ee2a03e2fb11694130b300ff1b05">&#9670;&nbsp;</a></span>End()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -114,58 +130,7 @@ Métodos públicos</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GameState::GameState </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a517ef6eaba96896259fcefd0c66afc9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a517ef6eaba96896259fcefd0c66afc9e">&#9670;&nbsp;</a></span>~GameState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual GameState::~GameState </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Documentación de las funciones miembro</h2>
-<a id="a55417b1f7a2527dae1ef814fa76726f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55417b1f7a2527dae1ef814fa76726f4">&#9670;&nbsp;</a></span>End()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> GameState::End </td>
+          <td class="memname">void GameState::End </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_singleton_game.html">SingletonGame</a> *&#160;</td>
           <td class="paramname"><em>singleton</em></td><td>)</td>
@@ -174,17 +139,25 @@ Métodos públicos</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>cambia el estado del programa a End </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">singleton</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Reimplementado de <a class="el" href="class_manager.html#a121ae079b7e92378f4639d242ddc3e65">Manager</a>.</p>
 
 </div>
 </div>
-<a id="a82ccea70921513d8c09e63b6d517043b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82ccea70921513d8c09e63b6d517043b">&#9670;&nbsp;</a></span>Menu()</h2>
+<a id="a45d98b6ce1f00c8e3935b063708fd598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d98b6ce1f00c8e3935b063708fd598">&#9670;&nbsp;</a></span>Menu()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,7 +166,7 @@ Métodos públicos</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> GameState::Menu </td>
+          <td class="memname">void GameState::Menu </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_singleton_game.html">SingletonGame</a> *&#160;</td>
           <td class="paramname"><em>singleton</em></td><td>)</td>
@@ -202,17 +175,25 @@ Métodos públicos</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>cambia el estado del programa a Menu </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">singleton</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Reimplementado de <a class="el" href="class_manager.html#a11f0d68638b8718e8557fbbe3322eaaa">Manager</a>.</p>
 
 </div>
 </div>
-<a id="ae5e40325fdff6bcaf1a03d8c666f567c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5e40325fdff6bcaf1a03d8c666f567c">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="a23eb0ece625bf4928adaee89fb1e617f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23eb0ece625bf4928adaee89fb1e617f">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,27 +202,34 @@ Métodos públicos</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="src_2external_2glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a> GameState::Update </td>
+          <td class="memname">void GameState::Update </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_singleton_game.html">SingletonGame</a> *&#160;</td>
-          <td class="paramname"><em>singleton</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplementado de <a class="el" href="class_manager.html#a712921eb550bc62ad425c5a395fbaf19">Manager</a>.</p>
+<p>actualiza los graficos para cada frame </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">singleton</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplementado de <a class="el" href="class_manager.html#a151953c44ccb959ebd1b2889b925f1b3">Manager</a>.</p>
 
 </div>
 </div>
 <hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
-<li>clases/<a class="el" href="_game_state_8h_source.html">GameState.h</a></li>
-<li>clases/<a class="el" href="_game_state_8cpp.html">GameState.cpp</a></li>
+<li><a class="el" href="_game_state_8h_source.html">GameState.h</a></li>
+<li>GameState.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5fglfwdecorationsidewayland_26251',['_GLFWdecorationSideWayland',['../wl__platform_8h.html#ad60a0a27370d399e4f9fd58d1eeef1ac',1,'wl_platform.h']]]
+  ['state_240',['State',['../class_singleton_game.html#a1afa54848e39e11cfadb05370e5e1ee4',1,'SingletonGame']]]
 ];

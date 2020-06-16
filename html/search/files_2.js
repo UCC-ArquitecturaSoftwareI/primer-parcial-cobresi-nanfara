@@ -1,20 +1,4 @@
 var searchData=
 [
-  ['advance_5fgame_2ec_17467',['advance_game.c',['../advance__game_8c.html',1,'']]],
-  ['android_5fnative_5fapp_5fglue_2ec_17468',['android_native_app_glue.c',['../android__native__app__glue_8c.html',1,'']]],
-  ['android_5fnative_5fapp_5fglue_2eh_17469',['android_native_app_glue.h',['../android__native__app__glue_8h.html',1,'']]],
-  ['angle_5fwindowsstore_2eh_17470',['angle_windowsstore.h',['../angle__windowsstore_8h.html',1,'']]],
-  ['app_2ecpp_17471',['App.cpp',['../_app_8cpp.html',1,'']]],
-  ['app_2eh_17472',['App.h',['../_app_8h.html',1,'']]],
-  ['arkanoid_2ec_17473',['arkanoid.c',['../arkanoid_8c.html',1,'']]],
-  ['asteroids_2ec_17474',['asteroids.c',['../asteroids_8c.html',1,'']]],
-  ['asteroids_5fsurvival_2ec_17475',['asteroids_survival.c',['../asteroids__survival_8c.html',1,'']]],
-  ['atlas01_2eh_17476',['atlas01.h',['../atlas01_8h.html',1,'']]],
-  ['atlas02_2eh_17477',['atlas02.h',['../atlas02_8h.html',1,'']]],
-  ['audio_2eh_17478',['Audio.h',['../_audio_8h.html',1,'']]],
-  ['audio_5fmodule_5fplaying_2ec_17479',['audio_module_playing.c',['../audio__module__playing_8c.html',1,'']]],
-  ['audio_5fmultichannel_5fsound_2ec_17480',['audio_multichannel_sound.c',['../audio__multichannel__sound_8c.html',1,'']]],
-  ['audio_5fmusic_5fstream_2ec_17481',['audio_music_stream.c',['../audio__music__stream_8c.html',1,'']]],
-  ['audio_5fraw_5fstream_2ec_17482',['audio_raw_stream.c',['../audio__raw__stream_8c.html',1,'']]],
-  ['audio_5fsound_5floading_2ec_17483',['audio_sound_loading.c',['../audio__sound__loading_8c.html',1,'']]]
+  ['decorator_2eh_140',['Decorator.h',['../_decorator_8h.html',1,'']]]
 ];

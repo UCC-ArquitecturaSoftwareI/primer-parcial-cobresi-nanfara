@@ -2,7 +2,12 @@
 \label{class_button}\index{Button@{Button}}
 
 
-{\ttfamily \#include $<$Button.\+h$>$}
+Clase que representa a un botón.  
+
+
+
+
+{\ttfamily \#include $<$Menu\+Elements.\+h$>$}
 
 Diagrama de herencias de Button\begin{figure}[H]
 \begin{center}
@@ -13,71 +18,77 @@ Diagrama de herencias de Button\begin{figure}[H]
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_button_ae6123a2c0afa0768f49189983da0907e}{Draw}} ()=0
+virtual void \mbox{\hyperlink{class_button_ae6123a2c0afa0768f49189983da0907e}{Draw}} ()=0
+\begin{DoxyCompactList}\small\item\em función virtual pura que grafica un Boton \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_button_a3e4158895f5c7c6b63355317cde596c0}{Draw}} (Vector2 pos, int est)=0
+\begin{DoxyCompactList}\small\item\em función virtual pura que indica cómo graficar al boton en pantalla dependiendo del boton \end{DoxyCompactList}\item 
+virtual Rectangle \mbox{\hyperlink{class_button_af5fb91984279f5dae6c590dac5b9267d}{Get\+Rectangle}} ()=0
 \item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_button_a3e4158895f5c7c6b63355317cde596c0}{Draw}} (\mbox{\hyperlink{struct_vector2}{Vector2}} pos, \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} est)=0
-\item 
-virtual \mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_button_af5fb91984279f5dae6c590dac5b9267d}{Get\+Rectangle}} ()=0
-\item 
-virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{class_button_a928dfe00eea08dc1569aba627d4fcaa5}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&)=0
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{class_button_a12cba548a635ed2fbd86f2bc9e35710d}\label{class_button_a12cba548a635ed2fbd86f2bc9e35710d}} 
+void \mbox{\hyperlink{class_button_a12cba548a635ed2fbd86f2bc9e35710d}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \&) override=0
+\begin{DoxyCompactList}\small\item\em función de aceptación de un visitante \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_button_ab076ede42ff6b6f6428bb2f93bfcdb01}{theme}}
+\mbox{\Hypertarget{class_button_ab076ede42ff6b6f6428bb2f93bfcdb01}\label{class_button_ab076ede42ff6b6f6428bb2f93bfcdb01}} 
+int {\bfseries theme} \{\}
 \item 
-\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} \mbox{\hyperlink{class_button_a287023a3d03b547e9dda922953e1799a}{estado}}
+int \mbox{\hyperlink{class_button_a287023a3d03b547e9dda922953e1799a}{estado}} \{\}
 \item 
-\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{class_button_afa56a7269785e9753afea3cc0090e745}{position}}
+Vector2 \mbox{\hyperlink{class_button_afa56a7269785e9753afea3cc0090e745}{position}} \{\}
 \item 
-\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{class_button_a3598ffa4e13f3a252c6df4385798139c}{rectangulo}}
+Rectangle \mbox{\hyperlink{class_button_a3598ffa4e13f3a252c6df4385798139c}{rectangulo}} \{\}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Descripción detallada}
+Clase que representa a un botón. 
+
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_button_a928dfe00eea08dc1569aba627d4fcaa5}\label{class_button_a928dfe00eea08dc1569aba627d4fcaa5}} 
-\index{Button@{Button}!Accept@{Accept}}
-\index{Accept@{Accept}!Button@{Button}}
-\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Button\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Implementa \mbox{\hyperlink{class_visitable_a9db999616998fc36f82a31f4d7d9254d}{Visitable}}.
-
-
-
-Implementado en \mbox{\hyperlink{class_start_button_ad3698892f3b35771f9b6ff6379911087}{Start\+Button}}, \mbox{\hyperlink{class_night_button_a727eb66063af6c62b61d777adecc9bee}{Night\+Button}} y \mbox{\hyperlink{class_light_button_aa359eac1ef029f80dedf33deedff5fc5}{Light\+Button}}.
-
 \mbox{\Hypertarget{class_button_ae6123a2c0afa0768f49189983da0907e}\label{class_button_ae6123a2c0afa0768f49189983da0907e}} 
 \index{Button@{Button}!Draw@{Draw}}
 \index{Draw@{Draw}!Button@{Button}}
 \doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Button\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Button\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Implementado en \mbox{\hyperlink{class_start_button_a073514a6af445a9dc7a057d79a0f054f}{Start\+Button}}, \mbox{\hyperlink{class_night_button_a9551baf7a9ccdc50000caa34ebad1050}{Night\+Button}} y \mbox{\hyperlink{class_light_button_aca2ba256bb61279cb8d51e3dbe1fb0c5}{Light\+Button}}.
+función virtual pura que grafica un Boton 
+
+Rectangle value. Especifica los pixeles de la textura que pertenecen al boton 
+
+Implementado en \mbox{\hyperlink{class_start_button_aaf824654af173b2a91af8337f8ab2f57}{Start\+Button}}, \mbox{\hyperlink{class_night_button_af85ab9712fc0492a9fa5afb61ac64691}{Night\+Button}} y \mbox{\hyperlink{class_light_button_a462f4347ea389da32043a6a60ba40a9c}{Light\+Button}}.
 
 \mbox{\Hypertarget{class_button_a3e4158895f5c7c6b63355317cde596c0}\label{class_button_a3e4158895f5c7c6b63355317cde596c0}} 
 \index{Button@{Button}!Draw@{Draw}}
 \index{Draw@{Draw}!Button@{Button}}
 \doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{src_2external_2glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Button\+::\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2}{Vector2}}}]{pos,  }\item[{\mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}}}]{est }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Button\+::\+Draw (\begin{DoxyParamCaption}\item[{Vector2}]{pos,  }\item[{int}]{est }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Implementado en \mbox{\hyperlink{class_start_button_a1939fe8d6b1dd4041fdd203ec2b0d01f}{Start\+Button}}, \mbox{\hyperlink{class_night_button_ad7d04ba53611a77f98636a156cfa0481}{Night\+Button}} y \mbox{\hyperlink{class_light_button_ad41ef66bc814580b705c15313e34533a}{Light\+Button}}.
+función virtual pura que indica cómo graficar al boton en pantalla dependiendo del boton 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & posicion en el que se va a dibujar el boton \\
+\hline
+{\em est} & estado en el que se va a dibujarla el boton \\
+\hline
+\end{DoxyParams}
+
+
+Implementado en \mbox{\hyperlink{class_start_button_a78d8db3560e070bee52f94ac58d5fff5}{Start\+Button}}, \mbox{\hyperlink{class_night_button_a71b9f99b64e3592a75aca12e33501ad2}{Night\+Button}} y \mbox{\hyperlink{class_light_button_adb0f9b9ed2f15ab9e9204a0cc6802da3}{Light\+Button}}.
 
 \mbox{\Hypertarget{class_button_af5fb91984279f5dae6c590dac5b9267d}\label{class_button_af5fb91984279f5dae6c590dac5b9267d}} 
 \index{Button@{Button}!GetRectangle@{GetRectangle}}
 \index{GetRectangle@{GetRectangle}!Button@{Button}}
 \doxysubsubsection{\texorpdfstring{GetRectangle()}{GetRectangle()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_rectangle}{Rectangle}} Button\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual Rectangle Button\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+función virtual pura que dependiendo de los atributos del boton, calcula las coordenadas del rectangulo de la textura correspondiente y las coloca como el nuevo valor del atributo rect del boton 
 
-
-Implementado en \mbox{\hyperlink{class_start_button_adf06b930a22f0ebba5017283267880af}{Start\+Button}}, \mbox{\hyperlink{class_night_button_a90761fa8050dfeed10ae857873699d20}{Night\+Button}} y \mbox{\hyperlink{class_light_button_adc78b10c0df1a600dcdec5ecc0227948}{Light\+Button}}.
+Implementado en \mbox{\hyperlink{class_start_button_ae4c6dd1572348dfd1b343624957ef8bf}{Start\+Button}}, \mbox{\hyperlink{class_night_button_a214fff31ba4c264f3a8b8dd18cfb7e0c}{Night\+Button}} y \mbox{\hyperlink{class_light_button_a0d1dec881c44e4067fecfc2daab905d7}{Light\+Button}}.
 
 
 
@@ -86,28 +97,22 @@ Implementado en \mbox{\hyperlink{class_start_button_adf06b930a22f0ebba5017283267
 \index{Button@{Button}!estado@{estado}}
 \index{estado@{estado}!Button@{Button}}
 \doxysubsubsection{\texorpdfstring{estado}{estado}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Button\+::estado}
+{\footnotesize\ttfamily int Button\+::estado \{\}}
 
-\mbox{\Hypertarget{class_button_afa56a7269785e9753afea3cc0090e745}\label{class_button_afa56a7269785e9753afea3cc0090e745}} 
+int value. Especifica el tema del boton, puede tomar valores 0 o 1 para lighttheme o nighttheme \mbox{\Hypertarget{class_button_afa56a7269785e9753afea3cc0090e745}\label{class_button_afa56a7269785e9753afea3cc0090e745}} 
 \index{Button@{Button}!position@{position}}
 \index{position@{position}!Button@{Button}}
 \doxysubsubsection{\texorpdfstring{position}{position}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} Button\+::position}
+{\footnotesize\ttfamily Vector2 Button\+::position \{\}}
 
-\mbox{\Hypertarget{class_button_a3598ffa4e13f3a252c6df4385798139c}\label{class_button_a3598ffa4e13f3a252c6df4385798139c}} 
+int value. Especifica el estado del boton, puede tomar valores 0 o 1 \mbox{\Hypertarget{class_button_a3598ffa4e13f3a252c6df4385798139c}\label{class_button_a3598ffa4e13f3a252c6df4385798139c}} 
 \index{Button@{Button}!rectangulo@{rectangulo}}
 \index{rectangulo@{rectangulo}!Button@{Button}}
 \doxysubsubsection{\texorpdfstring{rectangulo}{rectangulo}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_rectangle}{Rectangle}} Button\+::rectangulo}
+{\footnotesize\ttfamily Rectangle Button\+::rectangulo \{\}}
 
-\mbox{\Hypertarget{class_button_ab076ede42ff6b6f6428bb2f93bfcdb01}\label{class_button_ab076ede42ff6b6f6428bb2f93bfcdb01}} 
-\index{Button@{Button}!theme@{theme}}
-\index{theme@{theme}!Button@{Button}}
-\doxysubsubsection{\texorpdfstring{theme}{theme}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_c_make_cache_8txt_ae5ddf38bc47713b2bcad41253d69d372}{int}} Button\+::theme}
-
-
+Especifica la posicion en donde se situa el boton 
 
 La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
 \item 
-clases/\mbox{\hyperlink{_button_8h}{Button.\+h}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_menu_elements_8h}{Menu\+Elements.\+h}}\end{DoxyCompactItemize}

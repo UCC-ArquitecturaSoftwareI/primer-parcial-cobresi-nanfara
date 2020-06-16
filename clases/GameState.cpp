@@ -10,7 +10,7 @@
 #include "MenuElements.h"
 #include "SuperTree.h"
 
-void GameState::Update(SingletonGame *singleton) {
+void GameState::Update( ) {
     SingletonGame & game = SingletonGame::get();
     // siempre hay que reproducir la musica que esta actualmente
     game.music.updateAudio();
